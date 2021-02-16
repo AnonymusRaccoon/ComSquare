@@ -1,0 +1,163 @@
+\hypertarget{classStackModel}{}\doxysection{Stack\+Model Class Reference}
+\label{classStackModel}\index{StackModel@{StackModel}}
+
+
+The qt model that show the stack.  
+
+
+
+
+{\ttfamily \#include $<$C\+P\+U\+Debug.\+hpp$>$}
+
+
+
+Inheritance diagram for Stack\+Model\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{classStackModel__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Stack\+Model\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classStackModel__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classStackModel_abb7e3770d76a4df889a4f0dc3caec712}{Stack\+Model}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classComSquare_1_1Memory_1_1MemoryBus}{Com\+Square\+::\+Memory\+::\+Memory\+Bus}} $>$ bus, \mbox{\hyperlink{classComSquare_1_1Debugger_1_1CPUDebug}{Com\+Square\+::\+Debugger\+::\+C\+P\+U\+Debug}} \&cpu)
+\item 
+\mbox{\hyperlink{classStackModel_af6e3876feb1ae2d5eac43d1a90c32d8a}{Stack\+Model}} (const \mbox{\hyperlink{classStackModel}{Stack\+Model}} \&)=delete
+\item 
+const \mbox{\hyperlink{classStackModel}{Stack\+Model}} \& \mbox{\hyperlink{classStackModel_a3edb9bff51ae671957c1d3bf79df484b}{operator=}} (const \mbox{\hyperlink{classStackModel}{Stack\+Model}} \&)=delete
+\item 
+\mbox{\hyperlink{classStackModel_aa6ac60ed2da74b061858764f90ee875a}{$\sim$\+Stack\+Model}} () override=default
+\item 
+int \mbox{\hyperlink{classStackModel_a4f3f56f225a46548e7a15076fdb48f1f}{row\+Count}} (const Q\+Model\+Index \&parent) const override
+\begin{DoxyCompactList}\small\item\em The number of row the table has. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classStackModel_ae1c10e815a40c409df876aca1e62d42d}{column\+Count}} (const Q\+Model\+Index \&parent) const override
+\begin{DoxyCompactList}\small\item\em The number of column the table has. \end{DoxyCompactList}\item 
+Q\+Variant \mbox{\hyperlink{classStackModel_aa61521de0e4a0ea5f1cf1aa441b481fa}{data}} (const Q\+Model\+Index \&index, int role) const override
+\begin{DoxyCompactList}\small\item\em Return a data representing the table cell. \end{DoxyCompactList}\item 
+Q\+Variant \mbox{\hyperlink{classStackModel_a478a1bcb5090ed2ccc65245a76acee0f}{header\+Data}} (int section, Qt\+::\+Orientation orientation, int role) const override
+\begin{DoxyCompactList}\small\item\em Override the headers to use hex values. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classStackModel_add62a095f8d24f231e452d1c0a454c8b}{set\+Memory\+Bus}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classComSquare_1_1Memory_1_1MemoryBus}{Com\+Square\+::\+Memory\+::\+Memory\+Bus}} $>$ bus)
+\begin{DoxyCompactList}\small\item\em Change the memory bus used by the view. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classComSquare_1_1Memory_1_1MemoryBus}{Com\+Square\+::\+Memory\+::\+Memory\+Bus}} $>$ \mbox{\hyperlink{classStackModel_a38a71e8522bd3779d356fca1dd92dab5}{\+\_\+bus}}
+\item 
+\mbox{\hyperlink{classComSquare_1_1Debugger_1_1CPUDebug}{Com\+Square\+::\+Debugger\+::\+C\+P\+U\+Debug}} \& \mbox{\hyperlink{classStackModel_a4cd04b66afbd27460e8304cb49118fc2}{\+\_\+cpu}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The qt model that show the stack. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classStackModel_abb7e3770d76a4df889a4f0dc3caec712}\label{classStackModel_abb7e3770d76a4df889a4f0dc3caec712}} 
+\index{StackModel@{StackModel}!StackModel@{StackModel}}
+\index{StackModel@{StackModel}!StackModel@{StackModel}}
+\doxysubsubsection{\texorpdfstring{StackModel()}{StackModel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Stack\+Model\+::\+Stack\+Model (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classComSquare_1_1Memory_1_1MemoryBus}{Com\+Square\+::\+Memory\+::\+Memory\+Bus}} $>$}]{bus,  }\item[{\mbox{\hyperlink{classComSquare_1_1Debugger_1_1CPUDebug}{Com\+Square\+::\+Debugger\+::\+C\+P\+U\+Debug}} \&}]{cpu }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{classStackModel_af6e3876feb1ae2d5eac43d1a90c32d8a}\label{classStackModel_af6e3876feb1ae2d5eac43d1a90c32d8a}} 
+\index{StackModel@{StackModel}!StackModel@{StackModel}}
+\index{StackModel@{StackModel}!StackModel@{StackModel}}
+\doxysubsubsection{\texorpdfstring{StackModel()}{StackModel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Stack\+Model\+::\+Stack\+Model (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classStackModel}{Stack\+Model}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classStackModel_aa6ac60ed2da74b061858764f90ee875a}\label{classStackModel_aa6ac60ed2da74b061858764f90ee875a}} 
+\index{StackModel@{StackModel}!````~StackModel@{$\sim$StackModel}}
+\index{````~StackModel@{$\sim$StackModel}!StackModel@{StackModel}}
+\doxysubsubsection{\texorpdfstring{$\sim$StackModel()}{~StackModel()}}
+{\footnotesize\ttfamily Stack\+Model\+::$\sim$\+Stack\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classStackModel_ae1c10e815a40c409df876aca1e62d42d}\label{classStackModel_ae1c10e815a40c409df876aca1e62d42d}} 
+\index{StackModel@{StackModel}!columnCount@{columnCount}}
+\index{columnCount@{columnCount}!StackModel@{StackModel}}
+\doxysubsubsection{\texorpdfstring{columnCount()}{columnCount()}}
+{\footnotesize\ttfamily int Stack\+Model\+::column\+Count (\begin{DoxyParamCaption}\item[{const Q\+Model\+Index \&}]{parent }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+The number of column the table has. 
+
+\mbox{\Hypertarget{classStackModel_aa61521de0e4a0ea5f1cf1aa441b481fa}\label{classStackModel_aa61521de0e4a0ea5f1cf1aa441b481fa}} 
+\index{StackModel@{StackModel}!data@{data}}
+\index{data@{data}!StackModel@{StackModel}}
+\doxysubsubsection{\texorpdfstring{data()}{data()}}
+{\footnotesize\ttfamily Q\+Variant Stack\+Model\+::data (\begin{DoxyParamCaption}\item[{const Q\+Model\+Index \&}]{index,  }\item[{int}]{role }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Return a data representing the table cell. 
+
+\mbox{\Hypertarget{classStackModel_a478a1bcb5090ed2ccc65245a76acee0f}\label{classStackModel_a478a1bcb5090ed2ccc65245a76acee0f}} 
+\index{StackModel@{StackModel}!headerData@{headerData}}
+\index{headerData@{headerData}!StackModel@{StackModel}}
+\doxysubsubsection{\texorpdfstring{headerData()}{headerData()}}
+{\footnotesize\ttfamily Q\+Variant Stack\+Model\+::header\+Data (\begin{DoxyParamCaption}\item[{int}]{section,  }\item[{Qt\+::\+Orientation}]{orientation,  }\item[{int}]{role }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Override the headers to use hex values. 
+
+\mbox{\Hypertarget{classStackModel_a3edb9bff51ae671957c1d3bf79df484b}\label{classStackModel_a3edb9bff51ae671957c1d3bf79df484b}} 
+\index{StackModel@{StackModel}!operator=@{operator=}}
+\index{operator=@{operator=}!StackModel@{StackModel}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classStackModel}{Stack\+Model}}\& Stack\+Model\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classStackModel}{Stack\+Model}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classStackModel_a4f3f56f225a46548e7a15076fdb48f1f}\label{classStackModel_a4f3f56f225a46548e7a15076fdb48f1f}} 
+\index{StackModel@{StackModel}!rowCount@{rowCount}}
+\index{rowCount@{rowCount}!StackModel@{StackModel}}
+\doxysubsubsection{\texorpdfstring{rowCount()}{rowCount()}}
+{\footnotesize\ttfamily int Stack\+Model\+::row\+Count (\begin{DoxyParamCaption}\item[{const Q\+Model\+Index \&}]{parent }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+The number of row the table has. 
+
+\mbox{\Hypertarget{classStackModel_add62a095f8d24f231e452d1c0a454c8b}\label{classStackModel_add62a095f8d24f231e452d1c0a454c8b}} 
+\index{StackModel@{StackModel}!setMemoryBus@{setMemoryBus}}
+\index{setMemoryBus@{setMemoryBus}!StackModel@{StackModel}}
+\doxysubsubsection{\texorpdfstring{setMemoryBus()}{setMemoryBus()}}
+{\footnotesize\ttfamily void Stack\+Model\+::set\+Memory\+Bus (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classComSquare_1_1Memory_1_1MemoryBus}{Com\+Square\+::\+Memory\+::\+Memory\+Bus}} $>$}]{bus }\end{DoxyParamCaption})}
+
+
+
+Change the memory bus used by the view. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classStackModel_a38a71e8522bd3779d356fca1dd92dab5}\label{classStackModel_a38a71e8522bd3779d356fca1dd92dab5}} 
+\index{StackModel@{StackModel}!\_bus@{\_bus}}
+\index{\_bus@{\_bus}!StackModel@{StackModel}}
+\doxysubsubsection{\texorpdfstring{\_bus}{\_bus}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classComSquare_1_1Memory_1_1MemoryBus}{Com\+Square\+::\+Memory\+::\+Memory\+Bus}}$>$ Stack\+Model\+::\+\_\+bus\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classStackModel_a4cd04b66afbd27460e8304cb49118fc2}\label{classStackModel_a4cd04b66afbd27460e8304cb49118fc2}} 
+\index{StackModel@{StackModel}!\_cpu@{\_cpu}}
+\index{\_cpu@{\_cpu}!StackModel@{StackModel}}
+\doxysubsubsection{\texorpdfstring{\_cpu}{\_cpu}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classComSquare_1_1Debugger_1_1CPUDebug}{Com\+Square\+::\+Debugger\+::\+C\+P\+U\+Debug}}\& Stack\+Model\+::\+\_\+cpu\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+sources/\+Debugger/\+C\+P\+U/\mbox{\hyperlink{CPUDebug_8hpp}{C\+P\+U\+Debug.\+hpp}}\item 
+sources/\+Debugger/\+C\+P\+U/\mbox{\hyperlink{CPUDebug_8cpp}{C\+P\+U\+Debug.\+cpp}}\end{DoxyCompactItemize}

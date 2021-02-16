@@ -1,0 +1,156 @@
+\hypertarget{namespaceComSquare_1_1CPU}{}\doxysection{Com\+Square\+::C\+PU Namespace Reference}
+\label{namespaceComSquare_1_1CPU}\index{ComSquare::CPU@{ComSquare::CPU}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classComSquare_1_1CPU_1_1CPU}{C\+PU}}
+\begin{DoxyCompactList}\small\item\em The main \mbox{\hyperlink{classComSquare_1_1CPU_1_1CPU}{C\+PU}}. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA}{D\+MA}}
+\begin{DoxyCompactList}\small\item\em Class handling all D\+M\+A/\+H\+D\+MA transfers (Direct \mbox{\hyperlink{namespaceComSquare_1_1Memory}{Memory}} Access or H-\/\+Blank Direct \mbox{\hyperlink{namespaceComSquare_1_1Memory}{Memory}} Access) \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structComSquare_1_1CPU_1_1Instruction}{Instruction}}
+\begin{DoxyCompactList}\small\item\em Struct containing basic information about instructions. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structComSquare_1_1CPU_1_1InternalRegisters}{Internal\+Registers}}
+\begin{DoxyCompactList}\small\item\em Struct containing internal registers of the \mbox{\hyperlink{classComSquare_1_1CPU_1_1CPU}{C\+PU}}. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structComSquare_1_1CPU_1_1Registers}{Registers}}
+\begin{DoxyCompactList}\small\item\em Struct containing registers for the main \mbox{\hyperlink{classComSquare_1_1CPU_1_1CPU}{C\+PU}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457}{Addressing\+Mode}} \{ \newline
+\mbox{\hyperlink{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457acd8fcc4496326cbe0dd18211ebb0dc47}{Implied}}, 
+\mbox{\hyperlink{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457a7bcef71a06e2df855e7aca1012fa86f4}{Immediate8bits}}, 
+\mbox{\hyperlink{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457ab8f66f879c3b026441bcaa7aca38e029}{Immediate16bits}}, 
+\mbox{\hyperlink{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457a58510fab517f8812207224914c0cfaa7}{Immediate\+ForA}}, 
+\newline
+\mbox{\hyperlink{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457aca92aedeca4eff5896004725520abf36}{Immediate\+ForX}}, 
+\mbox{\hyperlink{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457a80a8525aa014121ce3a7cb079a5d5b1d}{Absolute}}, 
+\mbox{\hyperlink{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457ad925a12fd389c34063e9db6b34c6b83a}{Absolute\+Long}}, 
+\mbox{\hyperlink{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457a8aaf1565c9df8c1fe873b82657b3ae9b}{Direct\+Page}}, 
+\newline
+\mbox{\hyperlink{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457a14efc00593674809516223db3bd74dfc}{Direct\+Page\+Indirect}}, 
+\mbox{\hyperlink{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457ad308602f5c0c78247a560f1a7e7a23ca}{Direct\+Page\+Indirect\+Long}}, 
+\mbox{\hyperlink{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457a1859f65cdd1465fe9901eabfacd0df20}{Absolute\+Indexed\+ByX}}, 
+\mbox{\hyperlink{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457a351eb0c6bd22dae73ea79a956c9f6be4}{Absolute\+Indexed\+By\+X\+Long}}, 
+\newline
+\mbox{\hyperlink{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457af9bfd672a1688caab5b9ed84d4ce747a}{Absolute\+Indexed\+ByY}}, 
+\mbox{\hyperlink{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457a05ba97647c1f248806a111ab9019c257}{Direct\+Page\+Indexed\+ByX}}, 
+\mbox{\hyperlink{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457a97565e3c007a203eecce1329fe87c92b}{Direct\+Page\+Indexed\+ByY}}, 
+\mbox{\hyperlink{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457ae18f65162857240edac585be873333f7}{Direct\+Page\+Indirect\+Indexed\+ByX}}, 
+\newline
+\mbox{\hyperlink{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457af6b42909228e082ded31f267a47b578b}{Direct\+Page\+Indirect\+Indexed\+ByY}}, 
+\mbox{\hyperlink{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457a2cfc23e3909ccab2e4f7381c1f6f9c56}{Direct\+Page\+Indirect\+Indexed\+By\+Y\+Long}}, 
+\mbox{\hyperlink{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457a793bc02c69f2996acd85c0a728e96ee1}{Stack\+Relative}}, 
+\mbox{\hyperlink{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457a87c0b6f5865703960009d46d8de63c16}{Stack\+Relative\+Indirect\+Indexed\+ByY}}, 
+\newline
+\mbox{\hyperlink{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457a50d330f16cc2ba70786341a2cc769fc1}{Absolute\+Indirect}}, 
+\mbox{\hyperlink{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457a7329b72d0c451087fd32b0e9bd78c277}{Absolute\+Indirect\+Indexed\+ByX}}, 
+\mbox{\hyperlink{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457a73e46c3309b051cec64ca56bdedba302}{Absolute\+Indirect\+Long}}
+ \}
+\begin{DoxyCompactList}\small\item\em Different addressing modes that instructions can use for the main C\+PU. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457}\label{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457}} 
+\index{ComSquare::CPU@{ComSquare::CPU}!AddressingMode@{AddressingMode}}
+\index{AddressingMode@{AddressingMode}!ComSquare::CPU@{ComSquare::CPU}}
+\doxysubsubsection{\texorpdfstring{AddressingMode}{AddressingMode}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457}{Com\+Square\+::\+C\+P\+U\+::\+Addressing\+Mode}}}
+
+
+
+Different addressing modes that instructions can use for the main \mbox{\hyperlink{classComSquare_1_1CPU_1_1CPU}{C\+PU}}. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Implied@{Implied}!ComSquare::CPU@{ComSquare::CPU}}\index{ComSquare::CPU@{ComSquare::CPU}!Implied@{Implied}}}\mbox{\Hypertarget{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457acd8fcc4496326cbe0dd18211ebb0dc47}\label{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457acd8fcc4496326cbe0dd18211ebb0dc47}} 
+Implied&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Immediate8bits@{Immediate8bits}!ComSquare::CPU@{ComSquare::CPU}}\index{ComSquare::CPU@{ComSquare::CPU}!Immediate8bits@{Immediate8bits}}}\mbox{\Hypertarget{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457a7bcef71a06e2df855e7aca1012fa86f4}\label{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457a7bcef71a06e2df855e7aca1012fa86f4}} 
+Immediate8bits&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Immediate16bits@{Immediate16bits}!ComSquare::CPU@{ComSquare::CPU}}\index{ComSquare::CPU@{ComSquare::CPU}!Immediate16bits@{Immediate16bits}}}\mbox{\Hypertarget{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457ab8f66f879c3b026441bcaa7aca38e029}\label{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457ab8f66f879c3b026441bcaa7aca38e029}} 
+Immediate16bits&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ImmediateForA@{ImmediateForA}!ComSquare::CPU@{ComSquare::CPU}}\index{ComSquare::CPU@{ComSquare::CPU}!ImmediateForA@{ImmediateForA}}}\mbox{\Hypertarget{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457a58510fab517f8812207224914c0cfaa7}\label{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457a58510fab517f8812207224914c0cfaa7}} 
+Immediate\+ForA&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ImmediateForX@{ImmediateForX}!ComSquare::CPU@{ComSquare::CPU}}\index{ComSquare::CPU@{ComSquare::CPU}!ImmediateForX@{ImmediateForX}}}\mbox{\Hypertarget{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457aca92aedeca4eff5896004725520abf36}\label{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457aca92aedeca4eff5896004725520abf36}} 
+Immediate\+ForX&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Absolute@{Absolute}!ComSquare::CPU@{ComSquare::CPU}}\index{ComSquare::CPU@{ComSquare::CPU}!Absolute@{Absolute}}}\mbox{\Hypertarget{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457a80a8525aa014121ce3a7cb079a5d5b1d}\label{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457a80a8525aa014121ce3a7cb079a5d5b1d}} 
+Absolute&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AbsoluteLong@{AbsoluteLong}!ComSquare::CPU@{ComSquare::CPU}}\index{ComSquare::CPU@{ComSquare::CPU}!AbsoluteLong@{AbsoluteLong}}}\mbox{\Hypertarget{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457ad925a12fd389c34063e9db6b34c6b83a}\label{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457ad925a12fd389c34063e9db6b34c6b83a}} 
+Absolute\+Long&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DirectPage@{DirectPage}!ComSquare::CPU@{ComSquare::CPU}}\index{ComSquare::CPU@{ComSquare::CPU}!DirectPage@{DirectPage}}}\mbox{\Hypertarget{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457a8aaf1565c9df8c1fe873b82657b3ae9b}\label{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457a8aaf1565c9df8c1fe873b82657b3ae9b}} 
+Direct\+Page&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DirectPageIndirect@{DirectPageIndirect}!ComSquare::CPU@{ComSquare::CPU}}\index{ComSquare::CPU@{ComSquare::CPU}!DirectPageIndirect@{DirectPageIndirect}}}\mbox{\Hypertarget{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457a14efc00593674809516223db3bd74dfc}\label{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457a14efc00593674809516223db3bd74dfc}} 
+Direct\+Page\+Indirect&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DirectPageIndirectLong@{DirectPageIndirectLong}!ComSquare::CPU@{ComSquare::CPU}}\index{ComSquare::CPU@{ComSquare::CPU}!DirectPageIndirectLong@{DirectPageIndirectLong}}}\mbox{\Hypertarget{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457ad308602f5c0c78247a560f1a7e7a23ca}\label{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457ad308602f5c0c78247a560f1a7e7a23ca}} 
+Direct\+Page\+Indirect\+Long&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AbsoluteIndexedByX@{AbsoluteIndexedByX}!ComSquare::CPU@{ComSquare::CPU}}\index{ComSquare::CPU@{ComSquare::CPU}!AbsoluteIndexedByX@{AbsoluteIndexedByX}}}\mbox{\Hypertarget{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457a1859f65cdd1465fe9901eabfacd0df20}\label{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457a1859f65cdd1465fe9901eabfacd0df20}} 
+Absolute\+Indexed\+ByX&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AbsoluteIndexedByXLong@{AbsoluteIndexedByXLong}!ComSquare::CPU@{ComSquare::CPU}}\index{ComSquare::CPU@{ComSquare::CPU}!AbsoluteIndexedByXLong@{AbsoluteIndexedByXLong}}}\mbox{\Hypertarget{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457a351eb0c6bd22dae73ea79a956c9f6be4}\label{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457a351eb0c6bd22dae73ea79a956c9f6be4}} 
+Absolute\+Indexed\+By\+X\+Long&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AbsoluteIndexedByY@{AbsoluteIndexedByY}!ComSquare::CPU@{ComSquare::CPU}}\index{ComSquare::CPU@{ComSquare::CPU}!AbsoluteIndexedByY@{AbsoluteIndexedByY}}}\mbox{\Hypertarget{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457af9bfd672a1688caab5b9ed84d4ce747a}\label{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457af9bfd672a1688caab5b9ed84d4ce747a}} 
+Absolute\+Indexed\+ByY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DirectPageIndexedByX@{DirectPageIndexedByX}!ComSquare::CPU@{ComSquare::CPU}}\index{ComSquare::CPU@{ComSquare::CPU}!DirectPageIndexedByX@{DirectPageIndexedByX}}}\mbox{\Hypertarget{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457a05ba97647c1f248806a111ab9019c257}\label{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457a05ba97647c1f248806a111ab9019c257}} 
+Direct\+Page\+Indexed\+ByX&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DirectPageIndexedByY@{DirectPageIndexedByY}!ComSquare::CPU@{ComSquare::CPU}}\index{ComSquare::CPU@{ComSquare::CPU}!DirectPageIndexedByY@{DirectPageIndexedByY}}}\mbox{\Hypertarget{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457a97565e3c007a203eecce1329fe87c92b}\label{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457a97565e3c007a203eecce1329fe87c92b}} 
+Direct\+Page\+Indexed\+ByY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DirectPageIndirectIndexedByX@{DirectPageIndirectIndexedByX}!ComSquare::CPU@{ComSquare::CPU}}\index{ComSquare::CPU@{ComSquare::CPU}!DirectPageIndirectIndexedByX@{DirectPageIndirectIndexedByX}}}\mbox{\Hypertarget{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457ae18f65162857240edac585be873333f7}\label{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457ae18f65162857240edac585be873333f7}} 
+Direct\+Page\+Indirect\+Indexed\+ByX&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DirectPageIndirectIndexedByY@{DirectPageIndirectIndexedByY}!ComSquare::CPU@{ComSquare::CPU}}\index{ComSquare::CPU@{ComSquare::CPU}!DirectPageIndirectIndexedByY@{DirectPageIndirectIndexedByY}}}\mbox{\Hypertarget{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457af6b42909228e082ded31f267a47b578b}\label{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457af6b42909228e082ded31f267a47b578b}} 
+Direct\+Page\+Indirect\+Indexed\+ByY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DirectPageIndirectIndexedByYLong@{DirectPageIndirectIndexedByYLong}!ComSquare::CPU@{ComSquare::CPU}}\index{ComSquare::CPU@{ComSquare::CPU}!DirectPageIndirectIndexedByYLong@{DirectPageIndirectIndexedByYLong}}}\mbox{\Hypertarget{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457a2cfc23e3909ccab2e4f7381c1f6f9c56}\label{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457a2cfc23e3909ccab2e4f7381c1f6f9c56}} 
+Direct\+Page\+Indirect\+Indexed\+By\+Y\+Long&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{StackRelative@{StackRelative}!ComSquare::CPU@{ComSquare::CPU}}\index{ComSquare::CPU@{ComSquare::CPU}!StackRelative@{StackRelative}}}\mbox{\Hypertarget{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457a793bc02c69f2996acd85c0a728e96ee1}\label{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457a793bc02c69f2996acd85c0a728e96ee1}} 
+Stack\+Relative&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{StackRelativeIndirectIndexedByY@{StackRelativeIndirectIndexedByY}!ComSquare::CPU@{ComSquare::CPU}}\index{ComSquare::CPU@{ComSquare::CPU}!StackRelativeIndirectIndexedByY@{StackRelativeIndirectIndexedByY}}}\mbox{\Hypertarget{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457a87c0b6f5865703960009d46d8de63c16}\label{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457a87c0b6f5865703960009d46d8de63c16}} 
+Stack\+Relative\+Indirect\+Indexed\+ByY&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AbsoluteIndirect@{AbsoluteIndirect}!ComSquare::CPU@{ComSquare::CPU}}\index{ComSquare::CPU@{ComSquare::CPU}!AbsoluteIndirect@{AbsoluteIndirect}}}\mbox{\Hypertarget{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457a50d330f16cc2ba70786341a2cc769fc1}\label{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457a50d330f16cc2ba70786341a2cc769fc1}} 
+Absolute\+Indirect&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AbsoluteIndirectIndexedByX@{AbsoluteIndirectIndexedByX}!ComSquare::CPU@{ComSquare::CPU}}\index{ComSquare::CPU@{ComSquare::CPU}!AbsoluteIndirectIndexedByX@{AbsoluteIndirectIndexedByX}}}\mbox{\Hypertarget{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457a7329b72d0c451087fd32b0e9bd78c277}\label{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457a7329b72d0c451087fd32b0e9bd78c277}} 
+Absolute\+Indirect\+Indexed\+ByX&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AbsoluteIndirectLong@{AbsoluteIndirectLong}!ComSquare::CPU@{ComSquare::CPU}}\index{ComSquare::CPU@{ComSquare::CPU}!AbsoluteIndirectLong@{AbsoluteIndirectLong}}}\mbox{\Hypertarget{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457a73e46c3309b051cec64ca56bdedba302}\label{namespaceComSquare_1_1CPU_a2c9982ab8e7f411dc611a2f3f5131457a73e46c3309b051cec64ca56bdedba302}} 
+Absolute\+Indirect\+Long&\\
+\hline
+
+\end{DoxyEnumFields}

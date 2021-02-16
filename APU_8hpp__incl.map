@@ -1,0 +1,18 @@
+<map id="sources/APU/APU.hpp" name="sources/APU/APU.hpp">
+<area shape="rect" id="node1" title=" " alt="" coords="227,5,389,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,304,83,331"/>
+<area shape="rect" id="node3" href="$DSP_8hpp.html" title=" " alt="" coords="109,80,213,107"/>
+<area shape="rect" id="node6" href="$AMemory_8hpp.html" title=" " alt="" coords="199,155,393,181"/>
+<area shape="rect" id="node12" href="$Ram_8hpp.html" title=" " alt="" coords="477,80,603,107"/>
+<area shape="rect" id="node14" href="$IPL_8hpp.html" title=" " alt="" coords="305,80,397,107"/>
+<area shape="rect" id="node15" href="$IRenderer_8hpp.html" title=" " alt="" coords="657,80,844,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="107,304,173,331"/>
+<area shape="rect" id="node5" title=" " alt="" coords="119,155,175,181"/>
+<area shape="rect" id="node7" title=" " alt="" coords="198,304,261,331"/>
+<area shape="rect" id="node8" title=" " alt="" coords="675,304,733,331"/>
+<area shape="rect" id="node9" href="$Int24_8hpp.html" title=" " alt="" coords="285,304,432,331"/>
+<area shape="rect" id="node10" href="$Components_8hpp.html" title=" " alt="" coords="456,304,651,331"/>
+<area shape="rect" id="node11" href="$IMemory_8hpp.html" title=" " alt="" coords="328,229,435,256"/>
+<area shape="rect" id="node13" href="$ARectangleMemory_8hpp.html" title=" " alt="" coords="417,155,663,181"/>
+<area shape="rect" id="node16" title=" " alt="" coords="788,155,841,181"/>
+</map>

@@ -1,0 +1,12 @@
+<map id="ComSquare::Debugger::HeaderViewer" name="ComSquare::Debugger::HeaderViewer">
+<area shape="rect" id="node1" title="Window that show the header of the currently running game." alt="" coords="146,1388,314,1553"/>
+<area shape="rect" id="node3" href="$classComSquare_1_1Debugger_1_1ClosableWindow.html" title=" " alt="" coords="20,1631,248,1796"/>
+<area shape="rect" id="node2" href="$classComSquare_1_1SNES.html" title="Container of all the components of the SNES." alt="" coords="28,1013,277,1325"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,1432,121,1509"/>
+<area shape="rect" id="node5" href="$classComSquare_1_1Cartridge_1_1Cartridge.html" title="Contains the rom&#39;s memory/instructions." alt="" coords="302,1057,470,1281"/>
+<area shape="rect" id="node6" href="$classComSquare_1_1Ram_1_1Ram.html" title=" " alt="" coords="175,661,349,899"/>
+<area shape="rect" id="node7" href="$classComSquare_1_1Memory_1_1ARectangleMemory.html" title="Base memory class to map non continuous rectangle to the memory. (A rectangle that spam across more t..." alt="" coords="169,301,355,525"/>
+<area shape="rect" id="node8" href="$classComSquare_1_1Memory_1_1IMemory.html" title="Common interface implemented by all components mapping memory." alt="" coords="175,5,349,244"/>
+<area shape="rect" id="node9" href="$structComSquare_1_1Cartridge_1_1Header.html" title=" " alt="" coords="373,609,567,951"/>
+<area shape="rect" id="node10" href="$structComSquare_1_1Cartridge_1_1InterruptVectors.html" title=" " alt="" coords="387,293,553,532"/>
+</map>

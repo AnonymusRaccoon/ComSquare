@@ -1,0 +1,4 @@
+<map id="ComSquare::InvalidRectangleAddress" name="ComSquare::InvalidRectangleAddress">
+<area shape="rect" id="node1" title="Exception thrown when trying to read/write to an invalid address in a rectangle memory region." alt="" coords="5,131,220,237"/>
+<area shape="rect" id="node2" title=" " alt="" coords="69,5,156,83"/>
+</map>

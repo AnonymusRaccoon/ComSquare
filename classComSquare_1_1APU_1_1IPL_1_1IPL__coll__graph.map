@@ -1,0 +1,5 @@
+<map id="ComSquare::APU::IPL::IPL" name="ComSquare::APU::IPL::IPL">
+<area shape="rect" id="node1" title=" " alt="" coords="5,535,192,773"/>
+<area shape="rect" id="node2" href="$classComSquare_1_1Memory_1_1AMemory.html" title="Abstract class representing a continuous block of memory." alt="" coords="11,292,186,487"/>
+<area shape="rect" id="node3" href="$classComSquare_1_1Memory_1_1IMemory.html" title="Common interface implemented by all components mapping memory." alt="" coords="11,5,186,244"/>
+</map>

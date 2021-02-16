@@ -1,0 +1,8 @@
+<map id="ComSquare::DebuggableError" name="ComSquare::DebuggableError">
+<area shape="rect" id="node1" title=" " alt="" coords="325,131,540,208"/>
+<area shape="rect" id="node3" href="$classComSquare_1_1InvalidAction.html" title="Exception thrown when someone tries to load an invalid rom." alt="" coords="5,263,196,355"/>
+<area shape="rect" id="node4" href="$classComSquare_1_1InvalidAddress.html" title="Exception thrown when trying to read/write to an invalid address." alt="" coords="220,263,421,355"/>
+<area shape="rect" id="node5" href="$classComSquare_1_1InvalidOpcode.html" title="Exception thrown when someone tries to load an invalid rom." alt="" coords="445,256,644,363"/>
+<area shape="rect" id="node6" href="$classComSquare_1_1InvalidRomException.html" title="Exception thrown when someone tries to load an invalid rom." alt="" coords="669,263,911,355"/>
+<area shape="rect" id="node2" title=" " alt="" coords="375,5,490,83"/>
+</map>

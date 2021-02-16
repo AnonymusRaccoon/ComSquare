@@ -1,0 +1,1493 @@
+\hypertarget{classComSquare_1_1APU_1_1APU}{}\doxysection{Com\+Square\+::A\+PU\+::A\+PU Class Reference}
+\label{classComSquare_1_1APU_1_1APU}\index{ComSquare::APU::APU@{ComSquare::APU::APU}}
+
+
+{\ttfamily \#include $<$A\+P\+U.\+hpp$>$}
+
+
+
+Inheritance diagram for Com\+Square\+::A\+PU\+::A\+PU\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classComSquare_1_1APU_1_1APU__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Com\+Square\+::A\+PU\+::A\+PU\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classComSquare_1_1APU_1_1APU__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classComSquare_1_1APU_1_1APU_aa40309344de15657bf476336e238360e}{A\+PU}} (\mbox{\hyperlink{classComSquare_1_1Renderer_1_1IRenderer}{Renderer\+::\+I\+Renderer}} \&renderer)
+\item 
+\mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a2b7aec9ffbf172e9f8dc81068856023d}{A\+PU}} (const \mbox{\hyperlink{classComSquare_1_1APU_1_1APU}{A\+PU}} \&)=default
+\item 
+\mbox{\hyperlink{classComSquare_1_1APU_1_1APU}{A\+PU}} \& \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_ab86b407ba544676305397db670eb73c0}{operator=}} (const \mbox{\hyperlink{classComSquare_1_1APU_1_1APU}{A\+PU}} \&)=default
+\item 
+\mbox{\hyperlink{classComSquare_1_1APU_1_1APU_aa1e9f78721928169fae1990706accaac}{$\sim$\+A\+PU}} () override=default
+\item 
+uint8\+\_\+t \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a2a1d4a4557165e60997b0e03d51fa7f9}{read}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} addr) const override
+\begin{DoxyCompactList}\small\item\em Read from the \mbox{\hyperlink{classComSquare_1_1APU_1_1APU}{A\+PU}} ram. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_ab77224524520cbad442e89f3663cf67f}{write}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} addr, uint8\+\_\+t data) override
+\begin{DoxyCompactList}\small\item\em Write data to the \mbox{\hyperlink{classComSquare_1_1APU_1_1APU}{A\+PU}} ram. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_adebd1f46d0737254a943fd97a3192d2d}{get\+Name}} () const override
+\begin{DoxyCompactList}\small\item\em Get the name of this accessor (used for debug purpose) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceComSquare_a891b49feb5c3e0aaa4873ff19b49968c}{Component}} \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a8b78bdff28ca5bfaa0743f170014511b}{get\+Component}} () const override
+\begin{DoxyCompactList}\small\item\em Get the component of this accessor (used for debug purpose) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_afe51d33787c89667f29e250447e9dd03}{get\+Size}} () const override
+\begin{DoxyCompactList}\small\item\em Get the size of the data. This size can be lower than the mapped data. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_acfd2aa4b86b8bd4db182ecc676be0b64}{update}} (unsigned cycles)
+\begin{DoxyCompactList}\small\item\em This function execute the instructions received until the maximum number of cycles is reached. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a6f07525a5bd76ac9924d713de7768144}{reset}} ()
+\begin{DoxyCompactList}\small\item\em This function is executed when the \mbox{\hyperlink{classComSquare_1_1SNES}{S\+N\+ES}} is powered on or the reset button is pushed. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a5bb4ade5d64da5eb07c985c5c9080ca0}{is\+Debugger}} () const
+\begin{DoxyCompactList}\small\item\em Return true if the \mbox{\hyperlink{namespaceComSquare_1_1CPU}{C\+PU}} is overloaded with debugging features. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a821e9fe8c2ef07e4146f39673a574ac7}{\+\_\+internal\+Read}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} addr) const
+\begin{DoxyCompactList}\small\item\em Read from the \mbox{\hyperlink{classComSquare_1_1APU_1_1APU}{A\+PU}} ram. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a95c0889dc41358ce7f347b688645f20e}{\+\_\+internal\+Write}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} addr, uint8\+\_\+t data)
+\begin{DoxyCompactList}\small\item\em Write data to the \mbox{\hyperlink{classComSquare_1_1APU_1_1APU}{A\+PU}} ram. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a7420ac6c7c2803e0323f3e5085b711c9}{\+\_\+get\+Immediate\+Data}} ()
+\begin{DoxyCompactList}\small\item\em Get value of the Pointer Counter. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_ac7420ea440a4479294e13f6741d5dc03}{\+\_\+get\+Direct\+Addr}} ()
+\begin{DoxyCompactList}\small\item\em Get direct page offset. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a45f89d82966354b868cfecf62b6f70e0}{\+\_\+get\+Index\+X\+Addr}} ()
+\begin{DoxyCompactList}\small\item\em Get Index X offset. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a2964f5fc4df8b13b6c0c7f028c060160}{\+\_\+get\+Index\+Y\+Addr}} ()
+\begin{DoxyCompactList}\small\item\em Get Index Y offset. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a392b2a587f309b9211d4e3f9b9c461e7}{\+\_\+get\+Direct\+Addr\+ByX}} ()
+\begin{DoxyCompactList}\small\item\em Get direct page offset and add to it the X Index Flag. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a831cb83414761b175281b229bdd6997f}{\+\_\+get\+Direct\+Addr\+ByY}} ()
+\begin{DoxyCompactList}\small\item\em Get direct page offset and add to it the Y Index Flag. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a42ade1c2e49113d70da59c855807bb0e}{\+\_\+get\+Absolute\+Addr}} ()
+\begin{DoxyCompactList}\small\item\em Get absolute direct page offset. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a707c51e5acf91dc3b1caa0f21d5f8ddb}{\+\_\+get\+Absolute\+By\+X\+Addr}} ()
+\begin{DoxyCompactList}\small\item\em \+\_\+get absolute direct page + X Index offset \end{DoxyCompactList}\item 
+\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_aafdb22f952972a50c3af0cb77737e222}{\+\_\+get\+Absolute\+Addr\+ByX}} ()
+\begin{DoxyCompactList}\small\item\em Get absolute direct page offset and add to it the X Index Flag. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a87096664861a59e643f2632deb63214e}{\+\_\+get\+Absolute\+Addr\+ByY}} ()
+\begin{DoxyCompactList}\small\item\em Get absolute direct page offset and add to it the Y Index Flag. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_afd3bcf574ce3769837288e91a0ad2193}{\+\_\+get\+Absolute\+Direct\+By\+X\+Addr}} ()
+\begin{DoxyCompactList}\small\item\em Get absolute offset of the direct page added to the X Index Flag. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a4218cadee8feaf2655c475bfffdfb402}{\+\_\+get\+Absolute\+Direct\+Addr\+ByY}} ()
+\begin{DoxyCompactList}\small\item\em Get absolute offset of the direct page and add the Y Index Flag to it. \end{DoxyCompactList}\item 
+std\+::pair$<$ \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}, \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} $>$ \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a979e3bdf5fda835d54d77b173ec85f62}{\+\_\+get\+Absolute\+Bit}} ()
+\begin{DoxyCompactList}\small\item\em Get absolute offset and separate its bits. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_aacdf3eb482d66fb9b1cddc8b7726c93d}{\+\_\+set\+N\+Zflags}} (uint8\+\_\+t value)
+\begin{DoxyCompactList}\small\item\em Set Negative and Zero flags with value after an instruction. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a452bd595104eca872ecac44bfb129b8c}{\+\_\+execute\+Instruction}} ()
+\begin{DoxyCompactList}\small\item\em Execute a single instruction. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_ad72326405c02d111e065e0aac65ec7bd}{N\+OP}} ()
+\begin{DoxyCompactList}\small\item\em No Operation instruction, do nothing than delay. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a245fa7957d2e3939f49247fcaaf290d7}{S\+L\+E\+EP}} ()
+\begin{DoxyCompactList}\small\item\em Sleep instruction, halts the processor with S\+L\+E\+EP mode. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a04cb8e60dc1e37cf7e6f58502492774a}{S\+T\+OP}} ()
+\begin{DoxyCompactList}\small\item\em Stop instruction, halts the processor with S\+T\+OP mode. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a068ad7332f147667b6845cb77882e81e}{C\+L\+RC}} ()
+\begin{DoxyCompactList}\small\item\em Clear Carry instruction, set Carry flag to 0. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a0d71a90834aa9925081c02506d02695b}{S\+E\+TC}} ()
+\begin{DoxyCompactList}\small\item\em Set Carry instruction, Set Carry flag to 1. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a54a3e73db0290f565b6fa8e76ca239fc}{N\+O\+TC}} ()
+\begin{DoxyCompactList}\small\item\em Complement Carry instruction, invert Carry flag value. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_ad00867b74ebd194931b96039eb2518b0}{C\+L\+RV}} ()
+\begin{DoxyCompactList}\small\item\em Clear Overflow instruction, Set Overflow \& Half Carry flags to 0. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_ad031f211c7c305ffd4ebd78ff200e42b}{C\+L\+RP}} ()
+\begin{DoxyCompactList}\small\item\em Clear Direct Page instruction, Set Direct Page flag to 0. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_af1b10d1669b78a97730b666289d8db68}{S\+E\+TP}} ()
+\begin{DoxyCompactList}\small\item\em Set Direct Page instruction, Set Direct Page flag to 1. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_afc0cd011461fb6f71cab3e565cb4d06d}{EI}} ()
+\begin{DoxyCompactList}\small\item\em Enable interrupts instruction, Set Zero flag to 1. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_adedfee9467363033822ee52656bccc52}{DI}} ()
+\begin{DoxyCompactList}\small\item\em Disable interrupts instruction, Set Zero flag to 0. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_af7d4400fcde9723b5bc0da3b800fb94e}{S\+E\+T1}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} dp, uint8\+\_\+t bit)
+\begin{DoxyCompactList}\small\item\em Set 1-\/bit instruction, set a bit in direct page. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a353d93350399696ebeb44f34d5b77d9f}{C\+L\+R1}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} dp, uint8\+\_\+t bit)
+\begin{DoxyCompactList}\small\item\em Clear 1-\/bit instruction, clear a bit in direct page. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a55a4c21bdde0c783e51ad75f442104b3}{T\+S\+E\+T1}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} abs)
+\begin{DoxyCompactList}\small\item\em test set 1-\/bit instruction, Test and set bits with absolute address \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a7f42717a8d941d96ce0e9b8a51af4bff}{T\+C\+L\+R1}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} abs)
+\begin{DoxyCompactList}\small\item\em test clear 1-\/bit instruction, Test and clear bits with absolute address \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_af6c37050c61108aed256cab0429cf367}{A\+N\+D1}} (std\+::pair$<$ \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}, \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} $>$ operand, bool invert=false)
+\begin{DoxyCompactList}\small\item\em Performs a bitwise A\+ND on the value or inverse value of the specified bit with Carry flag and stores the result in the Carry flag. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a7a8040b04221d76ad9940a8016782b5d}{O\+R1}} (std\+::pair$<$ \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}, \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} $>$ operand, bool invert=false)
+\begin{DoxyCompactList}\small\item\em Performs a bitwise OR on the value or inverse value of the specified bit with Carry flag and stores the result in the Carry flag. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_ad541778f5c1c5867d47c879b46b2ece7}{E\+O\+R1}} (std\+::pair$<$ \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}, \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} $>$ operand)
+\begin{DoxyCompactList}\small\item\em Performs a exclusive OR on the value of the bit specified with Carry flag and stores the result in the Carry flag. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a164fac9b387524eecc865d8fdce3065c}{N\+O\+T1}} (std\+::pair$<$ \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}, \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} $>$ operand)
+\begin{DoxyCompactList}\small\item\em Performs a logical N\+OT on the value of the specified bit and stores the result. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a9b297f56e00315e3c4009c5b54d05ca9}{M\+O\+V1}} (std\+::pair$<$ \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}, \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} $>$ operand, bool to\+\_\+carry=false)
+\begin{DoxyCompactList}\small\item\em Either moves the specified bit into carry or moves carry into the specified bit. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_ae1381022f56b79e30acbc1bef542d4ab}{P\+U\+SH}} (uint8\+\_\+t value)
+\begin{DoxyCompactList}\small\item\em Push a value onto the stack and decrement SP Register. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a093fa6258efbe9187d8b76d666a9d545}{P\+OP}} (uint8\+\_\+t \&destination)
+\begin{DoxyCompactList}\small\item\em Increment SP Register and pop a single value from the stack. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_aceda209528cb4ed3870e0f57738d19a0}{C\+A\+LL}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} abs)
+\begin{DoxyCompactList}\small\item\em Push PC of the next instruction on the stack, then jump to the address at the specified location. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a51dfa62a340468bd1cecc949ef9b4ce4}{P\+C\+A\+LL}} ()
+\begin{DoxyCompactList}\small\item\em Perform a call in the upper page of memory, read PC Register and add 0x\+F\+F00 to it. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a6531a40e5a7f3450b2ac2896ea6f92e4}{T\+C\+A\+LL}} (uint8\+\_\+t bit)
+\begin{DoxyCompactList}\small\item\em Performs a call on one of the 16 vectors in the memory range of \$\+F\+F\+C0 to \$\+F\+F\+DF. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a2663ba08db3396b83b84596a2ea34aad}{B\+RK}} ()
+\begin{DoxyCompactList}\small\item\em Cause a software interrupt. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_adc6e6be5204a33c8066c51f20603645d}{R\+ET}} ()
+\begin{DoxyCompactList}\small\item\em Return from subroutine. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a2969c53b740f7313db71d759be4294e1}{R\+E\+TI}} ()
+\begin{DoxyCompactList}\small\item\em Return from interrupt. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a445b09268eb6f30fe4472d591bf67550}{B\+RA}} (int8\+\_\+t offset)
+\begin{DoxyCompactList}\small\item\em Branch Always, go to the specified location from the next instruction. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a219472bb88b2cc57a97fca0242301dd2}{B\+EQ}} (int8\+\_\+t offset)
+\begin{DoxyCompactList}\small\item\em Branch if Zero Flag is set. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a983897e6215c2cdabc43dc251a35924c}{B\+NE}} (int8\+\_\+t offset)
+\begin{DoxyCompactList}\small\item\em Branch if Zero Flag is clear. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_ae30ca01ecf978f6af21ff504f5e7e125}{B\+CS}} (int8\+\_\+t offset)
+\begin{DoxyCompactList}\small\item\em Branch if Carry Flag is set. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_af4772bd2f8182e06dae3e294bac8b5d7}{B\+CC}} (int8\+\_\+t offset)
+\begin{DoxyCompactList}\small\item\em Branch if Carry Flag is clear. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a4f4539d43695f7beafa06779f72e6904}{B\+VS}} (int8\+\_\+t offset)
+\begin{DoxyCompactList}\small\item\em Branch if Overflow Flag is set. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_ad838bfe53d566adfd3b263cee4a94f8d}{B\+VC}} (int8\+\_\+t offset)
+\begin{DoxyCompactList}\small\item\em Branch if Overflow Flag is set. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a59ec82dd98ba0a9cad33e5db670d98c2}{B\+MI}} (int8\+\_\+t offset)
+\begin{DoxyCompactList}\small\item\em Branch if Negative Flag is set. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a374a0a93372466533e5fad3806107823}{B\+PL}} (int8\+\_\+t offset)
+\begin{DoxyCompactList}\small\item\em Branch if Negative Flag is clear. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a6278abfd1c49d5c61c1a03e98b205d62}{B\+BS}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} addr, int8\+\_\+t offset, uint8\+\_\+t bit)
+\begin{DoxyCompactList}\small\item\em Branch if the specified is set in the address, go to the specified location from the next instruction. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a5deeaa171469839dfca5fa6887ca07a1}{B\+BC}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} addr, int8\+\_\+t offset, uint8\+\_\+t bit)
+\begin{DoxyCompactList}\small\item\em Branch if the specified is clear in the address, go to the specified location from the next instruction. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_af1d55e6740ab5d82788ff935e02441e5}{C\+B\+NE}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} addr, int8\+\_\+t offset, bool by\+\_\+x=false)
+\begin{DoxyCompactList}\small\item\em Branch if the value at the specified address is not equal to the Accumulator Flag. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_aa8ba5e1ee82c546e381847267e8c7360}{D\+B\+NZ}} (int8\+\_\+t offset, bool direct\+\_\+addr=false)
+\begin{DoxyCompactList}\small\item\em Decrement a value then branch to the specified location if the value is not zero. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a96eda24d0f00ea7c91d5bc3511b7e9cb}{J\+MP}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} addr, bool by\+\_\+x=false)
+\begin{DoxyCompactList}\small\item\em Jump to the specified location. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a2c46196252a32ce632e9dace46f6e6e7}{D\+AA}} ()
+\begin{DoxyCompactList}\small\item\em Decimal adjust A for addition. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a92cae8648621b609d70f8581016e5628}{D\+AS}} ()
+\begin{DoxyCompactList}\small\item\em Decimal adjust A for subtraction. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a8b2e7a49a0f107044838856b5c0ae767}{M\+UL}} ()
+\begin{DoxyCompactList}\small\item\em Store the 16-\/bit value of Y $\ast$ A into YA. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_ad3cbf48482f0078e7118596d2591070f}{D\+IV}} ()
+\begin{DoxyCompactList}\small\item\em Divide the 16-\/bit value YA by X, storing the quotient in A and the remainder in Y. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a5d106444584603a97257ed7bb6085018}{I\+N\+CW}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} addr)
+\begin{DoxyCompactList}\small\item\em Increment a word value. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a06a7519cc8a1b4d9379cf6250ebb5de9}{D\+E\+CW}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} addr)
+\begin{DoxyCompactList}\small\item\em Decrement a word value. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a6ce4e7a7c81044f80777e20f4e48b553}{A\+D\+DW}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} addr)
+\begin{DoxyCompactList}\small\item\em Add YA with a word value. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_ae108494f51e475d9b2060dd544ae11e9}{S\+U\+BW}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} addr)
+\begin{DoxyCompactList}\small\item\em Subtract YA with a word value. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a84cbf14e6b31617b99e25b8e61f40a60}{C\+M\+PW}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} addr)
+\begin{DoxyCompactList}\small\item\em Compare YA with a word value. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a7761e7a5a20f31479127793d941c76b1}{M\+O\+VW}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} addr, bool to\+\_\+ya=false)
+\begin{DoxyCompactList}\small\item\em Sets a word value equal to another. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a1fd75d5281e3d367efad1df12c7dc525}{A\+SL}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} operand, int cycles, bool accumulator=false)
+\begin{DoxyCompactList}\small\item\em Arithmetic Shift Left. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a177a57dce73eb2b93a265490eba599d3}{L\+SR}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} operand, int cycles, bool accumulator=false)
+\begin{DoxyCompactList}\small\item\em Logical Shift Right. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a0f0a97a777a930fdfaac95595a13d78b}{R\+OL}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} operand, int cycles, bool accumulator=false)
+\begin{DoxyCompactList}\small\item\em Rotate Bits Left. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a42502082bdb3038d621292161244f319}{R\+OR}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} operand, int cycles, bool accumulator=false)
+\begin{DoxyCompactList}\small\item\em Rotate Bits Right. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_ab01c937f5d75060b4f2983a87e1a2843}{X\+CN}} ()
+\begin{DoxyCompactList}\small\item\em Exchange Nibbles. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_ac3e24dd4d9cd122c08280c91341c94c5}{I\+NC}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} addr, int cycles)
+\begin{DoxyCompactList}\small\item\em Increment a value at an address. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a8fb47101734520c43e461d713c07adf5}{I\+N\+Creg}} (uint8\+\_\+t \&value)
+\begin{DoxyCompactList}\small\item\em Increment a register. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a18211e2e59f6e5bc019cd5e93a6f3e17}{D\+EC}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} addr, int cycles)
+\begin{DoxyCompactList}\small\item\em Decrement a value at an address. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_addb828d374276b4c176947fecf964df0}{D\+E\+Creg}} (uint8\+\_\+t \&value)
+\begin{DoxyCompactList}\small\item\em Decrement a register. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_aae51dd16a205d33e1649058ddd8a2ecc}{A\+ND}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} operand1, \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} operand2, int cycles)
+\begin{DoxyCompactList}\small\item\em Perform a bitwise A\+ND. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a5297d04e47e59482e7c94b035e6c8375}{A\+N\+Dacc}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} addr, int cycles)
+\begin{DoxyCompactList}\small\item\em Perform a bitwise A\+ND on the Accumulator flag. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a108d8c767d93fbce7d46ec1c8f99c74c}{OR}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} operand1, \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} operand2, int cycles)
+\begin{DoxyCompactList}\small\item\em Perform a bitwise OR. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_ad05d11fac824c95562e016cfdd34d3c8}{O\+Racc}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} addr, int cycles)
+\begin{DoxyCompactList}\small\item\em Perform a bitwise OR on the Accumulator flag. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_ae63fd7b824cf09547afa48820fd6c945}{E\+OR}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} operand1, \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} operand2, int cycles)
+\begin{DoxyCompactList}\small\item\em Perform an Exclusive OR. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_aa956010d93cc6ae3f74e13a55a78e210}{E\+O\+Racc}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} addr, int cycles)
+\begin{DoxyCompactList}\small\item\em Perform an Exclusive OR on the Accumulator flag. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a1ef82ee3d8f0ac09b9c36de703bba4bf}{A\+DC}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} operand1, \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} operand2, int cycles)
+\begin{DoxyCompactList}\small\item\em Add operand1 with operand2 and carry. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a9c75412af5a681f7c2b013caadf0d099}{A\+D\+Cacc}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} addr, int cycles)
+\begin{DoxyCompactList}\small\item\em ! \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a63bcae3e4abf2ef6a1e813b476a664f8}{S\+BC}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} operand1, \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} operand2, int cycles)
+\begin{DoxyCompactList}\small\item\em Subtract operand1 with operand2 and carry. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a8bb74054af48945ffbed3d379b839eb4}{S\+B\+Cacc}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} addr, int cycles)
+\begin{DoxyCompactList}\small\item\em Subtract Accumulator Flag with address and carry. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_aedc9f7d034c64c2c27b4b23e737c1de1}{C\+MP}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} operand1, \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} operand2, int cycles)
+\begin{DoxyCompactList}\small\item\em Compare the two values of the operands and set N\+ZC flags. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a71573e7df3b81eb96a5c7840bb30138e}{C\+M\+Preg}} (uint8\+\_\+t \&reg, \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} addr, int cycles)
+\begin{DoxyCompactList}\small\item\em Compare a Register Flag with the value of the operand and set N\+ZC flags. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a484d99d1f2a06e2b919c220406cbd567}{M\+OV}} (uint8\+\_\+t \&reg\+From, uint8\+\_\+t \&reg\+To, bool set\+Flags=true)
+\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a42b3d98fbcc19572358109079efdeb7f}{M\+OV}} (uint8\+\_\+t \&reg\+From, \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} mem\+To, int cycles, bool incrementX=false)
+\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a09fec4298e0a371809ae167a84807416}{M\+OV}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} mem\+From, uint8\+\_\+t \&reg\+To, int cycles, bool incrementX=false)
+\item 
+int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a4913ec5fe3385d9ffd70df18bc87b940}{M\+OV}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} mem\+To, \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} mem\+From)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structComSquare_1_1APU_1_1Registers}{Registers}} \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a31a0eee6623c22ecc1ba891fefec8e3f}{\+\_\+registers}} \{\}
+\begin{DoxyCompactList}\small\item\em All the registers of the \mbox{\hyperlink{classComSquare_1_1APU_1_1APU}{A\+PU}} \mbox{\hyperlink{namespaceComSquare_1_1CPU}{C\+PU}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structComSquare_1_1APU_1_1InternalRegisters}{Internal\+Registers}} \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a6f6c534e0f850c7882cefdc5455aedca}{\+\_\+internal\+Registers}} \{\}
+\begin{DoxyCompactList}\small\item\em Internal registers of the \mbox{\hyperlink{namespaceComSquare_1_1CPU}{C\+PU}} (accessible from the bus via addr \$4200 to \$421F). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classComSquare_1_1Renderer_1_1IRenderer}{Renderer\+::\+I\+Renderer}} \& \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a2abc2f8ae1b10ddcace9751e8bf4dafb}{\+\_\+renderer}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{namespaceComSquare_1_1Renderer}{Renderer}} used to play sounds. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{structComSquare_1_1APU_1_1MemoryMap}{Memory\+Map}} $>$ \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a74ed36b9e126b30591ab9b99ecd792d3}{\+\_\+map}}
+\begin{DoxyCompactList}\small\item\em Internal \mbox{\hyperlink{classComSquare_1_1APU_1_1APU}{A\+PU}} memory separated according to their utility. \end{DoxyCompactList}\item 
+std\+::array$<$ int16\+\_\+t, 0x10000 $>$ \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a40fae5a94b9e536d983773f343d839af}{\+\_\+sound\+Buffer}}
+\begin{DoxyCompactList}\small\item\em Buffer containing samples to be played. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP}{D\+S\+P\+::\+D\+SP}} \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a9c982ded081a729dab813032adf568df}{\+\_\+dsp}}
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{namespaceComSquare_1_1APU_1_1DSP}{D\+SP}} component used to produce sound. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceComSquare_1_1APU_aa9eb7c3ae29577991715f42d480c1b67}{State\+Mode}} \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_aaa3be325a6082012d56e40c7b4572945}{\+\_\+state}} = \mbox{\hyperlink{namespaceComSquare_1_1APU_aa9eb7c3ae29577991715f42d480c1b67adaf8f365a5804154b0b5ecdb8d546032}{Running}}
+\begin{DoxyCompactList}\small\item\em Current state of \mbox{\hyperlink{classComSquare_1_1APU_1_1APU}{A\+PU}} \mbox{\hyperlink{namespaceComSquare_1_1CPU}{C\+PU}}. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a0769ec72f3e4619e7c4c992a67302385}{\+\_\+padding\+Cycles}} = 0
+\begin{DoxyCompactList}\small\item\em Keep the number of excess cycles executed to pad the next update. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_aa40309344de15657bf476336e238360e}\label{classComSquare_1_1APU_1_1APU_aa40309344de15657bf476336e238360e}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!APU@{APU}}
+\index{APU@{APU}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{APU()}{APU()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+A\+PU (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classComSquare_1_1Renderer_1_1IRenderer}{Renderer\+::\+I\+Renderer}} \&}]{renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a2b7aec9ffbf172e9f8dc81068856023d}\label{classComSquare_1_1APU_1_1APU_a2b7aec9ffbf172e9f8dc81068856023d}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!APU@{APU}}
+\index{APU@{APU}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{APU()}{APU()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+A\+PU (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classComSquare_1_1APU_1_1APU}{A\+PU}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_aa1e9f78721928169fae1990706accaac}\label{classComSquare_1_1APU_1_1APU_aa1e9f78721928169fae1990706accaac}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!````~APU@{$\sim$APU}}
+\index{````~APU@{$\sim$APU}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{$\sim$APU()}{~APU()}}
+{\footnotesize\ttfamily Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::$\sim$\+A\+PU (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a452bd595104eca872ecac44bfb129b8c}\label{classComSquare_1_1APU_1_1APU_a452bd595104eca872ecac44bfb129b8c}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!\_executeInstruction@{\_executeInstruction}}
+\index{\_executeInstruction@{\_executeInstruction}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{\_executeInstruction()}{\_executeInstruction()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+\_\+execute\+Instruction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Execute a single instruction. 
+
+\begin{DoxyReturn}{Returns}
+The number of cycles that the instruction took. 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classComSquare_1_1Debugger_1_1APUDebug_afa92b6493732373cdd5818cc28fe1be1}{Com\+Square\+::\+Debugger\+::\+A\+P\+U\+Debug}}.
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a42ade1c2e49113d70da59c855807bb0e}\label{classComSquare_1_1APU_1_1APU_a42ade1c2e49113d70da59c855807bb0e}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!\_getAbsoluteAddr@{\_getAbsoluteAddr}}
+\index{\_getAbsoluteAddr@{\_getAbsoluteAddr}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{\_getAbsoluteAddr()}{\_getAbsoluteAddr()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+\_\+get\+Absolute\+Addr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Get absolute direct page offset. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_aafdb22f952972a50c3af0cb77737e222}\label{classComSquare_1_1APU_1_1APU_aafdb22f952972a50c3af0cb77737e222}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!\_getAbsoluteAddrByX@{\_getAbsoluteAddrByX}}
+\index{\_getAbsoluteAddrByX@{\_getAbsoluteAddrByX}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{\_getAbsoluteAddrByX()}{\_getAbsoluteAddrByX()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+\_\+get\+Absolute\+Addr\+ByX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Get absolute direct page offset and add to it the X Index Flag. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a87096664861a59e643f2632deb63214e}\label{classComSquare_1_1APU_1_1APU_a87096664861a59e643f2632deb63214e}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!\_getAbsoluteAddrByY@{\_getAbsoluteAddrByY}}
+\index{\_getAbsoluteAddrByY@{\_getAbsoluteAddrByY}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{\_getAbsoluteAddrByY()}{\_getAbsoluteAddrByY()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+\_\+get\+Absolute\+Addr\+ByY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Get absolute direct page offset and add to it the Y Index Flag. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a979e3bdf5fda835d54d77b173ec85f62}\label{classComSquare_1_1APU_1_1APU_a979e3bdf5fda835d54d77b173ec85f62}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!\_getAbsoluteBit@{\_getAbsoluteBit}}
+\index{\_getAbsoluteBit@{\_getAbsoluteBit}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{\_getAbsoluteBit()}{\_getAbsoluteBit()}}
+{\footnotesize\ttfamily std\+::pair$<$ \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}, \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} $>$ Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+\_\+get\+Absolute\+Bit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Get absolute offset and separate its bits. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a707c51e5acf91dc3b1caa0f21d5f8ddb}\label{classComSquare_1_1APU_1_1APU_a707c51e5acf91dc3b1caa0f21d5f8ddb}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!\_getAbsoluteByXAddr@{\_getAbsoluteByXAddr}}
+\index{\_getAbsoluteByXAddr@{\_getAbsoluteByXAddr}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{\_getAbsoluteByXAddr()}{\_getAbsoluteByXAddr()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+\_\+get\+Absolute\+By\+X\+Addr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\+\_\+get absolute direct page + X Index offset 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a4218cadee8feaf2655c475bfffdfb402}\label{classComSquare_1_1APU_1_1APU_a4218cadee8feaf2655c475bfffdfb402}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!\_getAbsoluteDirectAddrByY@{\_getAbsoluteDirectAddrByY}}
+\index{\_getAbsoluteDirectAddrByY@{\_getAbsoluteDirectAddrByY}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{\_getAbsoluteDirectAddrByY()}{\_getAbsoluteDirectAddrByY()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+\_\+get\+Absolute\+Direct\+Addr\+ByY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Get absolute offset of the direct page and add the Y Index Flag to it. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_afd3bcf574ce3769837288e91a0ad2193}\label{classComSquare_1_1APU_1_1APU_afd3bcf574ce3769837288e91a0ad2193}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!\_getAbsoluteDirectByXAddr@{\_getAbsoluteDirectByXAddr}}
+\index{\_getAbsoluteDirectByXAddr@{\_getAbsoluteDirectByXAddr}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{\_getAbsoluteDirectByXAddr()}{\_getAbsoluteDirectByXAddr()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+\_\+get\+Absolute\+Direct\+By\+X\+Addr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Get absolute offset of the direct page added to the X Index Flag. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_ac7420ea440a4479294e13f6741d5dc03}\label{classComSquare_1_1APU_1_1APU_ac7420ea440a4479294e13f6741d5dc03}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!\_getDirectAddr@{\_getDirectAddr}}
+\index{\_getDirectAddr@{\_getDirectAddr}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{\_getDirectAddr()}{\_getDirectAddr()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+\_\+get\+Direct\+Addr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Get direct page offset. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a392b2a587f309b9211d4e3f9b9c461e7}\label{classComSquare_1_1APU_1_1APU_a392b2a587f309b9211d4e3f9b9c461e7}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!\_getDirectAddrByX@{\_getDirectAddrByX}}
+\index{\_getDirectAddrByX@{\_getDirectAddrByX}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{\_getDirectAddrByX()}{\_getDirectAddrByX()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+\_\+get\+Direct\+Addr\+ByX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Get direct page offset and add to it the X Index Flag. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a831cb83414761b175281b229bdd6997f}\label{classComSquare_1_1APU_1_1APU_a831cb83414761b175281b229bdd6997f}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!\_getDirectAddrByY@{\_getDirectAddrByY}}
+\index{\_getDirectAddrByY@{\_getDirectAddrByY}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{\_getDirectAddrByY()}{\_getDirectAddrByY()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+\_\+get\+Direct\+Addr\+ByY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Get direct page offset and add to it the Y Index Flag. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a7420ac6c7c2803e0323f3e5085b711c9}\label{classComSquare_1_1APU_1_1APU_a7420ac6c7c2803e0323f3e5085b711c9}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!\_getImmediateData@{\_getImmediateData}}
+\index{\_getImmediateData@{\_getImmediateData}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{\_getImmediateData()}{\_getImmediateData()}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+\_\+get\+Immediate\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Get value of the Pointer Counter. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a45f89d82966354b868cfecf62b6f70e0}\label{classComSquare_1_1APU_1_1APU_a45f89d82966354b868cfecf62b6f70e0}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!\_getIndexXAddr@{\_getIndexXAddr}}
+\index{\_getIndexXAddr@{\_getIndexXAddr}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{\_getIndexXAddr()}{\_getIndexXAddr()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+\_\+get\+Index\+X\+Addr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Get Index X offset. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a2964f5fc4df8b13b6c0c7f028c060160}\label{classComSquare_1_1APU_1_1APU_a2964f5fc4df8b13b6c0c7f028c060160}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!\_getIndexYAddr@{\_getIndexYAddr}}
+\index{\_getIndexYAddr@{\_getIndexYAddr}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{\_getIndexYAddr()}{\_getIndexYAddr()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+\_\+get\+Index\+Y\+Addr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Get Index Y offset. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a821e9fe8c2ef07e4146f39673a574ac7}\label{classComSquare_1_1APU_1_1APU_a821e9fe8c2ef07e4146f39673a574ac7}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!\_internalRead@{\_internalRead}}
+\index{\_internalRead@{\_internalRead}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{\_internalRead()}{\_internalRead()}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+\_\+internal\+Read (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{addr }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Read from the \mbox{\hyperlink{classComSquare_1_1APU_1_1APU}{A\+PU}} ram. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & The address to read from. The address 0x0000 should refer to the first byte of the register. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classComSquare_1_1InvalidAddress}{Invalid\+Address}}} & will be thrown if the address is more than \$\+F\+F\+FF (the number of register). \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+Return the data. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a95c0889dc41358ce7f347b688645f20e}\label{classComSquare_1_1APU_1_1APU_a95c0889dc41358ce7f347b688645f20e}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!\_internalWrite@{\_internalWrite}}
+\index{\_internalWrite@{\_internalWrite}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{\_internalWrite()}{\_internalWrite()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+\_\+internal\+Write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{addr,  }\item[{uint8\+\_\+t}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Write data to the \mbox{\hyperlink{classComSquare_1_1APU_1_1APU}{A\+PU}} ram. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & The address to write to. The address 0x0000 should refer to the first byte of register. \\
+\hline
+{\em data} & The new value of the register. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classComSquare_1_1InvalidAddress}{Invalid\+Address}}} & will be thrown if the address is more than \$\+F\+F\+FF (the number of register). \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_aacdf3eb482d66fb9b1cddc8b7726c93d}\label{classComSquare_1_1APU_1_1APU_aacdf3eb482d66fb9b1cddc8b7726c93d}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!\_setNZflags@{\_setNZflags}}
+\index{\_setNZflags@{\_setNZflags}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{\_setNZflags()}{\_setNZflags()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+\_\+set\+N\+Zflags (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Set Negative and Zero flags with value after an instruction. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a1ef82ee3d8f0ac09b9c36de703bba4bf}\label{classComSquare_1_1APU_1_1APU_a1ef82ee3d8f0ac09b9c36de703bba4bf}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!ADC@{ADC}}
+\index{ADC@{ADC}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{ADC()}{ADC()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+A\+DC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{operand1,  }\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{operand2,  }\item[{int}]{cycles }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Add operand1 with operand2 and carry. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a9c75412af5a681f7c2b013caadf0d099}\label{classComSquare_1_1APU_1_1APU_a9c75412af5a681f7c2b013caadf0d099}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!ADCacc@{ADCacc}}
+\index{ADCacc@{ADCacc}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{ADCacc()}{ADCacc()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+A\+D\+Cacc (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{addr,  }\item[{int}]{cycles }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+! 
+
+Add Accumulator Flag with value at address and carry. \mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a6ce4e7a7c81044f80777e20f4e48b553}\label{classComSquare_1_1APU_1_1APU_a6ce4e7a7c81044f80777e20f4e48b553}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!ADDW@{ADDW}}
+\index{ADDW@{ADDW}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{ADDW()}{ADDW()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+A\+D\+DW (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{addr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Add YA with a word value. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_aae51dd16a205d33e1649058ddd8a2ecc}\label{classComSquare_1_1APU_1_1APU_aae51dd16a205d33e1649058ddd8a2ecc}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!AND@{AND}}
+\index{AND@{AND}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{AND()}{AND()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+A\+ND (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{operand1,  }\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{operand2,  }\item[{int}]{cycles }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Perform a bitwise A\+ND. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_af6c37050c61108aed256cab0429cf367}\label{classComSquare_1_1APU_1_1APU_af6c37050c61108aed256cab0429cf367}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!AND1@{AND1}}
+\index{AND1@{AND1}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{AND1()}{AND1()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+A\+N\+D1 (\begin{DoxyParamCaption}\item[{std\+::pair$<$ \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}, \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} $>$}]{operand,  }\item[{bool}]{invert = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Performs a bitwise A\+ND on the value or inverse value of the specified bit with Carry flag and stores the result in the Carry flag. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a5297d04e47e59482e7c94b035e6c8375}\label{classComSquare_1_1APU_1_1APU_a5297d04e47e59482e7c94b035e6c8375}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!ANDacc@{ANDacc}}
+\index{ANDacc@{ANDacc}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{ANDacc()}{ANDacc()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+A\+N\+Dacc (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{addr,  }\item[{int}]{cycles }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Perform a bitwise A\+ND on the Accumulator flag. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a1fd75d5281e3d367efad1df12c7dc525}\label{classComSquare_1_1APU_1_1APU_a1fd75d5281e3d367efad1df12c7dc525}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!ASL@{ASL}}
+\index{ASL@{ASL}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{ASL()}{ASL()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+A\+SL (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{operand,  }\item[{int}]{cycles,  }\item[{bool}]{accumulator = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Arithmetic Shift Left. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a5deeaa171469839dfca5fa6887ca07a1}\label{classComSquare_1_1APU_1_1APU_a5deeaa171469839dfca5fa6887ca07a1}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!BBC@{BBC}}
+\index{BBC@{BBC}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{BBC()}{BBC()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+B\+BC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{addr,  }\item[{int8\+\_\+t}]{offset,  }\item[{uint8\+\_\+t}]{bit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Branch if the specified is clear in the address, go to the specified location from the next instruction. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a6278abfd1c49d5c61c1a03e98b205d62}\label{classComSquare_1_1APU_1_1APU_a6278abfd1c49d5c61c1a03e98b205d62}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!BBS@{BBS}}
+\index{BBS@{BBS}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{BBS()}{BBS()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+B\+BS (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{addr,  }\item[{int8\+\_\+t}]{offset,  }\item[{uint8\+\_\+t}]{bit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Branch if the specified is set in the address, go to the specified location from the next instruction. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_af4772bd2f8182e06dae3e294bac8b5d7}\label{classComSquare_1_1APU_1_1APU_af4772bd2f8182e06dae3e294bac8b5d7}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!BCC@{BCC}}
+\index{BCC@{BCC}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{BCC()}{BCC()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+B\+CC (\begin{DoxyParamCaption}\item[{int8\+\_\+t}]{offset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Branch if Carry Flag is clear. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_ae30ca01ecf978f6af21ff504f5e7e125}\label{classComSquare_1_1APU_1_1APU_ae30ca01ecf978f6af21ff504f5e7e125}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!BCS@{BCS}}
+\index{BCS@{BCS}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{BCS()}{BCS()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+B\+CS (\begin{DoxyParamCaption}\item[{int8\+\_\+t}]{offset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Branch if Carry Flag is set. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a219472bb88b2cc57a97fca0242301dd2}\label{classComSquare_1_1APU_1_1APU_a219472bb88b2cc57a97fca0242301dd2}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!BEQ@{BEQ}}
+\index{BEQ@{BEQ}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{BEQ()}{BEQ()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+B\+EQ (\begin{DoxyParamCaption}\item[{int8\+\_\+t}]{offset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Branch if Zero Flag is set. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a59ec82dd98ba0a9cad33e5db670d98c2}\label{classComSquare_1_1APU_1_1APU_a59ec82dd98ba0a9cad33e5db670d98c2}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!BMI@{BMI}}
+\index{BMI@{BMI}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{BMI()}{BMI()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+B\+MI (\begin{DoxyParamCaption}\item[{int8\+\_\+t}]{offset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Branch if Negative Flag is set. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a983897e6215c2cdabc43dc251a35924c}\label{classComSquare_1_1APU_1_1APU_a983897e6215c2cdabc43dc251a35924c}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!BNE@{BNE}}
+\index{BNE@{BNE}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{BNE()}{BNE()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+B\+NE (\begin{DoxyParamCaption}\item[{int8\+\_\+t}]{offset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Branch if Zero Flag is clear. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a374a0a93372466533e5fad3806107823}\label{classComSquare_1_1APU_1_1APU_a374a0a93372466533e5fad3806107823}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!BPL@{BPL}}
+\index{BPL@{BPL}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{BPL()}{BPL()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+B\+PL (\begin{DoxyParamCaption}\item[{int8\+\_\+t}]{offset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Branch if Negative Flag is clear. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a445b09268eb6f30fe4472d591bf67550}\label{classComSquare_1_1APU_1_1APU_a445b09268eb6f30fe4472d591bf67550}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!BRA@{BRA}}
+\index{BRA@{BRA}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{BRA()}{BRA()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+B\+RA (\begin{DoxyParamCaption}\item[{int8\+\_\+t}]{offset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Branch Always, go to the specified location from the next instruction. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a2663ba08db3396b83b84596a2ea34aad}\label{classComSquare_1_1APU_1_1APU_a2663ba08db3396b83b84596a2ea34aad}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!BRK@{BRK}}
+\index{BRK@{BRK}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{BRK()}{BRK()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+B\+RK (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Cause a software interrupt. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_ad838bfe53d566adfd3b263cee4a94f8d}\label{classComSquare_1_1APU_1_1APU_ad838bfe53d566adfd3b263cee4a94f8d}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!BVC@{BVC}}
+\index{BVC@{BVC}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{BVC()}{BVC()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+B\+VC (\begin{DoxyParamCaption}\item[{int8\+\_\+t}]{offset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Branch if Overflow Flag is set. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a4f4539d43695f7beafa06779f72e6904}\label{classComSquare_1_1APU_1_1APU_a4f4539d43695f7beafa06779f72e6904}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!BVS@{BVS}}
+\index{BVS@{BVS}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{BVS()}{BVS()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+B\+VS (\begin{DoxyParamCaption}\item[{int8\+\_\+t}]{offset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Branch if Overflow Flag is set. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_aceda209528cb4ed3870e0f57738d19a0}\label{classComSquare_1_1APU_1_1APU_aceda209528cb4ed3870e0f57738d19a0}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!CALL@{CALL}}
+\index{CALL@{CALL}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{CALL()}{CALL()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+C\+A\+LL (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{abs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Push PC of the next instruction on the stack, then jump to the address at the specified location. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_af1d55e6740ab5d82788ff935e02441e5}\label{classComSquare_1_1APU_1_1APU_af1d55e6740ab5d82788ff935e02441e5}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!CBNE@{CBNE}}
+\index{CBNE@{CBNE}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{CBNE()}{CBNE()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+C\+B\+NE (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{addr,  }\item[{int8\+\_\+t}]{offset,  }\item[{bool}]{by\+\_\+x = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Branch if the value at the specified address is not equal to the Accumulator Flag. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a353d93350399696ebeb44f34d5b77d9f}\label{classComSquare_1_1APU_1_1APU_a353d93350399696ebeb44f34d5b77d9f}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!CLR1@{CLR1}}
+\index{CLR1@{CLR1}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{CLR1()}{CLR1()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+C\+L\+R1 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{dp,  }\item[{uint8\+\_\+t}]{bit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Clear 1-\/bit instruction, clear a bit in direct page. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a068ad7332f147667b6845cb77882e81e}\label{classComSquare_1_1APU_1_1APU_a068ad7332f147667b6845cb77882e81e}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!CLRC@{CLRC}}
+\index{CLRC@{CLRC}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{CLRC()}{CLRC()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+C\+L\+RC (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Clear Carry instruction, set Carry flag to 0. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_ad031f211c7c305ffd4ebd78ff200e42b}\label{classComSquare_1_1APU_1_1APU_ad031f211c7c305ffd4ebd78ff200e42b}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!CLRP@{CLRP}}
+\index{CLRP@{CLRP}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{CLRP()}{CLRP()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+C\+L\+RP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Clear Direct Page instruction, Set Direct Page flag to 0. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_ad00867b74ebd194931b96039eb2518b0}\label{classComSquare_1_1APU_1_1APU_ad00867b74ebd194931b96039eb2518b0}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!CLRV@{CLRV}}
+\index{CLRV@{CLRV}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{CLRV()}{CLRV()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+C\+L\+RV (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Clear Overflow instruction, Set Overflow \& Half Carry flags to 0. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_aedc9f7d034c64c2c27b4b23e737c1de1}\label{classComSquare_1_1APU_1_1APU_aedc9f7d034c64c2c27b4b23e737c1de1}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!CMP@{CMP}}
+\index{CMP@{CMP}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{CMP()}{CMP()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+C\+MP (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{operand1,  }\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{operand2,  }\item[{int}]{cycles }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Compare the two values of the operands and set N\+ZC flags. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a71573e7df3b81eb96a5c7840bb30138e}\label{classComSquare_1_1APU_1_1APU_a71573e7df3b81eb96a5c7840bb30138e}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!CMPreg@{CMPreg}}
+\index{CMPreg@{CMPreg}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{CMPreg()}{CMPreg()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+C\+M\+Preg (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \&}]{reg,  }\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{addr,  }\item[{int}]{cycles }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Compare a Register Flag with the value of the operand and set N\+ZC flags. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a84cbf14e6b31617b99e25b8e61f40a60}\label{classComSquare_1_1APU_1_1APU_a84cbf14e6b31617b99e25b8e61f40a60}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!CMPW@{CMPW}}
+\index{CMPW@{CMPW}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{CMPW()}{CMPW()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+C\+M\+PW (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{addr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Compare YA with a word value. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a2c46196252a32ce632e9dace46f6e6e7}\label{classComSquare_1_1APU_1_1APU_a2c46196252a32ce632e9dace46f6e6e7}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!DAA@{DAA}}
+\index{DAA@{DAA}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{DAA()}{DAA()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+D\+AA (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Decimal adjust A for addition. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a92cae8648621b609d70f8581016e5628}\label{classComSquare_1_1APU_1_1APU_a92cae8648621b609d70f8581016e5628}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!DAS@{DAS}}
+\index{DAS@{DAS}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{DAS()}{DAS()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+D\+AS (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Decimal adjust A for subtraction. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_aa8ba5e1ee82c546e381847267e8c7360}\label{classComSquare_1_1APU_1_1APU_aa8ba5e1ee82c546e381847267e8c7360}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!DBNZ@{DBNZ}}
+\index{DBNZ@{DBNZ}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{DBNZ()}{DBNZ()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+D\+B\+NZ (\begin{DoxyParamCaption}\item[{int8\+\_\+t}]{offset,  }\item[{bool}]{direct\+\_\+addr = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Decrement a value then branch to the specified location if the value is not zero. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a18211e2e59f6e5bc019cd5e93a6f3e17}\label{classComSquare_1_1APU_1_1APU_a18211e2e59f6e5bc019cd5e93a6f3e17}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!DEC@{DEC}}
+\index{DEC@{DEC}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{DEC()}{DEC()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+D\+EC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{addr,  }\item[{int}]{cycles }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Decrement a value at an address. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_addb828d374276b4c176947fecf964df0}\label{classComSquare_1_1APU_1_1APU_addb828d374276b4c176947fecf964df0}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!DECreg@{DECreg}}
+\index{DECreg@{DECreg}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{DECreg()}{DECreg()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+D\+E\+Creg (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Decrement a register. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a06a7519cc8a1b4d9379cf6250ebb5de9}\label{classComSquare_1_1APU_1_1APU_a06a7519cc8a1b4d9379cf6250ebb5de9}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!DECW@{DECW}}
+\index{DECW@{DECW}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{DECW()}{DECW()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+D\+E\+CW (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{addr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Decrement a word value. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_adedfee9467363033822ee52656bccc52}\label{classComSquare_1_1APU_1_1APU_adedfee9467363033822ee52656bccc52}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!DI@{DI}}
+\index{DI@{DI}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{DI()}{DI()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+DI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Disable interrupts instruction, Set Zero flag to 0. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_ad3cbf48482f0078e7118596d2591070f}\label{classComSquare_1_1APU_1_1APU_ad3cbf48482f0078e7118596d2591070f}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!DIV@{DIV}}
+\index{DIV@{DIV}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{DIV()}{DIV()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+D\+IV (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Divide the 16-\/bit value YA by X, storing the quotient in A and the remainder in Y. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_afc0cd011461fb6f71cab3e565cb4d06d}\label{classComSquare_1_1APU_1_1APU_afc0cd011461fb6f71cab3e565cb4d06d}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!EI@{EI}}
+\index{EI@{EI}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{EI()}{EI()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+EI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Enable interrupts instruction, Set Zero flag to 1. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_ae63fd7b824cf09547afa48820fd6c945}\label{classComSquare_1_1APU_1_1APU_ae63fd7b824cf09547afa48820fd6c945}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!EOR@{EOR}}
+\index{EOR@{EOR}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{EOR()}{EOR()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+E\+OR (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{operand1,  }\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{operand2,  }\item[{int}]{cycles }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Perform an Exclusive OR. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_ad541778f5c1c5867d47c879b46b2ece7}\label{classComSquare_1_1APU_1_1APU_ad541778f5c1c5867d47c879b46b2ece7}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!EOR1@{EOR1}}
+\index{EOR1@{EOR1}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{EOR1()}{EOR1()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+E\+O\+R1 (\begin{DoxyParamCaption}\item[{std\+::pair$<$ \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}, \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} $>$}]{operand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Performs a exclusive OR on the value of the bit specified with Carry flag and stores the result in the Carry flag. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_aa956010d93cc6ae3f74e13a55a78e210}\label{classComSquare_1_1APU_1_1APU_aa956010d93cc6ae3f74e13a55a78e210}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!EORacc@{EORacc}}
+\index{EORacc@{EORacc}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{EORacc()}{EORacc()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+E\+O\+Racc (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{addr,  }\item[{int}]{cycles }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Perform an Exclusive OR on the Accumulator flag. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a8b78bdff28ca5bfaa0743f170014511b}\label{classComSquare_1_1APU_1_1APU_a8b78bdff28ca5bfaa0743f170014511b}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!getComponent@{getComponent}}
+\index{getComponent@{getComponent}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{getComponent()}{getComponent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceComSquare_a891b49feb5c3e0aaa4873ff19b49968c}{Component}} Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::get\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the component of this accessor (used for debug purpose) 
+
+
+
+Implements \mbox{\hyperlink{classComSquare_1_1Memory_1_1IMemory_a31289443bb26086fb74c724cdafd2241}{Com\+Square\+::\+Memory\+::\+I\+Memory}}.
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_adebd1f46d0737254a943fd97a3192d2d}\label{classComSquare_1_1APU_1_1APU_adebd1f46d0737254a943fd97a3192d2d}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!getName@{getName}}
+\index{getName@{getName}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the name of this accessor (used for debug purpose) 
+
+
+
+Implements \mbox{\hyperlink{classComSquare_1_1Memory_1_1IMemory_a34d654c04a8a992b439c4270d566263f}{Com\+Square\+::\+Memory\+::\+I\+Memory}}.
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_afe51d33787c89667f29e250447e9dd03}\label{classComSquare_1_1APU_1_1APU_afe51d33787c89667f29e250447e9dd03}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!getSize@{getSize}}
+\index{getSize@{getSize}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the size of the data. This size can be lower than the mapped data. 
+
+\begin{DoxyReturn}{Returns}
+The number of bytes inside this memory. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classComSquare_1_1Memory_1_1IMemory_a1072ab44e7389913ff67cb77ff118c8b}{Com\+Square\+::\+Memory\+::\+I\+Memory}}.
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_ac3e24dd4d9cd122c08280c91341c94c5}\label{classComSquare_1_1APU_1_1APU_ac3e24dd4d9cd122c08280c91341c94c5}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!INC@{INC}}
+\index{INC@{INC}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{INC()}{INC()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+I\+NC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{addr,  }\item[{int}]{cycles }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Increment a value at an address. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a8fb47101734520c43e461d713c07adf5}\label{classComSquare_1_1APU_1_1APU_a8fb47101734520c43e461d713c07adf5}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!INCreg@{INCreg}}
+\index{INCreg@{INCreg}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{INCreg()}{INCreg()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+I\+N\+Creg (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Increment a register. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a5d106444584603a97257ed7bb6085018}\label{classComSquare_1_1APU_1_1APU_a5d106444584603a97257ed7bb6085018}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!INCW@{INCW}}
+\index{INCW@{INCW}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{INCW()}{INCW()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+I\+N\+CW (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{addr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Increment a word value. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a5bb4ade5d64da5eb07c985c5c9080ca0}\label{classComSquare_1_1APU_1_1APU_a5bb4ade5d64da5eb07c985c5c9080ca0}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!isDebugger@{isDebugger}}
+\index{isDebugger@{isDebugger}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{isDebugger()}{isDebugger()}}
+{\footnotesize\ttfamily bool Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::is\+Debugger (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Return true if the \mbox{\hyperlink{namespaceComSquare_1_1CPU}{C\+PU}} is overloaded with debugging features. 
+
+
+
+Reimplemented in \mbox{\hyperlink{classComSquare_1_1Debugger_1_1APUDebug_a35636fa80ceee122bd117fb816ed997c}{Com\+Square\+::\+Debugger\+::\+A\+P\+U\+Debug}}.
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a96eda24d0f00ea7c91d5bc3511b7e9cb}\label{classComSquare_1_1APU_1_1APU_a96eda24d0f00ea7c91d5bc3511b7e9cb}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!JMP@{JMP}}
+\index{JMP@{JMP}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{JMP()}{JMP()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+J\+MP (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{addr,  }\item[{bool}]{by\+\_\+x = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Jump to the specified location. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a177a57dce73eb2b93a265490eba599d3}\label{classComSquare_1_1APU_1_1APU_a177a57dce73eb2b93a265490eba599d3}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!LSR@{LSR}}
+\index{LSR@{LSR}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{LSR()}{LSR()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+L\+SR (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{operand,  }\item[{int}]{cycles,  }\item[{bool}]{accumulator = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Logical Shift Right. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a09fec4298e0a371809ae167a84807416}\label{classComSquare_1_1APU_1_1APU_a09fec4298e0a371809ae167a84807416}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!MOV@{MOV}}
+\index{MOV@{MOV}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{MOV()}{MOV()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+M\+OV (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{mem\+From,  }\item[{uint8\+\_\+t \&}]{reg\+To,  }\item[{int}]{cycles,  }\item[{bool}]{incrementX = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a4913ec5fe3385d9ffd70df18bc87b940}\label{classComSquare_1_1APU_1_1APU_a4913ec5fe3385d9ffd70df18bc87b940}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!MOV@{MOV}}
+\index{MOV@{MOV}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{MOV()}{MOV()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+M\+OV (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{mem\+To,  }\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{mem\+From }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a42b3d98fbcc19572358109079efdeb7f}\label{classComSquare_1_1APU_1_1APU_a42b3d98fbcc19572358109079efdeb7f}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!MOV@{MOV}}
+\index{MOV@{MOV}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{MOV()}{MOV()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+M\+OV (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \&}]{reg\+From,  }\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{mem\+To,  }\item[{int}]{cycles,  }\item[{bool}]{incrementX = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a484d99d1f2a06e2b919c220406cbd567}\label{classComSquare_1_1APU_1_1APU_a484d99d1f2a06e2b919c220406cbd567}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!MOV@{MOV}}
+\index{MOV@{MOV}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{MOV()}{MOV()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+M\+OV (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \&}]{reg\+From,  }\item[{uint8\+\_\+t \&}]{reg\+To,  }\item[{bool}]{set\+Flags = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a9b297f56e00315e3c4009c5b54d05ca9}\label{classComSquare_1_1APU_1_1APU_a9b297f56e00315e3c4009c5b54d05ca9}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!MOV1@{MOV1}}
+\index{MOV1@{MOV1}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{MOV1()}{MOV1()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+M\+O\+V1 (\begin{DoxyParamCaption}\item[{std\+::pair$<$ \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}, \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} $>$}]{operand,  }\item[{bool}]{to\+\_\+carry = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Either moves the specified bit into carry or moves carry into the specified bit. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a7761e7a5a20f31479127793d941c76b1}\label{classComSquare_1_1APU_1_1APU_a7761e7a5a20f31479127793d941c76b1}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!MOVW@{MOVW}}
+\index{MOVW@{MOVW}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{MOVW()}{MOVW()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+M\+O\+VW (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{addr,  }\item[{bool}]{to\+\_\+ya = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Sets a word value equal to another. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a8b2e7a49a0f107044838856b5c0ae767}\label{classComSquare_1_1APU_1_1APU_a8b2e7a49a0f107044838856b5c0ae767}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!MUL@{MUL}}
+\index{MUL@{MUL}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{MUL()}{MUL()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+M\+UL (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Store the 16-\/bit value of Y $\ast$ A into YA. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_ad72326405c02d111e065e0aac65ec7bd}\label{classComSquare_1_1APU_1_1APU_ad72326405c02d111e065e0aac65ec7bd}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!NOP@{NOP}}
+\index{NOP@{NOP}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{NOP()}{NOP()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+N\+OP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+No Operation instruction, do nothing than delay. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a164fac9b387524eecc865d8fdce3065c}\label{classComSquare_1_1APU_1_1APU_a164fac9b387524eecc865d8fdce3065c}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!NOT1@{NOT1}}
+\index{NOT1@{NOT1}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{NOT1()}{NOT1()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+N\+O\+T1 (\begin{DoxyParamCaption}\item[{std\+::pair$<$ \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}, \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} $>$}]{operand }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Performs a logical N\+OT on the value of the specified bit and stores the result. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a54a3e73db0290f565b6fa8e76ca239fc}\label{classComSquare_1_1APU_1_1APU_a54a3e73db0290f565b6fa8e76ca239fc}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!NOTC@{NOTC}}
+\index{NOTC@{NOTC}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{NOTC()}{NOTC()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+N\+O\+TC (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Complement Carry instruction, invert Carry flag value. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_ab86b407ba544676305397db670eb73c0}\label{classComSquare_1_1APU_1_1APU_ab86b407ba544676305397db670eb73c0}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!operator=@{operator=}}
+\index{operator=@{operator=}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classComSquare_1_1APU_1_1APU}{A\+PU}}\& Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classComSquare_1_1APU_1_1APU}{A\+PU}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a108d8c767d93fbce7d46ec1c8f99c74c}\label{classComSquare_1_1APU_1_1APU_a108d8c767d93fbce7d46ec1c8f99c74c}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!OR@{OR}}
+\index{OR@{OR}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{OR()}{OR()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+OR (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{operand1,  }\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{operand2,  }\item[{int}]{cycles }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Perform a bitwise OR. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a7a8040b04221d76ad9940a8016782b5d}\label{classComSquare_1_1APU_1_1APU_a7a8040b04221d76ad9940a8016782b5d}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!OR1@{OR1}}
+\index{OR1@{OR1}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{OR1()}{OR1()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+O\+R1 (\begin{DoxyParamCaption}\item[{std\+::pair$<$ \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}, \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} $>$}]{operand,  }\item[{bool}]{invert = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Performs a bitwise OR on the value or inverse value of the specified bit with Carry flag and stores the result in the Carry flag. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_ad05d11fac824c95562e016cfdd34d3c8}\label{classComSquare_1_1APU_1_1APU_ad05d11fac824c95562e016cfdd34d3c8}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!ORacc@{ORacc}}
+\index{ORacc@{ORacc}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{ORacc()}{ORacc()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+O\+Racc (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{addr,  }\item[{int}]{cycles }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Perform a bitwise OR on the Accumulator flag. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a51dfa62a340468bd1cecc949ef9b4ce4}\label{classComSquare_1_1APU_1_1APU_a51dfa62a340468bd1cecc949ef9b4ce4}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!PCALL@{PCALL}}
+\index{PCALL@{PCALL}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{PCALL()}{PCALL()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+P\+C\+A\+LL (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Perform a call in the upper page of memory, read PC Register and add 0x\+F\+F00 to it. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a093fa6258efbe9187d8b76d666a9d545}\label{classComSquare_1_1APU_1_1APU_a093fa6258efbe9187d8b76d666a9d545}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!POP@{POP}}
+\index{POP@{POP}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{POP()}{POP()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+P\+OP (\begin{DoxyParamCaption}\item[{uint8\+\_\+t \&}]{destination }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Increment SP Register and pop a single value from the stack. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_ae1381022f56b79e30acbc1bef542d4ab}\label{classComSquare_1_1APU_1_1APU_ae1381022f56b79e30acbc1bef542d4ab}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!PUSH@{PUSH}}
+\index{PUSH@{PUSH}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{PUSH()}{PUSH()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+P\+U\+SH (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Push a value onto the stack and decrement SP Register. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a2a1d4a4557165e60997b0e03d51fa7f9}\label{classComSquare_1_1APU_1_1APU_a2a1d4a4557165e60997b0e03d51fa7f9}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!read@{read}}
+\index{read@{read}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::read (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{addr }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Read from the \mbox{\hyperlink{classComSquare_1_1APU_1_1APU}{A\+PU}} ram. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & The address to read from. The address 0x0000 should refer to the first byte of the register. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classComSquare_1_1InvalidAddress}{Invalid\+Address}}} & will be thrown if the address is more than \$\+F\+F\+FF (the number of register). \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+Return the data. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classComSquare_1_1Memory_1_1IMemory_a72ffc0dfe13a000099f4cbc197cd48ec}{Com\+Square\+::\+Memory\+::\+I\+Memory}}.
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a6f07525a5bd76ac9924d713de7768144}\label{classComSquare_1_1APU_1_1APU_a6f07525a5bd76ac9924d713de7768144}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!reset@{reset}}
+\index{reset@{reset}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{reset()}{reset()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+This function is executed when the \mbox{\hyperlink{classComSquare_1_1SNES}{S\+N\+ES}} is powered on or the reset button is pushed. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_adc6e6be5204a33c8066c51f20603645d}\label{classComSquare_1_1APU_1_1APU_adc6e6be5204a33c8066c51f20603645d}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!RET@{RET}}
+\index{RET@{RET}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{RET()}{RET()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+R\+ET (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Return from subroutine. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a2969c53b740f7313db71d759be4294e1}\label{classComSquare_1_1APU_1_1APU_a2969c53b740f7313db71d759be4294e1}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!RETI@{RETI}}
+\index{RETI@{RETI}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{RETI()}{RETI()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+R\+E\+TI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Return from interrupt. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a0f0a97a777a930fdfaac95595a13d78b}\label{classComSquare_1_1APU_1_1APU_a0f0a97a777a930fdfaac95595a13d78b}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!ROL@{ROL}}
+\index{ROL@{ROL}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{ROL()}{ROL()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+R\+OL (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{operand,  }\item[{int}]{cycles,  }\item[{bool}]{accumulator = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Rotate Bits Left. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a42502082bdb3038d621292161244f319}\label{classComSquare_1_1APU_1_1APU_a42502082bdb3038d621292161244f319}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!ROR@{ROR}}
+\index{ROR@{ROR}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{ROR()}{ROR()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+R\+OR (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{operand,  }\item[{int}]{cycles,  }\item[{bool}]{accumulator = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Rotate Bits Right. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a63bcae3e4abf2ef6a1e813b476a664f8}\label{classComSquare_1_1APU_1_1APU_a63bcae3e4abf2ef6a1e813b476a664f8}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!SBC@{SBC}}
+\index{SBC@{SBC}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{SBC()}{SBC()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+S\+BC (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{operand1,  }\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{operand2,  }\item[{int}]{cycles }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Subtract operand1 with operand2 and carry. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a8bb74054af48945ffbed3d379b839eb4}\label{classComSquare_1_1APU_1_1APU_a8bb74054af48945ffbed3d379b839eb4}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!SBCacc@{SBCacc}}
+\index{SBCacc@{SBCacc}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{SBCacc()}{SBCacc()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+S\+B\+Cacc (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{addr,  }\item[{int}]{cycles }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Subtract Accumulator Flag with address and carry. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_af7d4400fcde9723b5bc0da3b800fb94e}\label{classComSquare_1_1APU_1_1APU_af7d4400fcde9723b5bc0da3b800fb94e}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!SET1@{SET1}}
+\index{SET1@{SET1}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{SET1()}{SET1()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+S\+E\+T1 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{dp,  }\item[{uint8\+\_\+t}]{bit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Set 1-\/bit instruction, set a bit in direct page. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a0d71a90834aa9925081c02506d02695b}\label{classComSquare_1_1APU_1_1APU_a0d71a90834aa9925081c02506d02695b}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!SETC@{SETC}}
+\index{SETC@{SETC}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{SETC()}{SETC()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+S\+E\+TC (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Set Carry instruction, Set Carry flag to 1. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_af1b10d1669b78a97730b666289d8db68}\label{classComSquare_1_1APU_1_1APU_af1b10d1669b78a97730b666289d8db68}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!SETP@{SETP}}
+\index{SETP@{SETP}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{SETP()}{SETP()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+S\+E\+TP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Set Direct Page instruction, Set Direct Page flag to 1. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a245fa7957d2e3939f49247fcaaf290d7}\label{classComSquare_1_1APU_1_1APU_a245fa7957d2e3939f49247fcaaf290d7}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!SLEEP@{SLEEP}}
+\index{SLEEP@{SLEEP}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{SLEEP()}{SLEEP()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+S\+L\+E\+EP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Sleep instruction, halts the processor with S\+L\+E\+EP mode. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a04cb8e60dc1e37cf7e6f58502492774a}\label{classComSquare_1_1APU_1_1APU_a04cb8e60dc1e37cf7e6f58502492774a}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!STOP@{STOP}}
+\index{STOP@{STOP}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{STOP()}{STOP()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+S\+T\+OP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Stop instruction, halts the processor with S\+T\+OP mode. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_ae108494f51e475d9b2060dd544ae11e9}\label{classComSquare_1_1APU_1_1APU_ae108494f51e475d9b2060dd544ae11e9}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!SUBW@{SUBW}}
+\index{SUBW@{SUBW}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{SUBW()}{SUBW()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+S\+U\+BW (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{addr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Subtract YA with a word value. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a6531a40e5a7f3450b2ac2896ea6f92e4}\label{classComSquare_1_1APU_1_1APU_a6531a40e5a7f3450b2ac2896ea6f92e4}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!TCALL@{TCALL}}
+\index{TCALL@{TCALL}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{TCALL()}{TCALL()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+T\+C\+A\+LL (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{bit }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Performs a call on one of the 16 vectors in the memory range of \$\+F\+F\+C0 to \$\+F\+F\+DF. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a7f42717a8d941d96ce0e9b8a51af4bff}\label{classComSquare_1_1APU_1_1APU_a7f42717a8d941d96ce0e9b8a51af4bff}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!TCLR1@{TCLR1}}
+\index{TCLR1@{TCLR1}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{TCLR1()}{TCLR1()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+T\+C\+L\+R1 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{abs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+test clear 1-\/bit instruction, Test and clear bits with absolute address 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a55a4c21bdde0c783e51ad75f442104b3}\label{classComSquare_1_1APU_1_1APU_a55a4c21bdde0c783e51ad75f442104b3}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!TSET1@{TSET1}}
+\index{TSET1@{TSET1}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{TSET1()}{TSET1()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+T\+S\+E\+T1 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{abs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+test set 1-\/bit instruction, Test and set bits with absolute address 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_acfd2aa4b86b8bd4db182ecc676be0b64}\label{classComSquare_1_1APU_1_1APU_acfd2aa4b86b8bd4db182ecc676be0b64}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!update@{update}}
+\index{update@{update}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::update (\begin{DoxyParamCaption}\item[{unsigned}]{cycles }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This function execute the instructions received until the maximum number of cycles is reached. 
+
+\begin{DoxyReturn}{Returns}
+The number of cycles that elapsed. 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classComSquare_1_1Debugger_1_1APUDebug_ab7efad3a0f6bde7c5ef1e0f1d19693b3}{Com\+Square\+::\+Debugger\+::\+A\+P\+U\+Debug}}.
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_ab77224524520cbad442e89f3663cf67f}\label{classComSquare_1_1APU_1_1APU_ab77224524520cbad442e89f3663cf67f}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!write@{write}}
+\index{write@{write}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{addr,  }\item[{uint8\+\_\+t}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Write data to the \mbox{\hyperlink{classComSquare_1_1APU_1_1APU}{A\+PU}} ram. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & The address to write to. The address 0x0000 should refer to the first byte of register. \\
+\hline
+{\em data} & The new value of the register. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classComSquare_1_1InvalidAddress}{Invalid\+Address}}} & will be thrown if the address is more than \$\+F\+F\+FF (the number of register). \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{classComSquare_1_1Memory_1_1IMemory_a449bc89798a0b86028bb0413106514d9}{Com\+Square\+::\+Memory\+::\+I\+Memory}}.
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_ab01c937f5d75060b4f2983a87e1a2843}\label{classComSquare_1_1APU_1_1APU_ab01c937f5d75060b4f2983a87e1a2843}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!XCN@{XCN}}
+\index{XCN@{XCN}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{XCN()}{XCN()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+X\+CN (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Exchange Nibbles. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a9c982ded081a729dab813032adf568df}\label{classComSquare_1_1APU_1_1APU_a9c982ded081a729dab813032adf568df}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!\_dsp@{\_dsp}}
+\index{\_dsp@{\_dsp}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{\_dsp}{\_dsp}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP}{D\+S\+P\+::\+D\+SP}} Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+\_\+dsp\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The \mbox{\hyperlink{namespaceComSquare_1_1APU_1_1DSP}{D\+SP}} component used to produce sound. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a6f6c534e0f850c7882cefdc5455aedca}\label{classComSquare_1_1APU_1_1APU_a6f6c534e0f850c7882cefdc5455aedca}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!\_internalRegisters@{\_internalRegisters}}
+\index{\_internalRegisters@{\_internalRegisters}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{\_internalRegisters}{\_internalRegisters}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structComSquare_1_1APU_1_1InternalRegisters}{Internal\+Registers}} Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+\_\+internal\+Registers \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Internal registers of the \mbox{\hyperlink{namespaceComSquare_1_1CPU}{C\+PU}} (accessible from the bus via addr \$4200 to \$421F). 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a74ed36b9e126b30591ab9b99ecd792d3}\label{classComSquare_1_1APU_1_1APU_a74ed36b9e126b30591ab9b99ecd792d3}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!\_map@{\_map}}
+\index{\_map@{\_map}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{\_map}{\_map}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{structComSquare_1_1APU_1_1MemoryMap}{Memory\+Map}}$>$ Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+\_\+map\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Internal \mbox{\hyperlink{classComSquare_1_1APU_1_1APU}{A\+PU}} memory separated according to their utility. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a0769ec72f3e4619e7c4c992a67302385}\label{classComSquare_1_1APU_1_1APU_a0769ec72f3e4619e7c4c992a67302385}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!\_paddingCycles@{\_paddingCycles}}
+\index{\_paddingCycles@{\_paddingCycles}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{\_paddingCycles}{\_paddingCycles}}
+{\footnotesize\ttfamily unsigned int Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+\_\+padding\+Cycles = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Keep the number of excess cycles executed to pad the next update. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a31a0eee6623c22ecc1ba891fefec8e3f}\label{classComSquare_1_1APU_1_1APU_a31a0eee6623c22ecc1ba891fefec8e3f}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!\_registers@{\_registers}}
+\index{\_registers@{\_registers}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{\_registers}{\_registers}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structComSquare_1_1APU_1_1Registers}{Registers}} Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+\_\+registers \{\}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+All the registers of the \mbox{\hyperlink{classComSquare_1_1APU_1_1APU}{A\+PU}} \mbox{\hyperlink{namespaceComSquare_1_1CPU}{C\+PU}}. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a2abc2f8ae1b10ddcace9751e8bf4dafb}\label{classComSquare_1_1APU_1_1APU_a2abc2f8ae1b10ddcace9751e8bf4dafb}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!\_renderer@{\_renderer}}
+\index{\_renderer@{\_renderer}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{\_renderer}{\_renderer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classComSquare_1_1Renderer_1_1IRenderer}{Renderer\+::\+I\+Renderer}}\& Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+\_\+renderer\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+\mbox{\hyperlink{namespaceComSquare_1_1Renderer}{Renderer}} used to play sounds. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_a40fae5a94b9e536d983773f343d839af}\label{classComSquare_1_1APU_1_1APU_a40fae5a94b9e536d983773f343d839af}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!\_soundBuffer@{\_soundBuffer}}
+\index{\_soundBuffer@{\_soundBuffer}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{\_soundBuffer}{\_soundBuffer}}
+{\footnotesize\ttfamily std\+::array$<$int16\+\_\+t, 0x10000$>$ Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+\_\+sound\+Buffer\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Buffer containing samples to be played. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1APU_aaa3be325a6082012d56e40c7b4572945}\label{classComSquare_1_1APU_1_1APU_aaa3be325a6082012d56e40c7b4572945}} 
+\index{ComSquare::APU::APU@{ComSquare::APU::APU}!\_state@{\_state}}
+\index{\_state@{\_state}!ComSquare::APU::APU@{ComSquare::APU::APU}}
+\doxysubsubsection{\texorpdfstring{\_state}{\_state}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceComSquare_1_1APU_aa9eb7c3ae29577991715f42d480c1b67}{State\+Mode}} Com\+Square\+::\+A\+P\+U\+::\+A\+P\+U\+::\+\_\+state = \mbox{\hyperlink{namespaceComSquare_1_1APU_aa9eb7c3ae29577991715f42d480c1b67adaf8f365a5804154b0b5ecdb8d546032}{Running}}\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Current state of \mbox{\hyperlink{classComSquare_1_1APU_1_1APU}{A\+PU}} \mbox{\hyperlink{namespaceComSquare_1_1CPU}{C\+PU}}. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+sources/\+A\+P\+U/\mbox{\hyperlink{APU_8hpp}{A\+P\+U.\+hpp}}\item 
+sources/\+A\+P\+U/\mbox{\hyperlink{APU_8cpp}{A\+P\+U.\+cpp}}\item 
+sources/\+A\+P\+U/\+Instructions/\mbox{\hyperlink{16bitArithmetic_8cpp}{16bit\+Arithmetic.\+cpp}}\item 
+sources/\+A\+P\+U/\+Instructions/\mbox{\hyperlink{16bitDataTransmission_8cpp}{16bit\+Data\+Transmission.\+cpp}}\item 
+sources/\+A\+P\+U/\+Instructions/\mbox{\hyperlink{8bitArithmetic_8cpp}{8bit\+Arithmetic.\+cpp}}\item 
+sources/\+A\+P\+U/\+Instructions/\mbox{\hyperlink{8bitDataTransmission_8cpp}{8bit\+Data\+Transmission.\+cpp}}\item 
+sources/\+A\+P\+U/\+Instructions/\mbox{\hyperlink{8bitIncrementDecrement_8cpp}{8bit\+Increment\+Decrement.\+cpp}}\item 
+sources/\+A\+P\+U/\+Instructions/\mbox{\hyperlink{8bitLogical_8cpp}{8bit\+Logical.\+cpp}}\item 
+sources/\+A\+P\+U/\+Instructions/\mbox{\hyperlink{8bitShiftRotation_8cpp}{8bit\+Shift\+Rotation.\+cpp}}\item 
+sources/\+A\+P\+U/\+Instructions/\mbox{\hyperlink{Bit_8cpp}{Bit.\+cpp}}\item 
+sources/\+A\+P\+U/\+Instructions/\mbox{\hyperlink{DecimalCompensation_8cpp}{Decimal\+Compensation.\+cpp}}\item 
+sources/\+A\+P\+U/\+Instructions/\mbox{\hyperlink{MultiplicationDivision_8cpp}{Multiplication\+Division.\+cpp}}\item 
+sources/\+A\+P\+U/\+Instructions/\mbox{\hyperlink{ProgramFlow_8cpp}{Program\+Flow.\+cpp}}\item 
+sources/\+A\+P\+U/\+Instructions/\mbox{\hyperlink{ProgramStatusWord_8cpp}{Program\+Status\+Word.\+cpp}}\item 
+sources/\+A\+P\+U/\+Instructions/\mbox{\hyperlink{Stack_8cpp}{Stack.\+cpp}}\item 
+sources/\+A\+P\+U/\+Instructions/\mbox{\hyperlink{Standbys_8cpp}{Standbys.\+cpp}}\item 
+sources/\+A\+P\+U/\+Instructions/\mbox{\hyperlink{Subroutine_8cpp}{Subroutine.\+cpp}}\item 
+sources/\+A\+P\+U/\mbox{\hyperlink{Operand_8cpp}{Operand.\+cpp}}\end{DoxyCompactItemize}

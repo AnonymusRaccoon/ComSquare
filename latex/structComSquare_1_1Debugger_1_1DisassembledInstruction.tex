@@ -1,0 +1,143 @@
+\hypertarget{structComSquare_1_1Debugger_1_1DisassembledInstruction}{}\doxysection{Com\+Square\+::Debugger\+::Disassembled\+Instruction Struct Reference}
+\label{structComSquare_1_1Debugger_1_1DisassembledInstruction}\index{ComSquare::Debugger::DisassembledInstruction@{ComSquare::Debugger::DisassembledInstruction}}
+
+
+Struct representing an instruction in an human readable way (created by disassembling the rom).  
+
+
+
+
+{\ttfamily \#include $<$C\+P\+U\+Debug.\+hpp$>$}
+
+
+
+Inheritance diagram for Com\+Square\+::Debugger\+::Disassembled\+Instruction\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{structComSquare_1_1Debugger_1_1DisassembledInstruction__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Com\+Square\+::Debugger\+::Disassembled\+Instruction\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{structComSquare_1_1Debugger_1_1DisassembledInstruction__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structComSquare_1_1Debugger_1_1DisassembledInstruction_aa26265f5f943e53f5c6f7e05921cc00b}{Disassembled\+Instruction}} (const \mbox{\hyperlink{structComSquare_1_1CPU_1_1Instruction}{C\+P\+U\+::\+Instruction}} \&instruction, \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} \mbox{\hyperlink{structComSquare_1_1Debugger_1_1DisassembledInstruction_ab87e6ae9cd88dc1b6c5f8d156cc16b30}{address}}, std\+::string \mbox{\hyperlink{structComSquare_1_1Debugger_1_1DisassembledInstruction_a80f70db8ef96f702032d10c471b3100c}{argument}}, uint8\+\_\+t \mbox{\hyperlink{structComSquare_1_1Debugger_1_1DisassembledInstruction_aec4cc656e4674da4aedc773e61fee6a0}{opcode}})
+\item 
+\mbox{\hyperlink{structComSquare_1_1Debugger_1_1DisassembledInstruction_aa3bc74754ac17d35c59cb0e82898cec9}{Disassembled\+Instruction}} (const \mbox{\hyperlink{structComSquare_1_1Debugger_1_1DisassembledInstruction}{Disassembled\+Instruction}} \&)=default
+\item 
+\mbox{\hyperlink{structComSquare_1_1Debugger_1_1DisassembledInstruction}{Disassembled\+Instruction}} \& \mbox{\hyperlink{structComSquare_1_1Debugger_1_1DisassembledInstruction_aeb4ea642d94b8f78a20fbb1013e709f9}{operator=}} (const \mbox{\hyperlink{structComSquare_1_1Debugger_1_1DisassembledInstruction}{Disassembled\+Instruction}} \&)=default
+\item 
+\mbox{\hyperlink{structComSquare_1_1Debugger_1_1DisassembledInstruction_ad866b61720e55d4977c6dc6975ca4389}{$\sim$\+Disassembled\+Instruction}} ()=default
+\item 
+std\+::string \mbox{\hyperlink{structComSquare_1_1Debugger_1_1DisassembledInstruction_ad16dbcbac89c1436a8ac27f93f595cd9}{to\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} \mbox{\hyperlink{structComSquare_1_1Debugger_1_1DisassembledInstruction_ab87e6ae9cd88dc1b6c5f8d156cc16b30}{address}}
+\begin{DoxyCompactList}\small\item\em The address of the instruction. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{structComSquare_1_1Debugger_1_1DisassembledInstruction_a80f70db8ef96f702032d10c471b3100c}{argument}}
+\begin{DoxyCompactList}\small\item\em A string representing the argument with the right addressing mode. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{structComSquare_1_1Debugger_1_1DisassembledInstruction_aec4cc656e4674da4aedc773e61fee6a0}{opcode}}
+\begin{DoxyCompactList}\small\item\em The opcode of the instruction. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceComSquare_1_1Debugger_af6f8aa5e9036fb321ffc38cad8f926b4}{Trust\+Level}} \mbox{\hyperlink{structComSquare_1_1Debugger_1_1DisassembledInstruction_abd76e9dc52e0c93890bf16e1e25c8603}{level}}
+\begin{DoxyCompactList}\small\item\em Are we sure that this instruction has been correctly disassembled? \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Struct representing an instruction in an human readable way (created by disassembling the rom). 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structComSquare_1_1Debugger_1_1DisassembledInstruction_aa26265f5f943e53f5c6f7e05921cc00b}\label{structComSquare_1_1Debugger_1_1DisassembledInstruction_aa26265f5f943e53f5c6f7e05921cc00b}} 
+\index{ComSquare::Debugger::DisassembledInstruction@{ComSquare::Debugger::DisassembledInstruction}!DisassembledInstruction@{DisassembledInstruction}}
+\index{DisassembledInstruction@{DisassembledInstruction}!ComSquare::Debugger::DisassembledInstruction@{ComSquare::Debugger::DisassembledInstruction}}
+\doxysubsubsection{\texorpdfstring{DisassembledInstruction()}{DisassembledInstruction()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Com\+Square\+::\+Debugger\+::\+Disassembled\+Instruction\+::\+Disassembled\+Instruction (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structComSquare_1_1CPU_1_1Instruction}{C\+P\+U\+::\+Instruction}} \&}]{instruction,  }\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{address,  }\item[{std\+::string}]{argument,  }\item[{uint8\+\_\+t}]{opcode }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{structComSquare_1_1Debugger_1_1DisassembledInstruction_aa3bc74754ac17d35c59cb0e82898cec9}\label{structComSquare_1_1Debugger_1_1DisassembledInstruction_aa3bc74754ac17d35c59cb0e82898cec9}} 
+\index{ComSquare::Debugger::DisassembledInstruction@{ComSquare::Debugger::DisassembledInstruction}!DisassembledInstruction@{DisassembledInstruction}}
+\index{DisassembledInstruction@{DisassembledInstruction}!ComSquare::Debugger::DisassembledInstruction@{ComSquare::Debugger::DisassembledInstruction}}
+\doxysubsubsection{\texorpdfstring{DisassembledInstruction()}{DisassembledInstruction()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Com\+Square\+::\+Debugger\+::\+Disassembled\+Instruction\+::\+Disassembled\+Instruction (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structComSquare_1_1Debugger_1_1DisassembledInstruction}{Disassembled\+Instruction}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{structComSquare_1_1Debugger_1_1DisassembledInstruction_ad866b61720e55d4977c6dc6975ca4389}\label{structComSquare_1_1Debugger_1_1DisassembledInstruction_ad866b61720e55d4977c6dc6975ca4389}} 
+\index{ComSquare::Debugger::DisassembledInstruction@{ComSquare::Debugger::DisassembledInstruction}!````~DisassembledInstruction@{$\sim$DisassembledInstruction}}
+\index{````~DisassembledInstruction@{$\sim$DisassembledInstruction}!ComSquare::Debugger::DisassembledInstruction@{ComSquare::Debugger::DisassembledInstruction}}
+\doxysubsubsection{\texorpdfstring{$\sim$DisassembledInstruction()}{~DisassembledInstruction()}}
+{\footnotesize\ttfamily Com\+Square\+::\+Debugger\+::\+Disassembled\+Instruction\+::$\sim$\+Disassembled\+Instruction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structComSquare_1_1Debugger_1_1DisassembledInstruction_aeb4ea642d94b8f78a20fbb1013e709f9}\label{structComSquare_1_1Debugger_1_1DisassembledInstruction_aeb4ea642d94b8f78a20fbb1013e709f9}} 
+\index{ComSquare::Debugger::DisassembledInstruction@{ComSquare::Debugger::DisassembledInstruction}!operator=@{operator=}}
+\index{operator=@{operator=}!ComSquare::Debugger::DisassembledInstruction@{ComSquare::Debugger::DisassembledInstruction}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structComSquare_1_1Debugger_1_1DisassembledInstruction}{Disassembled\+Instruction}}\& Com\+Square\+::\+Debugger\+::\+Disassembled\+Instruction\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structComSquare_1_1Debugger_1_1DisassembledInstruction}{Disassembled\+Instruction}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{structComSquare_1_1Debugger_1_1DisassembledInstruction_ad16dbcbac89c1436a8ac27f93f595cd9}\label{structComSquare_1_1Debugger_1_1DisassembledInstruction_ad16dbcbac89c1436a8ac27f93f595cd9}} 
+\index{ComSquare::Debugger::DisassembledInstruction@{ComSquare::Debugger::DisassembledInstruction}!toString@{toString}}
+\index{toString@{toString}!ComSquare::Debugger::DisassembledInstruction@{ComSquare::Debugger::DisassembledInstruction}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily std\+::string Com\+Square\+::\+Debugger\+::\+Disassembled\+Instruction\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structComSquare_1_1Debugger_1_1DisassembledInstruction_ab87e6ae9cd88dc1b6c5f8d156cc16b30}\label{structComSquare_1_1Debugger_1_1DisassembledInstruction_ab87e6ae9cd88dc1b6c5f8d156cc16b30}} 
+\index{ComSquare::Debugger::DisassembledInstruction@{ComSquare::Debugger::DisassembledInstruction}!address@{address}}
+\index{address@{address}!ComSquare::Debugger::DisassembledInstruction@{ComSquare::Debugger::DisassembledInstruction}}
+\doxysubsubsection{\texorpdfstring{address}{address}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} Com\+Square\+::\+Debugger\+::\+Disassembled\+Instruction\+::address}
+
+
+
+The address of the instruction. 
+
+\mbox{\Hypertarget{structComSquare_1_1Debugger_1_1DisassembledInstruction_a80f70db8ef96f702032d10c471b3100c}\label{structComSquare_1_1Debugger_1_1DisassembledInstruction_a80f70db8ef96f702032d10c471b3100c}} 
+\index{ComSquare::Debugger::DisassembledInstruction@{ComSquare::Debugger::DisassembledInstruction}!argument@{argument}}
+\index{argument@{argument}!ComSquare::Debugger::DisassembledInstruction@{ComSquare::Debugger::DisassembledInstruction}}
+\doxysubsubsection{\texorpdfstring{argument}{argument}}
+{\footnotesize\ttfamily std\+::string Com\+Square\+::\+Debugger\+::\+Disassembled\+Instruction\+::argument}
+
+
+
+A string representing the argument with the right addressing mode. 
+
+\mbox{\Hypertarget{structComSquare_1_1Debugger_1_1DisassembledInstruction_abd76e9dc52e0c93890bf16e1e25c8603}\label{structComSquare_1_1Debugger_1_1DisassembledInstruction_abd76e9dc52e0c93890bf16e1e25c8603}} 
+\index{ComSquare::Debugger::DisassembledInstruction@{ComSquare::Debugger::DisassembledInstruction}!level@{level}}
+\index{level@{level}!ComSquare::Debugger::DisassembledInstruction@{ComSquare::Debugger::DisassembledInstruction}}
+\doxysubsubsection{\texorpdfstring{level}{level}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceComSquare_1_1Debugger_af6f8aa5e9036fb321ffc38cad8f926b4}{Trust\+Level}} Com\+Square\+::\+Debugger\+::\+Disassembled\+Instruction\+::level}
+
+
+
+Are we sure that this instruction has been correctly disassembled? 
+
+\mbox{\Hypertarget{structComSquare_1_1Debugger_1_1DisassembledInstruction_aec4cc656e4674da4aedc773e61fee6a0}\label{structComSquare_1_1Debugger_1_1DisassembledInstruction_aec4cc656e4674da4aedc773e61fee6a0}} 
+\index{ComSquare::Debugger::DisassembledInstruction@{ComSquare::Debugger::DisassembledInstruction}!opcode@{opcode}}
+\index{opcode@{opcode}!ComSquare::Debugger::DisassembledInstruction@{ComSquare::Debugger::DisassembledInstruction}}
+\doxysubsubsection{\texorpdfstring{opcode}{opcode}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+Debugger\+::\+Disassembled\+Instruction\+::opcode}
+
+
+
+The opcode of the instruction. 
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+sources/\+Debugger/\+C\+P\+U/\mbox{\hyperlink{CPUDebug_8hpp}{C\+P\+U\+Debug.\+hpp}}\item 
+sources/\+Debugger/\+C\+P\+U/\mbox{\hyperlink{Disassembly_8cpp}{Disassembly.\+cpp}}\end{DoxyCompactItemize}

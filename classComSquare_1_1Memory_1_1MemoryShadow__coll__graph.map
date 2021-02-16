@@ -1,0 +1,5 @@
+<map id="ComSquare::Memory::MemoryShadow" name="ComSquare::Memory::MemoryShadow">
+<area shape="rect" id="node1" title=" " alt="" coords="9,535,176,773"/>
+<area shape="rect" id="node2" href="$classComSquare_1_1Memory_1_1AMemory.html" title="Abstract class representing a continuous block of memory." alt="" coords="5,292,180,487"/>
+<area shape="rect" id="node3" href="$classComSquare_1_1Memory_1_1IMemory.html" title="Common interface implemented by all components mapping memory." alt="" coords="5,5,180,244"/>
+</map>

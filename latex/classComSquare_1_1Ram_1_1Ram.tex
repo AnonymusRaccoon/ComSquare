@@ -1,0 +1,248 @@
+\hypertarget{classComSquare_1_1Ram_1_1Ram}{}\doxysection{Com\+Square\+::Ram\+::Ram Class Reference}
+\label{classComSquare_1_1Ram_1_1Ram}\index{ComSquare::Ram::Ram@{ComSquare::Ram::Ram}}
+
+
+{\ttfamily \#include $<$Ram.\+hpp$>$}
+
+
+
+Inheritance diagram for Com\+Square\+::Ram\+::Ram\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classComSquare_1_1Ram_1_1Ram__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Com\+Square\+::Ram\+::Ram\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classComSquare_1_1Ram_1_1Ram__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classComSquare_1_1Ram_1_1Ram_a71d3876ff028ef14396f93bb91df4b12}{Ram}} (size\+\_\+t size, \mbox{\hyperlink{namespaceComSquare_a891b49feb5c3e0aaa4873ff19b49968c}{Component}}, std\+::string ram\+Name)
+\begin{DoxyCompactList}\small\item\em Create a ram of a given size in bytes. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classComSquare_1_1Ram_1_1Ram_a1f15b671e6a2b4d72585fd78848fdb58}{Ram}} (const \mbox{\hyperlink{classComSquare_1_1Ram_1_1Ram}{Ram}} \&)=delete
+\begin{DoxyCompactList}\small\item\em The ram can\textquotesingle{}t be copied. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classComSquare_1_1Ram_1_1Ram}{Ram}} \& \mbox{\hyperlink{classComSquare_1_1Ram_1_1Ram_ac27ae4f0c92ee9f14d307eea4e7f5a9f}{operator=}} (\mbox{\hyperlink{classComSquare_1_1Ram_1_1Ram}{Ram}} \&)=delete
+\begin{DoxyCompactList}\small\item\em The ram can\textquotesingle{}t be assigned. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classComSquare_1_1Ram_1_1Ram_ae5da189334c6d8baa788688b2f513768}{$\sim$\+Ram}} () override
+\begin{DoxyCompactList}\small\item\em Destructor that free the ram. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{classComSquare_1_1Ram_1_1Ram_a668e5d7de4ec6a2e6a1b96a95cae08f9}{read}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} addr) const override
+\begin{DoxyCompactList}\small\item\em Read data from the component. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classComSquare_1_1Ram_1_1Ram_a0f42b342ebf151574c1e523719f9cf52}{write}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} addr, uint8\+\_\+t data) override
+\begin{DoxyCompactList}\small\item\em Write data to this component. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classComSquare_1_1Ram_1_1Ram_a71d2424b05cf638d04402db2260c71aa}{get\+Name}} () const override
+\begin{DoxyCompactList}\small\item\em Get the name of this accessor (used for debug purpose) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceComSquare_a891b49feb5c3e0aaa4873ff19b49968c}{Component}} \mbox{\hyperlink{classComSquare_1_1Ram_1_1Ram_a80af60fecd948b647d590435028ecf1f}{get\+Component}} () const override
+\begin{DoxyCompactList}\small\item\em Get the component of this accessor (used for debug purpose) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} \mbox{\hyperlink{classComSquare_1_1Ram_1_1Ram_a003803dabc201990c870f5405c7e6de1}{get\+Size}} () const override
+\begin{DoxyCompactList}\small\item\em Get the size of the ram in bytes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t $\ast$ \mbox{\hyperlink{classComSquare_1_1Ram_1_1Ram_a305d5bb1e067213b35173f0888ed13d4}{\+\_\+data}}
+\begin{DoxyCompactList}\small\item\em The ram. (Can be used for W\+Ram, S\+Ram, V\+Ram etc) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} \mbox{\hyperlink{classComSquare_1_1Ram_1_1Ram_a63ccb742999b0c0161309b9c442d9bdb}{\+\_\+size}}
+\begin{DoxyCompactList}\small\item\em The size of the ram (in bytes). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceComSquare_a891b49feb5c3e0aaa4873ff19b49968c}{Component}} \mbox{\hyperlink{classComSquare_1_1Ram_1_1Ram_a28a7867b95ceb57d7a97ba046e8ca14f}{\+\_\+ram\+Type}}
+\begin{DoxyCompactList}\small\item\em An id identifying the type of memory this is (for the debugger) \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classComSquare_1_1Ram_1_1Ram_a3c0780f64fe626ba63e4d123ad9eaeef}{\+\_\+ram\+Name}}
+\begin{DoxyCompactList}\small\item\em The name of this ram. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classComSquare_1_1Ram_1_1Ram_a71d3876ff028ef14396f93bb91df4b12}\label{classComSquare_1_1Ram_1_1Ram_a71d3876ff028ef14396f93bb91df4b12}} 
+\index{ComSquare::Ram::Ram@{ComSquare::Ram::Ram}!Ram@{Ram}}
+\index{Ram@{Ram}!ComSquare::Ram::Ram@{ComSquare::Ram::Ram}}
+\doxysubsubsection{\texorpdfstring{Ram()}{Ram()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Com\+Square\+::\+Ram\+::\+Ram\+::\+Ram (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{size,  }\item[{\mbox{\hyperlink{namespaceComSquare_a891b49feb5c3e0aaa4873ff19b49968c}{Component}}}]{type,  }\item[{std\+::string}]{ram\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Create a ram of a given size in bytes. 
+
+\mbox{\Hypertarget{classComSquare_1_1Ram_1_1Ram_a1f15b671e6a2b4d72585fd78848fdb58}\label{classComSquare_1_1Ram_1_1Ram_a1f15b671e6a2b4d72585fd78848fdb58}} 
+\index{ComSquare::Ram::Ram@{ComSquare::Ram::Ram}!Ram@{Ram}}
+\index{Ram@{Ram}!ComSquare::Ram::Ram@{ComSquare::Ram::Ram}}
+\doxysubsubsection{\texorpdfstring{Ram()}{Ram()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Com\+Square\+::\+Ram\+::\+Ram\+::\+Ram (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classComSquare_1_1Ram_1_1Ram}{Ram}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+The ram can\textquotesingle{}t be copied. 
+
+\mbox{\Hypertarget{classComSquare_1_1Ram_1_1Ram_ae5da189334c6d8baa788688b2f513768}\label{classComSquare_1_1Ram_1_1Ram_ae5da189334c6d8baa788688b2f513768}} 
+\index{ComSquare::Ram::Ram@{ComSquare::Ram::Ram}!````~Ram@{$\sim$Ram}}
+\index{````~Ram@{$\sim$Ram}!ComSquare::Ram::Ram@{ComSquare::Ram::Ram}}
+\doxysubsubsection{\texorpdfstring{$\sim$Ram()}{~Ram()}}
+{\footnotesize\ttfamily Com\+Square\+::\+Ram\+::\+Ram\+::$\sim$\+Ram (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Destructor that free the ram. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classComSquare_1_1Ram_1_1Ram_a80af60fecd948b647d590435028ecf1f}\label{classComSquare_1_1Ram_1_1Ram_a80af60fecd948b647d590435028ecf1f}} 
+\index{ComSquare::Ram::Ram@{ComSquare::Ram::Ram}!getComponent@{getComponent}}
+\index{getComponent@{getComponent}!ComSquare::Ram::Ram@{ComSquare::Ram::Ram}}
+\doxysubsubsection{\texorpdfstring{getComponent()}{getComponent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceComSquare_a891b49feb5c3e0aaa4873ff19b49968c}{Component}} Com\+Square\+::\+Ram\+::\+Ram\+::get\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the component of this accessor (used for debug purpose) 
+
+
+
+Implements \mbox{\hyperlink{classComSquare_1_1Memory_1_1IMemory_a31289443bb26086fb74c724cdafd2241}{Com\+Square\+::\+Memory\+::\+I\+Memory}}.
+
+\mbox{\Hypertarget{classComSquare_1_1Ram_1_1Ram_a71d2424b05cf638d04402db2260c71aa}\label{classComSquare_1_1Ram_1_1Ram_a71d2424b05cf638d04402db2260c71aa}} 
+\index{ComSquare::Ram::Ram@{ComSquare::Ram::Ram}!getName@{getName}}
+\index{getName@{getName}!ComSquare::Ram::Ram@{ComSquare::Ram::Ram}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string Com\+Square\+::\+Ram\+::\+Ram\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the name of this accessor (used for debug purpose) 
+
+
+
+Implements \mbox{\hyperlink{classComSquare_1_1Memory_1_1IMemory_a34d654c04a8a992b439c4270d566263f}{Com\+Square\+::\+Memory\+::\+I\+Memory}}.
+
+\mbox{\Hypertarget{classComSquare_1_1Ram_1_1Ram_a003803dabc201990c870f5405c7e6de1}\label{classComSquare_1_1Ram_1_1Ram_a003803dabc201990c870f5405c7e6de1}} 
+\index{ComSquare::Ram::Ram@{ComSquare::Ram::Ram}!getSize@{getSize}}
+\index{getSize@{getSize}!ComSquare::Ram::Ram@{ComSquare::Ram::Ram}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} Com\+Square\+::\+Ram\+::\+Ram\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the size of the ram in bytes. 
+
+
+
+Implements \mbox{\hyperlink{classComSquare_1_1Memory_1_1IMemory_a1072ab44e7389913ff67cb77ff118c8b}{Com\+Square\+::\+Memory\+::\+I\+Memory}}.
+
+\mbox{\Hypertarget{classComSquare_1_1Ram_1_1Ram_ac27ae4f0c92ee9f14d307eea4e7f5a9f}\label{classComSquare_1_1Ram_1_1Ram_ac27ae4f0c92ee9f14d307eea4e7f5a9f}} 
+\index{ComSquare::Ram::Ram@{ComSquare::Ram::Ram}!operator=@{operator=}}
+\index{operator=@{operator=}!ComSquare::Ram::Ram@{ComSquare::Ram::Ram}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classComSquare_1_1Ram_1_1Ram}{Ram}}\& Com\+Square\+::\+Ram\+::\+Ram\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classComSquare_1_1Ram_1_1Ram}{Ram}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+The ram can\textquotesingle{}t be assigned. 
+
+\mbox{\Hypertarget{classComSquare_1_1Ram_1_1Ram_a668e5d7de4ec6a2e6a1b96a95cae08f9}\label{classComSquare_1_1Ram_1_1Ram_a668e5d7de4ec6a2e6a1b96a95cae08f9}} 
+\index{ComSquare::Ram::Ram@{ComSquare::Ram::Ram}!read@{read}}
+\index{read@{read}!ComSquare::Ram::Ram@{ComSquare::Ram::Ram}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+Ram\+::\+Ram\+::read (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{addr }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Read data from the component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & The local address to read from (0x0 should refer to the first byte of this component). \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em This} & function should thrown an \mbox{\hyperlink{classComSquare_1_1InvalidAddress}{Invalid\+Address}} for address that are not mapped to the component. \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+Return the data at the address given as parameter. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classComSquare_1_1Memory_1_1IMemory_a72ffc0dfe13a000099f4cbc197cd48ec}{Com\+Square\+::\+Memory\+::\+I\+Memory}}.
+
+\mbox{\Hypertarget{classComSquare_1_1Ram_1_1Ram_a0f42b342ebf151574c1e523719f9cf52}\label{classComSquare_1_1Ram_1_1Ram_a0f42b342ebf151574c1e523719f9cf52}} 
+\index{ComSquare::Ram::Ram@{ComSquare::Ram::Ram}!write@{write}}
+\index{write@{write}!ComSquare::Ram::Ram@{ComSquare::Ram::Ram}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+Ram\+::\+Ram\+::write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{addr,  }\item[{uint8\+\_\+t}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Write data to this component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & The local address to write data (0x0 should refer to the first byte of this component). \\
+\hline
+{\em data} & The new data to write. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em This} & function should thrown an \mbox{\hyperlink{classComSquare_1_1InvalidAddress}{Invalid\+Address}} for address that are not mapped to the component. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{classComSquare_1_1Memory_1_1IMemory_a449bc89798a0b86028bb0413106514d9}{Com\+Square\+::\+Memory\+::\+I\+Memory}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classComSquare_1_1Ram_1_1Ram_a305d5bb1e067213b35173f0888ed13d4}\label{classComSquare_1_1Ram_1_1Ram_a305d5bb1e067213b35173f0888ed13d4}} 
+\index{ComSquare::Ram::Ram@{ComSquare::Ram::Ram}!\_data@{\_data}}
+\index{\_data@{\_data}!ComSquare::Ram::Ram@{ComSquare::Ram::Ram}}
+\doxysubsubsection{\texorpdfstring{\_data}{\_data}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ Com\+Square\+::\+Ram\+::\+Ram\+::\+\_\+data\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The ram. (Can be used for W\+Ram, S\+Ram, V\+Ram etc) 
+
+\mbox{\Hypertarget{classComSquare_1_1Ram_1_1Ram_a3c0780f64fe626ba63e4d123ad9eaeef}\label{classComSquare_1_1Ram_1_1Ram_a3c0780f64fe626ba63e4d123ad9eaeef}} 
+\index{ComSquare::Ram::Ram@{ComSquare::Ram::Ram}!\_ramName@{\_ramName}}
+\index{\_ramName@{\_ramName}!ComSquare::Ram::Ram@{ComSquare::Ram::Ram}}
+\doxysubsubsection{\texorpdfstring{\_ramName}{\_ramName}}
+{\footnotesize\ttfamily std\+::string Com\+Square\+::\+Ram\+::\+Ram\+::\+\_\+ram\+Name\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The name of this ram. 
+
+\mbox{\Hypertarget{classComSquare_1_1Ram_1_1Ram_a28a7867b95ceb57d7a97ba046e8ca14f}\label{classComSquare_1_1Ram_1_1Ram_a28a7867b95ceb57d7a97ba046e8ca14f}} 
+\index{ComSquare::Ram::Ram@{ComSquare::Ram::Ram}!\_ramType@{\_ramType}}
+\index{\_ramType@{\_ramType}!ComSquare::Ram::Ram@{ComSquare::Ram::Ram}}
+\doxysubsubsection{\texorpdfstring{\_ramType}{\_ramType}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceComSquare_a891b49feb5c3e0aaa4873ff19b49968c}{Component}} Com\+Square\+::\+Ram\+::\+Ram\+::\+\_\+ram\+Type\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+An id identifying the type of memory this is (for the debugger) 
+
+\mbox{\Hypertarget{classComSquare_1_1Ram_1_1Ram_a63ccb742999b0c0161309b9c442d9bdb}\label{classComSquare_1_1Ram_1_1Ram_a63ccb742999b0c0161309b9c442d9bdb}} 
+\index{ComSquare::Ram::Ram@{ComSquare::Ram::Ram}!\_size@{\_size}}
+\index{\_size@{\_size}!ComSquare::Ram::Ram@{ComSquare::Ram::Ram}}
+\doxysubsubsection{\texorpdfstring{\_size}{\_size}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} Com\+Square\+::\+Ram\+::\+Ram\+::\+\_\+size\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The size of the ram (in bytes). 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+sources/\+Ram/\mbox{\hyperlink{Ram_8hpp}{Ram.\+hpp}}\item 
+sources/\+Ram/\mbox{\hyperlink{Ram_8cpp}{Ram.\+cpp}}\end{DoxyCompactItemize}

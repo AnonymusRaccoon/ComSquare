@@ -1,0 +1,10 @@
+<map id="ComSquare::Debugger::MemoryViewer" name="ComSquare::Debugger::MemoryViewer">
+<area shape="rect" id="node1" title="Class responsible of the Memory Viewer." alt="" coords="263,507,431,745"/>
+<area shape="rect" id="node5" href="$classComSquare_1_1Debugger_1_1ClosableWindow.html" title=" " alt="" coords="137,823,365,988"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,249,80,327"/>
+<area shape="rect" id="node3" href="$classComSquare_1_1SNES.html" title="Container of all the components of the SNES." alt="" coords="105,132,354,444"/>
+<area shape="rect" id="node4" href="$classComSquare_1_1Memory_1_1MemoryBus.html" title="The memory bus is the component responsible of mapping addresses to components address and transmitti..." alt="" coords="379,154,549,422"/>
+<area shape="rect" id="node6" title=" " alt="" coords="122,587,238,665"/>
+<area shape="rect" id="node7" href="$classMemoryViewerModel.html" title="The qt model that bind the ram to the view." alt="" coords="573,183,771,393"/>
+<area shape="rect" id="node8" title=" " alt="" coords="592,5,752,83"/>
+</map>

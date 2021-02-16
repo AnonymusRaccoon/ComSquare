@@ -1,0 +1,12 @@
+<map id="ComSquare::Debugger::MemoryBusDebug" name="ComSquare::Debugger::MemoryBusDebug">
+<area shape="rect" id="node1" title="window that allow the user to view all data going through the memory bus." alt="" coords="313,808,492,1032"/>
+<area shape="rect" id="node9" href="$classComSquare_1_1Debugger_1_1ClosableWindow.html" title=" " alt="" coords="189,1109,425,1275"/>
+<area shape="rect" id="node2" href="$classComSquare_1_1Memory_1_1MemoryBus.html" title="The memory bus is the component responsible of mapping addresses to components address and transmitti..." alt="" coords="5,455,176,723"/>
+<area shape="rect" id="node3" href="$classComSquare_1_1SNES.html" title="Container of all the components of the SNES." alt="" coords="201,433,450,745"/>
+<area shape="rect" id="node4" href="$classBusLoggerProxy.html" title="A class to filter logs from the memory bus&#39;s debugger." alt="" coords="475,514,637,665"/>
+<area shape="rect" id="node5" title=" " alt="" coords="259,213,427,290"/>
+<area shape="rect" id="node6" href="$structComSquare_1_1Debugger_1_1BusLoggerFilters.html" title="The struct representing filters of the memory bus&#39;s logger." alt="" coords="451,147,619,356"/>
+<area shape="rect" id="node7" href="$classBusLogModel.html" title="The qt model that bind the logs to the view." alt="" coords="643,132,789,371"/>
+<area shape="rect" id="node8" title=" " alt="" coords="636,5,796,83"/>
+<area shape="rect" id="node10" title=" " alt="" coords="173,881,289,959"/>
+</map>

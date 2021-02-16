@@ -1,0 +1,122 @@
+\hypertarget{structComSquare_1_1Debugger_1_1Register}{}\doxysection{Com\+Square\+::Debugger\+::Register Struct Reference}
+\label{structComSquare_1_1Debugger_1_1Register}\index{ComSquare::Debugger::Register@{ComSquare::Debugger::Register}}
+
+
+Struct containing information about a register.  
+
+
+
+
+{\ttfamily \#include $<$Register\+Viewer.\+hpp$>$}
+
+
+
+Collaboration diagram for Com\+Square\+::Debugger\+::Register\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{structComSquare_1_1Debugger_1_1Register__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structComSquare_1_1Debugger_1_1Register_a57f4f9bcbe67b56a274101b4dad40fdf}{Register}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} addr, const std\+::string \&used\+Bits, const std\+::string \&reg\+Name, const std\+::function$<$ unsigned int(\mbox{\hyperlink{classComSquare_1_1SNES}{S\+N\+ES}} \&)$>$ \&get\+Value, const std\+::function$<$ void(\mbox{\hyperlink{classComSquare_1_1SNES}{S\+N\+ES}} \&, unsigned int)$>$ \&set\+Value, \mbox{\hyperlink{namespaceComSquare_1_1Debugger_a75d4f13914da1c61eef975e2f6bc2909}{Register\+Type}} reg\+Type)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} \mbox{\hyperlink{structComSquare_1_1Debugger_1_1Register_af3811336f4a51ccb6fad33d5fd4e23fd}{address}}
+\begin{DoxyCompactList}\small\item\em Where this register is located on the bus. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{structComSquare_1_1Debugger_1_1Register_aff088463809dd4084f22ff1fbaefa6dc}{bits}}
+\begin{DoxyCompactList}\small\item\em Specify witch bits are concerned if not all bytes are concerned. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{structComSquare_1_1Debugger_1_1Register_a0347e295577bf5a0234f94c3d6feff0e}{name}}
+\begin{DoxyCompactList}\small\item\em The name of this register. \end{DoxyCompactList}\item 
+std\+::function$<$ unsigned(\mbox{\hyperlink{classComSquare_1_1SNES}{S\+N\+ES}} \&)$>$ \mbox{\hyperlink{structComSquare_1_1Debugger_1_1Register_a729d5dc64241fdf3314789d114969632}{get}}
+\begin{DoxyCompactList}\small\item\em How to get this value. \end{DoxyCompactList}\item 
+std\+::function$<$ void(\mbox{\hyperlink{classComSquare_1_1SNES}{S\+N\+ES}} \&, unsigned)$>$ \mbox{\hyperlink{structComSquare_1_1Debugger_1_1Register_adfc6234cbdda3cd1a0aa5349de97f363}{set}}
+\begin{DoxyCompactList}\small\item\em How to set this value. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceComSquare_1_1Debugger_a75d4f13914da1c61eef975e2f6bc2909}{Register\+Type}} \mbox{\hyperlink{structComSquare_1_1Debugger_1_1Register_a14ae873f82b9e5a0564c29c61139e553}{type}}
+\begin{DoxyCompactList}\small\item\em How this value should be displayed/asked for input. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Struct containing information about a register. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structComSquare_1_1Debugger_1_1Register_a57f4f9bcbe67b56a274101b4dad40fdf}\label{structComSquare_1_1Debugger_1_1Register_a57f4f9bcbe67b56a274101b4dad40fdf}} 
+\index{ComSquare::Debugger::Register@{ComSquare::Debugger::Register}!Register@{Register}}
+\index{Register@{Register}!ComSquare::Debugger::Register@{ComSquare::Debugger::Register}}
+\doxysubsubsection{\texorpdfstring{Register()}{Register()}}
+{\footnotesize\ttfamily Com\+Square\+::\+Debugger\+::\+Register\+::\+Register (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{addr,  }\item[{const std\+::string \&}]{used\+Bits,  }\item[{const std\+::string \&}]{reg\+Name,  }\item[{const std\+::function$<$ unsigned int(\mbox{\hyperlink{classComSquare_1_1SNES}{S\+N\+ES}} \&)$>$ \&}]{get\+Value,  }\item[{const std\+::function$<$ void(\mbox{\hyperlink{classComSquare_1_1SNES}{S\+N\+ES}} \&, unsigned int)$>$ \&}]{set\+Value,  }\item[{\mbox{\hyperlink{namespaceComSquare_1_1Debugger_a75d4f13914da1c61eef975e2f6bc2909}{Register\+Type}}}]{reg\+Type }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structComSquare_1_1Debugger_1_1Register_af3811336f4a51ccb6fad33d5fd4e23fd}\label{structComSquare_1_1Debugger_1_1Register_af3811336f4a51ccb6fad33d5fd4e23fd}} 
+\index{ComSquare::Debugger::Register@{ComSquare::Debugger::Register}!address@{address}}
+\index{address@{address}!ComSquare::Debugger::Register@{ComSquare::Debugger::Register}}
+\doxysubsubsection{\texorpdfstring{address}{address}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} Com\+Square\+::\+Debugger\+::\+Register\+::address}
+
+
+
+Where this register is located on the bus. 
+
+\mbox{\Hypertarget{structComSquare_1_1Debugger_1_1Register_aff088463809dd4084f22ff1fbaefa6dc}\label{structComSquare_1_1Debugger_1_1Register_aff088463809dd4084f22ff1fbaefa6dc}} 
+\index{ComSquare::Debugger::Register@{ComSquare::Debugger::Register}!bits@{bits}}
+\index{bits@{bits}!ComSquare::Debugger::Register@{ComSquare::Debugger::Register}}
+\doxysubsubsection{\texorpdfstring{bits}{bits}}
+{\footnotesize\ttfamily std\+::string Com\+Square\+::\+Debugger\+::\+Register\+::bits}
+
+
+
+Specify witch bits are concerned if not all bytes are concerned. 
+
+\mbox{\Hypertarget{structComSquare_1_1Debugger_1_1Register_a729d5dc64241fdf3314789d114969632}\label{structComSquare_1_1Debugger_1_1Register_a729d5dc64241fdf3314789d114969632}} 
+\index{ComSquare::Debugger::Register@{ComSquare::Debugger::Register}!get@{get}}
+\index{get@{get}!ComSquare::Debugger::Register@{ComSquare::Debugger::Register}}
+\doxysubsubsection{\texorpdfstring{get}{get}}
+{\footnotesize\ttfamily std\+::function$<$unsigned(\mbox{\hyperlink{classComSquare_1_1SNES}{S\+N\+ES}} \&)$>$ Com\+Square\+::\+Debugger\+::\+Register\+::get}
+
+
+
+How to get this value. 
+
+\mbox{\Hypertarget{structComSquare_1_1Debugger_1_1Register_a0347e295577bf5a0234f94c3d6feff0e}\label{structComSquare_1_1Debugger_1_1Register_a0347e295577bf5a0234f94c3d6feff0e}} 
+\index{ComSquare::Debugger::Register@{ComSquare::Debugger::Register}!name@{name}}
+\index{name@{name}!ComSquare::Debugger::Register@{ComSquare::Debugger::Register}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily std\+::string Com\+Square\+::\+Debugger\+::\+Register\+::name}
+
+
+
+The name of this register. 
+
+\mbox{\Hypertarget{structComSquare_1_1Debugger_1_1Register_adfc6234cbdda3cd1a0aa5349de97f363}\label{structComSquare_1_1Debugger_1_1Register_adfc6234cbdda3cd1a0aa5349de97f363}} 
+\index{ComSquare::Debugger::Register@{ComSquare::Debugger::Register}!set@{set}}
+\index{set@{set}!ComSquare::Debugger::Register@{ComSquare::Debugger::Register}}
+\doxysubsubsection{\texorpdfstring{set}{set}}
+{\footnotesize\ttfamily std\+::function$<$void(\mbox{\hyperlink{classComSquare_1_1SNES}{S\+N\+ES}} \&, unsigned)$>$ Com\+Square\+::\+Debugger\+::\+Register\+::set}
+
+
+
+How to set this value. 
+
+\mbox{\Hypertarget{structComSquare_1_1Debugger_1_1Register_a14ae873f82b9e5a0564c29c61139e553}\label{structComSquare_1_1Debugger_1_1Register_a14ae873f82b9e5a0564c29c61139e553}} 
+\index{ComSquare::Debugger::Register@{ComSquare::Debugger::Register}!type@{type}}
+\index{type@{type}!ComSquare::Debugger::Register@{ComSquare::Debugger::Register}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceComSquare_1_1Debugger_a75d4f13914da1c61eef975e2f6bc2909}{Register\+Type}} Com\+Square\+::\+Debugger\+::\+Register\+::type}
+
+
+
+How this value should be displayed/asked for input. 
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+sources/\+Debugger/\mbox{\hyperlink{RegisterViewer_8hpp}{Register\+Viewer.\+hpp}}\item 
+sources/\+Debugger/\mbox{\hyperlink{RegisterViewer_8cpp}{Register\+Viewer.\+cpp}}\end{DoxyCompactItemize}

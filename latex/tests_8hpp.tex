@@ -1,0 +1,74 @@
+\hypertarget{tests_8hpp}{}\doxysection{tests/tests.hpp File Reference}
+\label{tests_8hpp}\index{tests/tests.hpp@{tests/tests.hpp}}
+{\ttfamily \#include \char`\"{}../sources/\+Memory/\+Memory\+Bus.\+hpp\char`\"{}}\newline
+{\ttfamily \#include $<$criterion/criterion.\+h$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$zconf.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}tests.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../sources/\+Renderer/\+No\+Renderer.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../sources/\+S\+N\+E\+S.\+hpp\char`\"{}}\newline
+Include dependency graph for tests.\+hpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tests_8hpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tests_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{tests_8hpp_a6a1d6e1a12975a4e9a0b5b952e79eaad}{private}}~public
+\item 
+\#define \mbox{\hyperlink{tests_8hpp_a363c8dcebb1777654ad1703136a14ec8}{protected}}~public
+\item 
+\#define \mbox{\hyperlink{tests_8hpp_a5198534de6768d36f570e0b656ad34d6}{class}}~struct
+\item 
+\#define \mbox{\hyperlink{tests_8hpp_a196841b181bc72fd4cfb244cf41712db}{Init}}()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{tests_8hpp_a5198534de6768d36f570e0b656ad34d6}\label{tests_8hpp_a5198534de6768d36f570e0b656ad34d6}} 
+\index{tests.hpp@{tests.hpp}!class@{class}}
+\index{class@{class}!tests.hpp@{tests.hpp}}
+\doxysubsubsection{\texorpdfstring{class}{class}}
+{\footnotesize\ttfamily \#define class~struct}
+
+\mbox{\Hypertarget{tests_8hpp_a196841b181bc72fd4cfb244cf41712db}\label{tests_8hpp_a196841b181bc72fd4cfb244cf41712db}} 
+\index{tests.hpp@{tests.hpp}!Init@{Init}}
+\index{Init@{Init}!tests.hpp@{tests.hpp}}
+\doxysubsubsection{\texorpdfstring{Init}{Init}}
+{\footnotesize\ttfamily \#define Init(\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    Renderer::NoRenderer norenderer(0, 0, 0); \(\backslash\)}
+\DoxyCodeLine{    SNES snes(\textcolor{stringliteral}{"../tests/my\_cartridge"}, norenderer); \(\backslash\)}
+\DoxyCodeLine{    snes.cartridge-\/>\_size = 100; \(\backslash\)}
+\DoxyCodeLine{    snes.cartridge-\/>\_data = \textcolor{keyword}{new} uint8\_t[snes.cartridge-\/>\_size]; \(\backslash\)}
+\DoxyCodeLine{    snes.cartridge-\/>header.mappingMode = \mbox{\hyperlink{namespaceComSquare_1_1Cartridge_a61c1e80050c388d76fb687b129ed8645ab06a20291b736bc664f853b77d1f3846}{Cartridge::LoRom}}; \(\backslash\)}
+\DoxyCodeLine{    snes.sram-\/>\_size = 100; \(\backslash\)}
+\DoxyCodeLine{    snes.sram-\/>\_data = \textcolor{keyword}{new} uint8\_t[snes.cartridge-\/>\_size];}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{tests_8hpp_a6a1d6e1a12975a4e9a0b5b952e79eaad}\label{tests_8hpp_a6a1d6e1a12975a4e9a0b5b952e79eaad}} 
+\index{tests.hpp@{tests.hpp}!private@{private}}
+\index{private@{private}!tests.hpp@{tests.hpp}}
+\doxysubsubsection{\texorpdfstring{private}{private}}
+{\footnotesize\ttfamily \#define private~public}
+
+\mbox{\Hypertarget{tests_8hpp_a363c8dcebb1777654ad1703136a14ec8}\label{tests_8hpp_a363c8dcebb1777654ad1703136a14ec8}} 
+\index{tests.hpp@{tests.hpp}!protected@{protected}}
+\index{protected@{protected}!tests.hpp@{tests.hpp}}
+\doxysubsubsection{\texorpdfstring{protected}{protected}}
+{\footnotesize\ttfamily \#define protected~public}
+

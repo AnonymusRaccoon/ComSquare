@@ -1,0 +1,415 @@
+\hypertarget{structComSquare_1_1CPU_1_1Registers}{}\doxysection{Com\+Square\+::C\+PU\+::Registers Struct Reference}
+\label{structComSquare_1_1CPU_1_1Registers}\index{ComSquare::CPU::Registers@{ComSquare::CPU::Registers}}
+
+
+Struct containing registers for the main \mbox{\hyperlink{classComSquare_1_1CPU_1_1CPU}{C\+PU}}.  
+
+
+
+
+{\ttfamily \#include $<$C\+P\+U.\+hpp$>$}
+
+
+
+Collaboration diagram for Com\+Square\+::C\+PU\+::Registers\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=231pt]{structComSquare_1_1CPU_1_1Registers__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>uint8\_t \mbox{\hyperlink{structComSquare_1_1CPU_1_1Registers_a127b7752795e4498236f7b01e7498227}{al}}\\
+\>\>uint8\_t \mbox{\hyperlink{structComSquare_1_1CPU_1_1Registers_a7c28866ed95425fd60aa4d8886bb8f9f}{ah}}\\
+\>\} \\
+\>uint16\_t \mbox{\hyperlink{structComSquare_1_1CPU_1_1Registers_aaa8d450e6d4430317e1251313acd11c3}{a}}\\
+\}; \\
+
+\end{tabbing}\begin{DoxyCompactList}\small\item\em The Accumulator. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{structComSquare_1_1CPU_1_1Registers_af9d26a8ba0914c825d06db23049433ec}{dbr}}
+\begin{DoxyCompactList}\small\item\em The Data Bank Register;. \end{DoxyCompactList}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>uint8\_t \mbox{\hyperlink{structComSquare_1_1CPU_1_1Registers_ac691fbd6e61b3aef8b3464a233f85f6d}{dl}}\\
+\>\>uint8\_t \mbox{\hyperlink{structComSquare_1_1CPU_1_1Registers_a1e072edb3788835babe101a874267d84}{dh}}\\
+\>\} \\
+\>uint16\_t \mbox{\hyperlink{structComSquare_1_1CPU_1_1Registers_af16407891e835ccbcb0fcb4d19b6081e}{d}}\\
+\}; \\
+
+\end{tabbing}\begin{DoxyCompactList}\small\item\em The Direct Page register;. \end{DoxyCompactList}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>union \{\\
+\>\>\>struct \{\\
+\>\>\>\>uint8\_t \mbox{\hyperlink{structComSquare_1_1CPU_1_1Registers_a277545ef8503238642198f0386d2faaa}{pcl}}\\
+\>\>\>\>uint8\_t \mbox{\hyperlink{structComSquare_1_1CPU_1_1Registers_a25f950ea41d30db1ec73b8a165e67f51}{pch}}\\
+\>\>\>\} \\
+\>\>\>uint16\_t \mbox{\hyperlink{structComSquare_1_1CPU_1_1Registers_a5ff36b8ad167923161b896ae92729111}{pc}}\\
+\>\>\} \\
+\>\>\>\>{\em The Program Counter;. }\\
+\>\>uint8\_t \mbox{\hyperlink{structComSquare_1_1CPU_1_1Registers_a57844c0e6c83ca5e62ac7c6eebaa2782}{pbr}}\\
+\>\>\>\>{\em The Program Bank Register;. }\\
+\>\} \\
+\>\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\_t}} \mbox{\hyperlink{structComSquare_1_1CPU_1_1Registers_a9c1e284901d2fc2189fea008dc123f81}{pac}}\\
+\>\>\>{\em The current Program Address Counter (does not exist in a snes but is useful here). }\\
+\}; \\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>uint8\_t \mbox{\hyperlink{structComSquare_1_1CPU_1_1Registers_a19f2b4c328874c2207459bf22b2a76ba}{sl}}\\
+\>\>uint8\_t \mbox{\hyperlink{structComSquare_1_1CPU_1_1Registers_a438434360195417afce13220ae856861}{sh}}\\
+\>\} \\
+\>uint16\_t \mbox{\hyperlink{structComSquare_1_1CPU_1_1Registers_ad6e42ddbafd6a31ad15df813dee72fa4}{s}}\\
+\}; \\
+
+\end{tabbing}\begin{DoxyCompactList}\small\item\em The Stack pointer. \end{DoxyCompactList}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>uint8\_t \mbox{\hyperlink{structComSquare_1_1CPU_1_1Registers_a718d9c2f67935dad3778b0fc03a22030}{xl}}\\
+\>\>uint8\_t \mbox{\hyperlink{structComSquare_1_1CPU_1_1Registers_acc0e55548baf2ad8a411eb4f782092c3}{xh}}\\
+\>\} \\
+\>uint16\_t \mbox{\hyperlink{structComSquare_1_1CPU_1_1Registers_a1274f0dbe8e79cd4794f2cc8175a99c3}{x}}\\
+\}; \\
+
+\end{tabbing}\begin{DoxyCompactList}\small\item\em The X index register. \end{DoxyCompactList}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>uint8\_t \mbox{\hyperlink{structComSquare_1_1CPU_1_1Registers_ab1995426df7b4f4500a2576b121824f6}{yl}}\\
+\>\>uint8\_t \mbox{\hyperlink{structComSquare_1_1CPU_1_1Registers_a324dee252472744f2d72fb4ba86c3da1}{yh}}\\
+\>\} \\
+\>uint16\_t \mbox{\hyperlink{structComSquare_1_1CPU_1_1Registers_ac756a49aa063214449d0ef9be3db38cc}{y}}\\
+\}; \\
+
+\end{tabbing}\begin{DoxyCompactList}\small\item\em The Y index register. \end{DoxyCompactList}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>bool \mbox{\hyperlink{structComSquare_1_1CPU_1_1Registers_ace6b7db00d4a528dfdba1209f28abe7c}{c}}: 1\\
+\>\>\>{\em The Carry flag. }\\
+\>\>bool \mbox{\hyperlink{structComSquare_1_1CPU_1_1Registers_a8cf318578ff80090086991f3aaf67163}{z}}: 1\\
+\>\>\>{\em The Zero flag. }\\
+\>\>bool \mbox{\hyperlink{structComSquare_1_1CPU_1_1Registers_a5fe99bb2f46f69de3a0dd7356e0218e8}{i}}: 1\\
+\>\>\>{\em The Interrupt request disable flag. }\\
+\>\>bool \mbox{\hyperlink{structComSquare_1_1CPU_1_1Registers_a250b2b31fd0280b30ed246a199e69a27}{d}}: 1\\
+\>\>\>{\em The Decimal mode flag. }\\
+\>\>bool \mbox{\hyperlink{structComSquare_1_1CPU_1_1Registers_ac39778a1ba11358a7ca705e40fed1ab2}{x\_b}}: 1\\
+\>\>\>{\em The indeX register width flag (in native mode only) -\/ 0 = 16 bits mode, 1 = 8 bits mode OR the Break flag (in emulation mode only) }\\
+\>\>bool \mbox{\hyperlink{structComSquare_1_1CPU_1_1Registers_a047027bf478c433e7a6c5f1c33e98a82}{m}}: 1\\
+\>\>\>{\em The accumulator and \mbox{\hyperlink{namespaceComSquare_1_1Memory}{Memory}} width flag (in native mode only) -\/ 0 = 16 bits mode, 1 = 8 bits mode. }\\
+\>\>bool \mbox{\hyperlink{structComSquare_1_1CPU_1_1Registers_a27f4092211c4647e8732ae6bf006dbfc}{v}}: 1\\
+\>\>\>{\em The oVerflow flag. }\\
+\>\>bool \mbox{\hyperlink{structComSquare_1_1CPU_1_1Registers_aa3d138e61fbad0f10309b61a4e9a9147}{n}}: 1\\
+\>\>\>{\em The Negative flag. }\\
+\>\} \\
+\>uint8\_t \mbox{\hyperlink{structComSquare_1_1CPU_1_1Registers_a3b742134f8b31c8c4ca9e0e513fab8e3}{flags}}\\
+\} \mbox{\hyperlink{structComSquare_1_1CPU_1_1Registers_a2d2ea43f51c313f9b9b284867ec14b1c}{p}}\\
+
+\end{tabbing}\begin{DoxyCompactList}\small\item\em The Processor status register;. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Struct containing registers for the main \mbox{\hyperlink{classComSquare_1_1CPU_1_1CPU}{C\+PU}}. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structComSquare_1_1CPU_1_1Registers_a143422d94945345071305c03b7b70108}\label{structComSquare_1_1CPU_1_1Registers_a143422d94945345071305c03b7b70108}} 
+\doxysubsubsection{\texorpdfstring{"@39}{@39}}
+{\footnotesize\ttfamily union \{ ... \} }
+
+
+
+The Accumulator. 
+
+\mbox{\Hypertarget{structComSquare_1_1CPU_1_1Registers_a3c577bcd9057c587e19c17c7898235c4}\label{structComSquare_1_1CPU_1_1Registers_a3c577bcd9057c587e19c17c7898235c4}} 
+\doxysubsubsection{\texorpdfstring{"@41}{@41}}
+{\footnotesize\ttfamily union \{ ... \} }
+
+
+
+The Direct Page register;. 
+
+\mbox{\Hypertarget{structComSquare_1_1CPU_1_1Registers_af12743af04a63d317c13ebb71b24bebb}\label{structComSquare_1_1CPU_1_1Registers_af12743af04a63d317c13ebb71b24bebb}} 
+\doxysubsubsection{\texorpdfstring{"@43}{@43}}
+{\footnotesize\ttfamily union \{ ... \} }
+
+\mbox{\Hypertarget{structComSquare_1_1CPU_1_1Registers_a04d14da060175c4968c562470ffd622c}\label{structComSquare_1_1CPU_1_1Registers_a04d14da060175c4968c562470ffd622c}} 
+\doxysubsubsection{\texorpdfstring{"@45}{@45}}
+{\footnotesize\ttfamily union \{ ... \} }
+
+
+
+The Stack pointer. 
+
+\mbox{\Hypertarget{structComSquare_1_1CPU_1_1Registers_abebc1c1a93063bc6859714b3bfaa7ece}\label{structComSquare_1_1CPU_1_1Registers_abebc1c1a93063bc6859714b3bfaa7ece}} 
+\doxysubsubsection{\texorpdfstring{"@47}{@47}}
+{\footnotesize\ttfamily union \{ ... \} }
+
+
+
+The X index register. 
+
+\mbox{\Hypertarget{structComSquare_1_1CPU_1_1Registers_a7723f2fbdb773a421b790e96e35de114}\label{structComSquare_1_1CPU_1_1Registers_a7723f2fbdb773a421b790e96e35de114}} 
+\doxysubsubsection{\texorpdfstring{"@49}{@49}}
+{\footnotesize\ttfamily union \{ ... \} }
+
+
+
+The Y index register. 
+
+\mbox{\Hypertarget{structComSquare_1_1CPU_1_1Registers_aaa8d450e6d4430317e1251313acd11c3}\label{structComSquare_1_1CPU_1_1Registers_aaa8d450e6d4430317e1251313acd11c3}} 
+\index{ComSquare::CPU::Registers@{ComSquare::CPU::Registers}!a@{a}}
+\index{a@{a}!ComSquare::CPU::Registers@{ComSquare::CPU::Registers}}
+\doxysubsubsection{\texorpdfstring{a}{a}}
+{\footnotesize\ttfamily uint16\+\_\+t Com\+Square\+::\+C\+P\+U\+::\+Registers\+::a}
+
+\mbox{\Hypertarget{structComSquare_1_1CPU_1_1Registers_a7c28866ed95425fd60aa4d8886bb8f9f}\label{structComSquare_1_1CPU_1_1Registers_a7c28866ed95425fd60aa4d8886bb8f9f}} 
+\index{ComSquare::CPU::Registers@{ComSquare::CPU::Registers}!ah@{ah}}
+\index{ah@{ah}!ComSquare::CPU::Registers@{ComSquare::CPU::Registers}}
+\doxysubsubsection{\texorpdfstring{ah}{ah}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+C\+P\+U\+::\+Registers\+::ah}
+
+\mbox{\Hypertarget{structComSquare_1_1CPU_1_1Registers_a127b7752795e4498236f7b01e7498227}\label{structComSquare_1_1CPU_1_1Registers_a127b7752795e4498236f7b01e7498227}} 
+\index{ComSquare::CPU::Registers@{ComSquare::CPU::Registers}!al@{al}}
+\index{al@{al}!ComSquare::CPU::Registers@{ComSquare::CPU::Registers}}
+\doxysubsubsection{\texorpdfstring{al}{al}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+C\+P\+U\+::\+Registers\+::al}
+
+\mbox{\Hypertarget{structComSquare_1_1CPU_1_1Registers_ace6b7db00d4a528dfdba1209f28abe7c}\label{structComSquare_1_1CPU_1_1Registers_ace6b7db00d4a528dfdba1209f28abe7c}} 
+\index{ComSquare::CPU::Registers@{ComSquare::CPU::Registers}!c@{c}}
+\index{c@{c}!ComSquare::CPU::Registers@{ComSquare::CPU::Registers}}
+\doxysubsubsection{\texorpdfstring{c}{c}}
+{\footnotesize\ttfamily bool Com\+Square\+::\+C\+P\+U\+::\+Registers\+::c}
+
+
+
+The Carry flag. 
+
+\mbox{\Hypertarget{structComSquare_1_1CPU_1_1Registers_af16407891e835ccbcb0fcb4d19b6081e}\label{structComSquare_1_1CPU_1_1Registers_af16407891e835ccbcb0fcb4d19b6081e}} 
+\index{ComSquare::CPU::Registers@{ComSquare::CPU::Registers}!d@{d}}
+\index{d@{d}!ComSquare::CPU::Registers@{ComSquare::CPU::Registers}}
+\doxysubsubsection{\texorpdfstring{d}{d}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily uint16\+\_\+t Com\+Square\+::\+C\+P\+U\+::\+Registers\+::d}
+
+\mbox{\Hypertarget{structComSquare_1_1CPU_1_1Registers_a250b2b31fd0280b30ed246a199e69a27}\label{structComSquare_1_1CPU_1_1Registers_a250b2b31fd0280b30ed246a199e69a27}} 
+\index{ComSquare::CPU::Registers@{ComSquare::CPU::Registers}!d@{d}}
+\index{d@{d}!ComSquare::CPU::Registers@{ComSquare::CPU::Registers}}
+\doxysubsubsection{\texorpdfstring{d}{d}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily bool Com\+Square\+::\+C\+P\+U\+::\+Registers\+::d}
+
+
+
+The Decimal mode flag. 
+
+\mbox{\Hypertarget{structComSquare_1_1CPU_1_1Registers_af9d26a8ba0914c825d06db23049433ec}\label{structComSquare_1_1CPU_1_1Registers_af9d26a8ba0914c825d06db23049433ec}} 
+\index{ComSquare::CPU::Registers@{ComSquare::CPU::Registers}!dbr@{dbr}}
+\index{dbr@{dbr}!ComSquare::CPU::Registers@{ComSquare::CPU::Registers}}
+\doxysubsubsection{\texorpdfstring{dbr}{dbr}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+C\+P\+U\+::\+Registers\+::dbr}
+
+
+
+The Data Bank Register;. 
+
+\mbox{\Hypertarget{structComSquare_1_1CPU_1_1Registers_a1e072edb3788835babe101a874267d84}\label{structComSquare_1_1CPU_1_1Registers_a1e072edb3788835babe101a874267d84}} 
+\index{ComSquare::CPU::Registers@{ComSquare::CPU::Registers}!dh@{dh}}
+\index{dh@{dh}!ComSquare::CPU::Registers@{ComSquare::CPU::Registers}}
+\doxysubsubsection{\texorpdfstring{dh}{dh}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+C\+P\+U\+::\+Registers\+::dh}
+
+\mbox{\Hypertarget{structComSquare_1_1CPU_1_1Registers_ac691fbd6e61b3aef8b3464a233f85f6d}\label{structComSquare_1_1CPU_1_1Registers_ac691fbd6e61b3aef8b3464a233f85f6d}} 
+\index{ComSquare::CPU::Registers@{ComSquare::CPU::Registers}!dl@{dl}}
+\index{dl@{dl}!ComSquare::CPU::Registers@{ComSquare::CPU::Registers}}
+\doxysubsubsection{\texorpdfstring{dl}{dl}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+C\+P\+U\+::\+Registers\+::dl}
+
+\mbox{\Hypertarget{structComSquare_1_1CPU_1_1Registers_a3b742134f8b31c8c4ca9e0e513fab8e3}\label{structComSquare_1_1CPU_1_1Registers_a3b742134f8b31c8c4ca9e0e513fab8e3}} 
+\index{ComSquare::CPU::Registers@{ComSquare::CPU::Registers}!flags@{flags}}
+\index{flags@{flags}!ComSquare::CPU::Registers@{ComSquare::CPU::Registers}}
+\doxysubsubsection{\texorpdfstring{flags}{flags}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+C\+P\+U\+::\+Registers\+::flags}
+
+\mbox{\Hypertarget{structComSquare_1_1CPU_1_1Registers_a5fe99bb2f46f69de3a0dd7356e0218e8}\label{structComSquare_1_1CPU_1_1Registers_a5fe99bb2f46f69de3a0dd7356e0218e8}} 
+\index{ComSquare::CPU::Registers@{ComSquare::CPU::Registers}!i@{i}}
+\index{i@{i}!ComSquare::CPU::Registers@{ComSquare::CPU::Registers}}
+\doxysubsubsection{\texorpdfstring{i}{i}}
+{\footnotesize\ttfamily bool Com\+Square\+::\+C\+P\+U\+::\+Registers\+::i}
+
+
+
+The Interrupt request disable flag. 
+
+\mbox{\Hypertarget{structComSquare_1_1CPU_1_1Registers_a047027bf478c433e7a6c5f1c33e98a82}\label{structComSquare_1_1CPU_1_1Registers_a047027bf478c433e7a6c5f1c33e98a82}} 
+\index{ComSquare::CPU::Registers@{ComSquare::CPU::Registers}!m@{m}}
+\index{m@{m}!ComSquare::CPU::Registers@{ComSquare::CPU::Registers}}
+\doxysubsubsection{\texorpdfstring{m}{m}}
+{\footnotesize\ttfamily bool Com\+Square\+::\+C\+P\+U\+::\+Registers\+::m}
+
+
+
+The accumulator and \mbox{\hyperlink{namespaceComSquare_1_1Memory}{Memory}} width flag (in native mode only) -\/ 0 = 16 bits mode, 1 = 8 bits mode. 
+
+\mbox{\Hypertarget{structComSquare_1_1CPU_1_1Registers_aa3d138e61fbad0f10309b61a4e9a9147}\label{structComSquare_1_1CPU_1_1Registers_aa3d138e61fbad0f10309b61a4e9a9147}} 
+\index{ComSquare::CPU::Registers@{ComSquare::CPU::Registers}!n@{n}}
+\index{n@{n}!ComSquare::CPU::Registers@{ComSquare::CPU::Registers}}
+\doxysubsubsection{\texorpdfstring{n}{n}}
+{\footnotesize\ttfamily bool Com\+Square\+::\+C\+P\+U\+::\+Registers\+::n}
+
+
+
+The Negative flag. 
+
+\mbox{\Hypertarget{structComSquare_1_1CPU_1_1Registers_a2d2ea43f51c313f9b9b284867ec14b1c}\label{structComSquare_1_1CPU_1_1Registers_a2d2ea43f51c313f9b9b284867ec14b1c}} 
+\index{ComSquare::CPU::Registers@{ComSquare::CPU::Registers}!p@{p}}
+\index{p@{p}!ComSquare::CPU::Registers@{ComSquare::CPU::Registers}}
+\doxysubsubsection{\texorpdfstring{p}{p}}
+{\footnotesize\ttfamily union \{ ... \}  Com\+Square\+::\+C\+P\+U\+::\+Registers\+::p}
+
+
+
+The Processor status register;. 
+
+\mbox{\Hypertarget{structComSquare_1_1CPU_1_1Registers_a9c1e284901d2fc2189fea008dc123f81}\label{structComSquare_1_1CPU_1_1Registers_a9c1e284901d2fc2189fea008dc123f81}} 
+\index{ComSquare::CPU::Registers@{ComSquare::CPU::Registers}!pac@{pac}}
+\index{pac@{pac}!ComSquare::CPU::Registers@{ComSquare::CPU::Registers}}
+\doxysubsubsection{\texorpdfstring{pac}{pac}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} Com\+Square\+::\+C\+P\+U\+::\+Registers\+::pac}
+
+
+
+The current Program Address Counter (does not exist in a snes but is useful here). 
+
+\mbox{\Hypertarget{structComSquare_1_1CPU_1_1Registers_a57844c0e6c83ca5e62ac7c6eebaa2782}\label{structComSquare_1_1CPU_1_1Registers_a57844c0e6c83ca5e62ac7c6eebaa2782}} 
+\index{ComSquare::CPU::Registers@{ComSquare::CPU::Registers}!pbr@{pbr}}
+\index{pbr@{pbr}!ComSquare::CPU::Registers@{ComSquare::CPU::Registers}}
+\doxysubsubsection{\texorpdfstring{pbr}{pbr}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+C\+P\+U\+::\+Registers\+::pbr}
+
+
+
+The Program Bank Register;. 
+
+\mbox{\Hypertarget{structComSquare_1_1CPU_1_1Registers_a5ff36b8ad167923161b896ae92729111}\label{structComSquare_1_1CPU_1_1Registers_a5ff36b8ad167923161b896ae92729111}} 
+\index{ComSquare::CPU::Registers@{ComSquare::CPU::Registers}!pc@{pc}}
+\index{pc@{pc}!ComSquare::CPU::Registers@{ComSquare::CPU::Registers}}
+\doxysubsubsection{\texorpdfstring{pc}{pc}}
+{\footnotesize\ttfamily uint16\+\_\+t Com\+Square\+::\+C\+P\+U\+::\+Registers\+::pc}
+
+\mbox{\Hypertarget{structComSquare_1_1CPU_1_1Registers_a25f950ea41d30db1ec73b8a165e67f51}\label{structComSquare_1_1CPU_1_1Registers_a25f950ea41d30db1ec73b8a165e67f51}} 
+\index{ComSquare::CPU::Registers@{ComSquare::CPU::Registers}!pch@{pch}}
+\index{pch@{pch}!ComSquare::CPU::Registers@{ComSquare::CPU::Registers}}
+\doxysubsubsection{\texorpdfstring{pch}{pch}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+C\+P\+U\+::\+Registers\+::pch}
+
+\mbox{\Hypertarget{structComSquare_1_1CPU_1_1Registers_a277545ef8503238642198f0386d2faaa}\label{structComSquare_1_1CPU_1_1Registers_a277545ef8503238642198f0386d2faaa}} 
+\index{ComSquare::CPU::Registers@{ComSquare::CPU::Registers}!pcl@{pcl}}
+\index{pcl@{pcl}!ComSquare::CPU::Registers@{ComSquare::CPU::Registers}}
+\doxysubsubsection{\texorpdfstring{pcl}{pcl}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+C\+P\+U\+::\+Registers\+::pcl}
+
+\mbox{\Hypertarget{structComSquare_1_1CPU_1_1Registers_ad6e42ddbafd6a31ad15df813dee72fa4}\label{structComSquare_1_1CPU_1_1Registers_ad6e42ddbafd6a31ad15df813dee72fa4}} 
+\index{ComSquare::CPU::Registers@{ComSquare::CPU::Registers}!s@{s}}
+\index{s@{s}!ComSquare::CPU::Registers@{ComSquare::CPU::Registers}}
+\doxysubsubsection{\texorpdfstring{s}{s}}
+{\footnotesize\ttfamily uint16\+\_\+t Com\+Square\+::\+C\+P\+U\+::\+Registers\+::s}
+
+\mbox{\Hypertarget{structComSquare_1_1CPU_1_1Registers_a438434360195417afce13220ae856861}\label{structComSquare_1_1CPU_1_1Registers_a438434360195417afce13220ae856861}} 
+\index{ComSquare::CPU::Registers@{ComSquare::CPU::Registers}!sh@{sh}}
+\index{sh@{sh}!ComSquare::CPU::Registers@{ComSquare::CPU::Registers}}
+\doxysubsubsection{\texorpdfstring{sh}{sh}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+C\+P\+U\+::\+Registers\+::sh}
+
+\mbox{\Hypertarget{structComSquare_1_1CPU_1_1Registers_a19f2b4c328874c2207459bf22b2a76ba}\label{structComSquare_1_1CPU_1_1Registers_a19f2b4c328874c2207459bf22b2a76ba}} 
+\index{ComSquare::CPU::Registers@{ComSquare::CPU::Registers}!sl@{sl}}
+\index{sl@{sl}!ComSquare::CPU::Registers@{ComSquare::CPU::Registers}}
+\doxysubsubsection{\texorpdfstring{sl}{sl}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+C\+P\+U\+::\+Registers\+::sl}
+
+\mbox{\Hypertarget{structComSquare_1_1CPU_1_1Registers_a27f4092211c4647e8732ae6bf006dbfc}\label{structComSquare_1_1CPU_1_1Registers_a27f4092211c4647e8732ae6bf006dbfc}} 
+\index{ComSquare::CPU::Registers@{ComSquare::CPU::Registers}!v@{v}}
+\index{v@{v}!ComSquare::CPU::Registers@{ComSquare::CPU::Registers}}
+\doxysubsubsection{\texorpdfstring{v}{v}}
+{\footnotesize\ttfamily bool Com\+Square\+::\+C\+P\+U\+::\+Registers\+::v}
+
+
+
+The o\+Verflow flag. 
+
+\mbox{\Hypertarget{structComSquare_1_1CPU_1_1Registers_a1274f0dbe8e79cd4794f2cc8175a99c3}\label{structComSquare_1_1CPU_1_1Registers_a1274f0dbe8e79cd4794f2cc8175a99c3}} 
+\index{ComSquare::CPU::Registers@{ComSquare::CPU::Registers}!x@{x}}
+\index{x@{x}!ComSquare::CPU::Registers@{ComSquare::CPU::Registers}}
+\doxysubsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily uint16\+\_\+t Com\+Square\+::\+C\+P\+U\+::\+Registers\+::x}
+
+\mbox{\Hypertarget{structComSquare_1_1CPU_1_1Registers_ac39778a1ba11358a7ca705e40fed1ab2}\label{structComSquare_1_1CPU_1_1Registers_ac39778a1ba11358a7ca705e40fed1ab2}} 
+\index{ComSquare::CPU::Registers@{ComSquare::CPU::Registers}!x\_b@{x\_b}}
+\index{x\_b@{x\_b}!ComSquare::CPU::Registers@{ComSquare::CPU::Registers}}
+\doxysubsubsection{\texorpdfstring{x\_b}{x\_b}}
+{\footnotesize\ttfamily bool Com\+Square\+::\+C\+P\+U\+::\+Registers\+::x\+\_\+b}
+
+
+
+The indeX register width flag (in native mode only) -\/ 0 = 16 bits mode, 1 = 8 bits mode OR the Break flag (in emulation mode only) 
+
+\mbox{\Hypertarget{structComSquare_1_1CPU_1_1Registers_acc0e55548baf2ad8a411eb4f782092c3}\label{structComSquare_1_1CPU_1_1Registers_acc0e55548baf2ad8a411eb4f782092c3}} 
+\index{ComSquare::CPU::Registers@{ComSquare::CPU::Registers}!xh@{xh}}
+\index{xh@{xh}!ComSquare::CPU::Registers@{ComSquare::CPU::Registers}}
+\doxysubsubsection{\texorpdfstring{xh}{xh}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+C\+P\+U\+::\+Registers\+::xh}
+
+\mbox{\Hypertarget{structComSquare_1_1CPU_1_1Registers_a718d9c2f67935dad3778b0fc03a22030}\label{structComSquare_1_1CPU_1_1Registers_a718d9c2f67935dad3778b0fc03a22030}} 
+\index{ComSquare::CPU::Registers@{ComSquare::CPU::Registers}!xl@{xl}}
+\index{xl@{xl}!ComSquare::CPU::Registers@{ComSquare::CPU::Registers}}
+\doxysubsubsection{\texorpdfstring{xl}{xl}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+C\+P\+U\+::\+Registers\+::xl}
+
+\mbox{\Hypertarget{structComSquare_1_1CPU_1_1Registers_ac756a49aa063214449d0ef9be3db38cc}\label{structComSquare_1_1CPU_1_1Registers_ac756a49aa063214449d0ef9be3db38cc}} 
+\index{ComSquare::CPU::Registers@{ComSquare::CPU::Registers}!y@{y}}
+\index{y@{y}!ComSquare::CPU::Registers@{ComSquare::CPU::Registers}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily uint16\+\_\+t Com\+Square\+::\+C\+P\+U\+::\+Registers\+::y}
+
+\mbox{\Hypertarget{structComSquare_1_1CPU_1_1Registers_a324dee252472744f2d72fb4ba86c3da1}\label{structComSquare_1_1CPU_1_1Registers_a324dee252472744f2d72fb4ba86c3da1}} 
+\index{ComSquare::CPU::Registers@{ComSquare::CPU::Registers}!yh@{yh}}
+\index{yh@{yh}!ComSquare::CPU::Registers@{ComSquare::CPU::Registers}}
+\doxysubsubsection{\texorpdfstring{yh}{yh}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+C\+P\+U\+::\+Registers\+::yh}
+
+\mbox{\Hypertarget{structComSquare_1_1CPU_1_1Registers_ab1995426df7b4f4500a2576b121824f6}\label{structComSquare_1_1CPU_1_1Registers_ab1995426df7b4f4500a2576b121824f6}} 
+\index{ComSquare::CPU::Registers@{ComSquare::CPU::Registers}!yl@{yl}}
+\index{yl@{yl}!ComSquare::CPU::Registers@{ComSquare::CPU::Registers}}
+\doxysubsubsection{\texorpdfstring{yl}{yl}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+C\+P\+U\+::\+Registers\+::yl}
+
+\mbox{\Hypertarget{structComSquare_1_1CPU_1_1Registers_a8cf318578ff80090086991f3aaf67163}\label{structComSquare_1_1CPU_1_1Registers_a8cf318578ff80090086991f3aaf67163}} 
+\index{ComSquare::CPU::Registers@{ComSquare::CPU::Registers}!z@{z}}
+\index{z@{z}!ComSquare::CPU::Registers@{ComSquare::CPU::Registers}}
+\doxysubsubsection{\texorpdfstring{z}{z}}
+{\footnotesize\ttfamily bool Com\+Square\+::\+C\+P\+U\+::\+Registers\+::z}
+
+
+
+The Zero flag. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+sources/\+C\+P\+U/\mbox{\hyperlink{CPU_8hpp}{C\+P\+U.\+hpp}}\end{DoxyCompactItemize}

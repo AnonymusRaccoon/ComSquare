@@ -1,0 +1,8 @@
+<map id="ComSquare::Cartridge::Cartridge" name="ComSquare::Cartridge::Cartridge">
+<area shape="rect" id="node1" title="Contains the rom&#39;s memory/instructions." alt="" coords="117,1013,285,1237"/>
+<area shape="rect" id="node2" href="$classComSquare_1_1Ram_1_1Ram.html" title=" " alt="" coords="12,661,185,899"/>
+<area shape="rect" id="node3" href="$classComSquare_1_1Memory_1_1ARectangleMemory.html" title="Base memory class to map non continuous rectangle to the memory. (A rectangle that spam across more t..." alt="" coords="5,301,192,525"/>
+<area shape="rect" id="node4" href="$classComSquare_1_1Memory_1_1IMemory.html" title="Common interface implemented by all components mapping memory." alt="" coords="11,5,186,244"/>
+<area shape="rect" id="node5" href="$structComSquare_1_1Cartridge_1_1Header.html" title=" " alt="" coords="209,609,404,951"/>
+<area shape="rect" id="node6" href="$structComSquare_1_1Cartridge_1_1InterruptVectors.html" title=" " alt="" coords="224,293,389,532"/>
+</map>

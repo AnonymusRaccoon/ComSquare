@@ -1,0 +1,706 @@
+\hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP}{}\doxysection{Com\+Square\+::A\+PU\+::D\+SP\+::D\+SP Class Reference}
+\label{classComSquare_1_1APU_1_1DSP_1_1DSP}\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+
+
+{\ttfamily \#include $<$D\+S\+P.\+hpp$>$}
+
+
+
+Collaboration diagram for Com\+Square\+::A\+PU\+::D\+SP\+::D\+SP\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classComSquare_1_1APU_1_1DSP_1_1DSP__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP_a49f27c61a789672c1bdd761e86063598}{D\+SP}} (std\+::array$<$ int16\+\_\+t, 0x10000 $>$ \&buffer, uint32\+\_\+t size, std\+::weak\+\_\+ptr$<$ \mbox{\hyperlink{structComSquare_1_1APU_1_1MemoryMap}{Memory\+Map}} $>$ map)
+\item 
+\mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP_a9feaf76fad337b91be959ce44652bd73}{D\+SP}} (const \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP}{D\+SP}} \&)=default
+\item 
+\mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP}{D\+SP}} \& \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP_af50412dfee27f7263f51c65595e007d1}{operator=}} (const \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP}{D\+SP}} \&)=default
+\item 
+\mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP_a05961c4855568c7e184bd936bcabcff8}{$\sim$\+D\+SP}} ()=default
+\item 
+const std\+::array$<$ \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice}{Voice}}, 8 $>$ \& \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP_ad8255cdcc51ce5923ad46047caccf331}{get\+Voices}} () const
+\begin{DoxyCompactList}\small\item\em Return all 8 voices from \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP}{D\+SP}}. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Master}{Master}} \& \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP_a8ab8bb07781e62c1859c4a3bd7efb590}{get\+Master}} () const
+\item 
+const \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Echo}{Echo}} \& \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP_abd58907dc9362c727bb8f2a4442ac1c2}{get\+Echo}} () const
+\item 
+const \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Noise}{Noise}} \& \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP_a7b1a0048d45e65231d64481d3ea1888d}{get\+Noise}} () const
+\item 
+const \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1BRR}{B\+RR}} \& \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP_aabe2ae3e746cfb0a780ee4fdd81e4c11}{get\+Brr}} () const
+\item 
+const \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Latch}{Latch}} \& \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP_ad1afb8d66eb52edaaf6a76ae95908780}{get\+Latch}} () const
+\item 
+uint8\+\_\+t \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP_a116f5d53ac7e23c8579350b9da93b99f}{read}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} addr) const
+\begin{DoxyCompactList}\small\item\em Read from the internal \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP}{D\+SP}} register. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP_adbfab3c63a964508be95eeb4cbdd19c9}{write}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} addr, uint8\+\_\+t data)
+\begin{DoxyCompactList}\small\item\em Write data to the internal \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP}{D\+SP}} register. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP_a681b6d3daf45ef16f2408aa43667f52e}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Get the name of this accessor (used for debug purpose) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP_a92547c566c6e0271899811dbb49c4224}{update}} ()
+\begin{DoxyCompactList}\small\item\em Execute current voice transformation. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceComSquare_a891b49feb5c3e0aaa4873ff19b49968c}{Component}} \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP_aa2a31f8a178548f4a120d967b6402f7a}{get\+Component}} () const
+\begin{DoxyCompactList}\small\item\em Get the component of this accessor (used for debug purpose) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP_a23ad61302602f17b63371c18a7648cbf}{get\+Size}} () const
+\begin{DoxyCompactList}\small\item\em Get the size of the data. This size can be lower than the mapped data. \end{DoxyCompactList}\item 
+int32\+\_\+t \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP_af90f4c102b5b255383bfbd3488947e81}{get\+Samples\+Count}} () const
+\begin{DoxyCompactList}\small\item\em Return the number of samples written. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP_a59a2a1fc1dd080873edba2e9473d96bd}{voice\+Output}} (\mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice}{Voice}} \&voice, bool channel)
+\item 
+void \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP_a6fd6860a1923797f586fb00608fd18f6}{voice1}} (\mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice}{Voice}} \&voice)
+\item 
+void \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP_a2ce3b2503705bd8628218a6a2f2d9d90}{voice2}} (\mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice}{Voice}} \&voice)
+\item 
+void \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP_ac9e38f2e2245d15ca9ca6675f5c8106d}{voice3}} (\mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice}{Voice}} \&voice)
+\item 
+void \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP_aa1d967e99caac9c9b5d2634d08fa7a05}{voice3a}} (\mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice}{Voice}} \&voice)
+\item 
+void \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP_a3044825864c61ad56bac3a23eec73652}{voice3b}} (\mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice}{Voice}} \&voice)
+\item 
+void \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP_ae7e835ff2f75f6b6ff6f047e8378e600}{voice3c}} (\mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice}{Voice}} \&voice)
+\item 
+void \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP_a3e5b6083a31e42de038ef7c323f19dc6}{voice4}} (\mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice}{Voice}} \&voice)
+\item 
+void \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP_a7e06bc452bdd75ea7eea240b8b1d7ed8}{voice5}} (\mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice}{Voice}} \&voice)
+\item 
+void \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP_a1a8e425d2e79d4c099aec2ea44d36dde}{voice6}} (\mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice}{Voice}} \&voice)
+\item 
+void \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP_a01d3221e9bd23c59d0e5fcf2303e5ffc}{voice7}} (\mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice}{Voice}} \&voice)
+\item 
+void \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP_a1af790fdace78e49069b209d845dc6e5}{voice8}} (\mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice}{Voice}} \&voice)
+\item 
+void \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP_a01ee69dab795ac3afdbd6af1b29e35b9}{voice9}} (\mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice}{Voice}} \&voice)
+\item 
+void \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP_adee6ce2d83db564ade4f037d2510af12}{echo22}} ()
+\item 
+void \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP_a5c88debafe66f2610136309581c25933}{echo23}} ()
+\item 
+void \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP_a46cba054a5eba7098b1134ceb5cb8b7a}{echo24}} ()
+\item 
+void \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP_ad5c4b263868e33850a36c88eac7aa34f}{echo25}} ()
+\item 
+void \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP_ad4d55bc01ef02f3b59e1f8fc5750c661}{echo26}} ()
+\item 
+void \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP_a9feaa1ddd6883fca6627da316db45422}{echo27}} ()
+\item 
+void \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP_a3b355036ac5161713928cfb1e14cef24}{echo28}} ()
+\item 
+void \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP_a1ebd35f6e350eb8cfde37bbeeeef5d8f}{echo29}} ()
+\item 
+void \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP_a8a75d2affd39dccb4f266373441c5b5d}{echo30}} ()
+\item 
+void \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP_a9d11df680011ab08a0a154a856d0be5d}{misc27}} ()
+\item 
+void \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP_acecd7ab732f3f2216cb0c2fb4c66c08a}{misc28}} ()
+\item 
+void \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP_a7f0740c5c04bcbf89dd815dd9ff06578}{misc29}} ()
+\item 
+void \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP_a62f2158683bbf329bdc59fb91fddec4c}{misc30}} ()
+\item 
+int32\+\_\+t \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP_a313baf015a0250216405164651a67377}{interpolate}} (const \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice}{Voice}} \&voice)
+\begin{DoxyCompactList}\small\item\em Interpolate voice samples with gauss table. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP_ab879b1f326311c01fbc4dd138587be17}{run\+Envelope}} (\mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice}{Voice}} \&voice)
+\begin{DoxyCompactList}\small\item\em Modify voice samples with its envelope. \end{DoxyCompactList}\item 
+int32\+\_\+t \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP_ab3694711b221919af1ca56e9a01f767b}{load\+F\+IR}} (bool channel, int fir)
+\item 
+void \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP_a7bea93f48b2c8c2d0873329309a02954}{load\+Echo}} (bool channel)
+\item 
+int16\+\_\+t \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP_ae55bf893705541d7eac950d9d5dc7cf3}{output\+Echo}} (bool channel)
+\item 
+void \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP_aa72ee08a5c889ea8eacfc50efa686573}{write\+Echo}} (bool channel)
+\item 
+void \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP_a0244f93fc08118a814d3f88807ded45f}{timer\+Tick}} ()
+\begin{DoxyCompactList}\small\item\em Remove one tick from timer. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP_a9bd4096929e7713957d9d47fb2864b12}{timer\+Poll}} (uint32\+\_\+t rate)
+\begin{DoxyCompactList}\small\item\em Check if timer value is equal to rate value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP_a0a79b915fe184520ba0349895619da0a}{decode\+B\+RR}} (\mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice}{Voice}} \&voice)
+\begin{DoxyCompactList}\small\item\em Transform \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1BRR}{B\+RR}} value to samples. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP_a7ba27c2ce45ecd6665bffdbffc773106}{\+\_\+read\+R\+AM}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} addr)
+\begin{DoxyCompactList}\small\item\em Read inside \mbox{\hyperlink{classComSquare_1_1APU_1_1APU}{A\+PU}} R\+AM. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP_a9fe7c0ff34f424074ee90ff30a49a7cf}{\+\_\+write\+R\+AM}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} addr, uint8\+\_\+t data)
+\begin{DoxyCompactList}\small\item\em Write into \mbox{\hyperlink{classComSquare_1_1APU_1_1APU}{A\+PU}} R\+AM. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::array$<$ uint16\+\_\+t, 32 $>$ \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP_a950f124fd70f78a37f7020072f6d93ca}{\+\_\+rate\+Modulus}}
+\begin{DoxyCompactList}\small\item\em Number of samples per counter event. \end{DoxyCompactList}\item 
+std\+::array$<$ uint16\+\_\+t, 32 $>$ \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP_aa3137eb8e10a63fb08c0fd12f0360132}{\+\_\+counter\+Offset}}
+\begin{DoxyCompactList}\small\item\em Counter offset. \end{DoxyCompactList}\item 
+std\+::array$<$ int16\+\_\+t, 512 $>$ \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP_afcfe8a01aaa4410b2d19d4e92a07fdef}{\+\_\+gauss}}
+\begin{DoxyCompactList}\small\item\em Gaussian table used for making waves. \end{DoxyCompactList}\item 
+std\+::array$<$ \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice}{Voice}}, 8 $>$ \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP_a8e9cf644ca90730758d108890f66fc67}{\+\_\+voices}} \{\}
+\begin{DoxyCompactList}\small\item\em 8x voices of sample used to make sound \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Master}{Master}} \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP_a5262bb4d36edaf898411f4155fdf6fed}{\+\_\+master}} \{\}
+\item 
+\mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Echo}{Echo}} \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP_a896c5928779d3f608dc53a090ef80ec2}{\+\_\+echo}} \{\}
+\item 
+\mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Noise}{Noise}} \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP_a7da7f9d49cf93c8f372333570f22aee8}{\+\_\+noise}} \{\}
+\item 
+\mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1BRR}{B\+RR}} \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP_ad109dbe7417048fd507a0e2da1db0a87}{\+\_\+brr}} \{\}
+\item 
+\mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Latch}{Latch}} \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP_a7425a0ddae94bb0437b52548f40dcafc}{\+\_\+latch}} \{\}
+\item 
+\mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1State}{State}} \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP_a372d8d8f58b40645a38a3791a20a0d39}{\+\_\+state}}
+\item 
+\mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Timer}{Timer}} \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP_ab779759d7019741039f3389847dcc783}{\+\_\+timer}} \{\}
+\item 
+std\+::weak\+\_\+ptr$<$ \mbox{\hyperlink{structComSquare_1_1APU_1_1MemoryMap}{Memory\+Map}} $>$ \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP_a8c27558f96107f5d3272295629ed9bfe}{\+\_\+map}}
+\begin{DoxyCompactList}\small\item\em Whole \mbox{\hyperlink{classComSquare_1_1APU_1_1APU}{A\+PU}} R\+AM map. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP_a49f27c61a789672c1bdd761e86063598}\label{classComSquare_1_1APU_1_1DSP_1_1DSP_a49f27c61a789672c1bdd761e86063598}} 
+\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}!DSP@{DSP}}
+\index{DSP@{DSP}!ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+\doxysubsubsection{\texorpdfstring{DSP()}{DSP()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+D\+S\+P\+::\+D\+SP (\begin{DoxyParamCaption}\item[{std\+::array$<$ int16\+\_\+t, 0x10000 $>$ \&}]{buffer,  }\item[{uint32\+\_\+t}]{size,  }\item[{std\+::weak\+\_\+ptr$<$ \mbox{\hyperlink{structComSquare_1_1APU_1_1MemoryMap}{Memory\+Map}} $>$}]{map }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP_a9feaf76fad337b91be959ce44652bd73}\label{classComSquare_1_1APU_1_1DSP_1_1DSP_a9feaf76fad337b91be959ce44652bd73}} 
+\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}!DSP@{DSP}}
+\index{DSP@{DSP}!ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+\doxysubsubsection{\texorpdfstring{DSP()}{DSP()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+D\+S\+P\+::\+D\+SP (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP}{D\+SP}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP_a05961c4855568c7e184bd936bcabcff8}\label{classComSquare_1_1APU_1_1DSP_1_1DSP_a05961c4855568c7e184bd936bcabcff8}} 
+\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}!````~DSP@{$\sim$DSP}}
+\index{````~DSP@{$\sim$DSP}!ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+\doxysubsubsection{\texorpdfstring{$\sim$DSP()}{~DSP()}}
+{\footnotesize\ttfamily Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+D\+S\+P\+::$\sim$\+D\+SP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP_a7ba27c2ce45ecd6665bffdbffc773106}\label{classComSquare_1_1APU_1_1DSP_1_1DSP_a7ba27c2ce45ecd6665bffdbffc773106}} 
+\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}!\_readRAM@{\_readRAM}}
+\index{\_readRAM@{\_readRAM}!ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+\doxysubsubsection{\texorpdfstring{\_readRAM()}{\_readRAM()}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+D\+S\+P\+::\+\_\+read\+R\+AM (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{addr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Read inside \mbox{\hyperlink{classComSquare_1_1APU_1_1APU}{A\+PU}} R\+AM. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP_a9fe7c0ff34f424074ee90ff30a49a7cf}\label{classComSquare_1_1APU_1_1DSP_1_1DSP_a9fe7c0ff34f424074ee90ff30a49a7cf}} 
+\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}!\_writeRAM@{\_writeRAM}}
+\index{\_writeRAM@{\_writeRAM}!ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+\doxysubsubsection{\texorpdfstring{\_writeRAM()}{\_writeRAM()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+D\+S\+P\+::\+\_\+write\+R\+AM (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{addr,  }\item[{uint8\+\_\+t}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Write into \mbox{\hyperlink{classComSquare_1_1APU_1_1APU}{A\+PU}} R\+AM. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP_a0a79b915fe184520ba0349895619da0a}\label{classComSquare_1_1APU_1_1DSP_1_1DSP_a0a79b915fe184520ba0349895619da0a}} 
+\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}!decodeBRR@{decodeBRR}}
+\index{decodeBRR@{decodeBRR}!ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+\doxysubsubsection{\texorpdfstring{decodeBRR()}{decodeBRR()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+D\+S\+P\+::decode\+B\+RR (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice}{Voice}} \&}]{voice }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Transform \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1BRR}{B\+RR}} value to samples. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP_adee6ce2d83db564ade4f037d2510af12}\label{classComSquare_1_1APU_1_1DSP_1_1DSP_adee6ce2d83db564ade4f037d2510af12}} 
+\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}!echo22@{echo22}}
+\index{echo22@{echo22}!ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+\doxysubsubsection{\texorpdfstring{echo22()}{echo22()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+D\+S\+P\+::echo22 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP_a5c88debafe66f2610136309581c25933}\label{classComSquare_1_1APU_1_1DSP_1_1DSP_a5c88debafe66f2610136309581c25933}} 
+\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}!echo23@{echo23}}
+\index{echo23@{echo23}!ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+\doxysubsubsection{\texorpdfstring{echo23()}{echo23()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+D\+S\+P\+::echo23 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP_a46cba054a5eba7098b1134ceb5cb8b7a}\label{classComSquare_1_1APU_1_1DSP_1_1DSP_a46cba054a5eba7098b1134ceb5cb8b7a}} 
+\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}!echo24@{echo24}}
+\index{echo24@{echo24}!ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+\doxysubsubsection{\texorpdfstring{echo24()}{echo24()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+D\+S\+P\+::echo24 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP_ad5c4b263868e33850a36c88eac7aa34f}\label{classComSquare_1_1APU_1_1DSP_1_1DSP_ad5c4b263868e33850a36c88eac7aa34f}} 
+\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}!echo25@{echo25}}
+\index{echo25@{echo25}!ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+\doxysubsubsection{\texorpdfstring{echo25()}{echo25()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+D\+S\+P\+::echo25 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP_ad4d55bc01ef02f3b59e1f8fc5750c661}\label{classComSquare_1_1APU_1_1DSP_1_1DSP_ad4d55bc01ef02f3b59e1f8fc5750c661}} 
+\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}!echo26@{echo26}}
+\index{echo26@{echo26}!ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+\doxysubsubsection{\texorpdfstring{echo26()}{echo26()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+D\+S\+P\+::echo26 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP_a9feaa1ddd6883fca6627da316db45422}\label{classComSquare_1_1APU_1_1DSP_1_1DSP_a9feaa1ddd6883fca6627da316db45422}} 
+\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}!echo27@{echo27}}
+\index{echo27@{echo27}!ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+\doxysubsubsection{\texorpdfstring{echo27()}{echo27()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+D\+S\+P\+::echo27 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP_a3b355036ac5161713928cfb1e14cef24}\label{classComSquare_1_1APU_1_1DSP_1_1DSP_a3b355036ac5161713928cfb1e14cef24}} 
+\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}!echo28@{echo28}}
+\index{echo28@{echo28}!ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+\doxysubsubsection{\texorpdfstring{echo28()}{echo28()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+D\+S\+P\+::echo28 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP_a1ebd35f6e350eb8cfde37bbeeeef5d8f}\label{classComSquare_1_1APU_1_1DSP_1_1DSP_a1ebd35f6e350eb8cfde37bbeeeef5d8f}} 
+\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}!echo29@{echo29}}
+\index{echo29@{echo29}!ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+\doxysubsubsection{\texorpdfstring{echo29()}{echo29()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+D\+S\+P\+::echo29 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP_a8a75d2affd39dccb4f266373441c5b5d}\label{classComSquare_1_1APU_1_1DSP_1_1DSP_a8a75d2affd39dccb4f266373441c5b5d}} 
+\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}!echo30@{echo30}}
+\index{echo30@{echo30}!ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+\doxysubsubsection{\texorpdfstring{echo30()}{echo30()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+D\+S\+P\+::echo30 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP_aabe2ae3e746cfb0a780ee4fdd81e4c11}\label{classComSquare_1_1APU_1_1DSP_1_1DSP_aabe2ae3e746cfb0a780ee4fdd81e4c11}} 
+\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}!getBrr@{getBrr}}
+\index{getBrr@{getBrr}!ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+\doxysubsubsection{\texorpdfstring{getBrr()}{getBrr()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1BRR}{B\+RR}} \& Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+D\+S\+P\+::get\+Brr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP_aa2a31f8a178548f4a120d967b6402f7a}\label{classComSquare_1_1APU_1_1DSP_1_1DSP_aa2a31f8a178548f4a120d967b6402f7a}} 
+\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}!getComponent@{getComponent}}
+\index{getComponent@{getComponent}!ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+\doxysubsubsection{\texorpdfstring{getComponent()}{getComponent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceComSquare_a891b49feb5c3e0aaa4873ff19b49968c}{Component}} Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+D\+S\+P\+::get\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the component of this accessor (used for debug purpose) 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP_abd58907dc9362c727bb8f2a4442ac1c2}\label{classComSquare_1_1APU_1_1DSP_1_1DSP_abd58907dc9362c727bb8f2a4442ac1c2}} 
+\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}!getEcho@{getEcho}}
+\index{getEcho@{getEcho}!ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+\doxysubsubsection{\texorpdfstring{getEcho()}{getEcho()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Echo}{Echo}} \& Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+D\+S\+P\+::get\+Echo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP_ad1afb8d66eb52edaaf6a76ae95908780}\label{classComSquare_1_1APU_1_1DSP_1_1DSP_ad1afb8d66eb52edaaf6a76ae95908780}} 
+\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}!getLatch@{getLatch}}
+\index{getLatch@{getLatch}!ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+\doxysubsubsection{\texorpdfstring{getLatch()}{getLatch()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Latch}{Latch}} \& Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+D\+S\+P\+::get\+Latch (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP_a8ab8bb07781e62c1859c4a3bd7efb590}\label{classComSquare_1_1APU_1_1DSP_1_1DSP_a8ab8bb07781e62c1859c4a3bd7efb590}} 
+\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}!getMaster@{getMaster}}
+\index{getMaster@{getMaster}!ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+\doxysubsubsection{\texorpdfstring{getMaster()}{getMaster()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Master}{Master}} \& Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+D\+S\+P\+::get\+Master (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP_a681b6d3daf45ef16f2408aa43667f52e}\label{classComSquare_1_1APU_1_1DSP_1_1DSP_a681b6d3daf45ef16f2408aa43667f52e}} 
+\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}!getName@{getName}}
+\index{getName@{getName}!ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+D\+S\+P\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the name of this accessor (used for debug purpose) 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP_a7b1a0048d45e65231d64481d3ea1888d}\label{classComSquare_1_1APU_1_1DSP_1_1DSP_a7b1a0048d45e65231d64481d3ea1888d}} 
+\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}!getNoise@{getNoise}}
+\index{getNoise@{getNoise}!ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+\doxysubsubsection{\texorpdfstring{getNoise()}{getNoise()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Noise}{Noise}} \& Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+D\+S\+P\+::get\+Noise (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP_af90f4c102b5b255383bfbd3488947e81}\label{classComSquare_1_1APU_1_1DSP_1_1DSP_af90f4c102b5b255383bfbd3488947e81}} 
+\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}!getSamplesCount@{getSamplesCount}}
+\index{getSamplesCount@{getSamplesCount}!ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+\doxysubsubsection{\texorpdfstring{getSamplesCount()}{getSamplesCount()}}
+{\footnotesize\ttfamily int32\+\_\+t Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+D\+S\+P\+::get\+Samples\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Return the number of samples written. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP_a23ad61302602f17b63371c18a7648cbf}\label{classComSquare_1_1APU_1_1DSP_1_1DSP_a23ad61302602f17b63371c18a7648cbf}} 
+\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}!getSize@{getSize}}
+\index{getSize@{getSize}!ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+D\+S\+P\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the size of the data. This size can be lower than the mapped data. 
+
+\begin{DoxyReturn}{Returns}
+The number of bytes inside this memory. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP_ad8255cdcc51ce5923ad46047caccf331}\label{classComSquare_1_1APU_1_1DSP_1_1DSP_ad8255cdcc51ce5923ad46047caccf331}} 
+\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}!getVoices@{getVoices}}
+\index{getVoices@{getVoices}!ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+\doxysubsubsection{\texorpdfstring{getVoices()}{getVoices()}}
+{\footnotesize\ttfamily const std\+::array$<$ \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice}{Voice}}, 8 $>$ \& Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+D\+S\+P\+::get\+Voices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Return all 8 voices from \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP}{D\+SP}}. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP_a313baf015a0250216405164651a67377}\label{classComSquare_1_1APU_1_1DSP_1_1DSP_a313baf015a0250216405164651a67377}} 
+\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}!interpolate@{interpolate}}
+\index{interpolate@{interpolate}!ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+\doxysubsubsection{\texorpdfstring{interpolate()}{interpolate()}}
+{\footnotesize\ttfamily int32\+\_\+t Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+D\+S\+P\+::interpolate (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice}{Voice}} \&}]{voice }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Interpolate voice samples with gauss table. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP_a7bea93f48b2c8c2d0873329309a02954}\label{classComSquare_1_1APU_1_1DSP_1_1DSP_a7bea93f48b2c8c2d0873329309a02954}} 
+\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}!loadEcho@{loadEcho}}
+\index{loadEcho@{loadEcho}!ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+\doxysubsubsection{\texorpdfstring{loadEcho()}{loadEcho()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+D\+S\+P\+::load\+Echo (\begin{DoxyParamCaption}\item[{bool}]{channel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP_ab3694711b221919af1ca56e9a01f767b}\label{classComSquare_1_1APU_1_1DSP_1_1DSP_ab3694711b221919af1ca56e9a01f767b}} 
+\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}!loadFIR@{loadFIR}}
+\index{loadFIR@{loadFIR}!ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+\doxysubsubsection{\texorpdfstring{loadFIR()}{loadFIR()}}
+{\footnotesize\ttfamily int32\+\_\+t Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+D\+S\+P\+::load\+F\+IR (\begin{DoxyParamCaption}\item[{bool}]{channel,  }\item[{int}]{fir }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP_a9d11df680011ab08a0a154a856d0be5d}\label{classComSquare_1_1APU_1_1DSP_1_1DSP_a9d11df680011ab08a0a154a856d0be5d}} 
+\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}!misc27@{misc27}}
+\index{misc27@{misc27}!ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+\doxysubsubsection{\texorpdfstring{misc27()}{misc27()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+D\+S\+P\+::misc27 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP_acecd7ab732f3f2216cb0c2fb4c66c08a}\label{classComSquare_1_1APU_1_1DSP_1_1DSP_acecd7ab732f3f2216cb0c2fb4c66c08a}} 
+\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}!misc28@{misc28}}
+\index{misc28@{misc28}!ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+\doxysubsubsection{\texorpdfstring{misc28()}{misc28()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+D\+S\+P\+::misc28 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP_a7f0740c5c04bcbf89dd815dd9ff06578}\label{classComSquare_1_1APU_1_1DSP_1_1DSP_a7f0740c5c04bcbf89dd815dd9ff06578}} 
+\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}!misc29@{misc29}}
+\index{misc29@{misc29}!ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+\doxysubsubsection{\texorpdfstring{misc29()}{misc29()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+D\+S\+P\+::misc29 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP_a62f2158683bbf329bdc59fb91fddec4c}\label{classComSquare_1_1APU_1_1DSP_1_1DSP_a62f2158683bbf329bdc59fb91fddec4c}} 
+\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}!misc30@{misc30}}
+\index{misc30@{misc30}!ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+\doxysubsubsection{\texorpdfstring{misc30()}{misc30()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+D\+S\+P\+::misc30 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP_af50412dfee27f7263f51c65595e007d1}\label{classComSquare_1_1APU_1_1DSP_1_1DSP_af50412dfee27f7263f51c65595e007d1}} 
+\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}!operator=@{operator=}}
+\index{operator=@{operator=}!ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP}{D\+SP}}\& Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+D\+S\+P\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP}{D\+SP}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP_ae55bf893705541d7eac950d9d5dc7cf3}\label{classComSquare_1_1APU_1_1DSP_1_1DSP_ae55bf893705541d7eac950d9d5dc7cf3}} 
+\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}!outputEcho@{outputEcho}}
+\index{outputEcho@{outputEcho}!ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+\doxysubsubsection{\texorpdfstring{outputEcho()}{outputEcho()}}
+{\footnotesize\ttfamily int16\+\_\+t Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+D\+S\+P\+::output\+Echo (\begin{DoxyParamCaption}\item[{bool}]{channel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP_a116f5d53ac7e23c8579350b9da93b99f}\label{classComSquare_1_1APU_1_1DSP_1_1DSP_a116f5d53ac7e23c8579350b9da93b99f}} 
+\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}!read@{read}}
+\index{read@{read}!ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+D\+S\+P\+::read (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{addr }\end{DoxyParamCaption}) const}
+
+
+
+Read from the internal \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP}{D\+SP}} register. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & The address to read from. The address 0x0 should refer to the first byte of the register. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classComSquare_1_1InvalidAddress}{Invalid\+Address}}} & will be thrown if the address is more than \$7F (the number of register). \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+Return the value of the register. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP_ab879b1f326311c01fbc4dd138587be17}\label{classComSquare_1_1APU_1_1DSP_1_1DSP_ab879b1f326311c01fbc4dd138587be17}} 
+\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}!runEnvelope@{runEnvelope}}
+\index{runEnvelope@{runEnvelope}!ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+\doxysubsubsection{\texorpdfstring{runEnvelope()}{runEnvelope()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+D\+S\+P\+::run\+Envelope (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice}{Voice}} \&}]{voice }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Modify voice samples with its envelope. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP_a9bd4096929e7713957d9d47fb2864b12}\label{classComSquare_1_1APU_1_1DSP_1_1DSP_a9bd4096929e7713957d9d47fb2864b12}} 
+\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}!timerPoll@{timerPoll}}
+\index{timerPoll@{timerPoll}!ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+\doxysubsubsection{\texorpdfstring{timerPoll()}{timerPoll()}}
+{\footnotesize\ttfamily bool Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+D\+S\+P\+::timer\+Poll (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{rate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Check if timer value is equal to rate value. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP_a0244f93fc08118a814d3f88807ded45f}\label{classComSquare_1_1APU_1_1DSP_1_1DSP_a0244f93fc08118a814d3f88807ded45f}} 
+\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}!timerTick@{timerTick}}
+\index{timerTick@{timerTick}!ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+\doxysubsubsection{\texorpdfstring{timerTick()}{timerTick()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+D\+S\+P\+::timer\+Tick (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Remove one tick from timer. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP_a92547c566c6e0271899811dbb49c4224}\label{classComSquare_1_1APU_1_1DSP_1_1DSP_a92547c566c6e0271899811dbb49c4224}} 
+\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}!update@{update}}
+\index{update@{update}!ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+D\+S\+P\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Execute current voice transformation. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP_a6fd6860a1923797f586fb00608fd18f6}\label{classComSquare_1_1APU_1_1DSP_1_1DSP_a6fd6860a1923797f586fb00608fd18f6}} 
+\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}!voice1@{voice1}}
+\index{voice1@{voice1}!ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+\doxysubsubsection{\texorpdfstring{voice1()}{voice1()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+D\+S\+P\+::voice1 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice}{Voice}} \&}]{voice }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP_a2ce3b2503705bd8628218a6a2f2d9d90}\label{classComSquare_1_1APU_1_1DSP_1_1DSP_a2ce3b2503705bd8628218a6a2f2d9d90}} 
+\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}!voice2@{voice2}}
+\index{voice2@{voice2}!ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+\doxysubsubsection{\texorpdfstring{voice2()}{voice2()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+D\+S\+P\+::voice2 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice}{Voice}} \&}]{voice }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP_ac9e38f2e2245d15ca9ca6675f5c8106d}\label{classComSquare_1_1APU_1_1DSP_1_1DSP_ac9e38f2e2245d15ca9ca6675f5c8106d}} 
+\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}!voice3@{voice3}}
+\index{voice3@{voice3}!ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+\doxysubsubsection{\texorpdfstring{voice3()}{voice3()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+D\+S\+P\+::voice3 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice}{Voice}} \&}]{voice }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP_aa1d967e99caac9c9b5d2634d08fa7a05}\label{classComSquare_1_1APU_1_1DSP_1_1DSP_aa1d967e99caac9c9b5d2634d08fa7a05}} 
+\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}!voice3a@{voice3a}}
+\index{voice3a@{voice3a}!ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+\doxysubsubsection{\texorpdfstring{voice3a()}{voice3a()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+D\+S\+P\+::voice3a (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice}{Voice}} \&}]{voice }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP_a3044825864c61ad56bac3a23eec73652}\label{classComSquare_1_1APU_1_1DSP_1_1DSP_a3044825864c61ad56bac3a23eec73652}} 
+\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}!voice3b@{voice3b}}
+\index{voice3b@{voice3b}!ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+\doxysubsubsection{\texorpdfstring{voice3b()}{voice3b()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+D\+S\+P\+::voice3b (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice}{Voice}} \&}]{voice }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP_ae7e835ff2f75f6b6ff6f047e8378e600}\label{classComSquare_1_1APU_1_1DSP_1_1DSP_ae7e835ff2f75f6b6ff6f047e8378e600}} 
+\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}!voice3c@{voice3c}}
+\index{voice3c@{voice3c}!ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+\doxysubsubsection{\texorpdfstring{voice3c()}{voice3c()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+D\+S\+P\+::voice3c (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice}{Voice}} \&}]{voice }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP_a3e5b6083a31e42de038ef7c323f19dc6}\label{classComSquare_1_1APU_1_1DSP_1_1DSP_a3e5b6083a31e42de038ef7c323f19dc6}} 
+\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}!voice4@{voice4}}
+\index{voice4@{voice4}!ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+\doxysubsubsection{\texorpdfstring{voice4()}{voice4()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+D\+S\+P\+::voice4 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice}{Voice}} \&}]{voice }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP_a7e06bc452bdd75ea7eea240b8b1d7ed8}\label{classComSquare_1_1APU_1_1DSP_1_1DSP_a7e06bc452bdd75ea7eea240b8b1d7ed8}} 
+\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}!voice5@{voice5}}
+\index{voice5@{voice5}!ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+\doxysubsubsection{\texorpdfstring{voice5()}{voice5()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+D\+S\+P\+::voice5 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice}{Voice}} \&}]{voice }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP_a1a8e425d2e79d4c099aec2ea44d36dde}\label{classComSquare_1_1APU_1_1DSP_1_1DSP_a1a8e425d2e79d4c099aec2ea44d36dde}} 
+\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}!voice6@{voice6}}
+\index{voice6@{voice6}!ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+\doxysubsubsection{\texorpdfstring{voice6()}{voice6()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+D\+S\+P\+::voice6 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice}{Voice}} \&}]{voice }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP_a01d3221e9bd23c59d0e5fcf2303e5ffc}\label{classComSquare_1_1APU_1_1DSP_1_1DSP_a01d3221e9bd23c59d0e5fcf2303e5ffc}} 
+\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}!voice7@{voice7}}
+\index{voice7@{voice7}!ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+\doxysubsubsection{\texorpdfstring{voice7()}{voice7()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+D\+S\+P\+::voice7 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice}{Voice}} \&}]{voice }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP_a1af790fdace78e49069b209d845dc6e5}\label{classComSquare_1_1APU_1_1DSP_1_1DSP_a1af790fdace78e49069b209d845dc6e5}} 
+\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}!voice8@{voice8}}
+\index{voice8@{voice8}!ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+\doxysubsubsection{\texorpdfstring{voice8()}{voice8()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+D\+S\+P\+::voice8 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice}{Voice}} \&}]{voice }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP_a01ee69dab795ac3afdbd6af1b29e35b9}\label{classComSquare_1_1APU_1_1DSP_1_1DSP_a01ee69dab795ac3afdbd6af1b29e35b9}} 
+\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}!voice9@{voice9}}
+\index{voice9@{voice9}!ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+\doxysubsubsection{\texorpdfstring{voice9()}{voice9()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+D\+S\+P\+::voice9 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice}{Voice}} \&}]{voice }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP_a59a2a1fc1dd080873edba2e9473d96bd}\label{classComSquare_1_1APU_1_1DSP_1_1DSP_a59a2a1fc1dd080873edba2e9473d96bd}} 
+\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}!voiceOutput@{voiceOutput}}
+\index{voiceOutput@{voiceOutput}!ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+\doxysubsubsection{\texorpdfstring{voiceOutput()}{voiceOutput()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+D\+S\+P\+::voice\+Output (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice}{Voice}} \&}]{voice,  }\item[{bool}]{channel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP_adbfab3c63a964508be95eeb4cbdd19c9}\label{classComSquare_1_1APU_1_1DSP_1_1DSP_adbfab3c63a964508be95eeb4cbdd19c9}} 
+\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}!write@{write}}
+\index{write@{write}!ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+D\+S\+P\+::write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{addr,  }\item[{uint8\+\_\+t}]{data }\end{DoxyParamCaption})}
+
+
+
+Write data to the internal \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP}{D\+SP}} register. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & The address to write to. The address 0x0 should refer to the first byte of register. \\
+\hline
+{\em data} & The new value of the register. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classComSquare_1_1InvalidAddress}{Invalid\+Address}}} & will be thrown if the address is more than \$7F (the number of register). \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP_aa72ee08a5c889ea8eacfc50efa686573}\label{classComSquare_1_1APU_1_1DSP_1_1DSP_aa72ee08a5c889ea8eacfc50efa686573}} 
+\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}!writeEcho@{writeEcho}}
+\index{writeEcho@{writeEcho}!ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+\doxysubsubsection{\texorpdfstring{writeEcho()}{writeEcho()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+D\+S\+P\+::write\+Echo (\begin{DoxyParamCaption}\item[{bool}]{channel }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP_ad109dbe7417048fd507a0e2da1db0a87}\label{classComSquare_1_1APU_1_1DSP_1_1DSP_ad109dbe7417048fd507a0e2da1db0a87}} 
+\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}!\_brr@{\_brr}}
+\index{\_brr@{\_brr}!ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+\doxysubsubsection{\texorpdfstring{\_brr}{\_brr}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1BRR}{B\+RR}} Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+D\+S\+P\+::\+\_\+brr \{\}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP_aa3137eb8e10a63fb08c0fd12f0360132}\label{classComSquare_1_1APU_1_1DSP_1_1DSP_aa3137eb8e10a63fb08c0fd12f0360132}} 
+\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}!\_counterOffset@{\_counterOffset}}
+\index{\_counterOffset@{\_counterOffset}!ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+\doxysubsubsection{\texorpdfstring{\_counterOffset}{\_counterOffset}}
+{\footnotesize\ttfamily std\+::array$<$uint16\+\_\+t, 32$>$ Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+D\+S\+P\+::\+\_\+counter\+Offset\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{                0, 0, 1040, 536, 0, 1040,}
+\DoxyCodeLine{                536, 0, 1040, 536, 0, 1040,}
+\DoxyCodeLine{                536, 0, 1040, 536, 0, 1040,}
+\DoxyCodeLine{                536, 0, 1040, 536, 0, 1040,}
+\DoxyCodeLine{                536, 0, 1040, 536, 0, 1040,}
+\DoxyCodeLine{                0,0}
+\DoxyCodeLine{        \}}
+
+\end{DoxyCode}
+
+
+Counter offset. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP_a896c5928779d3f608dc53a090ef80ec2}\label{classComSquare_1_1APU_1_1DSP_1_1DSP_a896c5928779d3f608dc53a090ef80ec2}} 
+\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}!\_echo@{\_echo}}
+\index{\_echo@{\_echo}!ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+\doxysubsubsection{\texorpdfstring{\_echo}{\_echo}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Echo}{Echo}} Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+D\+S\+P\+::\+\_\+echo \{\}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP_afcfe8a01aaa4410b2d19d4e92a07fdef}\label{classComSquare_1_1APU_1_1DSP_1_1DSP_afcfe8a01aaa4410b2d19d4e92a07fdef}} 
+\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}!\_gauss@{\_gauss}}
+\index{\_gauss@{\_gauss}!ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+\doxysubsubsection{\texorpdfstring{\_gauss}{\_gauss}}
+{\footnotesize\ttfamily std\+::array$<$int16\+\_\+t, 512$>$ Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+D\+S\+P\+::\+\_\+gauss\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Gaussian table used for making waves. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP_a7425a0ddae94bb0437b52548f40dcafc}\label{classComSquare_1_1APU_1_1DSP_1_1DSP_a7425a0ddae94bb0437b52548f40dcafc}} 
+\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}!\_latch@{\_latch}}
+\index{\_latch@{\_latch}!ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+\doxysubsubsection{\texorpdfstring{\_latch}{\_latch}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Latch}{Latch}} Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+D\+S\+P\+::\+\_\+latch \{\}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP_a8c27558f96107f5d3272295629ed9bfe}\label{classComSquare_1_1APU_1_1DSP_1_1DSP_a8c27558f96107f5d3272295629ed9bfe}} 
+\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}!\_map@{\_map}}
+\index{\_map@{\_map}!ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+\doxysubsubsection{\texorpdfstring{\_map}{\_map}}
+{\footnotesize\ttfamily std\+::weak\+\_\+ptr$<$\mbox{\hyperlink{structComSquare_1_1APU_1_1MemoryMap}{Memory\+Map}}$>$ Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+D\+S\+P\+::\+\_\+map\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Whole \mbox{\hyperlink{classComSquare_1_1APU_1_1APU}{A\+PU}} R\+AM map. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP_a5262bb4d36edaf898411f4155fdf6fed}\label{classComSquare_1_1APU_1_1DSP_1_1DSP_a5262bb4d36edaf898411f4155fdf6fed}} 
+\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}!\_master@{\_master}}
+\index{\_master@{\_master}!ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+\doxysubsubsection{\texorpdfstring{\_master}{\_master}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Master}{Master}} Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+D\+S\+P\+::\+\_\+master \{\}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP_a7da7f9d49cf93c8f372333570f22aee8}\label{classComSquare_1_1APU_1_1DSP_1_1DSP_a7da7f9d49cf93c8f372333570f22aee8}} 
+\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}!\_noise@{\_noise}}
+\index{\_noise@{\_noise}!ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+\doxysubsubsection{\texorpdfstring{\_noise}{\_noise}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Noise}{Noise}} Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+D\+S\+P\+::\+\_\+noise \{\}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP_a950f124fd70f78a37f7020072f6d93ca}\label{classComSquare_1_1APU_1_1DSP_1_1DSP_a950f124fd70f78a37f7020072f6d93ca}} 
+\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}!\_rateModulus@{\_rateModulus}}
+\index{\_rateModulus@{\_rateModulus}!ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+\doxysubsubsection{\texorpdfstring{\_rateModulus}{\_rateModulus}}
+{\footnotesize\ttfamily std\+::array$<$uint16\+\_\+t, 32$>$ Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+D\+S\+P\+::\+\_\+rate\+Modulus\hspace{0.3cm}{\ttfamily [private]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{                0, 2048, 1536, 1280, 1024, 768,}
+\DoxyCodeLine{                640, 512, 384, 320, 256, 192,}
+\DoxyCodeLine{                160, 128, 96, 80, 64, 48,}
+\DoxyCodeLine{                40, 32, 24, 20, 16, 12,}
+\DoxyCodeLine{                10, 8, 6, 5, 4, 3,}
+\DoxyCodeLine{                2, 1}
+\DoxyCodeLine{        \}}
+
+\end{DoxyCode}
+
+
+Number of samples per counter event. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP_a372d8d8f58b40645a38a3791a20a0d39}\label{classComSquare_1_1APU_1_1DSP_1_1DSP_a372d8d8f58b40645a38a3791a20a0d39}} 
+\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}!\_state@{\_state}}
+\index{\_state@{\_state}!ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+\doxysubsubsection{\texorpdfstring{\_state}{\_state}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1State}{State}} Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+D\+S\+P\+::\+\_\+state\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP_ab779759d7019741039f3389847dcc783}\label{classComSquare_1_1APU_1_1DSP_1_1DSP_ab779759d7019741039f3389847dcc783}} 
+\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}!\_timer@{\_timer}}
+\index{\_timer@{\_timer}!ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+\doxysubsubsection{\texorpdfstring{\_timer}{\_timer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Timer}{Timer}} Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+D\+S\+P\+::\+\_\+timer \{\}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1DSP_1_1DSP_a8e9cf644ca90730758d108890f66fc67}\label{classComSquare_1_1APU_1_1DSP_1_1DSP_a8e9cf644ca90730758d108890f66fc67}} 
+\index{ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}!\_voices@{\_voices}}
+\index{\_voices@{\_voices}!ComSquare::APU::DSP::DSP@{ComSquare::APU::DSP::DSP}}
+\doxysubsubsection{\texorpdfstring{\_voices}{\_voices}}
+{\footnotesize\ttfamily std\+::array$<$\mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice}{Voice}}, 8$>$ Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+D\+S\+P\+::\+\_\+voices \{\}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+8x voices of sample used to make sound 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+sources/\+A\+P\+U/\+D\+S\+P/\mbox{\hyperlink{DSP_8hpp}{D\+S\+P.\+hpp}}\item 
+sources/\+A\+P\+U/\+D\+S\+P/\mbox{\hyperlink{BRR_8cpp}{B\+R\+R.\+cpp}}\item 
+sources/\+A\+P\+U/\+D\+S\+P/\mbox{\hyperlink{DSP_8cpp}{D\+S\+P.\+cpp}}\item 
+sources/\+A\+P\+U/\+D\+S\+P/\mbox{\hyperlink{Echo_8cpp}{Echo.\+cpp}}\item 
+sources/\+A\+P\+U/\+D\+S\+P/\mbox{\hyperlink{Envelope_8cpp}{Envelope.\+cpp}}\item 
+sources/\+A\+P\+U/\+D\+S\+P/\mbox{\hyperlink{Gauss_8cpp}{Gauss.\+cpp}}\item 
+sources/\+A\+P\+U/\+D\+S\+P/\mbox{\hyperlink{Timer_8cpp}{Timer.\+cpp}}\item 
+sources/\+A\+P\+U/\+D\+S\+P/\mbox{\hyperlink{Voice_8cpp}{Voice.\+cpp}}\end{DoxyCompactItemize}

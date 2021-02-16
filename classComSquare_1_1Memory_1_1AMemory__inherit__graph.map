@@ -1,0 +1,11 @@
+<map id="ComSquare::Memory::AMemory" name="ComSquare::Memory::AMemory">
+<area shape="rect" id="node1" title="Abstract class representing a continuous block of memory." alt="" coords="465,292,640,487"/>
+<area shape="rect" id="node3" href="$classComSquare_1_1APU_1_1APU.html" title=" " alt="" coords="5,601,193,1103"/>
+<area shape="rect" id="node5" href="$classComSquare_1_1APU_1_1IPL_1_1IPL.html" title=" " alt="" coords="218,733,405,971"/>
+<area shape="rect" id="node6" href="$classComSquare_1_1CPU_1_1CPU.html" title="The main CPU." alt="" coords="429,535,677,1169"/>
+<area shape="rect" id="node8" href="$classComSquare_1_1Memory_1_1MemoryShadow.html" title=" " alt="" coords="700,733,867,971"/>
+<area shape="rect" id="node9" href="$classComSquare_1_1PPU_1_1PPU.html" title="The class containing all the registers of the PPU." alt="" coords="891,711,1057,993"/>
+<area shape="rect" id="node2" href="$classComSquare_1_1Memory_1_1IMemory.html" title="Common interface implemented by all components mapping memory." alt="" coords="465,5,640,244"/>
+<area shape="rect" id="node4" href="$classComSquare_1_1Debugger_1_1APUDebug.html" title=" " alt="" coords="11,1327,187,1669"/>
+<area shape="rect" id="node7" href="$classComSquare_1_1Debugger_1_1CPUDebug.html" title="A custom CPU with a window that show it&#39;s registers and the disassembly." alt="" coords="447,1217,658,1779"/>
+</map>

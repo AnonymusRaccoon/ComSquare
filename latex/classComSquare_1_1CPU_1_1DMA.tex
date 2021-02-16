@@ -1,0 +1,469 @@
+\hypertarget{classComSquare_1_1CPU_1_1DMA}{}\doxysection{Com\+Square\+::C\+PU\+::D\+MA Class Reference}
+\label{classComSquare_1_1CPU_1_1DMA}\index{ComSquare::CPU::DMA@{ComSquare::CPU::DMA}}
+
+
+Class handling all D\+M\+A/\+H\+D\+MA transfers (Direct \mbox{\hyperlink{namespaceComSquare_1_1Memory}{Memory}} Access or H-\/\+Blank Direct \mbox{\hyperlink{namespaceComSquare_1_1Memory}{Memory}} Access)  
+
+
+
+
+{\ttfamily \#include $<$D\+M\+A.\+hpp$>$}
+
+
+
+Collaboration diagram for Com\+Square\+::C\+PU\+::D\+MA\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classComSquare_1_1CPU_1_1DMA__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA_a09db4b625719ea8c624bc77a6ffcba39}{D\+M\+A\+Mode}} \{ \newline
+\mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA_a09db4b625719ea8c624bc77a6ffcba39a86a0bca9633a504c13a142e8732d0654}{One\+To\+One}} = 0b000, 
+\mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA_a09db4b625719ea8c624bc77a6ffcba39a4436f697495cdfb191337a6d4419a555}{Two\+To\+Two}} = 0b001, 
+\mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA_a09db4b625719ea8c624bc77a6ffcba39aadedb5cc6298170f2ac0714399db9a66}{Two\+To\+One}} = 0b010, 
+\mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA_a09db4b625719ea8c624bc77a6ffcba39ae8326b4f06978a369f0f2f7174aa447e}{Four\+To\+Two}} = 0b011, 
+\newline
+\mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA_a09db4b625719ea8c624bc77a6ffcba39a7d518b3bb843763d2587653192708e6d}{Four\+To\+Four}} = 0b100, 
+\mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA_a09db4b625719ea8c624bc77a6ffcba39a8b5fc9672d91f39e13f35269e5191db0}{Two\+To\+Two\+Bis}} = 0b101, 
+\mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA_a09db4b625719ea8c624bc77a6ffcba39a5f0f9487ca32fb33306fb0a60622b775}{Two\+To\+One\+Bis}} = 0b110, 
+\mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA_a09db4b625719ea8c624bc77a6ffcba39ae110f671ea0a774b3d0219cb199e65eb}{Four\+To\+Two\+Bis}} = 0b111
+ \}
+\begin{DoxyCompactList}\small\item\em The first three bytes of the \mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA}{D\+MA}}\textquotesingle{}s control register. Used to tell how many bytes/registers there is. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA_a34f471a48a9062c44e0260b3686ba06c}{Direction}} \{ \mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA_a34f471a48a9062c44e0260b3686ba06cac68d0326695de61779072fe85f0bbed1}{AtoB}}, 
+\mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA_a34f471a48a9062c44e0260b3686ba06ca90d173a67b57daa0e8cc0e395f691182}{BtoA}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA_a22eebb915be41b2d5ca9d6d7c33d209b}{set\+Bus}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classComSquare_1_1Memory_1_1MemoryBus}{Memory\+::\+Memory\+Bus}} $>$ bus)
+\begin{DoxyCompactList}\small\item\em Set the memory bus used by this dma channel. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA_ac15ec6b4981e6097e268a9b65be29a4f}{read}} (uint8\+\_\+t addr) const
+\begin{DoxyCompactList}\small\item\em Bus helper to read from this channel. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA_a83cc22ce83580854ca78088362a2de9d}{write}} (uint8\+\_\+t addr, uint8\+\_\+t data)
+\begin{DoxyCompactList}\small\item\em Bus helper to write to this channel. \end{DoxyCompactList}\item 
+unsigned \mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA_a33579bc6e0052d0be73a17a32eb8262e}{run}} (unsigned cycles)
+\begin{DoxyCompactList}\small\item\em Run the \mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA}{D\+MA}} for x cycles. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA_a1b11fe43abbdc89e848250932c001496}{D\+MA}} ()=default
+\item 
+\mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA_a468a6a986e8cbe9ad2857e8071460264}{D\+MA}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classComSquare_1_1Memory_1_1MemoryBus}{Memory\+::\+Memory\+Bus}} $>$ bus)
+\item 
+\mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA_a6cfdffcb9b2011e3b3205262817e27be}{D\+MA}} (const \mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA}{D\+MA}} \&)=default
+\item 
+\mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA}{D\+MA}} \& \mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA_abe8a0c4c451d3e46013df9964cb6c9c3}{operator=}} (const \mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA}{D\+MA}} \&)=default
+\item 
+\mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA_a65aa5e884fa822949d5b7c34b7cec98e}{$\sim$\+D\+MA}} ()=default
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA_a92fbb57324fbdf99e9d97a304c4f2083}{enabled}}
+\begin{DoxyCompactList}\small\item\em Is this channel set to run? \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA_a09db4b625719ea8c624bc77a6ffcba39}{D\+M\+A\+Mode}} \mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA_a3c922413f610803ff3775367023b78b4}{mode}}\+: 3
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA}{D\+MA}}\textquotesingle{}s mode\+: how many bytes/registers there is, how many writes... \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA_a3f6e8413e03d475a303a9685e9107bdb}{fixed}}\+: 1
+\begin{DoxyCompactList}\small\item\em If this flag is set, no increment/decrement will be done. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA_addb890a9a0331e2c00e291a93346801e}{increment}}\+: 1
+\begin{DoxyCompactList}\small\item\em if this flag is 0\+: increment. Else\+: decrement. (The A address) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA_a3fdcb50a9a2fa0e8c6b572cd7799f2ad}{\+\_\+}}\+: 2
+\begin{DoxyCompactList}\small\item\em Two unused bites. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA_a34f471a48a9062c44e0260b3686ba06c}{Direction}} \mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA_a0b3074ccfd02bf29ede00d79ef78792e}{direction}}\+: 1
+\begin{DoxyCompactList}\small\item\em The direction of the transfer. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA_a1ea72efaa83b0bb7862f6cc5fd08c69c}{raw}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA_abc28baf74b33a1ab53c3773c84ed9c57}{bytes}} \mbox{[}3\mbox{]}
+\item 
+uint16\+\_\+t \mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA_a26eb7d20d948f133c086de1ca849de68}{page}}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA_a84708ba0a5589a8ca73ed6284d570c04}{bank}}
+\item 
+\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} \mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA_a9d6db87d17373060c5247858adc8d60d}{raw}}\+: 24
+\item 
+uint16\+\_\+t \mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA_af747887faadea7055e7d074612614bc9}{raw}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+unsigned \mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA_af77e48f1a5875defee964724e556a7b4}{\+\_\+write\+One\+Byte}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} a\+Address, \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} b\+Address)
+\begin{DoxyCompactList}\small\item\em Write one byte using the A address, the port and the \+\_\+direction. Handle special cases where no write occurs. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA_ac01f700c2aa30322af852f869d91d8b6}{\+\_\+get\+Mode\+Offset}} (int index)
+\begin{DoxyCompactList}\small\item\em Get an offset corresponding to the current D\+M\+A\+Mode and the index of the currently transferred byte. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>\mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA_a09db4b625719ea8c624bc77a6ffcba39}{DMAMode}} \mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA_a3c922413f610803ff3775367023b78b4}{mode}}: 3\\
+\>\>\>{\em \mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA}{DMA}}\textquotesingle{}s mode: how many bytes/registers there is, how many writes... }\\
+\>\>bool \mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA_a3f6e8413e03d475a303a9685e9107bdb}{fixed}}: 1\\
+\>\>\>{\em If this flag is set, no increment/decrement will be done. }\\
+\>\>bool \mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA_addb890a9a0331e2c00e291a93346801e}{increment}}: 1\\
+\>\>\>{\em if this flag is 0: increment. Else: decrement. (The A address) }\\
+\>\>bool \mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA_a3fdcb50a9a2fa0e8c6b572cd7799f2ad}{\_}}: 2\\
+\>\>\>{\em Two unused bites. }\\
+\>\>\mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA_a34f471a48a9062c44e0260b3686ba06c}{Direction}} \mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA_a0b3074ccfd02bf29ede00d79ef78792e}{direction}}: 1\\
+\>\>\>{\em The direction of the transfer. }\\
+\>\} \\
+\>uint8\_t \mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA_a1ea72efaa83b0bb7862f6cc5fd08c69c}{raw}}\\
+\} \mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA_a3233df46e04c3e1ad3e739eebd4e589f}{\_controlRegister}}\\
+
+\end{tabbing}\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA}{D\+MA}} Control register (various information about the transfer) \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA_aec13e71fb0f68dcaa7b34b1cba600995}{\+\_\+port}}
+\begin{DoxyCompactList}\small\item\em If this is \textquotesingle{}xx\textquotesingle{}, the register accessed will be \$21xx. \end{DoxyCompactList}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>uint8\_t \mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA_abc28baf74b33a1ab53c3773c84ed9c57}{bytes}} \mbox{[}3\mbox{]}\\
+\>struct \{\\
+\>\>uint16\_t \mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA_a26eb7d20d948f133c086de1ca849de68}{page}}\\
+\>\>uint8\_t \mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA_a84708ba0a5589a8ca73ed6284d570c04}{bank}}\\
+\>\} \\
+\>\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\_t}} \mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA_a9d6db87d17373060c5247858adc8d60d}{raw}}: 24\\
+\} \mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA_aeddc583eb4b513693c30a946f6e99673}{\_aAddress}}\\
+
+\end{tabbing}\begin{DoxyCompactList}\small\item\em The absolute long address of the data from the A bus. \end{DoxyCompactList}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>uint8\_t \mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA_abc28baf74b33a1ab53c3773c84ed9c57}{bytes}} \mbox{[}2\mbox{]}\\
+\>uint16\_t \mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA_af747887faadea7055e7d074612614bc9}{raw}}\\
+\} \mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA_ad596a75bc9a3875b1a9dc201edd93b1e}{\_count}}\\
+
+\end{tabbing}\begin{DoxyCompactList}\small\item\em The number of bytes to be transferred. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classComSquare_1_1Memory_1_1MemoryBus}{Memory\+::\+Memory\+Bus}} $>$ \mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA_ac96b85fa3b86aaa6942e9cada21b06f1}{\+\_\+bus}}
+\begin{DoxyCompactList}\small\item\em The memory bus to use for read/write. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class handling all D\+M\+A/\+H\+D\+MA transfers (Direct \mbox{\hyperlink{namespaceComSquare_1_1Memory}{Memory}} Access or H-\/\+Blank Direct \mbox{\hyperlink{namespaceComSquare_1_1Memory}{Memory}} Access) 
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classComSquare_1_1CPU_1_1DMA_a34f471a48a9062c44e0260b3686ba06c}\label{classComSquare_1_1CPU_1_1DMA_a34f471a48a9062c44e0260b3686ba06c}} 
+\index{ComSquare::CPU::DMA@{ComSquare::CPU::DMA}!Direction@{Direction}}
+\index{Direction@{Direction}!ComSquare::CPU::DMA@{ComSquare::CPU::DMA}}
+\doxysubsubsection{\texorpdfstring{Direction}{Direction}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA_a34f471a48a9062c44e0260b3686ba06c}{Com\+Square\+::\+C\+P\+U\+::\+D\+M\+A\+::\+Direction}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{AtoB@{AtoB}!ComSquare::CPU::DMA@{ComSquare::CPU::DMA}}\index{ComSquare::CPU::DMA@{ComSquare::CPU::DMA}!AtoB@{AtoB}}}\mbox{\Hypertarget{classComSquare_1_1CPU_1_1DMA_a34f471a48a9062c44e0260b3686ba06cac68d0326695de61779072fe85f0bbed1}\label{classComSquare_1_1CPU_1_1DMA_a34f471a48a9062c44e0260b3686ba06cac68d0326695de61779072fe85f0bbed1}} 
+AtoB&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BtoA@{BtoA}!ComSquare::CPU::DMA@{ComSquare::CPU::DMA}}\index{ComSquare::CPU::DMA@{ComSquare::CPU::DMA}!BtoA@{BtoA}}}\mbox{\Hypertarget{classComSquare_1_1CPU_1_1DMA_a34f471a48a9062c44e0260b3686ba06ca90d173a67b57daa0e8cc0e395f691182}\label{classComSquare_1_1CPU_1_1DMA_a34f471a48a9062c44e0260b3686ba06ca90d173a67b57daa0e8cc0e395f691182}} 
+BtoA&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{classComSquare_1_1CPU_1_1DMA_a09db4b625719ea8c624bc77a6ffcba39}\label{classComSquare_1_1CPU_1_1DMA_a09db4b625719ea8c624bc77a6ffcba39}} 
+\index{ComSquare::CPU::DMA@{ComSquare::CPU::DMA}!DMAMode@{DMAMode}}
+\index{DMAMode@{DMAMode}!ComSquare::CPU::DMA@{ComSquare::CPU::DMA}}
+\doxysubsubsection{\texorpdfstring{DMAMode}{DMAMode}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA_a09db4b625719ea8c624bc77a6ffcba39}{Com\+Square\+::\+C\+P\+U\+::\+D\+M\+A\+::\+D\+M\+A\+Mode}}}
+
+
+
+The first three bytes of the \mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA}{D\+MA}}\textquotesingle{}s control register. Used to tell how many bytes/registers there is. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OneToOne@{OneToOne}!ComSquare::CPU::DMA@{ComSquare::CPU::DMA}}\index{ComSquare::CPU::DMA@{ComSquare::CPU::DMA}!OneToOne@{OneToOne}}}\mbox{\Hypertarget{classComSquare_1_1CPU_1_1DMA_a09db4b625719ea8c624bc77a6ffcba39a86a0bca9633a504c13a142e8732d0654}\label{classComSquare_1_1CPU_1_1DMA_a09db4b625719ea8c624bc77a6ffcba39a86a0bca9633a504c13a142e8732d0654}} 
+One\+To\+One&1 byte is transferred to 1 register (write once) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TwoToTwo@{TwoToTwo}!ComSquare::CPU::DMA@{ComSquare::CPU::DMA}}\index{ComSquare::CPU::DMA@{ComSquare::CPU::DMA}!TwoToTwo@{TwoToTwo}}}\mbox{\Hypertarget{classComSquare_1_1CPU_1_1DMA_a09db4b625719ea8c624bc77a6ffcba39a4436f697495cdfb191337a6d4419a555}\label{classComSquare_1_1CPU_1_1DMA_a09db4b625719ea8c624bc77a6ffcba39a4436f697495cdfb191337a6d4419a555}} 
+Two\+To\+Two&2 byte is transferred to 2 register (write once) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TwoToOne@{TwoToOne}!ComSquare::CPU::DMA@{ComSquare::CPU::DMA}}\index{ComSquare::CPU::DMA@{ComSquare::CPU::DMA}!TwoToOne@{TwoToOne}}}\mbox{\Hypertarget{classComSquare_1_1CPU_1_1DMA_a09db4b625719ea8c624bc77a6ffcba39aadedb5cc6298170f2ac0714399db9a66}\label{classComSquare_1_1CPU_1_1DMA_a09db4b625719ea8c624bc77a6ffcba39aadedb5cc6298170f2ac0714399db9a66}} 
+Two\+To\+One&2 byte is transferred to 1 register (write twice) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FourToTwo@{FourToTwo}!ComSquare::CPU::DMA@{ComSquare::CPU::DMA}}\index{ComSquare::CPU::DMA@{ComSquare::CPU::DMA}!FourToTwo@{FourToTwo}}}\mbox{\Hypertarget{classComSquare_1_1CPU_1_1DMA_a09db4b625719ea8c624bc77a6ffcba39ae8326b4f06978a369f0f2f7174aa447e}\label{classComSquare_1_1CPU_1_1DMA_a09db4b625719ea8c624bc77a6ffcba39ae8326b4f06978a369f0f2f7174aa447e}} 
+Four\+To\+Two&4 byte is transferred to 2 register (write twice) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FourToFour@{FourToFour}!ComSquare::CPU::DMA@{ComSquare::CPU::DMA}}\index{ComSquare::CPU::DMA@{ComSquare::CPU::DMA}!FourToFour@{FourToFour}}}\mbox{\Hypertarget{classComSquare_1_1CPU_1_1DMA_a09db4b625719ea8c624bc77a6ffcba39a7d518b3bb843763d2587653192708e6d}\label{classComSquare_1_1CPU_1_1DMA_a09db4b625719ea8c624bc77a6ffcba39a7d518b3bb843763d2587653192708e6d}} 
+Four\+To\+Four&4 byte is transferred to 4 register (write once) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TwoToTwoBis@{TwoToTwoBis}!ComSquare::CPU::DMA@{ComSquare::CPU::DMA}}\index{ComSquare::CPU::DMA@{ComSquare::CPU::DMA}!TwoToTwoBis@{TwoToTwoBis}}}\mbox{\Hypertarget{classComSquare_1_1CPU_1_1DMA_a09db4b625719ea8c624bc77a6ffcba39a8b5fc9672d91f39e13f35269e5191db0}\label{classComSquare_1_1CPU_1_1DMA_a09db4b625719ea8c624bc77a6ffcba39a8b5fc9672d91f39e13f35269e5191db0}} 
+Two\+To\+Two\+Bis&Exactly the same as Two\+To\+Two (not implemented on the \mbox{\hyperlink{classComSquare_1_1SNES}{S\+N\+ES}} so this fallbacks) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TwoToOneBis@{TwoToOneBis}!ComSquare::CPU::DMA@{ComSquare::CPU::DMA}}\index{ComSquare::CPU::DMA@{ComSquare::CPU::DMA}!TwoToOneBis@{TwoToOneBis}}}\mbox{\Hypertarget{classComSquare_1_1CPU_1_1DMA_a09db4b625719ea8c624bc77a6ffcba39a5f0f9487ca32fb33306fb0a60622b775}\label{classComSquare_1_1CPU_1_1DMA_a09db4b625719ea8c624bc77a6ffcba39a5f0f9487ca32fb33306fb0a60622b775}} 
+Two\+To\+One\+Bis&Exactly the same as Two\+To\+One (not implemented on the \mbox{\hyperlink{classComSquare_1_1SNES}{S\+N\+ES}} so this fallbacks) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FourToTwoBis@{FourToTwoBis}!ComSquare::CPU::DMA@{ComSquare::CPU::DMA}}\index{ComSquare::CPU::DMA@{ComSquare::CPU::DMA}!FourToTwoBis@{FourToTwoBis}}}\mbox{\Hypertarget{classComSquare_1_1CPU_1_1DMA_a09db4b625719ea8c624bc77a6ffcba39ae110f671ea0a774b3d0219cb199e65eb}\label{classComSquare_1_1CPU_1_1DMA_a09db4b625719ea8c624bc77a6ffcba39ae110f671ea0a774b3d0219cb199e65eb}} 
+Four\+To\+Two\+Bis&Exactly the same as Four\+To\+Two (not implemented on the \mbox{\hyperlink{classComSquare_1_1SNES}{S\+N\+ES}} so this fallbacks) \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classComSquare_1_1CPU_1_1DMA_a1b11fe43abbdc89e848250932c001496}\label{classComSquare_1_1CPU_1_1DMA_a1b11fe43abbdc89e848250932c001496}} 
+\index{ComSquare::CPU::DMA@{ComSquare::CPU::DMA}!DMA@{DMA}}
+\index{DMA@{DMA}!ComSquare::CPU::DMA@{ComSquare::CPU::DMA}}
+\doxysubsubsection{\texorpdfstring{DMA()}{DMA()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Com\+Square\+::\+C\+P\+U\+::\+D\+M\+A\+::\+D\+MA (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classComSquare_1_1CPU_1_1DMA_a468a6a986e8cbe9ad2857e8071460264}\label{classComSquare_1_1CPU_1_1DMA_a468a6a986e8cbe9ad2857e8071460264}} 
+\index{ComSquare::CPU::DMA@{ComSquare::CPU::DMA}!DMA@{DMA}}
+\index{DMA@{DMA}!ComSquare::CPU::DMA@{ComSquare::CPU::DMA}}
+\doxysubsubsection{\texorpdfstring{DMA()}{DMA()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Com\+Square\+::\+C\+P\+U\+::\+D\+M\+A\+::\+D\+MA (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classComSquare_1_1Memory_1_1MemoryBus}{Memory\+::\+Memory\+Bus}} $>$}]{bus }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classComSquare_1_1CPU_1_1DMA_a6cfdffcb9b2011e3b3205262817e27be}\label{classComSquare_1_1CPU_1_1DMA_a6cfdffcb9b2011e3b3205262817e27be}} 
+\index{ComSquare::CPU::DMA@{ComSquare::CPU::DMA}!DMA@{DMA}}
+\index{DMA@{DMA}!ComSquare::CPU::DMA@{ComSquare::CPU::DMA}}
+\doxysubsubsection{\texorpdfstring{DMA()}{DMA()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Com\+Square\+::\+C\+P\+U\+::\+D\+M\+A\+::\+D\+MA (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA}{D\+MA}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classComSquare_1_1CPU_1_1DMA_a65aa5e884fa822949d5b7c34b7cec98e}\label{classComSquare_1_1CPU_1_1DMA_a65aa5e884fa822949d5b7c34b7cec98e}} 
+\index{ComSquare::CPU::DMA@{ComSquare::CPU::DMA}!````~DMA@{$\sim$DMA}}
+\index{````~DMA@{$\sim$DMA}!ComSquare::CPU::DMA@{ComSquare::CPU::DMA}}
+\doxysubsubsection{\texorpdfstring{$\sim$DMA()}{~DMA()}}
+{\footnotesize\ttfamily Com\+Square\+::\+C\+P\+U\+::\+D\+M\+A\+::$\sim$\+D\+MA (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classComSquare_1_1CPU_1_1DMA_ac01f700c2aa30322af852f869d91d8b6}\label{classComSquare_1_1CPU_1_1DMA_ac01f700c2aa30322af852f869d91d8b6}} 
+\index{ComSquare::CPU::DMA@{ComSquare::CPU::DMA}!\_getModeOffset@{\_getModeOffset}}
+\index{\_getModeOffset@{\_getModeOffset}!ComSquare::CPU::DMA@{ComSquare::CPU::DMA}}
+\doxysubsubsection{\texorpdfstring{\_getModeOffset()}{\_getModeOffset()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+C\+P\+U\+::\+D\+M\+A\+::\+\_\+get\+Mode\+Offset (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Get an offset corresponding to the current D\+M\+A\+Mode and the index of the currently transferred byte. 
+
+\mbox{\Hypertarget{classComSquare_1_1CPU_1_1DMA_af77e48f1a5875defee964724e556a7b4}\label{classComSquare_1_1CPU_1_1DMA_af77e48f1a5875defee964724e556a7b4}} 
+\index{ComSquare::CPU::DMA@{ComSquare::CPU::DMA}!\_writeOneByte@{\_writeOneByte}}
+\index{\_writeOneByte@{\_writeOneByte}!ComSquare::CPU::DMA@{ComSquare::CPU::DMA}}
+\doxysubsubsection{\texorpdfstring{\_writeOneByte()}{\_writeOneByte()}}
+{\footnotesize\ttfamily unsigned Com\+Square\+::\+C\+P\+U\+::\+D\+M\+A\+::\+\_\+write\+One\+Byte (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{a\+Address,  }\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{b\+Address }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Write one byte using the A address, the port and the \+\_\+direction. Handle special cases where no write occurs. 
+
+\begin{DoxyReturn}{Returns}
+The number of cycles used. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classComSquare_1_1CPU_1_1DMA_abe8a0c4c451d3e46013df9964cb6c9c3}\label{classComSquare_1_1CPU_1_1DMA_abe8a0c4c451d3e46013df9964cb6c9c3}} 
+\index{ComSquare::CPU::DMA@{ComSquare::CPU::DMA}!operator=@{operator=}}
+\index{operator=@{operator=}!ComSquare::CPU::DMA@{ComSquare::CPU::DMA}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA}{D\+MA}}\& Com\+Square\+::\+C\+P\+U\+::\+D\+M\+A\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA}{D\+MA}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classComSquare_1_1CPU_1_1DMA_ac15ec6b4981e6097e268a9b65be29a4f}\label{classComSquare_1_1CPU_1_1DMA_ac15ec6b4981e6097e268a9b65be29a4f}} 
+\index{ComSquare::CPU::DMA@{ComSquare::CPU::DMA}!read@{read}}
+\index{read@{read}!ComSquare::CPU::DMA@{ComSquare::CPU::DMA}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+C\+P\+U\+::\+D\+M\+A\+::read (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{addr }\end{DoxyParamCaption}) const}
+
+
+
+Bus helper to read from this channel. 
+
+\mbox{\Hypertarget{classComSquare_1_1CPU_1_1DMA_a33579bc6e0052d0be73a17a32eb8262e}\label{classComSquare_1_1CPU_1_1DMA_a33579bc6e0052d0be73a17a32eb8262e}} 
+\index{ComSquare::CPU::DMA@{ComSquare::CPU::DMA}!run@{run}}
+\index{run@{run}!ComSquare::CPU::DMA@{ComSquare::CPU::DMA}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily unsigned Com\+Square\+::\+C\+P\+U\+::\+D\+M\+A\+::run (\begin{DoxyParamCaption}\item[{unsigned}]{cycles }\end{DoxyParamCaption})}
+
+
+
+Run the \mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA}{D\+MA}} for x cycles. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cycles} & The maximum number of cycles this \mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA}{D\+MA}} should run. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the number of cycles taken 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classComSquare_1_1CPU_1_1DMA_a22eebb915be41b2d5ca9d6d7c33d209b}\label{classComSquare_1_1CPU_1_1DMA_a22eebb915be41b2d5ca9d6d7c33d209b}} 
+\index{ComSquare::CPU::DMA@{ComSquare::CPU::DMA}!setBus@{setBus}}
+\index{setBus@{setBus}!ComSquare::CPU::DMA@{ComSquare::CPU::DMA}}
+\doxysubsubsection{\texorpdfstring{setBus()}{setBus()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+C\+P\+U\+::\+D\+M\+A\+::set\+Bus (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classComSquare_1_1Memory_1_1MemoryBus}{Memory\+::\+Memory\+Bus}} $>$}]{bus }\end{DoxyParamCaption})}
+
+
+
+Set the memory bus used by this dma channel. 
+
+\mbox{\Hypertarget{classComSquare_1_1CPU_1_1DMA_a83cc22ce83580854ca78088362a2de9d}\label{classComSquare_1_1CPU_1_1DMA_a83cc22ce83580854ca78088362a2de9d}} 
+\index{ComSquare::CPU::DMA@{ComSquare::CPU::DMA}!write@{write}}
+\index{write@{write}!ComSquare::CPU::DMA@{ComSquare::CPU::DMA}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+C\+P\+U\+::\+D\+M\+A\+::write (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{addr,  }\item[{uint8\+\_\+t}]{data }\end{DoxyParamCaption})}
+
+
+
+Bus helper to write to this channel. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classComSquare_1_1CPU_1_1DMA_a3fdcb50a9a2fa0e8c6b572cd7799f2ad}\label{classComSquare_1_1CPU_1_1DMA_a3fdcb50a9a2fa0e8c6b572cd7799f2ad}} 
+\index{ComSquare::CPU::DMA@{ComSquare::CPU::DMA}!\_@{\_}}
+\index{\_@{\_}!ComSquare::CPU::DMA@{ComSquare::CPU::DMA}}
+\doxysubsubsection{\texorpdfstring{\_}{\_}}
+{\footnotesize\ttfamily bool Com\+Square\+::\+C\+P\+U\+::\+D\+M\+A\+::\+\_\+}
+
+
+
+Two unused bites. 
+
+\mbox{\Hypertarget{classComSquare_1_1CPU_1_1DMA_aeddc583eb4b513693c30a946f6e99673}\label{classComSquare_1_1CPU_1_1DMA_aeddc583eb4b513693c30a946f6e99673}} 
+\index{ComSquare::CPU::DMA@{ComSquare::CPU::DMA}!\_aAddress@{\_aAddress}}
+\index{\_aAddress@{\_aAddress}!ComSquare::CPU::DMA@{ComSquare::CPU::DMA}}
+\doxysubsubsection{\texorpdfstring{\_aAddress}{\_aAddress}}
+{\footnotesize\ttfamily union \{ ... \}  Com\+Square\+::\+C\+P\+U\+::\+D\+M\+A\+::\+\_\+a\+Address\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The absolute long address of the data from the A bus. 
+
+\mbox{\Hypertarget{classComSquare_1_1CPU_1_1DMA_ac96b85fa3b86aaa6942e9cada21b06f1}\label{classComSquare_1_1CPU_1_1DMA_ac96b85fa3b86aaa6942e9cada21b06f1}} 
+\index{ComSquare::CPU::DMA@{ComSquare::CPU::DMA}!\_bus@{\_bus}}
+\index{\_bus@{\_bus}!ComSquare::CPU::DMA@{ComSquare::CPU::DMA}}
+\doxysubsubsection{\texorpdfstring{\_bus}{\_bus}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classComSquare_1_1Memory_1_1MemoryBus}{Memory\+::\+Memory\+Bus}}$>$ Com\+Square\+::\+C\+P\+U\+::\+D\+M\+A\+::\+\_\+bus\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The memory bus to use for read/write. 
+
+\mbox{\Hypertarget{classComSquare_1_1CPU_1_1DMA_a3233df46e04c3e1ad3e739eebd4e589f}\label{classComSquare_1_1CPU_1_1DMA_a3233df46e04c3e1ad3e739eebd4e589f}} 
+\index{ComSquare::CPU::DMA@{ComSquare::CPU::DMA}!\_controlRegister@{\_controlRegister}}
+\index{\_controlRegister@{\_controlRegister}!ComSquare::CPU::DMA@{ComSquare::CPU::DMA}}
+\doxysubsubsection{\texorpdfstring{\_controlRegister}{\_controlRegister}}
+{\footnotesize\ttfamily union \{ ... \}  Com\+Square\+::\+C\+P\+U\+::\+D\+M\+A\+::\+\_\+control\+Register\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA}{D\+MA}} Control register (various information about the transfer) 
+
+\mbox{\Hypertarget{classComSquare_1_1CPU_1_1DMA_ad596a75bc9a3875b1a9dc201edd93b1e}\label{classComSquare_1_1CPU_1_1DMA_ad596a75bc9a3875b1a9dc201edd93b1e}} 
+\index{ComSquare::CPU::DMA@{ComSquare::CPU::DMA}!\_count@{\_count}}
+\index{\_count@{\_count}!ComSquare::CPU::DMA@{ComSquare::CPU::DMA}}
+\doxysubsubsection{\texorpdfstring{\_count}{\_count}}
+{\footnotesize\ttfamily union \{ ... \}  Com\+Square\+::\+C\+P\+U\+::\+D\+M\+A\+::\+\_\+count\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The number of bytes to be transferred. 
+
+\mbox{\Hypertarget{classComSquare_1_1CPU_1_1DMA_aec13e71fb0f68dcaa7b34b1cba600995}\label{classComSquare_1_1CPU_1_1DMA_aec13e71fb0f68dcaa7b34b1cba600995}} 
+\index{ComSquare::CPU::DMA@{ComSquare::CPU::DMA}!\_port@{\_port}}
+\index{\_port@{\_port}!ComSquare::CPU::DMA@{ComSquare::CPU::DMA}}
+\doxysubsubsection{\texorpdfstring{\_port}{\_port}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+C\+P\+U\+::\+D\+M\+A\+::\+\_\+port\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+If this is \textquotesingle{}xx\textquotesingle{}, the register accessed will be \$21xx. 
+
+\mbox{\Hypertarget{classComSquare_1_1CPU_1_1DMA_a84708ba0a5589a8ca73ed6284d570c04}\label{classComSquare_1_1CPU_1_1DMA_a84708ba0a5589a8ca73ed6284d570c04}} 
+\index{ComSquare::CPU::DMA@{ComSquare::CPU::DMA}!bank@{bank}}
+\index{bank@{bank}!ComSquare::CPU::DMA@{ComSquare::CPU::DMA}}
+\doxysubsubsection{\texorpdfstring{bank}{bank}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+C\+P\+U\+::\+D\+M\+A\+::bank}
+
+\mbox{\Hypertarget{classComSquare_1_1CPU_1_1DMA_abc28baf74b33a1ab53c3773c84ed9c57}\label{classComSquare_1_1CPU_1_1DMA_abc28baf74b33a1ab53c3773c84ed9c57}} 
+\index{ComSquare::CPU::DMA@{ComSquare::CPU::DMA}!bytes@{bytes}}
+\index{bytes@{bytes}!ComSquare::CPU::DMA@{ComSquare::CPU::DMA}}
+\doxysubsubsection{\texorpdfstring{bytes}{bytes}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+C\+P\+U\+::\+D\+M\+A\+::bytes\mbox{[}2\mbox{]}}
+
+\mbox{\Hypertarget{classComSquare_1_1CPU_1_1DMA_a0b3074ccfd02bf29ede00d79ef78792e}\label{classComSquare_1_1CPU_1_1DMA_a0b3074ccfd02bf29ede00d79ef78792e}} 
+\index{ComSquare::CPU::DMA@{ComSquare::CPU::DMA}!direction@{direction}}
+\index{direction@{direction}!ComSquare::CPU::DMA@{ComSquare::CPU::DMA}}
+\doxysubsubsection{\texorpdfstring{direction}{direction}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA_a34f471a48a9062c44e0260b3686ba06c}{Direction}} Com\+Square\+::\+C\+P\+U\+::\+D\+M\+A\+::direction}
+
+
+
+The direction of the transfer. 
+
+\mbox{\Hypertarget{classComSquare_1_1CPU_1_1DMA_a92fbb57324fbdf99e9d97a304c4f2083}\label{classComSquare_1_1CPU_1_1DMA_a92fbb57324fbdf99e9d97a304c4f2083}} 
+\index{ComSquare::CPU::DMA@{ComSquare::CPU::DMA}!enabled@{enabled}}
+\index{enabled@{enabled}!ComSquare::CPU::DMA@{ComSquare::CPU::DMA}}
+\doxysubsubsection{\texorpdfstring{enabled}{enabled}}
+{\footnotesize\ttfamily bool Com\+Square\+::\+C\+P\+U\+::\+D\+M\+A\+::enabled}
+
+
+
+Is this channel set to run? 
+
+\mbox{\Hypertarget{classComSquare_1_1CPU_1_1DMA_a3f6e8413e03d475a303a9685e9107bdb}\label{classComSquare_1_1CPU_1_1DMA_a3f6e8413e03d475a303a9685e9107bdb}} 
+\index{ComSquare::CPU::DMA@{ComSquare::CPU::DMA}!fixed@{fixed}}
+\index{fixed@{fixed}!ComSquare::CPU::DMA@{ComSquare::CPU::DMA}}
+\doxysubsubsection{\texorpdfstring{fixed}{fixed}}
+{\footnotesize\ttfamily bool Com\+Square\+::\+C\+P\+U\+::\+D\+M\+A\+::fixed}
+
+
+
+If this flag is set, no increment/decrement will be done. 
+
+\mbox{\Hypertarget{classComSquare_1_1CPU_1_1DMA_addb890a9a0331e2c00e291a93346801e}\label{classComSquare_1_1CPU_1_1DMA_addb890a9a0331e2c00e291a93346801e}} 
+\index{ComSquare::CPU::DMA@{ComSquare::CPU::DMA}!increment@{increment}}
+\index{increment@{increment}!ComSquare::CPU::DMA@{ComSquare::CPU::DMA}}
+\doxysubsubsection{\texorpdfstring{increment}{increment}}
+{\footnotesize\ttfamily bool Com\+Square\+::\+C\+P\+U\+::\+D\+M\+A\+::increment}
+
+
+
+if this flag is 0\+: increment. Else\+: decrement. (The A address) 
+
+\mbox{\Hypertarget{classComSquare_1_1CPU_1_1DMA_a3c922413f610803ff3775367023b78b4}\label{classComSquare_1_1CPU_1_1DMA_a3c922413f610803ff3775367023b78b4}} 
+\index{ComSquare::CPU::DMA@{ComSquare::CPU::DMA}!mode@{mode}}
+\index{mode@{mode}!ComSquare::CPU::DMA@{ComSquare::CPU::DMA}}
+\doxysubsubsection{\texorpdfstring{mode}{mode}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA_a09db4b625719ea8c624bc77a6ffcba39}{D\+M\+A\+Mode}} Com\+Square\+::\+C\+P\+U\+::\+D\+M\+A\+::mode}
+
+
+
+\mbox{\hyperlink{classComSquare_1_1CPU_1_1DMA}{D\+MA}}\textquotesingle{}s mode\+: how many bytes/registers there is, how many writes... 
+
+\mbox{\Hypertarget{classComSquare_1_1CPU_1_1DMA_a26eb7d20d948f133c086de1ca849de68}\label{classComSquare_1_1CPU_1_1DMA_a26eb7d20d948f133c086de1ca849de68}} 
+\index{ComSquare::CPU::DMA@{ComSquare::CPU::DMA}!page@{page}}
+\index{page@{page}!ComSquare::CPU::DMA@{ComSquare::CPU::DMA}}
+\doxysubsubsection{\texorpdfstring{page}{page}}
+{\footnotesize\ttfamily uint16\+\_\+t Com\+Square\+::\+C\+P\+U\+::\+D\+M\+A\+::page}
+
+\mbox{\Hypertarget{classComSquare_1_1CPU_1_1DMA_a1ea72efaa83b0bb7862f6cc5fd08c69c}\label{classComSquare_1_1CPU_1_1DMA_a1ea72efaa83b0bb7862f6cc5fd08c69c}} 
+\index{ComSquare::CPU::DMA@{ComSquare::CPU::DMA}!raw@{raw}}
+\index{raw@{raw}!ComSquare::CPU::DMA@{ComSquare::CPU::DMA}}
+\doxysubsubsection{\texorpdfstring{raw}{raw}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+C\+P\+U\+::\+D\+M\+A\+::raw}
+
+\mbox{\Hypertarget{classComSquare_1_1CPU_1_1DMA_a9d6db87d17373060c5247858adc8d60d}\label{classComSquare_1_1CPU_1_1DMA_a9d6db87d17373060c5247858adc8d60d}} 
+\index{ComSquare::CPU::DMA@{ComSquare::CPU::DMA}!raw@{raw}}
+\index{raw@{raw}!ComSquare::CPU::DMA@{ComSquare::CPU::DMA}}
+\doxysubsubsection{\texorpdfstring{raw}{raw}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} Com\+Square\+::\+C\+P\+U\+::\+D\+M\+A\+::raw}
+
+\mbox{\Hypertarget{classComSquare_1_1CPU_1_1DMA_af747887faadea7055e7d074612614bc9}\label{classComSquare_1_1CPU_1_1DMA_af747887faadea7055e7d074612614bc9}} 
+\index{ComSquare::CPU::DMA@{ComSquare::CPU::DMA}!raw@{raw}}
+\index{raw@{raw}!ComSquare::CPU::DMA@{ComSquare::CPU::DMA}}
+\doxysubsubsection{\texorpdfstring{raw}{raw}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily uint16\+\_\+t Com\+Square\+::\+C\+P\+U\+::\+D\+M\+A\+::raw}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+sources/\+C\+P\+U/\+D\+M\+A/\mbox{\hyperlink{DMA_8hpp}{D\+M\+A.\+hpp}}\item 
+sources/\+C\+P\+U/\+D\+M\+A/\mbox{\hyperlink{DMA_8cpp}{D\+M\+A.\+cpp}}\end{DoxyCompactItemize}

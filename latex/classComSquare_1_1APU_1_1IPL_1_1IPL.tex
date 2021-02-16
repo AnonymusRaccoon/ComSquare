@@ -1,0 +1,265 @@
+\hypertarget{classComSquare_1_1APU_1_1IPL_1_1IPL}{}\doxysection{Com\+Square\+::A\+PU\+::I\+PL\+::I\+PL Class Reference}
+\label{classComSquare_1_1APU_1_1IPL_1_1IPL}\index{ComSquare::APU::IPL::IPL@{ComSquare::APU::IPL::IPL}}
+
+
+{\ttfamily \#include $<$I\+P\+L.\+hpp$>$}
+
+
+
+Inheritance diagram for Com\+Square\+::A\+PU\+::I\+PL\+::I\+PL\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classComSquare_1_1APU_1_1IPL_1_1IPL__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Com\+Square\+::A\+PU\+::I\+PL\+::I\+PL\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classComSquare_1_1APU_1_1IPL_1_1IPL__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classComSquare_1_1APU_1_1IPL_1_1IPL_aca2a0f94f5e22d0db9ddad587c92b65f}{I\+PL}} (\mbox{\hyperlink{namespaceComSquare_a891b49feb5c3e0aaa4873ff19b49968c}{Component}}, std\+::string ipl\+Name)
+\begin{DoxyCompactList}\small\item\em Create the rom with its value. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classComSquare_1_1APU_1_1IPL_1_1IPL_aa6135bbf476e77a61a0f86deb56b7c16}{I\+PL}} (const \mbox{\hyperlink{classComSquare_1_1APU_1_1IPL_1_1IPL}{I\+PL}} \&)=delete
+\begin{DoxyCompactList}\small\item\em The rom can\textquotesingle{}t be copied. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classComSquare_1_1APU_1_1IPL_1_1IPL}{I\+PL}} \& \mbox{\hyperlink{classComSquare_1_1APU_1_1IPL_1_1IPL_adf9f6d59abe7146d2778367fdaf4e43a}{operator=}} (\mbox{\hyperlink{classComSquare_1_1APU_1_1IPL_1_1IPL}{I\+PL}} \&)=delete
+\begin{DoxyCompactList}\small\item\em The rom can\textquotesingle{}t be assigned. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classComSquare_1_1APU_1_1IPL_1_1IPL_a4375fa7bd9b0e92a6216986810a5486b}{$\sim$\+I\+PL}} ()
+\begin{DoxyCompactList}\small\item\em Destructor that free the rom. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{classComSquare_1_1APU_1_1IPL_1_1IPL_a75612164a9b3ed2ddc66f9fb7c316cc6}{read}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} addr) const override
+\begin{DoxyCompactList}\small\item\em Read data from the component using the same method as the basic I\+Memory. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classComSquare_1_1APU_1_1IPL_1_1IPL_a55b7a5d487ce206ee3a42255c67a3258}{write}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} addr, uint8\+\_\+t data) override
+\begin{DoxyCompactList}\small\item\em Write data to this component using the same method as the basic I\+Memory. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} \mbox{\hyperlink{classComSquare_1_1APU_1_1IPL_1_1IPL_ab0614592ba5b08b1e1447745d030e146}{get\+Size}} () const override
+\begin{DoxyCompactList}\small\item\em Get the size of the data. This size can be lower than the mapped data. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classComSquare_1_1APU_1_1IPL_1_1IPL_aae5515da2fdc63abae1fe59e60703a9d}{get\+Name}} () const override
+\begin{DoxyCompactList}\small\item\em Get the name of this accessor (used for debug purpose) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceComSquare_a891b49feb5c3e0aaa4873ff19b49968c}{Component}} \mbox{\hyperlink{classComSquare_1_1APU_1_1IPL_1_1IPL_a6764873766efe6e9a9cd38558aba28c7}{get\+Component}} () const override
+\begin{DoxyCompactList}\small\item\em Get the component of this accessor (used for debug purpose) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::array$<$ uint8\+\_\+t, 64 $>$ \mbox{\hyperlink{classComSquare_1_1APU_1_1IPL_1_1IPL_ad233b20c86f8bc22080e75ebc076ed97}{\+\_\+data}}
+\begin{DoxyCompactList}\small\item\em The Rom. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{classComSquare_1_1APU_1_1IPL_1_1IPL_ae138ebfc27348e317dd537a8e3ceb0b5}{\+\_\+size}} = 64
+\begin{DoxyCompactList}\small\item\em The size of the \mbox{\hyperlink{classComSquare_1_1APU_1_1IPL_1_1IPL}{I\+PL}} rom (in bytes). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceComSquare_a891b49feb5c3e0aaa4873ff19b49968c}{Component}} \mbox{\hyperlink{classComSquare_1_1APU_1_1IPL_1_1IPL_a2b0f679a65b7d74ef718acc0fdb86102}{\+\_\+ipl\+Type}}
+\begin{DoxyCompactList}\small\item\em An id identifying the type of memory this is (for the debugger) \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classComSquare_1_1APU_1_1IPL_1_1IPL_a68de0c9c6f72000f3906d2c8ad464d3a}{\+\_\+ipl\+Name}}
+\begin{DoxyCompactList}\small\item\em The name of this ram. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1IPL_1_1IPL_aca2a0f94f5e22d0db9ddad587c92b65f}\label{classComSquare_1_1APU_1_1IPL_1_1IPL_aca2a0f94f5e22d0db9ddad587c92b65f}} 
+\index{ComSquare::APU::IPL::IPL@{ComSquare::APU::IPL::IPL}!IPL@{IPL}}
+\index{IPL@{IPL}!ComSquare::APU::IPL::IPL@{ComSquare::APU::IPL::IPL}}
+\doxysubsubsection{\texorpdfstring{IPL()}{IPL()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Com\+Square\+::\+A\+P\+U\+::\+I\+P\+L\+::\+I\+P\+L\+::\+I\+PL (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceComSquare_a891b49feb5c3e0aaa4873ff19b49968c}{Component}}}]{type,  }\item[{std\+::string}]{ipl\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Create the rom with its value. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1IPL_1_1IPL_aa6135bbf476e77a61a0f86deb56b7c16}\label{classComSquare_1_1APU_1_1IPL_1_1IPL_aa6135bbf476e77a61a0f86deb56b7c16}} 
+\index{ComSquare::APU::IPL::IPL@{ComSquare::APU::IPL::IPL}!IPL@{IPL}}
+\index{IPL@{IPL}!ComSquare::APU::IPL::IPL@{ComSquare::APU::IPL::IPL}}
+\doxysubsubsection{\texorpdfstring{IPL()}{IPL()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Com\+Square\+::\+A\+P\+U\+::\+I\+P\+L\+::\+I\+P\+L\+::\+I\+PL (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classComSquare_1_1APU_1_1IPL_1_1IPL}{I\+PL}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+The rom can\textquotesingle{}t be copied. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1IPL_1_1IPL_a4375fa7bd9b0e92a6216986810a5486b}\label{classComSquare_1_1APU_1_1IPL_1_1IPL_a4375fa7bd9b0e92a6216986810a5486b}} 
+\index{ComSquare::APU::IPL::IPL@{ComSquare::APU::IPL::IPL}!````~IPL@{$\sim$IPL}}
+\index{````~IPL@{$\sim$IPL}!ComSquare::APU::IPL::IPL@{ComSquare::APU::IPL::IPL}}
+\doxysubsubsection{\texorpdfstring{$\sim$IPL()}{~IPL()}}
+{\footnotesize\ttfamily Com\+Square\+::\+A\+P\+U\+::\+I\+P\+L\+::\+I\+P\+L\+::$\sim$\+I\+PL (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor that free the rom. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1IPL_1_1IPL_a6764873766efe6e9a9cd38558aba28c7}\label{classComSquare_1_1APU_1_1IPL_1_1IPL_a6764873766efe6e9a9cd38558aba28c7}} 
+\index{ComSquare::APU::IPL::IPL@{ComSquare::APU::IPL::IPL}!getComponent@{getComponent}}
+\index{getComponent@{getComponent}!ComSquare::APU::IPL::IPL@{ComSquare::APU::IPL::IPL}}
+\doxysubsubsection{\texorpdfstring{getComponent()}{getComponent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceComSquare_a891b49feb5c3e0aaa4873ff19b49968c}{Component}} Com\+Square\+::\+A\+P\+U\+::\+I\+P\+L\+::\+I\+P\+L\+::get\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the component of this accessor (used for debug purpose) 
+
+
+
+Implements \mbox{\hyperlink{classComSquare_1_1Memory_1_1IMemory_a31289443bb26086fb74c724cdafd2241}{Com\+Square\+::\+Memory\+::\+I\+Memory}}.
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1IPL_1_1IPL_aae5515da2fdc63abae1fe59e60703a9d}\label{classComSquare_1_1APU_1_1IPL_1_1IPL_aae5515da2fdc63abae1fe59e60703a9d}} 
+\index{ComSquare::APU::IPL::IPL@{ComSquare::APU::IPL::IPL}!getName@{getName}}
+\index{getName@{getName}!ComSquare::APU::IPL::IPL@{ComSquare::APU::IPL::IPL}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string Com\+Square\+::\+A\+P\+U\+::\+I\+P\+L\+::\+I\+P\+L\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the name of this accessor (used for debug purpose) 
+
+
+
+Implements \mbox{\hyperlink{classComSquare_1_1Memory_1_1IMemory_a34d654c04a8a992b439c4270d566263f}{Com\+Square\+::\+Memory\+::\+I\+Memory}}.
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1IPL_1_1IPL_ab0614592ba5b08b1e1447745d030e146}\label{classComSquare_1_1APU_1_1IPL_1_1IPL_ab0614592ba5b08b1e1447745d030e146}} 
+\index{ComSquare::APU::IPL::IPL@{ComSquare::APU::IPL::IPL}!getSize@{getSize}}
+\index{getSize@{getSize}!ComSquare::APU::IPL::IPL@{ComSquare::APU::IPL::IPL}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} Com\+Square\+::\+A\+P\+U\+::\+I\+P\+L\+::\+I\+P\+L\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the size of the data. This size can be lower than the mapped data. 
+
+\begin{DoxyReturn}{Returns}
+The number of bytes inside this memory. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classComSquare_1_1Memory_1_1IMemory_a1072ab44e7389913ff67cb77ff118c8b}{Com\+Square\+::\+Memory\+::\+I\+Memory}}.
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1IPL_1_1IPL_adf9f6d59abe7146d2778367fdaf4e43a}\label{classComSquare_1_1APU_1_1IPL_1_1IPL_adf9f6d59abe7146d2778367fdaf4e43a}} 
+\index{ComSquare::APU::IPL::IPL@{ComSquare::APU::IPL::IPL}!operator=@{operator=}}
+\index{operator=@{operator=}!ComSquare::APU::IPL::IPL@{ComSquare::APU::IPL::IPL}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classComSquare_1_1APU_1_1IPL_1_1IPL}{I\+PL}}\& Com\+Square\+::\+A\+P\+U\+::\+I\+P\+L\+::\+I\+P\+L\+::operator= (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classComSquare_1_1APU_1_1IPL_1_1IPL}{I\+PL}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+The rom can\textquotesingle{}t be assigned. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1IPL_1_1IPL_a75612164a9b3ed2ddc66f9fb7c316cc6}\label{classComSquare_1_1APU_1_1IPL_1_1IPL_a75612164a9b3ed2ddc66f9fb7c316cc6}} 
+\index{ComSquare::APU::IPL::IPL@{ComSquare::APU::IPL::IPL}!read@{read}}
+\index{read@{read}!ComSquare::APU::IPL::IPL@{ComSquare::APU::IPL::IPL}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+A\+P\+U\+::\+I\+P\+L\+::\+I\+P\+L\+::read (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{addr }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Read data from the component using the same method as the basic I\+Memory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & The global 24 bits address. This method is responsible of mapping to the component\textquotesingle{}s read. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classComSquare_1_1InvalidAddress}{Invalid\+Address}}} & if the address is not mapped to the component. \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+Return the data at the address given as parameter. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classComSquare_1_1Memory_1_1IMemory_a72ffc0dfe13a000099f4cbc197cd48ec}{Com\+Square\+::\+Memory\+::\+I\+Memory}}.
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1IPL_1_1IPL_a55b7a5d487ce206ee3a42255c67a3258}\label{classComSquare_1_1APU_1_1IPL_1_1IPL_a55b7a5d487ce206ee3a42255c67a3258}} 
+\index{ComSquare::APU::IPL::IPL@{ComSquare::APU::IPL::IPL}!write@{write}}
+\index{write@{write}!ComSquare::APU::IPL::IPL@{ComSquare::APU::IPL::IPL}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+A\+P\+U\+::\+I\+P\+L\+::\+I\+P\+L\+::write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{addr,  }\item[{uint8\+\_\+t}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Write data to this component using the same method as the basic I\+Memory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & The global 24 bits address. This method is responsible of mapping to the component\textquotesingle{}s write. \\
+\hline
+{\em data} & The new data to write. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classComSquare_1_1InvalidAddress}{Invalid\+Address}}} & if the address is not mapped to the component. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{classComSquare_1_1Memory_1_1IMemory_a449bc89798a0b86028bb0413106514d9}{Com\+Square\+::\+Memory\+::\+I\+Memory}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1IPL_1_1IPL_ad233b20c86f8bc22080e75ebc076ed97}\label{classComSquare_1_1APU_1_1IPL_1_1IPL_ad233b20c86f8bc22080e75ebc076ed97}} 
+\index{ComSquare::APU::IPL::IPL@{ComSquare::APU::IPL::IPL}!\_data@{\_data}}
+\index{\_data@{\_data}!ComSquare::APU::IPL::IPL@{ComSquare::APU::IPL::IPL}}
+\doxysubsubsection{\texorpdfstring{\_data}{\_data}}
+{\footnotesize\ttfamily std\+::array$<$uint8\+\_\+t, 64$>$ Com\+Square\+::\+A\+P\+U\+::\+I\+P\+L\+::\+I\+P\+L\+::\+\_\+data\hspace{0.3cm}{\ttfamily [protected]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{            0xCD, 0xEF, 0xBD, 0xE8, 0x00, 0xC6, 0x1D, 0xD0,}
+\DoxyCodeLine{            0xFC, 0x8F, 0xAA, 0xF4, 0x8F, 0xBB, 0xF5, 0x78,}
+\DoxyCodeLine{            0xCC, 0xF4, 0xD0, 0xFB, 0x2F, 0x19, 0xEB, 0xF4,}
+\DoxyCodeLine{            0xD0, 0xFC, 0x7E, 0xF4, 0xD0, 0x0B, 0xE4, 0xF5,}
+\DoxyCodeLine{            0xCB, 0xF4, 0xD7, 0x00, 0xFC, 0xD0, 0xF3, 0xAB,}
+\DoxyCodeLine{            0x01, 0x10, 0xEF, 0x7E, 0xF4, 0x10, 0xEB, 0xBA,}
+\DoxyCodeLine{            0xF6, 0xDA, 0x00, 0xBA, 0xF4, 0xC4, 0xF4, 0xDD,}
+\DoxyCodeLine{            0x5D, 0xD0, 0xDB, 0x1F, 0x00, 0x00, 0xC0, 0xFF}
+\DoxyCodeLine{        \}}
+
+\end{DoxyCode}
+
+
+The Rom. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1IPL_1_1IPL_a68de0c9c6f72000f3906d2c8ad464d3a}\label{classComSquare_1_1APU_1_1IPL_1_1IPL_a68de0c9c6f72000f3906d2c8ad464d3a}} 
+\index{ComSquare::APU::IPL::IPL@{ComSquare::APU::IPL::IPL}!\_iplName@{\_iplName}}
+\index{\_iplName@{\_iplName}!ComSquare::APU::IPL::IPL@{ComSquare::APU::IPL::IPL}}
+\doxysubsubsection{\texorpdfstring{\_iplName}{\_iplName}}
+{\footnotesize\ttfamily std\+::string Com\+Square\+::\+A\+P\+U\+::\+I\+P\+L\+::\+I\+P\+L\+::\+\_\+ipl\+Name\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The name of this ram. 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1IPL_1_1IPL_a2b0f679a65b7d74ef718acc0fdb86102}\label{classComSquare_1_1APU_1_1IPL_1_1IPL_a2b0f679a65b7d74ef718acc0fdb86102}} 
+\index{ComSquare::APU::IPL::IPL@{ComSquare::APU::IPL::IPL}!\_iplType@{\_iplType}}
+\index{\_iplType@{\_iplType}!ComSquare::APU::IPL::IPL@{ComSquare::APU::IPL::IPL}}
+\doxysubsubsection{\texorpdfstring{\_iplType}{\_iplType}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceComSquare_a891b49feb5c3e0aaa4873ff19b49968c}{Component}} Com\+Square\+::\+A\+P\+U\+::\+I\+P\+L\+::\+I\+P\+L\+::\+\_\+ipl\+Type\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+An id identifying the type of memory this is (for the debugger) 
+
+\mbox{\Hypertarget{classComSquare_1_1APU_1_1IPL_1_1IPL_ae138ebfc27348e317dd537a8e3ceb0b5}\label{classComSquare_1_1APU_1_1IPL_1_1IPL_ae138ebfc27348e317dd537a8e3ceb0b5}} 
+\index{ComSquare::APU::IPL::IPL@{ComSquare::APU::IPL::IPL}!\_size@{\_size}}
+\index{\_size@{\_size}!ComSquare::APU::IPL::IPL@{ComSquare::APU::IPL::IPL}}
+\doxysubsubsection{\texorpdfstring{\_size}{\_size}}
+{\footnotesize\ttfamily size\+\_\+t Com\+Square\+::\+A\+P\+U\+::\+I\+P\+L\+::\+I\+P\+L\+::\+\_\+size = 64\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The size of the \mbox{\hyperlink{classComSquare_1_1APU_1_1IPL_1_1IPL}{I\+PL}} rom (in bytes). 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+sources/\+A\+P\+U/\+I\+P\+L/\mbox{\hyperlink{IPL_8hpp}{I\+P\+L.\+hpp}}\item 
+sources/\+A\+P\+U/\+I\+P\+L/\mbox{\hyperlink{IPL_8cpp}{I\+P\+L.\+cpp}}\end{DoxyCompactItemize}

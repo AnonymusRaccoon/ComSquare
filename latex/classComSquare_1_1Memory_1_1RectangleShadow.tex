@@ -1,0 +1,295 @@
+\hypertarget{classComSquare_1_1Memory_1_1RectangleShadow}{}\doxysection{Com\+Square\+::Memory\+::Rectangle\+Shadow Class Reference}
+\label{classComSquare_1_1Memory_1_1RectangleShadow}\index{ComSquare::Memory::RectangleShadow@{ComSquare::Memory::RectangleShadow}}
+
+
+{\ttfamily \#include $<$Rectangle\+Shadow.\+hpp$>$}
+
+
+
+Inheritance diagram for Com\+Square\+::Memory\+::Rectangle\+Shadow\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classComSquare_1_1Memory_1_1RectangleShadow__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Com\+Square\+::Memory\+::Rectangle\+Shadow\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classComSquare_1_1Memory_1_1RectangleShadow__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classComSquare_1_1Memory_1_1RectangleShadow_a80f1eae080b79f2b051598d199e7ec81}{Rectangle\+Shadow}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classComSquare_1_1Memory_1_1IMemory}{I\+Memory}} $>$ initial, uint8\+\_\+t start\+Bank, uint8\+\_\+t end\+Bank, uint16\+\_\+t start\+Page, uint16\+\_\+t end\+Page)
+\begin{DoxyCompactList}\small\item\em Create a shadow for the memory given as parameter. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classComSquare_1_1Memory_1_1RectangleShadow_a2b06531cad0f436fe80817d726f66c38}{Rectangle\+Shadow}} (const \mbox{\hyperlink{classComSquare_1_1Memory_1_1RectangleShadow}{Rectangle\+Shadow}} \&)=default
+\item 
+\mbox{\hyperlink{classComSquare_1_1Memory_1_1RectangleShadow}{Rectangle\+Shadow}} \& \mbox{\hyperlink{classComSquare_1_1Memory_1_1RectangleShadow_a265170bbf36bdf88533e5cee2f7917a2}{operator=}} (const \mbox{\hyperlink{classComSquare_1_1Memory_1_1RectangleShadow}{Rectangle\+Shadow}} \&)=default
+\item 
+\mbox{\hyperlink{classComSquare_1_1Memory_1_1RectangleShadow_abc88d4a0ec2b74cff09efb6080728d26}{$\sim$\+Rectangle\+Shadow}} () override=default
+\item 
+uint8\+\_\+t \mbox{\hyperlink{classComSquare_1_1Memory_1_1RectangleShadow_ad6ae030bf406fb32b1d422f2ee5c9065}{read}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} addr) const override
+\begin{DoxyCompactList}\small\item\em Read from the initial \mbox{\hyperlink{classComSquare_1_1Memory_1_1AMemory}{A\+Memory}} given. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classComSquare_1_1Memory_1_1RectangleShadow_abd2c3a785eb5c43249965650d8b53574}{write}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} addr, uint8\+\_\+t data) override
+\begin{DoxyCompactList}\small\item\em Write data to the ram. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} \mbox{\hyperlink{classComSquare_1_1Memory_1_1RectangleShadow_a8e9ecd31b62134e08a811a8583a0af3c}{get\+Relative\+Address}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} addr) const override
+\begin{DoxyCompactList}\small\item\em Translate an absolute address to a relative address. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} \mbox{\hyperlink{classComSquare_1_1Memory_1_1RectangleShadow_aa009d6ceb2d3ef951fecf54b1e25811e}{get\+Size}} () const override
+\begin{DoxyCompactList}\small\item\em Get the size of the data. This size can be lower than the mapped data. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classComSquare_1_1Memory_1_1RectangleShadow_a0931b47f025191e4b8f2ac3d4c044190}{is\+Mirror}} () const override
+\begin{DoxyCompactList}\small\item\em Check if this memory is a mirror or not. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classComSquare_1_1Memory_1_1RectangleShadow_a1a940ad2e7ed79dc2af3b4682caab527}{get\+Name}} () const override
+\begin{DoxyCompactList}\small\item\em Get the name of this accessor (used for debug purpose) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceComSquare_a891b49feb5c3e0aaa4873ff19b49968c}{Component}} \mbox{\hyperlink{classComSquare_1_1Memory_1_1RectangleShadow_a6f15e3bb70408dd939a7178b243c60f6}{get\+Component}} () const override
+\begin{DoxyCompactList}\small\item\em Get the component of this accessor (used for debug purpose) \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classComSquare_1_1Memory_1_1IMemory}{I\+Memory}} $>$ \mbox{\hyperlink{classComSquare_1_1Memory_1_1RectangleShadow_a8a668642d1ce4e0ac2db39b03d5d4afb}{get\+Mirrored}} () const override
+\begin{DoxyCompactList}\small\item\em Return the memory accessor this accessor mirror if any. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classComSquare_1_1Memory_1_1RectangleShadow}{Rectangle\+Shadow}} $\ast$ \mbox{\hyperlink{classComSquare_1_1Memory_1_1RectangleShadow_abc852afd9194da58fac01f7e2f4edb31}{set\+Bank\+Offset}} (int bank\+Offset)
+\begin{DoxyCompactList}\small\item\em Set the number of bank this component do not shadow. Referring to the first byte of this component will refer to the first byte of the bank at (bank\+Offset + start of initial memory). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classComSquare_1_1Memory_1_1IMemory}{I\+Memory}} $>$ \mbox{\hyperlink{classComSquare_1_1Memory_1_1RectangleShadow_aa5de45374aa5314166136f33e02a32ae}{\+\_\+initial}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{namespaceComSquare_1_1Memory}{Memory}} to shadow from. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1Memory_1_1RectangleShadow_a281490c83f087fed5b4ab9abbaa80e32}{\+\_\+bank\+Offset}} = 0
+\begin{DoxyCompactList}\small\item\em The number of banks to add to the memory before accessing it from the initial data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classComSquare_1_1Memory_1_1RectangleShadow_a80f1eae080b79f2b051598d199e7ec81}\label{classComSquare_1_1Memory_1_1RectangleShadow_a80f1eae080b79f2b051598d199e7ec81}} 
+\index{ComSquare::Memory::RectangleShadow@{ComSquare::Memory::RectangleShadow}!RectangleShadow@{RectangleShadow}}
+\index{RectangleShadow@{RectangleShadow}!ComSquare::Memory::RectangleShadow@{ComSquare::Memory::RectangleShadow}}
+\doxysubsubsection{\texorpdfstring{RectangleShadow()}{RectangleShadow()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Com\+Square\+::\+Memory\+::\+Rectangle\+Shadow\+::\+Rectangle\+Shadow (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classComSquare_1_1Memory_1_1IMemory}{I\+Memory}} $>$}]{initial,  }\item[{uint8\+\_\+t}]{start\+Bank,  }\item[{uint8\+\_\+t}]{end\+Bank,  }\item[{uint16\+\_\+t}]{start\+Page,  }\item[{uint16\+\_\+t}]{end\+Page }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Create a shadow for the memory given as parameter. 
+
+\mbox{\Hypertarget{classComSquare_1_1Memory_1_1RectangleShadow_a2b06531cad0f436fe80817d726f66c38}\label{classComSquare_1_1Memory_1_1RectangleShadow_a2b06531cad0f436fe80817d726f66c38}} 
+\index{ComSquare::Memory::RectangleShadow@{ComSquare::Memory::RectangleShadow}!RectangleShadow@{RectangleShadow}}
+\index{RectangleShadow@{RectangleShadow}!ComSquare::Memory::RectangleShadow@{ComSquare::Memory::RectangleShadow}}
+\doxysubsubsection{\texorpdfstring{RectangleShadow()}{RectangleShadow()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Com\+Square\+::\+Memory\+::\+Rectangle\+Shadow\+::\+Rectangle\+Shadow (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classComSquare_1_1Memory_1_1RectangleShadow}{Rectangle\+Shadow}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classComSquare_1_1Memory_1_1RectangleShadow_abc88d4a0ec2b74cff09efb6080728d26}\label{classComSquare_1_1Memory_1_1RectangleShadow_abc88d4a0ec2b74cff09efb6080728d26}} 
+\index{ComSquare::Memory::RectangleShadow@{ComSquare::Memory::RectangleShadow}!````~RectangleShadow@{$\sim$RectangleShadow}}
+\index{````~RectangleShadow@{$\sim$RectangleShadow}!ComSquare::Memory::RectangleShadow@{ComSquare::Memory::RectangleShadow}}
+\doxysubsubsection{\texorpdfstring{$\sim$RectangleShadow()}{~RectangleShadow()}}
+{\footnotesize\ttfamily Com\+Square\+::\+Memory\+::\+Rectangle\+Shadow\+::$\sim$\+Rectangle\+Shadow (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classComSquare_1_1Memory_1_1RectangleShadow_a6f15e3bb70408dd939a7178b243c60f6}\label{classComSquare_1_1Memory_1_1RectangleShadow_a6f15e3bb70408dd939a7178b243c60f6}} 
+\index{ComSquare::Memory::RectangleShadow@{ComSquare::Memory::RectangleShadow}!getComponent@{getComponent}}
+\index{getComponent@{getComponent}!ComSquare::Memory::RectangleShadow@{ComSquare::Memory::RectangleShadow}}
+\doxysubsubsection{\texorpdfstring{getComponent()}{getComponent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceComSquare_a891b49feb5c3e0aaa4873ff19b49968c}{Component}} Com\+Square\+::\+Memory\+::\+Rectangle\+Shadow\+::get\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the component of this accessor (used for debug purpose) 
+
+
+
+Implements \mbox{\hyperlink{classComSquare_1_1Memory_1_1IMemory_a31289443bb26086fb74c724cdafd2241}{Com\+Square\+::\+Memory\+::\+I\+Memory}}.
+
+\mbox{\Hypertarget{classComSquare_1_1Memory_1_1RectangleShadow_a8a668642d1ce4e0ac2db39b03d5d4afb}\label{classComSquare_1_1Memory_1_1RectangleShadow_a8a668642d1ce4e0ac2db39b03d5d4afb}} 
+\index{ComSquare::Memory::RectangleShadow@{ComSquare::Memory::RectangleShadow}!getMirrored@{getMirrored}}
+\index{getMirrored@{getMirrored}!ComSquare::Memory::RectangleShadow@{ComSquare::Memory::RectangleShadow}}
+\doxysubsubsection{\texorpdfstring{getMirrored()}{getMirrored()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classComSquare_1_1Memory_1_1IMemory}{I\+Memory}} $>$ Com\+Square\+::\+Memory\+::\+Rectangle\+Shadow\+::get\+Mirrored (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Return the memory accessor this accessor mirror if any. 
+
+\begin{DoxyReturn}{Returns}
+nullptr if is\+Mirror is false, the source otherwise. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classComSquare_1_1Memory_1_1ARectangleMemory_accd9bf9ee527833e2b968ed0775f9ab5}{Com\+Square\+::\+Memory\+::\+A\+Rectangle\+Memory}}.
+
+\mbox{\Hypertarget{classComSquare_1_1Memory_1_1RectangleShadow_a1a940ad2e7ed79dc2af3b4682caab527}\label{classComSquare_1_1Memory_1_1RectangleShadow_a1a940ad2e7ed79dc2af3b4682caab527}} 
+\index{ComSquare::Memory::RectangleShadow@{ComSquare::Memory::RectangleShadow}!getName@{getName}}
+\index{getName@{getName}!ComSquare::Memory::RectangleShadow@{ComSquare::Memory::RectangleShadow}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string Com\+Square\+::\+Memory\+::\+Rectangle\+Shadow\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the name of this accessor (used for debug purpose) 
+
+
+
+Implements \mbox{\hyperlink{classComSquare_1_1Memory_1_1IMemory_a34d654c04a8a992b439c4270d566263f}{Com\+Square\+::\+Memory\+::\+I\+Memory}}.
+
+\mbox{\Hypertarget{classComSquare_1_1Memory_1_1RectangleShadow_a8e9ecd31b62134e08a811a8583a0af3c}\label{classComSquare_1_1Memory_1_1RectangleShadow_a8e9ecd31b62134e08a811a8583a0af3c}} 
+\index{ComSquare::Memory::RectangleShadow@{ComSquare::Memory::RectangleShadow}!getRelativeAddress@{getRelativeAddress}}
+\index{getRelativeAddress@{getRelativeAddress}!ComSquare::Memory::RectangleShadow@{ComSquare::Memory::RectangleShadow}}
+\doxysubsubsection{\texorpdfstring{getRelativeAddress()}{getRelativeAddress()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} Com\+Square\+::\+Memory\+::\+Rectangle\+Shadow\+::get\+Relative\+Address (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{addr }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Translate an absolute address to a relative address. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & The absolute address (in the 24 bit bus) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The local address (0 refers to the first byte of this component). 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classComSquare_1_1InvalidAddress}{Invalid\+Address}}} & is thrown if the address is not mapped by this component. \\
+\hline
+\end{DoxyExceptions}
+
+
+Reimplemented from \mbox{\hyperlink{classComSquare_1_1Memory_1_1ARectangleMemory_ae3d2535084fcf3d923aea4d9b0d9626e}{Com\+Square\+::\+Memory\+::\+A\+Rectangle\+Memory}}.
+
+\mbox{\Hypertarget{classComSquare_1_1Memory_1_1RectangleShadow_aa009d6ceb2d3ef951fecf54b1e25811e}\label{classComSquare_1_1Memory_1_1RectangleShadow_aa009d6ceb2d3ef951fecf54b1e25811e}} 
+\index{ComSquare::Memory::RectangleShadow@{ComSquare::Memory::RectangleShadow}!getSize@{getSize}}
+\index{getSize@{getSize}!ComSquare::Memory::RectangleShadow@{ComSquare::Memory::RectangleShadow}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} Com\+Square\+::\+Memory\+::\+Rectangle\+Shadow\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the size of the data. This size can be lower than the mapped data. 
+
+\begin{DoxyReturn}{Returns}
+The number of bytes inside this memory. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classComSquare_1_1Memory_1_1IMemory_a1072ab44e7389913ff67cb77ff118c8b}{Com\+Square\+::\+Memory\+::\+I\+Memory}}.
+
+\mbox{\Hypertarget{classComSquare_1_1Memory_1_1RectangleShadow_a0931b47f025191e4b8f2ac3d4c044190}\label{classComSquare_1_1Memory_1_1RectangleShadow_a0931b47f025191e4b8f2ac3d4c044190}} 
+\index{ComSquare::Memory::RectangleShadow@{ComSquare::Memory::RectangleShadow}!isMirror@{isMirror}}
+\index{isMirror@{isMirror}!ComSquare::Memory::RectangleShadow@{ComSquare::Memory::RectangleShadow}}
+\doxysubsubsection{\texorpdfstring{isMirror()}{isMirror()}}
+{\footnotesize\ttfamily bool Com\+Square\+::\+Memory\+::\+Rectangle\+Shadow\+::is\+Mirror (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Check if this memory is a mirror or not. 
+
+\begin{DoxyReturn}{Returns}
+True if this memory is a mirror. False otherwise. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classComSquare_1_1Memory_1_1ARectangleMemory_a2bec422edf5aa4a52068f6848b293f23}{Com\+Square\+::\+Memory\+::\+A\+Rectangle\+Memory}}.
+
+\mbox{\Hypertarget{classComSquare_1_1Memory_1_1RectangleShadow_a265170bbf36bdf88533e5cee2f7917a2}\label{classComSquare_1_1Memory_1_1RectangleShadow_a265170bbf36bdf88533e5cee2f7917a2}} 
+\index{ComSquare::Memory::RectangleShadow@{ComSquare::Memory::RectangleShadow}!operator=@{operator=}}
+\index{operator=@{operator=}!ComSquare::Memory::RectangleShadow@{ComSquare::Memory::RectangleShadow}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classComSquare_1_1Memory_1_1RectangleShadow}{Rectangle\+Shadow}}\& Com\+Square\+::\+Memory\+::\+Rectangle\+Shadow\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classComSquare_1_1Memory_1_1RectangleShadow}{Rectangle\+Shadow}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classComSquare_1_1Memory_1_1RectangleShadow_ad6ae030bf406fb32b1d422f2ee5c9065}\label{classComSquare_1_1Memory_1_1RectangleShadow_ad6ae030bf406fb32b1d422f2ee5c9065}} 
+\index{ComSquare::Memory::RectangleShadow@{ComSquare::Memory::RectangleShadow}!read@{read}}
+\index{read@{read}!ComSquare::Memory::RectangleShadow@{ComSquare::Memory::RectangleShadow}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+Memory\+::\+Rectangle\+Shadow\+::read (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{addr }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Read from the initial \mbox{\hyperlink{classComSquare_1_1Memory_1_1AMemory}{A\+Memory}} given. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & The address to read from. The address 0x0 should refer to the first byte of the initial \mbox{\hyperlink{classComSquare_1_1Memory_1_1AMemory}{A\+Memory}}. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classComSquare_1_1InvalidAddress}{Invalid\+Address}}} & will be thrown if the address is more than the size of the initial \mbox{\hyperlink{classComSquare_1_1Memory_1_1AMemory}{A\+Memory}}. \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+Return the data at the address. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classComSquare_1_1Memory_1_1IMemory_a72ffc0dfe13a000099f4cbc197cd48ec}{Com\+Square\+::\+Memory\+::\+I\+Memory}}.
+
+\mbox{\Hypertarget{classComSquare_1_1Memory_1_1RectangleShadow_abc852afd9194da58fac01f7e2f4edb31}\label{classComSquare_1_1Memory_1_1RectangleShadow_abc852afd9194da58fac01f7e2f4edb31}} 
+\index{ComSquare::Memory::RectangleShadow@{ComSquare::Memory::RectangleShadow}!setBankOffset@{setBankOffset}}
+\index{setBankOffset@{setBankOffset}!ComSquare::Memory::RectangleShadow@{ComSquare::Memory::RectangleShadow}}
+\doxysubsubsection{\texorpdfstring{setBankOffset()}{setBankOffset()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classComSquare_1_1Memory_1_1RectangleShadow}{Rectangle\+Shadow}} $\ast$ Com\+Square\+::\+Memory\+::\+Rectangle\+Shadow\+::set\+Bank\+Offset (\begin{DoxyParamCaption}\item[{int}]{bank\+Offset }\end{DoxyParamCaption})}
+
+
+
+Set the number of bank this component do not shadow. Referring to the first byte of this component will refer to the first byte of the bank at (bank\+Offset + start of initial memory). 
+
+\mbox{\Hypertarget{classComSquare_1_1Memory_1_1RectangleShadow_abd2c3a785eb5c43249965650d8b53574}\label{classComSquare_1_1Memory_1_1RectangleShadow_abd2c3a785eb5c43249965650d8b53574}} 
+\index{ComSquare::Memory::RectangleShadow@{ComSquare::Memory::RectangleShadow}!write@{write}}
+\index{write@{write}!ComSquare::Memory::RectangleShadow@{ComSquare::Memory::RectangleShadow}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+Memory\+::\+Rectangle\+Shadow\+::write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{addr,  }\item[{uint8\+\_\+t}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Write data to the ram. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & The address to write to. The address 0x0 should refer to the first byte of the initial \mbox{\hyperlink{classComSquare_1_1Memory_1_1AMemory}{A\+Memory}}. \\
+\hline
+{\em data} & The data to write. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classComSquare_1_1InvalidAddress}{Invalid\+Address}}} & will be thrown if the address is more than the size of the initial \mbox{\hyperlink{classComSquare_1_1Memory_1_1AMemory}{A\+Memory}}. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{classComSquare_1_1Memory_1_1IMemory_a449bc89798a0b86028bb0413106514d9}{Com\+Square\+::\+Memory\+::\+I\+Memory}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classComSquare_1_1Memory_1_1RectangleShadow_a281490c83f087fed5b4ab9abbaa80e32}\label{classComSquare_1_1Memory_1_1RectangleShadow_a281490c83f087fed5b4ab9abbaa80e32}} 
+\index{ComSquare::Memory::RectangleShadow@{ComSquare::Memory::RectangleShadow}!\_bankOffset@{\_bankOffset}}
+\index{\_bankOffset@{\_bankOffset}!ComSquare::Memory::RectangleShadow@{ComSquare::Memory::RectangleShadow}}
+\doxysubsubsection{\texorpdfstring{\_bankOffset}{\_bankOffset}}
+{\footnotesize\ttfamily int Com\+Square\+::\+Memory\+::\+Rectangle\+Shadow\+::\+\_\+bank\+Offset = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The number of banks to add to the memory before accessing it from the initial data. 
+
+\mbox{\Hypertarget{classComSquare_1_1Memory_1_1RectangleShadow_aa5de45374aa5314166136f33e02a32ae}\label{classComSquare_1_1Memory_1_1RectangleShadow_aa5de45374aa5314166136f33e02a32ae}} 
+\index{ComSquare::Memory::RectangleShadow@{ComSquare::Memory::RectangleShadow}!\_initial@{\_initial}}
+\index{\_initial@{\_initial}!ComSquare::Memory::RectangleShadow@{ComSquare::Memory::RectangleShadow}}
+\doxysubsubsection{\texorpdfstring{\_initial}{\_initial}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classComSquare_1_1Memory_1_1IMemory}{I\+Memory}}$>$ Com\+Square\+::\+Memory\+::\+Rectangle\+Shadow\+::\+\_\+initial\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{namespaceComSquare_1_1Memory}{Memory}} to shadow from. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+sources/\+Memory/\mbox{\hyperlink{RectangleShadow_8hpp}{Rectangle\+Shadow.\+hpp}}\item 
+sources/\+Memory/\mbox{\hyperlink{RectangleShadow_8cpp}{Rectangle\+Shadow.\+cpp}}\end{DoxyCompactItemize}

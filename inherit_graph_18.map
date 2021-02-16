@@ -1,0 +1,4 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$structComSquare_1_1CPU_1_1Instruction.html" title="Struct containing basic information about instructions." alt="" coords="5,13,215,39"/>
+<area shape="rect" id="node2" href="$structComSquare_1_1Debugger_1_1DisassembledInstruction.html" title="Struct representing an instruction in an human readable way (created by disassembling the rom)." alt="" coords="263,5,453,47"/>
+</map>

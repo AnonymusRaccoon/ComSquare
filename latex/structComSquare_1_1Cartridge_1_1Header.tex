@@ -1,0 +1,248 @@
+\hypertarget{structComSquare_1_1Cartridge_1_1Header}{}\doxysection{Com\+Square\+::Cartridge\+::Header Struct Reference}
+\label{structComSquare_1_1Cartridge_1_1Header}\index{ComSquare::Cartridge::Header@{ComSquare::Cartridge::Header}}
+
+
+{\ttfamily \#include $<$Cartridge.\+hpp$>$}
+
+
+
+Collaboration diagram for Com\+Square\+::Cartridge\+::Header\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{structComSquare_1_1Cartridge_1_1Header__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structComSquare_1_1Cartridge_1_1Header_acc03574ddf5d6cb965e7b1d1b1fef0e9}{Header}} ()=default
+\item 
+\mbox{\hyperlink{structComSquare_1_1Cartridge_1_1Header_a3f6d664522b808a031ff8ac1a861dc3e}{Header}} (const \mbox{\hyperlink{structComSquare_1_1Cartridge_1_1Header}{Header}} \&)=default
+\item 
+\mbox{\hyperlink{structComSquare_1_1Cartridge_1_1Header}{Header}} \& \mbox{\hyperlink{structComSquare_1_1Cartridge_1_1Header_ae0460e563a7a50ae66c746f70bd9a515}{operator=}} (const \mbox{\hyperlink{structComSquare_1_1Cartridge_1_1Header}{Header}} \&)=default
+\item 
+\mbox{\hyperlink{structComSquare_1_1Cartridge_1_1Header_a866627ebe34f476e2c4b8fc5deee016b}{$\sim$\+Header}} ()=default
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{structComSquare_1_1Cartridge_1_1Header_a3116a0a578bee265d14e6774c4638946}{game\+Name}}
+\begin{DoxyCompactList}\small\item\em The name of the game. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceComSquare_1_1Cartridge_a61c1e80050c388d76fb687b129ed8645}{Mapping\+Mode}} \mbox{\hyperlink{structComSquare_1_1Cartridge_1_1Header_a0850de9648f34bf61df54cdc89be6d00}{mapping\+Mode}} \{\}
+\begin{DoxyCompactList}\small\item\em The memory mapping of the R\+OM. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{structComSquare_1_1Cartridge_1_1Header_a104388be15830e02fec183196af1bd83}{rom\+Type}} = 0
+\begin{DoxyCompactList}\small\item\em The rom type (special information about the rom, still don\textquotesingle{}t know what). \end{DoxyCompactList}\item 
+unsigned \mbox{\hyperlink{structComSquare_1_1Cartridge_1_1Header_a9cd916f34389a428168fa3a3bd63ddfe}{rom\+Size}} = 0
+\begin{DoxyCompactList}\small\item\em The size (in bytes) of the ram. \end{DoxyCompactList}\item 
+unsigned \mbox{\hyperlink{structComSquare_1_1Cartridge_1_1Header_a7c99821835a36bc916b5a0ee4d65f0bd}{sram\+Size}} = 0
+\begin{DoxyCompactList}\small\item\em The size of the S\+Rom inside the cartridge. \end{DoxyCompactList}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>uint8\_t \mbox{\hyperlink{structComSquare_1_1Cartridge_1_1Header_aacf2cff268aae2e4e961d2f91e867c44}{creatorIDs}} \mbox{[}2\mbox{]}\\
+\>uint16\_t \mbox{\hyperlink{structComSquare_1_1Cartridge_1_1Header_a6b911c5f4b8b402716adeb3efbcc1c8f}{creatorID}} = 0\\
+\}; \\
+
+\end{tabbing}\begin{DoxyCompactList}\small\item\em Creator license ID code. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{structComSquare_1_1Cartridge_1_1Header_a0db902951ad90b6a35e920b3c1ed1a4b}{version}} = 0
+\begin{DoxyCompactList}\small\item\em The version of the game. \end{DoxyCompactList}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>uint8\_t \mbox{\hyperlink{structComSquare_1_1Cartridge_1_1Header_a26e3caf6683851ecdba59e9360d4479e}{checksumComplements}} \mbox{[}2\mbox{]}\\
+\>uint16\_t \mbox{\hyperlink{structComSquare_1_1Cartridge_1_1Header_a6bf5668dab67ef8b36bb94888fe5023c}{checksumComplement}} = 0\\
+\}; \\
+
+\end{tabbing}\begin{DoxyCompactList}\small\item\em Checksum complement. \end{DoxyCompactList}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>uint8\_t \mbox{\hyperlink{structComSquare_1_1Cartridge_1_1Header_abc680d0cb69a95b96991b8d6c493a57a}{checksums}} \mbox{[}2\mbox{]}\\
+\>uint16\_t \mbox{\hyperlink{structComSquare_1_1Cartridge_1_1Header_a9735c88a3302942f2a52cdb592c2be71}{checksum}} = 0\\
+\}; \\
+
+\end{tabbing}\begin{DoxyCompactList}\small\item\em Checksum. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structComSquare_1_1Cartridge_1_1InterruptVectors}{Interrupt\+Vectors}} \mbox{\hyperlink{structComSquare_1_1Cartridge_1_1Header_ac224974debb8820cad2b6afe6a03138f}{native\+Interrupts}} \{\}
+\begin{DoxyCompactList}\small\item\em The interrupt vectors used to halt the \mbox{\hyperlink{namespaceComSquare_1_1CPU}{C\+PU}} in native mode. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structComSquare_1_1Cartridge_1_1InterruptVectors}{Interrupt\+Vectors}} \mbox{\hyperlink{structComSquare_1_1Cartridge_1_1Header_a20af2912ce821fc0292322065584bd6e}{emulation\+Interrupts}} \{\}
+\begin{DoxyCompactList}\small\item\em The interrupt vectors used to halt the \mbox{\hyperlink{namespaceComSquare_1_1CPU}{C\+PU}} in emulation mode. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{structComSquare_1_1Cartridge_1_1Header_acc03574ddf5d6cb965e7b1d1b1fef0e9}\label{structComSquare_1_1Cartridge_1_1Header_acc03574ddf5d6cb965e7b1d1b1fef0e9}} 
+\index{ComSquare::Cartridge::Header@{ComSquare::Cartridge::Header}!Header@{Header}}
+\index{Header@{Header}!ComSquare::Cartridge::Header@{ComSquare::Cartridge::Header}}
+\doxysubsubsection{\texorpdfstring{Header()}{Header()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Com\+Square\+::\+Cartridge\+::\+Header\+::\+Header (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{structComSquare_1_1Cartridge_1_1Header_a3f6d664522b808a031ff8ac1a861dc3e}\label{structComSquare_1_1Cartridge_1_1Header_a3f6d664522b808a031ff8ac1a861dc3e}} 
+\index{ComSquare::Cartridge::Header@{ComSquare::Cartridge::Header}!Header@{Header}}
+\index{Header@{Header}!ComSquare::Cartridge::Header@{ComSquare::Cartridge::Header}}
+\doxysubsubsection{\texorpdfstring{Header()}{Header()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Com\+Square\+::\+Cartridge\+::\+Header\+::\+Header (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structComSquare_1_1Cartridge_1_1Header}{Header}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{structComSquare_1_1Cartridge_1_1Header_a866627ebe34f476e2c4b8fc5deee016b}\label{structComSquare_1_1Cartridge_1_1Header_a866627ebe34f476e2c4b8fc5deee016b}} 
+\index{ComSquare::Cartridge::Header@{ComSquare::Cartridge::Header}!````~Header@{$\sim$Header}}
+\index{````~Header@{$\sim$Header}!ComSquare::Cartridge::Header@{ComSquare::Cartridge::Header}}
+\doxysubsubsection{\texorpdfstring{$\sim$Header()}{~Header()}}
+{\footnotesize\ttfamily Com\+Square\+::\+Cartridge\+::\+Header\+::$\sim$\+Header (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{structComSquare_1_1Cartridge_1_1Header_ae0460e563a7a50ae66c746f70bd9a515}\label{structComSquare_1_1Cartridge_1_1Header_ae0460e563a7a50ae66c746f70bd9a515}} 
+\index{ComSquare::Cartridge::Header@{ComSquare::Cartridge::Header}!operator=@{operator=}}
+\index{operator=@{operator=}!ComSquare::Cartridge::Header@{ComSquare::Cartridge::Header}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structComSquare_1_1Cartridge_1_1Header}{Header}}\& Com\+Square\+::\+Cartridge\+::\+Header\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structComSquare_1_1Cartridge_1_1Header}{Header}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structComSquare_1_1Cartridge_1_1Header_a39a098e187cfc4d7e231e1d2ed6f06d9}\label{structComSquare_1_1Cartridge_1_1Header_a39a098e187cfc4d7e231e1d2ed6f06d9}} 
+\doxysubsubsection{\texorpdfstring{"@21}{@21}}
+{\footnotesize\ttfamily union \{ ... \} }
+
+
+
+Creator license ID code. 
+
+\mbox{\Hypertarget{structComSquare_1_1Cartridge_1_1Header_a2ce2c67ed22263dc53be0282e7bfa82f}\label{structComSquare_1_1Cartridge_1_1Header_a2ce2c67ed22263dc53be0282e7bfa82f}} 
+\doxysubsubsection{\texorpdfstring{"@23}{@23}}
+{\footnotesize\ttfamily union \{ ... \} }
+
+
+
+Checksum complement. 
+
+\mbox{\Hypertarget{structComSquare_1_1Cartridge_1_1Header_a808c813a8e55d36262c37f922b0ece5c}\label{structComSquare_1_1Cartridge_1_1Header_a808c813a8e55d36262c37f922b0ece5c}} 
+\doxysubsubsection{\texorpdfstring{"@25}{@25}}
+{\footnotesize\ttfamily union \{ ... \} }
+
+
+
+Checksum. 
+
+\mbox{\Hypertarget{structComSquare_1_1Cartridge_1_1Header_a9735c88a3302942f2a52cdb592c2be71}\label{structComSquare_1_1Cartridge_1_1Header_a9735c88a3302942f2a52cdb592c2be71}} 
+\index{ComSquare::Cartridge::Header@{ComSquare::Cartridge::Header}!checksum@{checksum}}
+\index{checksum@{checksum}!ComSquare::Cartridge::Header@{ComSquare::Cartridge::Header}}
+\doxysubsubsection{\texorpdfstring{checksum}{checksum}}
+{\footnotesize\ttfamily uint16\+\_\+t Com\+Square\+::\+Cartridge\+::\+Header\+::checksum = 0}
+
+\mbox{\Hypertarget{structComSquare_1_1Cartridge_1_1Header_a6bf5668dab67ef8b36bb94888fe5023c}\label{structComSquare_1_1Cartridge_1_1Header_a6bf5668dab67ef8b36bb94888fe5023c}} 
+\index{ComSquare::Cartridge::Header@{ComSquare::Cartridge::Header}!checksumComplement@{checksumComplement}}
+\index{checksumComplement@{checksumComplement}!ComSquare::Cartridge::Header@{ComSquare::Cartridge::Header}}
+\doxysubsubsection{\texorpdfstring{checksumComplement}{checksumComplement}}
+{\footnotesize\ttfamily uint16\+\_\+t Com\+Square\+::\+Cartridge\+::\+Header\+::checksum\+Complement = 0}
+
+\mbox{\Hypertarget{structComSquare_1_1Cartridge_1_1Header_a26e3caf6683851ecdba59e9360d4479e}\label{structComSquare_1_1Cartridge_1_1Header_a26e3caf6683851ecdba59e9360d4479e}} 
+\index{ComSquare::Cartridge::Header@{ComSquare::Cartridge::Header}!checksumComplements@{checksumComplements}}
+\index{checksumComplements@{checksumComplements}!ComSquare::Cartridge::Header@{ComSquare::Cartridge::Header}}
+\doxysubsubsection{\texorpdfstring{checksumComplements}{checksumComplements}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+Cartridge\+::\+Header\+::checksum\+Complements\mbox{[}2\mbox{]}}
+
+\mbox{\Hypertarget{structComSquare_1_1Cartridge_1_1Header_abc680d0cb69a95b96991b8d6c493a57a}\label{structComSquare_1_1Cartridge_1_1Header_abc680d0cb69a95b96991b8d6c493a57a}} 
+\index{ComSquare::Cartridge::Header@{ComSquare::Cartridge::Header}!checksums@{checksums}}
+\index{checksums@{checksums}!ComSquare::Cartridge::Header@{ComSquare::Cartridge::Header}}
+\doxysubsubsection{\texorpdfstring{checksums}{checksums}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+Cartridge\+::\+Header\+::checksums\mbox{[}2\mbox{]}}
+
+\mbox{\Hypertarget{structComSquare_1_1Cartridge_1_1Header_a6b911c5f4b8b402716adeb3efbcc1c8f}\label{structComSquare_1_1Cartridge_1_1Header_a6b911c5f4b8b402716adeb3efbcc1c8f}} 
+\index{ComSquare::Cartridge::Header@{ComSquare::Cartridge::Header}!creatorID@{creatorID}}
+\index{creatorID@{creatorID}!ComSquare::Cartridge::Header@{ComSquare::Cartridge::Header}}
+\doxysubsubsection{\texorpdfstring{creatorID}{creatorID}}
+{\footnotesize\ttfamily uint16\+\_\+t Com\+Square\+::\+Cartridge\+::\+Header\+::creator\+ID = 0}
+
+\mbox{\Hypertarget{structComSquare_1_1Cartridge_1_1Header_aacf2cff268aae2e4e961d2f91e867c44}\label{structComSquare_1_1Cartridge_1_1Header_aacf2cff268aae2e4e961d2f91e867c44}} 
+\index{ComSquare::Cartridge::Header@{ComSquare::Cartridge::Header}!creatorIDs@{creatorIDs}}
+\index{creatorIDs@{creatorIDs}!ComSquare::Cartridge::Header@{ComSquare::Cartridge::Header}}
+\doxysubsubsection{\texorpdfstring{creatorIDs}{creatorIDs}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+Cartridge\+::\+Header\+::creator\+I\+Ds\mbox{[}2\mbox{]}}
+
+\mbox{\Hypertarget{structComSquare_1_1Cartridge_1_1Header_a20af2912ce821fc0292322065584bd6e}\label{structComSquare_1_1Cartridge_1_1Header_a20af2912ce821fc0292322065584bd6e}} 
+\index{ComSquare::Cartridge::Header@{ComSquare::Cartridge::Header}!emulationInterrupts@{emulationInterrupts}}
+\index{emulationInterrupts@{emulationInterrupts}!ComSquare::Cartridge::Header@{ComSquare::Cartridge::Header}}
+\doxysubsubsection{\texorpdfstring{emulationInterrupts}{emulationInterrupts}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structComSquare_1_1Cartridge_1_1InterruptVectors}{Interrupt\+Vectors}} Com\+Square\+::\+Cartridge\+::\+Header\+::emulation\+Interrupts \{\}}
+
+
+
+The interrupt vectors used to halt the \mbox{\hyperlink{namespaceComSquare_1_1CPU}{C\+PU}} in emulation mode. 
+
+\mbox{\Hypertarget{structComSquare_1_1Cartridge_1_1Header_a3116a0a578bee265d14e6774c4638946}\label{structComSquare_1_1Cartridge_1_1Header_a3116a0a578bee265d14e6774c4638946}} 
+\index{ComSquare::Cartridge::Header@{ComSquare::Cartridge::Header}!gameName@{gameName}}
+\index{gameName@{gameName}!ComSquare::Cartridge::Header@{ComSquare::Cartridge::Header}}
+\doxysubsubsection{\texorpdfstring{gameName}{gameName}}
+{\footnotesize\ttfamily std\+::string Com\+Square\+::\+Cartridge\+::\+Header\+::game\+Name}
+
+
+
+The name of the game. 
+
+\mbox{\Hypertarget{structComSquare_1_1Cartridge_1_1Header_a0850de9648f34bf61df54cdc89be6d00}\label{structComSquare_1_1Cartridge_1_1Header_a0850de9648f34bf61df54cdc89be6d00}} 
+\index{ComSquare::Cartridge::Header@{ComSquare::Cartridge::Header}!mappingMode@{mappingMode}}
+\index{mappingMode@{mappingMode}!ComSquare::Cartridge::Header@{ComSquare::Cartridge::Header}}
+\doxysubsubsection{\texorpdfstring{mappingMode}{mappingMode}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceComSquare_1_1Cartridge_a61c1e80050c388d76fb687b129ed8645}{Mapping\+Mode}} Com\+Square\+::\+Cartridge\+::\+Header\+::mapping\+Mode \{\}}
+
+
+
+The memory mapping of the R\+OM. 
+
+\mbox{\Hypertarget{structComSquare_1_1Cartridge_1_1Header_ac224974debb8820cad2b6afe6a03138f}\label{structComSquare_1_1Cartridge_1_1Header_ac224974debb8820cad2b6afe6a03138f}} 
+\index{ComSquare::Cartridge::Header@{ComSquare::Cartridge::Header}!nativeInterrupts@{nativeInterrupts}}
+\index{nativeInterrupts@{nativeInterrupts}!ComSquare::Cartridge::Header@{ComSquare::Cartridge::Header}}
+\doxysubsubsection{\texorpdfstring{nativeInterrupts}{nativeInterrupts}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structComSquare_1_1Cartridge_1_1InterruptVectors}{Interrupt\+Vectors}} Com\+Square\+::\+Cartridge\+::\+Header\+::native\+Interrupts \{\}}
+
+
+
+The interrupt vectors used to halt the \mbox{\hyperlink{namespaceComSquare_1_1CPU}{C\+PU}} in native mode. 
+
+\mbox{\Hypertarget{structComSquare_1_1Cartridge_1_1Header_a9cd916f34389a428168fa3a3bd63ddfe}\label{structComSquare_1_1Cartridge_1_1Header_a9cd916f34389a428168fa3a3bd63ddfe}} 
+\index{ComSquare::Cartridge::Header@{ComSquare::Cartridge::Header}!romSize@{romSize}}
+\index{romSize@{romSize}!ComSquare::Cartridge::Header@{ComSquare::Cartridge::Header}}
+\doxysubsubsection{\texorpdfstring{romSize}{romSize}}
+{\footnotesize\ttfamily unsigned Com\+Square\+::\+Cartridge\+::\+Header\+::rom\+Size = 0}
+
+
+
+The size (in bytes) of the ram. 
+
+\mbox{\Hypertarget{structComSquare_1_1Cartridge_1_1Header_a104388be15830e02fec183196af1bd83}\label{structComSquare_1_1Cartridge_1_1Header_a104388be15830e02fec183196af1bd83}} 
+\index{ComSquare::Cartridge::Header@{ComSquare::Cartridge::Header}!romType@{romType}}
+\index{romType@{romType}!ComSquare::Cartridge::Header@{ComSquare::Cartridge::Header}}
+\doxysubsubsection{\texorpdfstring{romType}{romType}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+Cartridge\+::\+Header\+::rom\+Type = 0}
+
+
+
+The rom type (special information about the rom, still don\textquotesingle{}t know what). 
+
+\mbox{\Hypertarget{structComSquare_1_1Cartridge_1_1Header_a7c99821835a36bc916b5a0ee4d65f0bd}\label{structComSquare_1_1Cartridge_1_1Header_a7c99821835a36bc916b5a0ee4d65f0bd}} 
+\index{ComSquare::Cartridge::Header@{ComSquare::Cartridge::Header}!sramSize@{sramSize}}
+\index{sramSize@{sramSize}!ComSquare::Cartridge::Header@{ComSquare::Cartridge::Header}}
+\doxysubsubsection{\texorpdfstring{sramSize}{sramSize}}
+{\footnotesize\ttfamily unsigned Com\+Square\+::\+Cartridge\+::\+Header\+::sram\+Size = 0}
+
+
+
+The size of the S\+Rom inside the cartridge. 
+
+\mbox{\Hypertarget{structComSquare_1_1Cartridge_1_1Header_a0db902951ad90b6a35e920b3c1ed1a4b}\label{structComSquare_1_1Cartridge_1_1Header_a0db902951ad90b6a35e920b3c1ed1a4b}} 
+\index{ComSquare::Cartridge::Header@{ComSquare::Cartridge::Header}!version@{version}}
+\index{version@{version}!ComSquare::Cartridge::Header@{ComSquare::Cartridge::Header}}
+\doxysubsubsection{\texorpdfstring{version}{version}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+Cartridge\+::\+Header\+::version = 0}
+
+
+
+The version of the game. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+sources/\+Cartridge/\mbox{\hyperlink{Cartridge_8hpp}{Cartridge.\+hpp}}\end{DoxyCompactItemize}

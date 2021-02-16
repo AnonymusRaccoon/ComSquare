@@ -1,0 +1,64 @@
+\hypertarget{Cartridge_8hpp}{}\doxysection{sources/\+Cartridge/\+Cartridge.hpp File Reference}
+\label{Cartridge_8hpp}\index{sources/Cartridge/Cartridge.hpp@{sources/Cartridge/Cartridge.hpp}}
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include \char`\"{}../\+Memory/\+A\+Memory.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+Models/\+Int24.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+Memory/\+A\+Rectangle\+Memory.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Interrupt\+Vectors.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../\+Ram/\+Ram.\+hpp\char`\"{}}\newline
+Include dependency graph for Cartridge.\+hpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Cartridge_8hpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{Cartridge_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structComSquare_1_1Cartridge_1_1Header}{Com\+Square\+::\+Cartridge\+::\+Header}}
+\item 
+class \mbox{\hyperlink{classComSquare_1_1Cartridge_1_1Cartridge}{Com\+Square\+::\+Cartridge\+::\+Cartridge}}
+\begin{DoxyCompactList}\small\item\em Contains the rom\textquotesingle{}s memory/instructions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceComSquare}{Com\+Square}}
+\item 
+ \mbox{\hyperlink{namespaceComSquare_1_1Cartridge}{Com\+Square\+::\+Cartridge}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{Cartridge_8hpp_a80eeb0ec0b62466ea8b7980d0bf8c2e8}{A\+D\+D\+M\+A\+P\+P\+I\+N\+G\+M\+O\+DE}}(x,  flag)~(x = static\+\_\+cast$<$Mapping\+Mode$>$(x $\vert$ (flag)))
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespaceComSquare_1_1Cartridge_a61c1e80050c388d76fb687b129ed8645}{Com\+Square\+::\+Cartridge\+::\+Mapping\+Mode}} \{ \newline
+\mbox{\hyperlink{namespaceComSquare_1_1Cartridge_a61c1e80050c388d76fb687b129ed8645ab06a20291b736bc664f853b77d1f3846}{Com\+Square\+::\+Cartridge\+::\+Lo\+Rom}} = 1u $<$$<$ 0u, 
+\mbox{\hyperlink{namespaceComSquare_1_1Cartridge_a61c1e80050c388d76fb687b129ed8645a461b515672aec1a8463cda3e05936cdd}{Com\+Square\+::\+Cartridge\+::\+Hi\+Rom}} = 1u $<$$<$ 1u, 
+\mbox{\hyperlink{namespaceComSquare_1_1Cartridge_a61c1e80050c388d76fb687b129ed8645aa80ac825c99f61aada8b3cbd04952bb6}{Com\+Square\+::\+Cartridge\+::\+Slow\+Rom}} = 1u $<$$<$ 2u, 
+\mbox{\hyperlink{namespaceComSquare_1_1Cartridge_a61c1e80050c388d76fb687b129ed8645ad5867d09b7b015f54e76780ef508bd64}{Com\+Square\+::\+Cartridge\+::\+Fast\+Rom}} = 1u $<$$<$ 3u, 
+\newline
+\mbox{\hyperlink{namespaceComSquare_1_1Cartridge_a61c1e80050c388d76fb687b129ed8645a48571836eb7c4372c4c5501715a8641d}{Com\+Square\+::\+Cartridge\+::\+Ex\+Rom}} = 1u $<$$<$ 4u
+ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{Cartridge_8hpp_a80eeb0ec0b62466ea8b7980d0bf8c2e8}\label{Cartridge_8hpp_a80eeb0ec0b62466ea8b7980d0bf8c2e8}} 
+\index{Cartridge.hpp@{Cartridge.hpp}!ADDMAPPINGMODE@{ADDMAPPINGMODE}}
+\index{ADDMAPPINGMODE@{ADDMAPPINGMODE}!Cartridge.hpp@{Cartridge.hpp}}
+\doxysubsubsection{\texorpdfstring{ADDMAPPINGMODE}{ADDMAPPINGMODE}}
+{\footnotesize\ttfamily \#define A\+D\+D\+M\+A\+P\+P\+I\+N\+G\+M\+O\+DE(\begin{DoxyParamCaption}\item[{}]{x,  }\item[{}]{flag }\end{DoxyParamCaption})~(x = static\+\_\+cast$<$Mapping\+Mode$>$(x $\vert$ (flag)))}
+

@@ -1,0 +1,5 @@
+<map id="ComSquare::InvalidAction" name="ComSquare::InvalidAction">
+<area shape="rect" id="node1" title="Exception thrown when someone tries to load an invalid rom." alt="" coords="17,256,208,348"/>
+<area shape="rect" id="node2" href="$classComSquare_1_1DebuggableError.html" title=" " alt="" coords="5,131,220,208"/>
+<area shape="rect" id="node3" title=" " alt="" coords="55,5,170,83"/>
+</map>

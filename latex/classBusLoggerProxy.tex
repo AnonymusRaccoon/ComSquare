@@ -1,0 +1,141 @@
+\hypertarget{classBusLoggerProxy}{}\doxysection{Bus\+Logger\+Proxy Class Reference}
+\label{classBusLoggerProxy}\index{BusLoggerProxy@{BusLoggerProxy}}
+
+
+A class to filter logs from the memory bus\textquotesingle{}s debugger.  
+
+
+
+
+{\ttfamily \#include $<$Memory\+Bus\+Debug.\+hpp$>$}
+
+
+
+Inheritance diagram for Bus\+Logger\+Proxy\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{classBusLoggerProxy__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Bus\+Logger\+Proxy\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classBusLoggerProxy__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classBusLoggerProxy_ac125a92a6ad30dc99282594d33c75823}{refresh}} ()
+\begin{DoxyCompactList}\small\item\em Refresh the view after a change of filters. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBusLoggerProxy_aac55f57bb5d29766a25502771e52a79a}{Bus\+Logger\+Proxy}} (\mbox{\hyperlink{classBusLogModel}{Bus\+Log\+Model}} \&parent)
+\item 
+\mbox{\hyperlink{classBusLoggerProxy_aebcb77c6c1150d72837f747a0d2e837c}{Bus\+Logger\+Proxy}} (const \mbox{\hyperlink{classBusLoggerProxy}{Bus\+Logger\+Proxy}} \&)=delete
+\item 
+const \mbox{\hyperlink{classBusLoggerProxy}{Bus\+Logger\+Proxy}} \& \mbox{\hyperlink{classBusLoggerProxy_ab97678470d56a85578ec19bca18446e9}{operator=}} (const \mbox{\hyperlink{classBusLoggerProxy}{Bus\+Logger\+Proxy}} \&)=delete
+\item 
+\mbox{\hyperlink{classBusLoggerProxy_aa7e0a4f48410ad3184bbc40688d78ccb}{$\sim$\+Bus\+Logger\+Proxy}} () override=default
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structComSquare_1_1Debugger_1_1BusLoggerFilters}{Com\+Square\+::\+Debugger\+::\+Bus\+Logger\+Filters}} \mbox{\hyperlink{classBusLoggerProxy_a932bb9b513831fef27ece23bce7dc1ca}{filters}} \mbox{[}2\mbox{]} = \{\mbox{\hyperlink{structComSquare_1_1Debugger_1_1BusLoggerFilters}{Com\+Square\+::\+Debugger\+::\+Bus\+Logger\+Filters}}(), \mbox{\hyperlink{structComSquare_1_1Debugger_1_1BusLoggerFilters}{Com\+Square\+::\+Debugger\+::\+Bus\+Logger\+Filters}}()\}
+\begin{DoxyCompactList}\small\item\em Currently enabled filters, index 0 is for reads, index 1 for writes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classBusLoggerProxy_a71ada59ebbf5acc5094d24f96efd8112}{filter\+Accepts\+Row}} (int source\+Row, const Q\+Model\+Index \&source\+Parent) const override
+\begin{DoxyCompactList}\small\item\em Function that filter logs. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBusLogModel}{Bus\+Log\+Model}} \& \mbox{\hyperlink{classBusLoggerProxy_a15f71bec81ee6a87a978b6d1cf266361}{\+\_\+parent}}
+\begin{DoxyCompactList}\small\item\em The parent to get the original data for filters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class to filter logs from the memory bus\textquotesingle{}s debugger. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBusLoggerProxy_aac55f57bb5d29766a25502771e52a79a}\label{classBusLoggerProxy_aac55f57bb5d29766a25502771e52a79a}} 
+\index{BusLoggerProxy@{BusLoggerProxy}!BusLoggerProxy@{BusLoggerProxy}}
+\index{BusLoggerProxy@{BusLoggerProxy}!BusLoggerProxy@{BusLoggerProxy}}
+\doxysubsubsection{\texorpdfstring{BusLoggerProxy()}{BusLoggerProxy()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Bus\+Logger\+Proxy\+::\+Bus\+Logger\+Proxy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBusLogModel}{Bus\+Log\+Model}} \&}]{parent }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{classBusLoggerProxy_aebcb77c6c1150d72837f747a0d2e837c}\label{classBusLoggerProxy_aebcb77c6c1150d72837f747a0d2e837c}} 
+\index{BusLoggerProxy@{BusLoggerProxy}!BusLoggerProxy@{BusLoggerProxy}}
+\index{BusLoggerProxy@{BusLoggerProxy}!BusLoggerProxy@{BusLoggerProxy}}
+\doxysubsubsection{\texorpdfstring{BusLoggerProxy()}{BusLoggerProxy()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Bus\+Logger\+Proxy\+::\+Bus\+Logger\+Proxy (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classBusLoggerProxy}{Bus\+Logger\+Proxy}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classBusLoggerProxy_aa7e0a4f48410ad3184bbc40688d78ccb}\label{classBusLoggerProxy_aa7e0a4f48410ad3184bbc40688d78ccb}} 
+\index{BusLoggerProxy@{BusLoggerProxy}!````~BusLoggerProxy@{$\sim$BusLoggerProxy}}
+\index{````~BusLoggerProxy@{$\sim$BusLoggerProxy}!BusLoggerProxy@{BusLoggerProxy}}
+\doxysubsubsection{\texorpdfstring{$\sim$BusLoggerProxy()}{~BusLoggerProxy()}}
+{\footnotesize\ttfamily Bus\+Logger\+Proxy\+::$\sim$\+Bus\+Logger\+Proxy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBusLoggerProxy_a71ada59ebbf5acc5094d24f96efd8112}\label{classBusLoggerProxy_a71ada59ebbf5acc5094d24f96efd8112}} 
+\index{BusLoggerProxy@{BusLoggerProxy}!filterAcceptsRow@{filterAcceptsRow}}
+\index{filterAcceptsRow@{filterAcceptsRow}!BusLoggerProxy@{BusLoggerProxy}}
+\doxysubsubsection{\texorpdfstring{filterAcceptsRow()}{filterAcceptsRow()}}
+{\footnotesize\ttfamily bool Bus\+Logger\+Proxy\+::filter\+Accepts\+Row (\begin{DoxyParamCaption}\item[{int}]{source\+Row,  }\item[{const Q\+Model\+Index \&}]{source\+Parent }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}
+
+
+
+Function that filter logs. 
+
+\mbox{\Hypertarget{classBusLoggerProxy_ab97678470d56a85578ec19bca18446e9}\label{classBusLoggerProxy_ab97678470d56a85578ec19bca18446e9}} 
+\index{BusLoggerProxy@{BusLoggerProxy}!operator=@{operator=}}
+\index{operator=@{operator=}!BusLoggerProxy@{BusLoggerProxy}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classBusLoggerProxy}{Bus\+Logger\+Proxy}}\& Bus\+Logger\+Proxy\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classBusLoggerProxy}{Bus\+Logger\+Proxy}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classBusLoggerProxy_ac125a92a6ad30dc99282594d33c75823}\label{classBusLoggerProxy_ac125a92a6ad30dc99282594d33c75823}} 
+\index{BusLoggerProxy@{BusLoggerProxy}!refresh@{refresh}}
+\index{refresh@{refresh}!BusLoggerProxy@{BusLoggerProxy}}
+\doxysubsubsection{\texorpdfstring{refresh()}{refresh()}}
+{\footnotesize\ttfamily void Bus\+Logger\+Proxy\+::refresh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Refresh the view after a change of filters. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classBusLoggerProxy_a15f71bec81ee6a87a978b6d1cf266361}\label{classBusLoggerProxy_a15f71bec81ee6a87a978b6d1cf266361}} 
+\index{BusLoggerProxy@{BusLoggerProxy}!\_parent@{\_parent}}
+\index{\_parent@{\_parent}!BusLoggerProxy@{BusLoggerProxy}}
+\doxysubsubsection{\texorpdfstring{\_parent}{\_parent}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBusLogModel}{Bus\+Log\+Model}}\& Bus\+Logger\+Proxy\+::\+\_\+parent\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The parent to get the original data for filters. 
+
+\mbox{\Hypertarget{classBusLoggerProxy_a932bb9b513831fef27ece23bce7dc1ca}\label{classBusLoggerProxy_a932bb9b513831fef27ece23bce7dc1ca}} 
+\index{BusLoggerProxy@{BusLoggerProxy}!filters@{filters}}
+\index{filters@{filters}!BusLoggerProxy@{BusLoggerProxy}}
+\doxysubsubsection{\texorpdfstring{filters}{filters}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structComSquare_1_1Debugger_1_1BusLoggerFilters}{Com\+Square\+::\+Debugger\+::\+Bus\+Logger\+Filters}} Bus\+Logger\+Proxy\+::filters\mbox{[}2\mbox{]} = \{\mbox{\hyperlink{structComSquare_1_1Debugger_1_1BusLoggerFilters}{Com\+Square\+::\+Debugger\+::\+Bus\+Logger\+Filters}}(), \mbox{\hyperlink{structComSquare_1_1Debugger_1_1BusLoggerFilters}{Com\+Square\+::\+Debugger\+::\+Bus\+Logger\+Filters}}()\}}
+
+
+
+Currently enabled filters, index 0 is for reads, index 1 for writes. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+sources/\+Debugger/\mbox{\hyperlink{MemoryBusDebug_8hpp}{Memory\+Bus\+Debug.\+hpp}}\item 
+sources/\+Debugger/\mbox{\hyperlink{MemoryBusDebug_8cpp}{Memory\+Bus\+Debug.\+cpp}}\end{DoxyCompactItemize}

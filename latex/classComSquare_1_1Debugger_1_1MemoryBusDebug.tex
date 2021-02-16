@@ -1,0 +1,259 @@
+\hypertarget{classComSquare_1_1Debugger_1_1MemoryBusDebug}{}\doxysection{Com\+Square\+::Debugger\+::Memory\+Bus\+Debug Class Reference}
+\label{classComSquare_1_1Debugger_1_1MemoryBusDebug}\index{ComSquare::Debugger::MemoryBusDebug@{ComSquare::Debugger::MemoryBusDebug}}
+
+
+window that allow the user to view all data going through the memory bus.  
+
+
+
+
+{\ttfamily \#include $<$Memory\+Bus\+Debug.\+hpp$>$}
+
+
+
+Inheritance diagram for Com\+Square\+::Debugger\+::Memory\+Bus\+Debug\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{classComSquare_1_1Debugger_1_1MemoryBusDebug__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Com\+Square\+::Debugger\+::Memory\+Bus\+Debug\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classComSquare_1_1Debugger_1_1MemoryBusDebug__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classComSquare_1_1Debugger_1_1MemoryBusDebug_a91ddb7661bd7a6d6713571b432fb7d9a}{disable\+Viewer}} ()
+\begin{DoxyCompactList}\small\item\em Called when the window is closed. Turn off the debugger and revert to a basic \mbox{\hyperlink{namespaceComSquare_1_1CPU}{C\+PU}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classComSquare_1_1Debugger_1_1MemoryBusDebug_ab6e3bd8054b4532b409c7f338fc284c2}{Memory\+Bus\+Debug}} (\mbox{\hyperlink{classComSquare_1_1SNES}{S\+N\+ES}} \&snes, const \mbox{\hyperlink{classComSquare_1_1Memory_1_1MemoryBus}{Memory\+::\+Memory\+Bus}} \&bus)
+\item 
+\mbox{\hyperlink{classComSquare_1_1Debugger_1_1MemoryBusDebug_ac8194116dba23a12a1bad16f4e0bb1c4}{Memory\+Bus\+Debug}} (const \mbox{\hyperlink{classComSquare_1_1Debugger_1_1MemoryBusDebug}{Memory\+Bus\+Debug}} \&)=delete
+\item 
+\mbox{\hyperlink{classComSquare_1_1Debugger_1_1MemoryBusDebug}{Memory\+Bus\+Debug}} \& \mbox{\hyperlink{classComSquare_1_1Debugger_1_1MemoryBusDebug_a854f240670a6b454792b7e2d9fc49d3e}{operator=}} (const \mbox{\hyperlink{classComSquare_1_1Debugger_1_1MemoryBusDebug}{Memory\+Bus\+Debug}} \&)=delete
+\item 
+\mbox{\hyperlink{classComSquare_1_1Debugger_1_1MemoryBusDebug_ab659576216d0d92f47ca2791a0efe6e5}{$\sim$\+Memory\+Bus\+Debug}} ()=default
+\item 
+uint8\+\_\+t \mbox{\hyperlink{classComSquare_1_1Debugger_1_1MemoryBusDebug_aac4caac70c61e9dca7237669490c2505}{read}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} addr) override
+\begin{DoxyCompactList}\small\item\em Read data at a global address and log it to the debugger. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{classComSquare_1_1Debugger_1_1MemoryBusDebug_a8878ad5fb5a13af601d5bbc4554fcf32}{read}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} addr, bool silence) override
+\begin{DoxyCompactList}\small\item\em Read data at a global address and log it to the debugger. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classComSquare_1_1Debugger_1_1MemoryBusDebug_a768c48fdb11d35c051b690f9c7478b2d}{write}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} addr, uint8\+\_\+t data) override
+\begin{DoxyCompactList}\small\item\em Write a data to a global address and log it to the debugger. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classComSquare_1_1Debugger_1_1MemoryBusDebug_abad12100ccde1623605f90fe1af18ef3}{focus}} ()
+\begin{DoxyCompactList}\small\item\em Focus the debugger\textquotesingle{}s window. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classComSquare_1_1Debugger_1_1MemoryBusDebug_a7c6698e37950c387a93f20ff166c7e24}{is\+Debugger}} () override
+\begin{DoxyCompactList}\small\item\em Return true if the Bus is overloaded with debugging features. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classComSquare_1_1Debugger_1_1ClosableWindow}{Closable\+Window}}$<$ \mbox{\hyperlink{classComSquare_1_1Debugger_1_1MemoryBusDebug}{Memory\+Bus\+Debug}} $>$ $\ast$ \mbox{\hyperlink{classComSquare_1_1Debugger_1_1MemoryBusDebug_a09cd881b5d587086aac5c96f60d20b35}{\+\_\+window}}
+\begin{DoxyCompactList}\small\item\em The QT window for this debugger. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classComSquare_1_1SNES}{S\+N\+ES}} \& \mbox{\hyperlink{classComSquare_1_1Debugger_1_1MemoryBusDebug_a6bd4b1f606b4a763ca0339d4d879b84c}{\+\_\+snes}}
+\begin{DoxyCompactList}\small\item\em A reference to the snes (to disable the debugger). \end{DoxyCompactList}\item 
+Ui\+::\+Bus\+View \mbox{\hyperlink{classComSquare_1_1Debugger_1_1MemoryBusDebug_a238091f7380cdf1428737eeb09c06486}{\+\_\+ui}}
+\begin{DoxyCompactList}\small\item\em A widget that contain the whole UI. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBusLogModel}{Bus\+Log\+Model}} \mbox{\hyperlink{classComSquare_1_1Debugger_1_1MemoryBusDebug_a5a658fec9c1dcbb020c5c00d547f6f79}{\+\_\+model}}
+\begin{DoxyCompactList}\small\item\em The Log visualizer model for QT. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBusLoggerProxy}{Bus\+Logger\+Proxy}} \mbox{\hyperlink{classComSquare_1_1Debugger_1_1MemoryBusDebug_a0cad542b5243a80a2d7eac67c7824654}{\+\_\+proxy}}
+\begin{DoxyCompactList}\small\item\em A QT proxy to filter the logs. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+window that allow the user to view all data going through the memory bus. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1MemoryBusDebug_ab6e3bd8054b4532b409c7f338fc284c2}\label{classComSquare_1_1Debugger_1_1MemoryBusDebug_ab6e3bd8054b4532b409c7f338fc284c2}} 
+\index{ComSquare::Debugger::MemoryBusDebug@{ComSquare::Debugger::MemoryBusDebug}!MemoryBusDebug@{MemoryBusDebug}}
+\index{MemoryBusDebug@{MemoryBusDebug}!ComSquare::Debugger::MemoryBusDebug@{ComSquare::Debugger::MemoryBusDebug}}
+\doxysubsubsection{\texorpdfstring{MemoryBusDebug()}{MemoryBusDebug()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Com\+Square\+::\+Debugger\+::\+Memory\+Bus\+Debug\+::\+Memory\+Bus\+Debug (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classComSquare_1_1SNES}{S\+N\+ES}} \&}]{snes,  }\item[{const \mbox{\hyperlink{classComSquare_1_1Memory_1_1MemoryBus}{Memory\+::\+Memory\+Bus}} \&}]{bus }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1MemoryBusDebug_ac8194116dba23a12a1bad16f4e0bb1c4}\label{classComSquare_1_1Debugger_1_1MemoryBusDebug_ac8194116dba23a12a1bad16f4e0bb1c4}} 
+\index{ComSquare::Debugger::MemoryBusDebug@{ComSquare::Debugger::MemoryBusDebug}!MemoryBusDebug@{MemoryBusDebug}}
+\index{MemoryBusDebug@{MemoryBusDebug}!ComSquare::Debugger::MemoryBusDebug@{ComSquare::Debugger::MemoryBusDebug}}
+\doxysubsubsection{\texorpdfstring{MemoryBusDebug()}{MemoryBusDebug()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Com\+Square\+::\+Debugger\+::\+Memory\+Bus\+Debug\+::\+Memory\+Bus\+Debug (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classComSquare_1_1Debugger_1_1MemoryBusDebug}{Memory\+Bus\+Debug}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1MemoryBusDebug_ab659576216d0d92f47ca2791a0efe6e5}\label{classComSquare_1_1Debugger_1_1MemoryBusDebug_ab659576216d0d92f47ca2791a0efe6e5}} 
+\index{ComSquare::Debugger::MemoryBusDebug@{ComSquare::Debugger::MemoryBusDebug}!````~MemoryBusDebug@{$\sim$MemoryBusDebug}}
+\index{````~MemoryBusDebug@{$\sim$MemoryBusDebug}!ComSquare::Debugger::MemoryBusDebug@{ComSquare::Debugger::MemoryBusDebug}}
+\doxysubsubsection{\texorpdfstring{$\sim$MemoryBusDebug()}{~MemoryBusDebug()}}
+{\footnotesize\ttfamily Com\+Square\+::\+Debugger\+::\+Memory\+Bus\+Debug\+::$\sim$\+Memory\+Bus\+Debug (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1MemoryBusDebug_a91ddb7661bd7a6d6713571b432fb7d9a}\label{classComSquare_1_1Debugger_1_1MemoryBusDebug_a91ddb7661bd7a6d6713571b432fb7d9a}} 
+\index{ComSquare::Debugger::MemoryBusDebug@{ComSquare::Debugger::MemoryBusDebug}!disableViewer@{disableViewer}}
+\index{disableViewer@{disableViewer}!ComSquare::Debugger::MemoryBusDebug@{ComSquare::Debugger::MemoryBusDebug}}
+\doxysubsubsection{\texorpdfstring{disableViewer()}{disableViewer()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+Debugger\+::\+Memory\+Bus\+Debug\+::disable\+Viewer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Called when the window is closed. Turn off the debugger and revert to a basic \mbox{\hyperlink{namespaceComSquare_1_1CPU}{C\+PU}}. 
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1MemoryBusDebug_abad12100ccde1623605f90fe1af18ef3}\label{classComSquare_1_1Debugger_1_1MemoryBusDebug_abad12100ccde1623605f90fe1af18ef3}} 
+\index{ComSquare::Debugger::MemoryBusDebug@{ComSquare::Debugger::MemoryBusDebug}!focus@{focus}}
+\index{focus@{focus}!ComSquare::Debugger::MemoryBusDebug@{ComSquare::Debugger::MemoryBusDebug}}
+\doxysubsubsection{\texorpdfstring{focus()}{focus()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+Debugger\+::\+Memory\+Bus\+Debug\+::focus (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Focus the debugger\textquotesingle{}s window. 
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1MemoryBusDebug_a7c6698e37950c387a93f20ff166c7e24}\label{classComSquare_1_1Debugger_1_1MemoryBusDebug_a7c6698e37950c387a93f20ff166c7e24}} 
+\index{ComSquare::Debugger::MemoryBusDebug@{ComSquare::Debugger::MemoryBusDebug}!isDebugger@{isDebugger}}
+\index{isDebugger@{isDebugger}!ComSquare::Debugger::MemoryBusDebug@{ComSquare::Debugger::MemoryBusDebug}}
+\doxysubsubsection{\texorpdfstring{isDebugger()}{isDebugger()}}
+{\footnotesize\ttfamily bool Com\+Square\+::\+Debugger\+::\+Memory\+Bus\+Debug\+::is\+Debugger (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Return true if the Bus is overloaded with debugging features. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classComSquare_1_1Memory_1_1MemoryBus_a1bdf403de18ce5b987cb47e1432d4178}{Com\+Square\+::\+Memory\+::\+Memory\+Bus}}.
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1MemoryBusDebug_a854f240670a6b454792b7e2d9fc49d3e}\label{classComSquare_1_1Debugger_1_1MemoryBusDebug_a854f240670a6b454792b7e2d9fc49d3e}} 
+\index{ComSquare::Debugger::MemoryBusDebug@{ComSquare::Debugger::MemoryBusDebug}!operator=@{operator=}}
+\index{operator=@{operator=}!ComSquare::Debugger::MemoryBusDebug@{ComSquare::Debugger::MemoryBusDebug}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classComSquare_1_1Debugger_1_1MemoryBusDebug}{Memory\+Bus\+Debug}}\& Com\+Square\+::\+Debugger\+::\+Memory\+Bus\+Debug\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classComSquare_1_1Debugger_1_1MemoryBusDebug}{Memory\+Bus\+Debug}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1MemoryBusDebug_aac4caac70c61e9dca7237669490c2505}\label{classComSquare_1_1Debugger_1_1MemoryBusDebug_aac4caac70c61e9dca7237669490c2505}} 
+\index{ComSquare::Debugger::MemoryBusDebug@{ComSquare::Debugger::MemoryBusDebug}!read@{read}}
+\index{read@{read}!ComSquare::Debugger::MemoryBusDebug@{ComSquare::Debugger::MemoryBusDebug}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+Debugger\+::\+Memory\+Bus\+Debug\+::read (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{addr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Read data at a global address and log it to the debugger. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & The address to read from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value that the component returned for this address. If the address was mapped to ram, it simply returned the value. If the address was mapped to a register the component returned the register. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classComSquare_1_1Memory_1_1MemoryBus_a66fe80e0dafb6078eabf809b2ecd6dae}{Com\+Square\+::\+Memory\+::\+Memory\+Bus}}.
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1MemoryBusDebug_a8878ad5fb5a13af601d5bbc4554fcf32}\label{classComSquare_1_1Debugger_1_1MemoryBusDebug_a8878ad5fb5a13af601d5bbc4554fcf32}} 
+\index{ComSquare::Debugger::MemoryBusDebug@{ComSquare::Debugger::MemoryBusDebug}!read@{read}}
+\index{read@{read}!ComSquare::Debugger::MemoryBusDebug@{ComSquare::Debugger::MemoryBusDebug}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+Debugger\+::\+Memory\+Bus\+Debug\+::read (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{addr,  }\item[{bool}]{silence }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Read data at a global address and log it to the debugger. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & The address to read from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value that the component returned for this address. If the address was mapped to ram, it simply returned the value. If the address was mapped to a register the component returned the register. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classComSquare_1_1Memory_1_1MemoryBus_a731b206bb4d419cd2f889ac5f6dc7ac6}{Com\+Square\+::\+Memory\+::\+Memory\+Bus}}.
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1MemoryBusDebug_a768c48fdb11d35c051b690f9c7478b2d}\label{classComSquare_1_1Debugger_1_1MemoryBusDebug_a768c48fdb11d35c051b690f9c7478b2d}} 
+\index{ComSquare::Debugger::MemoryBusDebug@{ComSquare::Debugger::MemoryBusDebug}!write@{write}}
+\index{write@{write}!ComSquare::Debugger::MemoryBusDebug@{ComSquare::Debugger::MemoryBusDebug}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+Debugger\+::\+Memory\+Bus\+Debug\+::write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{addr,  }\item[{uint8\+\_\+t}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Write a data to a global address and log it to the debugger. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & The address to write to. \\
+\hline
+{\em data} & The data to write. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classComSquare_1_1Memory_1_1MemoryBus_a1387b77513d9e0d077291477faab46cd}{Com\+Square\+::\+Memory\+::\+Memory\+Bus}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1MemoryBusDebug_a5a658fec9c1dcbb020c5c00d547f6f79}\label{classComSquare_1_1Debugger_1_1MemoryBusDebug_a5a658fec9c1dcbb020c5c00d547f6f79}} 
+\index{ComSquare::Debugger::MemoryBusDebug@{ComSquare::Debugger::MemoryBusDebug}!\_model@{\_model}}
+\index{\_model@{\_model}!ComSquare::Debugger::MemoryBusDebug@{ComSquare::Debugger::MemoryBusDebug}}
+\doxysubsubsection{\texorpdfstring{\_model}{\_model}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBusLogModel}{Bus\+Log\+Model}} Com\+Square\+::\+Debugger\+::\+Memory\+Bus\+Debug\+::\+\_\+model\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The Log visualizer model for QT. 
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1MemoryBusDebug_a0cad542b5243a80a2d7eac67c7824654}\label{classComSquare_1_1Debugger_1_1MemoryBusDebug_a0cad542b5243a80a2d7eac67c7824654}} 
+\index{ComSquare::Debugger::MemoryBusDebug@{ComSquare::Debugger::MemoryBusDebug}!\_proxy@{\_proxy}}
+\index{\_proxy@{\_proxy}!ComSquare::Debugger::MemoryBusDebug@{ComSquare::Debugger::MemoryBusDebug}}
+\doxysubsubsection{\texorpdfstring{\_proxy}{\_proxy}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBusLoggerProxy}{Bus\+Logger\+Proxy}} Com\+Square\+::\+Debugger\+::\+Memory\+Bus\+Debug\+::\+\_\+proxy\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A QT proxy to filter the logs. 
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1MemoryBusDebug_a6bd4b1f606b4a763ca0339d4d879b84c}\label{classComSquare_1_1Debugger_1_1MemoryBusDebug_a6bd4b1f606b4a763ca0339d4d879b84c}} 
+\index{ComSquare::Debugger::MemoryBusDebug@{ComSquare::Debugger::MemoryBusDebug}!\_snes@{\_snes}}
+\index{\_snes@{\_snes}!ComSquare::Debugger::MemoryBusDebug@{ComSquare::Debugger::MemoryBusDebug}}
+\doxysubsubsection{\texorpdfstring{\_snes}{\_snes}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classComSquare_1_1SNES}{S\+N\+ES}}\& Com\+Square\+::\+Debugger\+::\+Memory\+Bus\+Debug\+::\+\_\+snes\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A reference to the snes (to disable the debugger). 
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1MemoryBusDebug_a238091f7380cdf1428737eeb09c06486}\label{classComSquare_1_1Debugger_1_1MemoryBusDebug_a238091f7380cdf1428737eeb09c06486}} 
+\index{ComSquare::Debugger::MemoryBusDebug@{ComSquare::Debugger::MemoryBusDebug}!\_ui@{\_ui}}
+\index{\_ui@{\_ui}!ComSquare::Debugger::MemoryBusDebug@{ComSquare::Debugger::MemoryBusDebug}}
+\doxysubsubsection{\texorpdfstring{\_ui}{\_ui}}
+{\footnotesize\ttfamily Ui\+::\+Bus\+View Com\+Square\+::\+Debugger\+::\+Memory\+Bus\+Debug\+::\+\_\+ui\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A widget that contain the whole UI. 
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1MemoryBusDebug_a09cd881b5d587086aac5c96f60d20b35}\label{classComSquare_1_1Debugger_1_1MemoryBusDebug_a09cd881b5d587086aac5c96f60d20b35}} 
+\index{ComSquare::Debugger::MemoryBusDebug@{ComSquare::Debugger::MemoryBusDebug}!\_window@{\_window}}
+\index{\_window@{\_window}!ComSquare::Debugger::MemoryBusDebug@{ComSquare::Debugger::MemoryBusDebug}}
+\doxysubsubsection{\texorpdfstring{\_window}{\_window}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classComSquare_1_1Debugger_1_1ClosableWindow}{Closable\+Window}}$<$\mbox{\hyperlink{classComSquare_1_1Debugger_1_1MemoryBusDebug}{Memory\+Bus\+Debug}}$>$$\ast$ Com\+Square\+::\+Debugger\+::\+Memory\+Bus\+Debug\+::\+\_\+window\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The QT window for this debugger. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+sources/\+Debugger/\mbox{\hyperlink{MemoryBusDebug_8hpp}{Memory\+Bus\+Debug.\+hpp}}\item 
+sources/\+Debugger/\mbox{\hyperlink{MemoryBusDebug_8cpp}{Memory\+Bus\+Debug.\+cpp}}\end{DoxyCompactItemize}

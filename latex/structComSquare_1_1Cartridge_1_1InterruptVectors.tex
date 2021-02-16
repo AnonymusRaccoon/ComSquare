@@ -1,0 +1,195 @@
+\hypertarget{structComSquare_1_1Cartridge_1_1InterruptVectors}{}\doxysection{Com\+Square\+::Cartridge\+::Interrupt\+Vectors Struct Reference}
+\label{structComSquare_1_1Cartridge_1_1InterruptVectors}\index{ComSquare::Cartridge::InterruptVectors@{ComSquare::Cartridge::InterruptVectors}}
+
+
+{\ttfamily \#include $<$Interrupt\+Vectors.\+hpp$>$}
+
+
+
+Collaboration diagram for Com\+Square\+::Cartridge\+::Interrupt\+Vectors\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{structComSquare_1_1Cartridge_1_1InterruptVectors__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>uint8\_t \mbox{\hyperlink{structComSquare_1_1Cartridge_1_1InterruptVectors_a967f2204139242187145b3774f1f68b4}{cop8}} \mbox{[}2\mbox{]}\\
+\>uint16\_t \mbox{\hyperlink{structComSquare_1_1Cartridge_1_1InterruptVectors_ae4496e71c47ea28544a4fcbea7f52764}{cop}}\\
+\}; \\
+
+\end{tabbing}\begin{DoxyCompactList}\small\item\em The Co-\/\+Processor enable vector. \end{DoxyCompactList}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>uint8\_t \mbox{\hyperlink{structComSquare_1_1Cartridge_1_1InterruptVectors_ae3d62b23c9f79cf9ad434604c8973884}{brk8}} \mbox{[}2\mbox{]}\\
+\>uint16\_t \mbox{\hyperlink{structComSquare_1_1Cartridge_1_1InterruptVectors_acadec395ea58ceffebe1d81acbd5ee84}{brk}}\\
+\}; \\
+
+\end{tabbing}\begin{DoxyCompactList}\small\item\em The Break vector. \end{DoxyCompactList}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>uint8\_t \mbox{\hyperlink{structComSquare_1_1Cartridge_1_1InterruptVectors_aa59cb569c75cea6d3bfaaf57460e74ad}{abort8}} \mbox{[}2\mbox{]}\\
+\>uint16\_t \mbox{\hyperlink{structComSquare_1_1Cartridge_1_1InterruptVectors_acaa46ddec2f6246ab6210360f977d85d}{abort}}\\
+\}; \\
+
+\end{tabbing}\begin{DoxyCompactList}\small\item\em The Abort vector. \end{DoxyCompactList}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>uint8\_t \mbox{\hyperlink{structComSquare_1_1Cartridge_1_1InterruptVectors_a2495e3cf161f60a0242be1746074178b}{nmi8}} \mbox{[}2\mbox{]}\\
+\>uint16\_t \mbox{\hyperlink{structComSquare_1_1Cartridge_1_1InterruptVectors_a961a0c96a33afb70d8727b0e18737e68}{nmi}}\\
+\}; \\
+
+\end{tabbing}\begin{DoxyCompactList}\small\item\em The non-\/maskable interrupt (The V-\/\+Blank interrupt). \end{DoxyCompactList}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>uint8\_t \mbox{\hyperlink{structComSquare_1_1Cartridge_1_1InterruptVectors_a12d3bb5db85a5de0a806e28efc0fb409}{reset8}} \mbox{[}2\mbox{]}\\
+\>uint16\_t \mbox{\hyperlink{structComSquare_1_1Cartridge_1_1InterruptVectors_a7e733bb6137f727e5bd161573e6b50fb}{reset}}\\
+\}; \\
+
+\end{tabbing}\begin{DoxyCompactList}\small\item\em The Reset vector (execution of the \mbox{\hyperlink{classComSquare_1_1SNES}{S\+N\+ES}} starts with this reset vector in emulation mode). \end{DoxyCompactList}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>uint8\_t \mbox{\hyperlink{structComSquare_1_1Cartridge_1_1InterruptVectors_a4cef3761e5a08db1398f258d22c9d1c9}{irq8}} \mbox{[}2\mbox{]}\\
+\>uint16\_t \mbox{\hyperlink{structComSquare_1_1Cartridge_1_1InterruptVectors_ae9cdcd6ebefea6af55258fef69dbc81a}{irq}}\\
+\}; \\
+
+\end{tabbing}\begin{DoxyCompactList}\small\item\em The Interrupt Request vector. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structComSquare_1_1Cartridge_1_1InterruptVectors_a4e53fdaa27e07c376983e2b0e0efa221}\label{structComSquare_1_1Cartridge_1_1InterruptVectors_a4e53fdaa27e07c376983e2b0e0efa221}} 
+\doxysubsubsection{\texorpdfstring{"@27}{@27}}
+{\footnotesize\ttfamily union \{ ... \} }
+
+
+
+The Co-\/\+Processor enable vector. 
+
+\mbox{\Hypertarget{structComSquare_1_1Cartridge_1_1InterruptVectors_ad833057f177abb2d4f093c6de5c11493}\label{structComSquare_1_1Cartridge_1_1InterruptVectors_ad833057f177abb2d4f093c6de5c11493}} 
+\doxysubsubsection{\texorpdfstring{"@29}{@29}}
+{\footnotesize\ttfamily union \{ ... \} }
+
+
+
+The Break vector. 
+
+\mbox{\Hypertarget{structComSquare_1_1Cartridge_1_1InterruptVectors_a7ee08b587a36c678cb5dc8605a4361bf}\label{structComSquare_1_1Cartridge_1_1InterruptVectors_a7ee08b587a36c678cb5dc8605a4361bf}} 
+\doxysubsubsection{\texorpdfstring{"@31}{@31}}
+{\footnotesize\ttfamily union \{ ... \} }
+
+
+
+The Abort vector. 
+
+\mbox{\Hypertarget{structComSquare_1_1Cartridge_1_1InterruptVectors_a182819e3cfd20246b3eb83cc3ae6cf4e}\label{structComSquare_1_1Cartridge_1_1InterruptVectors_a182819e3cfd20246b3eb83cc3ae6cf4e}} 
+\doxysubsubsection{\texorpdfstring{"@33}{@33}}
+{\footnotesize\ttfamily union \{ ... \} }
+
+
+
+The non-\/maskable interrupt (The V-\/\+Blank interrupt). 
+
+\mbox{\Hypertarget{structComSquare_1_1Cartridge_1_1InterruptVectors_a387cb712696d1675389ddcfb40a0e7b3}\label{structComSquare_1_1Cartridge_1_1InterruptVectors_a387cb712696d1675389ddcfb40a0e7b3}} 
+\doxysubsubsection{\texorpdfstring{"@35}{@35}}
+{\footnotesize\ttfamily union \{ ... \} }
+
+
+
+The Reset vector (execution of the \mbox{\hyperlink{classComSquare_1_1SNES}{S\+N\+ES}} starts with this reset vector in emulation mode). 
+
+\mbox{\Hypertarget{structComSquare_1_1Cartridge_1_1InterruptVectors_ae8dd203e2590f879d773afd6e633557a}\label{structComSquare_1_1Cartridge_1_1InterruptVectors_ae8dd203e2590f879d773afd6e633557a}} 
+\doxysubsubsection{\texorpdfstring{"@37}{@37}}
+{\footnotesize\ttfamily union \{ ... \} }
+
+
+
+The Interrupt Request vector. 
+
+\mbox{\Hypertarget{structComSquare_1_1Cartridge_1_1InterruptVectors_acaa46ddec2f6246ab6210360f977d85d}\label{structComSquare_1_1Cartridge_1_1InterruptVectors_acaa46ddec2f6246ab6210360f977d85d}} 
+\index{ComSquare::Cartridge::InterruptVectors@{ComSquare::Cartridge::InterruptVectors}!abort@{abort}}
+\index{abort@{abort}!ComSquare::Cartridge::InterruptVectors@{ComSquare::Cartridge::InterruptVectors}}
+\doxysubsubsection{\texorpdfstring{abort}{abort}}
+{\footnotesize\ttfamily uint16\+\_\+t Com\+Square\+::\+Cartridge\+::\+Interrupt\+Vectors\+::abort}
+
+\mbox{\Hypertarget{structComSquare_1_1Cartridge_1_1InterruptVectors_aa59cb569c75cea6d3bfaaf57460e74ad}\label{structComSquare_1_1Cartridge_1_1InterruptVectors_aa59cb569c75cea6d3bfaaf57460e74ad}} 
+\index{ComSquare::Cartridge::InterruptVectors@{ComSquare::Cartridge::InterruptVectors}!abort8@{abort8}}
+\index{abort8@{abort8}!ComSquare::Cartridge::InterruptVectors@{ComSquare::Cartridge::InterruptVectors}}
+\doxysubsubsection{\texorpdfstring{abort8}{abort8}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+Cartridge\+::\+Interrupt\+Vectors\+::abort8\mbox{[}2\mbox{]}}
+
+\mbox{\Hypertarget{structComSquare_1_1Cartridge_1_1InterruptVectors_acadec395ea58ceffebe1d81acbd5ee84}\label{structComSquare_1_1Cartridge_1_1InterruptVectors_acadec395ea58ceffebe1d81acbd5ee84}} 
+\index{ComSquare::Cartridge::InterruptVectors@{ComSquare::Cartridge::InterruptVectors}!brk@{brk}}
+\index{brk@{brk}!ComSquare::Cartridge::InterruptVectors@{ComSquare::Cartridge::InterruptVectors}}
+\doxysubsubsection{\texorpdfstring{brk}{brk}}
+{\footnotesize\ttfamily uint16\+\_\+t Com\+Square\+::\+Cartridge\+::\+Interrupt\+Vectors\+::brk}
+
+\mbox{\Hypertarget{structComSquare_1_1Cartridge_1_1InterruptVectors_ae3d62b23c9f79cf9ad434604c8973884}\label{structComSquare_1_1Cartridge_1_1InterruptVectors_ae3d62b23c9f79cf9ad434604c8973884}} 
+\index{ComSquare::Cartridge::InterruptVectors@{ComSquare::Cartridge::InterruptVectors}!brk8@{brk8}}
+\index{brk8@{brk8}!ComSquare::Cartridge::InterruptVectors@{ComSquare::Cartridge::InterruptVectors}}
+\doxysubsubsection{\texorpdfstring{brk8}{brk8}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+Cartridge\+::\+Interrupt\+Vectors\+::brk8\mbox{[}2\mbox{]}}
+
+\mbox{\Hypertarget{structComSquare_1_1Cartridge_1_1InterruptVectors_ae4496e71c47ea28544a4fcbea7f52764}\label{structComSquare_1_1Cartridge_1_1InterruptVectors_ae4496e71c47ea28544a4fcbea7f52764}} 
+\index{ComSquare::Cartridge::InterruptVectors@{ComSquare::Cartridge::InterruptVectors}!cop@{cop}}
+\index{cop@{cop}!ComSquare::Cartridge::InterruptVectors@{ComSquare::Cartridge::InterruptVectors}}
+\doxysubsubsection{\texorpdfstring{cop}{cop}}
+{\footnotesize\ttfamily uint16\+\_\+t Com\+Square\+::\+Cartridge\+::\+Interrupt\+Vectors\+::cop}
+
+\mbox{\Hypertarget{structComSquare_1_1Cartridge_1_1InterruptVectors_a967f2204139242187145b3774f1f68b4}\label{structComSquare_1_1Cartridge_1_1InterruptVectors_a967f2204139242187145b3774f1f68b4}} 
+\index{ComSquare::Cartridge::InterruptVectors@{ComSquare::Cartridge::InterruptVectors}!cop8@{cop8}}
+\index{cop8@{cop8}!ComSquare::Cartridge::InterruptVectors@{ComSquare::Cartridge::InterruptVectors}}
+\doxysubsubsection{\texorpdfstring{cop8}{cop8}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+Cartridge\+::\+Interrupt\+Vectors\+::cop8\mbox{[}2\mbox{]}}
+
+\mbox{\Hypertarget{structComSquare_1_1Cartridge_1_1InterruptVectors_ae9cdcd6ebefea6af55258fef69dbc81a}\label{structComSquare_1_1Cartridge_1_1InterruptVectors_ae9cdcd6ebefea6af55258fef69dbc81a}} 
+\index{ComSquare::Cartridge::InterruptVectors@{ComSquare::Cartridge::InterruptVectors}!irq@{irq}}
+\index{irq@{irq}!ComSquare::Cartridge::InterruptVectors@{ComSquare::Cartridge::InterruptVectors}}
+\doxysubsubsection{\texorpdfstring{irq}{irq}}
+{\footnotesize\ttfamily uint16\+\_\+t Com\+Square\+::\+Cartridge\+::\+Interrupt\+Vectors\+::irq}
+
+\mbox{\Hypertarget{structComSquare_1_1Cartridge_1_1InterruptVectors_a4cef3761e5a08db1398f258d22c9d1c9}\label{structComSquare_1_1Cartridge_1_1InterruptVectors_a4cef3761e5a08db1398f258d22c9d1c9}} 
+\index{ComSquare::Cartridge::InterruptVectors@{ComSquare::Cartridge::InterruptVectors}!irq8@{irq8}}
+\index{irq8@{irq8}!ComSquare::Cartridge::InterruptVectors@{ComSquare::Cartridge::InterruptVectors}}
+\doxysubsubsection{\texorpdfstring{irq8}{irq8}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+Cartridge\+::\+Interrupt\+Vectors\+::irq8\mbox{[}2\mbox{]}}
+
+\mbox{\Hypertarget{structComSquare_1_1Cartridge_1_1InterruptVectors_a961a0c96a33afb70d8727b0e18737e68}\label{structComSquare_1_1Cartridge_1_1InterruptVectors_a961a0c96a33afb70d8727b0e18737e68}} 
+\index{ComSquare::Cartridge::InterruptVectors@{ComSquare::Cartridge::InterruptVectors}!nmi@{nmi}}
+\index{nmi@{nmi}!ComSquare::Cartridge::InterruptVectors@{ComSquare::Cartridge::InterruptVectors}}
+\doxysubsubsection{\texorpdfstring{nmi}{nmi}}
+{\footnotesize\ttfamily uint16\+\_\+t Com\+Square\+::\+Cartridge\+::\+Interrupt\+Vectors\+::nmi}
+
+\mbox{\Hypertarget{structComSquare_1_1Cartridge_1_1InterruptVectors_a2495e3cf161f60a0242be1746074178b}\label{structComSquare_1_1Cartridge_1_1InterruptVectors_a2495e3cf161f60a0242be1746074178b}} 
+\index{ComSquare::Cartridge::InterruptVectors@{ComSquare::Cartridge::InterruptVectors}!nmi8@{nmi8}}
+\index{nmi8@{nmi8}!ComSquare::Cartridge::InterruptVectors@{ComSquare::Cartridge::InterruptVectors}}
+\doxysubsubsection{\texorpdfstring{nmi8}{nmi8}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+Cartridge\+::\+Interrupt\+Vectors\+::nmi8\mbox{[}2\mbox{]}}
+
+\mbox{\Hypertarget{structComSquare_1_1Cartridge_1_1InterruptVectors_a7e733bb6137f727e5bd161573e6b50fb}\label{structComSquare_1_1Cartridge_1_1InterruptVectors_a7e733bb6137f727e5bd161573e6b50fb}} 
+\index{ComSquare::Cartridge::InterruptVectors@{ComSquare::Cartridge::InterruptVectors}!reset@{reset}}
+\index{reset@{reset}!ComSquare::Cartridge::InterruptVectors@{ComSquare::Cartridge::InterruptVectors}}
+\doxysubsubsection{\texorpdfstring{reset}{reset}}
+{\footnotesize\ttfamily uint16\+\_\+t Com\+Square\+::\+Cartridge\+::\+Interrupt\+Vectors\+::reset}
+
+\mbox{\Hypertarget{structComSquare_1_1Cartridge_1_1InterruptVectors_a12d3bb5db85a5de0a806e28efc0fb409}\label{structComSquare_1_1Cartridge_1_1InterruptVectors_a12d3bb5db85a5de0a806e28efc0fb409}} 
+\index{ComSquare::Cartridge::InterruptVectors@{ComSquare::Cartridge::InterruptVectors}!reset8@{reset8}}
+\index{reset8@{reset8}!ComSquare::Cartridge::InterruptVectors@{ComSquare::Cartridge::InterruptVectors}}
+\doxysubsubsection{\texorpdfstring{reset8}{reset8}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+Cartridge\+::\+Interrupt\+Vectors\+::reset8\mbox{[}2\mbox{]}}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+sources/\+Cartridge/\mbox{\hyperlink{InterruptVectors_8hpp}{Interrupt\+Vectors.\+hpp}}\end{DoxyCompactItemize}

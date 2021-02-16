@@ -1,0 +1,309 @@
+\hypertarget{classComSquare_1_1Renderer_1_1SFRenderer}{}\doxysection{Com\+Square\+::Renderer\+::S\+F\+Renderer Class Reference}
+\label{classComSquare_1_1Renderer_1_1SFRenderer}\index{ComSquare::Renderer::SFRenderer@{ComSquare::Renderer::SFRenderer}}
+
+
+{\ttfamily \#include $<$S\+F\+Renderer.\+hpp$>$}
+
+
+
+Inheritance diagram for Com\+Square\+::Renderer\+::S\+F\+Renderer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classComSquare_1_1Renderer_1_1SFRenderer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Com\+Square\+::Renderer\+::S\+F\+Renderer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{classComSquare_1_1Renderer_1_1SFRenderer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classComSquare_1_1Renderer_1_1SFRenderer_ae1c66d510497e032cdcc82de560776c4}{set\+Window\+Name}} (std\+::string \&new\+Window\+Name) override
+\begin{DoxyCompactList}\small\item\em Set a new name to the window, if there is already a name it will be overwrite. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classComSquare_1_1Renderer_1_1SFRenderer_a9487851a2313bb0e4e8ebccbc6f839e6}{draw\+Screen}} () override
+\begin{DoxyCompactList}\small\item\em Update the screen by printing the buffer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classComSquare_1_1Renderer_1_1SFRenderer_a389854c9f8f0e5e2ae46eb115d376d73}{put\+Pixel}} (unsigned y, unsigned x, uint32\+\_\+t rgba) override
+\begin{DoxyCompactList}\small\item\em Add a pixel to the buffer to the coordinates x, y with the color rgba. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classComSquare_1_1Renderer_1_1SFRenderer_a3dcdb6722aba9e1e0e5e276444ca7ab2}{play\+Audio}} (std\+::span$<$ int16\+\_\+t $>$ samples, uint64\+\_\+t sample\+Count) override
+\begin{DoxyCompactList}\small\item\em Playing all samples from buffer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classComSquare_1_1Renderer_1_1SFRenderer_ada9df2d424190afe60cc32df2982ece5}{get\+Events}} ()
+\begin{DoxyCompactList}\small\item\em Get the inputs from the Window. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classComSquare_1_1Renderer_1_1SFRenderer_acecdd403d5d1c0d1e163b726f29a35ab}{create\+Window}} (\mbox{\hyperlink{classComSquare_1_1SNES}{S\+N\+ES}} \&snes, int max\+F\+PS) override
+\begin{DoxyCompactList}\small\item\em Use this function to create the window. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classComSquare_1_1Renderer_1_1SFRenderer_a52365812c957bc9bcf46d804c345c042}{S\+F\+Renderer}} (unsigned int height, unsigned int width)
+\begin{DoxyCompactList}\small\item\em Constructor that return the window component of the S\+F\+ML. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classComSquare_1_1Renderer_1_1SFRenderer_a0aea1632ec563f02f30369be6246487b}{S\+F\+Renderer}} (const \mbox{\hyperlink{classComSquare_1_1Renderer_1_1SFRenderer}{S\+F\+Renderer}} \&)=delete
+\item 
+\mbox{\hyperlink{classComSquare_1_1Renderer_1_1SFRenderer}{S\+F\+Renderer}} \& \mbox{\hyperlink{classComSquare_1_1Renderer_1_1SFRenderer_a7ee3eea2c0ef32da9846483e3bab24dc}{operator=}} (const \mbox{\hyperlink{classComSquare_1_1Renderer_1_1SFRenderer}{S\+F\+Renderer}} \&)=delete
+\item 
+\mbox{\hyperlink{classComSquare_1_1Renderer_1_1SFRenderer_af4fa3cd50547eecdbe155d104d299d82}{$\sim$\+S\+F\+Renderer}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classComSquare_1_1Renderer_1_1SFRenderer_aa972b25e9ad6bda7b4c6c171643846ad}{should\+Exit}} = false
+\begin{DoxyCompactList}\small\item\em Tells to the program if the window has been closed, and therefore if he should stop. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+sf\+::\+Render\+Window \mbox{\hyperlink{classComSquare_1_1Renderer_1_1SFRenderer_a495dfcc73f6c48f5b7705976994f32c3}{\+\_\+window}}
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{namespaceComSquare_1_1Renderer}{Renderer}} for the window. \end{DoxyCompactList}\item 
+sf\+::\+Video\+Mode \mbox{\hyperlink{classComSquare_1_1Renderer_1_1SFRenderer_af0cfb43020596d8769970ce8c2752b27}{\+\_\+video\+Mode}}
+\begin{DoxyCompactList}\small\item\em Video Mode containing the \+\_\+height and \+\_\+width of the window. \end{DoxyCompactList}\item 
+sf\+::\+Color $\ast$ \mbox{\hyperlink{classComSquare_1_1Renderer_1_1SFRenderer_ab36bf31b1b83766555e55c8965b15434}{\+\_\+pixel\+Buffer}}
+\begin{DoxyCompactList}\small\item\em The image that contain all of the pixels. \end{DoxyCompactList}\item 
+sf\+::\+Sprite \mbox{\hyperlink{classComSquare_1_1Renderer_1_1SFRenderer_af7a74c4f613496e099a44f549db9d81a}{\+\_\+sprite}}
+\begin{DoxyCompactList}\small\item\em The sprite to render the array of pixels. \end{DoxyCompactList}\item 
+sf\+::\+Texture \mbox{\hyperlink{classComSquare_1_1Renderer_1_1SFRenderer_a3eb1436cf6c5aaaefaba75ed238ef18c}{\+\_\+texture}}
+\begin{DoxyCompactList}\small\item\em The texture to render the array of pixels. \end{DoxyCompactList}\item 
+sf\+::\+Sound\+Buffer \mbox{\hyperlink{classComSquare_1_1Renderer_1_1SFRenderer_a41a337fbfbf8c0ddebbd55d84738d3a5}{\+\_\+sound\+Buffer}}
+\begin{DoxyCompactList}\small\item\em The buffer containing samples to be played. \end{DoxyCompactList}\item 
+sf\+::\+Sound \mbox{\hyperlink{classComSquare_1_1Renderer_1_1SFRenderer_a7bf6848cd9906ec01851217c041723e9}{\+\_\+sound}}
+\begin{DoxyCompactList}\small\item\em the sound played \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classComSquare_1_1Renderer_1_1SFRenderer_a52365812c957bc9bcf46d804c345c042}\label{classComSquare_1_1Renderer_1_1SFRenderer_a52365812c957bc9bcf46d804c345c042}} 
+\index{ComSquare::Renderer::SFRenderer@{ComSquare::Renderer::SFRenderer}!SFRenderer@{SFRenderer}}
+\index{SFRenderer@{SFRenderer}!ComSquare::Renderer::SFRenderer@{ComSquare::Renderer::SFRenderer}}
+\doxysubsubsection{\texorpdfstring{SFRenderer()}{SFRenderer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Com\+Square\+::\+Renderer\+::\+S\+F\+Renderer\+::\+S\+F\+Renderer (\begin{DoxyParamCaption}\item[{unsigned int}]{height,  }\item[{unsigned int}]{width }\end{DoxyParamCaption})}
+
+
+
+Constructor that return the window component of the S\+F\+ML. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em height} & \+\_\+height of the window. \\
+\hline
+{\em width} & \+\_\+width of the window. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classComSquare_1_1Renderer_1_1SFRenderer_a0aea1632ec563f02f30369be6246487b}\label{classComSquare_1_1Renderer_1_1SFRenderer_a0aea1632ec563f02f30369be6246487b}} 
+\index{ComSquare::Renderer::SFRenderer@{ComSquare::Renderer::SFRenderer}!SFRenderer@{SFRenderer}}
+\index{SFRenderer@{SFRenderer}!ComSquare::Renderer::SFRenderer@{ComSquare::Renderer::SFRenderer}}
+\doxysubsubsection{\texorpdfstring{SFRenderer()}{SFRenderer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Com\+Square\+::\+Renderer\+::\+S\+F\+Renderer\+::\+S\+F\+Renderer (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classComSquare_1_1Renderer_1_1SFRenderer}{S\+F\+Renderer}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classComSquare_1_1Renderer_1_1SFRenderer_af4fa3cd50547eecdbe155d104d299d82}\label{classComSquare_1_1Renderer_1_1SFRenderer_af4fa3cd50547eecdbe155d104d299d82}} 
+\index{ComSquare::Renderer::SFRenderer@{ComSquare::Renderer::SFRenderer}!````~SFRenderer@{$\sim$SFRenderer}}
+\index{````~SFRenderer@{$\sim$SFRenderer}!ComSquare::Renderer::SFRenderer@{ComSquare::Renderer::SFRenderer}}
+\doxysubsubsection{\texorpdfstring{$\sim$SFRenderer()}{~SFRenderer()}}
+{\footnotesize\ttfamily Com\+Square\+::\+Renderer\+::\+S\+F\+Renderer\+::$\sim$\+S\+F\+Renderer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classComSquare_1_1Renderer_1_1SFRenderer_acecdd403d5d1c0d1e163b726f29a35ab}\label{classComSquare_1_1Renderer_1_1SFRenderer_acecdd403d5d1c0d1e163b726f29a35ab}} 
+\index{ComSquare::Renderer::SFRenderer@{ComSquare::Renderer::SFRenderer}!createWindow@{createWindow}}
+\index{createWindow@{createWindow}!ComSquare::Renderer::SFRenderer@{ComSquare::Renderer::SFRenderer}}
+\doxysubsubsection{\texorpdfstring{createWindow()}{createWindow()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+Renderer\+::\+S\+F\+Renderer\+::create\+Window (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classComSquare_1_1SNES}{S\+N\+ES}} \&}]{snes,  }\item[{int}]{max\+F\+PS }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Use this function to create the window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em snes} & The snes for the update (not implemented here). \\
+\hline
+{\em max\+F\+PS} & The number of F\+PS you aim to run on. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classComSquare_1_1Renderer_1_1IRenderer_a74de38e22e1e6f2571d2893c23e7d8eb}{Com\+Square\+::\+Renderer\+::\+I\+Renderer}}.
+
+\mbox{\Hypertarget{classComSquare_1_1Renderer_1_1SFRenderer_a9487851a2313bb0e4e8ebccbc6f839e6}\label{classComSquare_1_1Renderer_1_1SFRenderer_a9487851a2313bb0e4e8ebccbc6f839e6}} 
+\index{ComSquare::Renderer::SFRenderer@{ComSquare::Renderer::SFRenderer}!drawScreen@{drawScreen}}
+\index{drawScreen@{drawScreen}!ComSquare::Renderer::SFRenderer@{ComSquare::Renderer::SFRenderer}}
+\doxysubsubsection{\texorpdfstring{drawScreen()}{drawScreen()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+Renderer\+::\+S\+F\+Renderer\+::draw\+Screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Update the screen by printing the buffer. 
+
+
+
+Implements \mbox{\hyperlink{classComSquare_1_1Renderer_1_1IRenderer_a371328d98efeded3a12adf92267b1287}{Com\+Square\+::\+Renderer\+::\+I\+Renderer}}.
+
+\mbox{\Hypertarget{classComSquare_1_1Renderer_1_1SFRenderer_ada9df2d424190afe60cc32df2982ece5}\label{classComSquare_1_1Renderer_1_1SFRenderer_ada9df2d424190afe60cc32df2982ece5}} 
+\index{ComSquare::Renderer::SFRenderer@{ComSquare::Renderer::SFRenderer}!getEvents@{getEvents}}
+\index{getEvents@{getEvents}!ComSquare::Renderer::SFRenderer@{ComSquare::Renderer::SFRenderer}}
+\doxysubsubsection{\texorpdfstring{getEvents()}{getEvents()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+Renderer\+::\+S\+F\+Renderer\+::get\+Events (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get the inputs from the Window. 
+
+\mbox{\Hypertarget{classComSquare_1_1Renderer_1_1SFRenderer_a7ee3eea2c0ef32da9846483e3bab24dc}\label{classComSquare_1_1Renderer_1_1SFRenderer_a7ee3eea2c0ef32da9846483e3bab24dc}} 
+\index{ComSquare::Renderer::SFRenderer@{ComSquare::Renderer::SFRenderer}!operator=@{operator=}}
+\index{operator=@{operator=}!ComSquare::Renderer::SFRenderer@{ComSquare::Renderer::SFRenderer}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classComSquare_1_1Renderer_1_1SFRenderer}{S\+F\+Renderer}}\& Com\+Square\+::\+Renderer\+::\+S\+F\+Renderer\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classComSquare_1_1Renderer_1_1SFRenderer}{S\+F\+Renderer}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classComSquare_1_1Renderer_1_1SFRenderer_a3dcdb6722aba9e1e0e5e276444ca7ab2}\label{classComSquare_1_1Renderer_1_1SFRenderer_a3dcdb6722aba9e1e0e5e276444ca7ab2}} 
+\index{ComSquare::Renderer::SFRenderer@{ComSquare::Renderer::SFRenderer}!playAudio@{playAudio}}
+\index{playAudio@{playAudio}!ComSquare::Renderer::SFRenderer@{ComSquare::Renderer::SFRenderer}}
+\doxysubsubsection{\texorpdfstring{playAudio()}{playAudio()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+Renderer\+::\+S\+F\+Renderer\+::play\+Audio (\begin{DoxyParamCaption}\item[{std\+::span$<$ int16\+\_\+t $>$}]{samples,  }\item[{uint64\+\_\+t}]{sample\+Count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Playing all samples from buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em samples} & Buffer containing samples \\
+\hline
+{\em sample\+Count} & number of samples inside buffer \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classComSquare_1_1Renderer_1_1IRenderer_a34910920e0ed52a3f424c38952a21046}{Com\+Square\+::\+Renderer\+::\+I\+Renderer}}.
+
+\mbox{\Hypertarget{classComSquare_1_1Renderer_1_1SFRenderer_a389854c9f8f0e5e2ae46eb115d376d73}\label{classComSquare_1_1Renderer_1_1SFRenderer_a389854c9f8f0e5e2ae46eb115d376d73}} 
+\index{ComSquare::Renderer::SFRenderer@{ComSquare::Renderer::SFRenderer}!putPixel@{putPixel}}
+\index{putPixel@{putPixel}!ComSquare::Renderer::SFRenderer@{ComSquare::Renderer::SFRenderer}}
+\doxysubsubsection{\texorpdfstring{putPixel()}{putPixel()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+Renderer\+::\+S\+F\+Renderer\+::put\+Pixel (\begin{DoxyParamCaption}\item[{unsigned}]{y,  }\item[{unsigned}]{x,  }\item[{uint32\+\_\+t}]{rgba }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Add a pixel to the buffer to the coordinates x, y with the color rgba. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em X} & horizontal index. \\
+\hline
+{\em Y} & vertical index. \\
+\hline
+{\em rgba} & The color of the pixel. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classComSquare_1_1Renderer_1_1IRenderer_a87c1d5ed8e9616e7d6bebdc8ee9232ef}{Com\+Square\+::\+Renderer\+::\+I\+Renderer}}.
+
+\mbox{\Hypertarget{classComSquare_1_1Renderer_1_1SFRenderer_ae1c66d510497e032cdcc82de560776c4}\label{classComSquare_1_1Renderer_1_1SFRenderer_ae1c66d510497e032cdcc82de560776c4}} 
+\index{ComSquare::Renderer::SFRenderer@{ComSquare::Renderer::SFRenderer}!setWindowName@{setWindowName}}
+\index{setWindowName@{setWindowName}!ComSquare::Renderer::SFRenderer@{ComSquare::Renderer::SFRenderer}}
+\doxysubsubsection{\texorpdfstring{setWindowName()}{setWindowName()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+Renderer\+::\+S\+F\+Renderer\+::set\+Window\+Name (\begin{DoxyParamCaption}\item[{std\+::string \&}]{new\+Window\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Set a new name to the window, if there is already a name it will be overwrite. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Window\+Name} & new title for the window. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classComSquare_1_1Renderer_1_1IRenderer_ae7039e04cbdbfcb6390486616cb36aaf}{Com\+Square\+::\+Renderer\+::\+I\+Renderer}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classComSquare_1_1Renderer_1_1SFRenderer_ab36bf31b1b83766555e55c8965b15434}\label{classComSquare_1_1Renderer_1_1SFRenderer_ab36bf31b1b83766555e55c8965b15434}} 
+\index{ComSquare::Renderer::SFRenderer@{ComSquare::Renderer::SFRenderer}!\_pixelBuffer@{\_pixelBuffer}}
+\index{\_pixelBuffer@{\_pixelBuffer}!ComSquare::Renderer::SFRenderer@{ComSquare::Renderer::SFRenderer}}
+\doxysubsubsection{\texorpdfstring{\_pixelBuffer}{\_pixelBuffer}}
+{\footnotesize\ttfamily sf\+::\+Color$\ast$ Com\+Square\+::\+Renderer\+::\+S\+F\+Renderer\+::\+\_\+pixel\+Buffer\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The image that contain all of the pixels. 
+
+\mbox{\Hypertarget{classComSquare_1_1Renderer_1_1SFRenderer_a7bf6848cd9906ec01851217c041723e9}\label{classComSquare_1_1Renderer_1_1SFRenderer_a7bf6848cd9906ec01851217c041723e9}} 
+\index{ComSquare::Renderer::SFRenderer@{ComSquare::Renderer::SFRenderer}!\_sound@{\_sound}}
+\index{\_sound@{\_sound}!ComSquare::Renderer::SFRenderer@{ComSquare::Renderer::SFRenderer}}
+\doxysubsubsection{\texorpdfstring{\_sound}{\_sound}}
+{\footnotesize\ttfamily sf\+::\+Sound Com\+Square\+::\+Renderer\+::\+S\+F\+Renderer\+::\+\_\+sound\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+the sound played 
+
+\mbox{\Hypertarget{classComSquare_1_1Renderer_1_1SFRenderer_a41a337fbfbf8c0ddebbd55d84738d3a5}\label{classComSquare_1_1Renderer_1_1SFRenderer_a41a337fbfbf8c0ddebbd55d84738d3a5}} 
+\index{ComSquare::Renderer::SFRenderer@{ComSquare::Renderer::SFRenderer}!\_soundBuffer@{\_soundBuffer}}
+\index{\_soundBuffer@{\_soundBuffer}!ComSquare::Renderer::SFRenderer@{ComSquare::Renderer::SFRenderer}}
+\doxysubsubsection{\texorpdfstring{\_soundBuffer}{\_soundBuffer}}
+{\footnotesize\ttfamily sf\+::\+Sound\+Buffer Com\+Square\+::\+Renderer\+::\+S\+F\+Renderer\+::\+\_\+sound\+Buffer\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The buffer containing samples to be played. 
+
+\mbox{\Hypertarget{classComSquare_1_1Renderer_1_1SFRenderer_af7a74c4f613496e099a44f549db9d81a}\label{classComSquare_1_1Renderer_1_1SFRenderer_af7a74c4f613496e099a44f549db9d81a}} 
+\index{ComSquare::Renderer::SFRenderer@{ComSquare::Renderer::SFRenderer}!\_sprite@{\_sprite}}
+\index{\_sprite@{\_sprite}!ComSquare::Renderer::SFRenderer@{ComSquare::Renderer::SFRenderer}}
+\doxysubsubsection{\texorpdfstring{\_sprite}{\_sprite}}
+{\footnotesize\ttfamily sf\+::\+Sprite Com\+Square\+::\+Renderer\+::\+S\+F\+Renderer\+::\+\_\+sprite\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The sprite to render the array of pixels. 
+
+\mbox{\Hypertarget{classComSquare_1_1Renderer_1_1SFRenderer_a3eb1436cf6c5aaaefaba75ed238ef18c}\label{classComSquare_1_1Renderer_1_1SFRenderer_a3eb1436cf6c5aaaefaba75ed238ef18c}} 
+\index{ComSquare::Renderer::SFRenderer@{ComSquare::Renderer::SFRenderer}!\_texture@{\_texture}}
+\index{\_texture@{\_texture}!ComSquare::Renderer::SFRenderer@{ComSquare::Renderer::SFRenderer}}
+\doxysubsubsection{\texorpdfstring{\_texture}{\_texture}}
+{\footnotesize\ttfamily sf\+::\+Texture Com\+Square\+::\+Renderer\+::\+S\+F\+Renderer\+::\+\_\+texture\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The texture to render the array of pixels. 
+
+\mbox{\Hypertarget{classComSquare_1_1Renderer_1_1SFRenderer_af0cfb43020596d8769970ce8c2752b27}\label{classComSquare_1_1Renderer_1_1SFRenderer_af0cfb43020596d8769970ce8c2752b27}} 
+\index{ComSquare::Renderer::SFRenderer@{ComSquare::Renderer::SFRenderer}!\_videoMode@{\_videoMode}}
+\index{\_videoMode@{\_videoMode}!ComSquare::Renderer::SFRenderer@{ComSquare::Renderer::SFRenderer}}
+\doxysubsubsection{\texorpdfstring{\_videoMode}{\_videoMode}}
+{\footnotesize\ttfamily sf\+::\+Video\+Mode Com\+Square\+::\+Renderer\+::\+S\+F\+Renderer\+::\+\_\+video\+Mode\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Video Mode containing the \+\_\+height and \+\_\+width of the window. 
+
+\mbox{\Hypertarget{classComSquare_1_1Renderer_1_1SFRenderer_a495dfcc73f6c48f5b7705976994f32c3}\label{classComSquare_1_1Renderer_1_1SFRenderer_a495dfcc73f6c48f5b7705976994f32c3}} 
+\index{ComSquare::Renderer::SFRenderer@{ComSquare::Renderer::SFRenderer}!\_window@{\_window}}
+\index{\_window@{\_window}!ComSquare::Renderer::SFRenderer@{ComSquare::Renderer::SFRenderer}}
+\doxysubsubsection{\texorpdfstring{\_window}{\_window}}
+{\footnotesize\ttfamily sf\+::\+Render\+Window Com\+Square\+::\+Renderer\+::\+S\+F\+Renderer\+::\+\_\+window\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The \mbox{\hyperlink{namespaceComSquare_1_1Renderer}{Renderer}} for the window. 
+
+\mbox{\Hypertarget{classComSquare_1_1Renderer_1_1SFRenderer_aa972b25e9ad6bda7b4c6c171643846ad}\label{classComSquare_1_1Renderer_1_1SFRenderer_aa972b25e9ad6bda7b4c6c171643846ad}} 
+\index{ComSquare::Renderer::SFRenderer@{ComSquare::Renderer::SFRenderer}!shouldExit@{shouldExit}}
+\index{shouldExit@{shouldExit}!ComSquare::Renderer::SFRenderer@{ComSquare::Renderer::SFRenderer}}
+\doxysubsubsection{\texorpdfstring{shouldExit}{shouldExit}}
+{\footnotesize\ttfamily bool Com\+Square\+::\+Renderer\+::\+S\+F\+Renderer\+::should\+Exit = false}
+
+
+
+Tells to the program if the window has been closed, and therefore if he should stop. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+sources/\+Renderer/\mbox{\hyperlink{SFRenderer_8hpp}{S\+F\+Renderer.\+hpp}}\item 
+sources/\+Renderer/\mbox{\hyperlink{SFRenderer_8cpp}{S\+F\+Renderer.\+cpp}}\end{DoxyCompactItemize}

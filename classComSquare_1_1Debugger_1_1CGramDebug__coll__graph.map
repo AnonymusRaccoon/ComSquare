@@ -1,0 +1,14 @@
+<map id="ComSquare::Debugger::CGramDebug" name="ComSquare::Debugger::CGramDebug">
+<area shape="rect" id="node1" title="window that allow the user to view all data going through the memory bus." alt="" coords="220,1271,388,1495"/>
+<area shape="rect" id="node4" href="$classComSquare_1_1Debugger_1_1ClosableWindow.html" title=" " alt="" coords="94,1572,322,1737"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,1013,80,1091"/>
+<area shape="rect" id="node3" href="$classComSquare_1_1SNES.html" title="Container of all the components of the SNES." alt="" coords="105,896,354,1208"/>
+<area shape="rect" id="node5" title=" " alt="" coords="79,1344,195,1421"/>
+<area shape="rect" id="node6" href="$classCGramModel.html" title="The qt model that bind the logs to the view." alt="" coords="378,947,521,1157"/>
+<area shape="rect" id="node7" title=" " alt="" coords="303,668,463,745"/>
+<area shape="rect" id="node8" href="$classComSquare_1_1PPU_1_1PPU.html" title="The class containing all the registers of the PPU." alt="" coords="487,580,652,833"/>
+<area shape="rect" id="node9" href="$classComSquare_1_1Memory_1_1AMemory.html" title="Abstract class representing a continuous block of memory." alt="" coords="289,308,463,503"/>
+<area shape="rect" id="node10" href="$classComSquare_1_1Memory_1_1IMemory.html" title="Common interface implemented by all components mapping memory." alt="" coords="289,5,463,244"/>
+<area shape="rect" id="node11" href="$classComSquare_1_1Renderer_1_1IRenderer.html" title=" " alt="" coords="487,330,651,481"/>
+<area shape="rect" id="node12" href="$structComSquare_1_1PPU_1_1Registers.html" title=" " alt="" coords="676,293,876,517"/>
+</map>

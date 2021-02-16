@@ -1,0 +1,276 @@
+\hypertarget{classComSquare_1_1Memory_1_1IMemory}{}\doxysection{Com\+Square\+::Memory\+::I\+Memory Class Reference}
+\label{classComSquare_1_1Memory_1_1IMemory}\index{ComSquare::Memory::IMemory@{ComSquare::Memory::IMemory}}
+
+
+Common interface implemented by all components mapping memory.  
+
+
+
+
+{\ttfamily \#include $<$I\+Memory.\+hpp$>$}
+
+
+
+Inheritance diagram for Com\+Square\+::Memory\+::I\+Memory\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classComSquare_1_1Memory_1_1IMemory__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Com\+Square\+::Memory\+::I\+Memory\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=211pt]{classComSquare_1_1Memory_1_1IMemory__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual uint8\+\_\+t \mbox{\hyperlink{classComSquare_1_1Memory_1_1IMemory_a72ffc0dfe13a000099f4cbc197cd48ec}{read}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} addr) const =0
+\begin{DoxyCompactList}\small\item\em Read data from the component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classComSquare_1_1Memory_1_1IMemory_a449bc89798a0b86028bb0413106514d9}{write}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} addr, uint8\+\_\+t data)=0
+\begin{DoxyCompactList}\small\item\em Write data to this component. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classComSquare_1_1Memory_1_1IMemory_a6b7cf04f893b04b9b063759ad67d5bff}{has\+Memory\+At}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} addr) const =0
+\begin{DoxyCompactList}\small\item\em Return true if this component has mapped the address. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} \mbox{\hyperlink{classComSquare_1_1Memory_1_1IMemory_a44a24003df048c5e832ba23722ef026d}{get\+Relative\+Address}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} addr) const =0
+\begin{DoxyCompactList}\small\item\em Translate an absolute address to a relative address. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} \mbox{\hyperlink{classComSquare_1_1Memory_1_1IMemory_a1072ab44e7389913ff67cb77ff118c8b}{get\+Size}} () const =0
+\begin{DoxyCompactList}\small\item\em Get the size of the data. This size can be lower than the mapped data. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classComSquare_1_1Memory_1_1IMemory_adfc6a3be86a371d69a2ae1aeb5fb244d}{is\+Mirror}} () const =0
+\begin{DoxyCompactList}\small\item\em Check if this memory is a mirror or not. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{classComSquare_1_1Memory_1_1IMemory_a34d654c04a8a992b439c4270d566263f}{get\+Name}} () const =0
+\begin{DoxyCompactList}\small\item\em Get the name of this accessor (used for debug purpose) \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{namespaceComSquare_a891b49feb5c3e0aaa4873ff19b49968c}{Component}} \mbox{\hyperlink{classComSquare_1_1Memory_1_1IMemory_a31289443bb26086fb74c724cdafd2241}{get\+Component}} () const =0
+\begin{DoxyCompactList}\small\item\em Get the component of this accessor (used for debug purpose) \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{classComSquare_1_1Memory_1_1IMemory_a1f02b894a85d7b1a0b8bae677039d821}{get\+Value\+Name}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} addr) const =0
+\begin{DoxyCompactList}\small\item\em Get the name of the data at the address. \end{DoxyCompactList}\item 
+virtual std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classComSquare_1_1Memory_1_1IMemory}{I\+Memory}} $>$ \mbox{\hyperlink{classComSquare_1_1Memory_1_1IMemory_a4f0df1071299a4186fca106f87c16b22}{get\+Mirrored}} () const =0
+\begin{DoxyCompactList}\small\item\em Return the memory accessor this accessor mirror if any. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classComSquare_1_1Memory_1_1IMemory_a0a0679f3cf924e3562d6f89a80aae069}{$\sim$\+I\+Memory}} ()=default
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Common interface implemented by all components mapping memory. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classComSquare_1_1Memory_1_1IMemory_a0a0679f3cf924e3562d6f89a80aae069}\label{classComSquare_1_1Memory_1_1IMemory_a0a0679f3cf924e3562d6f89a80aae069}} 
+\index{ComSquare::Memory::IMemory@{ComSquare::Memory::IMemory}!````~IMemory@{$\sim$IMemory}}
+\index{````~IMemory@{$\sim$IMemory}!ComSquare::Memory::IMemory@{ComSquare::Memory::IMemory}}
+\doxysubsubsection{\texorpdfstring{$\sim$IMemory()}{~IMemory()}}
+{\footnotesize\ttfamily virtual Com\+Square\+::\+Memory\+::\+I\+Memory\+::$\sim$\+I\+Memory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classComSquare_1_1Memory_1_1IMemory_a31289443bb26086fb74c724cdafd2241}\label{classComSquare_1_1Memory_1_1IMemory_a31289443bb26086fb74c724cdafd2241}} 
+\index{ComSquare::Memory::IMemory@{ComSquare::Memory::IMemory}!getComponent@{getComponent}}
+\index{getComponent@{getComponent}!ComSquare::Memory::IMemory@{ComSquare::Memory::IMemory}}
+\doxysubsubsection{\texorpdfstring{getComponent()}{getComponent()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{namespaceComSquare_a891b49feb5c3e0aaa4873ff19b49968c}{Component}} Com\+Square\+::\+Memory\+::\+I\+Memory\+::get\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the component of this accessor (used for debug purpose) 
+
+
+
+Implemented in \mbox{\hyperlink{classComSquare_1_1CPU_1_1CPU_acc8a35786bc453f56d913b4a9a9c2946}{Com\+Square\+::\+C\+P\+U\+::\+C\+PU}}, \mbox{\hyperlink{classComSquare_1_1PPU_1_1PPU_aa2cf0928eaa6dab3bb1b933f35c273ef}{Com\+Square\+::\+P\+P\+U\+::\+P\+PU}}, \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a8b78bdff28ca5bfaa0743f170014511b}{Com\+Square\+::\+A\+P\+U\+::\+A\+PU}}, \mbox{\hyperlink{classComSquare_1_1APU_1_1IPL_1_1IPL_a6764873766efe6e9a9cd38558aba28c7}{Com\+Square\+::\+A\+P\+U\+::\+I\+P\+L\+::\+I\+PL}}, \mbox{\hyperlink{classComSquare_1_1Memory_1_1RectangleShadow_a6f15e3bb70408dd939a7178b243c60f6}{Com\+Square\+::\+Memory\+::\+Rectangle\+Shadow}}, \mbox{\hyperlink{classComSquare_1_1Ram_1_1Ram_a80af60fecd948b647d590435028ecf1f}{Com\+Square\+::\+Ram\+::\+Ram}}, and \mbox{\hyperlink{classComSquare_1_1Memory_1_1MemoryShadow_a44297bdec2e515e550b6fcd99f635aa1}{Com\+Square\+::\+Memory\+::\+Memory\+Shadow}}.
+
+\mbox{\Hypertarget{classComSquare_1_1Memory_1_1IMemory_a4f0df1071299a4186fca106f87c16b22}\label{classComSquare_1_1Memory_1_1IMemory_a4f0df1071299a4186fca106f87c16b22}} 
+\index{ComSquare::Memory::IMemory@{ComSquare::Memory::IMemory}!getMirrored@{getMirrored}}
+\index{getMirrored@{getMirrored}!ComSquare::Memory::IMemory@{ComSquare::Memory::IMemory}}
+\doxysubsubsection{\texorpdfstring{getMirrored()}{getMirrored()}}
+{\footnotesize\ttfamily virtual std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classComSquare_1_1Memory_1_1IMemory}{I\+Memory}}$>$ Com\+Square\+::\+Memory\+::\+I\+Memory\+::get\+Mirrored (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Return the memory accessor this accessor mirror if any. 
+
+\begin{DoxyReturn}{Returns}
+nullptr if is\+Mirror is false, the source otherwise. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classComSquare_1_1Memory_1_1RectangleShadow_a8a668642d1ce4e0ac2db39b03d5d4afb}{Com\+Square\+::\+Memory\+::\+Rectangle\+Shadow}}, \mbox{\hyperlink{classComSquare_1_1Memory_1_1AMemory_a9657d57cfbe3f3d6b532d821aa336768}{Com\+Square\+::\+Memory\+::\+A\+Memory}}, \mbox{\hyperlink{classComSquare_1_1Memory_1_1ARectangleMemory_accd9bf9ee527833e2b968ed0775f9ab5}{Com\+Square\+::\+Memory\+::\+A\+Rectangle\+Memory}}, and \mbox{\hyperlink{classComSquare_1_1Memory_1_1MemoryShadow_ab73f3486b9da853d91b818875bf69f2a}{Com\+Square\+::\+Memory\+::\+Memory\+Shadow}}.
+
+\mbox{\Hypertarget{classComSquare_1_1Memory_1_1IMemory_a34d654c04a8a992b439c4270d566263f}\label{classComSquare_1_1Memory_1_1IMemory_a34d654c04a8a992b439c4270d566263f}} 
+\index{ComSquare::Memory::IMemory@{ComSquare::Memory::IMemory}!getName@{getName}}
+\index{getName@{getName}!ComSquare::Memory::IMemory@{ComSquare::Memory::IMemory}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily virtual std\+::string Com\+Square\+::\+Memory\+::\+I\+Memory\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the name of this accessor (used for debug purpose) 
+
+
+
+Implemented in \mbox{\hyperlink{classComSquare_1_1CPU_1_1CPU_a2de75cee00237888b5998677df33205a}{Com\+Square\+::\+C\+P\+U\+::\+C\+PU}}, \mbox{\hyperlink{classComSquare_1_1PPU_1_1PPU_a19a8610b12f36db9d236108c5de7b42b}{Com\+Square\+::\+P\+P\+U\+::\+P\+PU}}, \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_adebd1f46d0737254a943fd97a3192d2d}{Com\+Square\+::\+A\+P\+U\+::\+A\+PU}}, \mbox{\hyperlink{classComSquare_1_1APU_1_1IPL_1_1IPL_aae5515da2fdc63abae1fe59e60703a9d}{Com\+Square\+::\+A\+P\+U\+::\+I\+P\+L\+::\+I\+PL}}, \mbox{\hyperlink{classComSquare_1_1Memory_1_1RectangleShadow_a1a940ad2e7ed79dc2af3b4682caab527}{Com\+Square\+::\+Memory\+::\+Rectangle\+Shadow}}, \mbox{\hyperlink{classComSquare_1_1Ram_1_1Ram_a71d2424b05cf638d04402db2260c71aa}{Com\+Square\+::\+Ram\+::\+Ram}}, and \mbox{\hyperlink{classComSquare_1_1Memory_1_1MemoryShadow_a6c5a02f97b97a258d60d8011b805cb6e}{Com\+Square\+::\+Memory\+::\+Memory\+Shadow}}.
+
+\mbox{\Hypertarget{classComSquare_1_1Memory_1_1IMemory_a44a24003df048c5e832ba23722ef026d}\label{classComSquare_1_1Memory_1_1IMemory_a44a24003df048c5e832ba23722ef026d}} 
+\index{ComSquare::Memory::IMemory@{ComSquare::Memory::IMemory}!getRelativeAddress@{getRelativeAddress}}
+\index{getRelativeAddress@{getRelativeAddress}!ComSquare::Memory::IMemory@{ComSquare::Memory::IMemory}}
+\doxysubsubsection{\texorpdfstring{getRelativeAddress()}{getRelativeAddress()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} Com\+Square\+::\+Memory\+::\+I\+Memory\+::get\+Relative\+Address (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{addr }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Translate an absolute address to a relative address. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & The absolute address (in the 24 bit bus) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The local address (0 refers to the first byte of this component). 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classComSquare_1_1InvalidAddress}{Invalid\+Address}}} & is thrown if the address is not mapped by this component. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{classComSquare_1_1Memory_1_1RectangleShadow_a8e9ecd31b62134e08a811a8583a0af3c}{Com\+Square\+::\+Memory\+::\+Rectangle\+Shadow}}, \mbox{\hyperlink{classComSquare_1_1Memory_1_1AMemory_aff943c07bcf7f7ccb88c82fe47127928}{Com\+Square\+::\+Memory\+::\+A\+Memory}}, and \mbox{\hyperlink{classComSquare_1_1Memory_1_1ARectangleMemory_ae3d2535084fcf3d923aea4d9b0d9626e}{Com\+Square\+::\+Memory\+::\+A\+Rectangle\+Memory}}.
+
+\mbox{\Hypertarget{classComSquare_1_1Memory_1_1IMemory_a1072ab44e7389913ff67cb77ff118c8b}\label{classComSquare_1_1Memory_1_1IMemory_a1072ab44e7389913ff67cb77ff118c8b}} 
+\index{ComSquare::Memory::IMemory@{ComSquare::Memory::IMemory}!getSize@{getSize}}
+\index{getSize@{getSize}!ComSquare::Memory::IMemory@{ComSquare::Memory::IMemory}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} Com\+Square\+::\+Memory\+::\+I\+Memory\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the size of the data. This size can be lower than the mapped data. 
+
+\begin{DoxyReturn}{Returns}
+The number of bytes inside this memory. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classComSquare_1_1CPU_1_1CPU_aafdb38e48a7f5ea9d91a2c77a9172157}{Com\+Square\+::\+C\+P\+U\+::\+C\+PU}}, \mbox{\hyperlink{classComSquare_1_1PPU_1_1PPU_a896e5d0f9c12c8edae06a53507ffec3c}{Com\+Square\+::\+P\+P\+U\+::\+P\+PU}}, \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_afe51d33787c89667f29e250447e9dd03}{Com\+Square\+::\+A\+P\+U\+::\+A\+PU}}, \mbox{\hyperlink{classComSquare_1_1APU_1_1IPL_1_1IPL_ab0614592ba5b08b1e1447745d030e146}{Com\+Square\+::\+A\+P\+U\+::\+I\+P\+L\+::\+I\+PL}}, \mbox{\hyperlink{classComSquare_1_1Ram_1_1Ram_a003803dabc201990c870f5405c7e6de1}{Com\+Square\+::\+Ram\+::\+Ram}}, \mbox{\hyperlink{classComSquare_1_1Memory_1_1RectangleShadow_aa009d6ceb2d3ef951fecf54b1e25811e}{Com\+Square\+::\+Memory\+::\+Rectangle\+Shadow}}, and \mbox{\hyperlink{classComSquare_1_1Memory_1_1MemoryShadow_ac18f444c8b40e9ef8a077a93c0e7024e}{Com\+Square\+::\+Memory\+::\+Memory\+Shadow}}.
+
+\mbox{\Hypertarget{classComSquare_1_1Memory_1_1IMemory_a1f02b894a85d7b1a0b8bae677039d821}\label{classComSquare_1_1Memory_1_1IMemory_a1f02b894a85d7b1a0b8bae677039d821}} 
+\index{ComSquare::Memory::IMemory@{ComSquare::Memory::IMemory}!getValueName@{getValueName}}
+\index{getValueName@{getValueName}!ComSquare::Memory::IMemory@{ComSquare::Memory::IMemory}}
+\doxysubsubsection{\texorpdfstring{getValueName()}{getValueName()}}
+{\footnotesize\ttfamily virtual std\+::string Com\+Square\+::\+Memory\+::\+I\+Memory\+::get\+Value\+Name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{addr }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the name of the data at the address. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & The address (in local space) \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classComSquare_1_1Memory_1_1AMemory_aa17d27e8c201e2ffbe88676e7680fc4e}{Com\+Square\+::\+Memory\+::\+A\+Memory}}, \mbox{\hyperlink{classComSquare_1_1Memory_1_1ARectangleMemory_a7125cd1619a07e1030c88bb849d44425}{Com\+Square\+::\+Memory\+::\+A\+Rectangle\+Memory}}, and \mbox{\hyperlink{classComSquare_1_1PPU_1_1PPU_af640b3330b5c312b456ab36d4f54bada}{Com\+Square\+::\+P\+P\+U\+::\+P\+PU}}.
+
+\mbox{\Hypertarget{classComSquare_1_1Memory_1_1IMemory_a6b7cf04f893b04b9b063759ad67d5bff}\label{classComSquare_1_1Memory_1_1IMemory_a6b7cf04f893b04b9b063759ad67d5bff}} 
+\index{ComSquare::Memory::IMemory@{ComSquare::Memory::IMemory}!hasMemoryAt@{hasMemoryAt}}
+\index{hasMemoryAt@{hasMemoryAt}!ComSquare::Memory::IMemory@{ComSquare::Memory::IMemory}}
+\doxysubsubsection{\texorpdfstring{hasMemoryAt()}{hasMemoryAt()}}
+{\footnotesize\ttfamily virtual bool Com\+Square\+::\+Memory\+::\+I\+Memory\+::has\+Memory\+At (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{addr }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Return true if this component has mapped the address. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & The address to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if this address is mapped to the component. False otherwise. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classComSquare_1_1Memory_1_1AMemory_aadca52185b1b3db17d6881e91d81516f}{Com\+Square\+::\+Memory\+::\+A\+Memory}}, and \mbox{\hyperlink{classComSquare_1_1Memory_1_1ARectangleMemory_a182a3c6842814d052199adc24bc85ed3}{Com\+Square\+::\+Memory\+::\+A\+Rectangle\+Memory}}.
+
+\mbox{\Hypertarget{classComSquare_1_1Memory_1_1IMemory_adfc6a3be86a371d69a2ae1aeb5fb244d}\label{classComSquare_1_1Memory_1_1IMemory_adfc6a3be86a371d69a2ae1aeb5fb244d}} 
+\index{ComSquare::Memory::IMemory@{ComSquare::Memory::IMemory}!isMirror@{isMirror}}
+\index{isMirror@{isMirror}!ComSquare::Memory::IMemory@{ComSquare::Memory::IMemory}}
+\doxysubsubsection{\texorpdfstring{isMirror()}{isMirror()}}
+{\footnotesize\ttfamily virtual bool Com\+Square\+::\+Memory\+::\+I\+Memory\+::is\+Mirror (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Check if this memory is a mirror or not. 
+
+\begin{DoxyReturn}{Returns}
+True if this memory is a mirror. False otherwise. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classComSquare_1_1Memory_1_1RectangleShadow_a0931b47f025191e4b8f2ac3d4c044190}{Com\+Square\+::\+Memory\+::\+Rectangle\+Shadow}}, \mbox{\hyperlink{classComSquare_1_1Memory_1_1AMemory_aa8a4bcc4f33fbadfdfda82b335b414e8}{Com\+Square\+::\+Memory\+::\+A\+Memory}}, \mbox{\hyperlink{classComSquare_1_1Memory_1_1ARectangleMemory_a2bec422edf5aa4a52068f6848b293f23}{Com\+Square\+::\+Memory\+::\+A\+Rectangle\+Memory}}, and \mbox{\hyperlink{classComSquare_1_1Memory_1_1MemoryShadow_aa8cc6102f706d7300f06fd44fd33e39a}{Com\+Square\+::\+Memory\+::\+Memory\+Shadow}}.
+
+\mbox{\Hypertarget{classComSquare_1_1Memory_1_1IMemory_a72ffc0dfe13a000099f4cbc197cd48ec}\label{classComSquare_1_1Memory_1_1IMemory_a72ffc0dfe13a000099f4cbc197cd48ec}} 
+\index{ComSquare::Memory::IMemory@{ComSquare::Memory::IMemory}!read@{read}}
+\index{read@{read}!ComSquare::Memory::IMemory@{ComSquare::Memory::IMemory}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily virtual uint8\+\_\+t Com\+Square\+::\+Memory\+::\+I\+Memory\+::read (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{addr }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Read data from the component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & The local address to read from (0x0 should refer to the first byte of this component). \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em This} & function should thrown an \mbox{\hyperlink{classComSquare_1_1InvalidAddress}{Invalid\+Address}} for address that are not mapped to the component. \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+Return the data at the address given as parameter. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classComSquare_1_1CPU_1_1CPU_ac65abe749bc78b28f5b729af91ab9584}{Com\+Square\+::\+C\+P\+U\+::\+C\+PU}}, \mbox{\hyperlink{classComSquare_1_1PPU_1_1PPU_afe3fba640a9167e77d90ebd796f3797c}{Com\+Square\+::\+P\+P\+U\+::\+P\+PU}}, \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a2a1d4a4557165e60997b0e03d51fa7f9}{Com\+Square\+::\+A\+P\+U\+::\+A\+PU}}, \mbox{\hyperlink{classComSquare_1_1Cartridge_1_1Cartridge_ae7b19231cf6a425c7d1bee656953be9d}{Com\+Square\+::\+Cartridge\+::\+Cartridge}}, \mbox{\hyperlink{classComSquare_1_1APU_1_1IPL_1_1IPL_a75612164a9b3ed2ddc66f9fb7c316cc6}{Com\+Square\+::\+A\+P\+U\+::\+I\+P\+L\+::\+I\+PL}}, \mbox{\hyperlink{classComSquare_1_1Ram_1_1Ram_a668e5d7de4ec6a2e6a1b96a95cae08f9}{Com\+Square\+::\+Ram\+::\+Ram}}, \mbox{\hyperlink{classComSquare_1_1Memory_1_1RectangleShadow_ad6ae030bf406fb32b1d422f2ee5c9065}{Com\+Square\+::\+Memory\+::\+Rectangle\+Shadow}}, and \mbox{\hyperlink{classComSquare_1_1Memory_1_1MemoryShadow_a59ec35eddc26174d897e5ae01f574a59}{Com\+Square\+::\+Memory\+::\+Memory\+Shadow}}.
+
+\mbox{\Hypertarget{classComSquare_1_1Memory_1_1IMemory_a449bc89798a0b86028bb0413106514d9}\label{classComSquare_1_1Memory_1_1IMemory_a449bc89798a0b86028bb0413106514d9}} 
+\index{ComSquare::Memory::IMemory@{ComSquare::Memory::IMemory}!write@{write}}
+\index{write@{write}!ComSquare::Memory::IMemory@{ComSquare::Memory::IMemory}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily virtual void Com\+Square\+::\+Memory\+::\+I\+Memory\+::write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{addr,  }\item[{uint8\+\_\+t}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Write data to this component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & The local address to write data (0x0 should refer to the first byte of this component). \\
+\hline
+{\em data} & The new data to write. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em This} & function should thrown an \mbox{\hyperlink{classComSquare_1_1InvalidAddress}{Invalid\+Address}} for address that are not mapped to the component. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{classComSquare_1_1CPU_1_1CPU_a98d7a910393934e63f4ea479cea49f2e}{Com\+Square\+::\+C\+P\+U\+::\+C\+PU}}, \mbox{\hyperlink{classComSquare_1_1PPU_1_1PPU_aaf2261c0ef235d3181b038355b97cbe3}{Com\+Square\+::\+P\+P\+U\+::\+P\+PU}}, \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_ab77224524520cbad442e89f3663cf67f}{Com\+Square\+::\+A\+P\+U\+::\+A\+PU}}, \mbox{\hyperlink{classComSquare_1_1Cartridge_1_1Cartridge_aa30c32b23035b94f67063e06ab5759bc}{Com\+Square\+::\+Cartridge\+::\+Cartridge}}, \mbox{\hyperlink{classComSquare_1_1APU_1_1IPL_1_1IPL_a55b7a5d487ce206ee3a42255c67a3258}{Com\+Square\+::\+A\+P\+U\+::\+I\+P\+L\+::\+I\+PL}}, \mbox{\hyperlink{classComSquare_1_1Ram_1_1Ram_a0f42b342ebf151574c1e523719f9cf52}{Com\+Square\+::\+Ram\+::\+Ram}}, \mbox{\hyperlink{classComSquare_1_1Memory_1_1RectangleShadow_abd2c3a785eb5c43249965650d8b53574}{Com\+Square\+::\+Memory\+::\+Rectangle\+Shadow}}, and \mbox{\hyperlink{classComSquare_1_1Memory_1_1MemoryShadow_a885d4559319980e9e5b706f7fe4c3f49}{Com\+Square\+::\+Memory\+::\+Memory\+Shadow}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+sources/\+Memory/\mbox{\hyperlink{IMemory_8hpp}{I\+Memory.\+hpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,24 @@
+<map id="sources/CPU" name="sources/CPU">
+<area shape="rect" id="node2" href="dir_a27aee9ec8c7af1c7285a99fc42da75a.html" title="DMA" alt="" coords="139,159,211,207"/>
+<area shape="rect" id="edge4-headlabel" href="dir_000007_000008.html" title="1" alt="" coords="187,135,197,150"/>
+<area shape="rect" id="node4" href="dir_5cb6e1a8c8be2c39561c895666c60a3e.html" title="Models" alt="" coords="88,351,160,399"/>
+<area shape="rect" id="edge5-headlabel" href="dir_000007_000014.html" title="5" alt="" coords="119,324,129,338"/>
+<area shape="rect" id="node5" href="dir_acbfe30a39643d3dad4cea6c4be60bc9.html" title="Cartridge" alt="" coords="285,159,368,207"/>
+<area shape="rect" id="edge6-headlabel" href="dir_000007_000006.html" title="1" alt="" coords="280,134,289,148"/>
+<area shape="rect" id="node6" href="dir_b6b0f0b7471b46e8c4cfc0f00c8af2f6.html" title="Memory" alt="" coords="213,255,289,303"/>
+<area shape="rect" id="edge7-headlabel" href="dir_000007_000013.html" title="3" alt="" coords="246,228,255,242"/>
+<area shape="rect" id="node7" href="dir_5da686cefd6752aaaa3bcabf1d868d88.html" title="Exceptions" alt="" coords="267,351,360,399"/>
+<area shape="rect" id="edge8-headlabel" href="dir_000007_000012.html" title="3" alt="" coords="346,333,355,348"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000008_000014.html" title="1" alt="" coords="138,328,148,342"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000008_000013.html" title="1" alt="" coords="223,228,232,242"/>
+<area shape="rect" id="edge3-headlabel" href="dir_000008_000012.html" title="1" alt="" coords="250,332,259,346"/>
+<area shape="rect" id="node3" href="dir_75fd8458c6fcd85e83cb5a93cdc747a2.html" title="Instructions" alt="" coords="37,63,136,111"/>
+<area shape="rect" id="edge12-headlabel" href="dir_000009_000014.html" title="1" alt="" coords="80,325,89,339"/>
+<area shape="rect" id="edge9-headlabel" href="dir_000006_000014.html" title="1" alt="" coords="175,367,184,381"/>
+<area shape="rect" id="edge10-headlabel" href="dir_000006_000013.html" title="2" alt="" coords="283,238,292,253"/>
+<area shape="rect" id="edge11-headlabel" href="dir_000006_000012.html" title="3" alt="" coords="338,331,347,345"/>
+<area shape="rect" id="edge13-headlabel" href="dir_000013_000014.html" title="4" alt="" coords="170,339,179,354"/>
+<area shape="rect" id="edge14-headlabel" href="dir_000013_000012.html" title="2" alt="" coords="290,323,300,338"/>
+<area shape="rect" id="clust2" href="dir_a65246f7a5288ee65248a0302198d58d.html" alt="" coords="27,52,243,217"/>
+<area shape="rect" id="clust1" href="dir_08d237fc27d4ecd563f71c5d52f2fecc.html" title="sources" alt="" coords="16,16,253,228"/>
+</map>

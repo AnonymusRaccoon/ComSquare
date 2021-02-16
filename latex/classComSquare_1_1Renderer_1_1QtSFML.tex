@@ -1,0 +1,228 @@
+\hypertarget{classComSquare_1_1Renderer_1_1QtSFML}{}\doxysection{Com\+Square\+::Renderer\+::Qt\+S\+F\+ML Class Reference}
+\label{classComSquare_1_1Renderer_1_1QtSFML}\index{ComSquare::Renderer::QtSFML@{ComSquare::Renderer::QtSFML}}
+
+
+A S\+F\+ML renderer inside a QT window.  
+
+
+
+
+{\ttfamily \#include $<$Qt\+S\+F\+M\+L.\+hpp$>$}
+
+
+
+Inheritance diagram for Com\+Square\+::Renderer\+::Qt\+S\+F\+ML\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{classComSquare_1_1Renderer_1_1QtSFML__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Com\+Square\+::Renderer\+::Qt\+S\+F\+ML\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{classComSquare_1_1Renderer_1_1QtSFML__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classComSquare_1_1Renderer_1_1QtSFML_a5f6ebfbc8d4773c3f273c6edacfab358}{create\+Window}} (\mbox{\hyperlink{classComSquare_1_1SNES}{S\+N\+ES}} \&snes, int max\+F\+PS) override
+\begin{DoxyCompactList}\small\item\em Use this function to create the window. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classComSquare_1_1Renderer_1_1QtSFML_aa059395452a7ec2dc51a04f2327844ff}{put\+Pixel}} (unsigned y, unsigned x, uint32\+\_\+t rgba) override
+\begin{DoxyCompactList}\small\item\em Add a pixel to the buffer to the coordinates x, y with the color rgba. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classComSquare_1_1Renderer_1_1QtSFML_ad2245d315557ce4e046093daf325c8f4}{draw\+Screen}} () override
+\begin{DoxyCompactList}\small\item\em This function doesn\textquotesingle{}t do anything because QT internally handle drawing to the screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classComSquare_1_1Renderer_1_1QtSFML_a309a72fe33323fe49717f8204ef79701}{play\+Audio}} (std\+::span$<$ int16\+\_\+t $>$ samples, uint64\+\_\+t sample\+Count) override
+\begin{DoxyCompactList}\small\item\em Playing all samples from buffer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classComSquare_1_1Renderer_1_1QtSFML_a040c0757bc2316cf1eea7e34e724f62b}{set\+Window\+Name}} (std\+::string \&new\+Window\+Name) override
+\begin{DoxyCompactList}\small\item\em Set a new name to the window, if there is already a name it will be overwrite. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classComSquare_1_1Renderer_1_1QtSFML_ad0001d986ef7f574c63b4642e7254c30}{Qt\+S\+F\+ML}} (unsigned int height, unsigned int width)
+\begin{DoxyCompactList}\small\item\em Constructor that return a S\+F\+ML renderer inside a QT window. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classComSquare_1_1Renderer_1_1QtSFML_ad5ebfe5516b5d9996a0d3b0fdfb339ce}{Qt\+S\+F\+ML}} (const \mbox{\hyperlink{classComSquare_1_1Renderer_1_1QtSFML}{Qt\+S\+F\+ML}} \&)=delete
+\item 
+\mbox{\hyperlink{classComSquare_1_1Renderer_1_1QtSFML}{Qt\+S\+F\+ML}} \& \mbox{\hyperlink{classComSquare_1_1Renderer_1_1QtSFML_a95c98a2b780ac351f83cddf34da1c3d6}{operator=}} (const \mbox{\hyperlink{classComSquare_1_1Renderer_1_1QtSFML}{Qt\+S\+F\+ML}} \&)=delete
+\item 
+\mbox{\hyperlink{classComSquare_1_1Renderer_1_1QtSFML_aef6f42e5c947396fc5b43829435f849e}{$\sim$\+Qt\+S\+F\+ML}} ()=default
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Main\+Window \mbox{\hyperlink{classComSquare_1_1Renderer_1_1QtSFML_a3cf26f2b9a30faeda36466e6efdd3629}{\+\_\+window}}
+\begin{DoxyCompactList}\small\item\em The main window that the app reside on. \end{DoxyCompactList}\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classComSquare_1_1Renderer_1_1QtFullSFML}{Qt\+Full\+S\+F\+ML}} $>$ \mbox{\hyperlink{classComSquare_1_1Renderer_1_1QtSFML_a98ca74f9fb450d9e918f9e00d2a12076}{\+\_\+sf\+Widget}} = nullptr
+\begin{DoxyCompactList}\small\item\em The S\+F\+ML widget. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A S\+F\+ML renderer inside a QT window. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classComSquare_1_1Renderer_1_1QtSFML_ad0001d986ef7f574c63b4642e7254c30}\label{classComSquare_1_1Renderer_1_1QtSFML_ad0001d986ef7f574c63b4642e7254c30}} 
+\index{ComSquare::Renderer::QtSFML@{ComSquare::Renderer::QtSFML}!QtSFML@{QtSFML}}
+\index{QtSFML@{QtSFML}!ComSquare::Renderer::QtSFML@{ComSquare::Renderer::QtSFML}}
+\doxysubsubsection{\texorpdfstring{QtSFML()}{QtSFML()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Com\+Square\+::\+Renderer\+::\+Qt\+S\+F\+M\+L\+::\+Qt\+S\+F\+ML (\begin{DoxyParamCaption}\item[{unsigned int}]{height,  }\item[{unsigned int}]{width }\end{DoxyParamCaption})}
+
+
+
+Constructor that return a S\+F\+ML renderer inside a QT window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em height} & \+\_\+height of the window. \\
+\hline
+{\em width} & \+\_\+width of the window. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classComSquare_1_1Renderer_1_1QtSFML_ad5ebfe5516b5d9996a0d3b0fdfb339ce}\label{classComSquare_1_1Renderer_1_1QtSFML_ad5ebfe5516b5d9996a0d3b0fdfb339ce}} 
+\index{ComSquare::Renderer::QtSFML@{ComSquare::Renderer::QtSFML}!QtSFML@{QtSFML}}
+\index{QtSFML@{QtSFML}!ComSquare::Renderer::QtSFML@{ComSquare::Renderer::QtSFML}}
+\doxysubsubsection{\texorpdfstring{QtSFML()}{QtSFML()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Com\+Square\+::\+Renderer\+::\+Qt\+S\+F\+M\+L\+::\+Qt\+S\+F\+ML (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classComSquare_1_1Renderer_1_1QtSFML}{Qt\+S\+F\+ML}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classComSquare_1_1Renderer_1_1QtSFML_aef6f42e5c947396fc5b43829435f849e}\label{classComSquare_1_1Renderer_1_1QtSFML_aef6f42e5c947396fc5b43829435f849e}} 
+\index{ComSquare::Renderer::QtSFML@{ComSquare::Renderer::QtSFML}!````~QtSFML@{$\sim$QtSFML}}
+\index{````~QtSFML@{$\sim$QtSFML}!ComSquare::Renderer::QtSFML@{ComSquare::Renderer::QtSFML}}
+\doxysubsubsection{\texorpdfstring{$\sim$QtSFML()}{~QtSFML()}}
+{\footnotesize\ttfamily Com\+Square\+::\+Renderer\+::\+Qt\+S\+F\+M\+L\+::$\sim$\+Qt\+S\+F\+ML (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classComSquare_1_1Renderer_1_1QtSFML_a5f6ebfbc8d4773c3f273c6edacfab358}\label{classComSquare_1_1Renderer_1_1QtSFML_a5f6ebfbc8d4773c3f273c6edacfab358}} 
+\index{ComSquare::Renderer::QtSFML@{ComSquare::Renderer::QtSFML}!createWindow@{createWindow}}
+\index{createWindow@{createWindow}!ComSquare::Renderer::QtSFML@{ComSquare::Renderer::QtSFML}}
+\doxysubsubsection{\texorpdfstring{createWindow()}{createWindow()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+Renderer\+::\+Qt\+S\+F\+M\+L\+::create\+Window (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classComSquare_1_1SNES}{S\+N\+ES}} \&}]{snes,  }\item[{int}]{max\+F\+PS }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Use this function to create the window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em max\+F\+PS} & The number of F\+PS you aim to run on. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classComSquare_1_1Renderer_1_1IRenderer_a74de38e22e1e6f2571d2893c23e7d8eb}{Com\+Square\+::\+Renderer\+::\+I\+Renderer}}.
+
+\mbox{\Hypertarget{classComSquare_1_1Renderer_1_1QtSFML_ad2245d315557ce4e046093daf325c8f4}\label{classComSquare_1_1Renderer_1_1QtSFML_ad2245d315557ce4e046093daf325c8f4}} 
+\index{ComSquare::Renderer::QtSFML@{ComSquare::Renderer::QtSFML}!drawScreen@{drawScreen}}
+\index{drawScreen@{drawScreen}!ComSquare::Renderer::QtSFML@{ComSquare::Renderer::QtSFML}}
+\doxysubsubsection{\texorpdfstring{drawScreen()}{drawScreen()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+Renderer\+::\+Qt\+S\+F\+M\+L\+::draw\+Screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+This function doesn\textquotesingle{}t do anything because QT internally handle drawing to the screen. 
+
+
+
+Implements \mbox{\hyperlink{classComSquare_1_1Renderer_1_1IRenderer_a371328d98efeded3a12adf92267b1287}{Com\+Square\+::\+Renderer\+::\+I\+Renderer}}.
+
+\mbox{\Hypertarget{classComSquare_1_1Renderer_1_1QtSFML_a95c98a2b780ac351f83cddf34da1c3d6}\label{classComSquare_1_1Renderer_1_1QtSFML_a95c98a2b780ac351f83cddf34da1c3d6}} 
+\index{ComSquare::Renderer::QtSFML@{ComSquare::Renderer::QtSFML}!operator=@{operator=}}
+\index{operator=@{operator=}!ComSquare::Renderer::QtSFML@{ComSquare::Renderer::QtSFML}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classComSquare_1_1Renderer_1_1QtSFML}{Qt\+S\+F\+ML}}\& Com\+Square\+::\+Renderer\+::\+Qt\+S\+F\+M\+L\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classComSquare_1_1Renderer_1_1QtSFML}{Qt\+S\+F\+ML}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classComSquare_1_1Renderer_1_1QtSFML_a309a72fe33323fe49717f8204ef79701}\label{classComSquare_1_1Renderer_1_1QtSFML_a309a72fe33323fe49717f8204ef79701}} 
+\index{ComSquare::Renderer::QtSFML@{ComSquare::Renderer::QtSFML}!playAudio@{playAudio}}
+\index{playAudio@{playAudio}!ComSquare::Renderer::QtSFML@{ComSquare::Renderer::QtSFML}}
+\doxysubsubsection{\texorpdfstring{playAudio()}{playAudio()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+Renderer\+::\+Qt\+S\+F\+M\+L\+::play\+Audio (\begin{DoxyParamCaption}\item[{std\+::span$<$ int16\+\_\+t $>$}]{samples,  }\item[{uint64\+\_\+t}]{sample\+Count }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Playing all samples from buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em samples} & Buffer containing samples \\
+\hline
+{\em sample\+Count} & number of samples inside buffer \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classComSquare_1_1Renderer_1_1IRenderer_a34910920e0ed52a3f424c38952a21046}{Com\+Square\+::\+Renderer\+::\+I\+Renderer}}.
+
+\mbox{\Hypertarget{classComSquare_1_1Renderer_1_1QtSFML_aa059395452a7ec2dc51a04f2327844ff}\label{classComSquare_1_1Renderer_1_1QtSFML_aa059395452a7ec2dc51a04f2327844ff}} 
+\index{ComSquare::Renderer::QtSFML@{ComSquare::Renderer::QtSFML}!putPixel@{putPixel}}
+\index{putPixel@{putPixel}!ComSquare::Renderer::QtSFML@{ComSquare::Renderer::QtSFML}}
+\doxysubsubsection{\texorpdfstring{putPixel()}{putPixel()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+Renderer\+::\+Qt\+S\+F\+M\+L\+::put\+Pixel (\begin{DoxyParamCaption}\item[{unsigned}]{y,  }\item[{unsigned}]{x,  }\item[{uint32\+\_\+t}]{rgba }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Add a pixel to the buffer to the coordinates x, y with the color rgba. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em X} & horizontal index. \\
+\hline
+{\em Y} & vertical index. \\
+\hline
+{\em rgba} & The color of the pixel. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classComSquare_1_1Renderer_1_1IRenderer_a87c1d5ed8e9616e7d6bebdc8ee9232ef}{Com\+Square\+::\+Renderer\+::\+I\+Renderer}}.
+
+\mbox{\Hypertarget{classComSquare_1_1Renderer_1_1QtSFML_a040c0757bc2316cf1eea7e34e724f62b}\label{classComSquare_1_1Renderer_1_1QtSFML_a040c0757bc2316cf1eea7e34e724f62b}} 
+\index{ComSquare::Renderer::QtSFML@{ComSquare::Renderer::QtSFML}!setWindowName@{setWindowName}}
+\index{setWindowName@{setWindowName}!ComSquare::Renderer::QtSFML@{ComSquare::Renderer::QtSFML}}
+\doxysubsubsection{\texorpdfstring{setWindowName()}{setWindowName()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+Renderer\+::\+Qt\+S\+F\+M\+L\+::set\+Window\+Name (\begin{DoxyParamCaption}\item[{std\+::string \&}]{new\+Window\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Set a new name to the window, if there is already a name it will be overwrite. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Window\+Name} & new title for the window. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classComSquare_1_1Renderer_1_1IRenderer_ae7039e04cbdbfcb6390486616cb36aaf}{Com\+Square\+::\+Renderer\+::\+I\+Renderer}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classComSquare_1_1Renderer_1_1QtSFML_a98ca74f9fb450d9e918f9e00d2a12076}\label{classComSquare_1_1Renderer_1_1QtSFML_a98ca74f9fb450d9e918f9e00d2a12076}} 
+\index{ComSquare::Renderer::QtSFML@{ComSquare::Renderer::QtSFML}!\_sfWidget@{\_sfWidget}}
+\index{\_sfWidget@{\_sfWidget}!ComSquare::Renderer::QtSFML@{ComSquare::Renderer::QtSFML}}
+\doxysubsubsection{\texorpdfstring{\_sfWidget}{\_sfWidget}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{classComSquare_1_1Renderer_1_1QtFullSFML}{Qt\+Full\+S\+F\+ML}}$>$ Com\+Square\+::\+Renderer\+::\+Qt\+S\+F\+M\+L\+::\+\_\+sf\+Widget = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The S\+F\+ML widget. 
+
+\mbox{\Hypertarget{classComSquare_1_1Renderer_1_1QtSFML_a3cf26f2b9a30faeda36466e6efdd3629}\label{classComSquare_1_1Renderer_1_1QtSFML_a3cf26f2b9a30faeda36466e6efdd3629}} 
+\index{ComSquare::Renderer::QtSFML@{ComSquare::Renderer::QtSFML}!\_window@{\_window}}
+\index{\_window@{\_window}!ComSquare::Renderer::QtSFML@{ComSquare::Renderer::QtSFML}}
+\doxysubsubsection{\texorpdfstring{\_window}{\_window}}
+{\footnotesize\ttfamily Q\+Main\+Window Com\+Square\+::\+Renderer\+::\+Qt\+S\+F\+M\+L\+::\+\_\+window\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The main window that the app reside on. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+sources/\+Renderer/\+Qt\+Renderer/\mbox{\hyperlink{QtSFML_8hpp}{Qt\+S\+F\+M\+L.\+hpp}}\item 
+sources/\+Renderer/\+Qt\+Renderer/\mbox{\hyperlink{QtSFML_8cpp}{Qt\+S\+F\+M\+L.\+cpp}}\end{DoxyCompactItemize}

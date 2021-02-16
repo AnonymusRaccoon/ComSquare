@@ -1,0 +1,143 @@
+\hypertarget{classDisassemblyModel}{}\doxysection{Disassembly\+Model Class Reference}
+\label{classDisassemblyModel}\index{DisassemblyModel@{DisassemblyModel}}
+
+
+The qt model that show the disassembly.  
+
+
+
+
+{\ttfamily \#include $<$C\+P\+U\+Debug.\+hpp$>$}
+
+
+
+Inheritance diagram for Disassembly\+Model\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{classDisassemblyModel__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Disassembly\+Model\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classDisassemblyModel__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDisassemblyModel_adadcc4b0297749475d919a89d67ca7a9}{Disassembly\+Model}} (\mbox{\hyperlink{classComSquare_1_1Debugger_1_1CPUDebug}{Com\+Square\+::\+Debugger\+::\+C\+P\+U\+Debug}} \&cpu)
+\item 
+\mbox{\hyperlink{classDisassemblyModel_a611f9dce7186fa94d7ea1d30266fbde3}{Disassembly\+Model}} (const \mbox{\hyperlink{classDisassemblyModel}{Disassembly\+Model}} \&)=delete
+\item 
+const \mbox{\hyperlink{classDisassemblyModel}{Disassembly\+Model}} \& \mbox{\hyperlink{classDisassemblyModel_a0d82f3e1242d23d36f044e112b2d2086}{operator=}} (const \mbox{\hyperlink{classDisassemblyModel}{Disassembly\+Model}} \&)=delete
+\item 
+\mbox{\hyperlink{classDisassemblyModel_ad0d68d6cf9dcd429f2df7f474b124200}{$\sim$\+Disassembly\+Model}} () override=default
+\item 
+int \mbox{\hyperlink{classDisassemblyModel_a197a29568620244803610a085ef2c0db}{row\+Count}} (const Q\+Model\+Index \&parent) const override
+\begin{DoxyCompactList}\small\item\em The number of row the table has. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classDisassemblyModel_ada2ced57ef2580e20b402563e4ef44e0}{column\+Count}} (const Q\+Model\+Index \&parent) const override
+\begin{DoxyCompactList}\small\item\em The number of column the table has. \end{DoxyCompactList}\item 
+Q\+Variant \mbox{\hyperlink{classDisassemblyModel_a2ca8349830a8a3a11d0fdc11c8ec7f30}{data}} (const Q\+Model\+Index \&index, int role) const override
+\begin{DoxyCompactList}\small\item\em Return a data representing the table cell. \end{DoxyCompactList}\item 
+Q\+Variant \mbox{\hyperlink{classDisassemblyModel_a26dbe9047be8315395ba0900d24018c0}{header\+Data}} (int section, Qt\+::\+Orientation orientation, int role) const override
+\begin{DoxyCompactList}\small\item\em Override the headers to use hex values. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classComSquare_1_1Debugger_1_1CPUDebug}{Com\+Square\+::\+Debugger\+::\+C\+P\+U\+Debug}} \& \mbox{\hyperlink{classDisassemblyModel_a9d179945d194aba2d899940612a45fa0}{\+\_\+cpu}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The qt model that show the disassembly. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDisassemblyModel_adadcc4b0297749475d919a89d67ca7a9}\label{classDisassemblyModel_adadcc4b0297749475d919a89d67ca7a9}} 
+\index{DisassemblyModel@{DisassemblyModel}!DisassemblyModel@{DisassemblyModel}}
+\index{DisassemblyModel@{DisassemblyModel}!DisassemblyModel@{DisassemblyModel}}
+\doxysubsubsection{\texorpdfstring{DisassemblyModel()}{DisassemblyModel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Disassembly\+Model\+::\+Disassembly\+Model (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classComSquare_1_1Debugger_1_1CPUDebug}{Com\+Square\+::\+Debugger\+::\+C\+P\+U\+Debug}} \&}]{cpu }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{classDisassemblyModel_a611f9dce7186fa94d7ea1d30266fbde3}\label{classDisassemblyModel_a611f9dce7186fa94d7ea1d30266fbde3}} 
+\index{DisassemblyModel@{DisassemblyModel}!DisassemblyModel@{DisassemblyModel}}
+\index{DisassemblyModel@{DisassemblyModel}!DisassemblyModel@{DisassemblyModel}}
+\doxysubsubsection{\texorpdfstring{DisassemblyModel()}{DisassemblyModel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Disassembly\+Model\+::\+Disassembly\+Model (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classDisassemblyModel}{Disassembly\+Model}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classDisassemblyModel_ad0d68d6cf9dcd429f2df7f474b124200}\label{classDisassemblyModel_ad0d68d6cf9dcd429f2df7f474b124200}} 
+\index{DisassemblyModel@{DisassemblyModel}!````~DisassemblyModel@{$\sim$DisassemblyModel}}
+\index{````~DisassemblyModel@{$\sim$DisassemblyModel}!DisassemblyModel@{DisassemblyModel}}
+\doxysubsubsection{\texorpdfstring{$\sim$DisassemblyModel()}{~DisassemblyModel()}}
+{\footnotesize\ttfamily Disassembly\+Model\+::$\sim$\+Disassembly\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classDisassemblyModel_ada2ced57ef2580e20b402563e4ef44e0}\label{classDisassemblyModel_ada2ced57ef2580e20b402563e4ef44e0}} 
+\index{DisassemblyModel@{DisassemblyModel}!columnCount@{columnCount}}
+\index{columnCount@{columnCount}!DisassemblyModel@{DisassemblyModel}}
+\doxysubsubsection{\texorpdfstring{columnCount()}{columnCount()}}
+{\footnotesize\ttfamily int Disassembly\+Model\+::column\+Count (\begin{DoxyParamCaption}\item[{const Q\+Model\+Index \&}]{parent }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+The number of column the table has. 
+
+\mbox{\Hypertarget{classDisassemblyModel_a2ca8349830a8a3a11d0fdc11c8ec7f30}\label{classDisassemblyModel_a2ca8349830a8a3a11d0fdc11c8ec7f30}} 
+\index{DisassemblyModel@{DisassemblyModel}!data@{data}}
+\index{data@{data}!DisassemblyModel@{DisassemblyModel}}
+\doxysubsubsection{\texorpdfstring{data()}{data()}}
+{\footnotesize\ttfamily Q\+Variant Disassembly\+Model\+::data (\begin{DoxyParamCaption}\item[{const Q\+Model\+Index \&}]{index,  }\item[{int}]{role }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Return a data representing the table cell. 
+
+\mbox{\Hypertarget{classDisassemblyModel_a26dbe9047be8315395ba0900d24018c0}\label{classDisassemblyModel_a26dbe9047be8315395ba0900d24018c0}} 
+\index{DisassemblyModel@{DisassemblyModel}!headerData@{headerData}}
+\index{headerData@{headerData}!DisassemblyModel@{DisassemblyModel}}
+\doxysubsubsection{\texorpdfstring{headerData()}{headerData()}}
+{\footnotesize\ttfamily Q\+Variant Disassembly\+Model\+::header\+Data (\begin{DoxyParamCaption}\item[{int}]{section,  }\item[{Qt\+::\+Orientation}]{orientation,  }\item[{int}]{role }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Override the headers to use hex values. 
+
+\mbox{\Hypertarget{classDisassemblyModel_a0d82f3e1242d23d36f044e112b2d2086}\label{classDisassemblyModel_a0d82f3e1242d23d36f044e112b2d2086}} 
+\index{DisassemblyModel@{DisassemblyModel}!operator=@{operator=}}
+\index{operator=@{operator=}!DisassemblyModel@{DisassemblyModel}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classDisassemblyModel}{Disassembly\+Model}}\& Disassembly\+Model\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classDisassemblyModel}{Disassembly\+Model}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classDisassemblyModel_a197a29568620244803610a085ef2c0db}\label{classDisassemblyModel_a197a29568620244803610a085ef2c0db}} 
+\index{DisassemblyModel@{DisassemblyModel}!rowCount@{rowCount}}
+\index{rowCount@{rowCount}!DisassemblyModel@{DisassemblyModel}}
+\doxysubsubsection{\texorpdfstring{rowCount()}{rowCount()}}
+{\footnotesize\ttfamily int Disassembly\+Model\+::row\+Count (\begin{DoxyParamCaption}\item[{const Q\+Model\+Index \&}]{parent }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+The number of row the table has. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classDisassemblyModel_a9d179945d194aba2d899940612a45fa0}\label{classDisassemblyModel_a9d179945d194aba2d899940612a45fa0}} 
+\index{DisassemblyModel@{DisassemblyModel}!\_cpu@{\_cpu}}
+\index{\_cpu@{\_cpu}!DisassemblyModel@{DisassemblyModel}}
+\doxysubsubsection{\texorpdfstring{\_cpu}{\_cpu}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classComSquare_1_1Debugger_1_1CPUDebug}{Com\+Square\+::\+Debugger\+::\+C\+P\+U\+Debug}}\& Disassembly\+Model\+::\+\_\+cpu\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+sources/\+Debugger/\+C\+P\+U/\mbox{\hyperlink{CPUDebug_8hpp}{C\+P\+U\+Debug.\+hpp}}\item 
+sources/\+Debugger/\+C\+P\+U/\mbox{\hyperlink{CPUDebug_8cpp}{C\+P\+U\+Debug.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,54 @@
+\hypertarget{namespaceComSquare_1_1Cartridge}{}\doxysection{Com\+Square\+::Cartridge Namespace Reference}
+\label{namespaceComSquare_1_1Cartridge}\index{ComSquare::Cartridge@{ComSquare::Cartridge}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classComSquare_1_1Cartridge_1_1Cartridge}{Cartridge}}
+\begin{DoxyCompactList}\small\item\em Contains the rom\textquotesingle{}s memory/instructions. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structComSquare_1_1Cartridge_1_1Header}{Header}}
+\item 
+struct \mbox{\hyperlink{structComSquare_1_1Cartridge_1_1InterruptVectors}{Interrupt\+Vectors}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespaceComSquare_1_1Cartridge_a61c1e80050c388d76fb687b129ed8645}{Mapping\+Mode}} \{ \newline
+\mbox{\hyperlink{namespaceComSquare_1_1Cartridge_a61c1e80050c388d76fb687b129ed8645ab06a20291b736bc664f853b77d1f3846}{Lo\+Rom}} = 1u $<$$<$ 0u, 
+\mbox{\hyperlink{namespaceComSquare_1_1Cartridge_a61c1e80050c388d76fb687b129ed8645a461b515672aec1a8463cda3e05936cdd}{Hi\+Rom}} = 1u $<$$<$ 1u, 
+\mbox{\hyperlink{namespaceComSquare_1_1Cartridge_a61c1e80050c388d76fb687b129ed8645aa80ac825c99f61aada8b3cbd04952bb6}{Slow\+Rom}} = 1u $<$$<$ 2u, 
+\mbox{\hyperlink{namespaceComSquare_1_1Cartridge_a61c1e80050c388d76fb687b129ed8645ad5867d09b7b015f54e76780ef508bd64}{Fast\+Rom}} = 1u $<$$<$ 3u, 
+\newline
+\mbox{\hyperlink{namespaceComSquare_1_1Cartridge_a61c1e80050c388d76fb687b129ed8645a48571836eb7c4372c4c5501715a8641d}{Ex\+Rom}} = 1u $<$$<$ 4u
+ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{namespaceComSquare_1_1Cartridge_a61c1e80050c388d76fb687b129ed8645}\label{namespaceComSquare_1_1Cartridge_a61c1e80050c388d76fb687b129ed8645}} 
+\index{ComSquare::Cartridge@{ComSquare::Cartridge}!MappingMode@{MappingMode}}
+\index{MappingMode@{MappingMode}!ComSquare::Cartridge@{ComSquare::Cartridge}}
+\doxysubsubsection{\texorpdfstring{MappingMode}{MappingMode}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespaceComSquare_1_1Cartridge_a61c1e80050c388d76fb687b129ed8645}{Com\+Square\+::\+Cartridge\+::\+Mapping\+Mode}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LoRom@{LoRom}!ComSquare::Cartridge@{ComSquare::Cartridge}}\index{ComSquare::Cartridge@{ComSquare::Cartridge}!LoRom@{LoRom}}}\mbox{\Hypertarget{namespaceComSquare_1_1Cartridge_a61c1e80050c388d76fb687b129ed8645ab06a20291b736bc664f853b77d1f3846}\label{namespaceComSquare_1_1Cartridge_a61c1e80050c388d76fb687b129ed8645ab06a20291b736bc664f853b77d1f3846}} 
+Lo\+Rom&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{HiRom@{HiRom}!ComSquare::Cartridge@{ComSquare::Cartridge}}\index{ComSquare::Cartridge@{ComSquare::Cartridge}!HiRom@{HiRom}}}\mbox{\Hypertarget{namespaceComSquare_1_1Cartridge_a61c1e80050c388d76fb687b129ed8645a461b515672aec1a8463cda3e05936cdd}\label{namespaceComSquare_1_1Cartridge_a61c1e80050c388d76fb687b129ed8645a461b515672aec1a8463cda3e05936cdd}} 
+Hi\+Rom&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SlowRom@{SlowRom}!ComSquare::Cartridge@{ComSquare::Cartridge}}\index{ComSquare::Cartridge@{ComSquare::Cartridge}!SlowRom@{SlowRom}}}\mbox{\Hypertarget{namespaceComSquare_1_1Cartridge_a61c1e80050c388d76fb687b129ed8645aa80ac825c99f61aada8b3cbd04952bb6}\label{namespaceComSquare_1_1Cartridge_a61c1e80050c388d76fb687b129ed8645aa80ac825c99f61aada8b3cbd04952bb6}} 
+Slow\+Rom&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{FastRom@{FastRom}!ComSquare::Cartridge@{ComSquare::Cartridge}}\index{ComSquare::Cartridge@{ComSquare::Cartridge}!FastRom@{FastRom}}}\mbox{\Hypertarget{namespaceComSquare_1_1Cartridge_a61c1e80050c388d76fb687b129ed8645ad5867d09b7b015f54e76780ef508bd64}\label{namespaceComSquare_1_1Cartridge_a61c1e80050c388d76fb687b129ed8645ad5867d09b7b015f54e76780ef508bd64}} 
+Fast\+Rom&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ExRom@{ExRom}!ComSquare::Cartridge@{ComSquare::Cartridge}}\index{ComSquare::Cartridge@{ComSquare::Cartridge}!ExRom@{ExRom}}}\mbox{\Hypertarget{namespaceComSquare_1_1Cartridge_a61c1e80050c388d76fb687b129ed8645a48571836eb7c4372c4c5501715a8641d}\label{namespaceComSquare_1_1Cartridge_a61c1e80050c388d76fb687b129ed8645a48571836eb7c4372c4c5501715a8641d}} 
+Ex\+Rom&\\
+\hline
+
+\end{DoxyEnumFields}

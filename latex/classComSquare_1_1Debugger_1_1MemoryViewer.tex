@@ -1,0 +1,240 @@
+\hypertarget{classComSquare_1_1Debugger_1_1MemoryViewer}{}\doxysection{Com\+Square\+::Debugger\+::Memory\+Viewer Class Reference}
+\label{classComSquare_1_1Debugger_1_1MemoryViewer}\index{ComSquare::Debugger::MemoryViewer@{ComSquare::Debugger::MemoryViewer}}
+
+
+Class responsible of the \mbox{\hyperlink{namespaceComSquare_1_1Memory}{Memory}} Viewer.  
+
+
+
+
+{\ttfamily \#include $<$Memory\+Viewer.\+hpp$>$}
+
+
+
+Inheritance diagram for Com\+Square\+::Debugger\+::Memory\+Viewer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{classComSquare_1_1Debugger_1_1MemoryViewer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Com\+Square\+::Debugger\+::Memory\+Viewer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classComSquare_1_1Debugger_1_1MemoryViewer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classComSquare_1_1Debugger_1_1MemoryViewer_aee330f330f5cdd815f618b1d2b50fb6d}{disable\+Viewer}} ()
+\begin{DoxyCompactList}\small\item\em Called when the window is closed. Turn off the debugger. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+unsigned \mbox{\hyperlink{classComSquare_1_1Debugger_1_1MemoryViewer_a6270904d25ff46a1c6e38984cf73e597}{switch\+To\+Addr\+Tab}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} addr)
+\begin{DoxyCompactList}\small\item\em Select the memory tab corresponding to a 24 bit address (map the address via the bus). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classComSquare_1_1Debugger_1_1MemoryViewer_a054ece3e647ebf319173cf52b0e0fca5}{change\+Ram}} (int id)
+\begin{DoxyCompactList}\small\item\em Callback called when a memory tab is selected. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classComSquare_1_1Debugger_1_1MemoryViewer_a676c84c4462afb1be4bec8475fa8cf70}{goto\+Addr}} ()
+\begin{DoxyCompactList}\small\item\em Create a popup asking you where you want to jump to. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classComSquare_1_1Debugger_1_1MemoryViewer_ad9d66f6da85bdf3a28a32bd7a49aaff3}{goto\+Absolute\+Addr}} ()
+\begin{DoxyCompactList}\small\item\em Create a popup asking you where you want to jump to with the absolute mode selected. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classComSquare_1_1Debugger_1_1MemoryViewer_a0c243dd52310534b3d7368f51db1f19f}{focus}} ()
+\begin{DoxyCompactList}\small\item\em Focus the memory viewer\textquotesingle{}s window. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classComSquare_1_1Debugger_1_1MemoryViewer_ab514164838872559c23041a74c8f4452}{Memory\+Viewer}} (\mbox{\hyperlink{classComSquare_1_1SNES}{S\+N\+ES}} \&snes, \mbox{\hyperlink{classComSquare_1_1Memory_1_1MemoryBus}{Memory\+::\+Memory\+Bus}} \&bus)
+\item 
+\mbox{\hyperlink{classComSquare_1_1Debugger_1_1MemoryViewer_aa99eafea9f95db93dc47a528327c303b}{Memory\+Viewer}} (const \mbox{\hyperlink{classComSquare_1_1Debugger_1_1MemoryViewer}{Memory\+Viewer}} \&)=delete
+\item 
+\mbox{\hyperlink{classComSquare_1_1Debugger_1_1MemoryViewer}{Memory\+Viewer}} \& \mbox{\hyperlink{classComSquare_1_1Debugger_1_1MemoryViewer_a74f85cc6c22d0bd2942c38a29475be81}{operator=}} (const \mbox{\hyperlink{classComSquare_1_1Debugger_1_1MemoryViewer}{Memory\+Viewer}} \&)=delete
+\item 
+\mbox{\hyperlink{classComSquare_1_1Debugger_1_1MemoryViewer_a1ce6786a4d4790bd68d56b79c730ba7a}{$\sim$\+Memory\+Viewer}} () override=default
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classComSquare_1_1Debugger_1_1MemoryViewer_a8f1a71abc6bfb292582e2525dfcdea9a}{\+\_\+internal\+Goto}} (bool is\+Absolute)
+\begin{DoxyCompactList}\small\item\em Helper function to create the goto dialog. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classComSquare_1_1Debugger_1_1ClosableWindow}{Closable\+Window}}$<$ \mbox{\hyperlink{classComSquare_1_1Debugger_1_1MemoryViewer}{Memory\+Viewer}} $>$ $\ast$ \mbox{\hyperlink{classComSquare_1_1Debugger_1_1MemoryViewer_a079f8e9a21801611fd414a0566484f36}{\+\_\+window}}
+\begin{DoxyCompactList}\small\item\em The QT window for this debugger. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classComSquare_1_1SNES}{S\+N\+ES}} \& \mbox{\hyperlink{classComSquare_1_1Debugger_1_1MemoryViewer_a92cd8897c6d31cc298260b4379bdc7b1}{\+\_\+snes}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classComSquare_1_1SNES}{S\+N\+ES}} containing all rams to view. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classComSquare_1_1Memory_1_1MemoryBus}{Memory\+::\+Memory\+Bus}} \& \mbox{\hyperlink{classComSquare_1_1Debugger_1_1MemoryViewer_a71444a6383aed1d8b7872af94d5128d7}{\+\_\+bus}}
+\begin{DoxyCompactList}\small\item\em The memory bus used to get the view for a given address. \end{DoxyCompactList}\item 
+Ui\+::\+Ram\+View \mbox{\hyperlink{classComSquare_1_1Debugger_1_1MemoryViewer_a6619b08c39399b6a94c9c616814ccb37}{\+\_\+ui}}
+\begin{DoxyCompactList}\small\item\em The layout of the viewer. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMemoryViewerModel}{Memory\+Viewer\+Model}} \mbox{\hyperlink{classComSquare_1_1Debugger_1_1MemoryViewer_a3805d68747c5e5f96fcd2b053e3d8ca2}{\+\_\+model}}
+\begin{DoxyCompactList}\small\item\em The \mbox{\hyperlink{namespaceComSquare_1_1Ram}{Ram}} visualizer model for QT. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class responsible of the \mbox{\hyperlink{namespaceComSquare_1_1Memory}{Memory}} Viewer. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1MemoryViewer_ab514164838872559c23041a74c8f4452}\label{classComSquare_1_1Debugger_1_1MemoryViewer_ab514164838872559c23041a74c8f4452}} 
+\index{ComSquare::Debugger::MemoryViewer@{ComSquare::Debugger::MemoryViewer}!MemoryViewer@{MemoryViewer}}
+\index{MemoryViewer@{MemoryViewer}!ComSquare::Debugger::MemoryViewer@{ComSquare::Debugger::MemoryViewer}}
+\doxysubsubsection{\texorpdfstring{MemoryViewer()}{MemoryViewer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Com\+Square\+::\+Debugger\+::\+Memory\+Viewer\+::\+Memory\+Viewer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classComSquare_1_1SNES}{Com\+Square\+::\+S\+N\+ES}} \&}]{snes,  }\item[{\mbox{\hyperlink{classComSquare_1_1Memory_1_1MemoryBus}{Memory\+::\+Memory\+Bus}} \&}]{bus }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1MemoryViewer_aa99eafea9f95db93dc47a528327c303b}\label{classComSquare_1_1Debugger_1_1MemoryViewer_aa99eafea9f95db93dc47a528327c303b}} 
+\index{ComSquare::Debugger::MemoryViewer@{ComSquare::Debugger::MemoryViewer}!MemoryViewer@{MemoryViewer}}
+\index{MemoryViewer@{MemoryViewer}!ComSquare::Debugger::MemoryViewer@{ComSquare::Debugger::MemoryViewer}}
+\doxysubsubsection{\texorpdfstring{MemoryViewer()}{MemoryViewer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Com\+Square\+::\+Debugger\+::\+Memory\+Viewer\+::\+Memory\+Viewer (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classComSquare_1_1Debugger_1_1MemoryViewer}{Memory\+Viewer}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1MemoryViewer_a1ce6786a4d4790bd68d56b79c730ba7a}\label{classComSquare_1_1Debugger_1_1MemoryViewer_a1ce6786a4d4790bd68d56b79c730ba7a}} 
+\index{ComSquare::Debugger::MemoryViewer@{ComSquare::Debugger::MemoryViewer}!````~MemoryViewer@{$\sim$MemoryViewer}}
+\index{````~MemoryViewer@{$\sim$MemoryViewer}!ComSquare::Debugger::MemoryViewer@{ComSquare::Debugger::MemoryViewer}}
+\doxysubsubsection{\texorpdfstring{$\sim$MemoryViewer()}{~MemoryViewer()}}
+{\footnotesize\ttfamily Com\+Square\+::\+Debugger\+::\+Memory\+Viewer\+::$\sim$\+Memory\+Viewer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1MemoryViewer_a8f1a71abc6bfb292582e2525dfcdea9a}\label{classComSquare_1_1Debugger_1_1MemoryViewer_a8f1a71abc6bfb292582e2525dfcdea9a}} 
+\index{ComSquare::Debugger::MemoryViewer@{ComSquare::Debugger::MemoryViewer}!\_internalGoto@{\_internalGoto}}
+\index{\_internalGoto@{\_internalGoto}!ComSquare::Debugger::MemoryViewer@{ComSquare::Debugger::MemoryViewer}}
+\doxysubsubsection{\texorpdfstring{\_internalGoto()}{\_internalGoto()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+Debugger\+::\+Memory\+Viewer\+::\+\_\+internal\+Goto (\begin{DoxyParamCaption}\item[{bool}]{is\+Absolute }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Helper function to create the goto dialog. 
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1MemoryViewer_a054ece3e647ebf319173cf52b0e0fca5}\label{classComSquare_1_1Debugger_1_1MemoryViewer_a054ece3e647ebf319173cf52b0e0fca5}} 
+\index{ComSquare::Debugger::MemoryViewer@{ComSquare::Debugger::MemoryViewer}!changeRam@{changeRam}}
+\index{changeRam@{changeRam}!ComSquare::Debugger::MemoryViewer@{ComSquare::Debugger::MemoryViewer}}
+\doxysubsubsection{\texorpdfstring{changeRam()}{changeRam()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+Debugger\+::\+Memory\+Viewer\+::change\+Ram (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+Callback called when a memory tab is selected. 
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1MemoryViewer_aee330f330f5cdd815f618b1d2b50fb6d}\label{classComSquare_1_1Debugger_1_1MemoryViewer_aee330f330f5cdd815f618b1d2b50fb6d}} 
+\index{ComSquare::Debugger::MemoryViewer@{ComSquare::Debugger::MemoryViewer}!disableViewer@{disableViewer}}
+\index{disableViewer@{disableViewer}!ComSquare::Debugger::MemoryViewer@{ComSquare::Debugger::MemoryViewer}}
+\doxysubsubsection{\texorpdfstring{disableViewer}{disableViewer}}
+{\footnotesize\ttfamily void Com\+Square\+::\+Debugger\+::\+Memory\+Viewer\+::disable\+Viewer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Called when the window is closed. Turn off the debugger. 
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1MemoryViewer_a0c243dd52310534b3d7368f51db1f19f}\label{classComSquare_1_1Debugger_1_1MemoryViewer_a0c243dd52310534b3d7368f51db1f19f}} 
+\index{ComSquare::Debugger::MemoryViewer@{ComSquare::Debugger::MemoryViewer}!focus@{focus}}
+\index{focus@{focus}!ComSquare::Debugger::MemoryViewer@{ComSquare::Debugger::MemoryViewer}}
+\doxysubsubsection{\texorpdfstring{focus()}{focus()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+Debugger\+::\+Memory\+Viewer\+::focus (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Focus the memory viewer\textquotesingle{}s window. 
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1MemoryViewer_ad9d66f6da85bdf3a28a32bd7a49aaff3}\label{classComSquare_1_1Debugger_1_1MemoryViewer_ad9d66f6da85bdf3a28a32bd7a49aaff3}} 
+\index{ComSquare::Debugger::MemoryViewer@{ComSquare::Debugger::MemoryViewer}!gotoAbsoluteAddr@{gotoAbsoluteAddr}}
+\index{gotoAbsoluteAddr@{gotoAbsoluteAddr}!ComSquare::Debugger::MemoryViewer@{ComSquare::Debugger::MemoryViewer}}
+\doxysubsubsection{\texorpdfstring{gotoAbsoluteAddr()}{gotoAbsoluteAddr()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+Debugger\+::\+Memory\+Viewer\+::goto\+Absolute\+Addr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Create a popup asking you where you want to jump to with the absolute mode selected. 
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1MemoryViewer_a676c84c4462afb1be4bec8475fa8cf70}\label{classComSquare_1_1Debugger_1_1MemoryViewer_a676c84c4462afb1be4bec8475fa8cf70}} 
+\index{ComSquare::Debugger::MemoryViewer@{ComSquare::Debugger::MemoryViewer}!gotoAddr@{gotoAddr}}
+\index{gotoAddr@{gotoAddr}!ComSquare::Debugger::MemoryViewer@{ComSquare::Debugger::MemoryViewer}}
+\doxysubsubsection{\texorpdfstring{gotoAddr()}{gotoAddr()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+Debugger\+::\+Memory\+Viewer\+::goto\+Addr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Create a popup asking you where you want to jump to. 
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1MemoryViewer_a74f85cc6c22d0bd2942c38a29475be81}\label{classComSquare_1_1Debugger_1_1MemoryViewer_a74f85cc6c22d0bd2942c38a29475be81}} 
+\index{ComSquare::Debugger::MemoryViewer@{ComSquare::Debugger::MemoryViewer}!operator=@{operator=}}
+\index{operator=@{operator=}!ComSquare::Debugger::MemoryViewer@{ComSquare::Debugger::MemoryViewer}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classComSquare_1_1Debugger_1_1MemoryViewer}{Memory\+Viewer}}\& Com\+Square\+::\+Debugger\+::\+Memory\+Viewer\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classComSquare_1_1Debugger_1_1MemoryViewer}{Memory\+Viewer}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1MemoryViewer_a6270904d25ff46a1c6e38984cf73e597}\label{classComSquare_1_1Debugger_1_1MemoryViewer_a6270904d25ff46a1c6e38984cf73e597}} 
+\index{ComSquare::Debugger::MemoryViewer@{ComSquare::Debugger::MemoryViewer}!switchToAddrTab@{switchToAddrTab}}
+\index{switchToAddrTab@{switchToAddrTab}!ComSquare::Debugger::MemoryViewer@{ComSquare::Debugger::MemoryViewer}}
+\doxysubsubsection{\texorpdfstring{switchToAddrTab()}{switchToAddrTab()}}
+{\footnotesize\ttfamily unsigned Com\+Square\+::\+Debugger\+::\+Memory\+Viewer\+::switch\+To\+Addr\+Tab (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{addr }\end{DoxyParamCaption})}
+
+
+
+Select the memory tab corresponding to a 24 bit address (map the address via the bus). 
+
+\begin{DoxyReturn}{Returns}
+The address converted to the new tab\textquotesingle{}s locale space. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1MemoryViewer_a71444a6383aed1d8b7872af94d5128d7}\label{classComSquare_1_1Debugger_1_1MemoryViewer_a71444a6383aed1d8b7872af94d5128d7}} 
+\index{ComSquare::Debugger::MemoryViewer@{ComSquare::Debugger::MemoryViewer}!\_bus@{\_bus}}
+\index{\_bus@{\_bus}!ComSquare::Debugger::MemoryViewer@{ComSquare::Debugger::MemoryViewer}}
+\doxysubsubsection{\texorpdfstring{\_bus}{\_bus}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classComSquare_1_1Memory_1_1MemoryBus}{Memory\+::\+Memory\+Bus}}\& Com\+Square\+::\+Debugger\+::\+Memory\+Viewer\+::\+\_\+bus\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The memory bus used to get the view for a given address. 
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1MemoryViewer_a3805d68747c5e5f96fcd2b053e3d8ca2}\label{classComSquare_1_1Debugger_1_1MemoryViewer_a3805d68747c5e5f96fcd2b053e3d8ca2}} 
+\index{ComSquare::Debugger::MemoryViewer@{ComSquare::Debugger::MemoryViewer}!\_model@{\_model}}
+\index{\_model@{\_model}!ComSquare::Debugger::MemoryViewer@{ComSquare::Debugger::MemoryViewer}}
+\doxysubsubsection{\texorpdfstring{\_model}{\_model}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMemoryViewerModel}{Memory\+Viewer\+Model}} Com\+Square\+::\+Debugger\+::\+Memory\+Viewer\+::\+\_\+model\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The \mbox{\hyperlink{namespaceComSquare_1_1Ram}{Ram}} visualizer model for QT. 
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1MemoryViewer_a92cd8897c6d31cc298260b4379bdc7b1}\label{classComSquare_1_1Debugger_1_1MemoryViewer_a92cd8897c6d31cc298260b4379bdc7b1}} 
+\index{ComSquare::Debugger::MemoryViewer@{ComSquare::Debugger::MemoryViewer}!\_snes@{\_snes}}
+\index{\_snes@{\_snes}!ComSquare::Debugger::MemoryViewer@{ComSquare::Debugger::MemoryViewer}}
+\doxysubsubsection{\texorpdfstring{\_snes}{\_snes}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classComSquare_1_1SNES}{S\+N\+ES}}\& Com\+Square\+::\+Debugger\+::\+Memory\+Viewer\+::\+\_\+snes\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{classComSquare_1_1SNES}{S\+N\+ES}} containing all rams to view. 
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1MemoryViewer_a6619b08c39399b6a94c9c616814ccb37}\label{classComSquare_1_1Debugger_1_1MemoryViewer_a6619b08c39399b6a94c9c616814ccb37}} 
+\index{ComSquare::Debugger::MemoryViewer@{ComSquare::Debugger::MemoryViewer}!\_ui@{\_ui}}
+\index{\_ui@{\_ui}!ComSquare::Debugger::MemoryViewer@{ComSquare::Debugger::MemoryViewer}}
+\doxysubsubsection{\texorpdfstring{\_ui}{\_ui}}
+{\footnotesize\ttfamily Ui\+::\+Ram\+View Com\+Square\+::\+Debugger\+::\+Memory\+Viewer\+::\+\_\+ui\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The layout of the viewer. 
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1MemoryViewer_a079f8e9a21801611fd414a0566484f36}\label{classComSquare_1_1Debugger_1_1MemoryViewer_a079f8e9a21801611fd414a0566484f36}} 
+\index{ComSquare::Debugger::MemoryViewer@{ComSquare::Debugger::MemoryViewer}!\_window@{\_window}}
+\index{\_window@{\_window}!ComSquare::Debugger::MemoryViewer@{ComSquare::Debugger::MemoryViewer}}
+\doxysubsubsection{\texorpdfstring{\_window}{\_window}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classComSquare_1_1Debugger_1_1ClosableWindow}{Closable\+Window}}$<$\mbox{\hyperlink{classComSquare_1_1Debugger_1_1MemoryViewer}{Memory\+Viewer}}$>$$\ast$ Com\+Square\+::\+Debugger\+::\+Memory\+Viewer\+::\+\_\+window\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The QT window for this debugger. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+sources/\+Debugger/\mbox{\hyperlink{MemoryViewer_8hpp}{Memory\+Viewer.\+hpp}}\item 
+sources/\+Debugger/\mbox{\hyperlink{MemoryViewer_8cpp}{Memory\+Viewer.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,282 @@
+\hypertarget{classComSquare_1_1Debugger_1_1APUDebug}{}\doxysection{Com\+Square\+::Debugger\+::A\+P\+U\+Debug Class Reference}
+\label{classComSquare_1_1Debugger_1_1APUDebug}\index{ComSquare::Debugger::APUDebug@{ComSquare::Debugger::APUDebug}}
+
+
+{\ttfamily \#include $<$A\+P\+U\+Debug.\+hpp$>$}
+
+
+
+Inheritance diagram for Com\+Square\+::Debugger\+::A\+P\+U\+Debug\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classComSquare_1_1Debugger_1_1APUDebug__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Com\+Square\+::Debugger\+::A\+P\+U\+Debug\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classComSquare_1_1Debugger_1_1APUDebug__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classComSquare_1_1Debugger_1_1APUDebug_aab788c1876bf10a916d6f71480a72812}{pause}} ()
+\begin{DoxyCompactList}\small\item\em Pause/\+Resume the \mbox{\hyperlink{namespaceComSquare_1_1APU}{A\+PU}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classComSquare_1_1Debugger_1_1APUDebug_ad046c1d302e049170ac86a1fa3bb4140}{step}} ()
+\begin{DoxyCompactList}\small\item\em Step -\/ Execute a single instruction. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classComSquare_1_1Debugger_1_1APUDebug_a3e43bf684e6a63217fe488c7c3d96d62}{disable\+Debugger}} ()
+\begin{DoxyCompactList}\small\item\em Called when the window is closed. Turn off the debugger and revert to a basic \mbox{\hyperlink{namespaceComSquare_1_1APU}{A\+PU}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classComSquare_1_1Debugger_1_1APUDebug_a3618d3041a928a855649b9703b21a697}{A\+P\+U\+Debug}} (\mbox{\hyperlink{classComSquare_1_1APU_1_1APU}{Com\+Square\+::\+A\+P\+U\+::\+A\+PU}} \&apu, \mbox{\hyperlink{classComSquare_1_1SNES}{S\+N\+ES}} \&snes)
+\begin{DoxyCompactList}\small\item\em Convert a basic \mbox{\hyperlink{namespaceComSquare_1_1APU}{A\+PU}} to a debugging \mbox{\hyperlink{namespaceComSquare_1_1APU}{A\+PU}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classComSquare_1_1Debugger_1_1APUDebug_a6ee05853aba9605d9fb3a981effee382}{A\+P\+U\+Debug}} (const \mbox{\hyperlink{classComSquare_1_1Debugger_1_1APUDebug}{A\+P\+U\+Debug}} \&)=delete
+\item 
+\mbox{\hyperlink{classComSquare_1_1Debugger_1_1APUDebug}{A\+P\+U\+Debug}} \& \mbox{\hyperlink{classComSquare_1_1Debugger_1_1APUDebug_a3bef63c9edcf13a171da92e21581964c}{operator=}} (const \mbox{\hyperlink{classComSquare_1_1Debugger_1_1APUDebug}{A\+P\+U\+Debug}} \&)=delete
+\item 
+\mbox{\hyperlink{classComSquare_1_1Debugger_1_1APUDebug_af649bbed87c5c645618261cc29474ad1}{$\sim$\+A\+P\+U\+Debug}} () override=default
+\item 
+void \mbox{\hyperlink{classComSquare_1_1Debugger_1_1APUDebug_ab7efad3a0f6bde7c5ef1e0f1d19693b3}{update}} (unsigned cycles) override
+\begin{DoxyCompactList}\small\item\em Override the apu\textquotesingle{}s update to disable debugging. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classComSquare_1_1Debugger_1_1APUDebug_a35636fa80ceee122bd117fb816ed997c}{is\+Debugger}} () const override
+\begin{DoxyCompactList}\small\item\em Return true if the \mbox{\hyperlink{namespaceComSquare_1_1CPU}{C\+PU}} is overloaded with debugging features. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classComSquare_1_1Debugger_1_1APUDebug_a8c19b4b9dd671876a2ef22fa485753f6}{focus}} ()
+\begin{DoxyCompactList}\small\item\em Focus the debugger\textquotesingle{}s window. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classComSquare_1_1Debugger_1_1APUDebug_a34f010c713bde2f959fc5f363d7f4721}{\+\_\+update\+Panel}} ()
+\begin{DoxyCompactList}\small\item\em Update the debugger panel values. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classComSquare_1_1Debugger_1_1APUDebug_a39d1b83d0644b5cf994f1604a818907f}{\+\_\+get\+P\+S\+W\+String}} ()
+\begin{DoxyCompactList}\small\item\em Convert \mbox{\hyperlink{namespaceComSquare_1_1CPU}{C\+PU}} \mbox{\hyperlink{namespaceComSquare_1_1APU}{A\+PU}} flags to a string. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classComSquare_1_1Debugger_1_1APUDebug_afa92b6493732373cdd5818cc28fe1be1}{\+\_\+execute\+Instruction}} () override
+\begin{DoxyCompactList}\small\item\em Replace original \+\_\+execute\+Instruction to write to the logger. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classComSquare_1_1Debugger_1_1APUDebug_aa3cb6db480b64b0b1c925516663ced29}{\+\_\+get\+Instruction\+String}} ()
+\begin{DoxyCompactList}\small\item\em return the mnemonic of the current instruction done. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classComSquare_1_1Debugger_1_1ClosableWindow}{Closable\+Window}}$<$ \mbox{\hyperlink{classComSquare_1_1Debugger_1_1APUDebug}{A\+P\+U\+Debug}} $>$ $\ast$ \mbox{\hyperlink{classComSquare_1_1Debugger_1_1APUDebug_a2956a9895cd17f838648e21f1ad50d4e}{\+\_\+window}}
+\begin{DoxyCompactList}\small\item\em The QT window for this debugger. \end{DoxyCompactList}\item 
+Ui\+::\+A\+P\+U\+View \mbox{\hyperlink{classComSquare_1_1Debugger_1_1APUDebug_a2effcb6a150569850b366e1490caffab}{\+\_\+ui}}
+\begin{DoxyCompactList}\small\item\em A widget that contain the whole UI. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classComSquare_1_1Debugger_1_1APUDebug_a4ed99358ddbd15276ba12ed186ec1967}{\+\_\+is\+Paused}} = true
+\begin{DoxyCompactList}\small\item\em If this is set to true, the execution of the \mbox{\hyperlink{namespaceComSquare_1_1APU}{A\+PU}} will be paused. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classComSquare_1_1Debugger_1_1APUDebug_a31de01e22179361d4af8de5e16ef6ed6}{\+\_\+is\+Stepping}} = false
+\begin{DoxyCompactList}\small\item\em If this is set to true, the \mbox{\hyperlink{namespaceComSquare_1_1APU}{A\+PU}} will execute one instruction and pause itself. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classComSquare_1_1SNES}{S\+N\+ES}} \& \mbox{\hyperlink{classComSquare_1_1Debugger_1_1APUDebug_a1a594ad438e441e3e87fbaf0b77d942e}{\+\_\+snes}}
+\begin{DoxyCompactList}\small\item\em A reference to the snes (to disable the debugger). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1APUDebug_a3618d3041a928a855649b9703b21a697}\label{classComSquare_1_1Debugger_1_1APUDebug_a3618d3041a928a855649b9703b21a697}} 
+\index{ComSquare::Debugger::APUDebug@{ComSquare::Debugger::APUDebug}!APUDebug@{APUDebug}}
+\index{APUDebug@{APUDebug}!ComSquare::Debugger::APUDebug@{ComSquare::Debugger::APUDebug}}
+\doxysubsubsection{\texorpdfstring{APUDebug()}{APUDebug()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Com\+Square\+::\+Debugger\+::\+A\+P\+U\+Debug\+::\+A\+P\+U\+Debug (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classComSquare_1_1APU_1_1APU}{Com\+Square\+::\+A\+P\+U\+::\+A\+PU}} \&}]{apu,  }\item[{\mbox{\hyperlink{classComSquare_1_1SNES}{S\+N\+ES}} \&}]{snes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+
+
+Convert a basic \mbox{\hyperlink{namespaceComSquare_1_1APU}{A\+PU}} to a debugging \mbox{\hyperlink{namespaceComSquare_1_1APU}{A\+PU}}. 
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1APUDebug_a6ee05853aba9605d9fb3a981effee382}\label{classComSquare_1_1Debugger_1_1APUDebug_a6ee05853aba9605d9fb3a981effee382}} 
+\index{ComSquare::Debugger::APUDebug@{ComSquare::Debugger::APUDebug}!APUDebug@{APUDebug}}
+\index{APUDebug@{APUDebug}!ComSquare::Debugger::APUDebug@{ComSquare::Debugger::APUDebug}}
+\doxysubsubsection{\texorpdfstring{APUDebug()}{APUDebug()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Com\+Square\+::\+Debugger\+::\+A\+P\+U\+Debug\+::\+A\+P\+U\+Debug (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classComSquare_1_1Debugger_1_1APUDebug}{A\+P\+U\+Debug}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1APUDebug_af649bbed87c5c645618261cc29474ad1}\label{classComSquare_1_1Debugger_1_1APUDebug_af649bbed87c5c645618261cc29474ad1}} 
+\index{ComSquare::Debugger::APUDebug@{ComSquare::Debugger::APUDebug}!````~APUDebug@{$\sim$APUDebug}}
+\index{````~APUDebug@{$\sim$APUDebug}!ComSquare::Debugger::APUDebug@{ComSquare::Debugger::APUDebug}}
+\doxysubsubsection{\texorpdfstring{$\sim$APUDebug()}{~APUDebug()}}
+{\footnotesize\ttfamily Com\+Square\+::\+Debugger\+::\+A\+P\+U\+Debug\+::$\sim$\+A\+P\+U\+Debug (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1APUDebug_afa92b6493732373cdd5818cc28fe1be1}\label{classComSquare_1_1Debugger_1_1APUDebug_afa92b6493732373cdd5818cc28fe1be1}} 
+\index{ComSquare::Debugger::APUDebug@{ComSquare::Debugger::APUDebug}!\_executeInstruction@{\_executeInstruction}}
+\index{\_executeInstruction@{\_executeInstruction}!ComSquare::Debugger::APUDebug@{ComSquare::Debugger::APUDebug}}
+\doxysubsubsection{\texorpdfstring{\_executeInstruction()}{\_executeInstruction()}}
+{\footnotesize\ttfamily int Com\+Square\+::\+Debugger\+::\+A\+P\+U\+Debug\+::\+\_\+execute\+Instruction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}
+
+
+
+Replace original \+\_\+execute\+Instruction to write to the logger. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a452bd595104eca872ecac44bfb129b8c}{Com\+Square\+::\+A\+P\+U\+::\+A\+PU}}.
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1APUDebug_aa3cb6db480b64b0b1c925516663ced29}\label{classComSquare_1_1Debugger_1_1APUDebug_aa3cb6db480b64b0b1c925516663ced29}} 
+\index{ComSquare::Debugger::APUDebug@{ComSquare::Debugger::APUDebug}!\_getInstructionString@{\_getInstructionString}}
+\index{\_getInstructionString@{\_getInstructionString}!ComSquare::Debugger::APUDebug@{ComSquare::Debugger::APUDebug}}
+\doxysubsubsection{\texorpdfstring{\_getInstructionString()}{\_getInstructionString()}}
+{\footnotesize\ttfamily std\+::string Com\+Square\+::\+Debugger\+::\+A\+P\+U\+Debug\+::\+\_\+get\+Instruction\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+return the mnemonic of the current instruction done. 
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1APUDebug_a39d1b83d0644b5cf994f1604a818907f}\label{classComSquare_1_1Debugger_1_1APUDebug_a39d1b83d0644b5cf994f1604a818907f}} 
+\index{ComSquare::Debugger::APUDebug@{ComSquare::Debugger::APUDebug}!\_getPSWString@{\_getPSWString}}
+\index{\_getPSWString@{\_getPSWString}!ComSquare::Debugger::APUDebug@{ComSquare::Debugger::APUDebug}}
+\doxysubsubsection{\texorpdfstring{\_getPSWString()}{\_getPSWString()}}
+{\footnotesize\ttfamily std\+::string Com\+Square\+::\+Debugger\+::\+A\+P\+U\+Debug\+::\+\_\+get\+P\+S\+W\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Convert \mbox{\hyperlink{namespaceComSquare_1_1CPU}{C\+PU}} \mbox{\hyperlink{namespaceComSquare_1_1APU}{A\+PU}} flags to a string. 
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1APUDebug_a34f010c713bde2f959fc5f363d7f4721}\label{classComSquare_1_1Debugger_1_1APUDebug_a34f010c713bde2f959fc5f363d7f4721}} 
+\index{ComSquare::Debugger::APUDebug@{ComSquare::Debugger::APUDebug}!\_updatePanel@{\_updatePanel}}
+\index{\_updatePanel@{\_updatePanel}!ComSquare::Debugger::APUDebug@{ComSquare::Debugger::APUDebug}}
+\doxysubsubsection{\texorpdfstring{\_updatePanel()}{\_updatePanel()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+Debugger\+::\+A\+P\+U\+Debug\+::\+\_\+update\+Panel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Update the debugger panel values. 
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1APUDebug_a3e43bf684e6a63217fe488c7c3d96d62}\label{classComSquare_1_1Debugger_1_1APUDebug_a3e43bf684e6a63217fe488c7c3d96d62}} 
+\index{ComSquare::Debugger::APUDebug@{ComSquare::Debugger::APUDebug}!disableDebugger@{disableDebugger}}
+\index{disableDebugger@{disableDebugger}!ComSquare::Debugger::APUDebug@{ComSquare::Debugger::APUDebug}}
+\doxysubsubsection{\texorpdfstring{disableDebugger}{disableDebugger}}
+{\footnotesize\ttfamily void Com\+Square\+::\+Debugger\+::\+A\+P\+U\+Debug\+::disable\+Debugger (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Called when the window is closed. Turn off the debugger and revert to a basic \mbox{\hyperlink{namespaceComSquare_1_1APU}{A\+PU}}. 
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1APUDebug_a8c19b4b9dd671876a2ef22fa485753f6}\label{classComSquare_1_1Debugger_1_1APUDebug_a8c19b4b9dd671876a2ef22fa485753f6}} 
+\index{ComSquare::Debugger::APUDebug@{ComSquare::Debugger::APUDebug}!focus@{focus}}
+\index{focus@{focus}!ComSquare::Debugger::APUDebug@{ComSquare::Debugger::APUDebug}}
+\doxysubsubsection{\texorpdfstring{focus()}{focus()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+Debugger\+::\+A\+P\+U\+Debug\+::focus (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Focus the debugger\textquotesingle{}s window. 
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1APUDebug_a35636fa80ceee122bd117fb816ed997c}\label{classComSquare_1_1Debugger_1_1APUDebug_a35636fa80ceee122bd117fb816ed997c}} 
+\index{ComSquare::Debugger::APUDebug@{ComSquare::Debugger::APUDebug}!isDebugger@{isDebugger}}
+\index{isDebugger@{isDebugger}!ComSquare::Debugger::APUDebug@{ComSquare::Debugger::APUDebug}}
+\doxysubsubsection{\texorpdfstring{isDebugger()}{isDebugger()}}
+{\footnotesize\ttfamily bool Com\+Square\+::\+Debugger\+::\+A\+P\+U\+Debug\+::is\+Debugger (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Return true if the \mbox{\hyperlink{namespaceComSquare_1_1CPU}{C\+PU}} is overloaded with debugging features. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_a5bb4ade5d64da5eb07c985c5c9080ca0}{Com\+Square\+::\+A\+P\+U\+::\+A\+PU}}.
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1APUDebug_a3bef63c9edcf13a171da92e21581964c}\label{classComSquare_1_1Debugger_1_1APUDebug_a3bef63c9edcf13a171da92e21581964c}} 
+\index{ComSquare::Debugger::APUDebug@{ComSquare::Debugger::APUDebug}!operator=@{operator=}}
+\index{operator=@{operator=}!ComSquare::Debugger::APUDebug@{ComSquare::Debugger::APUDebug}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classComSquare_1_1Debugger_1_1APUDebug}{A\+P\+U\+Debug}}\& Com\+Square\+::\+Debugger\+::\+A\+P\+U\+Debug\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classComSquare_1_1Debugger_1_1APUDebug}{A\+P\+U\+Debug}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1APUDebug_aab788c1876bf10a916d6f71480a72812}\label{classComSquare_1_1Debugger_1_1APUDebug_aab788c1876bf10a916d6f71480a72812}} 
+\index{ComSquare::Debugger::APUDebug@{ComSquare::Debugger::APUDebug}!pause@{pause}}
+\index{pause@{pause}!ComSquare::Debugger::APUDebug@{ComSquare::Debugger::APUDebug}}
+\doxysubsubsection{\texorpdfstring{pause}{pause}}
+{\footnotesize\ttfamily void Com\+Square\+::\+Debugger\+::\+A\+P\+U\+Debug\+::pause (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Pause/\+Resume the \mbox{\hyperlink{namespaceComSquare_1_1APU}{A\+PU}}. 
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1APUDebug_ad046c1d302e049170ac86a1fa3bb4140}\label{classComSquare_1_1Debugger_1_1APUDebug_ad046c1d302e049170ac86a1fa3bb4140}} 
+\index{ComSquare::Debugger::APUDebug@{ComSquare::Debugger::APUDebug}!step@{step}}
+\index{step@{step}!ComSquare::Debugger::APUDebug@{ComSquare::Debugger::APUDebug}}
+\doxysubsubsection{\texorpdfstring{step}{step}}
+{\footnotesize\ttfamily void Com\+Square\+::\+Debugger\+::\+A\+P\+U\+Debug\+::step (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Step -\/ Execute a single instruction. 
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1APUDebug_ab7efad3a0f6bde7c5ef1e0f1d19693b3}\label{classComSquare_1_1Debugger_1_1APUDebug_ab7efad3a0f6bde7c5ef1e0f1d19693b3}} 
+\index{ComSquare::Debugger::APUDebug@{ComSquare::Debugger::APUDebug}!update@{update}}
+\index{update@{update}!ComSquare::Debugger::APUDebug@{ComSquare::Debugger::APUDebug}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+Debugger\+::\+A\+P\+U\+Debug\+::update (\begin{DoxyParamCaption}\item[{unsigned}]{cycles }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Override the apu\textquotesingle{}s update to disable debugging. 
+
+
+
+Reimplemented from \mbox{\hyperlink{classComSquare_1_1APU_1_1APU_acfd2aa4b86b8bd4db182ecc676be0b64}{Com\+Square\+::\+A\+P\+U\+::\+A\+PU}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1APUDebug_a4ed99358ddbd15276ba12ed186ec1967}\label{classComSquare_1_1Debugger_1_1APUDebug_a4ed99358ddbd15276ba12ed186ec1967}} 
+\index{ComSquare::Debugger::APUDebug@{ComSquare::Debugger::APUDebug}!\_isPaused@{\_isPaused}}
+\index{\_isPaused@{\_isPaused}!ComSquare::Debugger::APUDebug@{ComSquare::Debugger::APUDebug}}
+\doxysubsubsection{\texorpdfstring{\_isPaused}{\_isPaused}}
+{\footnotesize\ttfamily bool Com\+Square\+::\+Debugger\+::\+A\+P\+U\+Debug\+::\+\_\+is\+Paused = true\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+If this is set to true, the execution of the \mbox{\hyperlink{namespaceComSquare_1_1APU}{A\+PU}} will be paused. 
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1APUDebug_a31de01e22179361d4af8de5e16ef6ed6}\label{classComSquare_1_1Debugger_1_1APUDebug_a31de01e22179361d4af8de5e16ef6ed6}} 
+\index{ComSquare::Debugger::APUDebug@{ComSquare::Debugger::APUDebug}!\_isStepping@{\_isStepping}}
+\index{\_isStepping@{\_isStepping}!ComSquare::Debugger::APUDebug@{ComSquare::Debugger::APUDebug}}
+\doxysubsubsection{\texorpdfstring{\_isStepping}{\_isStepping}}
+{\footnotesize\ttfamily bool Com\+Square\+::\+Debugger\+::\+A\+P\+U\+Debug\+::\+\_\+is\+Stepping = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+If this is set to true, the \mbox{\hyperlink{namespaceComSquare_1_1APU}{A\+PU}} will execute one instruction and pause itself. 
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1APUDebug_a1a594ad438e441e3e87fbaf0b77d942e}\label{classComSquare_1_1Debugger_1_1APUDebug_a1a594ad438e441e3e87fbaf0b77d942e}} 
+\index{ComSquare::Debugger::APUDebug@{ComSquare::Debugger::APUDebug}!\_snes@{\_snes}}
+\index{\_snes@{\_snes}!ComSquare::Debugger::APUDebug@{ComSquare::Debugger::APUDebug}}
+\doxysubsubsection{\texorpdfstring{\_snes}{\_snes}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classComSquare_1_1SNES}{S\+N\+ES}}\& Com\+Square\+::\+Debugger\+::\+A\+P\+U\+Debug\+::\+\_\+snes\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A reference to the snes (to disable the debugger). 
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1APUDebug_a2effcb6a150569850b366e1490caffab}\label{classComSquare_1_1Debugger_1_1APUDebug_a2effcb6a150569850b366e1490caffab}} 
+\index{ComSquare::Debugger::APUDebug@{ComSquare::Debugger::APUDebug}!\_ui@{\_ui}}
+\index{\_ui@{\_ui}!ComSquare::Debugger::APUDebug@{ComSquare::Debugger::APUDebug}}
+\doxysubsubsection{\texorpdfstring{\_ui}{\_ui}}
+{\footnotesize\ttfamily Ui\+::\+A\+P\+U\+View Com\+Square\+::\+Debugger\+::\+A\+P\+U\+Debug\+::\+\_\+ui\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A widget that contain the whole UI. 
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1APUDebug_a2956a9895cd17f838648e21f1ad50d4e}\label{classComSquare_1_1Debugger_1_1APUDebug_a2956a9895cd17f838648e21f1ad50d4e}} 
+\index{ComSquare::Debugger::APUDebug@{ComSquare::Debugger::APUDebug}!\_window@{\_window}}
+\index{\_window@{\_window}!ComSquare::Debugger::APUDebug@{ComSquare::Debugger::APUDebug}}
+\doxysubsubsection{\texorpdfstring{\_window}{\_window}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classComSquare_1_1Debugger_1_1ClosableWindow}{Closable\+Window}}$<$\mbox{\hyperlink{classComSquare_1_1Debugger_1_1APUDebug}{A\+P\+U\+Debug}}$>$$\ast$ Com\+Square\+::\+Debugger\+::\+A\+P\+U\+Debug\+::\+\_\+window\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The QT window for this debugger. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+sources/\+Debugger/\mbox{\hyperlink{APUDebug_8hpp}{A\+P\+U\+Debug.\+hpp}}\item 
+sources/\+Debugger/\mbox{\hyperlink{APUDebug_8cpp}{A\+P\+U\+Debug.\+cpp}}\end{DoxyCompactItemize}

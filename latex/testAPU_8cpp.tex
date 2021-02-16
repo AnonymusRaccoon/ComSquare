@@ -1,0 +1,190 @@
+\hypertarget{testAPU_8cpp}{}\doxysection{tests/\+A\+P\+U/test\+A\+PU.cpp File Reference}
+\label{testAPU_8cpp}\index{tests/APU/testAPU.cpp@{tests/APU/testAPU.cpp}}
+{\ttfamily \#include $<$criterion/criterion.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}../tests.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../sources/\+S\+N\+E\+S.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../sources/\+A\+P\+U/\+A\+P\+U.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../sources/\+Exceptions/\+Invalid\+Address.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../sources/\+Exceptions/\+Invalid\+Opcode.\+hpp\char`\"{}}\newline
+Include dependency graph for test\+A\+P\+U.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{testAPU_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{testAPU_8cpp_a0cb65c4aefcce8df124014caaa904bf5}{Test}} (\+\_\+internal\+Read, register)
+\item 
+\mbox{\hyperlink{testAPU_8cpp_a4b7991baebac1d62a814281867743e00}{Test}} (\+\_\+internal\+Read, Page0)
+\item 
+\mbox{\hyperlink{testAPU_8cpp_a8452d4f17175b19988e24d5c370b4e8b}{Test}} (\+\_\+internal\+Read, Page1)
+\item 
+\mbox{\hyperlink{testAPU_8cpp_abef5b8a65c85e9b723b820cec3359385}{Test}} (\+\_\+internal\+Read, Memory)
+\item 
+\mbox{\hyperlink{testAPU_8cpp_ab7b538c8aa303c3e533eeeb8bd34f989}{Test}} (\+\_\+internal\+Read, I\+PL)
+\item 
+\mbox{\hyperlink{testAPU_8cpp_ad9d89215962ae01e9e33c0fa50e6b190}{Test}} (\+\_\+internal\+Read, Invalid)
+\item 
+\mbox{\hyperlink{testAPU_8cpp_ad99e676f4d4f39457de901afa1bde477}{Test}} (\+\_\+internal\+Write, Page0)
+\item 
+\mbox{\hyperlink{testAPU_8cpp_a739442538856e9d23e626cd439d15458}{Test}} (\+\_\+internal\+Write, register)
+\item 
+\mbox{\hyperlink{testAPU_8cpp_aa73a417fd3ebfd217720221286321891}{Test}} (\+\_\+internal\+Write, Page1)
+\item 
+\mbox{\hyperlink{testAPU_8cpp_a773d80640aa885930723c1428ea4e716}{Test}} (\+\_\+internal\+Write, Memory)
+\item 
+\mbox{\hyperlink{testAPU_8cpp_af453835e3dc4ed143ef9daaad4484dee}{Test}} (\+\_\+internal\+Write, I\+PL)
+\item 
+\mbox{\hyperlink{testAPU_8cpp_aaf51a7f9b7238100e608ab9e3eee1a6a}{Test}} (\+\_\+internal\+Write, Invalid)
+\item 
+\mbox{\hyperlink{testAPU_8cpp_a6ba12cc3267fa39065b492ff6ba0dd6b}{Test}} (read, Valid)
+\item 
+\mbox{\hyperlink{testAPU_8cpp_a14d148051087345626791817dee384a7}{Test}} (read, Invalid)
+\item 
+\mbox{\hyperlink{testAPU_8cpp_a8526796abd474400faeb6614681683d5}{Test}} (write, Valid)
+\item 
+\mbox{\hyperlink{testAPU_8cpp_a449cf5bc4288212c68a50ee74d36fa3a}{Test}} (write, Invalid)
+\item 
+\mbox{\hyperlink{testAPU_8cpp_a65af1039f9f4b3cc0980550cddd1155c}{Test}} (execute\+Instruction, Valid)
+\item 
+\mbox{\hyperlink{testAPU_8cpp_a8e984e25d248438c7aaf83cbcf9a8137}{Test}} (update, running)
+\item 
+\mbox{\hyperlink{testAPU_8cpp_ab568e6d397f7b2f8de0b7afb4db87b45}{Test}} (update, stopped)
+\item 
+\mbox{\hyperlink{testAPU_8cpp_a327974ab77d4603ce3d84b0725acde0f}{Test}} (\+\_\+get, direct)
+\item 
+\mbox{\hyperlink{testAPU_8cpp_ad4c56ae2d171d0582bc05ce1cb342511}{Test}} (\+\_\+get, absolute)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{testAPU_8cpp_ad4c56ae2d171d0582bc05ce1cb342511}\label{testAPU_8cpp_ad4c56ae2d171d0582bc05ce1cb342511}} 
+\index{testAPU.cpp@{testAPU.cpp}!Test@{Test}}
+\index{Test@{Test}!testAPU.cpp@{testAPU.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [1/21]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{\+\_\+get}]{,  }\item[{absolute}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testAPU_8cpp_a327974ab77d4603ce3d84b0725acde0f}\label{testAPU_8cpp_a327974ab77d4603ce3d84b0725acde0f}} 
+\index{testAPU.cpp@{testAPU.cpp}!Test@{Test}}
+\index{Test@{Test}!testAPU.cpp@{testAPU.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [2/21]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{\+\_\+get}]{,  }\item[{direct}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testAPU_8cpp_ad9d89215962ae01e9e33c0fa50e6b190}\label{testAPU_8cpp_ad9d89215962ae01e9e33c0fa50e6b190}} 
+\index{testAPU.cpp@{testAPU.cpp}!Test@{Test}}
+\index{Test@{Test}!testAPU.cpp@{testAPU.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [3/21]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{\+\_\+internal\+Read}]{,  }\item[{Invalid}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testAPU_8cpp_ab7b538c8aa303c3e533eeeb8bd34f989}\label{testAPU_8cpp_ab7b538c8aa303c3e533eeeb8bd34f989}} 
+\index{testAPU.cpp@{testAPU.cpp}!Test@{Test}}
+\index{Test@{Test}!testAPU.cpp@{testAPU.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [4/21]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{\+\_\+internal\+Read}]{,  }\item[{I\+PL}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testAPU_8cpp_abef5b8a65c85e9b723b820cec3359385}\label{testAPU_8cpp_abef5b8a65c85e9b723b820cec3359385}} 
+\index{testAPU.cpp@{testAPU.cpp}!Test@{Test}}
+\index{Test@{Test}!testAPU.cpp@{testAPU.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [5/21]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{\+\_\+internal\+Read}]{,  }\item[{Memory}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testAPU_8cpp_a4b7991baebac1d62a814281867743e00}\label{testAPU_8cpp_a4b7991baebac1d62a814281867743e00}} 
+\index{testAPU.cpp@{testAPU.cpp}!Test@{Test}}
+\index{Test@{Test}!testAPU.cpp@{testAPU.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [6/21]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{\+\_\+internal\+Read}]{,  }\item[{Page0}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testAPU_8cpp_a8452d4f17175b19988e24d5c370b4e8b}\label{testAPU_8cpp_a8452d4f17175b19988e24d5c370b4e8b}} 
+\index{testAPU.cpp@{testAPU.cpp}!Test@{Test}}
+\index{Test@{Test}!testAPU.cpp@{testAPU.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [7/21]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{\+\_\+internal\+Read}]{,  }\item[{Page1}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testAPU_8cpp_a0cb65c4aefcce8df124014caaa904bf5}\label{testAPU_8cpp_a0cb65c4aefcce8df124014caaa904bf5}} 
+\index{testAPU.cpp@{testAPU.cpp}!Test@{Test}}
+\index{Test@{Test}!testAPU.cpp@{testAPU.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [8/21]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{\+\_\+internal\+Read}]{,  }\item[{register}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testAPU_8cpp_aaf51a7f9b7238100e608ab9e3eee1a6a}\label{testAPU_8cpp_aaf51a7f9b7238100e608ab9e3eee1a6a}} 
+\index{testAPU.cpp@{testAPU.cpp}!Test@{Test}}
+\index{Test@{Test}!testAPU.cpp@{testAPU.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [9/21]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{\+\_\+internal\+Write}]{,  }\item[{Invalid}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testAPU_8cpp_af453835e3dc4ed143ef9daaad4484dee}\label{testAPU_8cpp_af453835e3dc4ed143ef9daaad4484dee}} 
+\index{testAPU.cpp@{testAPU.cpp}!Test@{Test}}
+\index{Test@{Test}!testAPU.cpp@{testAPU.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [10/21]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{\+\_\+internal\+Write}]{,  }\item[{I\+PL}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testAPU_8cpp_a773d80640aa885930723c1428ea4e716}\label{testAPU_8cpp_a773d80640aa885930723c1428ea4e716}} 
+\index{testAPU.cpp@{testAPU.cpp}!Test@{Test}}
+\index{Test@{Test}!testAPU.cpp@{testAPU.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [11/21]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{\+\_\+internal\+Write}]{,  }\item[{Memory}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testAPU_8cpp_ad99e676f4d4f39457de901afa1bde477}\label{testAPU_8cpp_ad99e676f4d4f39457de901afa1bde477}} 
+\index{testAPU.cpp@{testAPU.cpp}!Test@{Test}}
+\index{Test@{Test}!testAPU.cpp@{testAPU.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [12/21]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{\+\_\+internal\+Write}]{,  }\item[{Page0}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testAPU_8cpp_aa73a417fd3ebfd217720221286321891}\label{testAPU_8cpp_aa73a417fd3ebfd217720221286321891}} 
+\index{testAPU.cpp@{testAPU.cpp}!Test@{Test}}
+\index{Test@{Test}!testAPU.cpp@{testAPU.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [13/21]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{\+\_\+internal\+Write}]{,  }\item[{Page1}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testAPU_8cpp_a739442538856e9d23e626cd439d15458}\label{testAPU_8cpp_a739442538856e9d23e626cd439d15458}} 
+\index{testAPU.cpp@{testAPU.cpp}!Test@{Test}}
+\index{Test@{Test}!testAPU.cpp@{testAPU.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [14/21]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{\+\_\+internal\+Write}]{,  }\item[{register}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testAPU_8cpp_a65af1039f9f4b3cc0980550cddd1155c}\label{testAPU_8cpp_a65af1039f9f4b3cc0980550cddd1155c}} 
+\index{testAPU.cpp@{testAPU.cpp}!Test@{Test}}
+\index{Test@{Test}!testAPU.cpp@{testAPU.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [15/21]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{execute\+Instruction}]{,  }\item[{Valid}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testAPU_8cpp_a14d148051087345626791817dee384a7}\label{testAPU_8cpp_a14d148051087345626791817dee384a7}} 
+\index{testAPU.cpp@{testAPU.cpp}!Test@{Test}}
+\index{Test@{Test}!testAPU.cpp@{testAPU.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [16/21]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{read}]{,  }\item[{Invalid}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testAPU_8cpp_a6ba12cc3267fa39065b492ff6ba0dd6b}\label{testAPU_8cpp_a6ba12cc3267fa39065b492ff6ba0dd6b}} 
+\index{testAPU.cpp@{testAPU.cpp}!Test@{Test}}
+\index{Test@{Test}!testAPU.cpp@{testAPU.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [17/21]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{read}]{,  }\item[{Valid}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testAPU_8cpp_a8e984e25d248438c7aaf83cbcf9a8137}\label{testAPU_8cpp_a8e984e25d248438c7aaf83cbcf9a8137}} 
+\index{testAPU.cpp@{testAPU.cpp}!Test@{Test}}
+\index{Test@{Test}!testAPU.cpp@{testAPU.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [18/21]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{update}]{,  }\item[{running}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testAPU_8cpp_ab568e6d397f7b2f8de0b7afb4db87b45}\label{testAPU_8cpp_ab568e6d397f7b2f8de0b7afb4db87b45}} 
+\index{testAPU.cpp@{testAPU.cpp}!Test@{Test}}
+\index{Test@{Test}!testAPU.cpp@{testAPU.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [19/21]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{update}]{,  }\item[{stopped}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testAPU_8cpp_a449cf5bc4288212c68a50ee74d36fa3a}\label{testAPU_8cpp_a449cf5bc4288212c68a50ee74d36fa3a}} 
+\index{testAPU.cpp@{testAPU.cpp}!Test@{Test}}
+\index{Test@{Test}!testAPU.cpp@{testAPU.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [20/21]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{write}]{,  }\item[{Invalid}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testAPU_8cpp_a8526796abd474400faeb6614681683d5}\label{testAPU_8cpp_a8526796abd474400faeb6614681683d5}} 
+\index{testAPU.cpp@{testAPU.cpp}!Test@{Test}}
+\index{Test@{Test}!testAPU.cpp@{testAPU.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [21/21]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{write}]{,  }\item[{Valid}]{ }\end{DoxyParamCaption})}
+

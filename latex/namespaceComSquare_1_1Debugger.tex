@@ -1,0 +1,100 @@
+\hypertarget{namespaceComSquare_1_1Debugger}{}\doxysection{Com\+Square\+::Debugger Namespace Reference}
+\label{namespaceComSquare_1_1Debugger}\index{ComSquare::Debugger@{ComSquare::Debugger}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classComSquare_1_1Debugger_1_1APUDebug}{A\+P\+U\+Debug}}
+\item 
+struct \mbox{\hyperlink{structComSquare_1_1Debugger_1_1Breakpoint}{Breakpoint}}
+\begin{DoxyCompactList}\small\item\em Struct representing a breakpoint set by the user or by the app. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structComSquare_1_1Debugger_1_1BusLog}{Bus\+Log}}
+\begin{DoxyCompactList}\small\item\em The struct used to represent memory bus logs. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structComSquare_1_1Debugger_1_1BusLoggerFilters}{Bus\+Logger\+Filters}}
+\begin{DoxyCompactList}\small\item\em The struct representing filters of the memory bus\textquotesingle{}s logger. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classComSquare_1_1Debugger_1_1CGramDebug}{C\+Gram\+Debug}}
+\begin{DoxyCompactList}\small\item\em window that allow the user to view all data going through the memory bus. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classComSquare_1_1Debugger_1_1ClosableWindow}{Closable\+Window}}
+\item 
+class \mbox{\hyperlink{classComSquare_1_1Debugger_1_1CPUDebug}{C\+P\+U\+Debug}}
+\begin{DoxyCompactList}\small\item\em A custom \mbox{\hyperlink{namespaceComSquare_1_1CPU}{C\+PU}} with a window that show it\textquotesingle{}s registers and the disassembly. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structComSquare_1_1Debugger_1_1DisassembledInstruction}{Disassembled\+Instruction}}
+\begin{DoxyCompactList}\small\item\em Struct representing an instruction in an human readable way (created by disassembling the rom). \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structComSquare_1_1Debugger_1_1DisassemblyContext}{Disassembly\+Context}}
+\begin{DoxyCompactList}\small\item\em Struct used to emulate the state of the processor during the disassembly since instructions take a different amount of space depending on some flags. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structComSquare_1_1Debugger_1_1ExecutedInstruction}{Executed\+Instruction}}
+\begin{DoxyCompactList}\small\item\em An instruction that has already been executed. Used for the history viewer. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classComSquare_1_1Debugger_1_1HeaderViewer}{Header\+Viewer}}
+\begin{DoxyCompactList}\small\item\em Window that show the header of the currently running game. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classComSquare_1_1Debugger_1_1MemoryBusDebug}{Memory\+Bus\+Debug}}
+\begin{DoxyCompactList}\small\item\em window that allow the user to view all data going through the memory bus. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classComSquare_1_1Debugger_1_1MemoryViewer}{Memory\+Viewer}}
+\begin{DoxyCompactList}\small\item\em Class responsible of the \mbox{\hyperlink{namespaceComSquare_1_1Memory}{Memory}} Viewer. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structComSquare_1_1Debugger_1_1Register}{Register}}
+\begin{DoxyCompactList}\small\item\em Struct containing information about a register. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classComSquare_1_1Debugger_1_1RegisterViewer}{Register\+Viewer}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespaceComSquare_1_1Debugger_af6f8aa5e9036fb321ffc38cad8f926b4}{Trust\+Level}} \{ \mbox{\hyperlink{namespaceComSquare_1_1Debugger_af6f8aa5e9036fb321ffc38cad8f926b4a42c853dde9db63d5a96343a5ec5163f6}{Safe}}, 
+\mbox{\hyperlink{namespaceComSquare_1_1Debugger_af6f8aa5e9036fb321ffc38cad8f926b4a23d8d0148d654c78a96419d38e290b8b}{Unsafe}}, 
+\mbox{\hyperlink{namespaceComSquare_1_1Debugger_af6f8aa5e9036fb321ffc38cad8f926b4a4bc7fed9856dc41dcec0c6681ff4988f}{Compromised}}
+ \}
+\item 
+enum \mbox{\hyperlink{namespaceComSquare_1_1Debugger_a75d4f13914da1c61eef975e2f6bc2909}{Register\+Type}} \{ \mbox{\hyperlink{namespaceComSquare_1_1Debugger_a75d4f13914da1c61eef975e2f6bc2909a49d92822c0a79bbdd68c5ac993c93bdd}{Boolean}}, 
+\mbox{\hyperlink{namespaceComSquare_1_1Debugger_a75d4f13914da1c61eef975e2f6bc2909ae582daa9d37a1300a9935cc1b727fa21}{Eight\+Bits}}, 
+\mbox{\hyperlink{namespaceComSquare_1_1Debugger_a75d4f13914da1c61eef975e2f6bc2909a3d243e7c1978de6bd523c09c63b4515a}{Sixteen\+Bits}}, 
+\mbox{\hyperlink{namespaceComSquare_1_1Debugger_a75d4f13914da1c61eef975e2f6bc2909a013d0d03d0cac6905e9c16d1ba9a25ea}{Twenty\+Four\+Bits}}
+ \}
+\begin{DoxyCompactList}\small\item\em The types of registers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{namespaceComSquare_1_1Debugger_a75d4f13914da1c61eef975e2f6bc2909}\label{namespaceComSquare_1_1Debugger_a75d4f13914da1c61eef975e2f6bc2909}} 
+\index{ComSquare::Debugger@{ComSquare::Debugger}!RegisterType@{RegisterType}}
+\index{RegisterType@{RegisterType}!ComSquare::Debugger@{ComSquare::Debugger}}
+\doxysubsubsection{\texorpdfstring{RegisterType}{RegisterType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespaceComSquare_1_1Debugger_a75d4f13914da1c61eef975e2f6bc2909}{Com\+Square\+::\+Debugger\+::\+Register\+Type}}}
+
+
+
+The types of registers. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Boolean@{Boolean}!ComSquare::Debugger@{ComSquare::Debugger}}\index{ComSquare::Debugger@{ComSquare::Debugger}!Boolean@{Boolean}}}\mbox{\Hypertarget{namespaceComSquare_1_1Debugger_a75d4f13914da1c61eef975e2f6bc2909a49d92822c0a79bbdd68c5ac993c93bdd}\label{namespaceComSquare_1_1Debugger_a75d4f13914da1c61eef975e2f6bc2909a49d92822c0a79bbdd68c5ac993c93bdd}} 
+Boolean&This type display a checkbox. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EightBits@{EightBits}!ComSquare::Debugger@{ComSquare::Debugger}}\index{ComSquare::Debugger@{ComSquare::Debugger}!EightBits@{EightBits}}}\mbox{\Hypertarget{namespaceComSquare_1_1Debugger_a75d4f13914da1c61eef975e2f6bc2909ae582daa9d37a1300a9935cc1b727fa21}\label{namespaceComSquare_1_1Debugger_a75d4f13914da1c61eef975e2f6bc2909ae582daa9d37a1300a9935cc1b727fa21}} 
+Eight\+Bits&A 8 bits hexadecimal value. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SixteenBits@{SixteenBits}!ComSquare::Debugger@{ComSquare::Debugger}}\index{ComSquare::Debugger@{ComSquare::Debugger}!SixteenBits@{SixteenBits}}}\mbox{\Hypertarget{namespaceComSquare_1_1Debugger_a75d4f13914da1c61eef975e2f6bc2909a3d243e7c1978de6bd523c09c63b4515a}\label{namespaceComSquare_1_1Debugger_a75d4f13914da1c61eef975e2f6bc2909a3d243e7c1978de6bd523c09c63b4515a}} 
+Sixteen\+Bits&A 16 bits hexadecimal value. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TwentyFourBits@{TwentyFourBits}!ComSquare::Debugger@{ComSquare::Debugger}}\index{ComSquare::Debugger@{ComSquare::Debugger}!TwentyFourBits@{TwentyFourBits}}}\mbox{\Hypertarget{namespaceComSquare_1_1Debugger_a75d4f13914da1c61eef975e2f6bc2909a013d0d03d0cac6905e9c16d1ba9a25ea}\label{namespaceComSquare_1_1Debugger_a75d4f13914da1c61eef975e2f6bc2909a013d0d03d0cac6905e9c16d1ba9a25ea}} 
+Twenty\+Four\+Bits&A 24 bits hexadecimal value. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{namespaceComSquare_1_1Debugger_af6f8aa5e9036fb321ffc38cad8f926b4}\label{namespaceComSquare_1_1Debugger_af6f8aa5e9036fb321ffc38cad8f926b4}} 
+\index{ComSquare::Debugger@{ComSquare::Debugger}!TrustLevel@{TrustLevel}}
+\index{TrustLevel@{TrustLevel}!ComSquare::Debugger@{ComSquare::Debugger}}
+\doxysubsubsection{\texorpdfstring{TrustLevel}{TrustLevel}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespaceComSquare_1_1Debugger_af6f8aa5e9036fb321ffc38cad8f926b4}{Com\+Square\+::\+Debugger\+::\+Trust\+Level}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Safe@{Safe}!ComSquare::Debugger@{ComSquare::Debugger}}\index{ComSquare::Debugger@{ComSquare::Debugger}!Safe@{Safe}}}\mbox{\Hypertarget{namespaceComSquare_1_1Debugger_af6f8aa5e9036fb321ffc38cad8f926b4a42c853dde9db63d5a96343a5ec5163f6}\label{namespaceComSquare_1_1Debugger_af6f8aa5e9036fb321ffc38cad8f926b4a42c853dde9db63d5a96343a5ec5163f6}} 
+Safe&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Unsafe@{Unsafe}!ComSquare::Debugger@{ComSquare::Debugger}}\index{ComSquare::Debugger@{ComSquare::Debugger}!Unsafe@{Unsafe}}}\mbox{\Hypertarget{namespaceComSquare_1_1Debugger_af6f8aa5e9036fb321ffc38cad8f926b4a23d8d0148d654c78a96419d38e290b8b}\label{namespaceComSquare_1_1Debugger_af6f8aa5e9036fb321ffc38cad8f926b4a23d8d0148d654c78a96419d38e290b8b}} 
+Unsafe&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Compromised@{Compromised}!ComSquare::Debugger@{ComSquare::Debugger}}\index{ComSquare::Debugger@{ComSquare::Debugger}!Compromised@{Compromised}}}\mbox{\Hypertarget{namespaceComSquare_1_1Debugger_af6f8aa5e9036fb321ffc38cad8f926b4a4bc7fed9856dc41dcec0c6681ff4988f}\label{namespaceComSquare_1_1Debugger_af6f8aa5e9036fb321ffc38cad8f926b4a4bc7fed9856dc41dcec0c6681ff4988f}} 
+Compromised&\\
+\hline
+
+\end{DoxyEnumFields}

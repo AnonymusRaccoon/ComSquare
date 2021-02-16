@@ -1,0 +1,429 @@
+\hypertarget{structComSquare_1_1APU_1_1DSP_1_1Voice}{}\doxysection{Com\+Square\+::A\+PU\+::D\+SP\+::Voice Struct Reference}
+\label{structComSquare_1_1APU_1_1DSP_1_1Voice}\index{ComSquare::APU::DSP::Voice@{ComSquare::APU::DSP::Voice}}
+
+
+{\ttfamily \#include $<$D\+S\+P.\+hpp$>$}
+
+
+
+Collaboration diagram for Com\+Square\+::A\+PU\+::D\+SP\+::Voice\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{structComSquare_1_1APU_1_1DSP_1_1Voice__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::array$<$ int8\+\_\+t, 2 $>$ \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice_a6d4621023336bd448ed045662d0e6e30}{volume}}
+\begin{DoxyCompactList}\small\item\em Volume register (V\+OL) \end{DoxyCompactList}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>uint8\_t \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice_ac10b65c9955e314d0d93d6196d524b13}{pitchL}}\\
+\>\>\>{\em Lower 8 bits of pitch register. }\\
+\>\>uint8\_t \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice_a8aa74c2e162f3a558547f490710c811b}{pitchH}}\\
+\>\>\>{\em Higher 8 bits of pitch register. }\\
+\>\} \\
+\>uint16\_t \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice_a45549f5811e5de16ce8221477d2937dc}{pitch}}\\
+\}; \\
+
+\end{tabbing}\begin{DoxyCompactList}\small\item\em Pitch register (P) \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice_aae05f0ab1918d3c41c068878cdbbae7e}{srcn}}
+\begin{DoxyCompactList}\small\item\em Source number register (S\+R\+CN) \end{DoxyCompactList}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>uint8\_t \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice_a818ac9c29ede5036e06118db2dbe48af}{adsr1}}\\
+\>\>\>{\em Envelope register (ADSR) }\\
+\>\>uint8\_t \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice_a9210fb0423146845613dc6f9ac033e16}{adsr2}}\\
+\>\>\>{\em Envelope controllers register (ADSR) }\\
+\>\} \\
+\>uint16\_t \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice_a770a27edace80b6b8e13a63aa5811da1}{adsr}}\\
+\}; \\
+
+\end{tabbing}\item 
+uint8\+\_\+t \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice_a0b844f4154698679a9bda61fc049c0c5}{gain}}
+\begin{DoxyCompactList}\small\item\em Gain register (G\+A\+IN) \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice_afb678448bdfe8c9575a4986563958b49}{envx}}
+\begin{DoxyCompactList}\small\item\em envelope associated with this voice \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice_a71814e4d7695f7c0244d95fd4293e72a}{outx}}
+\begin{DoxyCompactList}\small\item\em Wave height associated with this voice. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice_aefd28d64f1e7f294f9add09514827712}{endx}}\+: 1
+\begin{DoxyCompactList}\small\item\em Sample end register (E\+N\+DX) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice_a39b0d0ff44b4884272d1a5520d561a8c}{kon}}\+: 1
+\begin{DoxyCompactList}\small\item\em Key On register (K\+ON) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice_a7a1bff0503c531fa42b1aa557f693459}{kof}}\+: 1
+\begin{DoxyCompactList}\small\item\em Key Off register (K\+OF) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice_abb011fe331eb02d3990fd9bf67c3217f}{pmon}}\+: 1
+\begin{DoxyCompactList}\small\item\em Pitch modulation register (P\+M\+ON) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice_a5a7d98e27474ce03e26970e5ba7c8e19}{non}}\+: 1
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Noise}{Noise}} enable register (N\+ON) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice_a6e9c19c889aab678535c44643e367f0e}{eon}}\+: 1
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Echo}{Echo}} enable register (E\+ON) \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice_ad1a30c6434268a1063357018ae39472f}{kon\+Delay}}
+\begin{DoxyCompactList}\small\item\em Check if voice is in setup phase. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice_a2045c5ccc6def6cba3d33ca216d463d3}{echo}}
+\begin{DoxyCompactList}\small\item\em Check if the output will be echoed. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice_a1481ffe36f6c18d920c87ff1477e0628}{loop}}
+\begin{DoxyCompactList}\small\item\em Check if this voice will be looped. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice_a8aeb0f72d110ea16307cb6a62ad51675}{brr\+Address}}
+\begin{DoxyCompactList}\small\item\em Current \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1BRR}{B\+RR}} associated with this voice. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice_a2274acfc3ec1afdea98e059d6addab2b}{brr\+Offset}} = 1
+\begin{DoxyCompactList}\small\item\em Current Offset in the \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1BRR}{B\+RR}} block. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice_acc23c8dae6f2ac6add644881ed306f4d}{prev\+Pmon}}\+: 1
+\begin{DoxyCompactList}\small\item\em Previous modulation. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice_a5cad3cca09a6ed678be74cf67d8c05b5}{temp\+Non}}\+: 1
+\begin{DoxyCompactList}\small\item\em temporary N\+ON register value \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice_a9db59203a9196a57f53e47b9db5a165d}{temp\+Kon}}\+: 1
+\begin{DoxyCompactList}\small\item\em temporary Key On register value \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice_a038d2747c5f16c4d3966f35be840470b}{temp\+Kof}}\+: 1
+\begin{DoxyCompactList}\small\item\em temporary Key Off register value \end{DoxyCompactList}\item 
+std\+::array$<$ uint16\+\_\+t, 12 $>$ \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice_a90a2ada1d57c03eb5a3da79ca8a64631}{samples}}
+\begin{DoxyCompactList}\small\item\em all samples Decoded from \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1BRR}{B\+RR}} \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice_a4857222be9f8f2e12c3e7c294f741571}{sample\+Offset}}
+\begin{DoxyCompactList}\small\item\em Offset of current sample in samples buffer. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice_a8cca2bc05b994ff848a096e9ebc7f42b}{envelope}}
+\begin{DoxyCompactList}\small\item\em Current envelope level. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice_a60b44ae8cb9170b3ecfecd8285b9a57e}{hidden\+Envelope}}
+\begin{DoxyCompactList}\small\item\em Second envelope level used to make \char`\"{}special\char`\"{} waveforms. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceComSquare_1_1APU_1_1DSP_a332ba4e7398628807ea631bfab77e441}{Envelope}} \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice_af5bb36fdf69b0792f0bb09a7bc728f7a}{envelope\+Mode}}
+\begin{DoxyCompactList}\small\item\em current envelope Mode \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice_a689eabb5be070748776a3e63328a24aa}{gauss\+Offset}}
+\begin{DoxyCompactList}\small\item\em Relative fractional position in sample. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1DSP_1_1Voice_a9502f3a4a6a6a12bc28fcdb77adb7389}\label{structComSquare_1_1APU_1_1DSP_1_1Voice_a9502f3a4a6a6a12bc28fcdb77adb7389}} 
+\doxysubsubsection{\texorpdfstring{"@13}{@13}}
+{\footnotesize\ttfamily union \{ ... \} }
+
+
+
+Pitch register (P) 
+
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1DSP_1_1Voice_ab21018f81bb4a67cc2adb08488f7551c}\label{structComSquare_1_1APU_1_1DSP_1_1Voice_ab21018f81bb4a67cc2adb08488f7551c}} 
+\doxysubsubsection{\texorpdfstring{"@15}{@15}}
+{\footnotesize\ttfamily union \{ ... \} }
+
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1DSP_1_1Voice_a770a27edace80b6b8e13a63aa5811da1}\label{structComSquare_1_1APU_1_1DSP_1_1Voice_a770a27edace80b6b8e13a63aa5811da1}} 
+\index{ComSquare::APU::DSP::Voice@{ComSquare::APU::DSP::Voice}!adsr@{adsr}}
+\index{adsr@{adsr}!ComSquare::APU::DSP::Voice@{ComSquare::APU::DSP::Voice}}
+\doxysubsubsection{\texorpdfstring{adsr}{adsr}}
+{\footnotesize\ttfamily uint16\+\_\+t Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+Voice\+::adsr}
+
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1DSP_1_1Voice_a818ac9c29ede5036e06118db2dbe48af}\label{structComSquare_1_1APU_1_1DSP_1_1Voice_a818ac9c29ede5036e06118db2dbe48af}} 
+\index{ComSquare::APU::DSP::Voice@{ComSquare::APU::DSP::Voice}!adsr1@{adsr1}}
+\index{adsr1@{adsr1}!ComSquare::APU::DSP::Voice@{ComSquare::APU::DSP::Voice}}
+\doxysubsubsection{\texorpdfstring{adsr1}{adsr1}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+Voice\+::adsr1}
+
+
+
+Envelope register (A\+D\+SR) 
+
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1DSP_1_1Voice_a9210fb0423146845613dc6f9ac033e16}\label{structComSquare_1_1APU_1_1DSP_1_1Voice_a9210fb0423146845613dc6f9ac033e16}} 
+\index{ComSquare::APU::DSP::Voice@{ComSquare::APU::DSP::Voice}!adsr2@{adsr2}}
+\index{adsr2@{adsr2}!ComSquare::APU::DSP::Voice@{ComSquare::APU::DSP::Voice}}
+\doxysubsubsection{\texorpdfstring{adsr2}{adsr2}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+Voice\+::adsr2}
+
+
+
+Envelope controllers register (A\+D\+SR) 
+
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1DSP_1_1Voice_a8aeb0f72d110ea16307cb6a62ad51675}\label{structComSquare_1_1APU_1_1DSP_1_1Voice_a8aeb0f72d110ea16307cb6a62ad51675}} 
+\index{ComSquare::APU::DSP::Voice@{ComSquare::APU::DSP::Voice}!brrAddress@{brrAddress}}
+\index{brrAddress@{brrAddress}!ComSquare::APU::DSP::Voice@{ComSquare::APU::DSP::Voice}}
+\doxysubsubsection{\texorpdfstring{brrAddress}{brrAddress}}
+{\footnotesize\ttfamily uint16\+\_\+t Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+Voice\+::brr\+Address}
+
+
+
+Current \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1BRR}{B\+RR}} associated with this voice. 
+
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1DSP_1_1Voice_a2274acfc3ec1afdea98e059d6addab2b}\label{structComSquare_1_1APU_1_1DSP_1_1Voice_a2274acfc3ec1afdea98e059d6addab2b}} 
+\index{ComSquare::APU::DSP::Voice@{ComSquare::APU::DSP::Voice}!brrOffset@{brrOffset}}
+\index{brrOffset@{brrOffset}!ComSquare::APU::DSP::Voice@{ComSquare::APU::DSP::Voice}}
+\doxysubsubsection{\texorpdfstring{brrOffset}{brrOffset}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+Voice\+::brr\+Offset = 1}
+
+
+
+Current Offset in the \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1BRR}{B\+RR}} block. 
+
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1DSP_1_1Voice_a2045c5ccc6def6cba3d33ca216d463d3}\label{structComSquare_1_1APU_1_1DSP_1_1Voice_a2045c5ccc6def6cba3d33ca216d463d3}} 
+\index{ComSquare::APU::DSP::Voice@{ComSquare::APU::DSP::Voice}!echo@{echo}}
+\index{echo@{echo}!ComSquare::APU::DSP::Voice@{ComSquare::APU::DSP::Voice}}
+\doxysubsubsection{\texorpdfstring{echo}{echo}}
+{\footnotesize\ttfamily bool Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+Voice\+::echo}
+
+
+
+Check if the output will be echoed. 
+
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1DSP_1_1Voice_aefd28d64f1e7f294f9add09514827712}\label{structComSquare_1_1APU_1_1DSP_1_1Voice_aefd28d64f1e7f294f9add09514827712}} 
+\index{ComSquare::APU::DSP::Voice@{ComSquare::APU::DSP::Voice}!endx@{endx}}
+\index{endx@{endx}!ComSquare::APU::DSP::Voice@{ComSquare::APU::DSP::Voice}}
+\doxysubsubsection{\texorpdfstring{endx}{endx}}
+{\footnotesize\ttfamily bool Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+Voice\+::endx}
+
+
+
+Sample end register (E\+N\+DX) 
+
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1DSP_1_1Voice_a8cca2bc05b994ff848a096e9ebc7f42b}\label{structComSquare_1_1APU_1_1DSP_1_1Voice_a8cca2bc05b994ff848a096e9ebc7f42b}} 
+\index{ComSquare::APU::DSP::Voice@{ComSquare::APU::DSP::Voice}!envelope@{envelope}}
+\index{envelope@{envelope}!ComSquare::APU::DSP::Voice@{ComSquare::APU::DSP::Voice}}
+\doxysubsubsection{\texorpdfstring{envelope}{envelope}}
+{\footnotesize\ttfamily uint16\+\_\+t Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+Voice\+::envelope}
+
+
+
+Current envelope level. 
+
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1DSP_1_1Voice_af5bb36fdf69b0792f0bb09a7bc728f7a}\label{structComSquare_1_1APU_1_1DSP_1_1Voice_af5bb36fdf69b0792f0bb09a7bc728f7a}} 
+\index{ComSquare::APU::DSP::Voice@{ComSquare::APU::DSP::Voice}!envelopeMode@{envelopeMode}}
+\index{envelopeMode@{envelopeMode}!ComSquare::APU::DSP::Voice@{ComSquare::APU::DSP::Voice}}
+\doxysubsubsection{\texorpdfstring{envelopeMode}{envelopeMode}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceComSquare_1_1APU_1_1DSP_a332ba4e7398628807ea631bfab77e441}{Envelope}} Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+Voice\+::envelope\+Mode}
+
+
+
+current envelope Mode 
+
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1DSP_1_1Voice_afb678448bdfe8c9575a4986563958b49}\label{structComSquare_1_1APU_1_1DSP_1_1Voice_afb678448bdfe8c9575a4986563958b49}} 
+\index{ComSquare::APU::DSP::Voice@{ComSquare::APU::DSP::Voice}!envx@{envx}}
+\index{envx@{envx}!ComSquare::APU::DSP::Voice@{ComSquare::APU::DSP::Voice}}
+\doxysubsubsection{\texorpdfstring{envx}{envx}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+Voice\+::envx}
+
+
+
+envelope associated with this voice 
+
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1DSP_1_1Voice_a6e9c19c889aab678535c44643e367f0e}\label{structComSquare_1_1APU_1_1DSP_1_1Voice_a6e9c19c889aab678535c44643e367f0e}} 
+\index{ComSquare::APU::DSP::Voice@{ComSquare::APU::DSP::Voice}!eon@{eon}}
+\index{eon@{eon}!ComSquare::APU::DSP::Voice@{ComSquare::APU::DSP::Voice}}
+\doxysubsubsection{\texorpdfstring{eon}{eon}}
+{\footnotesize\ttfamily bool Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+Voice\+::eon}
+
+
+
+\mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Echo}{Echo}} enable register (E\+ON) 
+
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1DSP_1_1Voice_a0b844f4154698679a9bda61fc049c0c5}\label{structComSquare_1_1APU_1_1DSP_1_1Voice_a0b844f4154698679a9bda61fc049c0c5}} 
+\index{ComSquare::APU::DSP::Voice@{ComSquare::APU::DSP::Voice}!gain@{gain}}
+\index{gain@{gain}!ComSquare::APU::DSP::Voice@{ComSquare::APU::DSP::Voice}}
+\doxysubsubsection{\texorpdfstring{gain}{gain}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+Voice\+::gain}
+
+
+
+Gain register (G\+A\+IN) 
+
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1DSP_1_1Voice_a689eabb5be070748776a3e63328a24aa}\label{structComSquare_1_1APU_1_1DSP_1_1Voice_a689eabb5be070748776a3e63328a24aa}} 
+\index{ComSquare::APU::DSP::Voice@{ComSquare::APU::DSP::Voice}!gaussOffset@{gaussOffset}}
+\index{gaussOffset@{gaussOffset}!ComSquare::APU::DSP::Voice@{ComSquare::APU::DSP::Voice}}
+\doxysubsubsection{\texorpdfstring{gaussOffset}{gaussOffset}}
+{\footnotesize\ttfamily uint16\+\_\+t Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+Voice\+::gauss\+Offset}
+
+
+
+Relative fractional position in sample. 
+
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1DSP_1_1Voice_a60b44ae8cb9170b3ecfecd8285b9a57e}\label{structComSquare_1_1APU_1_1DSP_1_1Voice_a60b44ae8cb9170b3ecfecd8285b9a57e}} 
+\index{ComSquare::APU::DSP::Voice@{ComSquare::APU::DSP::Voice}!hiddenEnvelope@{hiddenEnvelope}}
+\index{hiddenEnvelope@{hiddenEnvelope}!ComSquare::APU::DSP::Voice@{ComSquare::APU::DSP::Voice}}
+\doxysubsubsection{\texorpdfstring{hiddenEnvelope}{hiddenEnvelope}}
+{\footnotesize\ttfamily uint16\+\_\+t Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+Voice\+::hidden\+Envelope}
+
+
+
+Second envelope level used to make \char`\"{}special\char`\"{} waveforms. 
+
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1DSP_1_1Voice_a7a1bff0503c531fa42b1aa557f693459}\label{structComSquare_1_1APU_1_1DSP_1_1Voice_a7a1bff0503c531fa42b1aa557f693459}} 
+\index{ComSquare::APU::DSP::Voice@{ComSquare::APU::DSP::Voice}!kof@{kof}}
+\index{kof@{kof}!ComSquare::APU::DSP::Voice@{ComSquare::APU::DSP::Voice}}
+\doxysubsubsection{\texorpdfstring{kof}{kof}}
+{\footnotesize\ttfamily bool Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+Voice\+::kof}
+
+
+
+Key Off register (K\+OF) 
+
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1DSP_1_1Voice_a39b0d0ff44b4884272d1a5520d561a8c}\label{structComSquare_1_1APU_1_1DSP_1_1Voice_a39b0d0ff44b4884272d1a5520d561a8c}} 
+\index{ComSquare::APU::DSP::Voice@{ComSquare::APU::DSP::Voice}!kon@{kon}}
+\index{kon@{kon}!ComSquare::APU::DSP::Voice@{ComSquare::APU::DSP::Voice}}
+\doxysubsubsection{\texorpdfstring{kon}{kon}}
+{\footnotesize\ttfamily bool Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+Voice\+::kon}
+
+
+
+Key On register (K\+ON) 
+
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1DSP_1_1Voice_ad1a30c6434268a1063357018ae39472f}\label{structComSquare_1_1APU_1_1DSP_1_1Voice_ad1a30c6434268a1063357018ae39472f}} 
+\index{ComSquare::APU::DSP::Voice@{ComSquare::APU::DSP::Voice}!konDelay@{konDelay}}
+\index{konDelay@{konDelay}!ComSquare::APU::DSP::Voice@{ComSquare::APU::DSP::Voice}}
+\doxysubsubsection{\texorpdfstring{konDelay}{konDelay}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+Voice\+::kon\+Delay}
+
+
+
+Check if voice is in setup phase. 
+
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1DSP_1_1Voice_a1481ffe36f6c18d920c87ff1477e0628}\label{structComSquare_1_1APU_1_1DSP_1_1Voice_a1481ffe36f6c18d920c87ff1477e0628}} 
+\index{ComSquare::APU::DSP::Voice@{ComSquare::APU::DSP::Voice}!loop@{loop}}
+\index{loop@{loop}!ComSquare::APU::DSP::Voice@{ComSquare::APU::DSP::Voice}}
+\doxysubsubsection{\texorpdfstring{loop}{loop}}
+{\footnotesize\ttfamily bool Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+Voice\+::loop}
+
+
+
+Check if this voice will be looped. 
+
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1DSP_1_1Voice_a5a7d98e27474ce03e26970e5ba7c8e19}\label{structComSquare_1_1APU_1_1DSP_1_1Voice_a5a7d98e27474ce03e26970e5ba7c8e19}} 
+\index{ComSquare::APU::DSP::Voice@{ComSquare::APU::DSP::Voice}!non@{non}}
+\index{non@{non}!ComSquare::APU::DSP::Voice@{ComSquare::APU::DSP::Voice}}
+\doxysubsubsection{\texorpdfstring{non}{non}}
+{\footnotesize\ttfamily bool Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+Voice\+::non}
+
+
+
+\mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Noise}{Noise}} enable register (N\+ON) 
+
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1DSP_1_1Voice_a71814e4d7695f7c0244d95fd4293e72a}\label{structComSquare_1_1APU_1_1DSP_1_1Voice_a71814e4d7695f7c0244d95fd4293e72a}} 
+\index{ComSquare::APU::DSP::Voice@{ComSquare::APU::DSP::Voice}!outx@{outx}}
+\index{outx@{outx}!ComSquare::APU::DSP::Voice@{ComSquare::APU::DSP::Voice}}
+\doxysubsubsection{\texorpdfstring{outx}{outx}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+Voice\+::outx}
+
+
+
+Wave height associated with this voice. 
+
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1DSP_1_1Voice_a45549f5811e5de16ce8221477d2937dc}\label{structComSquare_1_1APU_1_1DSP_1_1Voice_a45549f5811e5de16ce8221477d2937dc}} 
+\index{ComSquare::APU::DSP::Voice@{ComSquare::APU::DSP::Voice}!pitch@{pitch}}
+\index{pitch@{pitch}!ComSquare::APU::DSP::Voice@{ComSquare::APU::DSP::Voice}}
+\doxysubsubsection{\texorpdfstring{pitch}{pitch}}
+{\footnotesize\ttfamily uint16\+\_\+t Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+Voice\+::pitch}
+
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1DSP_1_1Voice_a8aa74c2e162f3a558547f490710c811b}\label{structComSquare_1_1APU_1_1DSP_1_1Voice_a8aa74c2e162f3a558547f490710c811b}} 
+\index{ComSquare::APU::DSP::Voice@{ComSquare::APU::DSP::Voice}!pitchH@{pitchH}}
+\index{pitchH@{pitchH}!ComSquare::APU::DSP::Voice@{ComSquare::APU::DSP::Voice}}
+\doxysubsubsection{\texorpdfstring{pitchH}{pitchH}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+Voice\+::pitchH}
+
+
+
+Higher 8 bits of pitch register. 
+
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1DSP_1_1Voice_ac10b65c9955e314d0d93d6196d524b13}\label{structComSquare_1_1APU_1_1DSP_1_1Voice_ac10b65c9955e314d0d93d6196d524b13}} 
+\index{ComSquare::APU::DSP::Voice@{ComSquare::APU::DSP::Voice}!pitchL@{pitchL}}
+\index{pitchL@{pitchL}!ComSquare::APU::DSP::Voice@{ComSquare::APU::DSP::Voice}}
+\doxysubsubsection{\texorpdfstring{pitchL}{pitchL}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+Voice\+::pitchL}
+
+
+
+Lower 8 bits of pitch register. 
+
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1DSP_1_1Voice_abb011fe331eb02d3990fd9bf67c3217f}\label{structComSquare_1_1APU_1_1DSP_1_1Voice_abb011fe331eb02d3990fd9bf67c3217f}} 
+\index{ComSquare::APU::DSP::Voice@{ComSquare::APU::DSP::Voice}!pmon@{pmon}}
+\index{pmon@{pmon}!ComSquare::APU::DSP::Voice@{ComSquare::APU::DSP::Voice}}
+\doxysubsubsection{\texorpdfstring{pmon}{pmon}}
+{\footnotesize\ttfamily bool Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+Voice\+::pmon}
+
+
+
+Pitch modulation register (P\+M\+ON) 
+
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1DSP_1_1Voice_acc23c8dae6f2ac6add644881ed306f4d}\label{structComSquare_1_1APU_1_1DSP_1_1Voice_acc23c8dae6f2ac6add644881ed306f4d}} 
+\index{ComSquare::APU::DSP::Voice@{ComSquare::APU::DSP::Voice}!prevPmon@{prevPmon}}
+\index{prevPmon@{prevPmon}!ComSquare::APU::DSP::Voice@{ComSquare::APU::DSP::Voice}}
+\doxysubsubsection{\texorpdfstring{prevPmon}{prevPmon}}
+{\footnotesize\ttfamily bool Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+Voice\+::prev\+Pmon}
+
+
+
+Previous modulation. 
+
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1DSP_1_1Voice_a4857222be9f8f2e12c3e7c294f741571}\label{structComSquare_1_1APU_1_1DSP_1_1Voice_a4857222be9f8f2e12c3e7c294f741571}} 
+\index{ComSquare::APU::DSP::Voice@{ComSquare::APU::DSP::Voice}!sampleOffset@{sampleOffset}}
+\index{sampleOffset@{sampleOffset}!ComSquare::APU::DSP::Voice@{ComSquare::APU::DSP::Voice}}
+\doxysubsubsection{\texorpdfstring{sampleOffset}{sampleOffset}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+Voice\+::sample\+Offset}
+
+
+
+Offset of current sample in samples buffer. 
+
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1DSP_1_1Voice_a90a2ada1d57c03eb5a3da79ca8a64631}\label{structComSquare_1_1APU_1_1DSP_1_1Voice_a90a2ada1d57c03eb5a3da79ca8a64631}} 
+\index{ComSquare::APU::DSP::Voice@{ComSquare::APU::DSP::Voice}!samples@{samples}}
+\index{samples@{samples}!ComSquare::APU::DSP::Voice@{ComSquare::APU::DSP::Voice}}
+\doxysubsubsection{\texorpdfstring{samples}{samples}}
+{\footnotesize\ttfamily std\+::array$<$uint16\+\_\+t, 12$>$ Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+Voice\+::samples}
+
+
+
+all samples Decoded from \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1BRR}{B\+RR}} 
+
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1DSP_1_1Voice_aae05f0ab1918d3c41c068878cdbbae7e}\label{structComSquare_1_1APU_1_1DSP_1_1Voice_aae05f0ab1918d3c41c068878cdbbae7e}} 
+\index{ComSquare::APU::DSP::Voice@{ComSquare::APU::DSP::Voice}!srcn@{srcn}}
+\index{srcn@{srcn}!ComSquare::APU::DSP::Voice@{ComSquare::APU::DSP::Voice}}
+\doxysubsubsection{\texorpdfstring{srcn}{srcn}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+Voice\+::srcn}
+
+
+
+Source number register (S\+R\+CN) 
+
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1DSP_1_1Voice_a038d2747c5f16c4d3966f35be840470b}\label{structComSquare_1_1APU_1_1DSP_1_1Voice_a038d2747c5f16c4d3966f35be840470b}} 
+\index{ComSquare::APU::DSP::Voice@{ComSquare::APU::DSP::Voice}!tempKof@{tempKof}}
+\index{tempKof@{tempKof}!ComSquare::APU::DSP::Voice@{ComSquare::APU::DSP::Voice}}
+\doxysubsubsection{\texorpdfstring{tempKof}{tempKof}}
+{\footnotesize\ttfamily bool Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+Voice\+::temp\+Kof}
+
+
+
+temporary Key Off register value 
+
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1DSP_1_1Voice_a9db59203a9196a57f53e47b9db5a165d}\label{structComSquare_1_1APU_1_1DSP_1_1Voice_a9db59203a9196a57f53e47b9db5a165d}} 
+\index{ComSquare::APU::DSP::Voice@{ComSquare::APU::DSP::Voice}!tempKon@{tempKon}}
+\index{tempKon@{tempKon}!ComSquare::APU::DSP::Voice@{ComSquare::APU::DSP::Voice}}
+\doxysubsubsection{\texorpdfstring{tempKon}{tempKon}}
+{\footnotesize\ttfamily bool Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+Voice\+::temp\+Kon}
+
+
+
+temporary Key On register value 
+
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1DSP_1_1Voice_a5cad3cca09a6ed678be74cf67d8c05b5}\label{structComSquare_1_1APU_1_1DSP_1_1Voice_a5cad3cca09a6ed678be74cf67d8c05b5}} 
+\index{ComSquare::APU::DSP::Voice@{ComSquare::APU::DSP::Voice}!tempNon@{tempNon}}
+\index{tempNon@{tempNon}!ComSquare::APU::DSP::Voice@{ComSquare::APU::DSP::Voice}}
+\doxysubsubsection{\texorpdfstring{tempNon}{tempNon}}
+{\footnotesize\ttfamily bool Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+Voice\+::temp\+Non}
+
+
+
+temporary N\+ON register value 
+
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1DSP_1_1Voice_a6d4621023336bd448ed045662d0e6e30}\label{structComSquare_1_1APU_1_1DSP_1_1Voice_a6d4621023336bd448ed045662d0e6e30}} 
+\index{ComSquare::APU::DSP::Voice@{ComSquare::APU::DSP::Voice}!volume@{volume}}
+\index{volume@{volume}!ComSquare::APU::DSP::Voice@{ComSquare::APU::DSP::Voice}}
+\doxysubsubsection{\texorpdfstring{volume}{volume}}
+{\footnotesize\ttfamily std\+::array$<$int8\+\_\+t, 2$>$ Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+Voice\+::volume}
+
+
+
+Volume register (V\+OL) 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+sources/\+A\+P\+U/\+D\+S\+P/\mbox{\hyperlink{DSP_8hpp}{D\+S\+P.\+hpp}}\end{DoxyCompactItemize}

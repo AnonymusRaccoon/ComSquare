@@ -1,0 +1,3 @@
+<map id="ComSquare::Debugger::ExecutedInstruction" name="ComSquare::Debugger::ExecutedInstruction">
+<area shape="rect" id="node1" title="An instruction that has already been executed. Used for the history viewer." alt="" coords="5,5,173,141"/>
+</map>

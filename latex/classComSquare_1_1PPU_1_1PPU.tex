@@ -1,0 +1,397 @@
+\hypertarget{classComSquare_1_1PPU_1_1PPU}{}\doxysection{Com\+Square\+::P\+PU\+::P\+PU Class Reference}
+\label{classComSquare_1_1PPU_1_1PPU}\index{ComSquare::PPU::PPU@{ComSquare::PPU::PPU}}
+
+
+The class containing all the registers of the \mbox{\hyperlink{classComSquare_1_1PPU_1_1PPU}{P\+PU}}.  
+
+
+
+
+{\ttfamily \#include $<$P\+P\+U.\+hpp$>$}
+
+
+
+Inheritance diagram for Com\+Square\+::P\+PU\+::P\+PU\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classComSquare_1_1PPU_1_1PPU__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Com\+Square\+::P\+PU\+::P\+PU\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classComSquare_1_1PPU_1_1PPU__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classComSquare_1_1PPU_1_1PPU_a32c65d7f7979cfca7cd2adafa8e7872b}{P\+PU}} (\mbox{\hyperlink{classComSquare_1_1Renderer_1_1IRenderer}{Renderer\+::\+I\+Renderer}} \&renderer)
+\item 
+\mbox{\hyperlink{classComSquare_1_1PPU_1_1PPU_adc758fad738a3f2b0746647c0ef8161a}{P\+PU}} (const \mbox{\hyperlink{classComSquare_1_1PPU_1_1PPU}{P\+PU}} \&)=delete
+\item 
+\mbox{\hyperlink{classComSquare_1_1PPU_1_1PPU}{P\+PU}} \& \mbox{\hyperlink{classComSquare_1_1PPU_1_1PPU_a27480bcc2579727b5e2eb9e6eb229fd9}{operator=}} (const \mbox{\hyperlink{classComSquare_1_1PPU_1_1PPU}{P\+PU}} \&)=delete
+\item 
+\mbox{\hyperlink{classComSquare_1_1PPU_1_1PPU_a9ccf20fbee09b676e1ba5fe2aa103b2c}{$\sim$\+P\+PU}} () override=default
+\item 
+uint8\+\_\+t \mbox{\hyperlink{classComSquare_1_1PPU_1_1PPU_afe3fba640a9167e77d90ebd796f3797c}{read}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} addr) const override
+\begin{DoxyCompactList}\small\item\em Read data from the component. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classComSquare_1_1PPU_1_1PPU_aaf2261c0ef235d3181b038355b97cbe3}{write}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} addr, uint8\+\_\+t data) override
+\begin{DoxyCompactList}\small\item\em Write data to this component. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classComSquare_1_1PPU_1_1PPU_a19a8610b12f36db9d236108c5de7b42b}{get\+Name}} () const override
+\begin{DoxyCompactList}\small\item\em Get the name of this accessor (used for debug purpose) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceComSquare_a891b49feb5c3e0aaa4873ff19b49968c}{Component}} \mbox{\hyperlink{classComSquare_1_1PPU_1_1PPU_aa2cf0928eaa6dab3bb1b933f35c273ef}{get\+Component}} () const override
+\begin{DoxyCompactList}\small\item\em Get the component of this accessor (used for debug purpose) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} \mbox{\hyperlink{classComSquare_1_1PPU_1_1PPU_a896e5d0f9c12c8edae06a53507ffec3c}{get\+Size}} () const override
+\begin{DoxyCompactList}\small\item\em Get the size of the data. This size can be lower than the mapped data. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classComSquare_1_1PPU_1_1PPU_ad5bd06e12111b66f47f978c830358eb1}{update}} (unsigned cycles)
+\begin{DoxyCompactList}\small\item\em Update the \mbox{\hyperlink{classComSquare_1_1PPU_1_1PPU}{P\+PU}} of n cycles. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{classComSquare_1_1PPU_1_1PPU_aa7271b5604bae6700c406f14e6f35290}{get\+Vram\+Address}} ()
+\begin{DoxyCompactList}\small\item\em Give the Vram Address with the right Address remapping. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classComSquare_1_1PPU_1_1PPU_af640b3330b5c312b456ab36d4f54bada}{get\+Value\+Name}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} addr) const
+\begin{DoxyCompactList}\small\item\em Give the name of the Address register (used for debug) \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classComSquare_1_1PPU_1_1PPU_a5db5989107985dfb73c2d28db9fea57b}{is\+Debugger}} () const
+\begin{DoxyCompactList}\small\item\em Return true if the \mbox{\hyperlink{namespaceComSquare_1_1CPU}{C\+PU}} is overloaded with debugging features. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{classComSquare_1_1PPU_1_1PPU_a87429a22842e735077dc751b455c2316}{cgram\+Read}} (uint16\+\_\+t addr)
+\begin{DoxyCompactList}\small\item\em Allow others components to read the C\+G\+R\+AM (Debuggers) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classComSquare_1_1PPU_1_1PPU_ab3284f1c6d0672fd46ec76c9b4bbbb76}{render\+Background}} (int bg\+Number, \mbox{\hyperlink{classComSquare_1_1Vector2}{Vector2}}$<$ int $>$ character\+Size, int bpp, bool priority)
+\begin{DoxyCompactList}\small\item\em Render a background on the screen. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{classComSquare_1_1PPU_1_1PPU_a092861f815a19b6f3186462b8d75ea38}{get\+Graphic\+Vram\+Address}} (int x, int y, int bg, int bpp)
+\begin{DoxyCompactList}\small\item\em Get the correct Vram address for a gien x and y. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classComSquare_1_1PPU_1_1PPU_abb09c5e503d43fbe411fa877ef8fa7c8}{draw\+Bg\+Tile}} (uint16\+\_\+t data, \mbox{\hyperlink{classComSquare_1_1Vector2}{Vector2}}$<$ int $>$ pos, int bg, int bpp, \mbox{\hyperlink{classComSquare_1_1Vector2}{Vector2}}$<$ int $>$ character\+Size)
+\begin{DoxyCompactList}\small\item\em Draw a tile on the screen at x y pos. \end{DoxyCompactList}\item 
+std\+::vector$<$ uint16\+\_\+t $>$ \mbox{\hyperlink{classComSquare_1_1PPU_1_1PPU_a30a9a1ab9f4da99e825ca7332be03369}{get\+Palette}} (int nb\+Palette)
+\begin{DoxyCompactList}\small\item\em Get a palette from the number of the palette (0 -\/ 7) \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{classComSquare_1_1PPU_1_1PPU_a0fcc9abd0dfc8338856807261240f40c}{get\+Real\+Color}} (uint16\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Transform \mbox{\hyperlink{classComSquare_1_1SNES}{S\+N\+ES}} color code B\+GR to uint32\+\_\+t R\+GB. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{classComSquare_1_1PPU_1_1PPU_afb31fa37a6ad96fb8886f7183a883a46}{get\+Tile\+Pixel\+Reference}} (uint16\+\_\+t addr, int bpp, int nb)
+\begin{DoxyCompactList}\small\item\em Get the color reference of a nb pixel tile. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classComSquare_1_1PPU_1_1PPU_a697f1610aac4b9fc09c862fd8bcefc32}{draw\+Basic\+Tile\+Map}} (uint16\+\_\+t base\+Address, int bg\+Number, int bpp, \mbox{\hyperlink{classComSquare_1_1Vector2}{Vector2}}$<$ int $>$ character\+Size, \mbox{\hyperlink{classComSquare_1_1Vector2}{Vector2}}$<$ int $>$ offset)
+\begin{DoxyCompactList}\small\item\em draw a tilemap 32x32 starting at base\+Address \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classComSquare_1_1Ram_1_1Ram}{Ram\+::\+Ram}} $>$ \mbox{\hyperlink{classComSquare_1_1PPU_1_1PPU_ad3e2ecb393221c867cc20b0513749a68}{vram}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classComSquare_1_1Ram_1_1Ram}{Ram\+::\+Ram}} $>$ \mbox{\hyperlink{classComSquare_1_1PPU_1_1PPU_ac1f8e8f905643bcb81b610f0e55c907b}{oamram}}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classComSquare_1_1Ram_1_1Ram}{Ram\+::\+Ram}} $>$ \mbox{\hyperlink{classComSquare_1_1PPU_1_1PPU_a52ff4a9de457d3bdd65994681fe838d4}{cgram}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structComSquare_1_1PPU_1_1Registers}{Registers}} \mbox{\hyperlink{classComSquare_1_1PPU_1_1PPU_abaa6ac7d16bccfaf3203690006407c43}{\+\_\+registers}} \{\}
+\begin{DoxyCompactList}\small\item\em Init ppu\+Registers. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classComSquare_1_1Renderer_1_1IRenderer}{Renderer\+::\+I\+Renderer}} \& \mbox{\hyperlink{classComSquare_1_1PPU_1_1PPU_a407858f99ca810551cbf603643f5d9c0}{\+\_\+renderer}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The class containing all the registers of the \mbox{\hyperlink{classComSquare_1_1PPU_1_1PPU}{P\+PU}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classComSquare_1_1PPU_1_1PPU_a32c65d7f7979cfca7cd2adafa8e7872b}\label{classComSquare_1_1PPU_1_1PPU_a32c65d7f7979cfca7cd2adafa8e7872b}} 
+\index{ComSquare::PPU::PPU@{ComSquare::PPU::PPU}!PPU@{PPU}}
+\index{PPU@{PPU}!ComSquare::PPU::PPU@{ComSquare::PPU::PPU}}
+\doxysubsubsection{\texorpdfstring{PPU()}{PPU()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Com\+Square\+::\+P\+P\+U\+::\+P\+P\+U\+::\+P\+PU (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classComSquare_1_1Renderer_1_1IRenderer}{Renderer\+::\+I\+Renderer}} \&}]{renderer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{classComSquare_1_1PPU_1_1PPU_adc758fad738a3f2b0746647c0ef8161a}\label{classComSquare_1_1PPU_1_1PPU_adc758fad738a3f2b0746647c0ef8161a}} 
+\index{ComSquare::PPU::PPU@{ComSquare::PPU::PPU}!PPU@{PPU}}
+\index{PPU@{PPU}!ComSquare::PPU::PPU@{ComSquare::PPU::PPU}}
+\doxysubsubsection{\texorpdfstring{PPU()}{PPU()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Com\+Square\+::\+P\+P\+U\+::\+P\+P\+U\+::\+P\+PU (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classComSquare_1_1PPU_1_1PPU}{P\+PU}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classComSquare_1_1PPU_1_1PPU_a9ccf20fbee09b676e1ba5fe2aa103b2c}\label{classComSquare_1_1PPU_1_1PPU_a9ccf20fbee09b676e1ba5fe2aa103b2c}} 
+\index{ComSquare::PPU::PPU@{ComSquare::PPU::PPU}!````~PPU@{$\sim$PPU}}
+\index{````~PPU@{$\sim$PPU}!ComSquare::PPU::PPU@{ComSquare::PPU::PPU}}
+\doxysubsubsection{\texorpdfstring{$\sim$PPU()}{~PPU()}}
+{\footnotesize\ttfamily Com\+Square\+::\+P\+P\+U\+::\+P\+P\+U\+::$\sim$\+P\+PU (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classComSquare_1_1PPU_1_1PPU_a87429a22842e735077dc751b455c2316}\label{classComSquare_1_1PPU_1_1PPU_a87429a22842e735077dc751b455c2316}} 
+\index{ComSquare::PPU::PPU@{ComSquare::PPU::PPU}!cgramRead@{cgramRead}}
+\index{cgramRead@{cgramRead}!ComSquare::PPU::PPU@{ComSquare::PPU::PPU}}
+\doxysubsubsection{\texorpdfstring{cgramRead()}{cgramRead()}}
+{\footnotesize\ttfamily uint16\+\_\+t Com\+Square\+::\+P\+P\+U\+::\+P\+P\+U\+::cgram\+Read (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{addr }\end{DoxyParamCaption})}
+
+
+
+Allow others components to read the C\+G\+R\+AM (Debuggers) 
+
+\mbox{\Hypertarget{classComSquare_1_1PPU_1_1PPU_a697f1610aac4b9fc09c862fd8bcefc32}\label{classComSquare_1_1PPU_1_1PPU_a697f1610aac4b9fc09c862fd8bcefc32}} 
+\index{ComSquare::PPU::PPU@{ComSquare::PPU::PPU}!drawBasicTileMap@{drawBasicTileMap}}
+\index{drawBasicTileMap@{drawBasicTileMap}!ComSquare::PPU::PPU@{ComSquare::PPU::PPU}}
+\doxysubsubsection{\texorpdfstring{drawBasicTileMap()}{drawBasicTileMap()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+P\+P\+U\+::\+P\+P\+U\+::draw\+Basic\+Tile\+Map (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{base\+Address,  }\item[{int}]{bg\+Number,  }\item[{int}]{bpp,  }\item[{\mbox{\hyperlink{classComSquare_1_1Vector2}{Vector2}}$<$ int $>$}]{character\+Size,  }\item[{\mbox{\hyperlink{classComSquare_1_1Vector2}{Vector2}}$<$ int $>$}]{offset }\end{DoxyParamCaption})}
+
+
+
+draw a tilemap 32x32 starting at base\+Address 
+
+\mbox{\Hypertarget{classComSquare_1_1PPU_1_1PPU_abb09c5e503d43fbe411fa877ef8fa7c8}\label{classComSquare_1_1PPU_1_1PPU_abb09c5e503d43fbe411fa877ef8fa7c8}} 
+\index{ComSquare::PPU::PPU@{ComSquare::PPU::PPU}!drawBgTile@{drawBgTile}}
+\index{drawBgTile@{drawBgTile}!ComSquare::PPU::PPU@{ComSquare::PPU::PPU}}
+\doxysubsubsection{\texorpdfstring{drawBgTile()}{drawBgTile()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+P\+P\+U\+::\+P\+P\+U\+::draw\+Bg\+Tile (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{data,  }\item[{\mbox{\hyperlink{classComSquare_1_1Vector2}{Vector2}}$<$ int $>$}]{pos,  }\item[{int}]{bg,  }\item[{int}]{bpp,  }\item[{\mbox{\hyperlink{classComSquare_1_1Vector2}{Vector2}}$<$ int $>$}]{character\+Size }\end{DoxyParamCaption})}
+
+
+
+Draw a tile on the screen at x y pos. 
+
+\mbox{\Hypertarget{classComSquare_1_1PPU_1_1PPU_aa2cf0928eaa6dab3bb1b933f35c273ef}\label{classComSquare_1_1PPU_1_1PPU_aa2cf0928eaa6dab3bb1b933f35c273ef}} 
+\index{ComSquare::PPU::PPU@{ComSquare::PPU::PPU}!getComponent@{getComponent}}
+\index{getComponent@{getComponent}!ComSquare::PPU::PPU@{ComSquare::PPU::PPU}}
+\doxysubsubsection{\texorpdfstring{getComponent()}{getComponent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceComSquare_a891b49feb5c3e0aaa4873ff19b49968c}{Component}} Com\+Square\+::\+P\+P\+U\+::\+P\+P\+U\+::get\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the component of this accessor (used for debug purpose) 
+
+
+
+Implements \mbox{\hyperlink{classComSquare_1_1Memory_1_1IMemory_a31289443bb26086fb74c724cdafd2241}{Com\+Square\+::\+Memory\+::\+I\+Memory}}.
+
+\mbox{\Hypertarget{classComSquare_1_1PPU_1_1PPU_a092861f815a19b6f3186462b8d75ea38}\label{classComSquare_1_1PPU_1_1PPU_a092861f815a19b6f3186462b8d75ea38}} 
+\index{ComSquare::PPU::PPU@{ComSquare::PPU::PPU}!getGraphicVramAddress@{getGraphicVramAddress}}
+\index{getGraphicVramAddress@{getGraphicVramAddress}!ComSquare::PPU::PPU@{ComSquare::PPU::PPU}}
+\doxysubsubsection{\texorpdfstring{getGraphicVramAddress()}{getGraphicVramAddress()}}
+{\footnotesize\ttfamily uint16\+\_\+t Com\+Square\+::\+P\+P\+U\+::\+P\+P\+U\+::get\+Graphic\+Vram\+Address (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{bg,  }\item[{int}]{bpp }\end{DoxyParamCaption})}
+
+
+
+Get the correct Vram address for a gien x and y. 
+
+\mbox{\Hypertarget{classComSquare_1_1PPU_1_1PPU_a19a8610b12f36db9d236108c5de7b42b}\label{classComSquare_1_1PPU_1_1PPU_a19a8610b12f36db9d236108c5de7b42b}} 
+\index{ComSquare::PPU::PPU@{ComSquare::PPU::PPU}!getName@{getName}}
+\index{getName@{getName}!ComSquare::PPU::PPU@{ComSquare::PPU::PPU}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string Com\+Square\+::\+P\+P\+U\+::\+P\+P\+U\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the name of this accessor (used for debug purpose) 
+
+
+
+Implements \mbox{\hyperlink{classComSquare_1_1Memory_1_1IMemory_a34d654c04a8a992b439c4270d566263f}{Com\+Square\+::\+Memory\+::\+I\+Memory}}.
+
+\mbox{\Hypertarget{classComSquare_1_1PPU_1_1PPU_a30a9a1ab9f4da99e825ca7332be03369}\label{classComSquare_1_1PPU_1_1PPU_a30a9a1ab9f4da99e825ca7332be03369}} 
+\index{ComSquare::PPU::PPU@{ComSquare::PPU::PPU}!getPalette@{getPalette}}
+\index{getPalette@{getPalette}!ComSquare::PPU::PPU@{ComSquare::PPU::PPU}}
+\doxysubsubsection{\texorpdfstring{getPalette()}{getPalette()}}
+{\footnotesize\ttfamily std\+::vector$<$ uint16\+\_\+t $>$ Com\+Square\+::\+P\+P\+U\+::\+P\+P\+U\+::get\+Palette (\begin{DoxyParamCaption}\item[{int}]{nb\+Palette }\end{DoxyParamCaption})}
+
+
+
+Get a palette from the number of the palette (0 -\/ 7) 
+
+\mbox{\Hypertarget{classComSquare_1_1PPU_1_1PPU_a0fcc9abd0dfc8338856807261240f40c}\label{classComSquare_1_1PPU_1_1PPU_a0fcc9abd0dfc8338856807261240f40c}} 
+\index{ComSquare::PPU::PPU@{ComSquare::PPU::PPU}!getRealColor@{getRealColor}}
+\index{getRealColor@{getRealColor}!ComSquare::PPU::PPU@{ComSquare::PPU::PPU}}
+\doxysubsubsection{\texorpdfstring{getRealColor()}{getRealColor()}}
+{\footnotesize\ttfamily uint32\+\_\+t Com\+Square\+::\+P\+P\+U\+::\+P\+P\+U\+::get\+Real\+Color (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+Transform \mbox{\hyperlink{classComSquare_1_1SNES}{S\+N\+ES}} color code B\+GR to uint32\+\_\+t R\+GB. 
+
+\mbox{\Hypertarget{classComSquare_1_1PPU_1_1PPU_a896e5d0f9c12c8edae06a53507ffec3c}\label{classComSquare_1_1PPU_1_1PPU_a896e5d0f9c12c8edae06a53507ffec3c}} 
+\index{ComSquare::PPU::PPU@{ComSquare::PPU::PPU}!getSize@{getSize}}
+\index{getSize@{getSize}!ComSquare::PPU::PPU@{ComSquare::PPU::PPU}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} Com\+Square\+::\+P\+P\+U\+::\+P\+P\+U\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the size of the data. This size can be lower than the mapped data. 
+
+\begin{DoxyReturn}{Returns}
+The number of bytes inside this memory. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classComSquare_1_1Memory_1_1IMemory_a1072ab44e7389913ff67cb77ff118c8b}{Com\+Square\+::\+Memory\+::\+I\+Memory}}.
+
+\mbox{\Hypertarget{classComSquare_1_1PPU_1_1PPU_afb31fa37a6ad96fb8886f7183a883a46}\label{classComSquare_1_1PPU_1_1PPU_afb31fa37a6ad96fb8886f7183a883a46}} 
+\index{ComSquare::PPU::PPU@{ComSquare::PPU::PPU}!getTilePixelReference@{getTilePixelReference}}
+\index{getTilePixelReference@{getTilePixelReference}!ComSquare::PPU::PPU@{ComSquare::PPU::PPU}}
+\doxysubsubsection{\texorpdfstring{getTilePixelReference()}{getTilePixelReference()}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+P\+P\+U\+::\+P\+P\+U\+::get\+Tile\+Pixel\+Reference (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{addr,  }\item[{int}]{bpp,  }\item[{int}]{nb }\end{DoxyParamCaption})}
+
+
+
+Get the color reference of a nb pixel tile. 
+
+\mbox{\Hypertarget{classComSquare_1_1PPU_1_1PPU_af640b3330b5c312b456ab36d4f54bada}\label{classComSquare_1_1PPU_1_1PPU_af640b3330b5c312b456ab36d4f54bada}} 
+\index{ComSquare::PPU::PPU@{ComSquare::PPU::PPU}!getValueName@{getValueName}}
+\index{getValueName@{getValueName}!ComSquare::PPU::PPU@{ComSquare::PPU::PPU}}
+\doxysubsubsection{\texorpdfstring{getValueName()}{getValueName()}}
+{\footnotesize\ttfamily std\+::string Com\+Square\+::\+P\+P\+U\+::\+P\+P\+U\+::get\+Value\+Name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{addr }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Give the name of the Address register (used for debug) 
+
+
+
+Reimplemented from \mbox{\hyperlink{classComSquare_1_1Memory_1_1AMemory_aa17d27e8c201e2ffbe88676e7680fc4e}{Com\+Square\+::\+Memory\+::\+A\+Memory}}.
+
+\mbox{\Hypertarget{classComSquare_1_1PPU_1_1PPU_aa7271b5604bae6700c406f14e6f35290}\label{classComSquare_1_1PPU_1_1PPU_aa7271b5604bae6700c406f14e6f35290}} 
+\index{ComSquare::PPU::PPU@{ComSquare::PPU::PPU}!getVramAddress@{getVramAddress}}
+\index{getVramAddress@{getVramAddress}!ComSquare::PPU::PPU@{ComSquare::PPU::PPU}}
+\doxysubsubsection{\texorpdfstring{getVramAddress()}{getVramAddress()}}
+{\footnotesize\ttfamily uint16\+\_\+t Com\+Square\+::\+P\+P\+U\+::\+P\+P\+U\+::get\+Vram\+Address (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Give the Vram Address with the right Address remapping. 
+
+\mbox{\Hypertarget{classComSquare_1_1PPU_1_1PPU_a5db5989107985dfb73c2d28db9fea57b}\label{classComSquare_1_1PPU_1_1PPU_a5db5989107985dfb73c2d28db9fea57b}} 
+\index{ComSquare::PPU::PPU@{ComSquare::PPU::PPU}!isDebugger@{isDebugger}}
+\index{isDebugger@{isDebugger}!ComSquare::PPU::PPU@{ComSquare::PPU::PPU}}
+\doxysubsubsection{\texorpdfstring{isDebugger()}{isDebugger()}}
+{\footnotesize\ttfamily bool Com\+Square\+::\+P\+P\+U\+::\+P\+P\+U\+::is\+Debugger (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Return true if the \mbox{\hyperlink{namespaceComSquare_1_1CPU}{C\+PU}} is overloaded with debugging features. 
+
+\mbox{\Hypertarget{classComSquare_1_1PPU_1_1PPU_a27480bcc2579727b5e2eb9e6eb229fd9}\label{classComSquare_1_1PPU_1_1PPU_a27480bcc2579727b5e2eb9e6eb229fd9}} 
+\index{ComSquare::PPU::PPU@{ComSquare::PPU::PPU}!operator=@{operator=}}
+\index{operator=@{operator=}!ComSquare::PPU::PPU@{ComSquare::PPU::PPU}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classComSquare_1_1PPU_1_1PPU}{P\+PU}}\& Com\+Square\+::\+P\+P\+U\+::\+P\+P\+U\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classComSquare_1_1PPU_1_1PPU}{P\+PU}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classComSquare_1_1PPU_1_1PPU_afe3fba640a9167e77d90ebd796f3797c}\label{classComSquare_1_1PPU_1_1PPU_afe3fba640a9167e77d90ebd796f3797c}} 
+\index{ComSquare::PPU::PPU@{ComSquare::PPU::PPU}!read@{read}}
+\index{read@{read}!ComSquare::PPU::PPU@{ComSquare::PPU::PPU}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+P\+P\+U\+::\+P\+P\+U\+::read (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{addr }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Read data from the component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & The local address to read from (0x0 should refer to the first byte of this component). \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em This} & function should thrown an \mbox{\hyperlink{classComSquare_1_1InvalidAddress}{Invalid\+Address}} for address that are not mapped to the component. \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+Return the data at the address given as parameter. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classComSquare_1_1Memory_1_1IMemory_a72ffc0dfe13a000099f4cbc197cd48ec}{Com\+Square\+::\+Memory\+::\+I\+Memory}}.
+
+\mbox{\Hypertarget{classComSquare_1_1PPU_1_1PPU_ab3284f1c6d0672fd46ec76c9b4bbbb76}\label{classComSquare_1_1PPU_1_1PPU_ab3284f1c6d0672fd46ec76c9b4bbbb76}} 
+\index{ComSquare::PPU::PPU@{ComSquare::PPU::PPU}!renderBackground@{renderBackground}}
+\index{renderBackground@{renderBackground}!ComSquare::PPU::PPU@{ComSquare::PPU::PPU}}
+\doxysubsubsection{\texorpdfstring{renderBackground()}{renderBackground()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+P\+P\+U\+::\+P\+P\+U\+::render\+Background (\begin{DoxyParamCaption}\item[{int}]{bg\+Number,  }\item[{\mbox{\hyperlink{classComSquare_1_1Vector2}{Vector2}}$<$ int $>$}]{character\+Size,  }\item[{int}]{bpp,  }\item[{bool}]{priority }\end{DoxyParamCaption})}
+
+
+
+Render a background on the screen. 
+
+\mbox{\Hypertarget{classComSquare_1_1PPU_1_1PPU_ad5bd06e12111b66f47f978c830358eb1}\label{classComSquare_1_1PPU_1_1PPU_ad5bd06e12111b66f47f978c830358eb1}} 
+\index{ComSquare::PPU::PPU@{ComSquare::PPU::PPU}!update@{update}}
+\index{update@{update}!ComSquare::PPU::PPU@{ComSquare::PPU::PPU}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+P\+P\+U\+::\+P\+P\+U\+::update (\begin{DoxyParamCaption}\item[{unsigned}]{cycles }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Update the \mbox{\hyperlink{classComSquare_1_1PPU_1_1PPU}{P\+PU}} of n cycles. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em The} & number of cycles to update. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classComSquare_1_1PPU_1_1PPU_aaf2261c0ef235d3181b038355b97cbe3}\label{classComSquare_1_1PPU_1_1PPU_aaf2261c0ef235d3181b038355b97cbe3}} 
+\index{ComSquare::PPU::PPU@{ComSquare::PPU::PPU}!write@{write}}
+\index{write@{write}!ComSquare::PPU::PPU@{ComSquare::PPU::PPU}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+P\+P\+U\+::\+P\+P\+U\+::write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{addr,  }\item[{uint8\+\_\+t}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Write data to this component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & The local address to write data (0x0 should refer to the first byte of this component). \\
+\hline
+{\em data} & The new data to write. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em This} & function should thrown an \mbox{\hyperlink{classComSquare_1_1InvalidAddress}{Invalid\+Address}} for address that are not mapped to the component. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{classComSquare_1_1Memory_1_1IMemory_a449bc89798a0b86028bb0413106514d9}{Com\+Square\+::\+Memory\+::\+I\+Memory}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classComSquare_1_1PPU_1_1PPU_abaa6ac7d16bccfaf3203690006407c43}\label{classComSquare_1_1PPU_1_1PPU_abaa6ac7d16bccfaf3203690006407c43}} 
+\index{ComSquare::PPU::PPU@{ComSquare::PPU::PPU}!\_registers@{\_registers}}
+\index{\_registers@{\_registers}!ComSquare::PPU::PPU@{ComSquare::PPU::PPU}}
+\doxysubsubsection{\texorpdfstring{\_registers}{\_registers}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structComSquare_1_1PPU_1_1Registers}{Registers}} Com\+Square\+::\+P\+P\+U\+::\+P\+P\+U\+::\+\_\+registers \{\}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Init ppu\+Registers. 
+
+\mbox{\Hypertarget{classComSquare_1_1PPU_1_1PPU_a407858f99ca810551cbf603643f5d9c0}\label{classComSquare_1_1PPU_1_1PPU_a407858f99ca810551cbf603643f5d9c0}} 
+\index{ComSquare::PPU::PPU@{ComSquare::PPU::PPU}!\_renderer@{\_renderer}}
+\index{\_renderer@{\_renderer}!ComSquare::PPU::PPU@{ComSquare::PPU::PPU}}
+\doxysubsubsection{\texorpdfstring{\_renderer}{\_renderer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classComSquare_1_1Renderer_1_1IRenderer}{Renderer\+::\+I\+Renderer}}\& Com\+Square\+::\+P\+P\+U\+::\+P\+P\+U\+::\+\_\+renderer\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classComSquare_1_1PPU_1_1PPU_a52ff4a9de457d3bdd65994681fe838d4}\label{classComSquare_1_1PPU_1_1PPU_a52ff4a9de457d3bdd65994681fe838d4}} 
+\index{ComSquare::PPU::PPU@{ComSquare::PPU::PPU}!cgram@{cgram}}
+\index{cgram@{cgram}!ComSquare::PPU::PPU@{ComSquare::PPU::PPU}}
+\doxysubsubsection{\texorpdfstring{cgram}{cgram}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classComSquare_1_1Ram_1_1Ram}{Ram\+::\+Ram}}$>$ Com\+Square\+::\+P\+P\+U\+::\+P\+P\+U\+::cgram}
+
+\mbox{\Hypertarget{classComSquare_1_1PPU_1_1PPU_ac1f8e8f905643bcb81b610f0e55c907b}\label{classComSquare_1_1PPU_1_1PPU_ac1f8e8f905643bcb81b610f0e55c907b}} 
+\index{ComSquare::PPU::PPU@{ComSquare::PPU::PPU}!oamram@{oamram}}
+\index{oamram@{oamram}!ComSquare::PPU::PPU@{ComSquare::PPU::PPU}}
+\doxysubsubsection{\texorpdfstring{oamram}{oamram}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classComSquare_1_1Ram_1_1Ram}{Ram\+::\+Ram}}$>$ Com\+Square\+::\+P\+P\+U\+::\+P\+P\+U\+::oamram}
+
+\mbox{\Hypertarget{classComSquare_1_1PPU_1_1PPU_ad3e2ecb393221c867cc20b0513749a68}\label{classComSquare_1_1PPU_1_1PPU_ad3e2ecb393221c867cc20b0513749a68}} 
+\index{ComSquare::PPU::PPU@{ComSquare::PPU::PPU}!vram@{vram}}
+\index{vram@{vram}!ComSquare::PPU::PPU@{ComSquare::PPU::PPU}}
+\doxysubsubsection{\texorpdfstring{vram}{vram}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classComSquare_1_1Ram_1_1Ram}{Ram\+::\+Ram}}$>$ Com\+Square\+::\+P\+P\+U\+::\+P\+P\+U\+::vram}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+sources/\+P\+P\+U/\mbox{\hyperlink{PPU_8hpp}{P\+P\+U.\+hpp}}\item 
+sources/\+P\+P\+U/\mbox{\hyperlink{Backgrounds_8cpp}{Backgrounds.\+cpp}}\item 
+sources/\+P\+P\+U/\mbox{\hyperlink{PPU_8cpp}{P\+P\+U.\+cpp}}\end{DoxyCompactItemize}

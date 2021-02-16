@@ -1,0 +1,207 @@
+\hypertarget{structComSquare_1_1APU_1_1DSP_1_1Echo}{}\doxysection{Com\+Square\+::A\+PU\+::D\+SP\+::Echo Struct Reference}
+\label{structComSquare_1_1APU_1_1DSP_1_1Echo}\index{ComSquare::APU::DSP::Echo@{ComSquare::APU::DSP::Echo}}
+
+
+{\ttfamily \#include $<$D\+S\+P.\+hpp$>$}
+
+
+
+Collaboration diagram for Com\+Square\+::A\+PU\+::D\+SP\+::Echo\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{structComSquare_1_1APU_1_1DSP_1_1Echo__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::array$<$ uint8\+\_\+t, 2 $>$ \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Echo_abcb22ab9b2ee938f3d51bd71159c5baa}{volume}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Echo}{Echo}} Volume register (E\+V\+OL) \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Echo_adef366b19bbd03a562711eceb829bea2}{feedback}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Echo}{Echo}} feedback register (E\+FB) \end{DoxyCompactList}\item 
+std\+::array$<$ uint8\+\_\+t, 8 $>$ \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Echo_a1860165ca90c669b8c13945218a89164}{F\+IR}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Echo}{Echo}} F\+IR filter coefficients (C\+O\+EF) \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Echo_ad11b13da6602b0de6e345a95f5850c2d}{data}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Echo}{Echo}} data start register (E\+SA) \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Echo_ad78a46c4f6db4ebc7a94aad847d08021}{offset}}
+\begin{DoxyCompactList}\small\item\em Offset position after data start. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Echo_a444793c63fa1c2f878c4ca76444ba5e7}{length}}
+\begin{DoxyCompactList}\small\item\em offset maximum \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Echo_ad74edcfe55b144976b49ec5547db52b0}{delay}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Echo}{Echo}} delay size register (E\+DL) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Echo_a9a8496ddcb58256ee069de2a96061869}{enabled}} = true
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Echo}{Echo}} enabled (5th bit F\+LG) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Echo_a35e6e51f56737397f11705212006b718}{toggle}}
+\begin{DoxyCompactList}\small\item\em Application of enabled to channels. \end{DoxyCompactList}\item 
+std\+::array$<$ std\+::array$<$ int16\+\_\+t, 8 $>$, 2 $>$ \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Echo_a8b512d171595b3f955e52ec7b5b5620b}{history}}
+\begin{DoxyCompactList}\small\item\em Last sound produced for each voice in each channel. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Echo_a3ccd2efa709b5d4b600ff4b9c2ad7f19}{history\+Offset}}
+\begin{DoxyCompactList}\small\item\em Current position inside history. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Echo_ae07f496e0e228aef8538a9c4cc8481e0}{address}}
+\begin{DoxyCompactList}\small\item\em Address of the current echo. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Echo_accbb5a67c984c049c88f95feaecb2936}{value}}
+\begin{DoxyCompactList}\small\item\em Current of value of the echo. \end{DoxyCompactList}\item 
+std\+::array$<$ uint16\+\_\+t, 2 $>$ \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Echo_ac3cca30414a511efba4823aecc1fa4d7}{input}}
+\begin{DoxyCompactList}\small\item\em Current sound to echo. \end{DoxyCompactList}\item 
+std\+::array$<$ uint16\+\_\+t, 2 $>$ \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Echo_ab7a636fc53a9573c4e273c941318e9d7}{output}}
+\begin{DoxyCompactList}\small\item\em Current sound echoed produced. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1DSP_1_1Echo_ae07f496e0e228aef8538a9c4cc8481e0}\label{structComSquare_1_1APU_1_1DSP_1_1Echo_ae07f496e0e228aef8538a9c4cc8481e0}} 
+\index{ComSquare::APU::DSP::Echo@{ComSquare::APU::DSP::Echo}!address@{address}}
+\index{address@{address}!ComSquare::APU::DSP::Echo@{ComSquare::APU::DSP::Echo}}
+\doxysubsubsection{\texorpdfstring{address}{address}}
+{\footnotesize\ttfamily uint16\+\_\+t Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+Echo\+::address}
+
+
+
+Address of the current echo. 
+
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1DSP_1_1Echo_ad11b13da6602b0de6e345a95f5850c2d}\label{structComSquare_1_1APU_1_1DSP_1_1Echo_ad11b13da6602b0de6e345a95f5850c2d}} 
+\index{ComSquare::APU::DSP::Echo@{ComSquare::APU::DSP::Echo}!data@{data}}
+\index{data@{data}!ComSquare::APU::DSP::Echo@{ComSquare::APU::DSP::Echo}}
+\doxysubsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+Echo\+::data}
+
+
+
+\mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Echo}{Echo}} data start register (E\+SA) 
+
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1DSP_1_1Echo_ad74edcfe55b144976b49ec5547db52b0}\label{structComSquare_1_1APU_1_1DSP_1_1Echo_ad74edcfe55b144976b49ec5547db52b0}} 
+\index{ComSquare::APU::DSP::Echo@{ComSquare::APU::DSP::Echo}!delay@{delay}}
+\index{delay@{delay}!ComSquare::APU::DSP::Echo@{ComSquare::APU::DSP::Echo}}
+\doxysubsubsection{\texorpdfstring{delay}{delay}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+Echo\+::delay}
+
+
+
+\mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Echo}{Echo}} delay size register (E\+DL) 
+
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1DSP_1_1Echo_a9a8496ddcb58256ee069de2a96061869}\label{structComSquare_1_1APU_1_1DSP_1_1Echo_a9a8496ddcb58256ee069de2a96061869}} 
+\index{ComSquare::APU::DSP::Echo@{ComSquare::APU::DSP::Echo}!enabled@{enabled}}
+\index{enabled@{enabled}!ComSquare::APU::DSP::Echo@{ComSquare::APU::DSP::Echo}}
+\doxysubsubsection{\texorpdfstring{enabled}{enabled}}
+{\footnotesize\ttfamily bool Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+Echo\+::enabled = true}
+
+
+
+\mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Echo}{Echo}} enabled (5th bit F\+LG) 
+
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1DSP_1_1Echo_adef366b19bbd03a562711eceb829bea2}\label{structComSquare_1_1APU_1_1DSP_1_1Echo_adef366b19bbd03a562711eceb829bea2}} 
+\index{ComSquare::APU::DSP::Echo@{ComSquare::APU::DSP::Echo}!feedback@{feedback}}
+\index{feedback@{feedback}!ComSquare::APU::DSP::Echo@{ComSquare::APU::DSP::Echo}}
+\doxysubsubsection{\texorpdfstring{feedback}{feedback}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+Echo\+::feedback}
+
+
+
+\mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Echo}{Echo}} feedback register (E\+FB) 
+
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1DSP_1_1Echo_a1860165ca90c669b8c13945218a89164}\label{structComSquare_1_1APU_1_1DSP_1_1Echo_a1860165ca90c669b8c13945218a89164}} 
+\index{ComSquare::APU::DSP::Echo@{ComSquare::APU::DSP::Echo}!FIR@{FIR}}
+\index{FIR@{FIR}!ComSquare::APU::DSP::Echo@{ComSquare::APU::DSP::Echo}}
+\doxysubsubsection{\texorpdfstring{FIR}{FIR}}
+{\footnotesize\ttfamily std\+::array$<$uint8\+\_\+t, 8$>$ Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+Echo\+::\+F\+IR}
+
+
+
+\mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Echo}{Echo}} F\+IR filter coefficients (C\+O\+EF) 
+
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1DSP_1_1Echo_a8b512d171595b3f955e52ec7b5b5620b}\label{structComSquare_1_1APU_1_1DSP_1_1Echo_a8b512d171595b3f955e52ec7b5b5620b}} 
+\index{ComSquare::APU::DSP::Echo@{ComSquare::APU::DSP::Echo}!history@{history}}
+\index{history@{history}!ComSquare::APU::DSP::Echo@{ComSquare::APU::DSP::Echo}}
+\doxysubsubsection{\texorpdfstring{history}{history}}
+{\footnotesize\ttfamily std\+::array$<$std\+::array$<$int16\+\_\+t, 8$>$, 2$>$ Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+Echo\+::history}
+
+
+
+Last sound produced for each voice in each channel. 
+
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1DSP_1_1Echo_a3ccd2efa709b5d4b600ff4b9c2ad7f19}\label{structComSquare_1_1APU_1_1DSP_1_1Echo_a3ccd2efa709b5d4b600ff4b9c2ad7f19}} 
+\index{ComSquare::APU::DSP::Echo@{ComSquare::APU::DSP::Echo}!historyOffset@{historyOffset}}
+\index{historyOffset@{historyOffset}!ComSquare::APU::DSP::Echo@{ComSquare::APU::DSP::Echo}}
+\doxysubsubsection{\texorpdfstring{historyOffset}{historyOffset}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+Echo\+::history\+Offset}
+
+
+
+Current position inside history. 
+
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1DSP_1_1Echo_ac3cca30414a511efba4823aecc1fa4d7}\label{structComSquare_1_1APU_1_1DSP_1_1Echo_ac3cca30414a511efba4823aecc1fa4d7}} 
+\index{ComSquare::APU::DSP::Echo@{ComSquare::APU::DSP::Echo}!input@{input}}
+\index{input@{input}!ComSquare::APU::DSP::Echo@{ComSquare::APU::DSP::Echo}}
+\doxysubsubsection{\texorpdfstring{input}{input}}
+{\footnotesize\ttfamily std\+::array$<$uint16\+\_\+t, 2$>$ Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+Echo\+::input}
+
+
+
+Current sound to echo. 
+
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1DSP_1_1Echo_a444793c63fa1c2f878c4ca76444ba5e7}\label{structComSquare_1_1APU_1_1DSP_1_1Echo_a444793c63fa1c2f878c4ca76444ba5e7}} 
+\index{ComSquare::APU::DSP::Echo@{ComSquare::APU::DSP::Echo}!length@{length}}
+\index{length@{length}!ComSquare::APU::DSP::Echo@{ComSquare::APU::DSP::Echo}}
+\doxysubsubsection{\texorpdfstring{length}{length}}
+{\footnotesize\ttfamily uint16\+\_\+t Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+Echo\+::length}
+
+
+
+offset maximum 
+
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1DSP_1_1Echo_ad78a46c4f6db4ebc7a94aad847d08021}\label{structComSquare_1_1APU_1_1DSP_1_1Echo_ad78a46c4f6db4ebc7a94aad847d08021}} 
+\index{ComSquare::APU::DSP::Echo@{ComSquare::APU::DSP::Echo}!offset@{offset}}
+\index{offset@{offset}!ComSquare::APU::DSP::Echo@{ComSquare::APU::DSP::Echo}}
+\doxysubsubsection{\texorpdfstring{offset}{offset}}
+{\footnotesize\ttfamily uint16\+\_\+t Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+Echo\+::offset}
+
+
+
+Offset position after data start. 
+
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1DSP_1_1Echo_ab7a636fc53a9573c4e273c941318e9d7}\label{structComSquare_1_1APU_1_1DSP_1_1Echo_ab7a636fc53a9573c4e273c941318e9d7}} 
+\index{ComSquare::APU::DSP::Echo@{ComSquare::APU::DSP::Echo}!output@{output}}
+\index{output@{output}!ComSquare::APU::DSP::Echo@{ComSquare::APU::DSP::Echo}}
+\doxysubsubsection{\texorpdfstring{output}{output}}
+{\footnotesize\ttfamily std\+::array$<$uint16\+\_\+t, 2$>$ Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+Echo\+::output}
+
+
+
+Current sound echoed produced. 
+
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1DSP_1_1Echo_a35e6e51f56737397f11705212006b718}\label{structComSquare_1_1APU_1_1DSP_1_1Echo_a35e6e51f56737397f11705212006b718}} 
+\index{ComSquare::APU::DSP::Echo@{ComSquare::APU::DSP::Echo}!toggle@{toggle}}
+\index{toggle@{toggle}!ComSquare::APU::DSP::Echo@{ComSquare::APU::DSP::Echo}}
+\doxysubsubsection{\texorpdfstring{toggle}{toggle}}
+{\footnotesize\ttfamily bool Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+Echo\+::toggle}
+
+
+
+Application of enabled to channels. 
+
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1DSP_1_1Echo_accbb5a67c984c049c88f95feaecb2936}\label{structComSquare_1_1APU_1_1DSP_1_1Echo_accbb5a67c984c049c88f95feaecb2936}} 
+\index{ComSquare::APU::DSP::Echo@{ComSquare::APU::DSP::Echo}!value@{value}}
+\index{value@{value}!ComSquare::APU::DSP::Echo@{ComSquare::APU::DSP::Echo}}
+\doxysubsubsection{\texorpdfstring{value}{value}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+Echo\+::value}
+
+
+
+Current of value of the echo. 
+
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1DSP_1_1Echo_abcb22ab9b2ee938f3d51bd71159c5baa}\label{structComSquare_1_1APU_1_1DSP_1_1Echo_abcb22ab9b2ee938f3d51bd71159c5baa}} 
+\index{ComSquare::APU::DSP::Echo@{ComSquare::APU::DSP::Echo}!volume@{volume}}
+\index{volume@{volume}!ComSquare::APU::DSP::Echo@{ComSquare::APU::DSP::Echo}}
+\doxysubsubsection{\texorpdfstring{volume}{volume}}
+{\footnotesize\ttfamily std\+::array$<$uint8\+\_\+t , 2$>$ Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+Echo\+::volume}
+
+
+
+\mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Echo}{Echo}} Volume register (E\+V\+OL) 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+sources/\+A\+P\+U/\+D\+S\+P/\mbox{\hyperlink{DSP_8hpp}{D\+S\+P.\+hpp}}\end{DoxyCompactItemize}

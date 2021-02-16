@@ -1,0 +1,152 @@
+\hypertarget{classComSquare_1_1Debugger_1_1HeaderViewer}{}\doxysection{Com\+Square\+::Debugger\+::Header\+Viewer Class Reference}
+\label{classComSquare_1_1Debugger_1_1HeaderViewer}\index{ComSquare::Debugger::HeaderViewer@{ComSquare::Debugger::HeaderViewer}}
+
+
+Window that show the header of the currently running game.  
+
+
+
+
+{\ttfamily \#include $<$Header\+Viewer.\+hpp$>$}
+
+
+
+Collaboration diagram for Com\+Square\+::Debugger\+::Header\+Viewer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classComSquare_1_1Debugger_1_1HeaderViewer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classComSquare_1_1Debugger_1_1HeaderViewer_a29a766fd58ecd9d02eb45a26d060fb01}{disable\+Debugger}} ()
+\begin{DoxyCompactList}\small\item\em Called when the window is closed. Turn off the debugger and revert to a basic \mbox{\hyperlink{namespaceComSquare_1_1CPU}{C\+PU}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classComSquare_1_1Debugger_1_1HeaderViewer_ac23c068af0b788c2efba5dcdbdda165f}{focus}} ()
+\begin{DoxyCompactList}\small\item\em Focus the debugger\textquotesingle{}s window. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classComSquare_1_1Debugger_1_1HeaderViewer_a542f12b74db80c7d926730db1de10348}{Header\+Viewer}} (\mbox{\hyperlink{classComSquare_1_1SNES}{S\+N\+ES}} \&snes)
+\item 
+\mbox{\hyperlink{classComSquare_1_1Debugger_1_1HeaderViewer_a4e56a088c8d146042b20d02aacdb5c53}{Header\+Viewer}} (const \mbox{\hyperlink{classComSquare_1_1Debugger_1_1HeaderViewer}{Header\+Viewer}} \&)=delete
+\item 
+\mbox{\hyperlink{classComSquare_1_1Debugger_1_1HeaderViewer}{Header\+Viewer}} \& \mbox{\hyperlink{classComSquare_1_1Debugger_1_1HeaderViewer_a12e983136a264b0eda5c2da4a500dcf3}{operator=}} (const \mbox{\hyperlink{classComSquare_1_1Debugger_1_1HeaderViewer}{Header\+Viewer}} \&)=delete
+\item 
+\mbox{\hyperlink{classComSquare_1_1Debugger_1_1HeaderViewer_ab9eb70d97ab90a92e76a1374757e4659}{$\sim$\+Header\+Viewer}} ()=default
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classComSquare_1_1Debugger_1_1ClosableWindow}{Closable\+Window}}$<$ \mbox{\hyperlink{classComSquare_1_1Debugger_1_1HeaderViewer}{Header\+Viewer}} $>$ $\ast$ \mbox{\hyperlink{classComSquare_1_1Debugger_1_1HeaderViewer_a38cbae55eaee7df22bf16d5535672f39}{\+\_\+window}} \{\}
+\begin{DoxyCompactList}\small\item\em The QT window for this debugger. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classComSquare_1_1SNES}{S\+N\+ES}} \& \mbox{\hyperlink{classComSquare_1_1Debugger_1_1HeaderViewer_a88db6fdf77ca6176b4ff36b395efac66}{\+\_\+snes}}
+\begin{DoxyCompactList}\small\item\em A reference to the snes (to disable the debugger). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classComSquare_1_1Cartridge_1_1Cartridge}{Cartridge\+::\+Cartridge}} \& \mbox{\hyperlink{classComSquare_1_1Debugger_1_1HeaderViewer_ae50b6055ce1b2307143220d4d7074056}{\+\_\+cartridge}}
+\begin{DoxyCompactList}\small\item\em The cartridge containing the header. \end{DoxyCompactList}\item 
+Ui\+::\+Catridge\+View \mbox{\hyperlink{classComSquare_1_1Debugger_1_1HeaderViewer_a87ee499e0ef1cbc6fccdf50979e3f279}{\+\_\+ui}}
+\begin{DoxyCompactList}\small\item\em The layout of the viewer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Window that show the header of the currently running game. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1HeaderViewer_a542f12b74db80c7d926730db1de10348}\label{classComSquare_1_1Debugger_1_1HeaderViewer_a542f12b74db80c7d926730db1de10348}} 
+\index{ComSquare::Debugger::HeaderViewer@{ComSquare::Debugger::HeaderViewer}!HeaderViewer@{HeaderViewer}}
+\index{HeaderViewer@{HeaderViewer}!ComSquare::Debugger::HeaderViewer@{ComSquare::Debugger::HeaderViewer}}
+\doxysubsubsection{\texorpdfstring{HeaderViewer()}{HeaderViewer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Com\+Square\+::\+Debugger\+::\+Header\+Viewer\+::\+Header\+Viewer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classComSquare_1_1SNES}{Com\+Square\+::\+S\+N\+ES}} \&}]{snes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1HeaderViewer_a4e56a088c8d146042b20d02aacdb5c53}\label{classComSquare_1_1Debugger_1_1HeaderViewer_a4e56a088c8d146042b20d02aacdb5c53}} 
+\index{ComSquare::Debugger::HeaderViewer@{ComSquare::Debugger::HeaderViewer}!HeaderViewer@{HeaderViewer}}
+\index{HeaderViewer@{HeaderViewer}!ComSquare::Debugger::HeaderViewer@{ComSquare::Debugger::HeaderViewer}}
+\doxysubsubsection{\texorpdfstring{HeaderViewer()}{HeaderViewer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Com\+Square\+::\+Debugger\+::\+Header\+Viewer\+::\+Header\+Viewer (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classComSquare_1_1Debugger_1_1HeaderViewer}{Header\+Viewer}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1HeaderViewer_ab9eb70d97ab90a92e76a1374757e4659}\label{classComSquare_1_1Debugger_1_1HeaderViewer_ab9eb70d97ab90a92e76a1374757e4659}} 
+\index{ComSquare::Debugger::HeaderViewer@{ComSquare::Debugger::HeaderViewer}!````~HeaderViewer@{$\sim$HeaderViewer}}
+\index{````~HeaderViewer@{$\sim$HeaderViewer}!ComSquare::Debugger::HeaderViewer@{ComSquare::Debugger::HeaderViewer}}
+\doxysubsubsection{\texorpdfstring{$\sim$HeaderViewer()}{~HeaderViewer()}}
+{\footnotesize\ttfamily Com\+Square\+::\+Debugger\+::\+Header\+Viewer\+::$\sim$\+Header\+Viewer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1HeaderViewer_a29a766fd58ecd9d02eb45a26d060fb01}\label{classComSquare_1_1Debugger_1_1HeaderViewer_a29a766fd58ecd9d02eb45a26d060fb01}} 
+\index{ComSquare::Debugger::HeaderViewer@{ComSquare::Debugger::HeaderViewer}!disableDebugger@{disableDebugger}}
+\index{disableDebugger@{disableDebugger}!ComSquare::Debugger::HeaderViewer@{ComSquare::Debugger::HeaderViewer}}
+\doxysubsubsection{\texorpdfstring{disableDebugger}{disableDebugger}}
+{\footnotesize\ttfamily void Com\+Square\+::\+Debugger\+::\+Header\+Viewer\+::disable\+Debugger (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+
+Called when the window is closed. Turn off the debugger and revert to a basic \mbox{\hyperlink{namespaceComSquare_1_1CPU}{C\+PU}}. 
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1HeaderViewer_ac23c068af0b788c2efba5dcdbdda165f}\label{classComSquare_1_1Debugger_1_1HeaderViewer_ac23c068af0b788c2efba5dcdbdda165f}} 
+\index{ComSquare::Debugger::HeaderViewer@{ComSquare::Debugger::HeaderViewer}!focus@{focus}}
+\index{focus@{focus}!ComSquare::Debugger::HeaderViewer@{ComSquare::Debugger::HeaderViewer}}
+\doxysubsubsection{\texorpdfstring{focus()}{focus()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+Debugger\+::\+Header\+Viewer\+::focus (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Focus the debugger\textquotesingle{}s window. 
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1HeaderViewer_a12e983136a264b0eda5c2da4a500dcf3}\label{classComSquare_1_1Debugger_1_1HeaderViewer_a12e983136a264b0eda5c2da4a500dcf3}} 
+\index{ComSquare::Debugger::HeaderViewer@{ComSquare::Debugger::HeaderViewer}!operator=@{operator=}}
+\index{operator=@{operator=}!ComSquare::Debugger::HeaderViewer@{ComSquare::Debugger::HeaderViewer}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classComSquare_1_1Debugger_1_1HeaderViewer}{Header\+Viewer}}\& Com\+Square\+::\+Debugger\+::\+Header\+Viewer\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classComSquare_1_1Debugger_1_1HeaderViewer}{Header\+Viewer}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1HeaderViewer_ae50b6055ce1b2307143220d4d7074056}\label{classComSquare_1_1Debugger_1_1HeaderViewer_ae50b6055ce1b2307143220d4d7074056}} 
+\index{ComSquare::Debugger::HeaderViewer@{ComSquare::Debugger::HeaderViewer}!\_cartridge@{\_cartridge}}
+\index{\_cartridge@{\_cartridge}!ComSquare::Debugger::HeaderViewer@{ComSquare::Debugger::HeaderViewer}}
+\doxysubsubsection{\texorpdfstring{\_cartridge}{\_cartridge}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classComSquare_1_1Cartridge_1_1Cartridge}{Cartridge\+::\+Cartridge}}\& Com\+Square\+::\+Debugger\+::\+Header\+Viewer\+::\+\_\+cartridge\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The cartridge containing the header. 
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1HeaderViewer_a88db6fdf77ca6176b4ff36b395efac66}\label{classComSquare_1_1Debugger_1_1HeaderViewer_a88db6fdf77ca6176b4ff36b395efac66}} 
+\index{ComSquare::Debugger::HeaderViewer@{ComSquare::Debugger::HeaderViewer}!\_snes@{\_snes}}
+\index{\_snes@{\_snes}!ComSquare::Debugger::HeaderViewer@{ComSquare::Debugger::HeaderViewer}}
+\doxysubsubsection{\texorpdfstring{\_snes}{\_snes}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classComSquare_1_1SNES}{S\+N\+ES}}\& Com\+Square\+::\+Debugger\+::\+Header\+Viewer\+::\+\_\+snes\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A reference to the snes (to disable the debugger). 
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1HeaderViewer_a87ee499e0ef1cbc6fccdf50979e3f279}\label{classComSquare_1_1Debugger_1_1HeaderViewer_a87ee499e0ef1cbc6fccdf50979e3f279}} 
+\index{ComSquare::Debugger::HeaderViewer@{ComSquare::Debugger::HeaderViewer}!\_ui@{\_ui}}
+\index{\_ui@{\_ui}!ComSquare::Debugger::HeaderViewer@{ComSquare::Debugger::HeaderViewer}}
+\doxysubsubsection{\texorpdfstring{\_ui}{\_ui}}
+{\footnotesize\ttfamily Ui\+::\+Catridge\+View Com\+Square\+::\+Debugger\+::\+Header\+Viewer\+::\+\_\+ui\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The layout of the viewer. 
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1HeaderViewer_a38cbae55eaee7df22bf16d5535672f39}\label{classComSquare_1_1Debugger_1_1HeaderViewer_a38cbae55eaee7df22bf16d5535672f39}} 
+\index{ComSquare::Debugger::HeaderViewer@{ComSquare::Debugger::HeaderViewer}!\_window@{\_window}}
+\index{\_window@{\_window}!ComSquare::Debugger::HeaderViewer@{ComSquare::Debugger::HeaderViewer}}
+\doxysubsubsection{\texorpdfstring{\_window}{\_window}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classComSquare_1_1Debugger_1_1ClosableWindow}{Closable\+Window}}$<$\mbox{\hyperlink{classComSquare_1_1Debugger_1_1HeaderViewer}{Header\+Viewer}}$>$$\ast$ Com\+Square\+::\+Debugger\+::\+Header\+Viewer\+::\+\_\+window \{\}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The QT window for this debugger. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+sources/\+Debugger/\mbox{\hyperlink{HeaderViewer_8hpp}{Header\+Viewer.\+hpp}}\item 
+sources/\+Debugger/\mbox{\hyperlink{HeaderViewer_8cpp}{Header\+Viewer.\+cpp}}\end{DoxyCompactItemize}

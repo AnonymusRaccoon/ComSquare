@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['h_595',['h',['../structComSquare_1_1APU_1_1InternalRegisters.html#afdf7a1aa128bd7f174365a56ff531d76',1,'ComSquare::APU::InternalRegisters']]],
+  ['halfcolormath_596',['halfColorMath',['../structComSquare_1_1PPU_1_1Registers.html#a744bfbbd339ec27f84b1b26c2b62a47c',1,'ComSquare::PPU::Registers']]],
+  ['hasmemoryat_597',['hasMemoryAt',['../classComSquare_1_1Memory_1_1AMemory.html#aadca52185b1b3db17d6881e91d81516f',1,'ComSquare::Memory::AMemory::hasMemoryAt()'],['../classComSquare_1_1Memory_1_1ARectangleMemory.html#a182a3c6842814d052199adc24bc85ed3',1,'ComSquare::Memory::ARectangleMemory::hasMemoryAt()'],['../classComSquare_1_1Memory_1_1IMemory.html#a6b7cf04f893b04b9b063759ad67d5bff',1,'ComSquare::Memory::IMemory::hasMemoryAt()']]],
+  ['hdmaen_598',['hdmaen',['../structComSquare_1_1CPU_1_1InternalRegisters.html#af2f3e7f51a783a517b71639de897fc3c',1,'ComSquare::CPU::InternalRegisters']]],
+  ['header_599',['Header',['../structComSquare_1_1Cartridge_1_1Header.html',1,'ComSquare::Cartridge::Header'],['../structComSquare_1_1APU_1_1DSP_1_1BRR.html#abbe0080d2ab7bb1bf3ea79d96884bad9',1,'ComSquare::APU::DSP::BRR::header()'],['../classComSquare_1_1Cartridge_1_1Cartridge.html#a93c463170a03e3bb59a50ba78b2c60a1',1,'ComSquare::Cartridge::Cartridge::header()'],['../structComSquare_1_1Cartridge_1_1Header.html#acc03574ddf5d6cb965e7b1d1b1fef0e9',1,'ComSquare::Cartridge::Header::Header()=default'],['../structComSquare_1_1Cartridge_1_1Header.html#a3f6d664522b808a031ff8ac1a861dc3e',1,'ComSquare::Cartridge::Header::Header(const Header &amp;)=default']]],
+  ['headerdata_600',['headerData',['../classStackModel.html#a478a1bcb5090ed2ccc65245a76acee0f',1,'StackModel::headerData()'],['../classHistoryModel.html#a780d9845648fbf9efa1e1e9172e02c70',1,'HistoryModel::headerData()'],['../classDisassemblyModel.html#a26dbe9047be8315395ba0900d24018c0',1,'DisassemblyModel::headerData()'],['../classBusLogModel.html#a13632bb9a60849bfc022bf894a1b4522',1,'BusLogModel::headerData()'],['../classMemoryViewerModel.html#aeb15bf1686f82c266ec73017c0f01303',1,'MemoryViewerModel::headerData()'],['../classRegistersViewerModel.html#a8f50fab35e8362dbd5c715ecee9aca20',1,'RegistersViewerModel::headerData()']]],
+  ['headerviewer_601',['HeaderViewer',['../classComSquare_1_1Debugger_1_1HeaderViewer.html',1,'ComSquare::Debugger::HeaderViewer'],['../classComSquare_1_1Debugger_1_1HeaderViewer.html#a542f12b74db80c7d926730db1de10348',1,'ComSquare::Debugger::HeaderViewer::HeaderViewer(SNES &amp;snes)'],['../classComSquare_1_1Debugger_1_1HeaderViewer.html#a4e56a088c8d146042b20d02aacdb5c53',1,'ComSquare::Debugger::HeaderViewer::HeaderViewer(const HeaderViewer &amp;)=delete']]],
+  ['headerviewer_2ecpp_602',['HeaderViewer.cpp',['../HeaderViewer_8cpp.html',1,'']]],
+  ['headerviewer_2ehpp_603',['HeaderViewer.hpp',['../HeaderViewer_8hpp.html',1,'']]],
+  ['height_604',['height',['../classBackground.html#ab309ccac36fbe6b88cab0e30e8da1452',1,'Background']]],
+  ['hexstring_605',['HexString',['../namespaceComSquare_1_1Utility.html#aefe1ccb97994e39fa5aeef2d01b52001',1,'ComSquare::Utility']]],
+  ['hiddenenvelope_606',['hiddenEnvelope',['../structComSquare_1_1APU_1_1DSP_1_1Voice.html#a60b44ae8cb9170b3ecfecd8285b9a57e',1,'ComSquare::APU::DSP::Voice']]],
+  ['highres_607',['highRes',['../classBackground.html#aa12f3a7ffbc8858774cbe5e4ea5f0590',1,'Background']]],
+  ['hirom_608',['HiRom',['../namespaceComSquare_1_1Cartridge.html#a61c1e80050c388d76fb687b129ed8645a461b515672aec1a8463cda3e05936cdd',1,'ComSquare::Cartridge']]],
+  ['history_609',['history',['../structComSquare_1_1APU_1_1DSP_1_1Echo.html#a8b512d171595b3f955e52ec7b5b5620b',1,'ComSquare::APU::DSP::Echo']]],
+  ['historymodel_610',['HistoryModel',['../classHistoryModel.html',1,'HistoryModel'],['../classHistoryModel.html#a37addb5688d536c6e22868edf8dac233',1,'HistoryModel::HistoryModel()'],['../classHistoryModel.html#adf8daeb36a9050ecd5c88469b82583e0',1,'HistoryModel::HistoryModel(const HistoryModel &amp;)=delete']]],
+  ['historyoffset_611',['historyOffset',['../structComSquare_1_1APU_1_1DSP_1_1Echo.html#a3ccd2efa709b5d4b600ff4b9c2ad7f19',1,'ComSquare::APU::DSP::Echo']]],
+  ['horizontalflip_612',['horizontalFlip',['../unionComSquare_1_1PPU_1_1TileMapData.html#a4268f44769c35d4d7ca4ab91c2182d5f',1,'ComSquare::PPU::TileMapData']]],
+  ['horizontalmirroring_613',['horizontalMirroring',['../structComSquare_1_1PPU_1_1Registers.html#a28c44704d8f5d50f5c53f4be60210587',1,'ComSquare::PPU::Registers']]],
+  ['htimeh_614',['htimeh',['../structComSquare_1_1CPU_1_1InternalRegisters.html#a538141acc2e0eeac8f1e801940929539',1,'ComSquare::CPU::InternalRegisters']]],
+  ['htimel_615',['htimel',['../structComSquare_1_1CPU_1_1InternalRegisters.html#a030f0f2142ee49187735f82876bd12e8',1,'ComSquare::CPU::InternalRegisters']]],
+  ['hvbjoy_616',['hvbjoy',['../structComSquare_1_1CPU_1_1InternalRegisters.html#ac04e82f935ec316b6d2433dea7df36f0',1,'ComSquare::CPU::InternalRegisters']]]
+];

@@ -1,0 +1,167 @@
+\hypertarget{classHistoryModel}{}\doxysection{History\+Model Class Reference}
+\label{classHistoryModel}\index{HistoryModel@{HistoryModel}}
+
+
+The qt model that show the history.  
+
+
+
+
+{\ttfamily \#include $<$C\+P\+U\+Debug.\+hpp$>$}
+
+
+
+Inheritance diagram for History\+Model\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{classHistoryModel__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for History\+Model\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{classHistoryModel__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classHistoryModel_a37addb5688d536c6e22868edf8dac233}{History\+Model}} ()
+\item 
+\mbox{\hyperlink{classHistoryModel_adf8daeb36a9050ecd5c88469b82583e0}{History\+Model}} (const \mbox{\hyperlink{classHistoryModel}{History\+Model}} \&)=delete
+\item 
+const \mbox{\hyperlink{classHistoryModel}{History\+Model}} \& \mbox{\hyperlink{classHistoryModel_aecb21b721e9d912ca381d70af8895e3f}{operator=}} (const \mbox{\hyperlink{classHistoryModel}{History\+Model}} \&)=delete
+\item 
+\mbox{\hyperlink{classHistoryModel_a11bfb4225221069b8a6c8fd3c258a313}{$\sim$\+History\+Model}} () override=default
+\item 
+void \mbox{\hyperlink{classHistoryModel_a78a50ea113cdcef7032d7271291dd485}{log}} (const \mbox{\hyperlink{structComSquare_1_1Debugger_1_1ExecutedInstruction}{Com\+Square\+::\+Debugger\+::\+Executed\+Instruction}} \&)
+\begin{DoxyCompactList}\small\item\em Log a new instruction. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classHistoryModel_a7f7d935246abb085c9d508b44a2270d2}{clear}} ()
+\begin{DoxyCompactList}\small\item\em Remove every instructions of the history. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classHistoryModel_a5d14b3e3c2b31b5af6c1907bbfea8856}{row\+Count}} (const Q\+Model\+Index \&parent) const override
+\begin{DoxyCompactList}\small\item\em The number of row the table has. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classHistoryModel_a6f3fcf89f320deb2bf0c7c3fc3278223}{column\+Count}} (const Q\+Model\+Index \&parent) const override
+\begin{DoxyCompactList}\small\item\em The number of column the table has. \end{DoxyCompactList}\item 
+Q\+Variant \mbox{\hyperlink{classHistoryModel_a7d87f87c6346647a2d9fe40a6cbc4f80}{data}} (const Q\+Model\+Index \&index, int role) const override
+\begin{DoxyCompactList}\small\item\em Return a data representing the table cell. \end{DoxyCompactList}\item 
+Q\+Variant \mbox{\hyperlink{classHistoryModel_a780d9845648fbf9efa1e1e9172e02c70}{header\+Data}} (int section, Qt\+::\+Orientation orientation, int role) const override
+\begin{DoxyCompactList}\small\item\em Override the headers to use hex values. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structComSquare_1_1Debugger_1_1ExecutedInstruction}{Com\+Square\+::\+Debugger\+::\+Executed\+Instruction}} $>$ \mbox{\hyperlink{classHistoryModel_adf6281b2d88e48a8239d9659defcd1de}{\+\_\+instructions}} = \{\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The qt model that show the history. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classHistoryModel_a37addb5688d536c6e22868edf8dac233}\label{classHistoryModel_a37addb5688d536c6e22868edf8dac233}} 
+\index{HistoryModel@{HistoryModel}!HistoryModel@{HistoryModel}}
+\index{HistoryModel@{HistoryModel}!HistoryModel@{HistoryModel}}
+\doxysubsubsection{\texorpdfstring{HistoryModel()}{HistoryModel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily History\+Model\+::\+History\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classHistoryModel_adf8daeb36a9050ecd5c88469b82583e0}\label{classHistoryModel_adf8daeb36a9050ecd5c88469b82583e0}} 
+\index{HistoryModel@{HistoryModel}!HistoryModel@{HistoryModel}}
+\index{HistoryModel@{HistoryModel}!HistoryModel@{HistoryModel}}
+\doxysubsubsection{\texorpdfstring{HistoryModel()}{HistoryModel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily History\+Model\+::\+History\+Model (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classHistoryModel}{History\+Model}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classHistoryModel_a11bfb4225221069b8a6c8fd3c258a313}\label{classHistoryModel_a11bfb4225221069b8a6c8fd3c258a313}} 
+\index{HistoryModel@{HistoryModel}!````~HistoryModel@{$\sim$HistoryModel}}
+\index{````~HistoryModel@{$\sim$HistoryModel}!HistoryModel@{HistoryModel}}
+\doxysubsubsection{\texorpdfstring{$\sim$HistoryModel()}{~HistoryModel()}}
+{\footnotesize\ttfamily History\+Model\+::$\sim$\+History\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classHistoryModel_a7f7d935246abb085c9d508b44a2270d2}\label{classHistoryModel_a7f7d935246abb085c9d508b44a2270d2}} 
+\index{HistoryModel@{HistoryModel}!clear@{clear}}
+\index{clear@{clear}!HistoryModel@{HistoryModel}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void History\+Model\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Remove every instructions of the history. 
+
+\mbox{\Hypertarget{classHistoryModel_a6f3fcf89f320deb2bf0c7c3fc3278223}\label{classHistoryModel_a6f3fcf89f320deb2bf0c7c3fc3278223}} 
+\index{HistoryModel@{HistoryModel}!columnCount@{columnCount}}
+\index{columnCount@{columnCount}!HistoryModel@{HistoryModel}}
+\doxysubsubsection{\texorpdfstring{columnCount()}{columnCount()}}
+{\footnotesize\ttfamily int History\+Model\+::column\+Count (\begin{DoxyParamCaption}\item[{const Q\+Model\+Index \&}]{parent }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+The number of column the table has. 
+
+\mbox{\Hypertarget{classHistoryModel_a7d87f87c6346647a2d9fe40a6cbc4f80}\label{classHistoryModel_a7d87f87c6346647a2d9fe40a6cbc4f80}} 
+\index{HistoryModel@{HistoryModel}!data@{data}}
+\index{data@{data}!HistoryModel@{HistoryModel}}
+\doxysubsubsection{\texorpdfstring{data()}{data()}}
+{\footnotesize\ttfamily Q\+Variant History\+Model\+::data (\begin{DoxyParamCaption}\item[{const Q\+Model\+Index \&}]{index,  }\item[{int}]{role }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Return a data representing the table cell. 
+
+\mbox{\Hypertarget{classHistoryModel_a780d9845648fbf9efa1e1e9172e02c70}\label{classHistoryModel_a780d9845648fbf9efa1e1e9172e02c70}} 
+\index{HistoryModel@{HistoryModel}!headerData@{headerData}}
+\index{headerData@{headerData}!HistoryModel@{HistoryModel}}
+\doxysubsubsection{\texorpdfstring{headerData()}{headerData()}}
+{\footnotesize\ttfamily Q\+Variant History\+Model\+::header\+Data (\begin{DoxyParamCaption}\item[{int}]{section,  }\item[{Qt\+::\+Orientation}]{orientation,  }\item[{int}]{role }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Override the headers to use hex values. 
+
+\mbox{\Hypertarget{classHistoryModel_a78a50ea113cdcef7032d7271291dd485}\label{classHistoryModel_a78a50ea113cdcef7032d7271291dd485}} 
+\index{HistoryModel@{HistoryModel}!log@{log}}
+\index{log@{log}!HistoryModel@{HistoryModel}}
+\doxysubsubsection{\texorpdfstring{log()}{log()}}
+{\footnotesize\ttfamily void History\+Model\+::log (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structComSquare_1_1Debugger_1_1ExecutedInstruction}{Com\+Square\+::\+Debugger\+::\+Executed\+Instruction}} \&}]{instruction }\end{DoxyParamCaption})}
+
+
+
+Log a new instruction. 
+
+\mbox{\Hypertarget{classHistoryModel_aecb21b721e9d912ca381d70af8895e3f}\label{classHistoryModel_aecb21b721e9d912ca381d70af8895e3f}} 
+\index{HistoryModel@{HistoryModel}!operator=@{operator=}}
+\index{operator=@{operator=}!HistoryModel@{HistoryModel}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classHistoryModel}{History\+Model}}\& History\+Model\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classHistoryModel}{History\+Model}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classHistoryModel_a5d14b3e3c2b31b5af6c1907bbfea8856}\label{classHistoryModel_a5d14b3e3c2b31b5af6c1907bbfea8856}} 
+\index{HistoryModel@{HistoryModel}!rowCount@{rowCount}}
+\index{rowCount@{rowCount}!HistoryModel@{HistoryModel}}
+\doxysubsubsection{\texorpdfstring{rowCount()}{rowCount()}}
+{\footnotesize\ttfamily int History\+Model\+::row\+Count (\begin{DoxyParamCaption}\item[{const Q\+Model\+Index \&}]{parent }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+The number of row the table has. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classHistoryModel_adf6281b2d88e48a8239d9659defcd1de}\label{classHistoryModel_adf6281b2d88e48a8239d9659defcd1de}} 
+\index{HistoryModel@{HistoryModel}!\_instructions@{\_instructions}}
+\index{\_instructions@{\_instructions}!HistoryModel@{HistoryModel}}
+\doxysubsubsection{\texorpdfstring{\_instructions}{\_instructions}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{structComSquare_1_1Debugger_1_1ExecutedInstruction}{Com\+Square\+::\+Debugger\+::\+Executed\+Instruction}}$>$ History\+Model\+::\+\_\+instructions = \{\}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+sources/\+Debugger/\+C\+P\+U/\mbox{\hyperlink{CPUDebug_8hpp}{C\+P\+U\+Debug.\+hpp}}\item 
+sources/\+Debugger/\+C\+P\+U/\mbox{\hyperlink{CPUDebug_8cpp}{C\+P\+U\+Debug.\+cpp}}\end{DoxyCompactItemize}

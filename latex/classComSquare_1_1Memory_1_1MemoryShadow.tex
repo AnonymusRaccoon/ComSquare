@@ -1,0 +1,242 @@
+\hypertarget{classComSquare_1_1Memory_1_1MemoryShadow}{}\doxysection{Com\+Square\+::Memory\+::Memory\+Shadow Class Reference}
+\label{classComSquare_1_1Memory_1_1MemoryShadow}\index{ComSquare::Memory::MemoryShadow@{ComSquare::Memory::MemoryShadow}}
+
+
+{\ttfamily \#include $<$Memory\+Shadow.\+hpp$>$}
+
+
+
+Inheritance diagram for Com\+Square\+::Memory\+::Memory\+Shadow\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classComSquare_1_1Memory_1_1MemoryShadow__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Com\+Square\+::Memory\+::Memory\+Shadow\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classComSquare_1_1Memory_1_1MemoryShadow__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classComSquare_1_1Memory_1_1MemoryShadow_aa73f81426a6ee830656e588518d16191}{Memory\+Shadow}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classComSquare_1_1Memory_1_1IMemory}{I\+Memory}} $>$ initial, \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} start, \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} end)
+\begin{DoxyCompactList}\small\item\em Create a shadow for the memory given as parameter. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classComSquare_1_1Memory_1_1MemoryShadow_ae9ab5a4c190dbc41d3d023f05b96e7ff}{Memory\+Shadow}} (const \mbox{\hyperlink{classComSquare_1_1Memory_1_1MemoryShadow}{Memory\+Shadow}} \&)=default
+\item 
+\mbox{\hyperlink{classComSquare_1_1Memory_1_1MemoryShadow}{Memory\+Shadow}} \& \mbox{\hyperlink{classComSquare_1_1Memory_1_1MemoryShadow_ade1b8072435eee97f864824f32e2b3c2}{operator=}} (const \mbox{\hyperlink{classComSquare_1_1Memory_1_1MemoryShadow}{Memory\+Shadow}} \&)=default
+\item 
+\mbox{\hyperlink{classComSquare_1_1Memory_1_1MemoryShadow_acaf5b170e29f94fc81615c34533a0c57}{$\sim$\+Memory\+Shadow}} ()=default
+\item 
+uint8\+\_\+t \mbox{\hyperlink{classComSquare_1_1Memory_1_1MemoryShadow_a59ec35eddc26174d897e5ae01f574a59}{read}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} addr) const override
+\begin{DoxyCompactList}\small\item\em Read from the initial \mbox{\hyperlink{classComSquare_1_1Memory_1_1AMemory}{A\+Memory}} given. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classComSquare_1_1Memory_1_1MemoryShadow_a885d4559319980e9e5b706f7fe4c3f49}{write}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} addr, uint8\+\_\+t data) override
+\begin{DoxyCompactList}\small\item\em Write data to the ram. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} \mbox{\hyperlink{classComSquare_1_1Memory_1_1MemoryShadow_ac18f444c8b40e9ef8a077a93c0e7024e}{get\+Size}} () const override
+\begin{DoxyCompactList}\small\item\em Get the size of the data. This size can be lower than the mapped data. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classComSquare_1_1Memory_1_1MemoryShadow_aa8cc6102f706d7300f06fd44fd33e39a}{is\+Mirror}} () const override
+\begin{DoxyCompactList}\small\item\em Check if this memory is a mirror or not. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classComSquare_1_1Memory_1_1MemoryShadow_a6c5a02f97b97a258d60d8011b805cb6e}{get\+Name}} () const override
+\begin{DoxyCompactList}\small\item\em Get the name of this accessor (used for debug purpose) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceComSquare_a891b49feb5c3e0aaa4873ff19b49968c}{Component}} \mbox{\hyperlink{classComSquare_1_1Memory_1_1MemoryShadow_a44297bdec2e515e550b6fcd99f635aa1}{get\+Component}} () const override
+\begin{DoxyCompactList}\small\item\em Get the component of this accessor (used for debug purpose) \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classComSquare_1_1Memory_1_1IMemory}{I\+Memory}} $>$ \mbox{\hyperlink{classComSquare_1_1Memory_1_1MemoryShadow_ab73f3486b9da853d91b818875bf69f2a}{get\+Mirrored}} () const override
+\begin{DoxyCompactList}\small\item\em Return the memory accessor this accessor mirror if any. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classComSquare_1_1Memory_1_1IMemory}{I\+Memory}} $>$ \mbox{\hyperlink{classComSquare_1_1Memory_1_1MemoryShadow_a9ae9c9341461d2dc4ebe8fb1808b2dd1}{\+\_\+initial}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{namespaceComSquare_1_1Memory}{Memory}} to shadow from. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classComSquare_1_1Memory_1_1MemoryShadow_aa73f81426a6ee830656e588518d16191}\label{classComSquare_1_1Memory_1_1MemoryShadow_aa73f81426a6ee830656e588518d16191}} 
+\index{ComSquare::Memory::MemoryShadow@{ComSquare::Memory::MemoryShadow}!MemoryShadow@{MemoryShadow}}
+\index{MemoryShadow@{MemoryShadow}!ComSquare::Memory::MemoryShadow@{ComSquare::Memory::MemoryShadow}}
+\doxysubsubsection{\texorpdfstring{MemoryShadow()}{MemoryShadow()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Com\+Square\+::\+Memory\+::\+Memory\+Shadow\+::\+Memory\+Shadow (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classComSquare_1_1Memory_1_1IMemory}{I\+Memory}} $>$}]{initial,  }\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{start,  }\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{end }\end{DoxyParamCaption})}
+
+
+
+Create a shadow for the memory given as parameter. 
+
+\mbox{\Hypertarget{classComSquare_1_1Memory_1_1MemoryShadow_ae9ab5a4c190dbc41d3d023f05b96e7ff}\label{classComSquare_1_1Memory_1_1MemoryShadow_ae9ab5a4c190dbc41d3d023f05b96e7ff}} 
+\index{ComSquare::Memory::MemoryShadow@{ComSquare::Memory::MemoryShadow}!MemoryShadow@{MemoryShadow}}
+\index{MemoryShadow@{MemoryShadow}!ComSquare::Memory::MemoryShadow@{ComSquare::Memory::MemoryShadow}}
+\doxysubsubsection{\texorpdfstring{MemoryShadow()}{MemoryShadow()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Com\+Square\+::\+Memory\+::\+Memory\+Shadow\+::\+Memory\+Shadow (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classComSquare_1_1Memory_1_1MemoryShadow}{Memory\+Shadow}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classComSquare_1_1Memory_1_1MemoryShadow_acaf5b170e29f94fc81615c34533a0c57}\label{classComSquare_1_1Memory_1_1MemoryShadow_acaf5b170e29f94fc81615c34533a0c57}} 
+\index{ComSquare::Memory::MemoryShadow@{ComSquare::Memory::MemoryShadow}!````~MemoryShadow@{$\sim$MemoryShadow}}
+\index{````~MemoryShadow@{$\sim$MemoryShadow}!ComSquare::Memory::MemoryShadow@{ComSquare::Memory::MemoryShadow}}
+\doxysubsubsection{\texorpdfstring{$\sim$MemoryShadow()}{~MemoryShadow()}}
+{\footnotesize\ttfamily Com\+Square\+::\+Memory\+::\+Memory\+Shadow\+::$\sim$\+Memory\+Shadow (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classComSquare_1_1Memory_1_1MemoryShadow_a44297bdec2e515e550b6fcd99f635aa1}\label{classComSquare_1_1Memory_1_1MemoryShadow_a44297bdec2e515e550b6fcd99f635aa1}} 
+\index{ComSquare::Memory::MemoryShadow@{ComSquare::Memory::MemoryShadow}!getComponent@{getComponent}}
+\index{getComponent@{getComponent}!ComSquare::Memory::MemoryShadow@{ComSquare::Memory::MemoryShadow}}
+\doxysubsubsection{\texorpdfstring{getComponent()}{getComponent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceComSquare_a891b49feb5c3e0aaa4873ff19b49968c}{Component}} Com\+Square\+::\+Memory\+::\+Memory\+Shadow\+::get\+Component (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the component of this accessor (used for debug purpose) 
+
+
+
+Implements \mbox{\hyperlink{classComSquare_1_1Memory_1_1IMemory_a31289443bb26086fb74c724cdafd2241}{Com\+Square\+::\+Memory\+::\+I\+Memory}}.
+
+\mbox{\Hypertarget{classComSquare_1_1Memory_1_1MemoryShadow_ab73f3486b9da853d91b818875bf69f2a}\label{classComSquare_1_1Memory_1_1MemoryShadow_ab73f3486b9da853d91b818875bf69f2a}} 
+\index{ComSquare::Memory::MemoryShadow@{ComSquare::Memory::MemoryShadow}!getMirrored@{getMirrored}}
+\index{getMirrored@{getMirrored}!ComSquare::Memory::MemoryShadow@{ComSquare::Memory::MemoryShadow}}
+\doxysubsubsection{\texorpdfstring{getMirrored()}{getMirrored()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classComSquare_1_1Memory_1_1IMemory}{I\+Memory}} $>$ Com\+Square\+::\+Memory\+::\+Memory\+Shadow\+::get\+Mirrored (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Return the memory accessor this accessor mirror if any. 
+
+\begin{DoxyReturn}{Returns}
+nullptr if is\+Mirror is false, the source otherwise. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classComSquare_1_1Memory_1_1AMemory_a9657d57cfbe3f3d6b532d821aa336768}{Com\+Square\+::\+Memory\+::\+A\+Memory}}.
+
+\mbox{\Hypertarget{classComSquare_1_1Memory_1_1MemoryShadow_a6c5a02f97b97a258d60d8011b805cb6e}\label{classComSquare_1_1Memory_1_1MemoryShadow_a6c5a02f97b97a258d60d8011b805cb6e}} 
+\index{ComSquare::Memory::MemoryShadow@{ComSquare::Memory::MemoryShadow}!getName@{getName}}
+\index{getName@{getName}!ComSquare::Memory::MemoryShadow@{ComSquare::Memory::MemoryShadow}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string Com\+Square\+::\+Memory\+::\+Memory\+Shadow\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the name of this accessor (used for debug purpose) 
+
+
+
+Implements \mbox{\hyperlink{classComSquare_1_1Memory_1_1IMemory_a34d654c04a8a992b439c4270d566263f}{Com\+Square\+::\+Memory\+::\+I\+Memory}}.
+
+\mbox{\Hypertarget{classComSquare_1_1Memory_1_1MemoryShadow_ac18f444c8b40e9ef8a077a93c0e7024e}\label{classComSquare_1_1Memory_1_1MemoryShadow_ac18f444c8b40e9ef8a077a93c0e7024e}} 
+\index{ComSquare::Memory::MemoryShadow@{ComSquare::Memory::MemoryShadow}!getSize@{getSize}}
+\index{getSize@{getSize}!ComSquare::Memory::MemoryShadow@{ComSquare::Memory::MemoryShadow}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} Com\+Square\+::\+Memory\+::\+Memory\+Shadow\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the size of the data. This size can be lower than the mapped data. 
+
+\begin{DoxyReturn}{Returns}
+The number of bytes inside this memory. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classComSquare_1_1Memory_1_1IMemory_a1072ab44e7389913ff67cb77ff118c8b}{Com\+Square\+::\+Memory\+::\+I\+Memory}}.
+
+\mbox{\Hypertarget{classComSquare_1_1Memory_1_1MemoryShadow_aa8cc6102f706d7300f06fd44fd33e39a}\label{classComSquare_1_1Memory_1_1MemoryShadow_aa8cc6102f706d7300f06fd44fd33e39a}} 
+\index{ComSquare::Memory::MemoryShadow@{ComSquare::Memory::MemoryShadow}!isMirror@{isMirror}}
+\index{isMirror@{isMirror}!ComSquare::Memory::MemoryShadow@{ComSquare::Memory::MemoryShadow}}
+\doxysubsubsection{\texorpdfstring{isMirror()}{isMirror()}}
+{\footnotesize\ttfamily bool Com\+Square\+::\+Memory\+::\+Memory\+Shadow\+::is\+Mirror (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Check if this memory is a mirror or not. 
+
+\begin{DoxyReturn}{Returns}
+True if this memory is a mirror. False otherwise. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classComSquare_1_1Memory_1_1AMemory_aa8a4bcc4f33fbadfdfda82b335b414e8}{Com\+Square\+::\+Memory\+::\+A\+Memory}}.
+
+\mbox{\Hypertarget{classComSquare_1_1Memory_1_1MemoryShadow_ade1b8072435eee97f864824f32e2b3c2}\label{classComSquare_1_1Memory_1_1MemoryShadow_ade1b8072435eee97f864824f32e2b3c2}} 
+\index{ComSquare::Memory::MemoryShadow@{ComSquare::Memory::MemoryShadow}!operator=@{operator=}}
+\index{operator=@{operator=}!ComSquare::Memory::MemoryShadow@{ComSquare::Memory::MemoryShadow}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classComSquare_1_1Memory_1_1MemoryShadow}{Memory\+Shadow}}\& Com\+Square\+::\+Memory\+::\+Memory\+Shadow\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classComSquare_1_1Memory_1_1MemoryShadow}{Memory\+Shadow}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classComSquare_1_1Memory_1_1MemoryShadow_a59ec35eddc26174d897e5ae01f574a59}\label{classComSquare_1_1Memory_1_1MemoryShadow_a59ec35eddc26174d897e5ae01f574a59}} 
+\index{ComSquare::Memory::MemoryShadow@{ComSquare::Memory::MemoryShadow}!read@{read}}
+\index{read@{read}!ComSquare::Memory::MemoryShadow@{ComSquare::Memory::MemoryShadow}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+Memory\+::\+Memory\+Shadow\+::read (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{addr }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Read from the initial \mbox{\hyperlink{classComSquare_1_1Memory_1_1AMemory}{A\+Memory}} given. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & The address to read from. The address 0x0 should refer to the first byte of the initial \mbox{\hyperlink{classComSquare_1_1Memory_1_1AMemory}{A\+Memory}}. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classComSquare_1_1InvalidAddress}{Invalid\+Address}}} & will be thrown if the address is more than the size of the initial \mbox{\hyperlink{classComSquare_1_1Memory_1_1AMemory}{A\+Memory}}. \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+Return the data at the address. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classComSquare_1_1Memory_1_1IMemory_a72ffc0dfe13a000099f4cbc197cd48ec}{Com\+Square\+::\+Memory\+::\+I\+Memory}}.
+
+\mbox{\Hypertarget{classComSquare_1_1Memory_1_1MemoryShadow_a885d4559319980e9e5b706f7fe4c3f49}\label{classComSquare_1_1Memory_1_1MemoryShadow_a885d4559319980e9e5b706f7fe4c3f49}} 
+\index{ComSquare::Memory::MemoryShadow@{ComSquare::Memory::MemoryShadow}!write@{write}}
+\index{write@{write}!ComSquare::Memory::MemoryShadow@{ComSquare::Memory::MemoryShadow}}
+\doxysubsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+Memory\+::\+Memory\+Shadow\+::write (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{addr,  }\item[{uint8\+\_\+t}]{data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Write data to the ram. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & The address to write to. The address 0x0 should refer to the first byte of the initial \mbox{\hyperlink{classComSquare_1_1Memory_1_1AMemory}{A\+Memory}}. \\
+\hline
+{\em data} & The data to write. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classComSquare_1_1InvalidAddress}{Invalid\+Address}}} & will be thrown if the address is more than the size of the initial \mbox{\hyperlink{classComSquare_1_1Memory_1_1AMemory}{A\+Memory}}. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{classComSquare_1_1Memory_1_1IMemory_a449bc89798a0b86028bb0413106514d9}{Com\+Square\+::\+Memory\+::\+I\+Memory}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classComSquare_1_1Memory_1_1MemoryShadow_a9ae9c9341461d2dc4ebe8fb1808b2dd1}\label{classComSquare_1_1Memory_1_1MemoryShadow_a9ae9c9341461d2dc4ebe8fb1808b2dd1}} 
+\index{ComSquare::Memory::MemoryShadow@{ComSquare::Memory::MemoryShadow}!\_initial@{\_initial}}
+\index{\_initial@{\_initial}!ComSquare::Memory::MemoryShadow@{ComSquare::Memory::MemoryShadow}}
+\doxysubsubsection{\texorpdfstring{\_initial}{\_initial}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classComSquare_1_1Memory_1_1IMemory}{I\+Memory}}$>$ Com\+Square\+::\+Memory\+::\+Memory\+Shadow\+::\+\_\+initial\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\mbox{\hyperlink{namespaceComSquare_1_1Memory}{Memory}} to shadow from. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+sources/\+Memory/\mbox{\hyperlink{MemoryShadow_8hpp}{Memory\+Shadow.\+hpp}}\item 
+sources/\+Memory/\mbox{\hyperlink{MemoryShadow_8cpp}{Memory\+Shadow.\+cpp}}\end{DoxyCompactItemize}

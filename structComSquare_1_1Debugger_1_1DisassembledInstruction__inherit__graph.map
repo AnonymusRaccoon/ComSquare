@@ -1,0 +1,4 @@
+<map id="ComSquare::Debugger::DisassembledInstruction" name="ComSquare::Debugger::DisassembledInstruction">
+<area shape="rect" id="node1" title="Struct representing an instruction in an human readable way (created by disassembling the rom)." alt="" coords="5,189,224,384"/>
+<area shape="rect" id="node2" href="$structComSquare_1_1CPU_1_1Instruction.html" title="Struct containing basic information about instructions." alt="" coords="10,5,219,141"/>
+</map>

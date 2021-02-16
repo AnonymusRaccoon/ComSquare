@@ -1,0 +1,8 @@
+<map id="ComSquare::Renderer::QtFullSFML" name="ComSquare::Renderer::QtFullSFML">
+<area shape="rect" id="node1" title="The SFML window that manage the update." alt="" coords="164,956,355,1224"/>
+<area shape="rect" id="node2" href="$classComSquare_1_1Renderer_1_1QtWidgetSFML.html" title="A widget that you can put inside a QT application that render using the SFML." alt="" coords="5,625,169,849"/>
+<area shape="rect" id="node3" title=" " alt="" coords="32,330,111,407"/>
+<area shape="rect" id="node4" href="$classComSquare_1_1Renderer_1_1SFRenderer.html" title=" " alt="" coords="135,205,299,532"/>
+<area shape="rect" id="node5" href="$classComSquare_1_1Renderer_1_1IRenderer.html" title=" " alt="" coords="135,5,299,156"/>
+<area shape="rect" id="node6" href="$classComSquare_1_1SNES.html" title="Container of all the components of the SNES." alt="" coords="193,581,443,893"/>
+</map>

@@ -1,0 +1,63 @@
+\hypertarget{namespaceComSquare_1_1APU_1_1DSP}{}\doxysection{Com\+Square\+::A\+PU\+::D\+SP Namespace Reference}
+\label{namespaceComSquare_1_1APU_1_1DSP}\index{ComSquare::APU::DSP@{ComSquare::APU::DSP}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1BRR}{B\+RR}}
+\item 
+class \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP}{D\+SP}}
+\item 
+struct \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Echo}{Echo}}
+\item 
+struct \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Latch}{Latch}}
+\item 
+struct \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Master}{Master}}
+\item 
+struct \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Noise}{Noise}}
+\item 
+struct \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1State}{State}}
+\begin{DoxyCompactList}\small\item\em Current state of the \mbox{\hyperlink{classComSquare_1_1APU_1_1DSP_1_1DSP}{D\+SP}}. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Timer}{Timer}}
+\item 
+struct \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1Voice}{Voice}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespaceComSquare_1_1APU_1_1DSP_a332ba4e7398628807ea631bfab77e441}{Envelope}} \+: uint \{ \mbox{\hyperlink{namespaceComSquare_1_1APU_1_1DSP_a332ba4e7398628807ea631bfab77e441ae33b43f271805c96e6f74f405ae0d1a1}{Release}}, 
+\mbox{\hyperlink{namespaceComSquare_1_1APU_1_1DSP_a332ba4e7398628807ea631bfab77e441ac40ea0a74439fb76a5e3edcd67e4e880}{Attack}}, 
+\mbox{\hyperlink{namespaceComSquare_1_1APU_1_1DSP_a332ba4e7398628807ea631bfab77e441aa78b0042c429a545e6932182ab95b17f}{Decay}}, 
+\mbox{\hyperlink{namespaceComSquare_1_1APU_1_1DSP_a332ba4e7398628807ea631bfab77e441a53fd2295c9f6c69fca4e7c46bdfe5b4e}{Sustain}}
+ \}
+\begin{DoxyCompactList}\small\item\em The 4 states of volume envelope adjustment. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{namespaceComSquare_1_1APU_1_1DSP_a332ba4e7398628807ea631bfab77e441}\label{namespaceComSquare_1_1APU_1_1DSP_a332ba4e7398628807ea631bfab77e441}} 
+\index{ComSquare::APU::DSP@{ComSquare::APU::DSP}!Envelope@{Envelope}}
+\index{Envelope@{Envelope}!ComSquare::APU::DSP@{ComSquare::APU::DSP}}
+\doxysubsubsection{\texorpdfstring{Envelope}{Envelope}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespaceComSquare_1_1APU_1_1DSP_a332ba4e7398628807ea631bfab77e441}{Com\+Square\+::\+A\+P\+U\+::\+D\+S\+P\+::\+Envelope}} \+: uint}
+
+
+
+The 4 states of volume envelope adjustment. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Release@{Release}!ComSquare::APU::DSP@{ComSquare::APU::DSP}}\index{ComSquare::APU::DSP@{ComSquare::APU::DSP}!Release@{Release}}}\mbox{\Hypertarget{namespaceComSquare_1_1APU_1_1DSP_a332ba4e7398628807ea631bfab77e441ae33b43f271805c96e6f74f405ae0d1a1}\label{namespaceComSquare_1_1APU_1_1DSP_a332ba4e7398628807ea631bfab77e441ae33b43f271805c96e6f74f405ae0d1a1}} 
+Release&The voice is keyed off or a \mbox{\hyperlink{structComSquare_1_1APU_1_1DSP_1_1BRR}{B\+RR}} end-\/without-\/loop block is reached. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Attack@{Attack}!ComSquare::APU::DSP@{ComSquare::APU::DSP}}\index{ComSquare::APU::DSP@{ComSquare::APU::DSP}!Attack@{Attack}}}\mbox{\Hypertarget{namespaceComSquare_1_1APU_1_1DSP_a332ba4e7398628807ea631bfab77e441ac40ea0a74439fb76a5e3edcd67e4e880}\label{namespaceComSquare_1_1APU_1_1DSP_a332ba4e7398628807ea631bfab77e441ac40ea0a74439fb76a5e3edcd67e4e880}} 
+Attack&The voice is keyed on. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Decay@{Decay}!ComSquare::APU::DSP@{ComSquare::APU::DSP}}\index{ComSquare::APU::DSP@{ComSquare::APU::DSP}!Decay@{Decay}}}\mbox{\Hypertarget{namespaceComSquare_1_1APU_1_1DSP_a332ba4e7398628807ea631bfab77e441aa78b0042c429a545e6932182ab95b17f}\label{namespaceComSquare_1_1APU_1_1DSP_a332ba4e7398628807ea631bfab77e441aa78b0042c429a545e6932182ab95b17f}} 
+Decay&When the Envelope adjustment method bits exceeds 0x7ff. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Sustain@{Sustain}!ComSquare::APU::DSP@{ComSquare::APU::DSP}}\index{ComSquare::APU::DSP@{ComSquare::APU::DSP}!Sustain@{Sustain}}}\mbox{\Hypertarget{namespaceComSquare_1_1APU_1_1DSP_a332ba4e7398628807ea631bfab77e441a53fd2295c9f6c69fca4e7c46bdfe5b4e}\label{namespaceComSquare_1_1APU_1_1DSP_a332ba4e7398628807ea631bfab77e441a53fd2295c9f6c69fca4e7c46bdfe5b4e}} 
+Sustain&When the upper 3 bits of Envelope adjustment method bits equal the Sustain Level. \\
+\hline
+
+\end{DoxyEnumFields}

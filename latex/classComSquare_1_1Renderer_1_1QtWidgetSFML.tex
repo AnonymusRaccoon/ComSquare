@@ -1,0 +1,175 @@
+\hypertarget{classComSquare_1_1Renderer_1_1QtWidgetSFML}{}\doxysection{Com\+Square\+::Renderer\+::Qt\+Widget\+S\+F\+ML Class Reference}
+\label{classComSquare_1_1Renderer_1_1QtWidgetSFML}\index{ComSquare::Renderer::QtWidgetSFML@{ComSquare::Renderer::QtWidgetSFML}}
+
+
+A widget that you can put inside a QT application that render using the S\+F\+ML.  
+
+
+
+
+{\ttfamily \#include $<$Qt\+Widget\+S\+F\+M\+L.\+hpp$>$}
+
+
+
+Inheritance diagram for Com\+Square\+::Renderer\+::Qt\+Widget\+S\+F\+ML\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classComSquare_1_1Renderer_1_1QtWidgetSFML__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Com\+Square\+::Renderer\+::Qt\+Widget\+S\+F\+ML\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classComSquare_1_1Renderer_1_1QtWidgetSFML__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classComSquare_1_1Renderer_1_1QtWidgetSFML_ac658c7eeedc9454479e12aaa58d1eeb4}{Qt\+Widget\+S\+F\+ML}} (Q\+Widget $\ast$parent, const Q\+Point \&position, const Q\+Size \&size, int frame\+Rate=0)
+\item 
+\mbox{\hyperlink{classComSquare_1_1Renderer_1_1QtWidgetSFML_a4274c1592fad85e2a12fd244b96bbb89}{Qt\+Widget\+S\+F\+ML}} (const \mbox{\hyperlink{classComSquare_1_1Renderer_1_1QtWidgetSFML}{Qt\+Widget\+S\+F\+ML}} \&)=delete
+\item 
+\mbox{\hyperlink{classComSquare_1_1Renderer_1_1QtWidgetSFML}{Qt\+Widget\+S\+F\+ML}} \& \mbox{\hyperlink{classComSquare_1_1Renderer_1_1QtWidgetSFML_a6734a2ca6d5c59b3157a46d6e9019e9e}{operator=}} (const \mbox{\hyperlink{classComSquare_1_1Renderer_1_1QtWidgetSFML}{Qt\+Widget\+S\+F\+ML}} \&)=delete
+\item 
+\mbox{\hyperlink{classComSquare_1_1Renderer_1_1QtWidgetSFML_abfbe6f2298391bfcc0ddd3894f632a25}{$\sim$\+Qt\+Widget\+S\+F\+ML}} () override=default
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classComSquare_1_1Renderer_1_1QtWidgetSFML_a531b5f0cbb76e999ac033ebc93c81fd4}{\+\_\+on\+Init}} ()
+\begin{DoxyCompactList}\small\item\em Function called when this widget is created. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classComSquare_1_1Renderer_1_1QtWidgetSFML_ab71f3f53d763c1e6e1e750e74a556aa3}{\+\_\+on\+Update}} ()=0
+\begin{DoxyCompactList}\small\item\em Function called to update this widget. \end{DoxyCompactList}\item 
+Q\+Paint\+Engine $\ast$ \mbox{\hyperlink{classComSquare_1_1Renderer_1_1QtWidgetSFML_a0a4b48142633c67210da1e0a97ed6c66}{paint\+Engine}} () const override
+\begin{DoxyCompactList}\small\item\em Qt internal paint engine (always null since we use a custom one) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classComSquare_1_1Renderer_1_1QtWidgetSFML_a4d7e67af823dfcba0199acc7662e24ae}{show\+Event}} (Q\+Show\+Event $\ast$) override
+\begin{DoxyCompactList}\small\item\em Used to create the SF window and bind it to the window manager of the user. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classComSquare_1_1Renderer_1_1QtWidgetSFML_a79d769f35a6714669adab7ec7303a1cc}{paint\+Event}} (Q\+Paint\+Event $\ast$) override
+\begin{DoxyCompactList}\small\item\em QT event that refresh the widget. (A draw screen) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Timer \mbox{\hyperlink{classComSquare_1_1Renderer_1_1QtWidgetSFML_a9f57367bc446b8b65b79537bc8d9acb7}{\+\_\+timer}}
+\item 
+bool \mbox{\hyperlink{classComSquare_1_1Renderer_1_1QtWidgetSFML_a3f9d7d41a99df2c9be44dfb70c4bff63}{\+\_\+is\+Initialized}} = false
+\begin{DoxyCompactList}\small\item\em Has the SF window been created yet. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+A widget that you can put inside a QT application that render using the S\+F\+ML. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classComSquare_1_1Renderer_1_1QtWidgetSFML_ac658c7eeedc9454479e12aaa58d1eeb4}\label{classComSquare_1_1Renderer_1_1QtWidgetSFML_ac658c7eeedc9454479e12aaa58d1eeb4}} 
+\index{ComSquare::Renderer::QtWidgetSFML@{ComSquare::Renderer::QtWidgetSFML}!QtWidgetSFML@{QtWidgetSFML}}
+\index{QtWidgetSFML@{QtWidgetSFML}!ComSquare::Renderer::QtWidgetSFML@{ComSquare::Renderer::QtWidgetSFML}}
+\doxysubsubsection{\texorpdfstring{QtWidgetSFML()}{QtWidgetSFML()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Com\+Square\+::\+Renderer\+::\+Qt\+Widget\+S\+F\+M\+L\+::\+Qt\+Widget\+S\+F\+ML (\begin{DoxyParamCaption}\item[{Q\+Widget $\ast$}]{parent,  }\item[{const Q\+Point \&}]{position,  }\item[{const Q\+Size \&}]{size,  }\item[{int}]{frame\+Rate = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classComSquare_1_1Renderer_1_1QtWidgetSFML_a4274c1592fad85e2a12fd244b96bbb89}\label{classComSquare_1_1Renderer_1_1QtWidgetSFML_a4274c1592fad85e2a12fd244b96bbb89}} 
+\index{ComSquare::Renderer::QtWidgetSFML@{ComSquare::Renderer::QtWidgetSFML}!QtWidgetSFML@{QtWidgetSFML}}
+\index{QtWidgetSFML@{QtWidgetSFML}!ComSquare::Renderer::QtWidgetSFML@{ComSquare::Renderer::QtWidgetSFML}}
+\doxysubsubsection{\texorpdfstring{QtWidgetSFML()}{QtWidgetSFML()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Com\+Square\+::\+Renderer\+::\+Qt\+Widget\+S\+F\+M\+L\+::\+Qt\+Widget\+S\+F\+ML (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classComSquare_1_1Renderer_1_1QtWidgetSFML}{Qt\+Widget\+S\+F\+ML}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classComSquare_1_1Renderer_1_1QtWidgetSFML_abfbe6f2298391bfcc0ddd3894f632a25}\label{classComSquare_1_1Renderer_1_1QtWidgetSFML_abfbe6f2298391bfcc0ddd3894f632a25}} 
+\index{ComSquare::Renderer::QtWidgetSFML@{ComSquare::Renderer::QtWidgetSFML}!````~QtWidgetSFML@{$\sim$QtWidgetSFML}}
+\index{````~QtWidgetSFML@{$\sim$QtWidgetSFML}!ComSquare::Renderer::QtWidgetSFML@{ComSquare::Renderer::QtWidgetSFML}}
+\doxysubsubsection{\texorpdfstring{$\sim$QtWidgetSFML()}{~QtWidgetSFML()}}
+{\footnotesize\ttfamily Com\+Square\+::\+Renderer\+::\+Qt\+Widget\+S\+F\+M\+L\+::$\sim$\+Qt\+Widget\+S\+F\+ML (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classComSquare_1_1Renderer_1_1QtWidgetSFML_a531b5f0cbb76e999ac033ebc93c81fd4}\label{classComSquare_1_1Renderer_1_1QtWidgetSFML_a531b5f0cbb76e999ac033ebc93c81fd4}} 
+\index{ComSquare::Renderer::QtWidgetSFML@{ComSquare::Renderer::QtWidgetSFML}!\_onInit@{\_onInit}}
+\index{\_onInit@{\_onInit}!ComSquare::Renderer::QtWidgetSFML@{ComSquare::Renderer::QtWidgetSFML}}
+\doxysubsubsection{\texorpdfstring{\_onInit()}{\_onInit()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+Renderer\+::\+Qt\+Widget\+S\+F\+M\+L\+::\+\_\+on\+Init (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [virtual]}}
+
+
+
+Function called when this widget is created. 
+
+\mbox{\Hypertarget{classComSquare_1_1Renderer_1_1QtWidgetSFML_ab71f3f53d763c1e6e1e750e74a556aa3}\label{classComSquare_1_1Renderer_1_1QtWidgetSFML_ab71f3f53d763c1e6e1e750e74a556aa3}} 
+\index{ComSquare::Renderer::QtWidgetSFML@{ComSquare::Renderer::QtWidgetSFML}!\_onUpdate@{\_onUpdate}}
+\index{\_onUpdate@{\_onUpdate}!ComSquare::Renderer::QtWidgetSFML@{ComSquare::Renderer::QtWidgetSFML}}
+\doxysubsubsection{\texorpdfstring{\_onUpdate()}{\_onUpdate()}}
+{\footnotesize\ttfamily virtual void Com\+Square\+::\+Renderer\+::\+Qt\+Widget\+S\+F\+M\+L\+::\+\_\+on\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [pure virtual]}}
+
+
+
+Function called to update this widget. 
+
+
+
+Implemented in \mbox{\hyperlink{classComSquare_1_1Renderer_1_1QtFullSFML_a4c488d4b7825bbdb4384bd681b4b6d76}{Com\+Square\+::\+Renderer\+::\+Qt\+Full\+S\+F\+ML}}.
+
+\mbox{\Hypertarget{classComSquare_1_1Renderer_1_1QtWidgetSFML_a6734a2ca6d5c59b3157a46d6e9019e9e}\label{classComSquare_1_1Renderer_1_1QtWidgetSFML_a6734a2ca6d5c59b3157a46d6e9019e9e}} 
+\index{ComSquare::Renderer::QtWidgetSFML@{ComSquare::Renderer::QtWidgetSFML}!operator=@{operator=}}
+\index{operator=@{operator=}!ComSquare::Renderer::QtWidgetSFML@{ComSquare::Renderer::QtWidgetSFML}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classComSquare_1_1Renderer_1_1QtWidgetSFML}{Qt\+Widget\+S\+F\+ML}}\& Com\+Square\+::\+Renderer\+::\+Qt\+Widget\+S\+F\+M\+L\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classComSquare_1_1Renderer_1_1QtWidgetSFML}{Qt\+Widget\+S\+F\+ML}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classComSquare_1_1Renderer_1_1QtWidgetSFML_a0a4b48142633c67210da1e0a97ed6c66}\label{classComSquare_1_1Renderer_1_1QtWidgetSFML_a0a4b48142633c67210da1e0a97ed6c66}} 
+\index{ComSquare::Renderer::QtWidgetSFML@{ComSquare::Renderer::QtWidgetSFML}!paintEngine@{paintEngine}}
+\index{paintEngine@{paintEngine}!ComSquare::Renderer::QtWidgetSFML@{ComSquare::Renderer::QtWidgetSFML}}
+\doxysubsubsection{\texorpdfstring{paintEngine()}{paintEngine()}}
+{\footnotesize\ttfamily Q\+Paint\+Engine $\ast$ Com\+Square\+::\+Renderer\+::\+Qt\+Widget\+S\+F\+M\+L\+::paint\+Engine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}}
+
+
+
+Qt internal paint engine (always null since we use a custom one) 
+
+\mbox{\Hypertarget{classComSquare_1_1Renderer_1_1QtWidgetSFML_a79d769f35a6714669adab7ec7303a1cc}\label{classComSquare_1_1Renderer_1_1QtWidgetSFML_a79d769f35a6714669adab7ec7303a1cc}} 
+\index{ComSquare::Renderer::QtWidgetSFML@{ComSquare::Renderer::QtWidgetSFML}!paintEvent@{paintEvent}}
+\index{paintEvent@{paintEvent}!ComSquare::Renderer::QtWidgetSFML@{ComSquare::Renderer::QtWidgetSFML}}
+\doxysubsubsection{\texorpdfstring{paintEvent()}{paintEvent()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+Renderer\+::\+Qt\+Widget\+S\+F\+M\+L\+::paint\+Event (\begin{DoxyParamCaption}\item[{Q\+Paint\+Event $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}}
+
+
+
+QT event that refresh the widget. (A draw screen) 
+
+\mbox{\Hypertarget{classComSquare_1_1Renderer_1_1QtWidgetSFML_a4d7e67af823dfcba0199acc7662e24ae}\label{classComSquare_1_1Renderer_1_1QtWidgetSFML_a4d7e67af823dfcba0199acc7662e24ae}} 
+\index{ComSquare::Renderer::QtWidgetSFML@{ComSquare::Renderer::QtWidgetSFML}!showEvent@{showEvent}}
+\index{showEvent@{showEvent}!ComSquare::Renderer::QtWidgetSFML@{ComSquare::Renderer::QtWidgetSFML}}
+\doxysubsubsection{\texorpdfstring{showEvent()}{showEvent()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+Renderer\+::\+Qt\+Widget\+S\+F\+M\+L\+::show\+Event (\begin{DoxyParamCaption}\item[{Q\+Show\+Event $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [private]}}
+
+
+
+Used to create the SF window and bind it to the window manager of the user. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classComSquare_1_1Renderer_1_1QtWidgetSFML_a3f9d7d41a99df2c9be44dfb70c4bff63}\label{classComSquare_1_1Renderer_1_1QtWidgetSFML_a3f9d7d41a99df2c9be44dfb70c4bff63}} 
+\index{ComSquare::Renderer::QtWidgetSFML@{ComSquare::Renderer::QtWidgetSFML}!\_isInitialized@{\_isInitialized}}
+\index{\_isInitialized@{\_isInitialized}!ComSquare::Renderer::QtWidgetSFML@{ComSquare::Renderer::QtWidgetSFML}}
+\doxysubsubsection{\texorpdfstring{\_isInitialized}{\_isInitialized}}
+{\footnotesize\ttfamily bool Com\+Square\+::\+Renderer\+::\+Qt\+Widget\+S\+F\+M\+L\+::\+\_\+is\+Initialized = false\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Has the SF window been created yet. 
+
+\mbox{\Hypertarget{classComSquare_1_1Renderer_1_1QtWidgetSFML_a9f57367bc446b8b65b79537bc8d9acb7}\label{classComSquare_1_1Renderer_1_1QtWidgetSFML_a9f57367bc446b8b65b79537bc8d9acb7}} 
+\index{ComSquare::Renderer::QtWidgetSFML@{ComSquare::Renderer::QtWidgetSFML}!\_timer@{\_timer}}
+\index{\_timer@{\_timer}!ComSquare::Renderer::QtWidgetSFML@{ComSquare::Renderer::QtWidgetSFML}}
+\doxysubsubsection{\texorpdfstring{\_timer}{\_timer}}
+{\footnotesize\ttfamily Q\+Timer Com\+Square\+::\+Renderer\+::\+Qt\+Widget\+S\+F\+M\+L\+::\+\_\+timer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+sources/\+Renderer/\+Qt\+Renderer/\mbox{\hyperlink{QtWidgetSFML_8hpp}{Qt\+Widget\+S\+F\+M\+L.\+hpp}}\item 
+sources/\+Renderer/\+Qt\+Renderer/\mbox{\hyperlink{QtWidgetSFML_8cpp}{Qt\+Widget\+S\+F\+M\+L.\+cpp}}\end{DoxyCompactItemize}

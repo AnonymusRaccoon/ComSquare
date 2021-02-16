@@ -1,0 +1,178 @@
+\hypertarget{classCGramModel}{}\doxysection{C\+Gram\+Model Class Reference}
+\label{classCGramModel}\index{CGramModel@{CGramModel}}
+
+
+The qt model that bind the logs to the view.  
+
+
+
+
+{\ttfamily \#include $<$C\+Gram\+Debug.\+hpp$>$}
+
+
+
+Inheritance diagram for C\+Gram\+Model\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{classCGramModel__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for C\+Gram\+Model\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classCGramModel__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCGramModel_a273301d59a05ebb159018f69c1ef4e6a}{C\+Gram\+Model}} (\mbox{\hyperlink{classComSquare_1_1PPU_1_1PPU}{Com\+Square\+::\+P\+P\+U\+::\+P\+PU}} \&ppu)
+\item 
+\mbox{\hyperlink{classCGramModel_a4611935424f6345ae9a25a39b70def01}{C\+Gram\+Model}} (const \mbox{\hyperlink{classCGramModel}{C\+Gram\+Model}} \&)=delete
+\item 
+const \mbox{\hyperlink{classCGramModel}{C\+Gram\+Model}} \& \mbox{\hyperlink{classCGramModel_a419ba1383a5cd4b8de6a71e99c3e2807}{operator=}} (const \mbox{\hyperlink{classCGramModel}{C\+Gram\+Model}} \&)=delete
+\item 
+\mbox{\hyperlink{classCGramModel_ab149d9af43a20da6b34c843ffb201de3}{$\sim$\+C\+Gram\+Model}} () override=default
+\item 
+int \mbox{\hyperlink{classCGramModel_a71a063eec0f4165b1243928a4fc38f45}{row\+Count}} (const Q\+Model\+Index \&parent) const override
+\begin{DoxyCompactList}\small\item\em The number of row the table has. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCGramModel_a63d9eb85f5d7588ad7513956b2bc79d1}{column\+Count}} (const Q\+Model\+Index \&parent) const override
+\begin{DoxyCompactList}\small\item\em The number of column the table has. \end{DoxyCompactList}\item 
+Q\+Variant \mbox{\hyperlink{classCGramModel_a94fdd280b90098e7c80178566c726c00}{data}} (const Q\+Model\+Index \&index, int role) const override
+\begin{DoxyCompactList}\small\item\em Return a data representing the table cell. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const int \mbox{\hyperlink{classCGramModel_a81babc8d024142bf5fe8ed95cafe0830}{column}} = 16
+\begin{DoxyCompactList}\small\item\em The number of columns. \end{DoxyCompactList}\item 
+const int \mbox{\hyperlink{classCGramModel_a0d4c81b2319dbdae5fdbeb45d52bfa53}{rows}} = 16
+\begin{DoxyCompactList}\small\item\em The number of rows. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCGramModel_a054231b7cfbef395901197a796e8f2b5}{x}}
+\item 
+int \mbox{\hyperlink{classCGramModel_aa7011fde9d770a37d9988c5693822d62}{y}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classComSquare_1_1PPU_1_1PPU}{Com\+Square\+::\+P\+P\+U\+::\+P\+PU}} \& \mbox{\hyperlink{classCGramModel_ab836d142cd816a2ec1f2bab9b4524cb2}{\+\_\+ppu}}
+\begin{DoxyCompactList}\small\item\em The ppu to log the cgram. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The qt model that bind the logs to the view. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCGramModel_a273301d59a05ebb159018f69c1ef4e6a}\label{classCGramModel_a273301d59a05ebb159018f69c1ef4e6a}} 
+\index{CGramModel@{CGramModel}!CGramModel@{CGramModel}}
+\index{CGramModel@{CGramModel}!CGramModel@{CGramModel}}
+\doxysubsubsection{\texorpdfstring{CGramModel()}{CGramModel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily C\+Gram\+Model\+::\+C\+Gram\+Model (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classComSquare_1_1PPU_1_1PPU}{Com\+Square\+::\+P\+P\+U\+::\+P\+PU}} \&}]{ppu }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{classCGramModel_a4611935424f6345ae9a25a39b70def01}\label{classCGramModel_a4611935424f6345ae9a25a39b70def01}} 
+\index{CGramModel@{CGramModel}!CGramModel@{CGramModel}}
+\index{CGramModel@{CGramModel}!CGramModel@{CGramModel}}
+\doxysubsubsection{\texorpdfstring{CGramModel()}{CGramModel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily C\+Gram\+Model\+::\+C\+Gram\+Model (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classCGramModel}{C\+Gram\+Model}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classCGramModel_ab149d9af43a20da6b34c843ffb201de3}\label{classCGramModel_ab149d9af43a20da6b34c843ffb201de3}} 
+\index{CGramModel@{CGramModel}!````~CGramModel@{$\sim$CGramModel}}
+\index{````~CGramModel@{$\sim$CGramModel}!CGramModel@{CGramModel}}
+\doxysubsubsection{\texorpdfstring{$\sim$CGramModel()}{~CGramModel()}}
+{\footnotesize\ttfamily C\+Gram\+Model\+::$\sim$\+C\+Gram\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCGramModel_a63d9eb85f5d7588ad7513956b2bc79d1}\label{classCGramModel_a63d9eb85f5d7588ad7513956b2bc79d1}} 
+\index{CGramModel@{CGramModel}!columnCount@{columnCount}}
+\index{columnCount@{columnCount}!CGramModel@{CGramModel}}
+\doxysubsubsection{\texorpdfstring{columnCount()}{columnCount()}}
+{\footnotesize\ttfamily int C\+Gram\+Model\+::column\+Count (\begin{DoxyParamCaption}\item[{const Q\+Model\+Index \&}]{parent }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+The number of column the table has. 
+
+\mbox{\Hypertarget{classCGramModel_a94fdd280b90098e7c80178566c726c00}\label{classCGramModel_a94fdd280b90098e7c80178566c726c00}} 
+\index{CGramModel@{CGramModel}!data@{data}}
+\index{data@{data}!CGramModel@{CGramModel}}
+\doxysubsubsection{\texorpdfstring{data()}{data()}}
+{\footnotesize\ttfamily Q\+Variant C\+Gram\+Model\+::data (\begin{DoxyParamCaption}\item[{const Q\+Model\+Index \&}]{index,  }\item[{int}]{role }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Return a data representing the table cell. 
+
+\mbox{\Hypertarget{classCGramModel_a419ba1383a5cd4b8de6a71e99c3e2807}\label{classCGramModel_a419ba1383a5cd4b8de6a71e99c3e2807}} 
+\index{CGramModel@{CGramModel}!operator=@{operator=}}
+\index{operator=@{operator=}!CGramModel@{CGramModel}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classCGramModel}{C\+Gram\+Model}}\& C\+Gram\+Model\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classCGramModel}{C\+Gram\+Model}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classCGramModel_a71a063eec0f4165b1243928a4fc38f45}\label{classCGramModel_a71a063eec0f4165b1243928a4fc38f45}} 
+\index{CGramModel@{CGramModel}!rowCount@{rowCount}}
+\index{rowCount@{rowCount}!CGramModel@{CGramModel}}
+\doxysubsubsection{\texorpdfstring{rowCount()}{rowCount()}}
+{\footnotesize\ttfamily int C\+Gram\+Model\+::row\+Count (\begin{DoxyParamCaption}\item[{const Q\+Model\+Index \&}]{parent }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+The number of row the table has. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classCGramModel_ab836d142cd816a2ec1f2bab9b4524cb2}\label{classCGramModel_ab836d142cd816a2ec1f2bab9b4524cb2}} 
+\index{CGramModel@{CGramModel}!\_ppu@{\_ppu}}
+\index{\_ppu@{\_ppu}!CGramModel@{CGramModel}}
+\doxysubsubsection{\texorpdfstring{\_ppu}{\_ppu}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classComSquare_1_1PPU_1_1PPU}{Com\+Square\+::\+P\+P\+U\+::\+P\+PU}}\& C\+Gram\+Model\+::\+\_\+ppu\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The ppu to log the cgram. 
+
+\mbox{\Hypertarget{classCGramModel_a81babc8d024142bf5fe8ed95cafe0830}\label{classCGramModel_a81babc8d024142bf5fe8ed95cafe0830}} 
+\index{CGramModel@{CGramModel}!column@{column}}
+\index{column@{column}!CGramModel@{CGramModel}}
+\doxysubsubsection{\texorpdfstring{column}{column}}
+{\footnotesize\ttfamily const int C\+Gram\+Model\+::column = 16}
+
+
+
+The number of columns. 
+
+\mbox{\Hypertarget{classCGramModel_a0d4c81b2319dbdae5fdbeb45d52bfa53}\label{classCGramModel_a0d4c81b2319dbdae5fdbeb45d52bfa53}} 
+\index{CGramModel@{CGramModel}!rows@{rows}}
+\index{rows@{rows}!CGramModel@{CGramModel}}
+\doxysubsubsection{\texorpdfstring{rows}{rows}}
+{\footnotesize\ttfamily const int C\+Gram\+Model\+::rows = 16}
+
+
+
+The number of rows. 
+
+\mbox{\Hypertarget{classCGramModel_a054231b7cfbef395901197a796e8f2b5}\label{classCGramModel_a054231b7cfbef395901197a796e8f2b5}} 
+\index{CGramModel@{CGramModel}!x@{x}}
+\index{x@{x}!CGramModel@{CGramModel}}
+\doxysubsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily int C\+Gram\+Model\+::x}
+
+\mbox{\Hypertarget{classCGramModel_aa7011fde9d770a37d9988c5693822d62}\label{classCGramModel_aa7011fde9d770a37d9988c5693822d62}} 
+\index{CGramModel@{CGramModel}!y@{y}}
+\index{y@{y}!CGramModel@{CGramModel}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily int C\+Gram\+Model\+::y}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+sources/\+Debugger/\mbox{\hyperlink{CGramDebug_8hpp}{C\+Gram\+Debug.\+hpp}}\item 
+sources/\+Debugger/\mbox{\hyperlink{CGramDebug_8cpp}{C\+Gram\+Debug.\+cpp}}\end{DoxyCompactItemize}

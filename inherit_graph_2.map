@@ -1,0 +1,10 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" title=" " alt="" coords="5,157,165,184"/>
+<area shape="rect" id="node2" href="$classBusLogModel.html" title="The qt model that bind the logs to the view." alt="" coords="243,5,352,32"/>
+<area shape="rect" id="node3" href="$classCGramModel.html" title="The qt model that bind the logs to the view." alt="" coords="244,56,351,83"/>
+<area shape="rect" id="node4" href="$classDisassemblyModel.html" title="The qt model that show the disassembly." alt="" coords="224,107,371,133"/>
+<area shape="rect" id="node5" href="$classHistoryModel.html" title="The qt model that show the history." alt="" coords="243,157,352,184"/>
+<area shape="rect" id="node6" href="$classMemoryViewerModel.html" title="The qt model that bind the ram to the view." alt="" coords="217,208,378,235"/>
+<area shape="rect" id="node7" href="$classRegistersViewerModel.html" title=" " alt="" coords="213,259,381,285"/>
+<area shape="rect" id="node8" href="$classStackModel.html" title="The qt model that show the stack." alt="" coords="248,309,347,336"/>
+</map>

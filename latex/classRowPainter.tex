@@ -1,0 +1,110 @@
+\hypertarget{classRowPainter}{}\doxysection{Row\+Painter Class Reference}
+\label{classRowPainter}\index{RowPainter@{RowPainter}}
+
+
+The qt class that highlight breakpoints and the PC\textquotesingle{}s position.  
+
+
+
+
+{\ttfamily \#include $<$C\+P\+U\+Debug.\+hpp$>$}
+
+
+
+Inheritance diagram for Row\+Painter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{classRowPainter__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Row\+Painter\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classRowPainter__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classRowPainter_af277ea93986a51854b705e1e0156ed5b}{Row\+Painter}} (\mbox{\hyperlink{classComSquare_1_1Debugger_1_1CPUDebug}{Com\+Square\+::\+Debugger\+::\+C\+P\+U\+Debug}} \&cpu, Q\+Object $\ast$parent=nullptr)
+\item 
+\mbox{\hyperlink{classRowPainter}{Row\+Painter}} \& \mbox{\hyperlink{classRowPainter_adecb0f894ccace20376aaf4bdf014d21}{operator=}} (const \mbox{\hyperlink{classRowPainter}{Row\+Painter}} \&)=delete
+\item 
+\mbox{\hyperlink{classRowPainter_a6a95c00aecb96a25c73722f32b68d3ed}{$\sim$\+Row\+Painter}} () override=default
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+Q\+Size \mbox{\hyperlink{classRowPainter_ab0d147a7621becac984c1ea4b59be257}{size\+Hint}} (const Q\+Style\+Option\+View\+Item \&options, const Q\+Model\+Index \&index) const override
+\item 
+void \mbox{\hyperlink{classRowPainter_acbe3ebe45e3c905293b3733232143e13}{paint}} (Q\+Painter $\ast$painter, const Q\+Style\+Option\+View\+Item \&option, const Q\+Model\+Index \&index) const override
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classComSquare_1_1Debugger_1_1CPUDebug}{Com\+Square\+::\+Debugger\+::\+C\+P\+U\+Debug}} \& \mbox{\hyperlink{classRowPainter_af00b80dacb6170d38b1a0941cd713338}{\+\_\+cpu}}
+\begin{DoxyCompactList}\small\item\em The C\+PU to get PC and breakpoints from. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The qt class that highlight breakpoints and the PC\textquotesingle{}s position. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classRowPainter_af277ea93986a51854b705e1e0156ed5b}\label{classRowPainter_af277ea93986a51854b705e1e0156ed5b}} 
+\index{RowPainter@{RowPainter}!RowPainter@{RowPainter}}
+\index{RowPainter@{RowPainter}!RowPainter@{RowPainter}}
+\doxysubsubsection{\texorpdfstring{RowPainter()}{RowPainter()}}
+{\footnotesize\ttfamily Row\+Painter\+::\+Row\+Painter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classComSquare_1_1Debugger_1_1CPUDebug}{Com\+Square\+::\+Debugger\+::\+C\+P\+U\+Debug}} \&}]{cpu,  }\item[{Q\+Object $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{classRowPainter_a6a95c00aecb96a25c73722f32b68d3ed}\label{classRowPainter_a6a95c00aecb96a25c73722f32b68d3ed}} 
+\index{RowPainter@{RowPainter}!````~RowPainter@{$\sim$RowPainter}}
+\index{````~RowPainter@{$\sim$RowPainter}!RowPainter@{RowPainter}}
+\doxysubsubsection{\texorpdfstring{$\sim$RowPainter()}{~RowPainter()}}
+{\footnotesize\ttfamily Row\+Painter\+::$\sim$\+Row\+Painter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classRowPainter_adecb0f894ccace20376aaf4bdf014d21}\label{classRowPainter_adecb0f894ccace20376aaf4bdf014d21}} 
+\index{RowPainter@{RowPainter}!operator=@{operator=}}
+\index{operator=@{operator=}!RowPainter@{RowPainter}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classRowPainter}{Row\+Painter}}\& Row\+Painter\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classRowPainter}{Row\+Painter}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classRowPainter_acbe3ebe45e3c905293b3733232143e13}\label{classRowPainter_acbe3ebe45e3c905293b3733232143e13}} 
+\index{RowPainter@{RowPainter}!paint@{paint}}
+\index{paint@{paint}!RowPainter@{RowPainter}}
+\doxysubsubsection{\texorpdfstring{paint()}{paint()}}
+{\footnotesize\ttfamily void Row\+Painter\+::paint (\begin{DoxyParamCaption}\item[{Q\+Painter $\ast$}]{painter,  }\item[{const Q\+Style\+Option\+View\+Item \&}]{option,  }\item[{const Q\+Model\+Index \&}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classRowPainter_ab0d147a7621becac984c1ea4b59be257}\label{classRowPainter_ab0d147a7621becac984c1ea4b59be257}} 
+\index{RowPainter@{RowPainter}!sizeHint@{sizeHint}}
+\index{sizeHint@{sizeHint}!RowPainter@{RowPainter}}
+\doxysubsubsection{\texorpdfstring{sizeHint()}{sizeHint()}}
+{\footnotesize\ttfamily Q\+Size Row\+Painter\+::size\+Hint (\begin{DoxyParamCaption}\item[{const Q\+Style\+Option\+View\+Item \&}]{options,  }\item[{const Q\+Model\+Index \&}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [protected]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classRowPainter_af00b80dacb6170d38b1a0941cd713338}\label{classRowPainter_af00b80dacb6170d38b1a0941cd713338}} 
+\index{RowPainter@{RowPainter}!\_cpu@{\_cpu}}
+\index{\_cpu@{\_cpu}!RowPainter@{RowPainter}}
+\doxysubsubsection{\texorpdfstring{\_cpu}{\_cpu}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classComSquare_1_1Debugger_1_1CPUDebug}{Com\+Square\+::\+Debugger\+::\+C\+P\+U\+Debug}}\& Row\+Painter\+::\+\_\+cpu\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The C\+PU to get PC and breakpoints from. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+sources/\+Debugger/\+C\+P\+U/\mbox{\hyperlink{CPUDebug_8hpp}{C\+P\+U\+Debug.\+hpp}}\item 
+sources/\+Debugger/\+C\+P\+U/\mbox{\hyperlink{CPUDebug_8cpp}{C\+P\+U\+Debug.\+cpp}}\end{DoxyCompactItemize}

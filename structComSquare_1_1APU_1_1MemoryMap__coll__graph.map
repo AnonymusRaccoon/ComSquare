@@ -1,0 +1,8 @@
+<map id="ComSquare::APU::MemoryMap" name="ComSquare::APU::MemoryMap">
+<area shape="rect" id="node1" title=" " alt="" coords="89,897,311,1019"/>
+<area shape="rect" id="node2" href="$classComSquare_1_1Ram_1_1Ram.html" title=" " alt="" coords="12,567,185,805"/>
+<area shape="rect" id="node3" href="$classComSquare_1_1Memory_1_1ARectangleMemory.html" title="Base memory class to map non continuous rectangle to the memory. (A rectangle that spam across more t..." alt="" coords="5,293,192,517"/>
+<area shape="rect" id="node4" href="$classComSquare_1_1Memory_1_1IMemory.html" title="Common interface implemented by all components mapping memory." alt="" coords="113,5,287,244"/>
+<area shape="rect" id="node6" href="$classComSquare_1_1Memory_1_1AMemory.html" title="Abstract class representing a continuous block of memory." alt="" coords="217,308,391,503"/>
+<area shape="rect" id="node5" href="$classComSquare_1_1APU_1_1IPL_1_1IPL.html" title=" " alt="" coords="209,567,396,805"/>
+</map>

@@ -1,0 +1,198 @@
+\hypertarget{classBusLogModel}{}\doxysection{Bus\+Log\+Model Class Reference}
+\label{classBusLogModel}\index{BusLogModel@{BusLogModel}}
+
+
+The qt model that bind the logs to the view.  
+
+
+
+
+{\ttfamily \#include $<$Memory\+Bus\+Debug.\+hpp$>$}
+
+
+
+Inheritance diagram for Bus\+Log\+Model\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{classBusLogModel__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Bus\+Log\+Model\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=200pt]{classBusLogModel__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBusLogModel_a4e9b0797eb2f9a063723587a2d3ffe5e}{Bus\+Log\+Model}} ()=default
+\item 
+\mbox{\hyperlink{classBusLogModel_a5c9fce0234a61f68538ce7017b560667}{Bus\+Log\+Model}} (const \mbox{\hyperlink{classBusLogModel}{Bus\+Log\+Model}} \&)=delete
+\item 
+const \mbox{\hyperlink{classBusLogModel}{Bus\+Log\+Model}} \& \mbox{\hyperlink{classBusLogModel_a576a47e6c46616653848c9aafea217e2}{operator=}} (const \mbox{\hyperlink{classBusLogModel}{Bus\+Log\+Model}} \&)=delete
+\item 
+\mbox{\hyperlink{classBusLogModel_a158d377fd0c31f0dadc51b15db655080}{$\sim$\+Bus\+Log\+Model}} () override=default
+\item 
+void \mbox{\hyperlink{classBusLogModel_afefaa27ad68d2d2021e644c5e3d0cbe0}{log}} (const \mbox{\hyperlink{structComSquare_1_1Debugger_1_1BusLog}{Com\+Square\+::\+Debugger\+::\+Bus\+Log}} \&log)
+\begin{DoxyCompactList}\small\item\em Add a log to the model. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{structComSquare_1_1Debugger_1_1BusLog}{Com\+Square\+::\+Debugger\+::\+Bus\+Log}} \mbox{\hyperlink{classBusLogModel_aabdb0ca4c9178cdd3001446d8011b989}{get\+Log\+At}} (int index)
+\begin{DoxyCompactList}\small\item\em Get a log at an index. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBusLogModel_a91f189319cae1cfa14519508363dd81a}{clear\+Logs}} ()
+\begin{DoxyCompactList}\small\item\em Clear all the logs. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classBusLogModel_abc061b8c6fa13905c8ab6f1026410b8c}{row\+Count}} (const Q\+Model\+Index \&parent) const override
+\begin{DoxyCompactList}\small\item\em The number of row the table has. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classBusLogModel_a7e8a6475560e7732cd68398f69e6cdcd}{column\+Count}} (const Q\+Model\+Index \&parent) const override
+\begin{DoxyCompactList}\small\item\em The number of column the table has. \end{DoxyCompactList}\item 
+Q\+Variant \mbox{\hyperlink{classBusLogModel_ac253f95d395c5039b291f8af1b830fba}{data}} (const Q\+Model\+Index \&index, int role) const override
+\begin{DoxyCompactList}\small\item\em Return a data representing the table cell. \end{DoxyCompactList}\item 
+Q\+Variant \mbox{\hyperlink{classBusLogModel_a13632bb9a60849bfc022bf894a1b4522}{header\+Data}} (int section, Qt\+::\+Orientation orientation, int role) const override
+\begin{DoxyCompactList}\small\item\em Override the headers to use hex values. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const int \mbox{\hyperlink{classBusLogModel_a78f527eb57cc6fe316b2446bc4b9b3cc}{column}} = 6
+\begin{DoxyCompactList}\small\item\em The number of column;. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structComSquare_1_1Debugger_1_1BusLog}{Com\+Square\+::\+Debugger\+::\+Bus\+Log}} $>$ \mbox{\hyperlink{classBusLogModel_ad4bde935b13b14135955f4cc695bc7da}{\+\_\+logs}}
+\begin{DoxyCompactList}\small\item\em The logs to display. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The qt model that bind the logs to the view. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBusLogModel_a4e9b0797eb2f9a063723587a2d3ffe5e}\label{classBusLogModel_a4e9b0797eb2f9a063723587a2d3ffe5e}} 
+\index{BusLogModel@{BusLogModel}!BusLogModel@{BusLogModel}}
+\index{BusLogModel@{BusLogModel}!BusLogModel@{BusLogModel}}
+\doxysubsubsection{\texorpdfstring{BusLogModel()}{BusLogModel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Bus\+Log\+Model\+::\+Bus\+Log\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classBusLogModel_a5c9fce0234a61f68538ce7017b560667}\label{classBusLogModel_a5c9fce0234a61f68538ce7017b560667}} 
+\index{BusLogModel@{BusLogModel}!BusLogModel@{BusLogModel}}
+\index{BusLogModel@{BusLogModel}!BusLogModel@{BusLogModel}}
+\doxysubsubsection{\texorpdfstring{BusLogModel()}{BusLogModel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Bus\+Log\+Model\+::\+Bus\+Log\+Model (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classBusLogModel}{Bus\+Log\+Model}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classBusLogModel_a158d377fd0c31f0dadc51b15db655080}\label{classBusLogModel_a158d377fd0c31f0dadc51b15db655080}} 
+\index{BusLogModel@{BusLogModel}!````~BusLogModel@{$\sim$BusLogModel}}
+\index{````~BusLogModel@{$\sim$BusLogModel}!BusLogModel@{BusLogModel}}
+\doxysubsubsection{\texorpdfstring{$\sim$BusLogModel()}{~BusLogModel()}}
+{\footnotesize\ttfamily Bus\+Log\+Model\+::$\sim$\+Bus\+Log\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBusLogModel_a91f189319cae1cfa14519508363dd81a}\label{classBusLogModel_a91f189319cae1cfa14519508363dd81a}} 
+\index{BusLogModel@{BusLogModel}!clearLogs@{clearLogs}}
+\index{clearLogs@{clearLogs}!BusLogModel@{BusLogModel}}
+\doxysubsubsection{\texorpdfstring{clearLogs()}{clearLogs()}}
+{\footnotesize\ttfamily void Bus\+Log\+Model\+::clear\+Logs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Clear all the logs. 
+
+\mbox{\Hypertarget{classBusLogModel_a7e8a6475560e7732cd68398f69e6cdcd}\label{classBusLogModel_a7e8a6475560e7732cd68398f69e6cdcd}} 
+\index{BusLogModel@{BusLogModel}!columnCount@{columnCount}}
+\index{columnCount@{columnCount}!BusLogModel@{BusLogModel}}
+\doxysubsubsection{\texorpdfstring{columnCount()}{columnCount()}}
+{\footnotesize\ttfamily int Bus\+Log\+Model\+::column\+Count (\begin{DoxyParamCaption}\item[{const Q\+Model\+Index \&}]{parent }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+The number of column the table has. 
+
+\mbox{\Hypertarget{classBusLogModel_ac253f95d395c5039b291f8af1b830fba}\label{classBusLogModel_ac253f95d395c5039b291f8af1b830fba}} 
+\index{BusLogModel@{BusLogModel}!data@{data}}
+\index{data@{data}!BusLogModel@{BusLogModel}}
+\doxysubsubsection{\texorpdfstring{data()}{data()}}
+{\footnotesize\ttfamily Q\+Variant Bus\+Log\+Model\+::data (\begin{DoxyParamCaption}\item[{const Q\+Model\+Index \&}]{index,  }\item[{int}]{role }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Return a data representing the table cell. 
+
+\mbox{\Hypertarget{classBusLogModel_aabdb0ca4c9178cdd3001446d8011b989}\label{classBusLogModel_aabdb0ca4c9178cdd3001446d8011b989}} 
+\index{BusLogModel@{BusLogModel}!getLogAt@{getLogAt}}
+\index{getLogAt@{getLogAt}!BusLogModel@{BusLogModel}}
+\doxysubsubsection{\texorpdfstring{getLogAt()}{getLogAt()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structComSquare_1_1Debugger_1_1BusLog}{Com\+Square\+::\+Debugger\+::\+Bus\+Log}} Bus\+Log\+Model\+::get\+Log\+At (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+Get a log at an index. 
+
+\mbox{\Hypertarget{classBusLogModel_a13632bb9a60849bfc022bf894a1b4522}\label{classBusLogModel_a13632bb9a60849bfc022bf894a1b4522}} 
+\index{BusLogModel@{BusLogModel}!headerData@{headerData}}
+\index{headerData@{headerData}!BusLogModel@{BusLogModel}}
+\doxysubsubsection{\texorpdfstring{headerData()}{headerData()}}
+{\footnotesize\ttfamily Q\+Variant Bus\+Log\+Model\+::header\+Data (\begin{DoxyParamCaption}\item[{int}]{section,  }\item[{Qt\+::\+Orientation}]{orientation,  }\item[{int}]{role }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Override the headers to use hex values. 
+
+\mbox{\Hypertarget{classBusLogModel_afefaa27ad68d2d2021e644c5e3d0cbe0}\label{classBusLogModel_afefaa27ad68d2d2021e644c5e3d0cbe0}} 
+\index{BusLogModel@{BusLogModel}!log@{log}}
+\index{log@{log}!BusLogModel@{BusLogModel}}
+\doxysubsubsection{\texorpdfstring{log()}{log()}}
+{\footnotesize\ttfamily void Bus\+Log\+Model\+::log (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structComSquare_1_1Debugger_1_1BusLog}{Com\+Square\+::\+Debugger\+::\+Bus\+Log}} \&}]{log }\end{DoxyParamCaption})}
+
+
+
+Add a log to the model. 
+
+\mbox{\Hypertarget{classBusLogModel_a576a47e6c46616653848c9aafea217e2}\label{classBusLogModel_a576a47e6c46616653848c9aafea217e2}} 
+\index{BusLogModel@{BusLogModel}!operator=@{operator=}}
+\index{operator=@{operator=}!BusLogModel@{BusLogModel}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classBusLogModel}{Bus\+Log\+Model}}\& Bus\+Log\+Model\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classBusLogModel}{Bus\+Log\+Model}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classBusLogModel_abc061b8c6fa13905c8ab6f1026410b8c}\label{classBusLogModel_abc061b8c6fa13905c8ab6f1026410b8c}} 
+\index{BusLogModel@{BusLogModel}!rowCount@{rowCount}}
+\index{rowCount@{rowCount}!BusLogModel@{BusLogModel}}
+\doxysubsubsection{\texorpdfstring{rowCount()}{rowCount()}}
+{\footnotesize\ttfamily int Bus\+Log\+Model\+::row\+Count (\begin{DoxyParamCaption}\item[{const Q\+Model\+Index \&}]{parent }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+The number of row the table has. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classBusLogModel_ad4bde935b13b14135955f4cc695bc7da}\label{classBusLogModel_ad4bde935b13b14135955f4cc695bc7da}} 
+\index{BusLogModel@{BusLogModel}!\_logs@{\_logs}}
+\index{\_logs@{\_logs}!BusLogModel@{BusLogModel}}
+\doxysubsubsection{\texorpdfstring{\_logs}{\_logs}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{structComSquare_1_1Debugger_1_1BusLog}{Com\+Square\+::\+Debugger\+::\+Bus\+Log}}$>$ Bus\+Log\+Model\+::\+\_\+logs\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The logs to display. 
+
+\mbox{\Hypertarget{classBusLogModel_a78f527eb57cc6fe316b2446bc4b9b3cc}\label{classBusLogModel_a78f527eb57cc6fe316b2446bc4b9b3cc}} 
+\index{BusLogModel@{BusLogModel}!column@{column}}
+\index{column@{column}!BusLogModel@{BusLogModel}}
+\doxysubsubsection{\texorpdfstring{column}{column}}
+{\footnotesize\ttfamily const int Bus\+Log\+Model\+::column = 6}
+
+
+
+The number of column;. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+sources/\+Debugger/\mbox{\hyperlink{MemoryBusDebug_8hpp}{Memory\+Bus\+Debug.\+hpp}}\item 
+sources/\+Debugger/\mbox{\hyperlink{MemoryBusDebug_8cpp}{Memory\+Bus\+Debug.\+cpp}}\end{DoxyCompactItemize}

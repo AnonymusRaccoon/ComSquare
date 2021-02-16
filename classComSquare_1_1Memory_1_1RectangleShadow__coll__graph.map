@@ -1,0 +1,5 @@
+<map id="ComSquare::Memory::RectangleShadow" name="ComSquare::Memory::RectangleShadow">
+<area shape="rect" id="node1" title=" " alt="" coords="11,564,186,847"/>
+<area shape="rect" id="node2" href="$classComSquare_1_1Memory_1_1ARectangleMemory.html" title="Base memory class to map non continuous rectangle to the memory. (A rectangle that spam across more t..." alt="" coords="5,292,192,516"/>
+<area shape="rect" id="node3" href="$classComSquare_1_1Memory_1_1IMemory.html" title="Common interface implemented by all components mapping memory." alt="" coords="11,5,186,244"/>
+</map>

@@ -1,0 +1,163 @@
+\hypertarget{classRegistersViewerModel}{}\doxysection{Registers\+Viewer\+Model Class Reference}
+\label{classRegistersViewerModel}\index{RegistersViewerModel@{RegistersViewerModel}}
+
+
+{\ttfamily \#include $<$Register\+Viewer.\+hpp$>$}
+
+
+
+Inheritance diagram for Registers\+Viewer\+Model\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=233pt]{classRegistersViewerModel__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Registers\+Viewer\+Model\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classRegistersViewerModel__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classRegistersViewerModel_a71594171f34b5126ab9cf6b89d2a2411}{add\+Register}} (\mbox{\hyperlink{structComSquare_1_1Debugger_1_1Register}{Com\+Square\+::\+Debugger\+::\+Register}} reg)
+\begin{DoxyCompactList}\small\item\em Add a register. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classRegistersViewerModel_aacfade6bd4b62691999d68d34d94dd12}{Registers\+Viewer\+Model}} (\mbox{\hyperlink{classComSquare_1_1SNES}{Com\+Square\+::\+S\+N\+ES}} \&snes, Q\+Object $\ast$parent=nullptr)
+\item 
+\mbox{\hyperlink{classRegistersViewerModel_ac45001738e1a2b62d58d4213c980ac91}{Registers\+Viewer\+Model}} (const \mbox{\hyperlink{classRegistersViewerModel}{Registers\+Viewer\+Model}} \&)=delete
+\item 
+const \mbox{\hyperlink{classRegistersViewerModel}{Registers\+Viewer\+Model}} \& \mbox{\hyperlink{classRegistersViewerModel_af88c15e20860bd8696e4bd725a172c79}{operator=}} (const \mbox{\hyperlink{classRegistersViewerModel}{Registers\+Viewer\+Model}} \&)=delete
+\item 
+\mbox{\hyperlink{classRegistersViewerModel_a35563b1808723819de39bb4c5b4cff78}{$\sim$\+Registers\+Viewer\+Model}} () override=default
+\item 
+int \mbox{\hyperlink{classRegistersViewerModel_a5b9891c140eb1e9937c0c3af855cbbb0}{row\+Count}} (const Q\+Model\+Index \&parent) const override
+\begin{DoxyCompactList}\small\item\em The number of row the table has. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classRegistersViewerModel_a5c1dcd7b02cec8c71e92027431a4ba07}{column\+Count}} (const Q\+Model\+Index \&parent) const override
+\begin{DoxyCompactList}\small\item\em The number of column the table has. \end{DoxyCompactList}\item 
+Q\+Variant \mbox{\hyperlink{classRegistersViewerModel_a38aa5d28c36944b3654f8106e9bcbd3e}{data}} (const Q\+Model\+Index \&index, int role) const override
+\begin{DoxyCompactList}\small\item\em Return a data representing the table cell. \end{DoxyCompactList}\item 
+Q\+Variant \mbox{\hyperlink{classRegistersViewerModel_a8f50fab35e8362dbd5c715ecee9aca20}{header\+Data}} (int section, Qt\+::\+Orientation orientation, int role) const override
+\begin{DoxyCompactList}\small\item\em Override the headers to use hex values. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structComSquare_1_1Debugger_1_1Register}{Com\+Square\+::\+Debugger\+::\+Register}} $>$ \mbox{\hyperlink{classRegistersViewerModel_a0cde9715faed6dc9c59dc64efe5b2ad3}{\+\_\+registers}}
+\begin{DoxyCompactList}\small\item\em The list of registers to display / update. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classComSquare_1_1SNES}{Com\+Square\+::\+S\+N\+ES}} \& \mbox{\hyperlink{classRegistersViewerModel_a342655322b44f46786c5498759da8c3b}{\+\_\+snes}}
+\begin{DoxyCompactList}\small\item\em Reference to the snes to get information from registers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classRegistersViewerModel_aacfade6bd4b62691999d68d34d94dd12}\label{classRegistersViewerModel_aacfade6bd4b62691999d68d34d94dd12}} 
+\index{RegistersViewerModel@{RegistersViewerModel}!RegistersViewerModel@{RegistersViewerModel}}
+\index{RegistersViewerModel@{RegistersViewerModel}!RegistersViewerModel@{RegistersViewerModel}}
+\doxysubsubsection{\texorpdfstring{RegistersViewerModel()}{RegistersViewerModel()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Registers\+Viewer\+Model\+::\+Registers\+Viewer\+Model (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classComSquare_1_1SNES}{Com\+Square\+::\+S\+N\+ES}} \&}]{snes,  }\item[{Q\+Object $\ast$}]{parent = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classRegistersViewerModel_ac45001738e1a2b62d58d4213c980ac91}\label{classRegistersViewerModel_ac45001738e1a2b62d58d4213c980ac91}} 
+\index{RegistersViewerModel@{RegistersViewerModel}!RegistersViewerModel@{RegistersViewerModel}}
+\index{RegistersViewerModel@{RegistersViewerModel}!RegistersViewerModel@{RegistersViewerModel}}
+\doxysubsubsection{\texorpdfstring{RegistersViewerModel()}{RegistersViewerModel()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Registers\+Viewer\+Model\+::\+Registers\+Viewer\+Model (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classRegistersViewerModel}{Registers\+Viewer\+Model}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classRegistersViewerModel_a35563b1808723819de39bb4c5b4cff78}\label{classRegistersViewerModel_a35563b1808723819de39bb4c5b4cff78}} 
+\index{RegistersViewerModel@{RegistersViewerModel}!````~RegistersViewerModel@{$\sim$RegistersViewerModel}}
+\index{````~RegistersViewerModel@{$\sim$RegistersViewerModel}!RegistersViewerModel@{RegistersViewerModel}}
+\doxysubsubsection{\texorpdfstring{$\sim$RegistersViewerModel()}{~RegistersViewerModel()}}
+{\footnotesize\ttfamily Registers\+Viewer\+Model\+::$\sim$\+Registers\+Viewer\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classRegistersViewerModel_a71594171f34b5126ab9cf6b89d2a2411}\label{classRegistersViewerModel_a71594171f34b5126ab9cf6b89d2a2411}} 
+\index{RegistersViewerModel@{RegistersViewerModel}!addRegister@{addRegister}}
+\index{addRegister@{addRegister}!RegistersViewerModel@{RegistersViewerModel}}
+\doxysubsubsection{\texorpdfstring{addRegister()}{addRegister()}}
+{\footnotesize\ttfamily void Registers\+Viewer\+Model\+::add\+Register (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structComSquare_1_1Debugger_1_1Register}{Com\+Square\+::\+Debugger\+::\+Register}}}]{reg }\end{DoxyParamCaption})}
+
+
+
+Add a register. 
+
+\mbox{\Hypertarget{classRegistersViewerModel_a5c1dcd7b02cec8c71e92027431a4ba07}\label{classRegistersViewerModel_a5c1dcd7b02cec8c71e92027431a4ba07}} 
+\index{RegistersViewerModel@{RegistersViewerModel}!columnCount@{columnCount}}
+\index{columnCount@{columnCount}!RegistersViewerModel@{RegistersViewerModel}}
+\doxysubsubsection{\texorpdfstring{columnCount()}{columnCount()}}
+{\footnotesize\ttfamily int Registers\+Viewer\+Model\+::column\+Count (\begin{DoxyParamCaption}\item[{const Q\+Model\+Index \&}]{parent }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+The number of column the table has. 
+
+\mbox{\Hypertarget{classRegistersViewerModel_a38aa5d28c36944b3654f8106e9bcbd3e}\label{classRegistersViewerModel_a38aa5d28c36944b3654f8106e9bcbd3e}} 
+\index{RegistersViewerModel@{RegistersViewerModel}!data@{data}}
+\index{data@{data}!RegistersViewerModel@{RegistersViewerModel}}
+\doxysubsubsection{\texorpdfstring{data()}{data()}}
+{\footnotesize\ttfamily Q\+Variant Registers\+Viewer\+Model\+::data (\begin{DoxyParamCaption}\item[{const Q\+Model\+Index \&}]{index,  }\item[{int}]{role }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Return a data representing the table cell. 
+
+\mbox{\Hypertarget{classRegistersViewerModel_a8f50fab35e8362dbd5c715ecee9aca20}\label{classRegistersViewerModel_a8f50fab35e8362dbd5c715ecee9aca20}} 
+\index{RegistersViewerModel@{RegistersViewerModel}!headerData@{headerData}}
+\index{headerData@{headerData}!RegistersViewerModel@{RegistersViewerModel}}
+\doxysubsubsection{\texorpdfstring{headerData()}{headerData()}}
+{\footnotesize\ttfamily Q\+Variant Registers\+Viewer\+Model\+::header\+Data (\begin{DoxyParamCaption}\item[{int}]{section,  }\item[{Qt\+::\+Orientation}]{orientation,  }\item[{int}]{role }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Override the headers to use hex values. 
+
+\mbox{\Hypertarget{classRegistersViewerModel_af88c15e20860bd8696e4bd725a172c79}\label{classRegistersViewerModel_af88c15e20860bd8696e4bd725a172c79}} 
+\index{RegistersViewerModel@{RegistersViewerModel}!operator=@{operator=}}
+\index{operator=@{operator=}!RegistersViewerModel@{RegistersViewerModel}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classRegistersViewerModel}{Registers\+Viewer\+Model}}\& Registers\+Viewer\+Model\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classRegistersViewerModel}{Registers\+Viewer\+Model}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classRegistersViewerModel_a5b9891c140eb1e9937c0c3af855cbbb0}\label{classRegistersViewerModel_a5b9891c140eb1e9937c0c3af855cbbb0}} 
+\index{RegistersViewerModel@{RegistersViewerModel}!rowCount@{rowCount}}
+\index{rowCount@{rowCount}!RegistersViewerModel@{RegistersViewerModel}}
+\doxysubsubsection{\texorpdfstring{rowCount()}{rowCount()}}
+{\footnotesize\ttfamily int Registers\+Viewer\+Model\+::row\+Count (\begin{DoxyParamCaption}\item[{const Q\+Model\+Index \&}]{parent }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+The number of row the table has. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classRegistersViewerModel_a0cde9715faed6dc9c59dc64efe5b2ad3}\label{classRegistersViewerModel_a0cde9715faed6dc9c59dc64efe5b2ad3}} 
+\index{RegistersViewerModel@{RegistersViewerModel}!\_registers@{\_registers}}
+\index{\_registers@{\_registers}!RegistersViewerModel@{RegistersViewerModel}}
+\doxysubsubsection{\texorpdfstring{\_registers}{\_registers}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{structComSquare_1_1Debugger_1_1Register}{Com\+Square\+::\+Debugger\+::\+Register}}$>$ Registers\+Viewer\+Model\+::\+\_\+registers\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The list of registers to display / update. 
+
+\mbox{\Hypertarget{classRegistersViewerModel_a342655322b44f46786c5498759da8c3b}\label{classRegistersViewerModel_a342655322b44f46786c5498759da8c3b}} 
+\index{RegistersViewerModel@{RegistersViewerModel}!\_snes@{\_snes}}
+\index{\_snes@{\_snes}!RegistersViewerModel@{RegistersViewerModel}}
+\doxysubsubsection{\texorpdfstring{\_snes}{\_snes}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classComSquare_1_1SNES}{Com\+Square\+::\+S\+N\+ES}}\& Registers\+Viewer\+Model\+::\+\_\+snes\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Reference to the snes to get information from registers. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+sources/\+Debugger/\mbox{\hyperlink{RegisterViewer_8hpp}{Register\+Viewer.\+hpp}}\item 
+sources/\+Debugger/\mbox{\hyperlink{RegisterViewer_8cpp}{Register\+Viewer.\+cpp}}\end{DoxyCompactItemize}

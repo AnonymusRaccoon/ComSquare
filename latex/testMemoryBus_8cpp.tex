@@ -1,0 +1,391 @@
+\hypertarget{testMemoryBus_8cpp}{}\doxysection{tests/test\+Memory\+Bus.cpp File Reference}
+\label{testMemoryBus_8cpp}\index{tests/testMemoryBus.cpp@{tests/testMemoryBus.cpp}}
+{\ttfamily \#include $<$criterion/criterion.\+h$>$}\newline
+{\ttfamily \#include $<$criterion/redirect.\+h$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include \char`\"{}tests.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../sources/\+Memory/\+Memory\+Shadow.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../sources/\+Memory/\+Rectangle\+Shadow.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../sources/\+Exceptions/\+Invalid\+Action.\+hpp\char`\"{}}\newline
+Include dependency graph for test\+Memory\+Bus.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{testMemoryBus_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{testMemoryBus_8cpp_a7a2a0faf147ebe4578b24595ba3c3ab4}{Test}} (Bus\+Accessor, Get\+Wram\+Start)
+\item 
+\mbox{\hyperlink{testMemoryBus_8cpp_a9a6613504d5e7d0b085acddfe724fd78}{Test}} (Bus\+Accessor, Get\+Wram\+End)
+\item 
+\mbox{\hyperlink{testMemoryBus_8cpp_a513037de4bcb43ed78c36ef5fae87102}{Test}} (Bus\+Accessor, Get\+Wram\+Mirror)
+\item 
+\mbox{\hyperlink{testMemoryBus_8cpp_ae59dd93fbe29b0b1295e9999d7bdfe03}{Test}} (Bus\+Accessor, Get\+Wram\+Mirror2)
+\item 
+\mbox{\hyperlink{testMemoryBus_8cpp_a1bb4aee5d214f41d173e6ff1d89d13d1}{Test}} (Bus\+Accessor, Get\+Wram\+Mirror3)
+\item 
+\mbox{\hyperlink{testMemoryBus_8cpp_a72cba38377714c398c3e300e9d8dd052}{Test}} (Bus\+Accessor, Get\+Open\+Bus)
+\item 
+\mbox{\hyperlink{testMemoryBus_8cpp_ac498bba68441f48b099436a8c7aa648f}{Test}} (Bus\+Accessor, Get\+Sram\+Start)
+\item 
+\mbox{\hyperlink{testMemoryBus_8cpp_a8efb199e7da6d408da462f99f7b57cf4}{Test}} (Bus\+Accessor, Get\+Sram\+End)
+\item 
+\mbox{\hyperlink{testMemoryBus_8cpp_a2d0f71f35ac513c110c95ddceb43c0ca}{Test}} (Bus\+Accessor, Get\+Sram\+Mirror)
+\item 
+\mbox{\hyperlink{testMemoryBus_8cpp_a8d10fa797464c3a89e2839bec96a87b8}{Test}} (Bus\+Accessor, Get\+A\+P\+U\+Start)
+\item 
+\mbox{\hyperlink{testMemoryBus_8cpp_ac1e234b3387aaa290949268d45b95ce0}{Test}} (Bus\+Accessor, Get\+A\+P\+U\+End)
+\item 
+\mbox{\hyperlink{testMemoryBus_8cpp_a4378efd9ddbbad4b50f8939c190f5fc4}{Test}} (Bus\+Accessor, Get\+A\+P\+U\+Mirror)
+\item 
+\mbox{\hyperlink{testMemoryBus_8cpp_a76aa05bb180b5752d7b7b1cee800517a}{Test}} (Bus\+Accessor, Get\+A\+P\+U\+Mirror\+First\+Half)
+\item 
+\mbox{\hyperlink{testMemoryBus_8cpp_ab632551a900d5951930a0cd3e7bf4701}{Test}} (Bus\+Accessor, Get\+C\+P\+U\+Start)
+\item 
+\mbox{\hyperlink{testMemoryBus_8cpp_ab6fc7b8b59f06f15f627411f6490ad85}{Test}} (Bus\+Accessor, Get\+C\+P\+U\+End)
+\item 
+\mbox{\hyperlink{testMemoryBus_8cpp_acba498fdafbd54264bfa10629e700324}{Test}} (Bus\+Accessor, Get\+P\+P\+U1\+Start)
+\item 
+\mbox{\hyperlink{testMemoryBus_8cpp_aa0e481bacf80526b3049603ce3cff567}{Test}} (Bus\+Accessor, Get\+P\+P\+U1\+End)
+\item 
+\mbox{\hyperlink{testMemoryBus_8cpp_a4c715c1061e6fb09d04d4d55937db0be}{Test}} (Bus\+Accessor, Get\+C\+PU)
+\item 
+\mbox{\hyperlink{testMemoryBus_8cpp_a65a7be886946fbc686a8a8a9d9a4f7f7}{Test}} (Bus\+Accessor, Get\+P\+P\+U1\+Mirror)
+\item 
+\mbox{\hyperlink{testMemoryBus_8cpp_a9c288dc5e48e4e801811444d18f4ce44}{Test}} (Bus\+Accessor, Get\+C\+P\+U2\+Mirror)
+\item 
+\mbox{\hyperlink{testMemoryBus_8cpp_aebe252c29d115b58292f87abaca45065}{Test}} (Bus\+Accessor, Get\+Rom\+Start)
+\item 
+\mbox{\hyperlink{testMemoryBus_8cpp_ab75762bae7c96cc0ee8425168de7ebd5}{Test}} (Bus\+Accessor, Get\+Rom\+End)
+\item 
+\mbox{\hyperlink{testMemoryBus_8cpp_a29776ccb6220e20407996df2d653579f}{Test}} (Bus\+Accessor, Get\+Rom\+Mirror)
+\item 
+\mbox{\hyperlink{testMemoryBus_8cpp_a309223de77fdcfc401b910891e1bae03}{Test}} (Bus\+Accessor, Get\+Rom\+Mirror2)
+\item 
+\mbox{\hyperlink{testMemoryBus_8cpp_af6c6fbc7bf92c3ad43182bcfd5a4670a}{Test}} (Bus\+Accessor, Get\+Rom\+Mirror3)
+\item 
+\mbox{\hyperlink{testMemoryBus_8cpp_aa6e29ee10c032ea935c935bc3844f2a7}{Test}} (Bus\+Accessor, Get0x0)
+\item 
+\mbox{\hyperlink{testMemoryBus_8cpp_a3fb8ce0f670daa7cdefd35c315b8b88f}{Test}} (Bus\+Read, Read0x0)
+\item 
+\mbox{\hyperlink{testMemoryBus_8cpp_a0cf3b0eb8fc4a00d18a4c29b24b35043}{Test}} (Bus\+Read, Read\+Outside,.init=cr\+\_\+redirect\+\_\+stdout)
+\item 
+\mbox{\hyperlink{testMemoryBus_8cpp_af927473e5374f5965f34db5992389645}{Test}} (Bus\+Read, Read\+Outside2,.init=cr\+\_\+redirect\+\_\+stdout)
+\item 
+\mbox{\hyperlink{testMemoryBus_8cpp_a6243fbce71dd06ffee558eff6bccbed6}{Test}} (Bus\+Read, Read\+Outside3,.init=cr\+\_\+redirect\+\_\+stdout)
+\item 
+\mbox{\hyperlink{testMemoryBus_8cpp_a85d9c85ca2fa7d119562a2c7fc2ccf14}{Test}} (Bus\+Read, Read\+A\+PU)
+\item 
+\mbox{\hyperlink{testMemoryBus_8cpp_a648c106f8b4d3ff61ed03f90a8b18f4f}{Test}} (Bus\+Read, Read\+R\+OM)
+\item 
+\mbox{\hyperlink{testMemoryBus_8cpp_a3f9c4a434d6485c41580c16efb55830b}{Test}} (Bus\+Read, Read\+R\+O\+M\+Start)
+\item 
+\mbox{\hyperlink{testMemoryBus_8cpp_a1f82a3d975ce51adaefde91794f19869}{Test}} (Bus\+Read, Read\+C\+PU)
+\item 
+\mbox{\hyperlink{testMemoryBus_8cpp_a7e93252fdca90dc8cd89fd03ef29c3ae}{Test}} (Bus\+Read, Read\+P\+PU)
+\item 
+\mbox{\hyperlink{testMemoryBus_8cpp_a764c39ada3972725639e5266e97bef0f}{Test}} (Bus\+Read, Read\+S\+R\+AM)
+\item 
+\mbox{\hyperlink{testMemoryBus_8cpp_a5b908226ed9988904ccec6b7615d9164}{Test}} (Bus\+Read, Read\+W\+R\+AM)
+\item 
+\mbox{\hyperlink{testMemoryBus_8cpp_a9a48e9e4d8e35ab7a86ed32adcc0a791}{Test}} (Bus\+Read, Read\+W\+R\+A\+M2)
+\item 
+\mbox{\hyperlink{testMemoryBus_8cpp_a0d07d18cc1d0106ec1303b606fe9258a}{Test}} (Bus\+Read, Read\+W\+R\+A\+M\+Mirror)
+\item 
+\mbox{\hyperlink{testMemoryBus_8cpp_a74cf3a783096cf2ff9e784972a74f1e6}{Test}} (Bus\+Write, Write0x0)
+\item 
+\mbox{\hyperlink{testMemoryBus_8cpp_a1545bcc1f7c52967c32d351ab9b41e95}{Test}} (Bus\+Write, Write\+A\+PU)
+\item 
+\mbox{\hyperlink{testMemoryBus_8cpp_a16954dc10f5ef8bb8d64f081f3db78ba}{Test}} (Bus\+Write, Write\+P\+PU)
+\item 
+\mbox{\hyperlink{testMemoryBus_8cpp_a89101bcaa9c5b5f7077128d71f9d3b86}{Test}} (Bus\+Write, Write\+C\+PU)
+\item 
+\mbox{\hyperlink{testMemoryBus_8cpp_a7dd84c03f89674770c22290a443dbe1c}{Test}} (Bus\+Write, Write\+R\+OM)
+\item 
+\mbox{\hyperlink{testMemoryBus_8cpp_a67301df3fdd64c5744e8cc369021f03e}{Test}} (Bus\+Write, Write\+W\+R\+AM)
+\item 
+\mbox{\hyperlink{testMemoryBus_8cpp_afee084012f562f23f7787071a96ca3a8}{Test}} (Bus\+Write, Write\+S\+R\+AM)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{testMemoryBus_8cpp_aa6e29ee10c032ea935c935bc3844f2a7}\label{testMemoryBus_8cpp_aa6e29ee10c032ea935c935bc3844f2a7}} 
+\index{testMemoryBus.cpp@{testMemoryBus.cpp}!Test@{Test}}
+\index{Test@{Test}!testMemoryBus.cpp@{testMemoryBus.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [1/46]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{Bus\+Accessor}]{,  }\item[{Get0x0}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testMemoryBus_8cpp_ac1e234b3387aaa290949268d45b95ce0}\label{testMemoryBus_8cpp_ac1e234b3387aaa290949268d45b95ce0}} 
+\index{testMemoryBus.cpp@{testMemoryBus.cpp}!Test@{Test}}
+\index{Test@{Test}!testMemoryBus.cpp@{testMemoryBus.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [2/46]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{Bus\+Accessor}]{,  }\item[{Get\+A\+P\+U\+End}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testMemoryBus_8cpp_a4378efd9ddbbad4b50f8939c190f5fc4}\label{testMemoryBus_8cpp_a4378efd9ddbbad4b50f8939c190f5fc4}} 
+\index{testMemoryBus.cpp@{testMemoryBus.cpp}!Test@{Test}}
+\index{Test@{Test}!testMemoryBus.cpp@{testMemoryBus.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [3/46]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{Bus\+Accessor}]{,  }\item[{Get\+A\+P\+U\+Mirror}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testMemoryBus_8cpp_a76aa05bb180b5752d7b7b1cee800517a}\label{testMemoryBus_8cpp_a76aa05bb180b5752d7b7b1cee800517a}} 
+\index{testMemoryBus.cpp@{testMemoryBus.cpp}!Test@{Test}}
+\index{Test@{Test}!testMemoryBus.cpp@{testMemoryBus.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [4/46]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{Bus\+Accessor}]{,  }\item[{Get\+A\+P\+U\+Mirror\+First\+Half}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testMemoryBus_8cpp_a8d10fa797464c3a89e2839bec96a87b8}\label{testMemoryBus_8cpp_a8d10fa797464c3a89e2839bec96a87b8}} 
+\index{testMemoryBus.cpp@{testMemoryBus.cpp}!Test@{Test}}
+\index{Test@{Test}!testMemoryBus.cpp@{testMemoryBus.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [5/46]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{Bus\+Accessor}]{,  }\item[{Get\+A\+P\+U\+Start}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testMemoryBus_8cpp_a4c715c1061e6fb09d04d4d55937db0be}\label{testMemoryBus_8cpp_a4c715c1061e6fb09d04d4d55937db0be}} 
+\index{testMemoryBus.cpp@{testMemoryBus.cpp}!Test@{Test}}
+\index{Test@{Test}!testMemoryBus.cpp@{testMemoryBus.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [6/46]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{Bus\+Accessor}]{,  }\item[{Get\+C\+PU}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testMemoryBus_8cpp_a9c288dc5e48e4e801811444d18f4ce44}\label{testMemoryBus_8cpp_a9c288dc5e48e4e801811444d18f4ce44}} 
+\index{testMemoryBus.cpp@{testMemoryBus.cpp}!Test@{Test}}
+\index{Test@{Test}!testMemoryBus.cpp@{testMemoryBus.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [7/46]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{Bus\+Accessor}]{,  }\item[{Get\+C\+P\+U2\+Mirror}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testMemoryBus_8cpp_ab6fc7b8b59f06f15f627411f6490ad85}\label{testMemoryBus_8cpp_ab6fc7b8b59f06f15f627411f6490ad85}} 
+\index{testMemoryBus.cpp@{testMemoryBus.cpp}!Test@{Test}}
+\index{Test@{Test}!testMemoryBus.cpp@{testMemoryBus.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [8/46]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{Bus\+Accessor}]{,  }\item[{Get\+C\+P\+U\+End}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testMemoryBus_8cpp_ab632551a900d5951930a0cd3e7bf4701}\label{testMemoryBus_8cpp_ab632551a900d5951930a0cd3e7bf4701}} 
+\index{testMemoryBus.cpp@{testMemoryBus.cpp}!Test@{Test}}
+\index{Test@{Test}!testMemoryBus.cpp@{testMemoryBus.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [9/46]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{Bus\+Accessor}]{,  }\item[{Get\+C\+P\+U\+Start}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testMemoryBus_8cpp_a72cba38377714c398c3e300e9d8dd052}\label{testMemoryBus_8cpp_a72cba38377714c398c3e300e9d8dd052}} 
+\index{testMemoryBus.cpp@{testMemoryBus.cpp}!Test@{Test}}
+\index{Test@{Test}!testMemoryBus.cpp@{testMemoryBus.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [10/46]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{Bus\+Accessor}]{,  }\item[{Get\+Open\+Bus}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testMemoryBus_8cpp_aa0e481bacf80526b3049603ce3cff567}\label{testMemoryBus_8cpp_aa0e481bacf80526b3049603ce3cff567}} 
+\index{testMemoryBus.cpp@{testMemoryBus.cpp}!Test@{Test}}
+\index{Test@{Test}!testMemoryBus.cpp@{testMemoryBus.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [11/46]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{Bus\+Accessor}]{,  }\item[{Get\+P\+P\+U1\+End}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testMemoryBus_8cpp_a65a7be886946fbc686a8a8a9d9a4f7f7}\label{testMemoryBus_8cpp_a65a7be886946fbc686a8a8a9d9a4f7f7}} 
+\index{testMemoryBus.cpp@{testMemoryBus.cpp}!Test@{Test}}
+\index{Test@{Test}!testMemoryBus.cpp@{testMemoryBus.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [12/46]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{Bus\+Accessor}]{,  }\item[{Get\+P\+P\+U1\+Mirror}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testMemoryBus_8cpp_acba498fdafbd54264bfa10629e700324}\label{testMemoryBus_8cpp_acba498fdafbd54264bfa10629e700324}} 
+\index{testMemoryBus.cpp@{testMemoryBus.cpp}!Test@{Test}}
+\index{Test@{Test}!testMemoryBus.cpp@{testMemoryBus.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [13/46]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{Bus\+Accessor}]{,  }\item[{Get\+P\+P\+U1\+Start}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testMemoryBus_8cpp_ab75762bae7c96cc0ee8425168de7ebd5}\label{testMemoryBus_8cpp_ab75762bae7c96cc0ee8425168de7ebd5}} 
+\index{testMemoryBus.cpp@{testMemoryBus.cpp}!Test@{Test}}
+\index{Test@{Test}!testMemoryBus.cpp@{testMemoryBus.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [14/46]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{Bus\+Accessor}]{,  }\item[{Get\+Rom\+End}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testMemoryBus_8cpp_a29776ccb6220e20407996df2d653579f}\label{testMemoryBus_8cpp_a29776ccb6220e20407996df2d653579f}} 
+\index{testMemoryBus.cpp@{testMemoryBus.cpp}!Test@{Test}}
+\index{Test@{Test}!testMemoryBus.cpp@{testMemoryBus.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [15/46]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{Bus\+Accessor}]{,  }\item[{Get\+Rom\+Mirror}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testMemoryBus_8cpp_a309223de77fdcfc401b910891e1bae03}\label{testMemoryBus_8cpp_a309223de77fdcfc401b910891e1bae03}} 
+\index{testMemoryBus.cpp@{testMemoryBus.cpp}!Test@{Test}}
+\index{Test@{Test}!testMemoryBus.cpp@{testMemoryBus.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [16/46]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{Bus\+Accessor}]{,  }\item[{Get\+Rom\+Mirror2}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testMemoryBus_8cpp_af6c6fbc7bf92c3ad43182bcfd5a4670a}\label{testMemoryBus_8cpp_af6c6fbc7bf92c3ad43182bcfd5a4670a}} 
+\index{testMemoryBus.cpp@{testMemoryBus.cpp}!Test@{Test}}
+\index{Test@{Test}!testMemoryBus.cpp@{testMemoryBus.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [17/46]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{Bus\+Accessor}]{,  }\item[{Get\+Rom\+Mirror3}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testMemoryBus_8cpp_aebe252c29d115b58292f87abaca45065}\label{testMemoryBus_8cpp_aebe252c29d115b58292f87abaca45065}} 
+\index{testMemoryBus.cpp@{testMemoryBus.cpp}!Test@{Test}}
+\index{Test@{Test}!testMemoryBus.cpp@{testMemoryBus.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [18/46]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{Bus\+Accessor}]{,  }\item[{Get\+Rom\+Start}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testMemoryBus_8cpp_a8efb199e7da6d408da462f99f7b57cf4}\label{testMemoryBus_8cpp_a8efb199e7da6d408da462f99f7b57cf4}} 
+\index{testMemoryBus.cpp@{testMemoryBus.cpp}!Test@{Test}}
+\index{Test@{Test}!testMemoryBus.cpp@{testMemoryBus.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [19/46]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{Bus\+Accessor}]{,  }\item[{Get\+Sram\+End}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testMemoryBus_8cpp_a2d0f71f35ac513c110c95ddceb43c0ca}\label{testMemoryBus_8cpp_a2d0f71f35ac513c110c95ddceb43c0ca}} 
+\index{testMemoryBus.cpp@{testMemoryBus.cpp}!Test@{Test}}
+\index{Test@{Test}!testMemoryBus.cpp@{testMemoryBus.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [20/46]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{Bus\+Accessor}]{,  }\item[{Get\+Sram\+Mirror}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testMemoryBus_8cpp_ac498bba68441f48b099436a8c7aa648f}\label{testMemoryBus_8cpp_ac498bba68441f48b099436a8c7aa648f}} 
+\index{testMemoryBus.cpp@{testMemoryBus.cpp}!Test@{Test}}
+\index{Test@{Test}!testMemoryBus.cpp@{testMemoryBus.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [21/46]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{Bus\+Accessor}]{,  }\item[{Get\+Sram\+Start}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testMemoryBus_8cpp_a9a6613504d5e7d0b085acddfe724fd78}\label{testMemoryBus_8cpp_a9a6613504d5e7d0b085acddfe724fd78}} 
+\index{testMemoryBus.cpp@{testMemoryBus.cpp}!Test@{Test}}
+\index{Test@{Test}!testMemoryBus.cpp@{testMemoryBus.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [22/46]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{Bus\+Accessor}]{,  }\item[{Get\+Wram\+End}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testMemoryBus_8cpp_a513037de4bcb43ed78c36ef5fae87102}\label{testMemoryBus_8cpp_a513037de4bcb43ed78c36ef5fae87102}} 
+\index{testMemoryBus.cpp@{testMemoryBus.cpp}!Test@{Test}}
+\index{Test@{Test}!testMemoryBus.cpp@{testMemoryBus.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [23/46]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{Bus\+Accessor}]{,  }\item[{Get\+Wram\+Mirror}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testMemoryBus_8cpp_ae59dd93fbe29b0b1295e9999d7bdfe03}\label{testMemoryBus_8cpp_ae59dd93fbe29b0b1295e9999d7bdfe03}} 
+\index{testMemoryBus.cpp@{testMemoryBus.cpp}!Test@{Test}}
+\index{Test@{Test}!testMemoryBus.cpp@{testMemoryBus.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [24/46]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{Bus\+Accessor}]{,  }\item[{Get\+Wram\+Mirror2}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testMemoryBus_8cpp_a1bb4aee5d214f41d173e6ff1d89d13d1}\label{testMemoryBus_8cpp_a1bb4aee5d214f41d173e6ff1d89d13d1}} 
+\index{testMemoryBus.cpp@{testMemoryBus.cpp}!Test@{Test}}
+\index{Test@{Test}!testMemoryBus.cpp@{testMemoryBus.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [25/46]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{Bus\+Accessor}]{,  }\item[{Get\+Wram\+Mirror3}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testMemoryBus_8cpp_a7a2a0faf147ebe4578b24595ba3c3ab4}\label{testMemoryBus_8cpp_a7a2a0faf147ebe4578b24595ba3c3ab4}} 
+\index{testMemoryBus.cpp@{testMemoryBus.cpp}!Test@{Test}}
+\index{Test@{Test}!testMemoryBus.cpp@{testMemoryBus.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [26/46]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{Bus\+Accessor}]{,  }\item[{Get\+Wram\+Start}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testMemoryBus_8cpp_a3fb8ce0f670daa7cdefd35c315b8b88f}\label{testMemoryBus_8cpp_a3fb8ce0f670daa7cdefd35c315b8b88f}} 
+\index{testMemoryBus.cpp@{testMemoryBus.cpp}!Test@{Test}}
+\index{Test@{Test}!testMemoryBus.cpp@{testMemoryBus.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [27/46]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{Bus\+Read}]{,  }\item[{Read0x0}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testMemoryBus_8cpp_a85d9c85ca2fa7d119562a2c7fc2ccf14}\label{testMemoryBus_8cpp_a85d9c85ca2fa7d119562a2c7fc2ccf14}} 
+\index{testMemoryBus.cpp@{testMemoryBus.cpp}!Test@{Test}}
+\index{Test@{Test}!testMemoryBus.cpp@{testMemoryBus.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [28/46]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{Bus\+Read}]{,  }\item[{Read\+A\+PU}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testMemoryBus_8cpp_a1f82a3d975ce51adaefde91794f19869}\label{testMemoryBus_8cpp_a1f82a3d975ce51adaefde91794f19869}} 
+\index{testMemoryBus.cpp@{testMemoryBus.cpp}!Test@{Test}}
+\index{Test@{Test}!testMemoryBus.cpp@{testMemoryBus.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [29/46]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{Bus\+Read}]{,  }\item[{Read\+C\+PU}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testMemoryBus_8cpp_a0cf3b0eb8fc4a00d18a4c29b24b35043}\label{testMemoryBus_8cpp_a0cf3b0eb8fc4a00d18a4c29b24b35043}} 
+\index{testMemoryBus.cpp@{testMemoryBus.cpp}!Test@{Test}}
+\index{Test@{Test}!testMemoryBus.cpp@{testMemoryBus.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [30/46]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{Bus\+Read}]{,  }\item[{Read\+Outside}]{,  }\item[{.}]{init = {\ttfamily cr\+\_\+redirect\+\_\+stdout} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testMemoryBus_8cpp_af927473e5374f5965f34db5992389645}\label{testMemoryBus_8cpp_af927473e5374f5965f34db5992389645}} 
+\index{testMemoryBus.cpp@{testMemoryBus.cpp}!Test@{Test}}
+\index{Test@{Test}!testMemoryBus.cpp@{testMemoryBus.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [31/46]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{Bus\+Read}]{,  }\item[{Read\+Outside2}]{,  }\item[{.}]{init = {\ttfamily cr\+\_\+redirect\+\_\+stdout} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testMemoryBus_8cpp_a6243fbce71dd06ffee558eff6bccbed6}\label{testMemoryBus_8cpp_a6243fbce71dd06ffee558eff6bccbed6}} 
+\index{testMemoryBus.cpp@{testMemoryBus.cpp}!Test@{Test}}
+\index{Test@{Test}!testMemoryBus.cpp@{testMemoryBus.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [32/46]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{Bus\+Read}]{,  }\item[{Read\+Outside3}]{,  }\item[{.}]{init = {\ttfamily cr\+\_\+redirect\+\_\+stdout} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testMemoryBus_8cpp_a7e93252fdca90dc8cd89fd03ef29c3ae}\label{testMemoryBus_8cpp_a7e93252fdca90dc8cd89fd03ef29c3ae}} 
+\index{testMemoryBus.cpp@{testMemoryBus.cpp}!Test@{Test}}
+\index{Test@{Test}!testMemoryBus.cpp@{testMemoryBus.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [33/46]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{Bus\+Read}]{,  }\item[{Read\+P\+PU}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testMemoryBus_8cpp_a648c106f8b4d3ff61ed03f90a8b18f4f}\label{testMemoryBus_8cpp_a648c106f8b4d3ff61ed03f90a8b18f4f}} 
+\index{testMemoryBus.cpp@{testMemoryBus.cpp}!Test@{Test}}
+\index{Test@{Test}!testMemoryBus.cpp@{testMemoryBus.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [34/46]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{Bus\+Read}]{,  }\item[{Read\+R\+OM}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testMemoryBus_8cpp_a3f9c4a434d6485c41580c16efb55830b}\label{testMemoryBus_8cpp_a3f9c4a434d6485c41580c16efb55830b}} 
+\index{testMemoryBus.cpp@{testMemoryBus.cpp}!Test@{Test}}
+\index{Test@{Test}!testMemoryBus.cpp@{testMemoryBus.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [35/46]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{Bus\+Read}]{,  }\item[{Read\+R\+O\+M\+Start}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testMemoryBus_8cpp_a764c39ada3972725639e5266e97bef0f}\label{testMemoryBus_8cpp_a764c39ada3972725639e5266e97bef0f}} 
+\index{testMemoryBus.cpp@{testMemoryBus.cpp}!Test@{Test}}
+\index{Test@{Test}!testMemoryBus.cpp@{testMemoryBus.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [36/46]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{Bus\+Read}]{,  }\item[{Read\+S\+R\+AM}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testMemoryBus_8cpp_a5b908226ed9988904ccec6b7615d9164}\label{testMemoryBus_8cpp_a5b908226ed9988904ccec6b7615d9164}} 
+\index{testMemoryBus.cpp@{testMemoryBus.cpp}!Test@{Test}}
+\index{Test@{Test}!testMemoryBus.cpp@{testMemoryBus.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [37/46]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{Bus\+Read}]{,  }\item[{Read\+W\+R\+AM}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testMemoryBus_8cpp_a9a48e9e4d8e35ab7a86ed32adcc0a791}\label{testMemoryBus_8cpp_a9a48e9e4d8e35ab7a86ed32adcc0a791}} 
+\index{testMemoryBus.cpp@{testMemoryBus.cpp}!Test@{Test}}
+\index{Test@{Test}!testMemoryBus.cpp@{testMemoryBus.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [38/46]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{Bus\+Read}]{,  }\item[{Read\+W\+R\+A\+M2}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testMemoryBus_8cpp_a0d07d18cc1d0106ec1303b606fe9258a}\label{testMemoryBus_8cpp_a0d07d18cc1d0106ec1303b606fe9258a}} 
+\index{testMemoryBus.cpp@{testMemoryBus.cpp}!Test@{Test}}
+\index{Test@{Test}!testMemoryBus.cpp@{testMemoryBus.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [39/46]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{Bus\+Read}]{,  }\item[{Read\+W\+R\+A\+M\+Mirror}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testMemoryBus_8cpp_a74cf3a783096cf2ff9e784972a74f1e6}\label{testMemoryBus_8cpp_a74cf3a783096cf2ff9e784972a74f1e6}} 
+\index{testMemoryBus.cpp@{testMemoryBus.cpp}!Test@{Test}}
+\index{Test@{Test}!testMemoryBus.cpp@{testMemoryBus.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [40/46]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{Bus\+Write}]{,  }\item[{Write0x0}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testMemoryBus_8cpp_a1545bcc1f7c52967c32d351ab9b41e95}\label{testMemoryBus_8cpp_a1545bcc1f7c52967c32d351ab9b41e95}} 
+\index{testMemoryBus.cpp@{testMemoryBus.cpp}!Test@{Test}}
+\index{Test@{Test}!testMemoryBus.cpp@{testMemoryBus.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [41/46]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{Bus\+Write}]{,  }\item[{Write\+A\+PU}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testMemoryBus_8cpp_a89101bcaa9c5b5f7077128d71f9d3b86}\label{testMemoryBus_8cpp_a89101bcaa9c5b5f7077128d71f9d3b86}} 
+\index{testMemoryBus.cpp@{testMemoryBus.cpp}!Test@{Test}}
+\index{Test@{Test}!testMemoryBus.cpp@{testMemoryBus.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [42/46]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{Bus\+Write}]{,  }\item[{Write\+C\+PU}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testMemoryBus_8cpp_a16954dc10f5ef8bb8d64f081f3db78ba}\label{testMemoryBus_8cpp_a16954dc10f5ef8bb8d64f081f3db78ba}} 
+\index{testMemoryBus.cpp@{testMemoryBus.cpp}!Test@{Test}}
+\index{Test@{Test}!testMemoryBus.cpp@{testMemoryBus.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [43/46]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{Bus\+Write}]{,  }\item[{Write\+P\+PU}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testMemoryBus_8cpp_a7dd84c03f89674770c22290a443dbe1c}\label{testMemoryBus_8cpp_a7dd84c03f89674770c22290a443dbe1c}} 
+\index{testMemoryBus.cpp@{testMemoryBus.cpp}!Test@{Test}}
+\index{Test@{Test}!testMemoryBus.cpp@{testMemoryBus.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [44/46]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{Bus\+Write}]{,  }\item[{Write\+R\+OM}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testMemoryBus_8cpp_afee084012f562f23f7787071a96ca3a8}\label{testMemoryBus_8cpp_afee084012f562f23f7787071a96ca3a8}} 
+\index{testMemoryBus.cpp@{testMemoryBus.cpp}!Test@{Test}}
+\index{Test@{Test}!testMemoryBus.cpp@{testMemoryBus.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [45/46]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{Bus\+Write}]{,  }\item[{Write\+S\+R\+AM}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testMemoryBus_8cpp_a67301df3fdd64c5744e8cc369021f03e}\label{testMemoryBus_8cpp_a67301df3fdd64c5744e8cc369021f03e}} 
+\index{testMemoryBus.cpp@{testMemoryBus.cpp}!Test@{Test}}
+\index{Test@{Test}!testMemoryBus.cpp@{testMemoryBus.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [46/46]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{Bus\+Write}]{,  }\item[{Write\+W\+R\+AM}]{ }\end{DoxyParamCaption})}
+

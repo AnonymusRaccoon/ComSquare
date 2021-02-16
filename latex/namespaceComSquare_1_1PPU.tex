@@ -1,0 +1,363 @@
+\hypertarget{namespaceComSquare_1_1PPU}{}\doxysection{Com\+Square\+::P\+PU Namespace Reference}
+\label{namespaceComSquare_1_1PPU}\index{ComSquare::PPU@{ComSquare::PPU}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classComSquare_1_1PPU_1_1PPU}{P\+PU}}
+\begin{DoxyCompactList}\small\item\em The class containing all the registers of the \mbox{\hyperlink{classComSquare_1_1PPU_1_1PPU}{P\+PU}}. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structComSquare_1_1PPU_1_1Registers}{Registers}}
+\item 
+union \mbox{\hyperlink{unionComSquare_1_1PPU_1_1TileMapData}{Tile\+Map\+Data}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6}{ppu\+Registers}} \{ \newline
+\mbox{\hyperlink{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a9735cc44423c73e4f73bac030c8ba86f}{inidisp}} = 0x00, 
+\mbox{\hyperlink{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a3c67fafccf3a2cd84601a56d899c7505}{obsel}} = 0x01, 
+\mbox{\hyperlink{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6af92d1e09fe231f2a2bf99f53b674e003}{oamaddl}} = 0x02, 
+\mbox{\hyperlink{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a34601946722c261f460b8fd70e5eb4e1}{oamaddh}} = 0x03, 
+\newline
+\mbox{\hyperlink{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a16524003d411c5e4a1f780fc66c14a33}{oamdata}} = 0x04, 
+\mbox{\hyperlink{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6ac5ad39dc495ba1af183bb8e9d939422f}{bgmode}} = 0x05, 
+\mbox{\hyperlink{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a75aaf4902e74d47a947ab328c63465cc}{mosaic}} = 0x06, 
+\mbox{\hyperlink{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a6fc53448d630bb8fbfd2b6b6608aa219}{bg1sc}} = 0x07, 
+\newline
+\mbox{\hyperlink{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a1aff8910c50aa872b7fec1a1d50a4b94}{bg2sc}} = 0x08, 
+\mbox{\hyperlink{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6ac6d695b7d469e6b0ba93bd64ce03c897}{bg3sc}} = 0x09, 
+\mbox{\hyperlink{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a898112611b03056563e16d9a047e101a}{bg4sc}} = 0x0A, 
+\mbox{\hyperlink{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a44bd6870d0d9e0c369e4d095c7ecb118}{bg12nba}} = 0x0B, 
+\newline
+\mbox{\hyperlink{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a61d13ff771a8cd23e26ebe9aab155023}{bg34nba}} = 0x0C, 
+\mbox{\hyperlink{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6aa070c62aef71ca02f2bfbb4e7eef373c}{bg1hofs}} = 0x0D, 
+\mbox{\hyperlink{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6ac46d6e23d74bca974c19f4fd7f36731d}{bg1vofs}} = 0x0E, 
+\mbox{\hyperlink{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a793848ec16ef0d84b0320b99f7fe0eed}{bg2hofs}} = 0x0F, 
+\newline
+\mbox{\hyperlink{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a18ab9671684f41ba579145f867ecfb31}{bg2vofs}} = 0x10, 
+\mbox{\hyperlink{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6af32aae98a27342fb58917431afa7effb}{bg3hofs}} = 0x11, 
+\mbox{\hyperlink{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a105ada662e3bde51773c4c93e6b70135}{bg3vofs}} = 0x12, 
+\mbox{\hyperlink{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a69638f574f234cc72fd23d3650025553}{bg4hofs}} = 0x13, 
+\newline
+\mbox{\hyperlink{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a49307a32986a64bb04d37a584570603e}{bg4vofs}} = 0x14, 
+\mbox{\hyperlink{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6aaed8f5257149ff7d26b0129f6e301c1f}{vmain}} = 0x15, 
+\mbox{\hyperlink{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a3e03118f63eb9e8d4a287bb5978ad557}{vmaddl}} = 0x16, 
+\mbox{\hyperlink{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6adb1be10b6619a05715b7fef5565c18d2}{vmaddh}} = 0x17, 
+\newline
+\mbox{\hyperlink{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a1f2b836310de9a63ef2060a04346c22e}{vmdatal}} = 0x18, 
+\mbox{\hyperlink{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a036beddd67523c3a605b9c169e3b2d51}{vmdatah}} = 0x19, 
+\mbox{\hyperlink{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a2883976e977888cb683b36e302c89988}{m7sel}} = 0x1A, 
+\mbox{\hyperlink{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6aa7abeb021a804f32932ee726ed9c533c}{m7a}} = 0x1B, 
+\newline
+\mbox{\hyperlink{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6add80f6201c24804d2a65c31c4b98a081}{m7b}} = 0x1C, 
+\mbox{\hyperlink{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a4057ccda7e4d6ac0d733057931d22df0}{m7c}} = 0x1D, 
+\mbox{\hyperlink{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a636bb9ee772e09e72a2dc3c9813c0429}{m7d}} = 0x1E, 
+\mbox{\hyperlink{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6ac721d12021a18749abaa3a3b3098789b}{m7x}} = 0x1F, 
+\newline
+\mbox{\hyperlink{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a10af7ef8a31207b3af6678f01f449d47}{m7y}} = 0x20, 
+\mbox{\hyperlink{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6ab0ff54515d81fc49416f438f99e3fc21}{cgadd}} = 0x21, 
+\mbox{\hyperlink{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6aaf5b31106aec028a76868cc40eb44409}{cgdata}} = 0x22, 
+\mbox{\hyperlink{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a300d584f59a197b9a2a1c1d8dbf9fd67}{w12sel}} = 0x23, 
+\newline
+\mbox{\hyperlink{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a85258f28718a6abb9176a4bd5770921c}{w34sel}} = 0x24, 
+\mbox{\hyperlink{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a156ff9a0c8fb17652c2419bb331d8dac}{wobjsel}} = 0x25, 
+\mbox{\hyperlink{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6aa760a466a23b626f1391c59ac78669e9}{wh0}} = 0x26, 
+\mbox{\hyperlink{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a513f2e8f2d67b1a1cb2af8b39b40874a}{wh1}} = 0x27, 
+\newline
+\mbox{\hyperlink{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a9ac8a81ed3b2b246b93a7f93d23aa85a}{wh2}} = 0x28, 
+\mbox{\hyperlink{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6add13996d761039f20efc9f45a1b29f59}{wh3}} = 0x29, 
+\mbox{\hyperlink{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6afe02979218f4512e291d6f574a8213db}{wbjlog}} = 0x2A, 
+\mbox{\hyperlink{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6ab63b63966f8d58029758fd7f9f0d284d}{wobjlog}} = 0x2B, 
+\newline
+\mbox{\hyperlink{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a93a0abb4ce07e2cc0b722801e3a27255}{tm}} = 0x2C, 
+\mbox{\hyperlink{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6ad2cf284188341b3e1a6f664859377e6c}{ts}} = 0x2D, 
+\mbox{\hyperlink{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a49051bb83ea0181772e9b5427adc6e85}{tmw}} = 0x2E, 
+\mbox{\hyperlink{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a95e2b39607baad867d05792a42a00c78}{tsw}} = 0x2F, 
+\newline
+\mbox{\hyperlink{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6aa0b56cfb33b64f666a2d30e0462158ae}{cgwsel}} = 0x30, 
+\mbox{\hyperlink{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6abca9df1aafc590b2e395bd80987c6699}{cgadsub}} = 0x31, 
+\mbox{\hyperlink{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a89ec241cdd8f625696ff9bd9d8b57d92}{coldata}} = 0x32, 
+\mbox{\hyperlink{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a1f7a90e580f9c79eaea885764a5bffbb}{setini}} = 0x33, 
+\newline
+\mbox{\hyperlink{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a962e14b4b06fe97f1ac6e6b2d5c7368b}{mpyl}} = 0x34, 
+\mbox{\hyperlink{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6ac97460c2edd09855c6821b51a95aef42}{mpym}} = 0x35, 
+\mbox{\hyperlink{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a4e97af2bb478bf91aaf389a3e9e92ccc}{mpyh}} = 0x36, 
+\mbox{\hyperlink{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a2cd2c70604463027f1b23d9487e682e2}{slhv}} = 0x37, 
+\newline
+\mbox{\hyperlink{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6aa4a55929a73db30e16d508a426d81561}{oamdataread}} = 0x38, 
+\mbox{\hyperlink{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6aa84bbfabdf6e650f3feb8bbadc5290a5}{vmdatalread}} = 0x39, 
+\mbox{\hyperlink{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6ace831b92be226c0469bfe4a619e10562}{vmdatahread}} = 0x3A, 
+\mbox{\hyperlink{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a8f16ef299d9c526e817c00bf7e7cf5fa}{cgdataread}} = 0x3B, 
+\newline
+\mbox{\hyperlink{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a39b23d765b223bd94a31a5d07335d8c6}{ophct}} = 0x3C, 
+\mbox{\hyperlink{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6abcddb19b001422bf61471fd370ad0d82}{opvct}} = 0x3D, 
+\mbox{\hyperlink{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a3abc14e60908bacdba8c6fa97e1b5189}{stat77}} = 0x3E, 
+\mbox{\hyperlink{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6ad4d9b2167b066bb31f025014a526cfa9}{stat78}} = 0x3F
+ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6}\label{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6}} 
+\index{ComSquare::PPU@{ComSquare::PPU}!ppuRegisters@{ppuRegisters}}
+\index{ppuRegisters@{ppuRegisters}!ComSquare::PPU@{ComSquare::PPU}}
+\doxysubsubsection{\texorpdfstring{ppuRegisters}{ppuRegisters}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6}{Com\+Square\+::\+P\+P\+U\+::ppu\+Registers}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{inidisp@{inidisp}!ComSquare::PPU@{ComSquare::PPU}}\index{ComSquare::PPU@{ComSquare::PPU}!inidisp@{inidisp}}}\mbox{\Hypertarget{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a9735cc44423c73e4f73bac030c8ba86f}\label{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a9735cc44423c73e4f73bac030c8ba86f}} 
+inidisp&I\+N\+I\+D\+I\+SP Register (F-\/blank and Brightness) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{obsel@{obsel}!ComSquare::PPU@{ComSquare::PPU}}\index{ComSquare::PPU@{ComSquare::PPU}!obsel@{obsel}}}\mbox{\Hypertarget{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a3c67fafccf3a2cd84601a56d899c7505}\label{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a3c67fafccf3a2cd84601a56d899c7505}} 
+obsel&O\+B\+S\+EL Register (Object Size and Character Address) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{oamaddl@{oamaddl}!ComSquare::PPU@{ComSquare::PPU}}\index{ComSquare::PPU@{ComSquare::PPU}!oamaddl@{oamaddl}}}\mbox{\Hypertarget{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6af92d1e09fe231f2a2bf99f53b674e003}\label{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6af92d1e09fe231f2a2bf99f53b674e003}} 
+oamaddl&O\+A\+M\+A\+D\+DL (O\+AM Address low byte) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{oamaddh@{oamaddh}!ComSquare::PPU@{ComSquare::PPU}}\index{ComSquare::PPU@{ComSquare::PPU}!oamaddh@{oamaddh}}}\mbox{\Hypertarget{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a34601946722c261f460b8fd70e5eb4e1}\label{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a34601946722c261f460b8fd70e5eb4e1}} 
+oamaddh&O\+A\+M\+A\+D\+DH (O\+AM Address high bit and Obj Priority) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{oamdata@{oamdata}!ComSquare::PPU@{ComSquare::PPU}}\index{ComSquare::PPU@{ComSquare::PPU}!oamdata@{oamdata}}}\mbox{\Hypertarget{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a16524003d411c5e4a1f780fc66c14a33}\label{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a16524003d411c5e4a1f780fc66c14a33}} 
+oamdata&O\+A\+M\+D\+A\+TA (Data for O\+AM write) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{bgmode@{bgmode}!ComSquare::PPU@{ComSquare::PPU}}\index{ComSquare::PPU@{ComSquare::PPU}!bgmode@{bgmode}}}\mbox{\Hypertarget{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6ac5ad39dc495ba1af183bb8e9d939422f}\label{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6ac5ad39dc495ba1af183bb8e9d939422f}} 
+bgmode&B\+G\+M\+O\+DE (BG Mode and Character Size) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{mosaic@{mosaic}!ComSquare::PPU@{ComSquare::PPU}}\index{ComSquare::PPU@{ComSquare::PPU}!mosaic@{mosaic}}}\mbox{\Hypertarget{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a75aaf4902e74d47a947ab328c63465cc}\label{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a75aaf4902e74d47a947ab328c63465cc}} 
+mosaic&M\+O\+S\+A\+IC (Screen Pixelation) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{bg1sc@{bg1sc}!ComSquare::PPU@{ComSquare::PPU}}\index{ComSquare::PPU@{ComSquare::PPU}!bg1sc@{bg1sc}}}\mbox{\Hypertarget{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a6fc53448d630bb8fbfd2b6b6608aa219}\label{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a6fc53448d630bb8fbfd2b6b6608aa219}} 
+bg1sc&B\+G1\+SC (B\+G1 Tilemap Address and Size) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{bg2sc@{bg2sc}!ComSquare::PPU@{ComSquare::PPU}}\index{ComSquare::PPU@{ComSquare::PPU}!bg2sc@{bg2sc}}}\mbox{\Hypertarget{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a1aff8910c50aa872b7fec1a1d50a4b94}\label{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a1aff8910c50aa872b7fec1a1d50a4b94}} 
+bg2sc&B\+G2\+SC (B\+G2 Tilemap Address and Size) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{bg3sc@{bg3sc}!ComSquare::PPU@{ComSquare::PPU}}\index{ComSquare::PPU@{ComSquare::PPU}!bg3sc@{bg3sc}}}\mbox{\Hypertarget{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6ac6d695b7d469e6b0ba93bd64ce03c897}\label{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6ac6d695b7d469e6b0ba93bd64ce03c897}} 
+bg3sc&B\+G3\+SC (B\+G3 Tilemap Address and Size) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{bg4sc@{bg4sc}!ComSquare::PPU@{ComSquare::PPU}}\index{ComSquare::PPU@{ComSquare::PPU}!bg4sc@{bg4sc}}}\mbox{\Hypertarget{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a898112611b03056563e16d9a047e101a}\label{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a898112611b03056563e16d9a047e101a}} 
+bg4sc&B\+G4\+SC (B\+G4 Tilemap Address and Size) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{bg12nba@{bg12nba}!ComSquare::PPU@{ComSquare::PPU}}\index{ComSquare::PPU@{ComSquare::PPU}!bg12nba@{bg12nba}}}\mbox{\Hypertarget{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a44bd6870d0d9e0c369e4d095c7ecb118}\label{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a44bd6870d0d9e0c369e4d095c7ecb118}} 
+bg12nba&B\+G12\+N\+BA (B\+G1 and 2 Chr Address) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{bg34nba@{bg34nba}!ComSquare::PPU@{ComSquare::PPU}}\index{ComSquare::PPU@{ComSquare::PPU}!bg34nba@{bg34nba}}}\mbox{\Hypertarget{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a61d13ff771a8cd23e26ebe9aab155023}\label{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a61d13ff771a8cd23e26ebe9aab155023}} 
+bg34nba&B\+G34\+N\+BA (B\+G3 and 4 Chr Address) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{bg1hofs@{bg1hofs}!ComSquare::PPU@{ComSquare::PPU}}\index{ComSquare::PPU@{ComSquare::PPU}!bg1hofs@{bg1hofs}}}\mbox{\Hypertarget{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6aa070c62aef71ca02f2bfbb4e7eef373c}\label{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6aa070c62aef71ca02f2bfbb4e7eef373c}} 
+bg1hofs&B\+G1\+H\+O\+FS (B\+G1 Horizontal Scroll) M7\+H\+O\+FS (Mode 7 BG Horizontal Scroll) @info When bg mode is 7 the register is used as M7\+H\+O\+FS \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{bg1vofs@{bg1vofs}!ComSquare::PPU@{ComSquare::PPU}}\index{ComSquare::PPU@{ComSquare::PPU}!bg1vofs@{bg1vofs}}}\mbox{\Hypertarget{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6ac46d6e23d74bca974c19f4fd7f36731d}\label{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6ac46d6e23d74bca974c19f4fd7f36731d}} 
+bg1vofs&B\+G1\+V\+O\+FS (B\+G1 Vertical Scroll) M7\+V\+O\+FS (Mode 7 BG Vertical Scroll) @info When bg mode is 7 the register is used as M7\+V\+O\+FS \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{bg2hofs@{bg2hofs}!ComSquare::PPU@{ComSquare::PPU}}\index{ComSquare::PPU@{ComSquare::PPU}!bg2hofs@{bg2hofs}}}\mbox{\Hypertarget{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a793848ec16ef0d84b0320b99f7fe0eed}\label{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a793848ec16ef0d84b0320b99f7fe0eed}} 
+bg2hofs&B\+G2\+H\+O\+FS (B\+G2 Horizontal Scroll) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{bg2vofs@{bg2vofs}!ComSquare::PPU@{ComSquare::PPU}}\index{ComSquare::PPU@{ComSquare::PPU}!bg2vofs@{bg2vofs}}}\mbox{\Hypertarget{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a18ab9671684f41ba579145f867ecfb31}\label{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a18ab9671684f41ba579145f867ecfb31}} 
+bg2vofs&B\+G2\+V\+O\+FS (B\+G2 Vertical Scroll) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{bg3hofs@{bg3hofs}!ComSquare::PPU@{ComSquare::PPU}}\index{ComSquare::PPU@{ComSquare::PPU}!bg3hofs@{bg3hofs}}}\mbox{\Hypertarget{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6af32aae98a27342fb58917431afa7effb}\label{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6af32aae98a27342fb58917431afa7effb}} 
+bg3hofs&B\+G3\+H\+O\+FS (B\+G3 Horizontal Scroll) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{bg3vofs@{bg3vofs}!ComSquare::PPU@{ComSquare::PPU}}\index{ComSquare::PPU@{ComSquare::PPU}!bg3vofs@{bg3vofs}}}\mbox{\Hypertarget{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a105ada662e3bde51773c4c93e6b70135}\label{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a105ada662e3bde51773c4c93e6b70135}} 
+bg3vofs&B\+G3\+V\+O\+FS (B\+G3 Vertical Scroll) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{bg4hofs@{bg4hofs}!ComSquare::PPU@{ComSquare::PPU}}\index{ComSquare::PPU@{ComSquare::PPU}!bg4hofs@{bg4hofs}}}\mbox{\Hypertarget{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a69638f574f234cc72fd23d3650025553}\label{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a69638f574f234cc72fd23d3650025553}} 
+bg4hofs&B\+G4\+H\+O\+FS (B\+G4 Horizontal Scroll) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{bg4vofs@{bg4vofs}!ComSquare::PPU@{ComSquare::PPU}}\index{ComSquare::PPU@{ComSquare::PPU}!bg4vofs@{bg4vofs}}}\mbox{\Hypertarget{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a49307a32986a64bb04d37a584570603e}\label{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a49307a32986a64bb04d37a584570603e}} 
+bg4vofs&B\+G4\+V\+O\+FS (B\+G4 Vertical Scroll) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{vmain@{vmain}!ComSquare::PPU@{ComSquare::PPU}}\index{ComSquare::PPU@{ComSquare::PPU}!vmain@{vmain}}}\mbox{\Hypertarget{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6aaed8f5257149ff7d26b0129f6e301c1f}\label{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6aaed8f5257149ff7d26b0129f6e301c1f}} 
+vmain&V\+M\+A\+IN (Video Port Control) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{vmaddl@{vmaddl}!ComSquare::PPU@{ComSquare::PPU}}\index{ComSquare::PPU@{ComSquare::PPU}!vmaddl@{vmaddl}}}\mbox{\Hypertarget{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a3e03118f63eb9e8d4a287bb5978ad557}\label{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a3e03118f63eb9e8d4a287bb5978ad557}} 
+vmaddl&V\+M\+A\+D\+DL (V\+R\+AM Address low byte) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{vmaddh@{vmaddh}!ComSquare::PPU@{ComSquare::PPU}}\index{ComSquare::PPU@{ComSquare::PPU}!vmaddh@{vmaddh}}}\mbox{\Hypertarget{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6adb1be10b6619a05715b7fef5565c18d2}\label{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6adb1be10b6619a05715b7fef5565c18d2}} 
+vmaddh&V\+M\+A\+D\+DH (V\+R\+AM Address high byte) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{vmdatal@{vmdatal}!ComSquare::PPU@{ComSquare::PPU}}\index{ComSquare::PPU@{ComSquare::PPU}!vmdatal@{vmdatal}}}\mbox{\Hypertarget{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a1f2b836310de9a63ef2060a04346c22e}\label{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a1f2b836310de9a63ef2060a04346c22e}} 
+vmdatal&V\+M\+D\+A\+T\+AL (V\+R\+AM Data Write low byte) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{vmdatah@{vmdatah}!ComSquare::PPU@{ComSquare::PPU}}\index{ComSquare::PPU@{ComSquare::PPU}!vmdatah@{vmdatah}}}\mbox{\Hypertarget{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a036beddd67523c3a605b9c169e3b2d51}\label{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a036beddd67523c3a605b9c169e3b2d51}} 
+vmdatah&V\+M\+D\+A\+T\+AH (V\+R\+AM Data Write high byte) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{m7sel@{m7sel}!ComSquare::PPU@{ComSquare::PPU}}\index{ComSquare::PPU@{ComSquare::PPU}!m7sel@{m7sel}}}\mbox{\Hypertarget{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a2883976e977888cb683b36e302c89988}\label{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a2883976e977888cb683b36e302c89988}} 
+m7sel&M7\+S\+EL (Mode 7 Settings) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{m7a@{m7a}!ComSquare::PPU@{ComSquare::PPU}}\index{ComSquare::PPU@{ComSquare::PPU}!m7a@{m7a}}}\mbox{\Hypertarget{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6aa7abeb021a804f32932ee726ed9c533c}\label{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6aa7abeb021a804f32932ee726ed9c533c}} 
+m7a&M7A (Mode 7 Matrix A) also used with \$2134/6. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{m7b@{m7b}!ComSquare::PPU@{ComSquare::PPU}}\index{ComSquare::PPU@{ComSquare::PPU}!m7b@{m7b}}}\mbox{\Hypertarget{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6add80f6201c24804d2a65c31c4b98a081}\label{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6add80f6201c24804d2a65c31c4b98a081}} 
+m7b&M7B (Mode 7 Matrix B) also used with \$2134/6. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{m7c@{m7c}!ComSquare::PPU@{ComSquare::PPU}}\index{ComSquare::PPU@{ComSquare::PPU}!m7c@{m7c}}}\mbox{\Hypertarget{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a4057ccda7e4d6ac0d733057931d22df0}\label{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a4057ccda7e4d6ac0d733057931d22df0}} 
+m7c&M7C (Mode 7 Matrix C) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{m7d@{m7d}!ComSquare::PPU@{ComSquare::PPU}}\index{ComSquare::PPU@{ComSquare::PPU}!m7d@{m7d}}}\mbox{\Hypertarget{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a636bb9ee772e09e72a2dc3c9813c0429}\label{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a636bb9ee772e09e72a2dc3c9813c0429}} 
+m7d&M7D (Mode 7 Matrix D) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{m7x@{m7x}!ComSquare::PPU@{ComSquare::PPU}}\index{ComSquare::PPU@{ComSquare::PPU}!m7x@{m7x}}}\mbox{\Hypertarget{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6ac721d12021a18749abaa3a3b3098789b}\label{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6ac721d12021a18749abaa3a3b3098789b}} 
+m7x&M7X (Mode 7 Center X) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{m7y@{m7y}!ComSquare::PPU@{ComSquare::PPU}}\index{ComSquare::PPU@{ComSquare::PPU}!m7y@{m7y}}}\mbox{\Hypertarget{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a10af7ef8a31207b3af6678f01f449d47}\label{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a10af7ef8a31207b3af6678f01f449d47}} 
+m7y&M7Y (Mode 7 Center Y) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{cgadd@{cgadd}!ComSquare::PPU@{ComSquare::PPU}}\index{ComSquare::PPU@{ComSquare::PPU}!cgadd@{cgadd}}}\mbox{\Hypertarget{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6ab0ff54515d81fc49416f438f99e3fc21}\label{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6ab0ff54515d81fc49416f438f99e3fc21}} 
+cgadd&C\+G\+A\+DD (C\+G\+R\+AM Address) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{cgdata@{cgdata}!ComSquare::PPU@{ComSquare::PPU}}\index{ComSquare::PPU@{ComSquare::PPU}!cgdata@{cgdata}}}\mbox{\Hypertarget{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6aaf5b31106aec028a76868cc40eb44409}\label{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6aaf5b31106aec028a76868cc40eb44409}} 
+cgdata&C\+G\+D\+A\+TA (C\+G\+R\+AM Data write) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{w12sel@{w12sel}!ComSquare::PPU@{ComSquare::PPU}}\index{ComSquare::PPU@{ComSquare::PPU}!w12sel@{w12sel}}}\mbox{\Hypertarget{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a300d584f59a197b9a2a1c1d8dbf9fd67}\label{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a300d584f59a197b9a2a1c1d8dbf9fd67}} 
+w12sel&W12\+S\+EL (Window Mask Settings for B\+G1 and B\+G2) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{w34sel@{w34sel}!ComSquare::PPU@{ComSquare::PPU}}\index{ComSquare::PPU@{ComSquare::PPU}!w34sel@{w34sel}}}\mbox{\Hypertarget{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a85258f28718a6abb9176a4bd5770921c}\label{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a85258f28718a6abb9176a4bd5770921c}} 
+w34sel&W34\+S\+EL (Window Mask Settings for B\+G3 and B\+G4) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{wobjsel@{wobjsel}!ComSquare::PPU@{ComSquare::PPU}}\index{ComSquare::PPU@{ComSquare::PPU}!wobjsel@{wobjsel}}}\mbox{\Hypertarget{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a156ff9a0c8fb17652c2419bb331d8dac}\label{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a156ff9a0c8fb17652c2419bb331d8dac}} 
+wobjsel&W\+O\+B\+J\+S\+EL (Window Mask Settings for O\+BJ and Color Window) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{wh0@{wh0}!ComSquare::PPU@{ComSquare::PPU}}\index{ComSquare::PPU@{ComSquare::PPU}!wh0@{wh0}}}\mbox{\Hypertarget{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6aa760a466a23b626f1391c59ac78669e9}\label{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6aa760a466a23b626f1391c59ac78669e9}} 
+wh0&W\+H0 (Window 1 Left Position) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{wh1@{wh1}!ComSquare::PPU@{ComSquare::PPU}}\index{ComSquare::PPU@{ComSquare::PPU}!wh1@{wh1}}}\mbox{\Hypertarget{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a513f2e8f2d67b1a1cb2af8b39b40874a}\label{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a513f2e8f2d67b1a1cb2af8b39b40874a}} 
+wh1&W\+H1 (Window 1 Right Position) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{wh2@{wh2}!ComSquare::PPU@{ComSquare::PPU}}\index{ComSquare::PPU@{ComSquare::PPU}!wh2@{wh2}}}\mbox{\Hypertarget{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a9ac8a81ed3b2b246b93a7f93d23aa85a}\label{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a9ac8a81ed3b2b246b93a7f93d23aa85a}} 
+wh2&W\+H2 (Window 2 Left Position) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{wh3@{wh3}!ComSquare::PPU@{ComSquare::PPU}}\index{ComSquare::PPU@{ComSquare::PPU}!wh3@{wh3}}}\mbox{\Hypertarget{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6add13996d761039f20efc9f45a1b29f59}\label{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6add13996d761039f20efc9f45a1b29f59}} 
+wh3&W\+H3 (Window 2 Right Position) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{wbjlog@{wbjlog}!ComSquare::PPU@{ComSquare::PPU}}\index{ComSquare::PPU@{ComSquare::PPU}!wbjlog@{wbjlog}}}\mbox{\Hypertarget{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6afe02979218f4512e291d6f574a8213db}\label{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6afe02979218f4512e291d6f574a8213db}} 
+wbjlog&W\+B\+G\+L\+OG (Window mask logic for B\+Gs) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{wobjlog@{wobjlog}!ComSquare::PPU@{ComSquare::PPU}}\index{ComSquare::PPU@{ComSquare::PPU}!wobjlog@{wobjlog}}}\mbox{\Hypertarget{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6ab63b63966f8d58029758fd7f9f0d284d}\label{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6ab63b63966f8d58029758fd7f9f0d284d}} 
+wobjlog&W\+O\+B\+J\+L\+OG (Window mask logic for O\+B\+Js and Color Window) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{tm@{tm}!ComSquare::PPU@{ComSquare::PPU}}\index{ComSquare::PPU@{ComSquare::PPU}!tm@{tm}}}\mbox{\Hypertarget{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a93a0abb4ce07e2cc0b722801e3a27255}\label{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a93a0abb4ce07e2cc0b722801e3a27255}} 
+tm&TM (Main Screen Designation) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ts@{ts}!ComSquare::PPU@{ComSquare::PPU}}\index{ComSquare::PPU@{ComSquare::PPU}!ts@{ts}}}\mbox{\Hypertarget{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6ad2cf284188341b3e1a6f664859377e6c}\label{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6ad2cf284188341b3e1a6f664859377e6c}} 
+ts&TS (Subscreen Designation) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{tmw@{tmw}!ComSquare::PPU@{ComSquare::PPU}}\index{ComSquare::PPU@{ComSquare::PPU}!tmw@{tmw}}}\mbox{\Hypertarget{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a49051bb83ea0181772e9b5427adc6e85}\label{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a49051bb83ea0181772e9b5427adc6e85}} 
+tmw&T\+MW (Window Mask Designation for the Main Screen) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{tsw@{tsw}!ComSquare::PPU@{ComSquare::PPU}}\index{ComSquare::PPU@{ComSquare::PPU}!tsw@{tsw}}}\mbox{\Hypertarget{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a95e2b39607baad867d05792a42a00c78}\label{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a95e2b39607baad867d05792a42a00c78}} 
+tsw&T\+SW (Window Mask Designation for the Subscreen) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{cgwsel@{cgwsel}!ComSquare::PPU@{ComSquare::PPU}}\index{ComSquare::PPU@{ComSquare::PPU}!cgwsel@{cgwsel}}}\mbox{\Hypertarget{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6aa0b56cfb33b64f666a2d30e0462158ae}\label{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6aa0b56cfb33b64f666a2d30e0462158ae}} 
+cgwsel&C\+G\+W\+S\+EL (Color Addition Select) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{cgadsub@{cgadsub}!ComSquare::PPU@{ComSquare::PPU}}\index{ComSquare::PPU@{ComSquare::PPU}!cgadsub@{cgadsub}}}\mbox{\Hypertarget{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6abca9df1aafc590b2e395bd80987c6699}\label{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6abca9df1aafc590b2e395bd80987c6699}} 
+cgadsub&C\+G\+A\+D\+S\+UB (Color math designation) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{coldata@{coldata}!ComSquare::PPU@{ComSquare::PPU}}\index{ComSquare::PPU@{ComSquare::PPU}!coldata@{coldata}}}\mbox{\Hypertarget{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a89ec241cdd8f625696ff9bd9d8b57d92}\label{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a89ec241cdd8f625696ff9bd9d8b57d92}} 
+coldata&C\+O\+L\+D\+A\+TA (Fixed Color Data) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{setini@{setini}!ComSquare::PPU@{ComSquare::PPU}}\index{ComSquare::PPU@{ComSquare::PPU}!setini@{setini}}}\mbox{\Hypertarget{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a1f7a90e580f9c79eaea885764a5bffbb}\label{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a1f7a90e580f9c79eaea885764a5bffbb}} 
+setini&S\+E\+T\+I\+NI (Screen Mode/\+Video Select) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{mpyl@{mpyl}!ComSquare::PPU@{ComSquare::PPU}}\index{ComSquare::PPU@{ComSquare::PPU}!mpyl@{mpyl}}}\mbox{\Hypertarget{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a962e14b4b06fe97f1ac6e6b2d5c7368b}\label{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a962e14b4b06fe97f1ac6e6b2d5c7368b}} 
+mpyl&M\+P\+YL (Multiplication Result low byte) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{mpym@{mpym}!ComSquare::PPU@{ComSquare::PPU}}\index{ComSquare::PPU@{ComSquare::PPU}!mpym@{mpym}}}\mbox{\Hypertarget{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6ac97460c2edd09855c6821b51a95aef42}\label{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6ac97460c2edd09855c6821b51a95aef42}} 
+mpym&M\+P\+YM (Multiplication Result middle byte) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{mpyh@{mpyh}!ComSquare::PPU@{ComSquare::PPU}}\index{ComSquare::PPU@{ComSquare::PPU}!mpyh@{mpyh}}}\mbox{\Hypertarget{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a4e97af2bb478bf91aaf389a3e9e92ccc}\label{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a4e97af2bb478bf91aaf389a3e9e92ccc}} 
+mpyh&M\+P\+YH (Multiplication Result high byte) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{slhv@{slhv}!ComSquare::PPU@{ComSquare::PPU}}\index{ComSquare::PPU@{ComSquare::PPU}!slhv@{slhv}}}\mbox{\Hypertarget{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a2cd2c70604463027f1b23d9487e682e2}\label{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a2cd2c70604463027f1b23d9487e682e2}} 
+slhv&S\+L\+HV (Software Latch for H/V Counter) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{oamdataread@{oamdataread}!ComSquare::PPU@{ComSquare::PPU}}\index{ComSquare::PPU@{ComSquare::PPU}!oamdataread@{oamdataread}}}\mbox{\Hypertarget{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6aa4a55929a73db30e16d508a426d81561}\label{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6aa4a55929a73db30e16d508a426d81561}} 
+oamdataread&O\+A\+M\+D\+A\+T\+A\+R\+E\+AD (Data for O\+AM read) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{vmdatalread@{vmdatalread}!ComSquare::PPU@{ComSquare::PPU}}\index{ComSquare::PPU@{ComSquare::PPU}!vmdatalread@{vmdatalread}}}\mbox{\Hypertarget{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6aa84bbfabdf6e650f3feb8bbadc5290a5}\label{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6aa84bbfabdf6e650f3feb8bbadc5290a5}} 
+vmdatalread&V\+M\+D\+A\+T\+A\+L\+R\+E\+AD (V\+R\+AM Data Read low byte) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{vmdatahread@{vmdatahread}!ComSquare::PPU@{ComSquare::PPU}}\index{ComSquare::PPU@{ComSquare::PPU}!vmdatahread@{vmdatahread}}}\mbox{\Hypertarget{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6ace831b92be226c0469bfe4a619e10562}\label{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6ace831b92be226c0469bfe4a619e10562}} 
+vmdatahread&V\+M\+D\+A\+T\+A\+H\+R\+E\+AD (V\+R\+AM Data Read high byte) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{cgdataread@{cgdataread}!ComSquare::PPU@{ComSquare::PPU}}\index{ComSquare::PPU@{ComSquare::PPU}!cgdataread@{cgdataread}}}\mbox{\Hypertarget{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a8f16ef299d9c526e817c00bf7e7cf5fa}\label{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a8f16ef299d9c526e817c00bf7e7cf5fa}} 
+cgdataread&C\+G\+D\+A\+T\+A\+R\+E\+AD (C\+G\+R\+AM Data read) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ophct@{ophct}!ComSquare::PPU@{ComSquare::PPU}}\index{ComSquare::PPU@{ComSquare::PPU}!ophct@{ophct}}}\mbox{\Hypertarget{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a39b23d765b223bd94a31a5d07335d8c6}\label{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a39b23d765b223bd94a31a5d07335d8c6}} 
+ophct&O\+P\+H\+CT (Horizontal Scanline Location) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{opvct@{opvct}!ComSquare::PPU@{ComSquare::PPU}}\index{ComSquare::PPU@{ComSquare::PPU}!opvct@{opvct}}}\mbox{\Hypertarget{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6abcddb19b001422bf61471fd370ad0d82}\label{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6abcddb19b001422bf61471fd370ad0d82}} 
+opvct&O\+P\+V\+CT (Vertical Scanline Location) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{stat77@{stat77}!ComSquare::PPU@{ComSquare::PPU}}\index{ComSquare::PPU@{ComSquare::PPU}!stat77@{stat77}}}\mbox{\Hypertarget{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a3abc14e60908bacdba8c6fa97e1b5189}\label{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6a3abc14e60908bacdba8c6fa97e1b5189}} 
+stat77&S\+T\+A\+T77 (\mbox{\hyperlink{classComSquare_1_1PPU_1_1PPU}{P\+PU}} Status Flag and Version) \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{stat78@{stat78}!ComSquare::PPU@{ComSquare::PPU}}\index{ComSquare::PPU@{ComSquare::PPU}!stat78@{stat78}}}\mbox{\Hypertarget{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6ad4d9b2167b066bb31f025014a526cfa9}\label{namespaceComSquare_1_1PPU_aa42e3a841584a3eddda321f0daaa72e6ad4d9b2167b066bb31f025014a526cfa9}} 
+stat78&S\+T\+A\+T78 (\mbox{\hyperlink{classComSquare_1_1PPU_1_1PPU}{P\+PU}} Status Flag and Version) \\
+\hline
+
+\end{DoxyEnumFields}

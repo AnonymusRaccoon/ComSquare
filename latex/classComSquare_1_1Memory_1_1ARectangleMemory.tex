@@ -1,0 +1,261 @@
+\hypertarget{classComSquare_1_1Memory_1_1ARectangleMemory}{}\doxysection{Com\+Square\+::Memory\+::A\+Rectangle\+Memory Class Reference}
+\label{classComSquare_1_1Memory_1_1ARectangleMemory}\index{ComSquare::Memory::ARectangleMemory@{ComSquare::Memory::ARectangleMemory}}
+
+
+Base memory class to map non continuous rectangle to the memory. (A rectangle that spam across more than one bank but that does not start at \$0000 or end at \$\+F\+F\+FF).  
+
+
+
+
+{\ttfamily \#include $<$A\+Rectangle\+Memory.\+hpp$>$}
+
+
+
+Inheritance diagram for Com\+Square\+::Memory\+::A\+Rectangle\+Memory\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classComSquare_1_1Memory_1_1ARectangleMemory__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Com\+Square\+::Memory\+::A\+Rectangle\+Memory\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{classComSquare_1_1Memory_1_1ARectangleMemory__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} \mbox{\hyperlink{classComSquare_1_1Memory_1_1ARectangleMemory_ae3d2535084fcf3d923aea4d9b0d9626e}{get\+Relative\+Address}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} addr) const override
+\begin{DoxyCompactList}\small\item\em Translate an absolute address to a relative address. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classComSquare_1_1Memory_1_1ARectangleMemory_a182a3c6842814d052199adc24bc85ed3}{has\+Memory\+At}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} addr) const override
+\begin{DoxyCompactList}\small\item\em Return true if this component has mapped the address. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classComSquare_1_1Memory_1_1ARectangleMemory_aaf39bde614e7044e3de2ea4356abb63b}{set\+Memory\+Region}} (uint8\+\_\+t start\+Bank, uint8\+\_\+t end\+Bank, uint16\+\_\+t start\+Page, uint16\+\_\+t end\+Page)
+\begin{DoxyCompactList}\small\item\em Change starting and ending points of this mapped memory. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classComSquare_1_1Memory_1_1ARectangleMemory_a2bec422edf5aa4a52068f6848b293f23}{is\+Mirror}} () const override
+\begin{DoxyCompactList}\small\item\em Check if this memory is a mirror or not. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{classComSquare_1_1Memory_1_1ARectangleMemory_a7125cd1619a07e1030c88bb849d44425}{get\+Value\+Name}} (\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} addr) const override
+\begin{DoxyCompactList}\small\item\em Get the name of the data at the address. \end{DoxyCompactList}\item 
+virtual std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classComSquare_1_1Memory_1_1IMemory}{I\+Memory}} $>$ \mbox{\hyperlink{classComSquare_1_1Memory_1_1ARectangleMemory_accd9bf9ee527833e2b968ed0775f9ab5}{get\+Mirrored}} () const override
+\begin{DoxyCompactList}\small\item\em Return the memory accessor this accessor mirror if any. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classComSquare_1_1Memory_1_1ARectangleMemory_a459f824bc3a71b4fe53ff977df91b755}{$\sim$\+A\+Rectangle\+Memory}} () override=default
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{classComSquare_1_1Memory_1_1ARectangleMemory_a61cac92b775cdfa5a0f534e67b83ddf4}{\+\_\+start\+Bank}} = 0
+\begin{DoxyCompactList}\small\item\em The first bank to map to. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{classComSquare_1_1Memory_1_1ARectangleMemory_a09ec93e172a976fb4b762f77dcb8b709}{\+\_\+end\+Bank}} = 0
+\begin{DoxyCompactList}\small\item\em The last bank to map to. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{classComSquare_1_1Memory_1_1ARectangleMemory_a8bba8f5e10bd9dfd122a84f6707a73f8}{\+\_\+start\+Page}} = 0
+\begin{DoxyCompactList}\small\item\em The first address of each bank to map. \end{DoxyCompactList}\item 
+uint16\+\_\+t \mbox{\hyperlink{classComSquare_1_1Memory_1_1ARectangleMemory_ac5e3772f4f9c40f65b3e165646876110}{\+\_\+end\+Page}} = 0
+\begin{DoxyCompactList}\small\item\em The last address of each bank to map. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Base memory class to map non continuous rectangle to the memory. (A rectangle that spam across more than one bank but that does not start at \$0000 or end at \$\+F\+F\+FF). 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classComSquare_1_1Memory_1_1ARectangleMemory_a459f824bc3a71b4fe53ff977df91b755}\label{classComSquare_1_1Memory_1_1ARectangleMemory_a459f824bc3a71b4fe53ff977df91b755}} 
+\index{ComSquare::Memory::ARectangleMemory@{ComSquare::Memory::ARectangleMemory}!````~ARectangleMemory@{$\sim$ARectangleMemory}}
+\index{````~ARectangleMemory@{$\sim$ARectangleMemory}!ComSquare::Memory::ARectangleMemory@{ComSquare::Memory::ARectangleMemory}}
+\doxysubsubsection{\texorpdfstring{$\sim$ARectangleMemory()}{~ARectangleMemory()}}
+{\footnotesize\ttfamily virtual Com\+Square\+::\+Memory\+::\+A\+Rectangle\+Memory\+::$\sim$\+A\+Rectangle\+Memory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classComSquare_1_1Memory_1_1ARectangleMemory_accd9bf9ee527833e2b968ed0775f9ab5}\label{classComSquare_1_1Memory_1_1ARectangleMemory_accd9bf9ee527833e2b968ed0775f9ab5}} 
+\index{ComSquare::Memory::ARectangleMemory@{ComSquare::Memory::ARectangleMemory}!getMirrored@{getMirrored}}
+\index{getMirrored@{getMirrored}!ComSquare::Memory::ARectangleMemory@{ComSquare::Memory::ARectangleMemory}}
+\doxysubsubsection{\texorpdfstring{getMirrored()}{getMirrored()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classComSquare_1_1Memory_1_1IMemory}{I\+Memory}} $>$ Com\+Square\+::\+Memory\+::\+A\+Rectangle\+Memory\+::get\+Mirrored (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Return the memory accessor this accessor mirror if any. 
+
+\begin{DoxyReturn}{Returns}
+nullptr if is\+Mirror is false, the source otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classComSquare_1_1Memory_1_1IMemory_a4f0df1071299a4186fca106f87c16b22}{Com\+Square\+::\+Memory\+::\+I\+Memory}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classComSquare_1_1Memory_1_1RectangleShadow_a8a668642d1ce4e0ac2db39b03d5d4afb}{Com\+Square\+::\+Memory\+::\+Rectangle\+Shadow}}.
+
+\mbox{\Hypertarget{classComSquare_1_1Memory_1_1ARectangleMemory_ae3d2535084fcf3d923aea4d9b0d9626e}\label{classComSquare_1_1Memory_1_1ARectangleMemory_ae3d2535084fcf3d923aea4d9b0d9626e}} 
+\index{ComSquare::Memory::ARectangleMemory@{ComSquare::Memory::ARectangleMemory}!getRelativeAddress@{getRelativeAddress}}
+\index{getRelativeAddress@{getRelativeAddress}!ComSquare::Memory::ARectangleMemory@{ComSquare::Memory::ARectangleMemory}}
+\doxysubsubsection{\texorpdfstring{getRelativeAddress()}{getRelativeAddress()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}} Com\+Square\+::\+Memory\+::\+A\+Rectangle\+Memory\+::get\+Relative\+Address (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{addr }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Translate an absolute address to a relative address. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & The absolute address (in the 24 bit bus) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The local address (0 refers to the first byte of this component). 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \mbox{\hyperlink{classComSquare_1_1InvalidAddress}{Invalid\+Address}}} & is thrown if the address is not mapped by this component. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{classComSquare_1_1Memory_1_1IMemory_a44a24003df048c5e832ba23722ef026d}{Com\+Square\+::\+Memory\+::\+I\+Memory}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classComSquare_1_1Memory_1_1RectangleShadow_a8e9ecd31b62134e08a811a8583a0af3c}{Com\+Square\+::\+Memory\+::\+Rectangle\+Shadow}}.
+
+\mbox{\Hypertarget{classComSquare_1_1Memory_1_1ARectangleMemory_a7125cd1619a07e1030c88bb849d44425}\label{classComSquare_1_1Memory_1_1ARectangleMemory_a7125cd1619a07e1030c88bb849d44425}} 
+\index{ComSquare::Memory::ARectangleMemory@{ComSquare::Memory::ARectangleMemory}!getValueName@{getValueName}}
+\index{getValueName@{getValueName}!ComSquare::Memory::ARectangleMemory@{ComSquare::Memory::ARectangleMemory}}
+\doxysubsubsection{\texorpdfstring{getValueName()}{getValueName()}}
+{\footnotesize\ttfamily std\+::string Com\+Square\+::\+Memory\+::\+A\+Rectangle\+Memory\+::get\+Value\+Name (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{addr }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get the name of the data at the address. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & The address (in local space) \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classComSquare_1_1Memory_1_1IMemory_a1f02b894a85d7b1a0b8bae677039d821}{Com\+Square\+::\+Memory\+::\+I\+Memory}}.
+
+\mbox{\Hypertarget{classComSquare_1_1Memory_1_1ARectangleMemory_a182a3c6842814d052199adc24bc85ed3}\label{classComSquare_1_1Memory_1_1ARectangleMemory_a182a3c6842814d052199adc24bc85ed3}} 
+\index{ComSquare::Memory::ARectangleMemory@{ComSquare::Memory::ARectangleMemory}!hasMemoryAt@{hasMemoryAt}}
+\index{hasMemoryAt@{hasMemoryAt}!ComSquare::Memory::ARectangleMemory@{ComSquare::Memory::ARectangleMemory}}
+\doxysubsubsection{\texorpdfstring{hasMemoryAt()}{hasMemoryAt()}}
+{\footnotesize\ttfamily bool Com\+Square\+::\+Memory\+::\+A\+Rectangle\+Memory\+::has\+Memory\+At (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{Int24_8hpp_a89f009aaf5d1964a000f44f09fa0bcf8}{uint24\+\_\+t}}}]{addr }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Return true if this component has mapped the address. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & The address to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if this address is mapped to the component. False otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classComSquare_1_1Memory_1_1IMemory_a6b7cf04f893b04b9b063759ad67d5bff}{Com\+Square\+::\+Memory\+::\+I\+Memory}}.
+
+\mbox{\Hypertarget{classComSquare_1_1Memory_1_1ARectangleMemory_a2bec422edf5aa4a52068f6848b293f23}\label{classComSquare_1_1Memory_1_1ARectangleMemory_a2bec422edf5aa4a52068f6848b293f23}} 
+\index{ComSquare::Memory::ARectangleMemory@{ComSquare::Memory::ARectangleMemory}!isMirror@{isMirror}}
+\index{isMirror@{isMirror}!ComSquare::Memory::ARectangleMemory@{ComSquare::Memory::ARectangleMemory}}
+\doxysubsubsection{\texorpdfstring{isMirror()}{isMirror()}}
+{\footnotesize\ttfamily bool Com\+Square\+::\+Memory\+::\+A\+Rectangle\+Memory\+::is\+Mirror (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Check if this memory is a mirror or not. 
+
+\begin{DoxyReturn}{Returns}
+True if this memory is a mirror. False otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classComSquare_1_1Memory_1_1IMemory_adfc6a3be86a371d69a2ae1aeb5fb244d}{Com\+Square\+::\+Memory\+::\+I\+Memory}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classComSquare_1_1Memory_1_1RectangleShadow_a0931b47f025191e4b8f2ac3d4c044190}{Com\+Square\+::\+Memory\+::\+Rectangle\+Shadow}}.
+
+\mbox{\Hypertarget{classComSquare_1_1Memory_1_1ARectangleMemory_aaf39bde614e7044e3de2ea4356abb63b}\label{classComSquare_1_1Memory_1_1ARectangleMemory_aaf39bde614e7044e3de2ea4356abb63b}} 
+\index{ComSquare::Memory::ARectangleMemory@{ComSquare::Memory::ARectangleMemory}!setMemoryRegion@{setMemoryRegion}}
+\index{setMemoryRegion@{setMemoryRegion}!ComSquare::Memory::ARectangleMemory@{ComSquare::Memory::ARectangleMemory}}
+\doxysubsubsection{\texorpdfstring{setMemoryRegion()}{setMemoryRegion()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+Memory\+::\+A\+Rectangle\+Memory\+::set\+Memory\+Region (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{start\+Bank,  }\item[{uint8\+\_\+t}]{end\+Bank,  }\item[{uint16\+\_\+t}]{start\+Page,  }\item[{uint16\+\_\+t}]{end\+Page }\end{DoxyParamCaption})}
+
+
+
+Change starting and ending points of this mapped memory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start\+Bank} & The first bank mapped to this component. \\
+\hline
+{\em end\+Bank} & The last bank mapped to this component. \\
+\hline
+{\em start\+Page} & The first page mapped to this component (every mapped banks will have this page mapped) \\
+\hline
+{\em end\+Page} & The end page mapped to this component (every mapped banks will have this pages lower than this mapped) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+The start/end address should be a rectangle. To mirror memory, use the \mbox{\hyperlink{classComSquare_1_1Memory_1_1MemoryShadow}{Memory\+Shadow}} class and not this one. 
+\end{DoxyWarning}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classComSquare_1_1Memory_1_1ARectangleMemory_a09ec93e172a976fb4b762f77dcb8b709}\label{classComSquare_1_1Memory_1_1ARectangleMemory_a09ec93e172a976fb4b762f77dcb8b709}} 
+\index{ComSquare::Memory::ARectangleMemory@{ComSquare::Memory::ARectangleMemory}!\_endBank@{\_endBank}}
+\index{\_endBank@{\_endBank}!ComSquare::Memory::ARectangleMemory@{ComSquare::Memory::ARectangleMemory}}
+\doxysubsubsection{\texorpdfstring{\_endBank}{\_endBank}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+Memory\+::\+A\+Rectangle\+Memory\+::\+\_\+end\+Bank = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The last bank to map to. 
+
+\mbox{\Hypertarget{classComSquare_1_1Memory_1_1ARectangleMemory_ac5e3772f4f9c40f65b3e165646876110}\label{classComSquare_1_1Memory_1_1ARectangleMemory_ac5e3772f4f9c40f65b3e165646876110}} 
+\index{ComSquare::Memory::ARectangleMemory@{ComSquare::Memory::ARectangleMemory}!\_endPage@{\_endPage}}
+\index{\_endPage@{\_endPage}!ComSquare::Memory::ARectangleMemory@{ComSquare::Memory::ARectangleMemory}}
+\doxysubsubsection{\texorpdfstring{\_endPage}{\_endPage}}
+{\footnotesize\ttfamily uint16\+\_\+t Com\+Square\+::\+Memory\+::\+A\+Rectangle\+Memory\+::\+\_\+end\+Page = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The last address of each bank to map. 
+
+\mbox{\Hypertarget{classComSquare_1_1Memory_1_1ARectangleMemory_a61cac92b775cdfa5a0f534e67b83ddf4}\label{classComSquare_1_1Memory_1_1ARectangleMemory_a61cac92b775cdfa5a0f534e67b83ddf4}} 
+\index{ComSquare::Memory::ARectangleMemory@{ComSquare::Memory::ARectangleMemory}!\_startBank@{\_startBank}}
+\index{\_startBank@{\_startBank}!ComSquare::Memory::ARectangleMemory@{ComSquare::Memory::ARectangleMemory}}
+\doxysubsubsection{\texorpdfstring{\_startBank}{\_startBank}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+Memory\+::\+A\+Rectangle\+Memory\+::\+\_\+start\+Bank = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The first bank to map to. 
+
+\mbox{\Hypertarget{classComSquare_1_1Memory_1_1ARectangleMemory_a8bba8f5e10bd9dfd122a84f6707a73f8}\label{classComSquare_1_1Memory_1_1ARectangleMemory_a8bba8f5e10bd9dfd122a84f6707a73f8}} 
+\index{ComSquare::Memory::ARectangleMemory@{ComSquare::Memory::ARectangleMemory}!\_startPage@{\_startPage}}
+\index{\_startPage@{\_startPage}!ComSquare::Memory::ARectangleMemory@{ComSquare::Memory::ARectangleMemory}}
+\doxysubsubsection{\texorpdfstring{\_startPage}{\_startPage}}
+{\footnotesize\ttfamily uint16\+\_\+t Com\+Square\+::\+Memory\+::\+A\+Rectangle\+Memory\+::\+\_\+start\+Page = 0\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+The first address of each bank to map. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+sources/\+Memory/\mbox{\hyperlink{ARectangleMemory_8hpp}{A\+Rectangle\+Memory.\+hpp}}\item 
+sources/\+Memory/\mbox{\hyperlink{ARectangleMemory_8cpp}{A\+Rectangle\+Memory.\+cpp}}\end{DoxyCompactItemize}

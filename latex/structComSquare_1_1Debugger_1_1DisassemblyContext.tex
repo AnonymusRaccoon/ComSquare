@@ -1,0 +1,83 @@
+\hypertarget{structComSquare_1_1Debugger_1_1DisassemblyContext}{}\doxysection{Com\+Square\+::Debugger\+::Disassembly\+Context Struct Reference}
+\label{structComSquare_1_1Debugger_1_1DisassemblyContext}\index{ComSquare::Debugger::DisassemblyContext@{ComSquare::Debugger::DisassemblyContext}}
+
+
+Struct used to emulate the state of the processor during the disassembly since instructions take a different amount of space depending on some flags.  
+
+
+
+
+{\ttfamily \#include $<$C\+P\+U\+Debug.\+hpp$>$}
+
+
+
+Collaboration diagram for Com\+Square\+::Debugger\+::Disassembly\+Context\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{structComSquare_1_1Debugger_1_1DisassemblyContext__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{structComSquare_1_1Debugger_1_1DisassemblyContext_adbdac97a5dd31ddf24487f3fc47ad0b3}{m\+Flag}} = true
+\begin{DoxyCompactList}\small\item\em The accumulator and \mbox{\hyperlink{namespaceComSquare_1_1Memory}{Memory}} width flag (in native mode only) -\/ 0 = 16 bits mode, 1 = 8 bits mode. @info If this flag is set to false, instructions that have the Immediate\+ByA addressing mode take 1 more bit of space. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structComSquare_1_1Debugger_1_1DisassemblyContext_a90ca91cfbe910efbaf3371871f19eb67}{x\+Flag}} = true
+\begin{DoxyCompactList}\small\item\em The indeX register width flag (in native mode only) -\/ 0 = 16 bits mode, 1 = 8 bits mode OR the Break flag (in emulation mode only) @info If this flag is set to false, instructions that have the Immediate\+ByX addressing mode take 1 more bit of space. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{structComSquare_1_1Debugger_1_1DisassemblyContext_a25598bcbca5607ba75983ec7ce89d11f}{is\+Emulation\+Mode}} = true
+\begin{DoxyCompactList}\small\item\em Is the \mbox{\hyperlink{namespaceComSquare_1_1CPU}{C\+PU}} emulating a 6502? If yes, some instructions don\textquotesingle{}t change flags the same way. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{namespaceComSquare_1_1Debugger_af6f8aa5e9036fb321ffc38cad8f926b4}{Trust\+Level}} \mbox{\hyperlink{structComSquare_1_1Debugger_1_1DisassemblyContext_a86973698eeb7139ce87953393392be07}{level}} = \mbox{\hyperlink{namespaceComSquare_1_1Debugger_af6f8aa5e9036fb321ffc38cad8f926b4a42c853dde9db63d5a96343a5ec5163f6}{Safe}}
+\begin{DoxyCompactList}\small\item\em Sometimes, the flags can\textquotesingle{}t be tracked correctly after an instruction so the next instructions may not be correctly disassembled. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Struct used to emulate the state of the processor during the disassembly since instructions take a different amount of space depending on some flags. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structComSquare_1_1Debugger_1_1DisassemblyContext_a25598bcbca5607ba75983ec7ce89d11f}\label{structComSquare_1_1Debugger_1_1DisassemblyContext_a25598bcbca5607ba75983ec7ce89d11f}} 
+\index{ComSquare::Debugger::DisassemblyContext@{ComSquare::Debugger::DisassemblyContext}!isEmulationMode@{isEmulationMode}}
+\index{isEmulationMode@{isEmulationMode}!ComSquare::Debugger::DisassemblyContext@{ComSquare::Debugger::DisassemblyContext}}
+\doxysubsubsection{\texorpdfstring{isEmulationMode}{isEmulationMode}}
+{\footnotesize\ttfamily bool Com\+Square\+::\+Debugger\+::\+Disassembly\+Context\+::is\+Emulation\+Mode = true}
+
+
+
+Is the \mbox{\hyperlink{namespaceComSquare_1_1CPU}{C\+PU}} emulating a 6502? If yes, some instructions don\textquotesingle{}t change flags the same way. 
+
+\mbox{\Hypertarget{structComSquare_1_1Debugger_1_1DisassemblyContext_a86973698eeb7139ce87953393392be07}\label{structComSquare_1_1Debugger_1_1DisassemblyContext_a86973698eeb7139ce87953393392be07}} 
+\index{ComSquare::Debugger::DisassemblyContext@{ComSquare::Debugger::DisassemblyContext}!level@{level}}
+\index{level@{level}!ComSquare::Debugger::DisassemblyContext@{ComSquare::Debugger::DisassemblyContext}}
+\doxysubsubsection{\texorpdfstring{level}{level}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceComSquare_1_1Debugger_af6f8aa5e9036fb321ffc38cad8f926b4}{Trust\+Level}} Com\+Square\+::\+Debugger\+::\+Disassembly\+Context\+::level = \mbox{\hyperlink{namespaceComSquare_1_1Debugger_af6f8aa5e9036fb321ffc38cad8f926b4a42c853dde9db63d5a96343a5ec5163f6}{Safe}}}
+
+
+
+Sometimes, the flags can\textquotesingle{}t be tracked correctly after an instruction so the next instructions may not be correctly disassembled. 
+
+\mbox{\Hypertarget{structComSquare_1_1Debugger_1_1DisassemblyContext_adbdac97a5dd31ddf24487f3fc47ad0b3}\label{structComSquare_1_1Debugger_1_1DisassemblyContext_adbdac97a5dd31ddf24487f3fc47ad0b3}} 
+\index{ComSquare::Debugger::DisassemblyContext@{ComSquare::Debugger::DisassemblyContext}!mFlag@{mFlag}}
+\index{mFlag@{mFlag}!ComSquare::Debugger::DisassemblyContext@{ComSquare::Debugger::DisassemblyContext}}
+\doxysubsubsection{\texorpdfstring{mFlag}{mFlag}}
+{\footnotesize\ttfamily bool Com\+Square\+::\+Debugger\+::\+Disassembly\+Context\+::m\+Flag = true}
+
+
+
+The accumulator and \mbox{\hyperlink{namespaceComSquare_1_1Memory}{Memory}} width flag (in native mode only) -\/ 0 = 16 bits mode, 1 = 8 bits mode. @info If this flag is set to false, instructions that have the Immediate\+ByA addressing mode take 1 more bit of space. 
+
+\mbox{\Hypertarget{structComSquare_1_1Debugger_1_1DisassemblyContext_a90ca91cfbe910efbaf3371871f19eb67}\label{structComSquare_1_1Debugger_1_1DisassemblyContext_a90ca91cfbe910efbaf3371871f19eb67}} 
+\index{ComSquare::Debugger::DisassemblyContext@{ComSquare::Debugger::DisassemblyContext}!xFlag@{xFlag}}
+\index{xFlag@{xFlag}!ComSquare::Debugger::DisassemblyContext@{ComSquare::Debugger::DisassemblyContext}}
+\doxysubsubsection{\texorpdfstring{xFlag}{xFlag}}
+{\footnotesize\ttfamily bool Com\+Square\+::\+Debugger\+::\+Disassembly\+Context\+::x\+Flag = true}
+
+
+
+The indeX register width flag (in native mode only) -\/ 0 = 16 bits mode, 1 = 8 bits mode OR the Break flag (in emulation mode only) @info If this flag is set to false, instructions that have the Immediate\+ByX addressing mode take 1 more bit of space. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+sources/\+Debugger/\+C\+P\+U/\mbox{\hyperlink{CPUDebug_8hpp}{C\+P\+U\+Debug.\+hpp}}\end{DoxyCompactItemize}

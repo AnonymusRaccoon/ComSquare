@@ -1,0 +1,4 @@
+<map id="ComSquare::Memory::MemoryBus" name="ComSquare::Memory::MemoryBus">
+<area shape="rect" id="node1" title="The memory bus is the component responsible of mapping addresses to components address and transmitti..." alt="" coords="9,5,180,273"/>
+<area shape="rect" id="node2" href="$classComSquare_1_1Debugger_1_1MemoryBusDebug.html" title="window that allow the user to view all data going through the memory bus." alt="" coords="5,321,184,604"/>
+</map>

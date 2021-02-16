@@ -1,0 +1,166 @@
+\hypertarget{classComSquare_1_1Debugger_1_1RegisterViewer}{}\doxysection{Com\+Square\+::Debugger\+::Register\+Viewer Class Reference}
+\label{classComSquare_1_1Debugger_1_1RegisterViewer}\index{ComSquare::Debugger::RegisterViewer@{ComSquare::Debugger::RegisterViewer}}
+
+
+{\ttfamily \#include $<$Register\+Viewer.\+hpp$>$}
+
+
+
+Inheritance diagram for Com\+Square\+::Debugger\+::Register\+Viewer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{classComSquare_1_1Debugger_1_1RegisterViewer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Com\+Square\+::Debugger\+::Register\+Viewer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classComSquare_1_1Debugger_1_1RegisterViewer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classComSquare_1_1Debugger_1_1RegisterViewer_a1e2b059b08e4fc9192fa12f4d03c856d}{disable\+Debugger}} ()
+\begin{DoxyCompactList}\small\item\em Called when the window is closed. Turn off the debugger. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classComSquare_1_1Debugger_1_1RegisterViewer_ac15b8b2c9be59d527a3ce983acf56e14}{Register\+Viewer}} (\mbox{\hyperlink{classComSquare_1_1SNES}{S\+N\+ES}} \&snes)
+\item 
+\mbox{\hyperlink{classComSquare_1_1Debugger_1_1RegisterViewer_ab74b3f9dee2ee405dc6be48cbec3ac41}{Register\+Viewer}} (const \mbox{\hyperlink{classComSquare_1_1Debugger_1_1RegisterViewer}{Register\+Viewer}} \&)=delete
+\item 
+\mbox{\hyperlink{classComSquare_1_1Debugger_1_1RegisterViewer}{Register\+Viewer}} \& \mbox{\hyperlink{classComSquare_1_1Debugger_1_1RegisterViewer_ae0bd2408b5a119583f0f2552609f42cd}{operator=}} (const \mbox{\hyperlink{classComSquare_1_1Debugger_1_1RegisterViewer}{Register\+Viewer}} \&)=delete
+\item 
+\mbox{\hyperlink{classComSquare_1_1Debugger_1_1RegisterViewer_ad9ca233cf736048e3974fbfc2c39ee6a}{$\sim$\+Register\+Viewer}} ()
+\item 
+void \mbox{\hyperlink{classComSquare_1_1Debugger_1_1RegisterViewer_a8e46e982bc579db0d2f21ef57badd634}{focus}} ()
+\begin{DoxyCompactList}\small\item\em Focus the debugger\textquotesingle{}s window. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classComSquare_1_1Debugger_1_1RegisterViewer_a6d0b754c63437ef4cb002480547310f0}{\+\_\+setup\+Ui}} ()
+\begin{DoxyCompactList}\small\item\em Set models to the different tables and initialize them. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classComSquare_1_1Debugger_1_1ClosableWindow}{Closable\+Window}}$<$ \mbox{\hyperlink{classComSquare_1_1Debugger_1_1RegisterViewer}{Register\+Viewer}} $>$ $\ast$ \mbox{\hyperlink{classComSquare_1_1Debugger_1_1RegisterViewer_a2817f8b11dc3b9f858cc88a8bea90967}{\+\_\+window}}
+\begin{DoxyCompactList}\small\item\em The QT window for this debugger. \end{DoxyCompactList}\item 
+Ui\+::\+Registers\+View \mbox{\hyperlink{classComSquare_1_1Debugger_1_1RegisterViewer_a1bb412a6db9f8748bc439e83511f43cb}{\+\_\+ui}}
+\begin{DoxyCompactList}\small\item\em A widget that contain the whole UI. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classRegistersViewerModel}{Registers\+Viewer\+Model}} $\ast$ $>$ \mbox{\hyperlink{classComSquare_1_1Debugger_1_1RegisterViewer_a5f417f5673a048ad3248f34e23763b37}{\+\_\+models}}
+\begin{DoxyCompactList}\small\item\em The list of models used by different panels. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classComSquare_1_1SNES}{S\+N\+ES}} \& \mbox{\hyperlink{classComSquare_1_1Debugger_1_1RegisterViewer_abb6960583d949f9260b285846b21408e}{\+\_\+snes}}
+\begin{DoxyCompactList}\small\item\em The snes instance to read/write to. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1RegisterViewer_ac15b8b2c9be59d527a3ce983acf56e14}\label{classComSquare_1_1Debugger_1_1RegisterViewer_ac15b8b2c9be59d527a3ce983acf56e14}} 
+\index{ComSquare::Debugger::RegisterViewer@{ComSquare::Debugger::RegisterViewer}!RegisterViewer@{RegisterViewer}}
+\index{RegisterViewer@{RegisterViewer}!ComSquare::Debugger::RegisterViewer@{ComSquare::Debugger::RegisterViewer}}
+\doxysubsubsection{\texorpdfstring{RegisterViewer()}{RegisterViewer()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Com\+Square\+::\+Debugger\+::\+Register\+Viewer\+::\+Register\+Viewer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classComSquare_1_1SNES}{S\+N\+ES}} \&}]{snes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1RegisterViewer_ab74b3f9dee2ee405dc6be48cbec3ac41}\label{classComSquare_1_1Debugger_1_1RegisterViewer_ab74b3f9dee2ee405dc6be48cbec3ac41}} 
+\index{ComSquare::Debugger::RegisterViewer@{ComSquare::Debugger::RegisterViewer}!RegisterViewer@{RegisterViewer}}
+\index{RegisterViewer@{RegisterViewer}!ComSquare::Debugger::RegisterViewer@{ComSquare::Debugger::RegisterViewer}}
+\doxysubsubsection{\texorpdfstring{RegisterViewer()}{RegisterViewer()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Com\+Square\+::\+Debugger\+::\+Register\+Viewer\+::\+Register\+Viewer (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classComSquare_1_1Debugger_1_1RegisterViewer}{Register\+Viewer}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1RegisterViewer_ad9ca233cf736048e3974fbfc2c39ee6a}\label{classComSquare_1_1Debugger_1_1RegisterViewer_ad9ca233cf736048e3974fbfc2c39ee6a}} 
+\index{ComSquare::Debugger::RegisterViewer@{ComSquare::Debugger::RegisterViewer}!````~RegisterViewer@{$\sim$RegisterViewer}}
+\index{````~RegisterViewer@{$\sim$RegisterViewer}!ComSquare::Debugger::RegisterViewer@{ComSquare::Debugger::RegisterViewer}}
+\doxysubsubsection{\texorpdfstring{$\sim$RegisterViewer()}{~RegisterViewer()}}
+{\footnotesize\ttfamily Com\+Square\+::\+Debugger\+::\+Register\+Viewer\+::$\sim$\+Register\+Viewer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1RegisterViewer_a6d0b754c63437ef4cb002480547310f0}\label{classComSquare_1_1Debugger_1_1RegisterViewer_a6d0b754c63437ef4cb002480547310f0}} 
+\index{ComSquare::Debugger::RegisterViewer@{ComSquare::Debugger::RegisterViewer}!\_setupUi@{\_setupUi}}
+\index{\_setupUi@{\_setupUi}!ComSquare::Debugger::RegisterViewer@{ComSquare::Debugger::RegisterViewer}}
+\doxysubsubsection{\texorpdfstring{\_setupUi()}{\_setupUi()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+Debugger\+::\+Register\+Viewer\+::\+\_\+setup\+Ui (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Set models to the different tables and initialize them. 
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1RegisterViewer_a1e2b059b08e4fc9192fa12f4d03c856d}\label{classComSquare_1_1Debugger_1_1RegisterViewer_a1e2b059b08e4fc9192fa12f4d03c856d}} 
+\index{ComSquare::Debugger::RegisterViewer@{ComSquare::Debugger::RegisterViewer}!disableDebugger@{disableDebugger}}
+\index{disableDebugger@{disableDebugger}!ComSquare::Debugger::RegisterViewer@{ComSquare::Debugger::RegisterViewer}}
+\doxysubsubsection{\texorpdfstring{disableDebugger()}{disableDebugger()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+Debugger\+::\+Register\+Viewer\+::disable\+Debugger (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Called when the window is closed. Turn off the debugger. 
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1RegisterViewer_a8e46e982bc579db0d2f21ef57badd634}\label{classComSquare_1_1Debugger_1_1RegisterViewer_a8e46e982bc579db0d2f21ef57badd634}} 
+\index{ComSquare::Debugger::RegisterViewer@{ComSquare::Debugger::RegisterViewer}!focus@{focus}}
+\index{focus@{focus}!ComSquare::Debugger::RegisterViewer@{ComSquare::Debugger::RegisterViewer}}
+\doxysubsubsection{\texorpdfstring{focus()}{focus()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+Debugger\+::\+Register\+Viewer\+::focus (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Focus the debugger\textquotesingle{}s window. 
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1RegisterViewer_ae0bd2408b5a119583f0f2552609f42cd}\label{classComSquare_1_1Debugger_1_1RegisterViewer_ae0bd2408b5a119583f0f2552609f42cd}} 
+\index{ComSquare::Debugger::RegisterViewer@{ComSquare::Debugger::RegisterViewer}!operator=@{operator=}}
+\index{operator=@{operator=}!ComSquare::Debugger::RegisterViewer@{ComSquare::Debugger::RegisterViewer}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classComSquare_1_1Debugger_1_1RegisterViewer}{Register\+Viewer}}\& Com\+Square\+::\+Debugger\+::\+Register\+Viewer\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classComSquare_1_1Debugger_1_1RegisterViewer}{Register\+Viewer}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1RegisterViewer_a5f417f5673a048ad3248f34e23763b37}\label{classComSquare_1_1Debugger_1_1RegisterViewer_a5f417f5673a048ad3248f34e23763b37}} 
+\index{ComSquare::Debugger::RegisterViewer@{ComSquare::Debugger::RegisterViewer}!\_models@{\_models}}
+\index{\_models@{\_models}!ComSquare::Debugger::RegisterViewer@{ComSquare::Debugger::RegisterViewer}}
+\doxysubsubsection{\texorpdfstring{\_models}{\_models}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classRegistersViewerModel}{Registers\+Viewer\+Model}} $\ast$$>$ Com\+Square\+::\+Debugger\+::\+Register\+Viewer\+::\+\_\+models\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The list of models used by different panels. 
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1RegisterViewer_abb6960583d949f9260b285846b21408e}\label{classComSquare_1_1Debugger_1_1RegisterViewer_abb6960583d949f9260b285846b21408e}} 
+\index{ComSquare::Debugger::RegisterViewer@{ComSquare::Debugger::RegisterViewer}!\_snes@{\_snes}}
+\index{\_snes@{\_snes}!ComSquare::Debugger::RegisterViewer@{ComSquare::Debugger::RegisterViewer}}
+\doxysubsubsection{\texorpdfstring{\_snes}{\_snes}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classComSquare_1_1SNES}{S\+N\+ES}}\& Com\+Square\+::\+Debugger\+::\+Register\+Viewer\+::\+\_\+snes\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The snes instance to read/write to. 
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1RegisterViewer_a1bb412a6db9f8748bc439e83511f43cb}\label{classComSquare_1_1Debugger_1_1RegisterViewer_a1bb412a6db9f8748bc439e83511f43cb}} 
+\index{ComSquare::Debugger::RegisterViewer@{ComSquare::Debugger::RegisterViewer}!\_ui@{\_ui}}
+\index{\_ui@{\_ui}!ComSquare::Debugger::RegisterViewer@{ComSquare::Debugger::RegisterViewer}}
+\doxysubsubsection{\texorpdfstring{\_ui}{\_ui}}
+{\footnotesize\ttfamily Ui\+::\+Registers\+View Com\+Square\+::\+Debugger\+::\+Register\+Viewer\+::\+\_\+ui\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A widget that contain the whole UI. 
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1RegisterViewer_a2817f8b11dc3b9f858cc88a8bea90967}\label{classComSquare_1_1Debugger_1_1RegisterViewer_a2817f8b11dc3b9f858cc88a8bea90967}} 
+\index{ComSquare::Debugger::RegisterViewer@{ComSquare::Debugger::RegisterViewer}!\_window@{\_window}}
+\index{\_window@{\_window}!ComSquare::Debugger::RegisterViewer@{ComSquare::Debugger::RegisterViewer}}
+\doxysubsubsection{\texorpdfstring{\_window}{\_window}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classComSquare_1_1Debugger_1_1ClosableWindow}{Closable\+Window}}$<$\mbox{\hyperlink{classComSquare_1_1Debugger_1_1RegisterViewer}{Register\+Viewer}}$>$$\ast$ Com\+Square\+::\+Debugger\+::\+Register\+Viewer\+::\+\_\+window\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The QT window for this debugger. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+sources/\+Debugger/\mbox{\hyperlink{RegisterViewer_8hpp}{Register\+Viewer.\+hpp}}\item 
+sources/\+Debugger/\mbox{\hyperlink{RegisterViewer_8cpp}{Register\+Viewer.\+cpp}}\end{DoxyCompactItemize}

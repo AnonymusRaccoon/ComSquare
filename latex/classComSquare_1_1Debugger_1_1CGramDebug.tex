@@ -1,0 +1,227 @@
+\hypertarget{classComSquare_1_1Debugger_1_1CGramDebug}{}\doxysection{Com\+Square\+::Debugger\+::C\+Gram\+Debug Class Reference}
+\label{classComSquare_1_1Debugger_1_1CGramDebug}\index{ComSquare::Debugger::CGramDebug@{ComSquare::Debugger::CGramDebug}}
+
+
+window that allow the user to view all data going through the memory bus.  
+
+
+
+
+{\ttfamily \#include $<$C\+Gram\+Debug.\+hpp$>$}
+
+
+
+Inheritance diagram for Com\+Square\+::Debugger\+::C\+Gram\+Debug\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{classComSquare_1_1Debugger_1_1CGramDebug__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Com\+Square\+::Debugger\+::C\+Gram\+Debug\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classComSquare_1_1Debugger_1_1CGramDebug__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classComSquare_1_1Debugger_1_1CGramDebug_ac7bbd4b5a37779b261043415eefdbec8}{disable\+Viewer}} ()
+\begin{DoxyCompactList}\small\item\em Called when the window is closed. Turn off the debugger. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classComSquare_1_1Debugger_1_1CGramDebug_a4f742303c7917e5fdaf2b70ed5cfec48}{C\+Gram\+Debug}} (\mbox{\hyperlink{classComSquare_1_1SNES}{S\+N\+ES}} \&snes, \mbox{\hyperlink{classComSquare_1_1PPU_1_1PPU}{Com\+Square\+::\+P\+P\+U\+::\+P\+PU}} \&ppu)
+\item 
+\mbox{\hyperlink{classComSquare_1_1Debugger_1_1CGramDebug_a481758a7aedb330f4c3632093f63bcb1}{C\+Gram\+Debug}} (const \mbox{\hyperlink{classComSquare_1_1Debugger_1_1CGramDebug}{C\+Gram\+Debug}} \&)=delete
+\item 
+\mbox{\hyperlink{classComSquare_1_1Debugger_1_1CGramDebug}{C\+Gram\+Debug}} \& \mbox{\hyperlink{classComSquare_1_1Debugger_1_1CGramDebug_a087abded3ba4634f81d560de9b61ce1c}{operator=}} (const \mbox{\hyperlink{classComSquare_1_1Debugger_1_1CGramDebug}{C\+Gram\+Debug}} \&)=delete
+\item 
+\mbox{\hyperlink{classComSquare_1_1Debugger_1_1CGramDebug_ae22742e6522af36aa82c210ab46d8e0c}{$\sim$\+C\+Gram\+Debug}} ()=default
+\item 
+uint16\+\_\+t \mbox{\hyperlink{classComSquare_1_1Debugger_1_1CGramDebug_a33022d2fba71eff21d8899214c13f91f}{read}} (uint8\+\_\+t addr)
+\begin{DoxyCompactList}\small\item\em Read data at the C\+G\+R\+AM address send it to the debugger. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classComSquare_1_1Debugger_1_1CGramDebug_ad1d2cd983100c9a25e27e7838b3220dd}{focus}} ()
+\begin{DoxyCompactList}\small\item\em Focus the debugger\textquotesingle{}s window. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classComSquare_1_1Debugger_1_1CGramDebug_aed044504b5c71f324f9b10c7a1a3a9cc}{is\+Debugger}} ()
+\begin{DoxyCompactList}\small\item\em Return true if the Bus is overloaded with debugging features. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classComSquare_1_1Debugger_1_1CGramDebug_a88fa0f897d2587f4de62535cfef7020d}{update\+Info\+Tile}} (int row, int column)
+\begin{DoxyCompactList}\small\item\em Update the text fields with corresponding tile info. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classComSquare_1_1Debugger_1_1CGramDebug_acce5c28398166b394a9094627888ee16}{tile\+Clicked}} (const Q\+Model\+Index \&index)
+\begin{DoxyCompactList}\small\item\em Update call update\+Info\+Tile with the correct address. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classComSquare_1_1Debugger_1_1ClosableWindow}{Closable\+Window}}$<$ \mbox{\hyperlink{classComSquare_1_1Debugger_1_1CGramDebug}{C\+Gram\+Debug}} $>$ $\ast$ \mbox{\hyperlink{classComSquare_1_1Debugger_1_1CGramDebug_a75ecedeea1e8e376314b0f616c6f0257}{\+\_\+window}}
+\begin{DoxyCompactList}\small\item\em The QT window for this debugger. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classComSquare_1_1SNES}{S\+N\+ES}} \& \mbox{\hyperlink{classComSquare_1_1Debugger_1_1CGramDebug_a5c12d988479db2bf1c574161a695035b}{\+\_\+snes}}
+\begin{DoxyCompactList}\small\item\em A reference to the snes (to disable the debugger). \end{DoxyCompactList}\item 
+Ui\+::\+Cgram\+View \mbox{\hyperlink{classComSquare_1_1Debugger_1_1CGramDebug_a21d64dcfff58dc30b22cad0f977ea379}{\+\_\+ui}}
+\begin{DoxyCompactList}\small\item\em A widget that contain the whole UI. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCGramModel}{C\+Gram\+Model}} \mbox{\hyperlink{classComSquare_1_1Debugger_1_1CGramDebug_a8c69a010c7babe9d92aaab2c002ef39f}{\+\_\+model}}
+\begin{DoxyCompactList}\small\item\em The Log visualizer model for QT. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classComSquare_1_1PPU_1_1PPU}{Com\+Square\+::\+P\+P\+U\+::\+P\+PU}} \& \mbox{\hyperlink{classComSquare_1_1Debugger_1_1CGramDebug_a10fabcc4004311b30d2155e230bad497}{\+\_\+ppu}}
+\begin{DoxyCompactList}\small\item\em A reference to the ppu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+window that allow the user to view all data going through the memory bus. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1CGramDebug_a4f742303c7917e5fdaf2b70ed5cfec48}\label{classComSquare_1_1Debugger_1_1CGramDebug_a4f742303c7917e5fdaf2b70ed5cfec48}} 
+\index{ComSquare::Debugger::CGramDebug@{ComSquare::Debugger::CGramDebug}!CGramDebug@{CGramDebug}}
+\index{CGramDebug@{CGramDebug}!ComSquare::Debugger::CGramDebug@{ComSquare::Debugger::CGramDebug}}
+\doxysubsubsection{\texorpdfstring{CGramDebug()}{CGramDebug()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Com\+Square\+::\+Debugger\+::\+C\+Gram\+Debug\+::\+C\+Gram\+Debug (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classComSquare_1_1SNES}{S\+N\+ES}} \&}]{snes,  }\item[{\mbox{\hyperlink{classComSquare_1_1PPU_1_1PPU}{Com\+Square\+::\+P\+P\+U\+::\+P\+PU}} \&}]{ppu }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1CGramDebug_a481758a7aedb330f4c3632093f63bcb1}\label{classComSquare_1_1Debugger_1_1CGramDebug_a481758a7aedb330f4c3632093f63bcb1}} 
+\index{ComSquare::Debugger::CGramDebug@{ComSquare::Debugger::CGramDebug}!CGramDebug@{CGramDebug}}
+\index{CGramDebug@{CGramDebug}!ComSquare::Debugger::CGramDebug@{ComSquare::Debugger::CGramDebug}}
+\doxysubsubsection{\texorpdfstring{CGramDebug()}{CGramDebug()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Com\+Square\+::\+Debugger\+::\+C\+Gram\+Debug\+::\+C\+Gram\+Debug (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classComSquare_1_1Debugger_1_1CGramDebug}{C\+Gram\+Debug}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1CGramDebug_ae22742e6522af36aa82c210ab46d8e0c}\label{classComSquare_1_1Debugger_1_1CGramDebug_ae22742e6522af36aa82c210ab46d8e0c}} 
+\index{ComSquare::Debugger::CGramDebug@{ComSquare::Debugger::CGramDebug}!````~CGramDebug@{$\sim$CGramDebug}}
+\index{````~CGramDebug@{$\sim$CGramDebug}!ComSquare::Debugger::CGramDebug@{ComSquare::Debugger::CGramDebug}}
+\doxysubsubsection{\texorpdfstring{$\sim$CGramDebug()}{~CGramDebug()}}
+{\footnotesize\ttfamily Com\+Square\+::\+Debugger\+::\+C\+Gram\+Debug\+::$\sim$\+C\+Gram\+Debug (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1CGramDebug_ac7bbd4b5a37779b261043415eefdbec8}\label{classComSquare_1_1Debugger_1_1CGramDebug_ac7bbd4b5a37779b261043415eefdbec8}} 
+\index{ComSquare::Debugger::CGramDebug@{ComSquare::Debugger::CGramDebug}!disableViewer@{disableViewer}}
+\index{disableViewer@{disableViewer}!ComSquare::Debugger::CGramDebug@{ComSquare::Debugger::CGramDebug}}
+\doxysubsubsection{\texorpdfstring{disableViewer()}{disableViewer()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+Debugger\+::\+C\+Gram\+Debug\+::disable\+Viewer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Called when the window is closed. Turn off the debugger. 
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1CGramDebug_ad1d2cd983100c9a25e27e7838b3220dd}\label{classComSquare_1_1Debugger_1_1CGramDebug_ad1d2cd983100c9a25e27e7838b3220dd}} 
+\index{ComSquare::Debugger::CGramDebug@{ComSquare::Debugger::CGramDebug}!focus@{focus}}
+\index{focus@{focus}!ComSquare::Debugger::CGramDebug@{ComSquare::Debugger::CGramDebug}}
+\doxysubsubsection{\texorpdfstring{focus()}{focus()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+Debugger\+::\+C\+Gram\+Debug\+::focus (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Focus the debugger\textquotesingle{}s window. 
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1CGramDebug_aed044504b5c71f324f9b10c7a1a3a9cc}\label{classComSquare_1_1Debugger_1_1CGramDebug_aed044504b5c71f324f9b10c7a1a3a9cc}} 
+\index{ComSquare::Debugger::CGramDebug@{ComSquare::Debugger::CGramDebug}!isDebugger@{isDebugger}}
+\index{isDebugger@{isDebugger}!ComSquare::Debugger::CGramDebug@{ComSquare::Debugger::CGramDebug}}
+\doxysubsubsection{\texorpdfstring{isDebugger()}{isDebugger()}}
+{\footnotesize\ttfamily bool Com\+Square\+::\+Debugger\+::\+C\+Gram\+Debug\+::is\+Debugger (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Return true if the Bus is overloaded with debugging features. 
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1CGramDebug_a087abded3ba4634f81d560de9b61ce1c}\label{classComSquare_1_1Debugger_1_1CGramDebug_a087abded3ba4634f81d560de9b61ce1c}} 
+\index{ComSquare::Debugger::CGramDebug@{ComSquare::Debugger::CGramDebug}!operator=@{operator=}}
+\index{operator=@{operator=}!ComSquare::Debugger::CGramDebug@{ComSquare::Debugger::CGramDebug}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classComSquare_1_1Debugger_1_1CGramDebug}{C\+Gram\+Debug}}\& Com\+Square\+::\+Debugger\+::\+C\+Gram\+Debug\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classComSquare_1_1Debugger_1_1CGramDebug}{C\+Gram\+Debug}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1CGramDebug_a33022d2fba71eff21d8899214c13f91f}\label{classComSquare_1_1Debugger_1_1CGramDebug_a33022d2fba71eff21d8899214c13f91f}} 
+\index{ComSquare::Debugger::CGramDebug@{ComSquare::Debugger::CGramDebug}!read@{read}}
+\index{read@{read}!ComSquare::Debugger::CGramDebug@{ComSquare::Debugger::CGramDebug}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily uint16\+\_\+t Com\+Square\+::\+Debugger\+::\+C\+Gram\+Debug\+::read (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{addr }\end{DoxyParamCaption})}
+
+
+
+Read data at the C\+G\+R\+AM address send it to the debugger. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em addr} & The address to read from. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The color value in B\+GR, looks like this xbbbbbgggggrrrrr. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1CGramDebug_acce5c28398166b394a9094627888ee16}\label{classComSquare_1_1Debugger_1_1CGramDebug_acce5c28398166b394a9094627888ee16}} 
+\index{ComSquare::Debugger::CGramDebug@{ComSquare::Debugger::CGramDebug}!tileClicked@{tileClicked}}
+\index{tileClicked@{tileClicked}!ComSquare::Debugger::CGramDebug@{ComSquare::Debugger::CGramDebug}}
+\doxysubsubsection{\texorpdfstring{tileClicked()}{tileClicked()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+Debugger\+::\+C\+Gram\+Debug\+::tile\+Clicked (\begin{DoxyParamCaption}\item[{const Q\+Model\+Index \&}]{index }\end{DoxyParamCaption})}
+
+
+
+Update call update\+Info\+Tile with the correct address. 
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1CGramDebug_a88fa0f897d2587f4de62535cfef7020d}\label{classComSquare_1_1Debugger_1_1CGramDebug_a88fa0f897d2587f4de62535cfef7020d}} 
+\index{ComSquare::Debugger::CGramDebug@{ComSquare::Debugger::CGramDebug}!updateInfoTile@{updateInfoTile}}
+\index{updateInfoTile@{updateInfoTile}!ComSquare::Debugger::CGramDebug@{ComSquare::Debugger::CGramDebug}}
+\doxysubsubsection{\texorpdfstring{updateInfoTile()}{updateInfoTile()}}
+{\footnotesize\ttfamily void Com\+Square\+::\+Debugger\+::\+C\+Gram\+Debug\+::update\+Info\+Tile (\begin{DoxyParamCaption}\item[{int}]{row,  }\item[{int}]{column }\end{DoxyParamCaption})}
+
+
+
+Update the text fields with corresponding tile info. 
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1CGramDebug_a8c69a010c7babe9d92aaab2c002ef39f}\label{classComSquare_1_1Debugger_1_1CGramDebug_a8c69a010c7babe9d92aaab2c002ef39f}} 
+\index{ComSquare::Debugger::CGramDebug@{ComSquare::Debugger::CGramDebug}!\_model@{\_model}}
+\index{\_model@{\_model}!ComSquare::Debugger::CGramDebug@{ComSquare::Debugger::CGramDebug}}
+\doxysubsubsection{\texorpdfstring{\_model}{\_model}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCGramModel}{C\+Gram\+Model}} Com\+Square\+::\+Debugger\+::\+C\+Gram\+Debug\+::\+\_\+model\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The Log visualizer model for QT. 
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1CGramDebug_a10fabcc4004311b30d2155e230bad497}\label{classComSquare_1_1Debugger_1_1CGramDebug_a10fabcc4004311b30d2155e230bad497}} 
+\index{ComSquare::Debugger::CGramDebug@{ComSquare::Debugger::CGramDebug}!\_ppu@{\_ppu}}
+\index{\_ppu@{\_ppu}!ComSquare::Debugger::CGramDebug@{ComSquare::Debugger::CGramDebug}}
+\doxysubsubsection{\texorpdfstring{\_ppu}{\_ppu}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classComSquare_1_1PPU_1_1PPU}{Com\+Square\+::\+P\+P\+U\+::\+P\+PU}}\& Com\+Square\+::\+Debugger\+::\+C\+Gram\+Debug\+::\+\_\+ppu\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A reference to the ppu. 
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1CGramDebug_a5c12d988479db2bf1c574161a695035b}\label{classComSquare_1_1Debugger_1_1CGramDebug_a5c12d988479db2bf1c574161a695035b}} 
+\index{ComSquare::Debugger::CGramDebug@{ComSquare::Debugger::CGramDebug}!\_snes@{\_snes}}
+\index{\_snes@{\_snes}!ComSquare::Debugger::CGramDebug@{ComSquare::Debugger::CGramDebug}}
+\doxysubsubsection{\texorpdfstring{\_snes}{\_snes}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classComSquare_1_1SNES}{S\+N\+ES}}\& Com\+Square\+::\+Debugger\+::\+C\+Gram\+Debug\+::\+\_\+snes\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A reference to the snes (to disable the debugger). 
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1CGramDebug_a21d64dcfff58dc30b22cad0f977ea379}\label{classComSquare_1_1Debugger_1_1CGramDebug_a21d64dcfff58dc30b22cad0f977ea379}} 
+\index{ComSquare::Debugger::CGramDebug@{ComSquare::Debugger::CGramDebug}!\_ui@{\_ui}}
+\index{\_ui@{\_ui}!ComSquare::Debugger::CGramDebug@{ComSquare::Debugger::CGramDebug}}
+\doxysubsubsection{\texorpdfstring{\_ui}{\_ui}}
+{\footnotesize\ttfamily Ui\+::\+Cgram\+View Com\+Square\+::\+Debugger\+::\+C\+Gram\+Debug\+::\+\_\+ui\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A widget that contain the whole UI. 
+
+\mbox{\Hypertarget{classComSquare_1_1Debugger_1_1CGramDebug_a75ecedeea1e8e376314b0f616c6f0257}\label{classComSquare_1_1Debugger_1_1CGramDebug_a75ecedeea1e8e376314b0f616c6f0257}} 
+\index{ComSquare::Debugger::CGramDebug@{ComSquare::Debugger::CGramDebug}!\_window@{\_window}}
+\index{\_window@{\_window}!ComSquare::Debugger::CGramDebug@{ComSquare::Debugger::CGramDebug}}
+\doxysubsubsection{\texorpdfstring{\_window}{\_window}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classComSquare_1_1Debugger_1_1ClosableWindow}{Closable\+Window}}$<$\mbox{\hyperlink{classComSquare_1_1Debugger_1_1CGramDebug}{C\+Gram\+Debug}}$>$$\ast$ Com\+Square\+::\+Debugger\+::\+C\+Gram\+Debug\+::\+\_\+window\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The QT window for this debugger. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+sources/\+Debugger/\mbox{\hyperlink{CGramDebug_8hpp}{C\+Gram\+Debug.\+hpp}}\item 
+sources/\+Debugger/\mbox{\hyperlink{CGramDebug_8cpp}{C\+Gram\+Debug.\+cpp}}\end{DoxyCompactItemize}

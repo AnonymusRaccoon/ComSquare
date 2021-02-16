@@ -1,0 +1,138 @@
+\hypertarget{namespaceComSquare}{}\doxysection{Com\+Square Namespace Reference}
+\label{namespaceComSquare}\index{ComSquare@{ComSquare}}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceComSquare_1_1APU}{A\+PU}}
+\item 
+ \mbox{\hyperlink{namespaceComSquare_1_1Cartridge}{Cartridge}}
+\item 
+ \mbox{\hyperlink{namespaceComSquare_1_1CPU}{C\+PU}}
+\item 
+ \mbox{\hyperlink{namespaceComSquare_1_1Debugger}{Debugger}}
+\item 
+ \mbox{\hyperlink{namespaceComSquare_1_1Memory}{Memory}}
+\item 
+ \mbox{\hyperlink{namespaceComSquare_1_1PPU}{P\+PU}}
+\item 
+ \mbox{\hyperlink{namespaceComSquare_1_1Ram}{Ram}}
+\item 
+ \mbox{\hyperlink{namespaceComSquare_1_1Renderer}{Renderer}}
+\item 
+ \mbox{\hyperlink{namespaceComSquare_1_1Utility}{Utility}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classComSquare_1_1DebuggableError}{Debuggable\+Error}}
+\item 
+class \mbox{\hyperlink{classComSquare_1_1InvalidAction}{Invalid\+Action}}
+\begin{DoxyCompactList}\small\item\em Exception thrown when someone tries to load an invalid rom. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classComSquare_1_1InvalidAddress}{Invalid\+Address}}
+\begin{DoxyCompactList}\small\item\em Exception thrown when trying to read/write to an invalid address. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classComSquare_1_1InvalidOpcode}{Invalid\+Opcode}}
+\begin{DoxyCompactList}\small\item\em Exception thrown when someone tries to load an invalid rom. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classComSquare_1_1InvalidRectangleAddress}{Invalid\+Rectangle\+Address}}
+\begin{DoxyCompactList}\small\item\em Exception thrown when trying to read/write to an invalid address in a rectangle memory region. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classComSquare_1_1InvalidRomException}{Invalid\+Rom\+Exception}}
+\begin{DoxyCompactList}\small\item\em Exception thrown when someone tries to load an invalid rom. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classComSquare_1_1NotImplementedException}{Not\+Implemented\+Exception}}
+\begin{DoxyCompactList}\small\item\em When this is thrown, it means that we should work more. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classComSquare_1_1SNES}{S\+N\+ES}}
+\begin{DoxyCompactList}\small\item\em Container of all the components of the \mbox{\hyperlink{classComSquare_1_1SNES}{S\+N\+ES}}. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classComSquare_1_1Vector2}{Vector2}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classComSquare_1_1Vector2}{Vector2}}$<$ float $>$ \mbox{\hyperlink{namespaceComSquare_ae89eb35006a1daad9b4bcecf2e26535e}{Vector2f}}
+\item 
+typedef \mbox{\hyperlink{classComSquare_1_1Vector2}{Vector2}}$<$ unsigned $>$ \mbox{\hyperlink{namespaceComSquare_a138c73c47b74e7f2769fd341be792da4}{Vector2u}}
+\item 
+typedef \mbox{\hyperlink{classComSquare_1_1Vector2}{Vector2}}$<$ int $>$ \mbox{\hyperlink{namespaceComSquare_ab5cad12200eba41b991e87e0e1e43bd0}{Vector2i}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespaceComSquare_a891b49feb5c3e0aaa4873ff19b49968c}{Component}} \{ \newline
+\mbox{\hyperlink{namespaceComSquare_a891b49feb5c3e0aaa4873ff19b49968caa130654aab509cc514c2556ef8e4e88f}{Cpu}} = 1u $<$$<$ 0u, 
+\mbox{\hyperlink{namespaceComSquare_a891b49feb5c3e0aaa4873ff19b49968ca0ccffad4472a3a90381bd271a94b7802}{Ppu}} = 1u $<$$<$ 1u, 
+\mbox{\hyperlink{namespaceComSquare_a891b49feb5c3e0aaa4873ff19b49968caa935f570adb529ae924b6cadb2dc085a}{Apu}} = 1u $<$$<$ 2u, 
+\mbox{\hyperlink{namespaceComSquare_a891b49feb5c3e0aaa4873ff19b49968cacf60cdb1964d5a548084099ed4d9983b}{Rom}} = 1u $<$$<$ 3u, 
+\newline
+\mbox{\hyperlink{namespaceComSquare_a891b49feb5c3e0aaa4873ff19b49968ca36687173340dd995bc3cce82aaaf3947}{W\+Ram}} = 1u $<$$<$ 4u, 
+\mbox{\hyperlink{namespaceComSquare_a891b49feb5c3e0aaa4873ff19b49968ca810dcde52c023dede9dd5f7a9aaca816}{V\+Ram}} = 1u $<$$<$ 5u, 
+\mbox{\hyperlink{namespaceComSquare_a891b49feb5c3e0aaa4873ff19b49968ca572ccd9c197fcf8f57948b46a6437768}{O\+A\+M\+Ram}} = 1u $<$$<$ 6u, 
+\mbox{\hyperlink{namespaceComSquare_a891b49feb5c3e0aaa4873ff19b49968ca505b46ad7aa916f357051112ab9a0991}{C\+G\+Ram}} = 1u $<$$<$ 7u, 
+\newline
+\mbox{\hyperlink{namespaceComSquare_a891b49feb5c3e0aaa4873ff19b49968ca958748bead8bda0654f1bcfb0aa3e53e}{S\+Ram}} = 1u $<$$<$ 8u
+ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{namespaceComSquare_ae89eb35006a1daad9b4bcecf2e26535e}\label{namespaceComSquare_ae89eb35006a1daad9b4bcecf2e26535e}} 
+\index{ComSquare@{ComSquare}!Vector2f@{Vector2f}}
+\index{Vector2f@{Vector2f}!ComSquare@{ComSquare}}
+\doxysubsubsection{\texorpdfstring{Vector2f}{Vector2f}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classComSquare_1_1Vector2}{Vector2}}$<$float$>$ \mbox{\hyperlink{namespaceComSquare_ae89eb35006a1daad9b4bcecf2e26535e}{Com\+Square\+::\+Vector2f}}}
+
+\mbox{\Hypertarget{namespaceComSquare_ab5cad12200eba41b991e87e0e1e43bd0}\label{namespaceComSquare_ab5cad12200eba41b991e87e0e1e43bd0}} 
+\index{ComSquare@{ComSquare}!Vector2i@{Vector2i}}
+\index{Vector2i@{Vector2i}!ComSquare@{ComSquare}}
+\doxysubsubsection{\texorpdfstring{Vector2i}{Vector2i}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classComSquare_1_1Vector2}{Vector2}}$<$int$>$ \mbox{\hyperlink{namespaceComSquare_ab5cad12200eba41b991e87e0e1e43bd0}{Com\+Square\+::\+Vector2i}}}
+
+\mbox{\Hypertarget{namespaceComSquare_a138c73c47b74e7f2769fd341be792da4}\label{namespaceComSquare_a138c73c47b74e7f2769fd341be792da4}} 
+\index{ComSquare@{ComSquare}!Vector2u@{Vector2u}}
+\index{Vector2u@{Vector2u}!ComSquare@{ComSquare}}
+\doxysubsubsection{\texorpdfstring{Vector2u}{Vector2u}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classComSquare_1_1Vector2}{Vector2}}$<$unsigned$>$ \mbox{\hyperlink{namespaceComSquare_a138c73c47b74e7f2769fd341be792da4}{Com\+Square\+::\+Vector2u}}}
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{namespaceComSquare_a891b49feb5c3e0aaa4873ff19b49968c}\label{namespaceComSquare_a891b49feb5c3e0aaa4873ff19b49968c}} 
+\index{ComSquare@{ComSquare}!Component@{Component}}
+\index{Component@{Component}!ComSquare@{ComSquare}}
+\doxysubsubsection{\texorpdfstring{Component}{Component}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{namespaceComSquare_a891b49feb5c3e0aaa4873ff19b49968c}{Com\+Square\+::\+Component}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Cpu@{Cpu}!ComSquare@{ComSquare}}\index{ComSquare@{ComSquare}!Cpu@{Cpu}}}\mbox{\Hypertarget{namespaceComSquare_a891b49feb5c3e0aaa4873ff19b49968caa130654aab509cc514c2556ef8e4e88f}\label{namespaceComSquare_a891b49feb5c3e0aaa4873ff19b49968caa130654aab509cc514c2556ef8e4e88f}} 
+Cpu&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Ppu@{Ppu}!ComSquare@{ComSquare}}\index{ComSquare@{ComSquare}!Ppu@{Ppu}}}\mbox{\Hypertarget{namespaceComSquare_a891b49feb5c3e0aaa4873ff19b49968ca0ccffad4472a3a90381bd271a94b7802}\label{namespaceComSquare_a891b49feb5c3e0aaa4873ff19b49968ca0ccffad4472a3a90381bd271a94b7802}} 
+Ppu&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Apu@{Apu}!ComSquare@{ComSquare}}\index{ComSquare@{ComSquare}!Apu@{Apu}}}\mbox{\Hypertarget{namespaceComSquare_a891b49feb5c3e0aaa4873ff19b49968caa935f570adb529ae924b6cadb2dc085a}\label{namespaceComSquare_a891b49feb5c3e0aaa4873ff19b49968caa935f570adb529ae924b6cadb2dc085a}} 
+Apu&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{Rom@{Rom}!ComSquare@{ComSquare}}\index{ComSquare@{ComSquare}!Rom@{Rom}}}\mbox{\Hypertarget{namespaceComSquare_a891b49feb5c3e0aaa4873ff19b49968cacf60cdb1964d5a548084099ed4d9983b}\label{namespaceComSquare_a891b49feb5c3e0aaa4873ff19b49968cacf60cdb1964d5a548084099ed4d9983b}} 
+Rom&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{WRam@{WRam}!ComSquare@{ComSquare}}\index{ComSquare@{ComSquare}!WRam@{WRam}}}\mbox{\Hypertarget{namespaceComSquare_a891b49feb5c3e0aaa4873ff19b49968ca36687173340dd995bc3cce82aaaf3947}\label{namespaceComSquare_a891b49feb5c3e0aaa4873ff19b49968ca36687173340dd995bc3cce82aaaf3947}} 
+W\+Ram&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{VRam@{VRam}!ComSquare@{ComSquare}}\index{ComSquare@{ComSquare}!VRam@{VRam}}}\mbox{\Hypertarget{namespaceComSquare_a891b49feb5c3e0aaa4873ff19b49968ca810dcde52c023dede9dd5f7a9aaca816}\label{namespaceComSquare_a891b49feb5c3e0aaa4873ff19b49968ca810dcde52c023dede9dd5f7a9aaca816}} 
+V\+Ram&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{OAMRam@{OAMRam}!ComSquare@{ComSquare}}\index{ComSquare@{ComSquare}!OAMRam@{OAMRam}}}\mbox{\Hypertarget{namespaceComSquare_a891b49feb5c3e0aaa4873ff19b49968ca572ccd9c197fcf8f57948b46a6437768}\label{namespaceComSquare_a891b49feb5c3e0aaa4873ff19b49968ca572ccd9c197fcf8f57948b46a6437768}} 
+O\+A\+M\+Ram&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CGRam@{CGRam}!ComSquare@{ComSquare}}\index{ComSquare@{ComSquare}!CGRam@{CGRam}}}\mbox{\Hypertarget{namespaceComSquare_a891b49feb5c3e0aaa4873ff19b49968ca505b46ad7aa916f357051112ab9a0991}\label{namespaceComSquare_a891b49feb5c3e0aaa4873ff19b49968ca505b46ad7aa916f357051112ab9a0991}} 
+C\+G\+Ram&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{SRam@{SRam}!ComSquare@{ComSquare}}\index{ComSquare@{ComSquare}!SRam@{SRam}}}\mbox{\Hypertarget{namespaceComSquare_a891b49feb5c3e0aaa4873ff19b49968ca958748bead8bda0654f1bcfb0aa3e53e}\label{namespaceComSquare_a891b49feb5c3e0aaa4873ff19b49968ca958748bead8bda0654f1bcfb0aa3e53e}} 
+S\+Ram&\\
+\hline
+
+\end{DoxyEnumFields}

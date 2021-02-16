@@ -1,0 +1,239 @@
+\hypertarget{testPpuWriteFromVmain_8cpp}{}\doxysection{tests/\+P\+P\+U/test\+Ppu\+Write\+From\+Vmain.cpp File Reference}
+\label{testPpuWriteFromVmain_8cpp}\index{tests/PPU/testPpuWriteFromVmain.cpp@{tests/PPU/testPpuWriteFromVmain.cpp}}
+{\ttfamily \#include $<$criterion/criterion.\+h$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$bitset$>$}\newline
+{\ttfamily \#include \char`\"{}../tests.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../sources/\+S\+N\+E\+S.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../sources/\+Memory/\+Memory\+Bus.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../sources/\+P\+P\+U/\+P\+P\+U.\+hpp\char`\"{}}\newline
+Include dependency graph for test\+Ppu\+Write\+From\+Vmain.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{testPpuWriteFromVmain_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{testPpuWriteFromVmain_8cpp_ab10690b0808efeec5da91f7ef7aae5b1}{Test}} (P\+P\+U\+\_\+write\+\_\+2, vmain\+\_\+data\+\_\+full)
+\item 
+\mbox{\hyperlink{testPpuWriteFromVmain_8cpp_a17bb7171e5d2ff2c39acea87e86fc5c5}{Test}} (P\+P\+U\+\_\+write\+\_\+2, vmain\+\_\+incrementmode\+\_\+off\+\_\+false\+\_\+else\+\_\+full)
+\item 
+\mbox{\hyperlink{testPpuWriteFromVmain_8cpp_a656060ac4d2a6a55c54133f7f0cf7f12}{Test}} (P\+P\+U\+\_\+write\+\_\+2, vmain\+\_\+addressremaping\+\_\+null\+\_\+else\+\_\+full)
+\item 
+\mbox{\hyperlink{testPpuWriteFromVmain_8cpp_ab069fac3357175cde6fcdffec87761c1}{Test}} (P\+P\+U\+\_\+write\+\_\+2, vmain\+\_\+incrementamount\+\_\+null\+\_\+else\+\_\+full)
+\item 
+\mbox{\hyperlink{testPpuWriteFromVmain_8cpp_aee6154e2d7a9e3d37b95d1aae56cf47a}{Test}} (P\+P\+U\+\_\+write\+\_\+2, vmadd\+\_\+full\+\_\+data)
+\item 
+\mbox{\hyperlink{testPpuWriteFromVmain_8cpp_aa1e7496918745041916d6f6a671d2d57}{Test}} (P\+P\+U\+\_\+write\+\_\+2, vmadd\+\_\+full\+\_\+high\+\_\+byte\+\_\+null)
+\item 
+\mbox{\hyperlink{testPpuWriteFromVmain_8cpp_ab328527b2cecc4f808b2a0c364d5094e}{Test}} (P\+P\+U\+\_\+write\+\_\+2, vmdata\+\_\+full\+\_\+data)
+\item 
+\mbox{\hyperlink{testPpuWriteFromVmain_8cpp_a0cfa6d498927960104284448c902dec1}{Test}} (P\+P\+U\+\_\+write\+\_\+2, vmdata\+\_\+full\+\_\+high\+\_\+byte\+\_\+null)
+\item 
+\mbox{\hyperlink{testPpuWriteFromVmain_8cpp_abb48178b7e56954992ab0adf1143bd09}{Test}} (P\+P\+U\+\_\+write\+\_\+2, cgadd\+\_\+full\+\_\+high\+\_\+byte\+\_\+null)
+\item 
+\mbox{\hyperlink{testPpuWriteFromVmain_8cpp_af1603595e8622b0b057464f33c4185bb}{Test}} (P\+P\+U\+\_\+write\+\_\+2, cgdata\+\_\+data\+\_\+full)
+\item 
+\mbox{\hyperlink{testPpuWriteFromVmain_8cpp_a1c9f09f5696e172f13ad606f568cdfb2}{Test}} (P\+P\+U\+\_\+write\+\_\+2, m7sel\+\_\+data\+\_\+full)
+\item 
+\mbox{\hyperlink{testPpuWriteFromVmain_8cpp_a9fe231edf40733279156b57864052dd2}{Test}} (P\+P\+U\+\_\+write\+\_\+2, m7sel\+\_\+data\+\_\+actual)
+\item 
+\mbox{\hyperlink{testPpuWriteFromVmain_8cpp_a50bc8e7b98ef0369161a63618d772af3}{Test}} (P\+P\+U\+\_\+write\+\_\+2, w12sel\+\_\+data\+\_\+full)
+\item 
+\mbox{\hyperlink{testPpuWriteFromVmain_8cpp_aa7e7b7ab86c7cef610b473710bb20661}{Test}} (P\+P\+U\+\_\+write\+\_\+2, w34sel\+\_\+data\+\_\+full)
+\item 
+\mbox{\hyperlink{testPpuWriteFromVmain_8cpp_a90f30a9f0798ae7ca9b4713a31eba9fc}{Test}} (P\+P\+U\+\_\+write\+\_\+2, wobjsel\+\_\+data\+\_\+full)
+\item 
+\mbox{\hyperlink{testPpuWriteFromVmain_8cpp_a7bcb4444697e434b79687cdc990ec2c8}{Test}} (P\+P\+U\+\_\+write\+\_\+2, wbglog\+\_\+data\+\_\+full)
+\item 
+\mbox{\hyperlink{testPpuWriteFromVmain_8cpp_aaa3708020bb3abb7ddfef0edea84d970}{Test}} (P\+P\+U\+\_\+write\+\_\+2, wobjlog\+\_\+data\+\_\+full)
+\item 
+\mbox{\hyperlink{testPpuWriteFromVmain_8cpp_aa7307a6a5ba264efb9236613b71fd9c0}{Test}} (P\+P\+U\+\_\+write\+\_\+2, tm\+\_\+data\+\_\+full)
+\item 
+\mbox{\hyperlink{testPpuWriteFromVmain_8cpp_a2bdccaa917f0329de41fc364b4a16f73}{Test}} (P\+P\+U\+\_\+write\+\_\+2, ts\+\_\+data\+\_\+full)
+\item 
+\mbox{\hyperlink{testPpuWriteFromVmain_8cpp_a6dd1900e2531734f69cd96107af800ac}{Test}} (P\+P\+U\+\_\+write\+\_\+2, tmw\+\_\+data\+\_\+full)
+\item 
+\mbox{\hyperlink{testPpuWriteFromVmain_8cpp_af69582f45764939aad20197e854f81ad}{Test}} (P\+P\+U\+\_\+write\+\_\+2, tsw\+\_\+data\+\_\+full)
+\item 
+\mbox{\hyperlink{testPpuWriteFromVmain_8cpp_a1c72cefdb910b9895fb04c83a8e96a90}{Test}} (P\+P\+U\+\_\+write\+\_\+2, cgwsel\+\_\+data\+\_\+full)
+\item 
+\mbox{\hyperlink{testPpuWriteFromVmain_8cpp_a6c03b19356fb2f0ab11cead9e36cd45d}{Test}} (P\+P\+U\+\_\+write\+\_\+2, cgadsub\+\_\+data\+\_\+full)
+\item 
+\mbox{\hyperlink{testPpuWriteFromVmain_8cpp_a0a0af2ba888a286952afdf06322e1a24}{Test}} (P\+P\+U\+\_\+write\+\_\+2, coldata\+\_\+data\+\_\+full)
+\item 
+\mbox{\hyperlink{testPpuWriteFromVmain_8cpp_a6f80d83736811a6e050c58468d2bafc9}{Test}} (P\+P\+U\+\_\+write\+\_\+2, setini\+\_\+data\+\_\+full)
+\item 
+\mbox{\hyperlink{testPpuWriteFromVmain_8cpp_a15eb68c249379b6c506ff0a526838271}{Test}} (P\+P\+U\+\_\+write\+\_\+2, m7a\+\_\+data\+\_\+full)
+\item 
+\mbox{\hyperlink{testPpuWriteFromVmain_8cpp_ad26a0ba2b265d43735536b323285f9cd}{Test}} (P\+P\+U\+\_\+write\+\_\+2, m7c\+\_\+data\+\_\+low\+\_\+and\+\_\+high\+\_\+byte)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{testPpuWriteFromVmain_8cpp_abb48178b7e56954992ab0adf1143bd09}\label{testPpuWriteFromVmain_8cpp_abb48178b7e56954992ab0adf1143bd09}} 
+\index{testPpuWriteFromVmain.cpp@{testPpuWriteFromVmain.cpp}!Test@{Test}}
+\index{Test@{Test}!testPpuWriteFromVmain.cpp@{testPpuWriteFromVmain.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [1/27]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{P\+P\+U\+\_\+write\+\_\+2}]{,  }\item[{cgadd\+\_\+full\+\_\+high\+\_\+byte\+\_\+null}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testPpuWriteFromVmain_8cpp_a6c03b19356fb2f0ab11cead9e36cd45d}\label{testPpuWriteFromVmain_8cpp_a6c03b19356fb2f0ab11cead9e36cd45d}} 
+\index{testPpuWriteFromVmain.cpp@{testPpuWriteFromVmain.cpp}!Test@{Test}}
+\index{Test@{Test}!testPpuWriteFromVmain.cpp@{testPpuWriteFromVmain.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [2/27]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{P\+P\+U\+\_\+write\+\_\+2}]{,  }\item[{cgadsub\+\_\+data\+\_\+full}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testPpuWriteFromVmain_8cpp_af1603595e8622b0b057464f33c4185bb}\label{testPpuWriteFromVmain_8cpp_af1603595e8622b0b057464f33c4185bb}} 
+\index{testPpuWriteFromVmain.cpp@{testPpuWriteFromVmain.cpp}!Test@{Test}}
+\index{Test@{Test}!testPpuWriteFromVmain.cpp@{testPpuWriteFromVmain.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [3/27]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{P\+P\+U\+\_\+write\+\_\+2}]{,  }\item[{cgdata\+\_\+data\+\_\+full}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testPpuWriteFromVmain_8cpp_a1c72cefdb910b9895fb04c83a8e96a90}\label{testPpuWriteFromVmain_8cpp_a1c72cefdb910b9895fb04c83a8e96a90}} 
+\index{testPpuWriteFromVmain.cpp@{testPpuWriteFromVmain.cpp}!Test@{Test}}
+\index{Test@{Test}!testPpuWriteFromVmain.cpp@{testPpuWriteFromVmain.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [4/27]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{P\+P\+U\+\_\+write\+\_\+2}]{,  }\item[{cgwsel\+\_\+data\+\_\+full}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testPpuWriteFromVmain_8cpp_a0a0af2ba888a286952afdf06322e1a24}\label{testPpuWriteFromVmain_8cpp_a0a0af2ba888a286952afdf06322e1a24}} 
+\index{testPpuWriteFromVmain.cpp@{testPpuWriteFromVmain.cpp}!Test@{Test}}
+\index{Test@{Test}!testPpuWriteFromVmain.cpp@{testPpuWriteFromVmain.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [5/27]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{P\+P\+U\+\_\+write\+\_\+2}]{,  }\item[{coldata\+\_\+data\+\_\+full}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testPpuWriteFromVmain_8cpp_a15eb68c249379b6c506ff0a526838271}\label{testPpuWriteFromVmain_8cpp_a15eb68c249379b6c506ff0a526838271}} 
+\index{testPpuWriteFromVmain.cpp@{testPpuWriteFromVmain.cpp}!Test@{Test}}
+\index{Test@{Test}!testPpuWriteFromVmain.cpp@{testPpuWriteFromVmain.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [6/27]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{P\+P\+U\+\_\+write\+\_\+2}]{,  }\item[{m7a\+\_\+data\+\_\+full}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testPpuWriteFromVmain_8cpp_ad26a0ba2b265d43735536b323285f9cd}\label{testPpuWriteFromVmain_8cpp_ad26a0ba2b265d43735536b323285f9cd}} 
+\index{testPpuWriteFromVmain.cpp@{testPpuWriteFromVmain.cpp}!Test@{Test}}
+\index{Test@{Test}!testPpuWriteFromVmain.cpp@{testPpuWriteFromVmain.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [7/27]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{P\+P\+U\+\_\+write\+\_\+2}]{,  }\item[{m7c\+\_\+data\+\_\+low\+\_\+and\+\_\+high\+\_\+byte}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testPpuWriteFromVmain_8cpp_a9fe231edf40733279156b57864052dd2}\label{testPpuWriteFromVmain_8cpp_a9fe231edf40733279156b57864052dd2}} 
+\index{testPpuWriteFromVmain.cpp@{testPpuWriteFromVmain.cpp}!Test@{Test}}
+\index{Test@{Test}!testPpuWriteFromVmain.cpp@{testPpuWriteFromVmain.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [8/27]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{P\+P\+U\+\_\+write\+\_\+2}]{,  }\item[{m7sel\+\_\+data\+\_\+actual}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testPpuWriteFromVmain_8cpp_a1c9f09f5696e172f13ad606f568cdfb2}\label{testPpuWriteFromVmain_8cpp_a1c9f09f5696e172f13ad606f568cdfb2}} 
+\index{testPpuWriteFromVmain.cpp@{testPpuWriteFromVmain.cpp}!Test@{Test}}
+\index{Test@{Test}!testPpuWriteFromVmain.cpp@{testPpuWriteFromVmain.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [9/27]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{P\+P\+U\+\_\+write\+\_\+2}]{,  }\item[{m7sel\+\_\+data\+\_\+full}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testPpuWriteFromVmain_8cpp_a6f80d83736811a6e050c58468d2bafc9}\label{testPpuWriteFromVmain_8cpp_a6f80d83736811a6e050c58468d2bafc9}} 
+\index{testPpuWriteFromVmain.cpp@{testPpuWriteFromVmain.cpp}!Test@{Test}}
+\index{Test@{Test}!testPpuWriteFromVmain.cpp@{testPpuWriteFromVmain.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [10/27]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{P\+P\+U\+\_\+write\+\_\+2}]{,  }\item[{setini\+\_\+data\+\_\+full}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testPpuWriteFromVmain_8cpp_aa7307a6a5ba264efb9236613b71fd9c0}\label{testPpuWriteFromVmain_8cpp_aa7307a6a5ba264efb9236613b71fd9c0}} 
+\index{testPpuWriteFromVmain.cpp@{testPpuWriteFromVmain.cpp}!Test@{Test}}
+\index{Test@{Test}!testPpuWriteFromVmain.cpp@{testPpuWriteFromVmain.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [11/27]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{P\+P\+U\+\_\+write\+\_\+2}]{,  }\item[{tm\+\_\+data\+\_\+full}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testPpuWriteFromVmain_8cpp_a6dd1900e2531734f69cd96107af800ac}\label{testPpuWriteFromVmain_8cpp_a6dd1900e2531734f69cd96107af800ac}} 
+\index{testPpuWriteFromVmain.cpp@{testPpuWriteFromVmain.cpp}!Test@{Test}}
+\index{Test@{Test}!testPpuWriteFromVmain.cpp@{testPpuWriteFromVmain.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [12/27]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{P\+P\+U\+\_\+write\+\_\+2}]{,  }\item[{tmw\+\_\+data\+\_\+full}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testPpuWriteFromVmain_8cpp_a2bdccaa917f0329de41fc364b4a16f73}\label{testPpuWriteFromVmain_8cpp_a2bdccaa917f0329de41fc364b4a16f73}} 
+\index{testPpuWriteFromVmain.cpp@{testPpuWriteFromVmain.cpp}!Test@{Test}}
+\index{Test@{Test}!testPpuWriteFromVmain.cpp@{testPpuWriteFromVmain.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [13/27]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{P\+P\+U\+\_\+write\+\_\+2}]{,  }\item[{ts\+\_\+data\+\_\+full}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testPpuWriteFromVmain_8cpp_af69582f45764939aad20197e854f81ad}\label{testPpuWriteFromVmain_8cpp_af69582f45764939aad20197e854f81ad}} 
+\index{testPpuWriteFromVmain.cpp@{testPpuWriteFromVmain.cpp}!Test@{Test}}
+\index{Test@{Test}!testPpuWriteFromVmain.cpp@{testPpuWriteFromVmain.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [14/27]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{P\+P\+U\+\_\+write\+\_\+2}]{,  }\item[{tsw\+\_\+data\+\_\+full}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testPpuWriteFromVmain_8cpp_aee6154e2d7a9e3d37b95d1aae56cf47a}\label{testPpuWriteFromVmain_8cpp_aee6154e2d7a9e3d37b95d1aae56cf47a}} 
+\index{testPpuWriteFromVmain.cpp@{testPpuWriteFromVmain.cpp}!Test@{Test}}
+\index{Test@{Test}!testPpuWriteFromVmain.cpp@{testPpuWriteFromVmain.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [15/27]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{P\+P\+U\+\_\+write\+\_\+2}]{,  }\item[{vmadd\+\_\+full\+\_\+data}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testPpuWriteFromVmain_8cpp_aa1e7496918745041916d6f6a671d2d57}\label{testPpuWriteFromVmain_8cpp_aa1e7496918745041916d6f6a671d2d57}} 
+\index{testPpuWriteFromVmain.cpp@{testPpuWriteFromVmain.cpp}!Test@{Test}}
+\index{Test@{Test}!testPpuWriteFromVmain.cpp@{testPpuWriteFromVmain.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [16/27]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{P\+P\+U\+\_\+write\+\_\+2}]{,  }\item[{vmadd\+\_\+full\+\_\+high\+\_\+byte\+\_\+null}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testPpuWriteFromVmain_8cpp_a656060ac4d2a6a55c54133f7f0cf7f12}\label{testPpuWriteFromVmain_8cpp_a656060ac4d2a6a55c54133f7f0cf7f12}} 
+\index{testPpuWriteFromVmain.cpp@{testPpuWriteFromVmain.cpp}!Test@{Test}}
+\index{Test@{Test}!testPpuWriteFromVmain.cpp@{testPpuWriteFromVmain.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [17/27]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{P\+P\+U\+\_\+write\+\_\+2}]{,  }\item[{vmain\+\_\+addressremaping\+\_\+null\+\_\+else\+\_\+full}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testPpuWriteFromVmain_8cpp_ab10690b0808efeec5da91f7ef7aae5b1}\label{testPpuWriteFromVmain_8cpp_ab10690b0808efeec5da91f7ef7aae5b1}} 
+\index{testPpuWriteFromVmain.cpp@{testPpuWriteFromVmain.cpp}!Test@{Test}}
+\index{Test@{Test}!testPpuWriteFromVmain.cpp@{testPpuWriteFromVmain.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [18/27]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{P\+P\+U\+\_\+write\+\_\+2}]{,  }\item[{vmain\+\_\+data\+\_\+full}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testPpuWriteFromVmain_8cpp_ab069fac3357175cde6fcdffec87761c1}\label{testPpuWriteFromVmain_8cpp_ab069fac3357175cde6fcdffec87761c1}} 
+\index{testPpuWriteFromVmain.cpp@{testPpuWriteFromVmain.cpp}!Test@{Test}}
+\index{Test@{Test}!testPpuWriteFromVmain.cpp@{testPpuWriteFromVmain.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [19/27]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{P\+P\+U\+\_\+write\+\_\+2}]{,  }\item[{vmain\+\_\+incrementamount\+\_\+null\+\_\+else\+\_\+full}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testPpuWriteFromVmain_8cpp_a17bb7171e5d2ff2c39acea87e86fc5c5}\label{testPpuWriteFromVmain_8cpp_a17bb7171e5d2ff2c39acea87e86fc5c5}} 
+\index{testPpuWriteFromVmain.cpp@{testPpuWriteFromVmain.cpp}!Test@{Test}}
+\index{Test@{Test}!testPpuWriteFromVmain.cpp@{testPpuWriteFromVmain.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [20/27]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{P\+P\+U\+\_\+write\+\_\+2}]{,  }\item[{vmain\+\_\+incrementmode\+\_\+off\+\_\+false\+\_\+else\+\_\+full}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testPpuWriteFromVmain_8cpp_ab328527b2cecc4f808b2a0c364d5094e}\label{testPpuWriteFromVmain_8cpp_ab328527b2cecc4f808b2a0c364d5094e}} 
+\index{testPpuWriteFromVmain.cpp@{testPpuWriteFromVmain.cpp}!Test@{Test}}
+\index{Test@{Test}!testPpuWriteFromVmain.cpp@{testPpuWriteFromVmain.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [21/27]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{P\+P\+U\+\_\+write\+\_\+2}]{,  }\item[{vmdata\+\_\+full\+\_\+data}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testPpuWriteFromVmain_8cpp_a0cfa6d498927960104284448c902dec1}\label{testPpuWriteFromVmain_8cpp_a0cfa6d498927960104284448c902dec1}} 
+\index{testPpuWriteFromVmain.cpp@{testPpuWriteFromVmain.cpp}!Test@{Test}}
+\index{Test@{Test}!testPpuWriteFromVmain.cpp@{testPpuWriteFromVmain.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [22/27]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{P\+P\+U\+\_\+write\+\_\+2}]{,  }\item[{vmdata\+\_\+full\+\_\+high\+\_\+byte\+\_\+null}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testPpuWriteFromVmain_8cpp_a50bc8e7b98ef0369161a63618d772af3}\label{testPpuWriteFromVmain_8cpp_a50bc8e7b98ef0369161a63618d772af3}} 
+\index{testPpuWriteFromVmain.cpp@{testPpuWriteFromVmain.cpp}!Test@{Test}}
+\index{Test@{Test}!testPpuWriteFromVmain.cpp@{testPpuWriteFromVmain.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [23/27]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{P\+P\+U\+\_\+write\+\_\+2}]{,  }\item[{w12sel\+\_\+data\+\_\+full}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testPpuWriteFromVmain_8cpp_aa7e7b7ab86c7cef610b473710bb20661}\label{testPpuWriteFromVmain_8cpp_aa7e7b7ab86c7cef610b473710bb20661}} 
+\index{testPpuWriteFromVmain.cpp@{testPpuWriteFromVmain.cpp}!Test@{Test}}
+\index{Test@{Test}!testPpuWriteFromVmain.cpp@{testPpuWriteFromVmain.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [24/27]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{P\+P\+U\+\_\+write\+\_\+2}]{,  }\item[{w34sel\+\_\+data\+\_\+full}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testPpuWriteFromVmain_8cpp_a7bcb4444697e434b79687cdc990ec2c8}\label{testPpuWriteFromVmain_8cpp_a7bcb4444697e434b79687cdc990ec2c8}} 
+\index{testPpuWriteFromVmain.cpp@{testPpuWriteFromVmain.cpp}!Test@{Test}}
+\index{Test@{Test}!testPpuWriteFromVmain.cpp@{testPpuWriteFromVmain.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [25/27]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{P\+P\+U\+\_\+write\+\_\+2}]{,  }\item[{wbglog\+\_\+data\+\_\+full}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testPpuWriteFromVmain_8cpp_aaa3708020bb3abb7ddfef0edea84d970}\label{testPpuWriteFromVmain_8cpp_aaa3708020bb3abb7ddfef0edea84d970}} 
+\index{testPpuWriteFromVmain.cpp@{testPpuWriteFromVmain.cpp}!Test@{Test}}
+\index{Test@{Test}!testPpuWriteFromVmain.cpp@{testPpuWriteFromVmain.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [26/27]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{P\+P\+U\+\_\+write\+\_\+2}]{,  }\item[{wobjlog\+\_\+data\+\_\+full}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testPpuWriteFromVmain_8cpp_a90f30a9f0798ae7ca9b4713a31eba9fc}\label{testPpuWriteFromVmain_8cpp_a90f30a9f0798ae7ca9b4713a31eba9fc}} 
+\index{testPpuWriteFromVmain.cpp@{testPpuWriteFromVmain.cpp}!Test@{Test}}
+\index{Test@{Test}!testPpuWriteFromVmain.cpp@{testPpuWriteFromVmain.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [27/27]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{P\+P\+U\+\_\+write\+\_\+2}]{,  }\item[{wobjsel\+\_\+data\+\_\+full}]{ }\end{DoxyParamCaption})}
+

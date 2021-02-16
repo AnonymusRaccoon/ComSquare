@@ -1,0 +1,254 @@
+\hypertarget{structComSquare_1_1APU_1_1InternalRegisters}{}\doxysection{Com\+Square\+::A\+PU\+::Internal\+Registers Struct Reference}
+\label{structComSquare_1_1APU_1_1InternalRegisters}\index{ComSquare::APU::InternalRegisters@{ComSquare::APU::InternalRegisters}}
+
+
+{\ttfamily \#include $<$A\+P\+U.\+hpp$>$}
+
+
+
+Collaboration diagram for Com\+Square\+::A\+PU\+::Internal\+Registers\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{structComSquare_1_1APU_1_1InternalRegisters__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \mbox{\hyperlink{structComSquare_1_1APU_1_1InternalRegisters_a5b3fa47e6776aaffdee96ff8aeaa5733}{x}}
+\begin{DoxyCompactList}\small\item\em The X index register. \end{DoxyCompactList}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>uint8\_t \mbox{\hyperlink{structComSquare_1_1APU_1_1InternalRegisters_a4e20011d86fc45e3c903f8ee24eb9e8f}{a}}\\
+\>\>\>{\em The Accumulator register. }\\
+\>\>uint8\_t \mbox{\hyperlink{structComSquare_1_1APU_1_1InternalRegisters_afa933d17a9a29e940fc173655fc2306e}{y}}\\
+\>\>\>{\em The Y Index register. }\\
+\>\} \\
+\>uint16\_t \mbox{\hyperlink{structComSquare_1_1APU_1_1InternalRegisters_ad5543623e5cd12a16a5cda69e8426607}{ya}}\\
+\}; \\
+
+\end{tabbing}\begin{DoxyCompactList}\small\item\em The YA register. \end{DoxyCompactList}\item 
+uint8\+\_\+t \mbox{\hyperlink{structComSquare_1_1APU_1_1InternalRegisters_aca9d089a6868f8d03d4bfc1b8b9ee44e}{sp}}
+\begin{DoxyCompactList}\small\item\em The Stack pointer register. \end{DoxyCompactList}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>uint8\_t \mbox{\hyperlink{structComSquare_1_1APU_1_1InternalRegisters_a75be9aa7fa2778d061a07921d854d402}{pcl}}\\
+\>\>uint8\_t \mbox{\hyperlink{structComSquare_1_1APU_1_1InternalRegisters_a45c2751b6ced06d2aa5b3ee6e936c017}{pch}}\\
+\>\} \\
+\>uint16\_t \mbox{\hyperlink{structComSquare_1_1APU_1_1InternalRegisters_a069c88e8534ac735bbf36938fb64d8dc}{pc}}\\
+\}; \\
+
+\end{tabbing}\begin{DoxyCompactList}\small\item\em The Program counter register. \end{DoxyCompactList}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>struct \{\\
+\>\>bool \mbox{\hyperlink{structComSquare_1_1APU_1_1InternalRegisters_ab9f96c7631ce7c1a082a98c08c0568f6}{n}}: 1\\
+\>\>\>{\em Negative flag. }\\
+\>\>bool \mbox{\hyperlink{structComSquare_1_1APU_1_1InternalRegisters_a4aa3591c0cf25943e23f8b1af4934ae1}{v}}: 1\\
+\>\>\>{\em Overflow flag. }\\
+\>\>bool \mbox{\hyperlink{structComSquare_1_1APU_1_1InternalRegisters_a43e16dcf09e8d9cce1eb5fe66bc45ce1}{p}}: 1\\
+\>\>\>{\em Direct page flag. }\\
+\>\>bool \mbox{\hyperlink{structComSquare_1_1APU_1_1InternalRegisters_ae4f7134bc7006a8f917ae64fcec78593}{b}}: 1\\
+\>\>\>{\em Break flag. }\\
+\>\>bool \mbox{\hyperlink{structComSquare_1_1APU_1_1InternalRegisters_afdf7a1aa128bd7f174365a56ff531d76}{h}}: 1\\
+\>\>\>{\em Half carry flag. }\\
+\>\>bool \mbox{\hyperlink{structComSquare_1_1APU_1_1InternalRegisters_add5f1c0a0074e3baaec75b199fb9fe54}{i}}: 1\\
+\>\>\>{\em Interrupt enabled flag. }\\
+\>\>bool \mbox{\hyperlink{structComSquare_1_1APU_1_1InternalRegisters_a3b07ba0e67d1cb3e28e54fa62b80a29c}{z}}: 1\\
+\>\>\>{\em Zero flag. }\\
+\>\>bool \mbox{\hyperlink{structComSquare_1_1APU_1_1InternalRegisters_abdcd608182bac9f247c776ff20419e53}{c}}: 1\\
+\>\>\>{\em Carry flag. }\\
+\>\} \\
+\>uint8\_t \mbox{\hyperlink{structComSquare_1_1APU_1_1InternalRegisters_a6162fe2d8aaba29afd23d306ebc80356}{psw}}\\
+\}; \\
+
+\end{tabbing}\begin{DoxyCompactList}\small\item\em Program Status Word register. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1InternalRegisters_afa71acaadff32354b4ec07e2061ecd7c}\label{structComSquare_1_1APU_1_1InternalRegisters_afa71acaadff32354b4ec07e2061ecd7c}} 
+\doxysubsubsection{\texorpdfstring{"@1}{@1}}
+{\footnotesize\ttfamily union \{ ... \} }
+
+
+
+The YA register. 
+
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1InternalRegisters_aac6a6872e5f157ea821ac2953c7f3e86}\label{structComSquare_1_1APU_1_1InternalRegisters_aac6a6872e5f157ea821ac2953c7f3e86}} 
+\doxysubsubsection{\texorpdfstring{"@3}{@3}}
+{\footnotesize\ttfamily union \{ ... \} }
+
+
+
+The Program counter register. 
+
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1InternalRegisters_a4daeb5efeee9977be39b7a5f01b363d3}\label{structComSquare_1_1APU_1_1InternalRegisters_a4daeb5efeee9977be39b7a5f01b363d3}} 
+\doxysubsubsection{\texorpdfstring{"@5}{@5}}
+{\footnotesize\ttfamily union \{ ... \} }
+
+
+
+Program Status Word register. 
+
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1InternalRegisters_a4e20011d86fc45e3c903f8ee24eb9e8f}\label{structComSquare_1_1APU_1_1InternalRegisters_a4e20011d86fc45e3c903f8ee24eb9e8f}} 
+\index{ComSquare::APU::InternalRegisters@{ComSquare::APU::InternalRegisters}!a@{a}}
+\index{a@{a}!ComSquare::APU::InternalRegisters@{ComSquare::APU::InternalRegisters}}
+\doxysubsubsection{\texorpdfstring{a}{a}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+A\+P\+U\+::\+Internal\+Registers\+::a}
+
+
+
+The Accumulator register. 
+
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1InternalRegisters_ae4f7134bc7006a8f917ae64fcec78593}\label{structComSquare_1_1APU_1_1InternalRegisters_ae4f7134bc7006a8f917ae64fcec78593}} 
+\index{ComSquare::APU::InternalRegisters@{ComSquare::APU::InternalRegisters}!b@{b}}
+\index{b@{b}!ComSquare::APU::InternalRegisters@{ComSquare::APU::InternalRegisters}}
+\doxysubsubsection{\texorpdfstring{b}{b}}
+{\footnotesize\ttfamily bool Com\+Square\+::\+A\+P\+U\+::\+Internal\+Registers\+::b}
+
+
+
+Break flag. 
+
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1InternalRegisters_abdcd608182bac9f247c776ff20419e53}\label{structComSquare_1_1APU_1_1InternalRegisters_abdcd608182bac9f247c776ff20419e53}} 
+\index{ComSquare::APU::InternalRegisters@{ComSquare::APU::InternalRegisters}!c@{c}}
+\index{c@{c}!ComSquare::APU::InternalRegisters@{ComSquare::APU::InternalRegisters}}
+\doxysubsubsection{\texorpdfstring{c}{c}}
+{\footnotesize\ttfamily bool Com\+Square\+::\+A\+P\+U\+::\+Internal\+Registers\+::c}
+
+
+
+Carry flag. 
+
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1InternalRegisters_afdf7a1aa128bd7f174365a56ff531d76}\label{structComSquare_1_1APU_1_1InternalRegisters_afdf7a1aa128bd7f174365a56ff531d76}} 
+\index{ComSquare::APU::InternalRegisters@{ComSquare::APU::InternalRegisters}!h@{h}}
+\index{h@{h}!ComSquare::APU::InternalRegisters@{ComSquare::APU::InternalRegisters}}
+\doxysubsubsection{\texorpdfstring{h}{h}}
+{\footnotesize\ttfamily bool Com\+Square\+::\+A\+P\+U\+::\+Internal\+Registers\+::h}
+
+
+
+Half carry flag. 
+
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1InternalRegisters_add5f1c0a0074e3baaec75b199fb9fe54}\label{structComSquare_1_1APU_1_1InternalRegisters_add5f1c0a0074e3baaec75b199fb9fe54}} 
+\index{ComSquare::APU::InternalRegisters@{ComSquare::APU::InternalRegisters}!i@{i}}
+\index{i@{i}!ComSquare::APU::InternalRegisters@{ComSquare::APU::InternalRegisters}}
+\doxysubsubsection{\texorpdfstring{i}{i}}
+{\footnotesize\ttfamily bool Com\+Square\+::\+A\+P\+U\+::\+Internal\+Registers\+::i}
+
+
+
+Interrupt enabled flag. 
+
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1InternalRegisters_ab9f96c7631ce7c1a082a98c08c0568f6}\label{structComSquare_1_1APU_1_1InternalRegisters_ab9f96c7631ce7c1a082a98c08c0568f6}} 
+\index{ComSquare::APU::InternalRegisters@{ComSquare::APU::InternalRegisters}!n@{n}}
+\index{n@{n}!ComSquare::APU::InternalRegisters@{ComSquare::APU::InternalRegisters}}
+\doxysubsubsection{\texorpdfstring{n}{n}}
+{\footnotesize\ttfamily bool Com\+Square\+::\+A\+P\+U\+::\+Internal\+Registers\+::n}
+
+
+
+Negative flag. 
+
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1InternalRegisters_a43e16dcf09e8d9cce1eb5fe66bc45ce1}\label{structComSquare_1_1APU_1_1InternalRegisters_a43e16dcf09e8d9cce1eb5fe66bc45ce1}} 
+\index{ComSquare::APU::InternalRegisters@{ComSquare::APU::InternalRegisters}!p@{p}}
+\index{p@{p}!ComSquare::APU::InternalRegisters@{ComSquare::APU::InternalRegisters}}
+\doxysubsubsection{\texorpdfstring{p}{p}}
+{\footnotesize\ttfamily bool Com\+Square\+::\+A\+P\+U\+::\+Internal\+Registers\+::p}
+
+
+
+Direct page flag. 
+
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1InternalRegisters_a069c88e8534ac735bbf36938fb64d8dc}\label{structComSquare_1_1APU_1_1InternalRegisters_a069c88e8534ac735bbf36938fb64d8dc}} 
+\index{ComSquare::APU::InternalRegisters@{ComSquare::APU::InternalRegisters}!pc@{pc}}
+\index{pc@{pc}!ComSquare::APU::InternalRegisters@{ComSquare::APU::InternalRegisters}}
+\doxysubsubsection{\texorpdfstring{pc}{pc}}
+{\footnotesize\ttfamily uint16\+\_\+t Com\+Square\+::\+A\+P\+U\+::\+Internal\+Registers\+::pc}
+
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1InternalRegisters_a45c2751b6ced06d2aa5b3ee6e936c017}\label{structComSquare_1_1APU_1_1InternalRegisters_a45c2751b6ced06d2aa5b3ee6e936c017}} 
+\index{ComSquare::APU::InternalRegisters@{ComSquare::APU::InternalRegisters}!pch@{pch}}
+\index{pch@{pch}!ComSquare::APU::InternalRegisters@{ComSquare::APU::InternalRegisters}}
+\doxysubsubsection{\texorpdfstring{pch}{pch}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+A\+P\+U\+::\+Internal\+Registers\+::pch}
+
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1InternalRegisters_a75be9aa7fa2778d061a07921d854d402}\label{structComSquare_1_1APU_1_1InternalRegisters_a75be9aa7fa2778d061a07921d854d402}} 
+\index{ComSquare::APU::InternalRegisters@{ComSquare::APU::InternalRegisters}!pcl@{pcl}}
+\index{pcl@{pcl}!ComSquare::APU::InternalRegisters@{ComSquare::APU::InternalRegisters}}
+\doxysubsubsection{\texorpdfstring{pcl}{pcl}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+A\+P\+U\+::\+Internal\+Registers\+::pcl}
+
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1InternalRegisters_a6162fe2d8aaba29afd23d306ebc80356}\label{structComSquare_1_1APU_1_1InternalRegisters_a6162fe2d8aaba29afd23d306ebc80356}} 
+\index{ComSquare::APU::InternalRegisters@{ComSquare::APU::InternalRegisters}!psw@{psw}}
+\index{psw@{psw}!ComSquare::APU::InternalRegisters@{ComSquare::APU::InternalRegisters}}
+\doxysubsubsection{\texorpdfstring{psw}{psw}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+A\+P\+U\+::\+Internal\+Registers\+::psw}
+
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1InternalRegisters_aca9d089a6868f8d03d4bfc1b8b9ee44e}\label{structComSquare_1_1APU_1_1InternalRegisters_aca9d089a6868f8d03d4bfc1b8b9ee44e}} 
+\index{ComSquare::APU::InternalRegisters@{ComSquare::APU::InternalRegisters}!sp@{sp}}
+\index{sp@{sp}!ComSquare::APU::InternalRegisters@{ComSquare::APU::InternalRegisters}}
+\doxysubsubsection{\texorpdfstring{sp}{sp}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+A\+P\+U\+::\+Internal\+Registers\+::sp}
+
+
+
+The Stack pointer register. 
+
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1InternalRegisters_a4aa3591c0cf25943e23f8b1af4934ae1}\label{structComSquare_1_1APU_1_1InternalRegisters_a4aa3591c0cf25943e23f8b1af4934ae1}} 
+\index{ComSquare::APU::InternalRegisters@{ComSquare::APU::InternalRegisters}!v@{v}}
+\index{v@{v}!ComSquare::APU::InternalRegisters@{ComSquare::APU::InternalRegisters}}
+\doxysubsubsection{\texorpdfstring{v}{v}}
+{\footnotesize\ttfamily bool Com\+Square\+::\+A\+P\+U\+::\+Internal\+Registers\+::v}
+
+
+
+Overflow flag. 
+
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1InternalRegisters_a5b3fa47e6776aaffdee96ff8aeaa5733}\label{structComSquare_1_1APU_1_1InternalRegisters_a5b3fa47e6776aaffdee96ff8aeaa5733}} 
+\index{ComSquare::APU::InternalRegisters@{ComSquare::APU::InternalRegisters}!x@{x}}
+\index{x@{x}!ComSquare::APU::InternalRegisters@{ComSquare::APU::InternalRegisters}}
+\doxysubsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+A\+P\+U\+::\+Internal\+Registers\+::x}
+
+
+
+The X index register. 
+
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1InternalRegisters_afa933d17a9a29e940fc173655fc2306e}\label{structComSquare_1_1APU_1_1InternalRegisters_afa933d17a9a29e940fc173655fc2306e}} 
+\index{ComSquare::APU::InternalRegisters@{ComSquare::APU::InternalRegisters}!y@{y}}
+\index{y@{y}!ComSquare::APU::InternalRegisters@{ComSquare::APU::InternalRegisters}}
+\doxysubsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily uint8\+\_\+t Com\+Square\+::\+A\+P\+U\+::\+Internal\+Registers\+::y}
+
+
+
+The Y Index register. 
+
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1InternalRegisters_ad5543623e5cd12a16a5cda69e8426607}\label{structComSquare_1_1APU_1_1InternalRegisters_ad5543623e5cd12a16a5cda69e8426607}} 
+\index{ComSquare::APU::InternalRegisters@{ComSquare::APU::InternalRegisters}!ya@{ya}}
+\index{ya@{ya}!ComSquare::APU::InternalRegisters@{ComSquare::APU::InternalRegisters}}
+\doxysubsubsection{\texorpdfstring{ya}{ya}}
+{\footnotesize\ttfamily uint16\+\_\+t Com\+Square\+::\+A\+P\+U\+::\+Internal\+Registers\+::ya}
+
+\mbox{\Hypertarget{structComSquare_1_1APU_1_1InternalRegisters_a3b07ba0e67d1cb3e28e54fa62b80a29c}\label{structComSquare_1_1APU_1_1InternalRegisters_a3b07ba0e67d1cb3e28e54fa62b80a29c}} 
+\index{ComSquare::APU::InternalRegisters@{ComSquare::APU::InternalRegisters}!z@{z}}
+\index{z@{z}!ComSquare::APU::InternalRegisters@{ComSquare::APU::InternalRegisters}}
+\doxysubsubsection{\texorpdfstring{z}{z}}
+{\footnotesize\ttfamily bool Com\+Square\+::\+A\+P\+U\+::\+Internal\+Registers\+::z}
+
+
+
+Zero flag. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+sources/\+A\+P\+U/\mbox{\hyperlink{APU_8hpp}{A\+P\+U.\+hpp}}\end{DoxyCompactItemize}

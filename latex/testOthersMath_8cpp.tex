@@ -1,0 +1,260 @@
+\hypertarget{testOthersMath_8cpp}{}\doxysection{tests/\+C\+P\+U/\+Math/test\+Others\+Math.cpp File Reference}
+\label{testOthersMath_8cpp}\index{tests/CPU/Math/testOthersMath.cpp@{tests/CPU/Math/testOthersMath.cpp}}
+{\ttfamily \#include $<$criterion/criterion.\+h$>$}\newline
+{\ttfamily \#include $<$bitset$>$}\newline
+{\ttfamily \#include \char`\"{}../../tests.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../../../sources/\+S\+N\+E\+S.\+hpp\char`\"{}}\newline
+Include dependency graph for test\+Others\+Math.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{testOthersMath_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{testOthersMath_8cpp_a200660ff3775de3dc4c721c4076700f1}{Test}} (D\+EX, simple)
+\item 
+\mbox{\hyperlink{testOthersMath_8cpp_a3dc3a880053834d5fadbf5fb38fca87c}{Test}} (D\+EX, overflow\+Emul)
+\item 
+\mbox{\hyperlink{testOthersMath_8cpp_a1babee487a1cd2b567f7090cd20dcef0}{Test}} (D\+EX, fake\+Overflow\+Non\+Emul)
+\item 
+\mbox{\hyperlink{testOthersMath_8cpp_abb1a9009f1a9217bf97142bef041cb79}{Test}} (D\+EX, non\+Negative)
+\item 
+\mbox{\hyperlink{testOthersMath_8cpp_afc7cdeb171f66f70d876d0932982f739}{Test}} (D\+EX, zero)
+\item 
+\mbox{\hyperlink{testOthersMath_8cpp_a16f08c931734b9b0539ba7d4cc3f2cb2}{Test}} (D\+EY, simple)
+\item 
+\mbox{\hyperlink{testOthersMath_8cpp_a08b4b767b592a4ee383456154bc039f4}{Test}} (D\+EY, overflow\+Emul)
+\item 
+\mbox{\hyperlink{testOthersMath_8cpp_a63c6a8d82ccbbfcfcec9743f0c5dde7a}{Test}} (D\+EY, fake\+Overflow\+Non\+Emul)
+\item 
+\mbox{\hyperlink{testOthersMath_8cpp_a3b607b955bb1567275322a593cd2d935}{Test}} (D\+EY, non\+Negative)
+\item 
+\mbox{\hyperlink{testOthersMath_8cpp_a5804b69169b5c38f51ba777cd722bc17}{Test}} (D\+EY, zero)
+\item 
+\mbox{\hyperlink{testOthersMath_8cpp_a819ee22653e083afb7dbcbacdacd4abb}{Test}} (O\+RA, simple)
+\item 
+\mbox{\hyperlink{testOthersMath_8cpp_aa1b4f72ff0207cc12e9d7f976d23b390}{Test}} (O\+RA, simple2)
+\item 
+\mbox{\hyperlink{testOthersMath_8cpp_a96815cd871ae21accb9efbd98f3c4b69}{Test}} (O\+RA, zero)
+\item 
+\mbox{\hyperlink{testOthersMath_8cpp_a007dcf46f523982edbd78ed60091c9ef}{Test}} (I\+NC, simple)
+\item 
+\mbox{\hyperlink{testOthersMath_8cpp_a7e7960a0edd0fcc7df293be6318690a5}{Test}} (I\+NC, negative)
+\item 
+\mbox{\hyperlink{testOthersMath_8cpp_af71106e59f2a8a87cedb1535956c199a}{Test}} (I\+NC, accumulator)
+\item 
+\mbox{\hyperlink{testOthersMath_8cpp_ac0e14edc676069b6fc7cf2d3fd95a238}{Test}} (I\+NC, negative\+Accumulator)
+\item 
+\mbox{\hyperlink{testOthersMath_8cpp_aa42508920276e316bbc2bce1d179e530}{Test}} (I\+NC, native\+Accumulator)
+\item 
+\mbox{\hyperlink{testOthersMath_8cpp_a40bb3ad484d5116ff5b8a905838dab6a}{Test}} (I\+NC, negative\+Native\+Accumulator)
+\item 
+\mbox{\hyperlink{testOthersMath_8cpp_a775dd61e6aa28415a67659f18a25139f}{Test}} (D\+EC, simple)
+\item 
+\mbox{\hyperlink{testOthersMath_8cpp_a70dbd6ff27e7c46aa921d906d89d1da5}{Test}} (D\+EC, negative)
+\item 
+\mbox{\hyperlink{testOthersMath_8cpp_a59bdc5f6cded2eade681b607dbcc7e07}{Test}} (D\+EC, accumulator)
+\item 
+\mbox{\hyperlink{testOthersMath_8cpp_a5b433ce2e5b1c4fa7be280b2e9d17297}{Test}} (D\+EC, negative\+Accumulator)
+\item 
+\mbox{\hyperlink{testOthersMath_8cpp_a288ea3ac653d029baac1ce4eafe021a7}{Test}} (D\+EC, native\+Accumulator)
+\item 
+\mbox{\hyperlink{testOthersMath_8cpp_a0ae4520931d84a33c55cd3c791234b81}{Test}} (D\+EC, negative\+Native\+Accumulator)
+\item 
+\mbox{\hyperlink{testOthersMath_8cpp_a3f1280fc7dec3be0bd5672513ab523eb}{Test}} (E\+OR, simple)
+\item 
+\mbox{\hyperlink{testOthersMath_8cpp_a0394cb9110e505e72327bb44e2e5725b}{Test}} (E\+OR, simple2)
+\item 
+\mbox{\hyperlink{testOthersMath_8cpp_afa9100e7fe40830ddd8391530c61ae54}{Test}} (E\+OR, zero)
+\item 
+\mbox{\hyperlink{testOthersMath_8cpp_adab3bf21b98ad411472e84eccc202c3c}{Test}} (X\+BA, zero)
+\item 
+\mbox{\hyperlink{testOthersMath_8cpp_a1eee869be550ccbdaae7707d78b02404}{Test}} (X\+BA, negative)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{testOthersMath_8cpp_a59bdc5f6cded2eade681b607dbcc7e07}\label{testOthersMath_8cpp_a59bdc5f6cded2eade681b607dbcc7e07}} 
+\index{testOthersMath.cpp@{testOthersMath.cpp}!Test@{Test}}
+\index{Test@{Test}!testOthersMath.cpp@{testOthersMath.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [1/30]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{D\+EC}]{,  }\item[{accumulator}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testOthersMath_8cpp_a288ea3ac653d029baac1ce4eafe021a7}\label{testOthersMath_8cpp_a288ea3ac653d029baac1ce4eafe021a7}} 
+\index{testOthersMath.cpp@{testOthersMath.cpp}!Test@{Test}}
+\index{Test@{Test}!testOthersMath.cpp@{testOthersMath.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [2/30]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{D\+EC}]{,  }\item[{native\+Accumulator}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testOthersMath_8cpp_a70dbd6ff27e7c46aa921d906d89d1da5}\label{testOthersMath_8cpp_a70dbd6ff27e7c46aa921d906d89d1da5}} 
+\index{testOthersMath.cpp@{testOthersMath.cpp}!Test@{Test}}
+\index{Test@{Test}!testOthersMath.cpp@{testOthersMath.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [3/30]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{D\+EC}]{,  }\item[{negative}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testOthersMath_8cpp_a5b433ce2e5b1c4fa7be280b2e9d17297}\label{testOthersMath_8cpp_a5b433ce2e5b1c4fa7be280b2e9d17297}} 
+\index{testOthersMath.cpp@{testOthersMath.cpp}!Test@{Test}}
+\index{Test@{Test}!testOthersMath.cpp@{testOthersMath.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [4/30]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{D\+EC}]{,  }\item[{negative\+Accumulator}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testOthersMath_8cpp_a0ae4520931d84a33c55cd3c791234b81}\label{testOthersMath_8cpp_a0ae4520931d84a33c55cd3c791234b81}} 
+\index{testOthersMath.cpp@{testOthersMath.cpp}!Test@{Test}}
+\index{Test@{Test}!testOthersMath.cpp@{testOthersMath.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [5/30]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{D\+EC}]{,  }\item[{negative\+Native\+Accumulator}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testOthersMath_8cpp_a775dd61e6aa28415a67659f18a25139f}\label{testOthersMath_8cpp_a775dd61e6aa28415a67659f18a25139f}} 
+\index{testOthersMath.cpp@{testOthersMath.cpp}!Test@{Test}}
+\index{Test@{Test}!testOthersMath.cpp@{testOthersMath.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [6/30]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{D\+EC}]{,  }\item[{simple}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testOthersMath_8cpp_a1babee487a1cd2b567f7090cd20dcef0}\label{testOthersMath_8cpp_a1babee487a1cd2b567f7090cd20dcef0}} 
+\index{testOthersMath.cpp@{testOthersMath.cpp}!Test@{Test}}
+\index{Test@{Test}!testOthersMath.cpp@{testOthersMath.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [7/30]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{D\+EX}]{,  }\item[{fake\+Overflow\+Non\+Emul}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testOthersMath_8cpp_abb1a9009f1a9217bf97142bef041cb79}\label{testOthersMath_8cpp_abb1a9009f1a9217bf97142bef041cb79}} 
+\index{testOthersMath.cpp@{testOthersMath.cpp}!Test@{Test}}
+\index{Test@{Test}!testOthersMath.cpp@{testOthersMath.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [8/30]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{D\+EX}]{,  }\item[{non\+Negative}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testOthersMath_8cpp_a3dc3a880053834d5fadbf5fb38fca87c}\label{testOthersMath_8cpp_a3dc3a880053834d5fadbf5fb38fca87c}} 
+\index{testOthersMath.cpp@{testOthersMath.cpp}!Test@{Test}}
+\index{Test@{Test}!testOthersMath.cpp@{testOthersMath.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [9/30]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{D\+EX}]{,  }\item[{overflow\+Emul}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testOthersMath_8cpp_a200660ff3775de3dc4c721c4076700f1}\label{testOthersMath_8cpp_a200660ff3775de3dc4c721c4076700f1}} 
+\index{testOthersMath.cpp@{testOthersMath.cpp}!Test@{Test}}
+\index{Test@{Test}!testOthersMath.cpp@{testOthersMath.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [10/30]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{D\+EX}]{,  }\item[{simple}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testOthersMath_8cpp_afc7cdeb171f66f70d876d0932982f739}\label{testOthersMath_8cpp_afc7cdeb171f66f70d876d0932982f739}} 
+\index{testOthersMath.cpp@{testOthersMath.cpp}!Test@{Test}}
+\index{Test@{Test}!testOthersMath.cpp@{testOthersMath.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [11/30]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{D\+EX}]{,  }\item[{zero}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testOthersMath_8cpp_a63c6a8d82ccbbfcfcec9743f0c5dde7a}\label{testOthersMath_8cpp_a63c6a8d82ccbbfcfcec9743f0c5dde7a}} 
+\index{testOthersMath.cpp@{testOthersMath.cpp}!Test@{Test}}
+\index{Test@{Test}!testOthersMath.cpp@{testOthersMath.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [12/30]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{D\+EY}]{,  }\item[{fake\+Overflow\+Non\+Emul}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testOthersMath_8cpp_a3b607b955bb1567275322a593cd2d935}\label{testOthersMath_8cpp_a3b607b955bb1567275322a593cd2d935}} 
+\index{testOthersMath.cpp@{testOthersMath.cpp}!Test@{Test}}
+\index{Test@{Test}!testOthersMath.cpp@{testOthersMath.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [13/30]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{D\+EY}]{,  }\item[{non\+Negative}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testOthersMath_8cpp_a08b4b767b592a4ee383456154bc039f4}\label{testOthersMath_8cpp_a08b4b767b592a4ee383456154bc039f4}} 
+\index{testOthersMath.cpp@{testOthersMath.cpp}!Test@{Test}}
+\index{Test@{Test}!testOthersMath.cpp@{testOthersMath.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [14/30]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{D\+EY}]{,  }\item[{overflow\+Emul}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testOthersMath_8cpp_a16f08c931734b9b0539ba7d4cc3f2cb2}\label{testOthersMath_8cpp_a16f08c931734b9b0539ba7d4cc3f2cb2}} 
+\index{testOthersMath.cpp@{testOthersMath.cpp}!Test@{Test}}
+\index{Test@{Test}!testOthersMath.cpp@{testOthersMath.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [15/30]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{D\+EY}]{,  }\item[{simple}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testOthersMath_8cpp_a5804b69169b5c38f51ba777cd722bc17}\label{testOthersMath_8cpp_a5804b69169b5c38f51ba777cd722bc17}} 
+\index{testOthersMath.cpp@{testOthersMath.cpp}!Test@{Test}}
+\index{Test@{Test}!testOthersMath.cpp@{testOthersMath.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [16/30]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{D\+EY}]{,  }\item[{zero}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testOthersMath_8cpp_a3f1280fc7dec3be0bd5672513ab523eb}\label{testOthersMath_8cpp_a3f1280fc7dec3be0bd5672513ab523eb}} 
+\index{testOthersMath.cpp@{testOthersMath.cpp}!Test@{Test}}
+\index{Test@{Test}!testOthersMath.cpp@{testOthersMath.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [17/30]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{E\+OR}]{,  }\item[{simple}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testOthersMath_8cpp_a0394cb9110e505e72327bb44e2e5725b}\label{testOthersMath_8cpp_a0394cb9110e505e72327bb44e2e5725b}} 
+\index{testOthersMath.cpp@{testOthersMath.cpp}!Test@{Test}}
+\index{Test@{Test}!testOthersMath.cpp@{testOthersMath.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [18/30]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{E\+OR}]{,  }\item[{simple2}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testOthersMath_8cpp_afa9100e7fe40830ddd8391530c61ae54}\label{testOthersMath_8cpp_afa9100e7fe40830ddd8391530c61ae54}} 
+\index{testOthersMath.cpp@{testOthersMath.cpp}!Test@{Test}}
+\index{Test@{Test}!testOthersMath.cpp@{testOthersMath.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [19/30]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{E\+OR}]{,  }\item[{zero}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testOthersMath_8cpp_af71106e59f2a8a87cedb1535956c199a}\label{testOthersMath_8cpp_af71106e59f2a8a87cedb1535956c199a}} 
+\index{testOthersMath.cpp@{testOthersMath.cpp}!Test@{Test}}
+\index{Test@{Test}!testOthersMath.cpp@{testOthersMath.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [20/30]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{I\+NC}]{,  }\item[{accumulator}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testOthersMath_8cpp_aa42508920276e316bbc2bce1d179e530}\label{testOthersMath_8cpp_aa42508920276e316bbc2bce1d179e530}} 
+\index{testOthersMath.cpp@{testOthersMath.cpp}!Test@{Test}}
+\index{Test@{Test}!testOthersMath.cpp@{testOthersMath.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [21/30]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{I\+NC}]{,  }\item[{native\+Accumulator}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testOthersMath_8cpp_a7e7960a0edd0fcc7df293be6318690a5}\label{testOthersMath_8cpp_a7e7960a0edd0fcc7df293be6318690a5}} 
+\index{testOthersMath.cpp@{testOthersMath.cpp}!Test@{Test}}
+\index{Test@{Test}!testOthersMath.cpp@{testOthersMath.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [22/30]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{I\+NC}]{,  }\item[{negative}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testOthersMath_8cpp_ac0e14edc676069b6fc7cf2d3fd95a238}\label{testOthersMath_8cpp_ac0e14edc676069b6fc7cf2d3fd95a238}} 
+\index{testOthersMath.cpp@{testOthersMath.cpp}!Test@{Test}}
+\index{Test@{Test}!testOthersMath.cpp@{testOthersMath.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [23/30]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{I\+NC}]{,  }\item[{negative\+Accumulator}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testOthersMath_8cpp_a40bb3ad484d5116ff5b8a905838dab6a}\label{testOthersMath_8cpp_a40bb3ad484d5116ff5b8a905838dab6a}} 
+\index{testOthersMath.cpp@{testOthersMath.cpp}!Test@{Test}}
+\index{Test@{Test}!testOthersMath.cpp@{testOthersMath.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [24/30]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{I\+NC}]{,  }\item[{negative\+Native\+Accumulator}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testOthersMath_8cpp_a007dcf46f523982edbd78ed60091c9ef}\label{testOthersMath_8cpp_a007dcf46f523982edbd78ed60091c9ef}} 
+\index{testOthersMath.cpp@{testOthersMath.cpp}!Test@{Test}}
+\index{Test@{Test}!testOthersMath.cpp@{testOthersMath.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [25/30]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{I\+NC}]{,  }\item[{simple}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testOthersMath_8cpp_a819ee22653e083afb7dbcbacdacd4abb}\label{testOthersMath_8cpp_a819ee22653e083afb7dbcbacdacd4abb}} 
+\index{testOthersMath.cpp@{testOthersMath.cpp}!Test@{Test}}
+\index{Test@{Test}!testOthersMath.cpp@{testOthersMath.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [26/30]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{O\+RA}]{,  }\item[{simple}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testOthersMath_8cpp_aa1b4f72ff0207cc12e9d7f976d23b390}\label{testOthersMath_8cpp_aa1b4f72ff0207cc12e9d7f976d23b390}} 
+\index{testOthersMath.cpp@{testOthersMath.cpp}!Test@{Test}}
+\index{Test@{Test}!testOthersMath.cpp@{testOthersMath.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [27/30]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{O\+RA}]{,  }\item[{simple2}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testOthersMath_8cpp_a96815cd871ae21accb9efbd98f3c4b69}\label{testOthersMath_8cpp_a96815cd871ae21accb9efbd98f3c4b69}} 
+\index{testOthersMath.cpp@{testOthersMath.cpp}!Test@{Test}}
+\index{Test@{Test}!testOthersMath.cpp@{testOthersMath.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [28/30]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{O\+RA}]{,  }\item[{zero}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testOthersMath_8cpp_a1eee869be550ccbdaae7707d78b02404}\label{testOthersMath_8cpp_a1eee869be550ccbdaae7707d78b02404}} 
+\index{testOthersMath.cpp@{testOthersMath.cpp}!Test@{Test}}
+\index{Test@{Test}!testOthersMath.cpp@{testOthersMath.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [29/30]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{X\+BA}]{,  }\item[{negative}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{testOthersMath_8cpp_adab3bf21b98ad411472e84eccc202c3c}\label{testOthersMath_8cpp_adab3bf21b98ad411472e84eccc202c3c}} 
+\index{testOthersMath.cpp@{testOthersMath.cpp}!Test@{Test}}
+\index{Test@{Test}!testOthersMath.cpp@{testOthersMath.cpp}}
+\doxysubsubsection{\texorpdfstring{Test()}{Test()}\hspace{0.1cm}{\footnotesize\ttfamily [30/30]}}
+{\footnotesize\ttfamily Test (\begin{DoxyParamCaption}\item[{X\+BA}]{,  }\item[{zero}]{ }\end{DoxyParamCaption})}
+
